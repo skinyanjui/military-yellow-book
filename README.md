@@ -23,9 +23,10 @@ With no `window.MYB_BACKEND` set, the site runs entirely from its embedded data.
 ## Build and deploy
 
 ```sh
-python3 scripts/build_deploy.py      # needs Python 3 and npx (esbuild)
-cd site && vercel deploy --prod      # or set the Vercel project's Root Directory to `site`
+python3 scripts/build_deploy.py      # needs Python 3 and npx (esbuild); rewrites site/
 ```
+
+The Vercel project is connected to this repo with Root Directory `site`, so every push to `main` deploys to production automatically and other branches get preview URLs. Commit the rebuilt `site/` along with any change to `src/`, because Vercel serves `site/` as-is and runs no build.
 
 ## Backend
 
