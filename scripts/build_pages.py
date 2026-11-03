@@ -4,6 +4,8 @@
   site/l/<slug>.html   one page per live listing        (served at /l/<slug>)
   site/c/<slug>.html   one page per category            (served at /c/<category>)
   site/directory.html  every category and listing       (served at /directory)
+  site/portals.html    government procurement portals   (served at /portals)
+  site/terms.html, site/privacy.html, site/404.html
   site/sitemap.xml, site/robots.txt
 
 The interactive app stays on hash routes (/#biz-<slug>); these pages are the indexable front door and link into it.
@@ -15,11 +17,14 @@ Called from build_deploy.py; can also be run alone:  python3 scripts/build_pages
 """
 import html, json, os, re, shutil, sys, urllib.parse, urllib.request
 
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'unspsc'))
+from mapping import CATEGORY_UNSPSC   # directory category -> UNSPSC families/classes
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SUPABASE_URL = 'https://bfovgafcfetfeqykjfco.supabase.co'
 SUPABASE_KEY = 'sb_publishable_FfVpTa_cEtn_LRJ5FNc-VQ_8bvPbVZx'   # publishable key: safe to ship
 COLS = ('slug,name,category,supplier,city,country,region,unit,price,moq,lead,certs,ships,verified,years,descr,specs,'
-        'domains,branches,is_sample,status,position,created_at')
+        'domains,branches,is_sample,status,position,created_at,unspsc')
 SLUG_OK = re.compile(r'^[a-z0-9]+(?:-[a-z0-9]+)*$')
 FONTS = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@500&display=swap">'
 ICON = ("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' "
@@ -69,6 +74,23 @@ ul.list a:hover{text-decoration:underline}
 ul.list small{display:block;color:var(--muted)}
 ul.plain{margin:0;padding-left:20px}
 footer{margin-top:48px;padding:24px 0 40px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+footer a{color:inherit}
+ul.codes{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+ul.codes li{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline}
+code.c{font:500 13px var(--mono);border:1px solid var(--line);border-radius:6px;padding:1px 6px;background:var(--subtle)}
+.lic{color:var(--muted);font-size:13px}
+nav.jump{display:flex;flex-wrap:wrap;gap:8px 16px;margin:16px 0 8px}
+ul.portals{list-style:none;margin:0;padding:0;display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+ul.portals li{border:1px solid var(--line);border-radius:8px;padding:12px 14px;min-width:0;display:grid;gap:4px;align-content:start}
+ul.portals .pn{font-weight:500;overflow-wrap:anywhere}
+ul.portals .pc{color:var(--muted);font-size:13px}
+ul.portals .pl{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:14px}
+ul.portals .pm{display:flex;flex-wrap:wrap;gap:6px}
+ul.portals .pm span{border:1px solid var(--line);border-radius:9999px;padding:0 8px;font-size:12px}
+ul.portals .pm .warn{color:var(--accent-ink);background:var(--accent-subtle);border-color:transparent}
+ul.portals small{color:var(--muted);font-size:12px;line-height:1.4}
+.draft{border:1px dashed var(--line);border-radius:8px;padding:8px 12px;color:var(--muted);font-size:13px;margin:0 0 16px}
+.prose{max-width:68ch}.prose h2{margin-top:28px}.prose p,.prose li{margin:8px 0}
 @media (max-width:520px){dl.facts{grid-template-columns:1fr;gap:2px}dl.facts dd{margin-bottom:8px}dl.spec{grid-template-columns:1fr}dl.spec dt{border-bottom:0;padding-bottom:0}}
 """
 
@@ -117,6 +139,29 @@ def load_listings():
     return json.load(open(os.path.join(ROOT, 'supabase', 'seed.json'), encoding='utf-8')), 'seed.json'
 
 
+def load_unspsc():
+    rows = json.load(open(os.path.join(ROOT, 'supabase', 'unspsc.json'), encoding='utf-8'))['rows']
+    return {r[0]: (r[5], r[4]) for r in rows}      # code -> (title, access)
+
+
+def load_portals():
+    cols = 'scope,country,region,name,url,feed_url,platform,classification,note,flag,sources,position'
+    if os.environ.get('PAGES_SOURCE') != 'seed':
+        url = SUPABASE_URL + '/rest/v1/myb_portals?select=' + cols + '&order=position.asc&limit=1000'
+        try:
+            req = urllib.request.Request(url, headers={'apikey': SUPABASE_KEY, 'Authorization': 'Bearer ' + SUPABASE_KEY})
+            rows = json.load(urllib.request.urlopen(req, timeout=30))
+            if rows:
+                return rows, 'supabase'
+            problem = 'Supabase returned no portals'
+        except Exception as e:
+            problem = 'could not read portals from Supabase (%s)' % e
+        if os.environ.get('PAGES_SOURCE') == 'live':
+            sys.exit('ERROR: ' + problem)
+        print('WARNING: %s; using supabase/portals.json' % problem, file=sys.stderr)
+    return json.load(open(os.path.join(ROOT, 'supabase', 'portals.json'), encoding='utf-8')), 'portals.json'
+
+
 def shape(r, cats, domains, branches, regions):
     """Mirror the app's P()/fromRow() so a listing reads the same on both pages."""
     moq = int(r['moq'] or 1)
@@ -138,6 +183,7 @@ def shape(r, cats, domains, branches, regions):
         'domains': [domains.get(k, k) for k in (r.get('domains') or [])],
         'branches': [branches.get(k, k) for k in (r.get('branches') or [])],
         'restricted': r['ships'] == 'Licensed buyers' or r['category'] in (cats[8], cats[9]),
+        'unspsc': list(r.get('unspsc') or []),
     }
 
 
@@ -152,7 +198,7 @@ def jsonld(obj):
     return '<script type="application/ld+json">' + json.dumps(obj, ensure_ascii=False).replace('<', '\\u003c') + '</script>'
 
 
-def page(site, path, title, desc, body, crumbs, og_type='website'):
+def page(site, path, title, desc, body, crumbs, og_type='website', noindex=False):
     url = site + path
     crumb_ld = {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
         {'@type': 'ListItem', 'position': i + 1, 'name': n, **({'item': site + u} if u else {})}
@@ -166,12 +212,13 @@ def page(site, path, title, desc, body, crumbs, og_type='website'):
             '<meta property="og:url" content="' + esc(url) + '"><meta property="og:image" content="' + site + '/og.png">'
             '<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="' + esc(title) + '">'
             '<meta name="twitter:description" content="' + esc(desc) + '"><meta name="twitter:image" content="' + site + '/og.png">'
-            '<meta name="theme-color" content="#f5b800"><link rel="icon" href="' + ICON + '">' + FONTS +
+            '<meta name="theme-color" content="#f5b800">' + ('<meta name="robots" content="noindex">' if noindex else '') + '<link rel="icon" href="' + ICON + '">' + FONTS +
             '<style>' + CSS.strip() + '</style>' + jsonld(crumb_ld) + '</head><body>'
             '<header><div class="wrap bar"><a class="brand" href="/"><span class="mark" aria-hidden="true">YB</span>Military Yellow Book</a>'
             '<span class="sp"></span><a href="/directory">All listings</a></div></header>'
             '<main class="wrap">' + body + '</main>'
-            '<footer><div class="wrap"><p><b>Military Yellow Book</b> is a global directory of military suppliers.</p><p>' + esc(FOOT) + '</p></div></footer>'
+            '<footer><div class="wrap"><p><b>Military Yellow Book</b> is a global directory of military suppliers.</p><p>' + esc(FOOT) + '</p>'
+            '<p><a href="/portals">Government procurement portals</a> · <a href="/terms">Terms</a> · <a href="/privacy">Privacy</a></p></div></footer>'
             '</body></html>')
 
 
@@ -207,11 +254,21 @@ def listing_page(site, b, same_cat):
     note = ('This item is export-controlled. Expect to provide a dealer licence or end-user certificate before the supplier quotes.'
             if b['restricted'] else
             'Some military goods are export-controlled. Ask the supplier which licences and end-user certificates apply to your destination before you order, and confirm price and delivery terms in writing.')
+    codes = ''
+    if b['unspsc']:
+        lis, lic = '', False
+        for c in b['unspsc']:
+            t, a = UN.get(c, ('', 'open'))
+            lic = lic or a == 'licensed'
+            lis += '<li><code class="c">' + esc(c) + '</code>' + (esc(t) if t else '') + (' <span class="lic">· licence may apply</span>' if a == 'licensed' else '') + '</li>'
+        codes = ('<h2>UNSPSC classification</h2><ul class="codes">' + lis + '</ul>' +
+                 ('<p class="notice">At least one of these classes is licence-controlled. Ask the supplier which export licences and end-user certificates apply to your destination.</p>' if lic else '') +
+                 '<p class="sub">UNSPSC® is the United Nations Standard Products and Services Code, used by many procurement portals to classify what is bought.</p>')
     more = [x for x in same_cat if x['slug'] != b['slug'] and x['supplier'] != b['supplier']][:6]
     more_html = ('<h2>More in ' + esc(b['cat']) + '</h2><ul class="list">' + ''.join(card(x) for x in more) + '</ul>') if more else ''
     body = (crumb_html(crumbs) + '<h1>' + esc(b['name']) + '</h1><p class="sub">' + esc(b['supplier']) + ' · ' + esc(b['city']) + ', ' + esc(b['country']) + '</p>' +
             '<ul class="badges">' + ''.join(badges) + '</ul><p class="price">' + esc(b['price']) + '</p><dl class="facts">' + dl + '</dl>' +
-            '<h2>Overview</h2><p>' + esc(b['descr']) + '</p>' + spec + '<h2>Shipping and compliance</h2><p class="notice">' + esc(note) + '</p>' +
+            '<h2>Overview</h2><p>' + esc(b['descr']) + '</p>' + spec + codes + '<h2>Shipping and compliance</h2><p class="notice">' + esc(note) + '</p>' +
             '<div class="cta"><a class="btn primary" href="/#biz-' + b['slug'] + '">Request a quote or see full details</a>'
             '<a class="btn" href="/c/' + b['catslug'] + '">More ' + esc(b['cat']) + ' suppliers</a></div>' + more_html)
     return page(site, '/l/' + b['slug'], title, desc, body, crumbs)
@@ -221,8 +278,12 @@ def category_page(site, cat, items):
     crumbs = [('Military Yellow Book', '/'), (cat, None)]
     title = f'{cat} suppliers | Military Yellow Book'
     desc = trim(f'{len(items)} {cat.lower()} suppliers in the Military Yellow Book directory, with prices, minimum orders and lead times.')
+    typical = ''
+    if cat in CATEGORY_UNSPSC:
+        typical = ('<h2>Typical UNSPSC codes</h2><ul class="codes">' + ''.join(
+            '<li><code class="c">' + esc(c) + '</code>' + esc(UN.get(c, ('', ''))[0]) + '</li>' for c in CATEGORY_UNSPSC[cat]) + '</ul>')
     body = (crumb_html(crumbs) + '<h1>' + esc(cat) + '</h1><p class="sub">' + str(len(items)) + ' listings</p><ul class="list">' +
-            ''.join(card(x) for x in items) + '</ul><div class="cta"><a class="btn" href="/directory">Browse every category</a></div>')
+            ''.join(card(x) for x in items) + '</ul>' + typical + '<div class="cta"><a class="btn" href="/directory">Browse every category</a></div>')
     return page(site, '/c/' + slugify(cat), title, desc, body, crumbs)
 
 
@@ -237,11 +298,132 @@ def directory_page(site, groups):
                 trim(f'Every supplier listing in the Military Yellow Book, by category: {total} listings.'), body, crumbs)
 
 
+UN = {}
+REGION_NAMES = [('americas', 'Americas'), ('europe', 'Europe'), ('mideast', 'Middle East'), ('africa', 'Africa'), ('asia', 'Asia-Pacific'), (None, 'International and multilateral')]
+
+
+def portals_page(site, rows):
+    crumbs = [('Military Yellow Book', '/'), ('Government procurement portals', None)]
+    countries = len({r['country'] for r in rows if r['scope'] == 'national'})
+    nav = '<nav class="jump" aria-label="Regions">' + ''.join(
+        '<a href="#' + (k or 'intl') + '">' + n + '</a>' for k, n in REGION_NAMES if any(r['region'] == k for r in rows)) + '</nav>'
+    body = (crumb_html(crumbs) + '<h1>Government procurement portals</h1>'
+            '<p class="sub">' + str(len(rows)) + ' places where governments and international bodies publish tenders, covering ' + str(countries) + ' countries and territories. '
+            'Register as a supplier there to bid on military and defence contracts.</p>'
+            '<p class="notice"><b>Check before you rely on a link.</b> This list is compiled from the sources named below and has not been verified link by link. '
+            'Entries marked &ldquo;check address&rdquo; point at a general government or commercial site rather than a procurement system. '
+            'The official portal is always the system of record for a government&rsquo;s tenders. Trading with some countries is restricted by sanctions and export controls: '
+            'confirm what applies to you before you bid.</p>' + nav)
+    for key, name in REGION_NAMES:
+        grp = [r for r in rows if r['region'] == key]
+        if not grp:
+            continue
+        lis = ''
+        for r in grp:
+            links = ''
+            if r['url']:
+                links += '<a href="' + esc(r['url']) + '" rel="nofollow noopener noreferrer" target="_blank">Official site</a>'
+            if r['feed_url']:
+                links += '<a href="' + esc(r['feed_url']) + '" rel="nofollow noopener noreferrer" target="_blank">Tender feed (Open Opps)</a>'
+            meta = ''
+            if r['scope'] == 'subnational':
+                meta += '<span>Regional or state</span>'
+            if r['scope'] == 'agency':
+                meta += '<span>Agency catalogue</span>'
+            if r['platform']:
+                meta += '<span>' + esc(r['platform'].capitalize()) + '</span>'
+            if r['classification']:
+                meta += '<span>Codes: ' + esc(r['classification']) + '</span>'
+            if r['flag'] == 'general_site':
+                meta += '<span class="warn">Check address</span>'
+            if r['flag'] == 'no_url':
+                meta += '<span class="warn">No portal listed</span>'
+            lis += ('<li><span class="pn">' + esc(r['name']) + '</span><span class="pc">' + esc(r['country']) + '</span>' +
+                    ('<span class="pl">' + links + '</span>' if links else '') + ('<span class="pm">' + meta + '</span>' if meta else '') +
+                    ('<small>' + esc(r['note']) + '</small>' if r['note'] else '') + '</li>')
+        body += '<h2 id="' + (key or 'intl') + '">' + name + ' <small class="lic">(' + str(len(grp)) + ')</small></h2><ul class="portals">' + lis + '</ul>'
+    body += ('<h2>Which product codes do portals want?</h2><p>Many portals ask suppliers to classify what they sell: the US uses NAICS and PSC, the EU and UK use CPV, and '
+             'UNGM, Australia, New Zealand and Canada use UNSPSC. Every listing in this directory carries UNSPSC codes, so you can reuse them when you register.</p>'
+             '<h2>Sources</h2><ul class="plain">'
+             '<li>Sell to State, <a href="https://www.selltostate.com/guides/global-government-procurement-portals/" rel="noopener noreferrer" target="_blank">Government Procurement Portals by Country</a> (updated 30 June 2026): one portal for each of 193 countries.</li>'
+             '<li>Open Opportunities, <a href="https://openopps.com/sources/" rel="noopener noreferrer" target="_blank">sources</a>: regional, state and international tender sources, linked as feeds.</li>'
+             '<li>Inter-American Network on Government Procurement (RICG), <a href="https://ricg.org/en/regional-e-gp-inventory" rel="noopener noreferrer" target="_blank">Regional e-GP inventory</a>: platform type for Latin American and Caribbean systems.</li>'
+             '<li>US Department of Veterans Affairs, <a href="https://www.vendorportal.ecms.va.gov/nac" rel="noopener noreferrer" target="_blank">National Acquisition Center contract catalogue</a>.</li>'
+             '</ul>')
+    return page(site, '/portals', 'Government procurement portals by country | Military Yellow Book',
+                trim(f'{len(rows)} government and international procurement portals in {countries} countries, with the product code systems they use. Where to register to sell to defence buyers.'),
+                body, crumbs)
+
+
+LEGAL_DRAFT = True      # set False once a lawyer has reviewed terms and privacy text
+CONTACT = os.environ.get('SITE_CONTACT', '').strip()
+
+
+def legal_page(site, path, title, desc, sections):
+    crumbs = [('Military Yellow Book', '/'), (title, None)]
+    body = crumb_html(crumbs) + '<h1>' + esc(title) + '</h1><p class="sub">Last updated 3 November 2026</p>'
+    if LEGAL_DRAFT:
+        body += '<p class="draft">Draft: this text has not yet been reviewed by a lawyer and may change before launch.</p>'
+    body += '<div class="prose">'
+    for h, paras in sections:
+        body += '<h2>' + esc(h) + '</h2>' + ''.join(p if p.startswith('<') else '<p>' + esc(p) + '</p>' for p in paras)
+    if CONTACT:
+        body += '<h2>Contact</h2><p>' + esc(CONTACT) + '</p>'
+    body += '</div>'
+    return page(site, path, title + ' | Military Yellow Book', desc, body, crumbs)
+
+
+def terms_page(site):
+    return legal_page(site, '/terms', 'Terms of use', 'The rules for using the Military Yellow Book directory.', [
+        ('What this site is', ['The Military Yellow Book is a directory. It helps buyers find suppliers and helps suppliers be found. We do not sell goods, take payments, hold stock or ship orders, and we are not a party to any deal between a buyer and a supplier.',
+                               'Listings marked as samples are invented for demonstration. Do not treat a sample listing as a real business.']),
+        ('What we list', ['We do not list complete firearms, ammunition, explosives, weapon systems, ballistic armour, or night-vision and thermal imaging equipment, and we remove listings that offer them. Weapon accessories, aircraft parts and similar items are shown as sold to licensed buyers only.',
+                          'Listings are classified with UNSPSC codes. We reject codes for the categories above.']),
+        ('Your responsibilities', ['You are responsible for complying with export-control, sanctions, import and licensing rules that apply to anything you buy, sell or ship. A listing, quote or review on this site is not a licence or legal advice.',
+                                   'Give accurate information. Do not use the site to list or request anything illegal, to impersonate a business, or to harvest other people’s contact details.']),
+        ('Accounts and content', ['You need an account to request quotes, list a business, save items and write reviews. Keep your password private. You are responsible for what you submit.',
+                                  'By submitting a review or a business listing you let us display it on the site. We may remove content that breaks these terms. A “Verified” badge means we checked the supplier against the steps we describe on the site; it is not a guarantee.']),
+        ('No guarantees', ['Prices, lead times and specifications are set by suppliers. Check terms in writing before you pay. The site is provided as it is, without warranties, and to the extent the law allows we are not liable for losses from deals made through it.']),
+        ('Changes', ['We may change these terms or the site. Continuing to use the site after a change means you accept the new terms.']),
+    ])
+
+
+def privacy_page(site):
+    return legal_page(site, '/privacy', 'Privacy policy', 'What the Military Yellow Book collects, why, and who handles it.', [
+        ('What we collect', ['<ul class="plain"><li><b>Account:</b> your name, email address, country, account type (buyer or supplier) and a password, which is stored only as a hash.</li>'
+                             '<li><b>What you do on the site:</b> quote requests (product, quantity, target price, delivery destination, your name and contact), supplier submissions (business details, phone, email, website, product codes), saved items and reviews.</li>'
+                             '<li><b>On your device:</b> your saved items, chosen language and shipping destination, and a sign-in session. We use no advertising or analytics cookies.</li></ul>']),
+        ('Why we use it', ['To run your account, send you the confirmation and password-reset emails you ask for, pass your quote requests to suppliers, review business submissions, show your reviews, and keep the site secure and within usage limits.']),
+        ('What is public', ['Business listings are public once approved. A review shows your display name and the rating and text you write. The review also records an identifier for your account, which can be read by anyone using the site’s public interface.']),
+        ('Who handles your data', ['<ul class="plain"><li><b>Supabase</b> stores accounts and site data and sends authentication emails. The account system is shared with another product run by the same operator, so a sign-up here also creates a profile record there.</li>'
+                                   '<li><b>Vercel</b> hosts the site.</li>'
+                                   '<li><b>Google Fonts</b> serves the typeface, so your browser contacts Google when a page loads.</li></ul>',
+                                   'We do not sell your data.']),
+        ('Keeping and deleting it', ['We keep your account and what you submitted until you ask us to delete it. To see, correct or delete your data, contact us ' + ('at the address below' if CONTACT else 'through the site operator') + '. Quote requests you have already sent to a supplier cannot be recalled from the supplier.']),
+        ('Children', ['The site is for businesses and professional buyers and is not meant for anyone under 18.']),
+        ('Changes', ['If we change this policy we will update this page and the date above.']),
+    ])
+
+
+def not_found_page(site):
+    crumbs = [('Military Yellow Book', '/')]
+    body = ('<h1>Page not found</h1><p class="sub">That address does not match a page on the Military Yellow Book.</p>'
+            '<div class="cta"><a class="btn primary" href="/">Search the directory</a><a class="btn" href="/directory">Browse every category</a>'
+            '<a class="btn" href="/portals">Government procurement portals</a></div>')
+    return page(site, '/404', 'Page not found | Military Yellow Book', 'Page not found.', body, crumbs, noindex=True)
+
+
 def build(site_url, out_dir=None):
     site = site_url.rstrip('/')
     out = out_dir or os.path.join(ROOT, 'site')
     cats, domains, branches, regions = read_app_tables()
     rows, source = load_listings()
+    UN.update(load_unspsc())
+    if source == 'seed.json':      # the seed file predates the classification: take codes from the reviewed mapping
+        tags = json.load(open(os.path.join(ROOT, 'supabase', 'listing_unspsc.json'), encoding='utf-8'))
+        for r in rows:
+            r.setdefault('unspsc', tags.get(r['slug'], []))
+    portals, psource = load_portals()
     listings, seen = [], set()
     for r in rows:
         if not SLUG_OK.match(str(r.get('slug', ''))) or r['slug'] in seen:
@@ -263,13 +445,17 @@ def build(site_url, out_dir=None):
     for c, v in groups:
         open(os.path.join(out, 'c', slugify(c) + '.html'), 'w', encoding='utf-8').write(category_page(site, c, v))
     open(os.path.join(out, 'directory.html'), 'w', encoding='utf-8').write(directory_page(site, groups))
+    open(os.path.join(out, 'portals.html'), 'w', encoding='utf-8').write(portals_page(site, portals))
+    open(os.path.join(out, 'terms.html'), 'w', encoding='utf-8').write(terms_page(site))
+    open(os.path.join(out, 'privacy.html'), 'w', encoding='utf-8').write(privacy_page(site))
+    open(os.path.join(out, '404.html'), 'w', encoding='utf-8').write(not_found_page(site))
 
-    urls = ['/', '/directory'] + ['/c/' + slugify(c) for c, _ in groups] + ['/l/' + b['slug'] for b in listings]
+    urls = ['/', '/directory', '/portals', '/terms', '/privacy'] + ['/c/' + slugify(c) for c, _ in groups] + ['/l/' + b['slug'] for b in listings]
     open(os.path.join(out, 'sitemap.xml'), 'w', encoding='utf-8').write(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
         ''.join('<url><loc>' + esc(site + u) + '</loc></url>\n' for u in urls) + '</urlset>\n')
     open(os.path.join(out, 'robots.txt'), 'w', encoding='utf-8').write('User-agent: *\nAllow: /\n\nSitemap: ' + site + '/sitemap.xml\n')
-    print(f'pages: {len(listings)} listings + {len(groups)} categories + directory + sitemap ({len(urls)} URLs), source: {source}')
+    print(f'pages: {len(listings)} listings + {len(groups)} categories + directory + portals ({len(portals)}) + terms + privacy + 404 + sitemap ({len(urls)} URLs), sources: {source}, {psource}')
     return urls
 
 

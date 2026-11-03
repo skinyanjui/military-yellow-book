@@ -8,7 +8,7 @@ name: Rebuild site
 on:
   push:
     branches: [main]
-    paths: ['src/**', 'scripts/**', 'supabase/seed.json']
+    paths: ['src/**', 'scripts/**', 'supabase/seed.json', 'supabase/unspsc.json', 'supabase/listing_unspsc.json', 'supabase/portals.json']
   schedule:
     - cron: '17 5 * * *'
   workflow_dispatch:
@@ -35,6 +35,7 @@ jobs:
       - name: Build
         env:
           PAGES_SOURCE: live        # fail rather than publish pages from stale seed data
+          SITE_CONTACT: ${{ vars.SITE_CONTACT }}   # optional: shown on the Terms and Privacy pages (repo Settings > Variables)
         run: python3 scripts/build_deploy.py
       - name: Sanity check
         run: |

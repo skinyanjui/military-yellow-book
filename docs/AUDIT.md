@@ -40,3 +40,12 @@ Checked with the publishable key and two real users over the REST API: anonymous
 - **Accepted**: reviewer `user_id` is public on `myb_reviews`.
 - **Process**: `site/` is rebuilt and committed by the `rebuild-site` GitHub Action on source changes and daily.
 - **Quotes** are stored but not emailed to suppliers yet.
+
+## Update: UNSPSC, procurement portals and sign-up (3 November 2026, evening)
+
+- **UNSPSC taxonomy** loaded from the UNGM export: 13,482 codes in 10 groups (11,601 open, 1,826 licensed, 55 blocked). Blocked is enforced by a database trigger, not only by the picker. All 103 sample listings carry 1-3 reviewed codes; none is blocked.
+- **Site**: listing pages (app and static) show the codes with titles and a licence note; search matches codes, code prefixes and code titles; the "List your business" form has a code picker (typeahead, up to 5, never offers a blocked code, ranks the chosen category's codes first); category pages list typical codes.
+- **Procurement portals**: 240 entries from Sell to State (193 countries), Open Opps (feeds, state and international sources), RICG (platform types) and the VA NAC catalogue, on a new `/portals` page with sources credited. Links are unverified; 31 are flagged.
+- **Sign-up flow**: a resend-confirmation button on "email not confirmed" and on the "check your email" notice, an "Email confirmed" message when the link is opened, the interrupted action (list a business, request a quote) resumes after confirmation, and a consent line links to new `/terms` and `/privacy` pages. Share now copies the crawlable `/l/<slug>` address. Unknown addresses get a branded 404.
+- **Checks**: 121 browser checks pass (static pages at desktop and 400 px, light and dark: no axe violations, no overflow, no CSP violations; app flows with mocked auth). Database checks: a blocked code, a family-level code, a missing code and a sixth code are each rejected; duplicates are collapsed; anonymous users can read the reference tables but not write to them.
+- **Open**: Terms and Privacy need a lawyer's review and a contact address (`SITE_CONTACT`); no account-deletion flow; the dashboard settings above are still pending.

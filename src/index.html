@@ -343,6 +343,21 @@ main { padding-block: var(--s6) var(--s12); }
 .spec dt { color: var(--text-muted); }
 .spec dd { margin: 0; overflow-wrap: anywhere; }
 .notice { padding: var(--s3) var(--s4); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: var(--radius-md); font-size: 14px; line-height: 20px; max-width: 68ch; }
+.codes { display: grid; gap: var(--s2); margin-top: var(--s5); }
+.codes h3 { margin: 0; font-size: 14px; line-height: 20px; }
+.codes ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: var(--s2); }
+.codes li { display: flex; align-items: center; gap: var(--s2); min-width: 0; max-width: 100%; }
+.code, .codeopt { display: inline-flex; align-items: baseline; gap: var(--s2); min-height: 32px; padding: 4px var(--s3); border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--background); color: var(--foreground); font: 400 13px/20px var(--font-sans); text-align: left; cursor: pointer; max-width: 100%; }
+.code:hover, .codeopt:hover { background: var(--gray-100); }
+.code b, .codeopt b { font: 500 12px/16px var(--font-mono); flex: none; }
+.code span, .codeopt span { min-width: 0; overflow-wrap: anywhere; }
+.code-lic { font-size: 12px; line-height: 16px; color: var(--text-muted); font-style: normal; }
+.codepick { display: grid; gap: var(--s2); }
+.codelist { display: grid; gap: var(--s1); max-height: 220px; overflow: auto; }
+.codelist .codeopt { width: 100%; }
+.pickedcodes { display: flex; flex-wrap: wrap; gap: var(--s2); }
+.pickedcodes .codeopt::after { content: "\00d7"; margin-left: var(--s2); color: var(--text-muted); }
+.fine a, footer a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
 .rev { display: grid; gap: var(--s4); grid-template-columns: minmax(0, 1fr); }
 .rev-sum { display: flex; align-items: center; gap: var(--s4); }
 .rev-sum .big { font-size: 40px; line-height: 44px; font-weight: 600; letter-spacing: -.02em; }
@@ -507,6 +522,7 @@ body.is-loading footer { display: none; }
     <div data-i18n-h="foot1"><b>Military Yellow Book</b> is a global directory of military suppliers: uniforms, footwear, field gear, rations, vehicle and aircraft parts, communications, medical supplies, marine equipment and logistics.</div>
     <div data-i18n="foot2">Complete firearms, ammunition, explosives and weapon systems are not listed. Weapon parts, aircraft parts and body-armor carriers are sold only by licensed dealers and need export licences and end-user certificates. Prices and lead times are set by each supplier; confirm terms in writing before you pay.</div>
     <div class="stats" id="stats"></div>
+    <div class="foot-links"><a href="/portals">Government procurement portals</a> · <a href="/terms">Terms</a> · <a href="/privacy">Privacy</a></div>
   </div>
 </footer>
 
@@ -801,7 +817,7 @@ body.is-loading footer { display: none; }
       (b.sample === false ? '' : '<span class="sample">Sample listing</span>') + '</aside></div>' +
       '<nav class="tabs" aria-label="Sections"><button type="button" data-tab="p-over" aria-current="true">' + esc(tr("Overview")) + '</button><button type="button" data-tab="p-spec">' + esc(tr("Specifications")) + '</button><button type="button" data-tab="p-ship">' + esc(tr("Shipping and compliance")) + '</button><button type="button" data-tab="p-rev">' + esc(tr("Reviews")) + '</button><button type="button" data-tab="p-sup">' + esc(tr("Supplier")) + '</button></nav>' +
       '<section class="pdp-sec" id="p-over"><h2>' + esc(tr("Overview")) + '</h2><p>' + esc(b.desc) + '</p>' +
-      '<div class="kv"><div><span>Category</span><b>' + esc(tr(b.cat)) + '</b></div><div><span>' + esc(tr("Min. order")) + '</span><b>' + esc(b.moq) + '</b></div><div><span>' + esc(tr("Lead time")) + '</span><b>' + esc(b.lead) + '</b></div><div><span>' + esc(tr("Origin")) + '</span><b>' + esc(b.country) + '</b></div></div></section>' +
+      '<div class="kv"><div><span>Category</span><b>' + esc(tr(b.cat)) + '</b></div><div><span>' + esc(tr("Min. order")) + '</span><b>' + esc(b.moq) + '</b></div><div><span>' + esc(tr("Lead time")) + '</span><b>' + esc(b.lead) + '</b></div><div><span>' + esc(tr("Origin")) + '</span><b>' + esc(b.country) + '</b></div></div>' + Codes(b) + '</section>' +
       '<section class="pdp-sec" id="p-spec"><h2>' + esc(tr("Specifications")) + '</h2><dl class="spec">' + b.specs.map(function (s) { return '<div><dt>' + esc(s[0]) + '</dt><dd>' + esc(s[1]) + '</dd></div>'; }).join("") + '</dl></section>' +
       '<section class="pdp-sec" id="p-ship"><h2>' + esc(tr("Shipping and compliance")) + '</h2><dl class="spec"><div><dt>' + esc(tr("Ships to")) + '</dt><dd>' + esc(b.ships) + '</dd></div><div><dt>' + esc(tr("Lead time")) + '</dt><dd>' + esc(b.lead) + '</dd></div><div><dt>' + esc(tr("Packaging")) + '</dt><dd>' + esc(pack) + '</dd></div><div><dt>' + esc(tr("Terms")) + '</dt><dd>' + esc(tr("Agreed in the quote")) + '</dd></div>' + (restricted ? '<div><dt>' + esc(tr("Buyer eligibility")) + '</dt><dd>' + esc(tr("Licensed or government buyers only")) + '</dd></div>' : '') + '</dl>' +
       '<p class="notice">' + esc(tr(restricted ? "This item is export-controlled. Expect to provide a dealer licence or end-user certificate before the supplier quotes." : "Some military goods are export-controlled. Ask the supplier which licences and end-user certificates apply to your destination before you order, and confirm price and delivery terms in writing.")) + '</p></section>' +
@@ -818,6 +834,27 @@ body.is-loading footer { display: none; }
   }
 
   /* ---------- data ---------- */
+  var UN = {};   // UNSPSC code -> { t: title, a: open | licensed } for the codes the loaded listings use
+  function loadCodes() {
+    var need = {}; DATA.forEach(function (b) { (b.unspsc || []).forEach(function (c) { if (!UN[c]) need[c] = 1; }); });
+    var codes = Object.keys(need); if (!LIVE || !codes.length) return;
+    sb.from("myb_unspsc").select("code,title,access").in("code", codes).then(function (r) {
+      if (r.error || !r.data) return;
+      r.data.forEach(function (x) { UN[x.code] = { t: x.title, a: x.access }; });
+      if (view === "biz" && curBiz) repaintBiz(curBiz); else if (state.q) render();
+    }, function () {});
+  }
+  function Codes(b) {
+    var cs = b.unspsc || []; if (!cs.length) return "";
+    var lic = false;
+    var items = cs.map(function (c) {
+      var u = UN[c]; if (u && u.a === "licensed") lic = true;
+      return '<li><button class="code" type="button" data-code="' + esc(c) + '" title="' + esc(tr("Find listings with this code")) + '"><b>' + esc(c) + '</b>' + (u ? '<span>' + esc(u.t) + '</span>' : '') + '</button>' + (u && u.a === "licensed" ? '<em class="code-lic">' + esc(tr("Licence may apply")) + '</em>' : '') + '</li>';
+    }).join("");
+    return '<div class="codes"><h3>' + esc(tr("UNSPSC classification")) + '</h3><ul>' + items + '</ul>' +
+      (lic ? '<p class="fine">' + esc(tr("At least one of these classes is licence-controlled. Ask the supplier which export licences and end-user certificates apply to your destination.")) + '</p>' : '') +
+      '<p class="fine">UNSPSC&reg; is the United Nations Standard Products and Services Code. Select a code to find similar listings.</p></div>';
+  }
   function matches(b) {
     if (state.region && b.region !== state.region) return false;
     if (state.country && b.country !== state.country) return false;
@@ -835,7 +872,7 @@ body.is-loading footer { display: none; }
     if (state.dest && !ships(b, state.dest)) return false;
     if (state.minRating && b.rating < state.minRating) return false;
     if (state.q) {
-      var hay = [b.name, b.cat, b.supplier, b.city, b.country, b.desc, b.certs.join(" "), b.domains.map(function (k) { return DMAP[k][1] + " " + DMAP[k][2]; }).join(" "), b.branches.map(function (k) { return BMAP[k][1] + " " + BMAP[k][2]; }).join(" ")].join(" ").toLowerCase();
+      var hay = [b.name, b.cat, b.supplier, b.city, b.country, b.desc, b.certs.join(" "), b.domains.map(function (k) { return DMAP[k][1] + " " + DMAP[k][2]; }).join(" "), b.branches.map(function (k) { return BMAP[k][1] + " " + BMAP[k][2]; }).join(" "), (b.unspsc || []).map(function (c) { return c + " " + (UN[c] ? UN[c].t : ""); }).join(" ")].join(" ").toLowerCase();
       return state.q.toLowerCase().split(/\s+/).every(function (w) { return hay.indexOf(w) > -1; });
     }
     return true;
@@ -981,7 +1018,7 @@ body.is-loading footer { display: none; }
   }
 
   function openRFQ(item, qty, notes) {
-    if (LIVE && !session) { pending = function () { openRFQ(item, qty, notes); }; return openSignIn("Sign in to send your request"); }
+    if (LIVE && !session) { pending = function () { openRFQ(item, qty, notes); }; intent = { k: "rfq", s: item ? bslug(item) : "" }; return openSignIn("Sign in to send your request"); }
     $("dlg-body").innerHTML = Head("Request a quote", item ? "Sent to " + esc(item.supplier) + " and similar suppliers." : "Describe what you need. Suppliers reply with price, minimum order and lead time.") +
       '<form id="f" novalidate>' +
       Field("r-prod", "What do you need?", "", '<input id="r-prod" value="' + (item ? esc(item.name) : "") + '" placeholder="Combat boots, rations, tents">') +
@@ -1019,8 +1056,34 @@ body.is-loading footer { display: none; }
     });
   }
 
+  var picked = [], codeSeq = 0, codeTimer = 0, catPrefix = [];
+  function paintPicked() {
+    var el = $("s-code-sel"); if (el) el.innerHTML = picked.map(function (c) { return '<button class="codeopt" type="button" data-unpick="' + esc(c.code) + '" aria-label="Remove ' + esc(c.code + " " + c.title) + '"><b>' + esc(c.code) + '</b><span>' + esc(c.title) + '</span></button>'; }).join("");
+    var q = $("s-code-q"); if (q) q.disabled = picked.length >= 5;
+  }
+  function loadCatPrefix(cat) {
+    catPrefix = []; if (!cat || !LIVE) return;
+    sb.from("myb_category_unspsc").select("code").eq("category", cat).then(function (r) { if (!r.error && r.data) catPrefix = r.data.map(function (x) { return x.code.replace(/(00)+$/, ""); }); }, function () {});
+  }
+  function codeSearch(q) {
+    var out = $("s-code-list"), my = ++codeSeq; if (!out) return;
+    q = q.replace(/[%_\\]/g, " ").trim();
+    if (q.length < 2) { out.innerHTML = ""; return; }
+    var qy = sb.from("myb_unspsc").select("code,title,level,access").gte("level", 3).neq("access", "blocked");
+    qy = /^\d+$/.test(q) ? qy.like("code", q + "%") : qy.ilike("title", "%" + q + "%");
+    qy.order("code").limit(40).then(function (r) {
+      if (my !== codeSeq || !$("s-code-list")) return;
+      if (r.error) { out.innerHTML = '<p class="fine">Could not search codes. Try again.</p>'; return; }
+      var ql = q.toLowerCase(), have = picked.map(function (c) { return c.code; });
+      var rows = r.data.filter(function (x) { return have.indexOf(x.code) < 0; });
+      function sc(x) { return (catPrefix.some(function (p) { return x.code.indexOf(p) === 0; }) ? 0 : 4) + (x.title.toLowerCase().indexOf(ql) === 0 ? 0 : 2) + (x.level === 4 ? 0 : 1); }
+      rows.sort(function (a, b) { return sc(a) - sc(b) || (a.code < b.code ? -1 : 1); });
+      out.innerHTML = rows.length ? rows.slice(0, 10).map(function (x) { return '<button class="codeopt" type="button" data-pick="' + esc(x.code) + '" data-title="' + esc(x.title) + '"><b>' + esc(x.code) + '</b><span>' + esc(x.title) + (x.access === "licensed" ? ' <em class="code-lic">· licence may apply</em>' : '') + '</span></button>'; }).join("") : '<p class="fine">No matching codes.</p>';
+    }, function () { if (my === codeSeq && $("s-code-list")) $("s-code-list").innerHTML = '<p class="fine">Could not search codes. Try again.</p>'; });
+  }
   function openSupplier() {
-    if (LIVE && !session) { pending = openSupplier; return openSignIn("Sign in to list your business"); }
+    if (LIVE && !session) { pending = openSupplier; intent = { k: "supplier" }; return openSignIn("Sign in to list your business"); }
+    picked = []; catPrefix = [];
     $("dlg-body").innerHTML = Head("List your business", "Open to legitimate suppliers of non-lethal military equipment and services, anywhere in the world.") +
       '<form id="f" novalidate>' +
       Field("s-name", "Business name", "", '<input id="s-name" autocomplete="organization">') +
@@ -1033,6 +1096,7 @@ body.is-loading footer { display: none; }
       Field("s-moq", "Minimum order", "optional", '<input id="s-moq" placeholder="500 pairs">') +
       '</div>' +
       Field("s-prod", "What you sell", "products, prices, certificates", '<textarea id="s-prod" maxlength="300"></textarea>') +
+      (LIVE ? Field("s-code-q", "UNSPSC codes", "optional, up to 5", '<div class="codepick"><div class="pickedcodes" id="s-code-sel"></div><input id="s-code-q" type="search" autocomplete="off" placeholder="Search by product or code, e.g. tents or 4912" aria-describedby="s-code-hint"><p class="fine" id="s-code-hint">Codes help buyers and procurement systems find you. Complete weapons, ammunition and explosives cannot be listed.</p><div class="codelist" id="s-code-list" aria-live="polite"></div></div>') : '') +
       '<div class="two">' +
       Field("s-phone", "Phone", "", '<input id="s-phone" type="tel" autocomplete="tel">') +
       Field("s-email", "Email", "", '<input id="s-email" type="email" autocomplete="email" value="' + esc(session ? session.email : "") + '">') +
@@ -1040,6 +1104,11 @@ body.is-loading footer { display: none; }
       Field("s-web", "Website", "optional", '<input id="s-web" autocomplete="url">') +
       '<div class="dlg-foot"><button class="btn btn-ghost btn-lg" type="button" data-close>Cancel</button><button class="btn btn-primary btn-lg" type="submit">' + (LIVE ? "Submit for review" : "Prepare my listing") + '</button></div></form>';
     dlg.classList.remove("sheet"); if (!dlg.open) dlg.showModal(); $("s-name").focus();
+    if (LIVE) {
+      $("s-code-q").addEventListener("input", function (e) { clearTimeout(codeTimer); var q = e.target.value; codeTimer = setTimeout(function () { codeSearch(q); }, 220); });
+      $("s-code-q").addEventListener("keydown", function (e) { if (e.key === "Enter") { e.preventDefault(); var first = $("s-code-list").querySelector("[data-pick]"); if (first) first.click(); } });
+      $("s-cat").addEventListener("change", function () { loadCatPrefix($("s-cat").value); });
+    }
     $("f").addEventListener("submit", function (e) {
       e.preventDefault();
       var c = validator();
@@ -1058,7 +1127,8 @@ body.is-loading footer { display: none; }
           "Offers: " + v("s-prod"),
           "Phone: " + (v("s-phone") || "-"),
           "Email: " + (v("s-email") || "-"),
-          "Website: " + (v("s-web") || "-")].join("\n");
+          "Website: " + (v("s-web") || "-"),
+          "UNSPSC: " + (picked.length ? picked.map(function (c) { return c.code + " " + c.title; }).join("; ") : "-")].join("\n");
       finishSupplier(text);
     });
   }
@@ -1299,8 +1369,9 @@ body.is-loading footer { display: none; }
 
   /* ---------- account (preview only) + menu, language, destination dialogs ---------- */
   var CFG = window.MYB_BACKEND || null, sb = null;
+  var FROM_CONFIRM = /(^|[#&?])type=signup\b/.test(location.hash + "&" + location.search);   // arriving from the confirmation email (read before supabase-js clears the hash)
   try { if (CFG && window.supabase) sb = window.supabase.createClient(CFG.url, CFG.key); } catch (e) { sb = null; }
-  var LIVE = !!sb, pending = null;
+  var LIVE = !!sb, pending = null, intent = null, lastSignupEmail = "", resumeWanted = false;
   var session = null;
   if (!LIVE) { try { session = JSON.parse(localStorage.getItem("yb-session") || "null"); } catch (e) {} }
   function setSession(s) { session = s; if (!LIVE) { try { if (s) localStorage.setItem("yb-session", JSON.stringify(s)); else localStorage.removeItem("yb-session"); } catch (e) {} } renderAcct(); }
@@ -1346,6 +1417,7 @@ body.is-loading footer { display: none; }
       Field("a-country", esc(tr("Country")), "", '<input id="a-country" list="countries" autocomplete="country-name">' + CountryList()) +
       Field("a-pw2", esc(tr("Password")), "8+ characters", Pw("a-pw2")) +
       '<div class="role" role="group" aria-label="Account type"><button type="button" data-role="buyer" aria-pressed="true">' + esc(tr("Buyer")) + '</button><button type="button" data-role="supplier" aria-pressed="false">' + esc(tr("Supplier")) + '</button></div>' +
+      '<p class="fine">By creating an account you agree to the <a href="/terms" target="_blank" rel="noopener">Terms</a> and the <a href="/privacy" target="_blank" rel="noopener">Privacy Policy</a>.</p>' +
       '<button class="btn btn-primary btn-lg" type="submit">' + esc(tr("Create account")) + '</button>' +
       (LIVE ? '' : '<p class="fine">' + PREVIEW + '</p>') +
       '<p class="fine">' + esc(tr("Already have an account?")) + ' <button class="linkbtn" type="button" data-auth="in">' + esc(tr("Sign in")) + '</button></p></form>', false, "a-name");
@@ -1391,14 +1463,34 @@ body.is-loading footer { display: none; }
     }
     e.textContent = msg || ""; e.hidden = !msg;
   }
-  function Notice(title, sub) { show(Head(title, sub) + '<div class="done"><div class="dlg-foot"><button class="btn btn-primary btn-lg" type="button" data-close>Done</button></div></div>'); }
+  function Notice(title, sub, extra) { show(Head(title, sub) + '<div class="done">' + (extra || "") + '<div class="dlg-foot"><button class="btn btn-primary btn-lg" type="button" data-close>Done</button></div></div>'); }
+  var RESEND = '<button class="linkbtn" type="button" data-resend style="justify-self:start">Resend confirmation email</button><p class="fine" id="resend-msg" role="status" hidden></p>';
+  function resendConfirm(email, btn) {
+    if (!LIVE) return;
+    var m = $("resend-msg");
+    function say(t) { lock(btn, false); if (m) { m.textContent = t; m.hidden = false; } }
+    if (!EMAIL.test(email || "")) return say("Enter your email address above first.");
+    lock(btn, true);
+    sb.auth.resend({ type: "signup", email: email, options: { emailRedirectTo: location.origin + "/" } }).then(function (r) {
+      say(r.error ? (netErr(r.error) ? "Could not reach the server. Try again." : r.error.status === 429 || /rate|limit|seconds/i.test(r.error.message || "") ? "Too many attempts. Wait a few minutes and try again." : "Could not send it. Try again in a moment.") : "If that email has an unconfirmed account, a new link is on its way.");
+    }, function () { say("Could not reach the server. Try again."); });
+  }
+  function saveIntent() { if (!intent) return; try { localStorage.setItem("yb-intent", JSON.stringify({ k: intent.k, s: intent.s || "", t: Date.now() })); } catch (e) {} }
+  function tryResume() {   // after the email link signs the person in, pick up what they were doing (list a business, request a quote)
+    if (!resumeWanted || !session || loading) return;
+    resumeWanted = false;
+    var raw = null; try { raw = JSON.parse(localStorage.getItem("yb-intent") || "null"); localStorage.removeItem("yb-intent"); } catch (e) {}
+    if (!raw || Date.now() - raw.t > 864e5) return;
+    if (raw.k === "supplier") return setTimeout(openSupplier, 200);
+    if (raw.k === "rfq") { var it = raw.s ? DATA.filter(function (x) { return bslug(x) === raw.s; })[0] : null; if (raw.s && !it) return; setTimeout(function () { openRFQ(it || null); }, 200); }
+  }
   function finishAuth() { var p = pending; pending = null; dlg.close(); if (p) setTimeout(p, 200); }
 
   function doSignIn() {
     var btn = submitBtn(); lock(btn, true);
     sb.auth.signInWithPassword({ email: v("a-email"), password: $("a-pw").value }).then(function (r) {
       lock(btn, false);
-      if (r.error) { var sm = r.error.message || ""; setErr("a-pw", netErr(r.error) ? "Could not reach the server. Try again." : /not confirmed/i.test(sm) ? "Confirm your email first: open the link we sent you." : r.error.status === 429 || /rate|too many/i.test(sm) ? "Too many attempts. Wait a few minutes and try again." : "That email and password do not match."); return; }
+      if (r.error) { var sm = r.error.message || ""; if (/not confirmed/i.test(sm) && $("f") && !$("resend-msg")) { var rd = document.createElement("div"); rd.className = "stack"; rd.innerHTML = RESEND; $("f").insertBefore(rd, submitBtn()); } setErr("a-pw", netErr(r.error) ? "Could not reach the server. Try again." : /not confirmed/i.test(sm) ? "Confirm your email first: open the link we sent you." : r.error.status === 429 || /rate|too many/i.test(sm) ? "Too many attempts. Wait a few minutes and try again." : "That email and password do not match."); return; }
       setSession(userToSession(r.data.user)); toast(tr("Sign in") + " ✓"); finishAuth();
     }, function () { lock(btn, false); setErr("a-pw", "Could not reach the server. Try again."); });
   }
@@ -1408,8 +1500,8 @@ body.is-loading footer { display: none; }
       lock(btn, false);
       if (r.error) { setErr("a-email", netErr(r.error) ? "Could not reach the server. Try again." : /already|registered/i.test(r.error.message) ? "That email already has an account. Sign in instead." : /rate|limit/i.test(r.error.message) ? "Too many attempts. Wait a few minutes and try again." : "Could not create the account. Check the details and try again."); return; }
       if (r.data.session) { setSession(userToSession(r.data.user)); toast(tr("Create account") + " ✓"); return finishAuth(); }
-      pending = null;
-      Notice("Check your email", "We sent a confirmation link to " + esc(email) + ". Open it, then sign in.");
+      pending = null; lastSignupEmail = email; saveIntent();
+      Notice("Check your email", "We sent a confirmation link to " + esc(email) + ". Open it and you will be signed in" + (intent ? " and taken back to what you were doing" : "") + ".", RESEND);
     }, function () { lock(btn, false); setErr("a-email", "Could not reach the server. Try again."); });
   }
   function doReset() {
@@ -1453,16 +1545,16 @@ body.is-loading footer { display: none; }
     b.slug = r.slug; b.sample = !!r.is_sample; b.rating = Number(r.sample_rating) || 0; b.reviews = r.sample_reviews || 0;
     b.sr = b.rating; b.sc = b.reviews; b.real = r.review_count > 0;
     if (b.real) { b.rating = Math.round(Number(r.rating_avg) * 10) / 10; b.reviews = r.review_count; }
-    b.domains = r.domains || []; b.branches = r.branches || [];
+    b.domains = r.domains || []; b.branches = r.branches || []; b.unspsc = r.unspsc || [];
     if (!/\d/.test(r.lead || "")) b.leadD = 999;
     return b;
   }
-  var LCOLS = "slug,name,category,supplier,city,country,region,unit,price,moq,lead,certs,ships,verified,years,descr,specs,contact,flat,domains,branches,sample_rating,sample_reviews,review_count,rating_avg,is_sample,status,position,created_at";
+  var LCOLS = "slug,name,category,supplier,city,country,region,unit,price,moq,lead,certs,ships,verified,years,descr,specs,contact,flat,domains,branches,sample_rating,sample_reviews,review_count,rating_avg,is_sample,status,position,created_at,unspsc";
   function loadListings() {
     loading = true; render();
     sb.from("myb_listings").select(LCOLS).eq("status", "live").order("position", { ascending: true, nullsFirst: false }).order("created_at", { ascending: true }).limit(2000).then(function (r) {
-      if (!r.error && r.data && r.data.length) { DATA.length = 0; r.data.forEach(function (x) { DATA.push(fromRow(x)); }); syncFavs(); }
-      loading = false; render(); route();
+      if (!r.error && r.data && r.data.length) { DATA.length = 0; r.data.forEach(function (x) { DATA.push(fromRow(x)); }); syncFavs(); loadCodes(); }
+      loading = false; render(); route(); tryResume();
     }, function () { loading = false; render(); });
   }
   function LoadFail() {
@@ -1480,7 +1572,7 @@ body.is-loading footer { display: none; }
   function finishSupplier(text) {
     if (!LIVE) return showDone("Your listing is ready to send", "Copy it and send it to the directory team. We check each business before it is marked Verified.", text);
     var btn = submitBtn(); lock(btn, true); formErr("");
-    sb.from("myb_submissions").insert({ business_name: v("s-name"), category: v("s-cat"), country: v("s-country"), city: v("s-city"), min_order: v("s-moq") || null, offers: v("s-prod"), phone: v("s-phone") || null, email: v("s-email") || null, website: v("s-web") || null }).then(function (r) {
+    sb.from("myb_submissions").insert({ business_name: v("s-name"), category: v("s-cat"), country: v("s-country"), city: v("s-city"), min_order: v("s-moq") || null, offers: v("s-prod"), phone: v("s-phone") || null, email: v("s-email") || null, website: v("s-web") || null, unspsc: picked.map(function (c) { return c.code; }) }).then(function (r) {
       if (r.error) { lock(btn, false); return formErr(expired(r.error) ? "Your session expired. Sign in again." : dbmsg(r.error)); }
       Notice("Submitted for review", "Thanks. We check each business before it goes live and is marked Verified.");
     }, function () { lock(btn, false); formErr("Could not reach the server. Try again."); });
@@ -1543,6 +1635,7 @@ body.is-loading footer { display: none; }
     sb.auth.onAuthStateChange(function (ev, s) {
       setSession(userToSession(s && s.user));
       if (ev === "PASSWORD_RECOVERY") setTimeout(openNewPassword, 0);
+      if (FROM_CONFIRM && s && s.user && ev === "SIGNED_IN") { FROM_CONFIRM = false; resumeWanted = true; setTimeout(function () { toast("Email confirmed. You are signed in ✓"); tryResume(); }, 300); }
       if (s && s.user && (ev === "SIGNED_IN" || ev === "INITIAL_SESSION")) setTimeout(syncFavs, 0);
       if (ev === "SIGNED_OUT") lastSync = "";
       if (view === "biz" && curBiz && (ev === "SIGNED_IN" || ev === "SIGNED_OUT")) setTimeout(function () { loadReviews(curBiz); }, 0);
@@ -1734,11 +1827,15 @@ body.is-loading footer { display: none; }
     if (t.dataset.step) { var qe = $("qty"), cq = parseInt(qe.value.replace(/\D/g, ""), 10) || 0, stp = curBiz.moqN < 20 ? 1 : Math.max(1, Math.round(curBiz.moqN / 10)); qe.value = Math.max(1, cq + stp * Number(t.dataset.step)); return updateCalc(); }
     if (t.dataset.vv !== undefined) { var was = t.getAttribute("aria-pressed") === "true"; dlg.ownerDocument.querySelectorAll('.vchip[data-vg="' + t.dataset.vg + '"]').forEach(function (x) { x.setAttribute("aria-pressed", "false"); }); t.setAttribute("aria-pressed", String(!was)); return; }
     if (t.dataset.save !== undefined) { var fk = curBiz.name + curBiz.supplier, fl = favs(), fi = fl.indexOf(fk); if (fi > -1) fl.splice(fi, 1); else fl.push(fk); try { localStorage.setItem("yb-fav", JSON.stringify(fl)); } catch (e) {} syncFav(curBiz, fi < 0); t.setAttribute("aria-pressed", String(fi < 0)); t.querySelector("span").textContent = tr(fi < 0 ? "Saved" : "Save"); return toast(tr(fi < 0 ? "Saved" : "Save") + (fi < 0 ? " ✓" : " ×")); }
+    if (t.dataset.code) { $("q").value = t.dataset.code; state.q = t.dataset.code; if (view === "biz") { savedY = 0; location.hash = ""; } render(); window.scrollTo(0, 0); return; }
+    if (t.dataset.pick) { if (picked.length < 5) picked.push({ code: t.dataset.pick, title: t.dataset.title }); paintPicked(); $("s-code-q").value = ""; $("s-code-list").innerHTML = ""; if (picked.length < 5) $("s-code-q").focus(); return; }
+    if (t.dataset.unpick) { picked = picked.filter(function (c) { return c.code !== t.dataset.unpick; }); paintPicked(); return; }
+    if (t.hasAttribute("data-resend")) return resendConfirm($("a-email") ? v("a-email") : lastSignupEmail, t);
     if (t.hasAttribute("data-retry")) return LIVE ? loadListings() : location.reload();
     if (t.dataset.rstar) { rate = Number(t.dataset.rstar); t.parentNode.querySelectorAll("[data-rstar]").forEach(function (x) { x.setAttribute("aria-pressed", String(Number(x.dataset.rstar) <= rate)); }); if ($("rv-rate-err")) $("rv-rate-err").hidden = true; return; }
     if (t.hasAttribute("data-rsignin")) { pending = function () { if (view === "biz" && curBiz) loadReviews(curBiz); }; return openSignIn("Sign in to write a review"); }
     if (t.dataset.rdel) { var rb = curBiz; return sb.from("myb_reviews").delete().eq("id", Number(t.dataset.rdel)).then(function (r) { toast(r.error ? "Could not delete that review." : "Review deleted."); refreshRating(rb, function () { repaintBiz(rb); }); }); }
-    if (t.hasAttribute("data-share")) return copy(location.href, tr("Link copied."));
+    if (t.hasAttribute("data-share")) return copy(LIVE && curBiz && /^[a-z0-9-]+$/.test(bslug(curBiz)) ? location.origin + "/l/" + bslug(curBiz) : location.href, tr("Link copied."));
     if (t.dataset.tab) { var ts = $(t.dataset.tab); document.querySelectorAll(".tabs button").forEach(function (x) { x.setAttribute("aria-current", String(x === t)); }); if (ts) ts.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" }); return; }
     if (t.dataset.quote !== undefined) {
       var qi = findItem(t.dataset.quote), qq = "", qn = "";
