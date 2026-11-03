@@ -42,6 +42,10 @@ def verify(reviewed, client):
     return ok, bad
 
 
+# sources whose release package itself states the licence (a statement by the publisher, not a constant in our code)
+PAYLOAD_LICENCE = {"uk_fts", "uk_cf"}
+
+
 def live_claims(samples_dir, endpoints):
     """From the recorded runs: which sources answered anonymously with schema-valid records, and the licence their records carry."""
     out = []
@@ -54,7 +58,7 @@ def live_claims(samples_dir, endpoints):
         out.append({"source_id": sid, "field": "authentication", "method": "live_call", "url": endpoints.get(sid),
                     "value": "none needed: an anonymous request returned %d records that validated" % len(recs),
                     "quote": "run %s, %s, no credential sent" % (run["run_id"], run["started_at"])})
-        lic = sorted({r["licence"] for r in recs if r.get("licence")})
+        lic = sorted({r["licence"] for r in recs if r.get("licence")}) if sid in PAYLOAD_LICENCE else []
         if lic:
             out.append({"source_id": sid, "field": "licence_in_records", "method": "live_call", "url": endpoints.get(sid),
                         "value": "; ".join(lic), "quote": "licence carried by the records of run %s" % run["run_id"]})

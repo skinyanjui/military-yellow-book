@@ -1,0 +1,727 @@
+[
+ {
+  "source_id": "usaspending",
+  "checks": [
+   {
+    "external_id": "CONT_AWD_N0002417C2100_9700_-NONE-_-NONE-",
+    "url": "https://api.usaspending.gov/api/v2/awards/CONT_AWD_N0002417C2100_9700_-NONE-_-NONE-/",
+    "status": 200,
+    "verdict": "match",
+    "route": "independent",
+    "compared": {
+     "fields": [
+      "award_id",
+      "obligated",
+      "supplier",
+      "title",
+      "period_start"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   },
+   {
+    "external_id": "CONT_AWD_N0001923C0003_9700_-NONE-_-NONE-",
+    "url": "https://api.usaspending.gov/api/v2/awards/CONT_AWD_N0001923C0003_9700_-NONE-_-NONE-/",
+    "status": 200,
+    "verdict": "match",
+    "route": "independent",
+    "compared": {
+     "fields": [
+      "award_id",
+      "obligated",
+      "supplier",
+      "title",
+      "period_start"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   },
+   {
+    "external_id": "CONT_AWD_N0002418C2130_9700_-NONE-_-NONE-",
+    "url": "https://api.usaspending.gov/api/v2/awards/CONT_AWD_N0002418C2130_9700_-NONE-_-NONE-/",
+    "status": 200,
+    "verdict": "match",
+    "route": "independent",
+    "compared": {
+     "fields": [
+      "award_id",
+      "obligated",
+      "supplier",
+      "title",
+      "period_start"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   },
+   {
+    "external_id": "CONT_AWD_HQ014717C0032_9700_-NONE-_-NONE-",
+    "url": "https://api.usaspending.gov/api/v2/awards/CONT_AWD_HQ014717C0032_9700_-NONE-_-NONE-/",
+    "status": 200,
+    "verdict": "match",
+    "route": "independent",
+    "compared": {
+     "fields": [
+      "award_id",
+      "obligated",
+      "supplier",
+      "title",
+      "period_start"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   },
+   {
+    "external_id": "CONT_AWD_HT940223C0002_9700_-NONE-_-NONE-",
+    "url": "https://api.usaspending.gov/api/v2/awards/CONT_AWD_HT940223C0002_9700_-NONE-_-NONE-/",
+    "status": 200,
+    "verdict": "match",
+    "route": "independent",
+    "compared": {
+     "fields": [
+      "award_id",
+      "obligated",
+      "supplier",
+      "title",
+      "period_start"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   }
+  ]
+ },
+ {
+  "source_id": "uk_fts",
+  "checks": [
+   {
+    "external_id": "104434-2026",
+    "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages/104434-2026",
+    "status": 200,
+    "verdict": "match",
+    "route": "independent",
+    "compared": {
+     "hash_equal": true,
+     "fields": [
+      "title",
+      "country",
+      "buyer",
+      "value",
+      "awards",
+      "contracts"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   },
+   {
+    "external_id": "104430-2026",
+    "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages/104430-2026",
+    "status": 200,
+    "verdict": "match",
+    "route": "independent",
+    "compared": {
+     "hash_equal": true,
+     "fields": [
+      "title",
+      "country",
+      "buyer",
+      "value",
+      "awards",
+      "contracts"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   },
+   {
+    "external_id": "104425-2026",
+    "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages/104425-2026",
+    "status": 200,
+    "verdict": "match",
+    "route": "independent",
+    "compared": {
+     "hash_equal": true,
+     "fields": [
+      "title",
+      "country",
+      "buyer",
+      "value",
+      "awards",
+      "contracts"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   },
+   {
+    "external_id": "104421-2026",
+    "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages/104421-2026",
+    "status": 200,
+    "verdict": "match",
+    "route": "independent",
+    "compared": {
+     "hash_equal": true,
+     "fields": [
+      "title",
+      "country",
+      "buyer",
+      "value",
+      "awards",
+      "contracts"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   },
+   {
+    "external_id": "104416-2026",
+    "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages/104416-2026",
+    "status": 200,
+    "verdict": "match",
+    "route": "independent",
+    "compared": {
+     "hash_equal": true,
+     "fields": [
+      "title",
+      "country",
+      "buyer",
+      "value",
+      "awards",
+      "contracts"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   }
+  ]
+ },
+ {
+  "source_id": "uk_cf",
+  "checks": [
+   {
+    "external_id": "1b4a437f-0195-422a-8922-25df1afac794-920216",
+    "url": "https://www.contractsfinder.service.gov.uk/Published/OCDS/Release/1b4a437f-0195-422a-8922-25df1afac794-920216",
+    "status": 200,
+    "verdict": "match",
+    "route": "independent",
+    "compared": {
+     "hash_equal": true,
+     "fields": [
+      "title",
+      "country",
+      "buyer",
+      "value",
+      "awards",
+      "contracts"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   },
+   {
+    "external_id": "77c5b115-d334-41c1-8395-13641b6b0011-920182",
+    "url": "https://www.contractsfinder.service.gov.uk/Published/OCDS/Release/77c5b115-d334-41c1-8395-13641b6b0011-920182",
+    "status": 200,
+    "verdict": "match",
+    "route": "independent",
+    "compared": {
+     "hash_equal": true,
+     "fields": [
+      "title",
+      "country",
+      "buyer",
+      "value",
+      "awards",
+      "contracts"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   },
+   {
+    "external_id": "7616d874-383e-479e-ab24-d97c0a2ce48f-920033",
+    "url": "https://www.contractsfinder.service.gov.uk/Published/OCDS/Release/7616d874-383e-479e-ab24-d97c0a2ce48f-920033",
+    "status": 200,
+    "verdict": "match",
+    "route": "independent",
+    "compared": {
+     "hash_equal": true,
+     "fields": [
+      "title",
+      "country",
+      "buyer",
+      "value",
+      "awards",
+      "contracts"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   },
+   {
+    "external_id": "7c6ef10d-d97d-451f-840d-27145639fc9e-919842",
+    "url": "https://www.contractsfinder.service.gov.uk/Published/OCDS/Release/7c6ef10d-d97d-451f-840d-27145639fc9e-919842",
+    "status": 200,
+    "verdict": "match",
+    "route": "independent",
+    "compared": {
+     "hash_equal": true,
+     "fields": [
+      "title",
+      "country",
+      "buyer",
+      "value",
+      "awards",
+      "contracts"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   },
+   {
+    "external_id": "1a3ab83a-b601-48e0-b584-55054606f5df-919732",
+    "url": "https://www.contractsfinder.service.gov.uk/Published/OCDS/Release/1a3ab83a-b601-48e0-b584-55054606f5df-919732",
+    "status": 200,
+    "verdict": "match",
+    "route": "independent",
+    "compared": {
+     "hash_equal": true,
+     "fields": [
+      "title",
+      "country",
+      "buyer",
+      "value",
+      "awards",
+      "contracts"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   }
+  ]
+ },
+ {
+  "source_id": "worldbank_procurement",
+  "checks": [
+   {
+    "external_id": "478503",
+    "url": "https://datacatalogapi.worldbank.org/dexapps/fone/api/apiservice?filter=id = 478503",
+    "status": 200,
+    "verdict": "match",
+    "route": "same_api_by_id",
+    "compared": {
+     "hash_equal": true,
+     "fields": [
+      "title",
+      "country",
+      "buyer",
+      "value",
+      "awards",
+      "contracts"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   },
+   {
+    "external_id": "478507",
+    "url": "https://datacatalogapi.worldbank.org/dexapps/fone/api/apiservice?filter=id = 478507",
+    "status": 200,
+    "verdict": "match",
+    "route": "same_api_by_id",
+    "compared": {
+     "hash_equal": true,
+     "fields": [
+      "title",
+      "country",
+      "buyer",
+      "value",
+      "awards",
+      "contracts"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   },
+   {
+    "external_id": "478512",
+    "url": "https://datacatalogapi.worldbank.org/dexapps/fone/api/apiservice?filter=id = 478512",
+    "status": 200,
+    "verdict": "match",
+    "route": "same_api_by_id",
+    "compared": {
+     "hash_equal": true,
+     "fields": [
+      "title",
+      "country",
+      "buyer",
+      "value",
+      "awards",
+      "contracts"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   },
+   {
+    "external_id": "478518",
+    "url": "https://datacatalogapi.worldbank.org/dexapps/fone/api/apiservice?filter=id = 478518",
+    "status": 200,
+    "verdict": "match",
+    "route": "same_api_by_id",
+    "compared": {
+     "hash_equal": true,
+     "fields": [
+      "title",
+      "country",
+      "buyer",
+      "value",
+      "awards",
+      "contracts"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   },
+   {
+    "external_id": "478523",
+    "url": "https://datacatalogapi.worldbank.org/dexapps/fone/api/apiservice?filter=id = 478523",
+    "status": 200,
+    "verdict": "match",
+    "route": "same_api_by_id",
+    "compared": {
+     "hash_equal": true,
+     "fields": [
+      "title",
+      "country",
+      "buyer",
+      "value",
+      "awards",
+      "contracts"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   }
+  ]
+ },
+ {
+  "source_id": "colombia_secop",
+  "checks": [
+   {
+    "external_id": "CO1.PCCNTR.10137912",
+    "url": "https://www.datos.gov.co/resource/jbjy-vk9h.json?id_contrato=CO1.PCCNTR.10137912",
+    "status": 200,
+    "verdict": "match",
+    "route": "same_api_by_id",
+    "compared": {
+     "hash_equal": false,
+     "fields": [
+      "title",
+      "country",
+      "buyer",
+      "value",
+      "awards",
+      "contracts"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   },
+   {
+    "external_id": "CO1.PCCNTR.10137910",
+    "url": "https://www.datos.gov.co/resource/jbjy-vk9h.json?id_contrato=CO1.PCCNTR.10137910",
+    "status": 200,
+    "verdict": "match",
+    "route": "same_api_by_id",
+    "compared": {
+     "hash_equal": true,
+     "fields": [
+      "title",
+      "country",
+      "buyer",
+      "value",
+      "awards",
+      "contracts"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   },
+   {
+    "external_id": "CO1.PCCNTR.10137909",
+    "url": "https://www.datos.gov.co/resource/jbjy-vk9h.json?id_contrato=CO1.PCCNTR.10137909",
+    "status": 200,
+    "verdict": "match",
+    "route": "same_api_by_id",
+    "compared": {
+     "hash_equal": true,
+     "fields": [
+      "title",
+      "country",
+      "buyer",
+      "value",
+      "awards",
+      "contracts"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   },
+   {
+    "external_id": "CO1.PCCNTR.10136388",
+    "url": "https://www.datos.gov.co/resource/jbjy-vk9h.json?id_contrato=CO1.PCCNTR.10136388",
+    "status": 200,
+    "verdict": "match",
+    "route": "same_api_by_id",
+    "compared": {
+     "hash_equal": true,
+     "fields": [
+      "title",
+      "country",
+      "buyer",
+      "value",
+      "awards",
+      "contracts"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   },
+   {
+    "external_id": "CO1.PCCNTR.10131221",
+    "url": "https://www.datos.gov.co/resource/jbjy-vk9h.json?id_contrato=CO1.PCCNTR.10131221",
+    "status": 200,
+    "verdict": "match",
+    "route": "same_api_by_id",
+    "compared": {
+     "hash_equal": true,
+     "fields": [
+      "title",
+      "country",
+      "buyer",
+      "value",
+      "awards",
+      "contracts"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   }
+  ]
+ },
+ {
+  "source_id": "ted",
+  "checks": [
+   {
+    "external_id": "741139-2026",
+    "url": "https://api.ted.europa.eu/v3/notices/search?publication-number=741139-2026",
+    "status": 200,
+    "verdict": "match",
+    "route": "same_api_by_id",
+    "compared": {
+     "hash_equal": true,
+     "fields": [
+      "title",
+      "country",
+      "buyer",
+      "value",
+      "awards",
+      "contracts"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   },
+   {
+    "external_id": "741273-2026",
+    "url": "https://api.ted.europa.eu/v3/notices/search?publication-number=741273-2026",
+    "status": 200,
+    "verdict": "match",
+    "route": "same_api_by_id",
+    "compared": {
+     "hash_equal": true,
+     "fields": [
+      "title",
+      "country",
+      "buyer",
+      "value",
+      "awards",
+      "contracts"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   },
+   {
+    "external_id": "741694-2026",
+    "url": "https://api.ted.europa.eu/v3/notices/search?publication-number=741694-2026",
+    "status": 200,
+    "verdict": "match",
+    "route": "same_api_by_id",
+    "compared": {
+     "hash_equal": true,
+     "fields": [
+      "title",
+      "country",
+      "buyer",
+      "value",
+      "awards",
+      "contracts"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   },
+   {
+    "external_id": "741853-2026",
+    "url": "https://api.ted.europa.eu/v3/notices/search?publication-number=741853-2026",
+    "status": 200,
+    "verdict": "match",
+    "route": "same_api_by_id",
+    "compared": {
+     "hash_equal": true,
+     "fields": [
+      "title",
+      "country",
+      "buyer",
+      "value",
+      "awards",
+      "contracts"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   },
+   {
+    "external_id": "742032-2026",
+    "url": "https://api.ted.europa.eu/v3/notices/search?publication-number=742032-2026",
+    "status": 200,
+    "verdict": "match",
+    "route": "same_api_by_id",
+    "compared": {
+     "hash_equal": true,
+     "fields": [
+      "title",
+      "country",
+      "buyer",
+      "value",
+      "awards",
+      "contracts"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   }
+  ]
+ },
+ {
+  "source_id": "brazil_pncp",
+  "checks": [
+   {
+    "external_id": "compra:88124961000159-1-000129/2026",
+    "url": "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao?cnpj=...",
+    "status": 200,
+    "verdict": "match",
+    "route": "same_api_by_id",
+    "compared": {
+     "hash_equal": true,
+     "fields": [
+      "title",
+      "country",
+      "buyer",
+      "value",
+      "awards",
+      "contracts"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   },
+   {
+    "external_id": "compra:01616520000196-1-000134/2026",
+    "url": "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao?cnpj=...",
+    "status": 200,
+    "verdict": "match",
+    "route": "same_api_by_id",
+    "compared": {
+     "hash_equal": true,
+     "fields": [
+      "title",
+      "country",
+      "buyer",
+      "value",
+      "awards",
+      "contracts"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   },
+   {
+    "external_id": "compra:00444232000139-1-001435/2026",
+    "url": "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao?cnpj=...",
+    "status": 200,
+    "verdict": "match",
+    "route": "same_api_by_id",
+    "compared": {
+     "hash_equal": true,
+     "fields": [
+      "title",
+      "country",
+      "buyer",
+      "value",
+      "awards",
+      "contracts"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   },
+   {
+    "external_id": "contrato:83039842000184-2-003094/2026",
+    "url": "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao?cnpj=...",
+    "status": 200,
+    "verdict": "match",
+    "route": "same_api_by_id",
+    "compared": {
+     "hash_equal": true,
+     "fields": [
+      "title",
+      "country",
+      "buyer",
+      "value",
+      "awards",
+      "contracts"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   },
+   {
+    "external_id": "contrato:00394460005887-2-005974/2026",
+    "url": "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao?cnpj=...",
+    "status": 200,
+    "verdict": "match",
+    "route": "same_api_by_id",
+    "compared": {
+     "hash_equal": true,
+     "fields": [
+      "title",
+      "country",
+      "buyer",
+      "value",
+      "awards",
+      "contracts"
+     ],
+     "diffs": {}
+    },
+    "note": null
+   }
+  ]
+ }
+]
