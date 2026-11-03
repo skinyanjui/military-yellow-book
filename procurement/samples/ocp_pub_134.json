@@ -1,0 +1,2784 @@
+{
+ "run": {
+  "run_id": "8c11a759-7401-42c6-a35c-da30bbe1e277",
+  "source_id": "ocp_pub_134",
+  "mode": "test",
+  "started_at": "2026-11-03T17:38:32+00:00",
+  "params": {
+   "limit": 20,
+   "since": "2026-10-27T17:38:32",
+   "until": "2026-11-03T17:38:32",
+   "publication": 134,
+   "country": "AL",
+   "publisher": "Public Procurement Commission (PPC)",
+   "days": 7,
+   "schema_errors": 0
+  },
+  "cursor_before": null,
+  "transform_version": "myb-procurement-0.1",
+  "status": "success",
+  "fetched": 20,
+  "drift": {
+   "missing": [],
+   "unexpected": [
+    "complaints"
+   ]
+  },
+  "cursor_after": {
+   "high_water": "2025-08-20T00:00:00"
+  }
+ },
+ "records": [
+  {
+   "external_id": "ocds-k348cx-Mali Kolezes, Himare, Qarku Vlore, lloji i mineralit gure gelqerore-2023-09-01T00:00:00Z",
+   "content_hash": "65eeadf995f3dfaf29400c2c094864ef8e13c6f7392f398aaab4f74f7ff5d2db",
+   "fetched_at": "2026-11-03T17:38:32+00:00",
+   "publisher": "Public Procurement Commission (PPC)",
+   "published_at": "2023-09-01T00:00:00+00:00",
+   "source_updated_at": "2023-09-01T00:00:00+00:00",
+   "language": "sq",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "id": "ocds-k348cx-Mali Kolezes, Himare, Qarku Vlore, lloji i mineralit gure gelqerore-2023-09-01T00:00:00Z",
+    "tag": [
+     "compiled"
+    ],
+    "date": "2023-09-01T00:00:00Z",
+    "ocid": "ocds-k348cx-Mali Kolezes, Himare, Qarku Vlore, lloji i mineralit gure gelqerore",
+    "tender": {
+     "id": "Mali Kolezes, Himare, Qarku Vlore, lloji i mineralit gure gelqerore",
+     "items": [
+      {
+       "id": "1",
+       "cpv_code": false
+      }
+     ],
+     "title": "Mali Kolezes, Himare, Qarku Vlore, lloji mineralit gure gelqeror",
+     "value": {
+      "currency": "ALL"
+     },
+     "description": "Mali Kolezes, Himare, Qarku Vlore, lloji mineralit gure gelqeror",
+     "procuringEntity": {
+      "id": "AL-QKB-Ministria e Infrastruktures dhe Energjise",
+      "name": "Ministria e Infrastruktures dhe Energjise"
+     },
+     "participationFees": [
+      {
+       "id": "1",
+       "value": {
+        "currency": "ALL"
+       },
+       "description": "Fee payable for submitting a complaint"
+      }
+     ],
+     "mainProcurementCategory": [
+      "Leje minerare"
+     ]
+    },
+    "parties": [
+     {
+      "id": "AL-QKB-M31427033C",
+      "name": "BROS STONE GROUP",
+      "roles": [
+       "complainant"
+      ],
+      "address": {
+       "streetAddress": "    Tirane TIRANE Tirane Rruga Abdi Toptani ,Nd Torre Drini ,Kati 10 ,Ap.106 Tirane"
+      },
+      "identifier": {
+       "id": "M31427033C",
+       "scheme": "AL-QKB",
+       "legalName": "BROS STONE GROUP"
+      }
+     },
+     {
+      "id": "1",
+      "name": "Ministria e Infrastruktures dhe Energjise",
+      "roles": [
+       "procuringEntity"
+      ],
+      "identifier": {
+       "id": "M31427033C",
+       "scheme": "AL-DPT"
+      }
+     }
+    ],
+    "language": "sq",
+    "complaints": {
+     "id": "2146/2023",
+     "date": "2023-09-01T00:00:00Z",
+     "author": {
+      "id": "AL-QKB-M31427033C",
+      "name": "BROS STONE GROUP"
+     },
+     "decision": {
+      "id": "1052/2023",
+      "date": "2023-10-17T00:00:00Z",
+      "type": "VP - Vendim Perfundimtar",
+      "result": "VP - Vendim Perfundimtar",
+      "appealResult": "resolved"
+     },
+     "reviewDate": "2023-09-01T00:00:00Z",
+     "publicProcurementCommissionProtocolDate": "2023-09-01T00:00:00Z"
+    },
+    "initiationType": "tender"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-k348cx-Mali Kolezes, Himare, Qarku Vlore, lloji i mineralit gure gelqerore",
+    "ocid_native": true,
+    "stage": "tender",
+    "title": "Mali Kolezes, Himare, Qarku Vlore, lloji mineralit gure gelqeror",
+    "description": "Mali Kolezes, Himare, Qarku Vlore, lloji mineralit gure gelqeror",
+    "buyer": null,
+    "country": "AL",
+    "status": null,
+    "procurement_method": null,
+    "main_category": [
+     "Leje minerare"
+    ],
+    "value": null,
+    "published_at": "2023-09-01T00:00:00+00:00",
+    "updated_at": "2023-09-01T00:00:00+00:00",
+    "tender_start": null,
+    "tender_end": null,
+    "classifications": [],
+    "items": [
+     {
+      "id": "1"
+     }
+    ],
+    "language": "sq",
+    "url": null
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "ocds-k348cx-Per zonen minerare nr.22/31 Objekti Gjorma Bashkia Elbasan-2023-08-08T00:00:00Z",
+   "content_hash": "7c1b085579f2fe27251560511e18f7a4266bc19e198e2728273e481cdc124659",
+   "fetched_at": "2026-11-03T17:38:32+00:00",
+   "publisher": "Public Procurement Commission (PPC)",
+   "published_at": "2023-08-08T00:00:00+00:00",
+   "source_updated_at": "2023-08-08T00:00:00+00:00",
+   "language": "sq",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "id": "ocds-k348cx-Per zonen minerare nr.22/31 Objekti Gjorma Bashkia Elbasan-2023-08-08T00:00:00Z",
+    "tag": [
+     "compiled"
+    ],
+    "date": "2023-08-08T00:00:00Z",
+    "ocid": "ocds-k348cx-Per zonen minerare nr.22/31 Objekti Gjorma Bashkia Elbasan",
+    "tender": {
+     "id": "Per zonen minerare nr.22/31 Objekti Gjorma Bashkia Elbasan",
+     "items": [
+      {
+       "id": "1",
+       "cpv_code": false
+      }
+     ],
+     "title": "Zona minerare 22/31 Objekti Gjorma Bashkia Elbasan",
+     "value": {
+      "currency": "ALL"
+     },
+     "description": "Zona minerare 22/31 Objekti Gjorma Bashkia Elbasan",
+     "procuringEntity": {
+      "id": "AL-QKB-Ministria e Infrastruktures dhe Energjise",
+      "name": "Ministria e Infrastruktures dhe Energjise"
+     },
+     "participationFees": [
+      {
+       "id": "1",
+       "value": {
+        "currency": "ALL"
+       },
+       "description": "Fee payable for submitting a complaint"
+      }
+     ],
+     "mainProcurementCategory": [
+      "Leje minerare"
+     ]
+    },
+    "parties": [
+     {
+      "id": "AL-QKB-J62207004a",
+      "name": "ALBA",
+      "roles": [
+       "complainant"
+      ],
+      "address": {
+       "streetAddress": "   Petrele Njesia Administrative Petrelë, Fshati Stërmas"
+      },
+      "identifier": {
+       "id": "J62207004a",
+       "scheme": "AL-QKB",
+       "legalName": "ALBA"
+      }
+     },
+     {
+      "id": "1",
+      "name": "Ministria e Infrastruktures dhe Energjise",
+      "roles": [
+       "procuringEntity"
+      ],
+      "identifier": {
+       "id": "J62207004a",
+       "scheme": "AL-DPT"
+      }
+     }
+    ],
+    "language": "sq",
+    "complaints": {
+     "id": "1935/2023",
+     "date": "2023-08-08T00:00:00Z",
+     "author": {
+      "id": "AL-QKB-J62207004a",
+      "name": "ALBA"
+     },
+     "decision": {
+      "id": "1046/2023",
+      "date": "2023-10-16T00:00:00Z",
+      "type": "VP - Vendim Perfundimtar",
+      "result": "VP - Vendim Perfundimtar",
+      "appealResult": "resolved"
+     },
+     "reviewDate": "2023-08-08T00:00:00Z",
+     "publicProcurementCommissionProtocolDate": "2023-08-08T00:00:00Z"
+    },
+    "initiationType": "tender"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-k348cx-Per zonen minerare nr.22/31 Objekti Gjorma Bashkia Elbasan",
+    "ocid_native": true,
+    "stage": "tender",
+    "title": "Zona minerare 22/31 Objekti Gjorma Bashkia Elbasan",
+    "description": "Zona minerare 22/31 Objekti Gjorma Bashkia Elbasan",
+    "buyer": null,
+    "country": "AL",
+    "status": null,
+    "procurement_method": null,
+    "main_category": [
+     "Leje minerare"
+    ],
+    "value": null,
+    "published_at": "2023-08-08T00:00:00+00:00",
+    "updated_at": "2023-08-08T00:00:00+00:00",
+    "tender_start": null,
+    "tender_end": null,
+    "classifications": [],
+    "items": [
+     {
+      "id": "1"
+     }
+    ],
+    "language": "sq",
+    "url": null
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "ocds-k348cx-57015-08-04-2025-2025-08-20T00:00:00Z",
+   "content_hash": "7893806f3d4d99597d8d22ae7639bb708357040e247d1e3e048033bf990a3705",
+   "fetched_at": "2026-11-03T17:38:32+00:00",
+   "publisher": "Public Procurement Commission (PPC)",
+   "published_at": "2025-08-20T00:00:00+00:00",
+   "source_updated_at": "2025-08-20T00:00:00+00:00",
+   "language": "sq",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "id": "ocds-k348cx-57015-08-04-2025-2025-08-20T00:00:00Z",
+    "tag": [
+     "compiled"
+    ],
+    "date": "2025-08-20T00:00:00Z",
+    "ocid": "ocds-k348cx-57015-08-04-2025",
+    "tender": {
+     "id": "57015-08-04-2025",
+     "items": [
+      {
+       "id": "1",
+       "cpv_code": "35121500-3"
+      }
+     ],
+     "title": "Blerje vula per nevoja te FSHU sha",
+     "value": {
+      "currency": "ALL"
+     },
+     "description": "Blerje vula per nevoja te FSHU sha",
+     "identifiers": "REF-57015-08-04-2025",
+     "procuringEntity": {
+      "id": "AL-QKB-Operatori i Shperndarjes se Energjise Elektrike Group sh.a",
+      "name": "Operatori i Shperndarjes se Energjise Elektrike Group sh.a"
+     },
+     "participationFees": [
+      {
+       "id": "1",
+       "value": {
+        "currency": "ALL"
+       },
+       "description": "Fee payable for submitting a complaint"
+      }
+     ],
+     "mainProcurementCategory": [
+      "Mallra"
+     ]
+    },
+    "parties": [
+     {
+      "id": "AL-QKB-K41504502F",
+      "name": "SHKËLQIM QENDRO",
+      "roles": [
+       "complainant"
+      ],
+      "address": {
+       "streetAddress": "Lagjja 3, Rruga Ramazan Jella, Pallat 9 katesh, Kati i pare, Zona Kadastrale 8514, Nr.Pasurie 3/371-N4"
+      },
+      "identifier": {
+       "id": "K41504502F",
+       "scheme": "AL-QKB",
+       "legalName": "SHKËLQIM QENDRO"
+      }
+     },
+     {
+      "id": "1",
+      "name": "Operatori i Shperndarjes se Energjise Elektrike Group sh.a",
+      "roles": [
+       "procuringEntity"
+      ],
+      "identifier": {
+       "id": "K41504502F",
+       "scheme": "AL-DPT"
+      }
+     }
+    ],
+    "language": "sq",
+    "complaints": {
+     "id": "2242/2025",
+     "date": "2025-08-20T00:00:00Z",
+     "author": {
+      "id": "AL-QKB-K41504502F",
+      "name": "SHKËLQIM QENDRO"
+     },
+     "decision": {
+      "id": "1097/2025",
+      "date": "2025-08-21T00:00:00Z",
+      "type": "VP - Vendim Perfundimtar",
+      "result": "VP - Vendim Perfundimtar",
+      "appealResult": "resolved"
+     },
+     "reviewDate": "2025-08-20T00:00:00Z",
+     "identifiers": [
+      {
+       "id": "REF-57015-08-04-2025",
+       "scheme": "AL-KPP-Electronic-number"
+      }
+     ],
+     "publicProcurementCommissionProtocolDate": "2025-08-20T00:00:00Z"
+    },
+    "initiationType": "tender"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-k348cx-57015-08-04-2025",
+    "ocid_native": true,
+    "stage": "tender",
+    "title": "Blerje vula per nevoja te FSHU sha",
+    "description": "Blerje vula per nevoja te FSHU sha",
+    "buyer": null,
+    "country": "AL",
+    "status": null,
+    "procurement_method": null,
+    "main_category": [
+     "Mallra"
+    ],
+    "value": null,
+    "published_at": "2025-08-20T00:00:00+00:00",
+    "updated_at": "2025-08-20T00:00:00+00:00",
+    "tender_start": null,
+    "tender_end": null,
+    "classifications": [],
+    "items": [
+     {
+      "id": "1"
+     }
+    ],
+    "language": "sq",
+    "url": null
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "ocds-k348cx-Blerje pistoleta 9v19mm-2021-08-16T00:00:00Z",
+   "content_hash": "e32a8a49b6578c2be0a50ecfdea5677536575b6bf4f9806b5396474e527c3018",
+   "fetched_at": "2026-11-03T17:38:32+00:00",
+   "publisher": "Public Procurement Commission (PPC)",
+   "published_at": "2021-08-16T00:00:00+00:00",
+   "source_updated_at": "2021-08-16T00:00:00+00:00",
+   "language": "sq",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "id": "ocds-k348cx-Blerje pistoleta 9v19mm-2021-08-16T00:00:00Z",
+    "tag": [
+     "compiled"
+    ],
+    "date": "2021-08-16T00:00:00Z",
+    "ocid": "ocds-k348cx-Blerje pistoleta 9v19mm",
+    "tender": {
+     "id": "Blerje pistoleta 9v19mm",
+     "items": [
+      {
+       "id": "1",
+       "cpv_code": false
+      }
+     ],
+     "title": "Blerje pistoleta 9v19mm",
+     "value": {
+      "amount": 230657900,
+      "currency": "ALL"
+     },
+     "description": "Blerje pistoleta 9v19mm",
+     "procuringEntity": {
+      "id": "AL-QKB-Drejtoria e Pergjithshme e Policise se Shtetit",
+      "name": "Drejtoria e Pergjithshme e Policise se Shtetit"
+     },
+     "participationFees": [
+      {
+       "id": "1",
+       "value": {
+        "currency": "ALL"
+       },
+       "description": "Fee payable for submitting a complaint"
+      }
+     ],
+     "mainProcurementCategory": [
+      "Mallra"
+     ]
+    },
+    "parties": [
+     {
+      "id": "AL-QKB-K11613005V",
+      "name": "RO. GAT SECURITY",
+      "roles": [
+       "complainant"
+      ],
+      "address": {
+       "streetAddress": "    Tirane TIRANE Tirane Njesia Bashkiake Nr. 7, Rruga e Kavajes, Pallati 100 Vitrinat, Ngjitur me Shkallen Nr. 18"
+      },
+      "identifier": {
+       "id": "K11613005V",
+       "scheme": "AL-QKB",
+       "legalName": "RO. GAT SECURITY"
+      }
+     },
+     {
+      "id": "1",
+      "name": "Drejtoria e Pergjithshme e Policise se Shtetit",
+      "roles": [
+       "procuringEntity"
+      ],
+      "identifier": {
+       "id": "K11613005V",
+       "scheme": "AL-DPT"
+      }
+     }
+    ],
+    "language": "sq",
+    "complaints": {
+     "id": "1493/2021",
+     "date": "2021-08-16T00:00:00Z",
+     "author": {
+      "id": "AL-QKB-K11613005V",
+      "name": "RO. GAT SECURITY"
+     },
+     "decision": {
+      "id": "866/2021",
+      "date": "2021-11-09T00:00:00Z",
+      "type": "VP - Vendim Perfundimtar",
+      "result": "VP - Vendim Perfundimtar",
+      "appealResult": "resolved"
+     },
+     "reviewDate": "2021-08-16T00:00:00Z",
+     "publicProcurementCommissionProtocolDate": "2021-08-16T00:00:00Z"
+    },
+    "initiationType": "tender"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-k348cx-Blerje pistoleta 9v19mm",
+    "ocid_native": true,
+    "stage": "tender",
+    "title": "Blerje pistoleta 9v19mm",
+    "description": "Blerje pistoleta 9v19mm",
+    "buyer": null,
+    "country": "AL",
+    "status": null,
+    "procurement_method": null,
+    "main_category": [
+     "Mallra"
+    ],
+    "value": {
+     "amount": "230657900.00",
+     "currency": "ALL"
+    },
+    "published_at": "2021-08-16T00:00:00+00:00",
+    "updated_at": "2021-08-16T00:00:00+00:00",
+    "tender_start": null,
+    "tender_end": null,
+    "classifications": [],
+    "items": [
+     {
+      "id": "1"
+     }
+    ],
+    "language": "sq",
+    "url": null
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "ocds-k348cx-Ankand -2022-09-20T00:00:00Z",
+   "content_hash": "da5979a81336c1f7251c869099f41f88819c28bdf0051f9ec9a43db65e2980da",
+   "fetched_at": "2026-11-03T17:38:32+00:00",
+   "publisher": "Public Procurement Commission (PPC)",
+   "published_at": "2022-09-20T00:00:00+00:00",
+   "source_updated_at": "2022-09-20T00:00:00+00:00",
+   "language": "sq",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "id": "ocds-k348cx-Ankand -2022-09-20T00:00:00Z",
+    "tag": [
+     "compiled"
+    ],
+    "date": "2022-09-20T00:00:00Z",
+    "ocid": "ocds-k348cx-Ankand ",
+    "tender": {
+     "id": "Ankand ",
+     "items": [
+      {
+       "id": "1",
+       "cpv_code": false
+      }
+     ],
+     "title": "Shitje e skrapit + hekur, baker dhe alumin",
+     "value": {
+      "amount": 16209216.06,
+      "currency": "ALL"
+     },
+     "description": "Shitje e skrapit + hekur, baker dhe alumin",
+     "tenderPeriod": {
+      "endDate": "2021-11-25T00:00:00Z",
+      "startDate": "2021-11-24T00:00:00Z"
+     },
+     "procuringEntity": {
+      "id": "AL-QKB-Operatori i Sistemit te Transmetimit",
+      "name": "Operatori i Sistemit te Transmetimit"
+     },
+     "participationFees": [
+      {
+       "id": "1",
+       "value": {
+        "currency": "ALL"
+       },
+       "description": "Fee payable for submitting a complaint"
+      }
+     ],
+     "mainProcurementCategory": [
+      "Mallra"
+     ]
+    },
+    "parties": [
+     {
+      "id": "AL-QKB-K91602003E",
+      "name": "CEKREZI METAL",
+      "roles": [
+       "complainant"
+      ],
+      "address": {
+       "streetAddress": "    Tirane TIRANE Vaqarr Truall me nr.pasurie 291/1, zona kadastrale 3712, Vaqarr"
+      },
+      "identifier": {
+       "id": "K91602003E",
+       "scheme": "AL-QKB",
+       "legalName": "CEKREZI METAL"
+      }
+     },
+     {
+      "id": "1",
+      "name": "Operatori i Sistemit te Transmetimit",
+      "roles": [
+       "procuringEntity"
+      ],
+      "identifier": {
+       "id": "K91602003E",
+       "scheme": "AL-DPT"
+      }
+     }
+    ],
+    "language": "sq",
+    "complaints": {
+     "id": "2019/2022",
+     "date": "2022-09-20T00:00:00Z",
+     "author": {
+      "id": "AL-QKB-K91602003E",
+      "name": "CEKREZI METAL"
+     },
+     "decision": {
+      "id": "1085/2022",
+      "date": "2022-11-08T00:00:00Z",
+      "type": "VP - Vendim Perfundimtar",
+      "result": "VP - Vendim Perfundimtar",
+      "appealResult": "resolved"
+     },
+     "reviewDate": "2022-09-20T00:00:00Z",
+     "publicProcurementCommissionProtocolDate": "2022-09-20T00:00:00Z"
+    },
+    "initiationType": "tender"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-k348cx-Ankand ",
+    "ocid_native": true,
+    "stage": "tender",
+    "title": "Shitje e skrapit + hekur, baker dhe alumin",
+    "description": "Shitje e skrapit + hekur, baker dhe alumin",
+    "buyer": null,
+    "country": "AL",
+    "status": null,
+    "procurement_method": null,
+    "main_category": [
+     "Mallra"
+    ],
+    "value": {
+     "amount": "16209216.06",
+     "currency": "ALL"
+    },
+    "published_at": "2022-09-20T00:00:00+00:00",
+    "updated_at": "2022-09-20T00:00:00+00:00",
+    "tender_start": "2021-11-24T00:00:00+00:00",
+    "tender_end": "2021-11-25T00:00:00+00:00",
+    "classifications": [],
+    "items": [
+     {
+      "id": "1"
+     }
+    ],
+    "language": "sq",
+    "url": null
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "ocds-k348cx-Ankand Dhenie me qera-2023-06-19T00:00:00Z",
+   "content_hash": "842a4a549beb94883ca1e2a6942d6ec72fa2b9b532fdf3096ae82b8e08c7294f",
+   "fetched_at": "2026-11-03T17:38:32+00:00",
+   "publisher": "Public Procurement Commission (PPC)",
+   "published_at": "2023-06-19T00:00:00+00:00",
+   "source_updated_at": "2023-06-19T00:00:00+00:00",
+   "language": "sq",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "id": "ocds-k348cx-Ankand Dhenie me qera-2023-06-19T00:00:00Z",
+    "tag": [
+     "compiled"
+    ],
+    "date": "2023-06-19T00:00:00Z",
+    "ocid": "ocds-k348cx-Ankand Dhenie me qera",
+    "tender": {
+     "id": "Ankand Dhenie me qera",
+     "items": [
+      {
+       "id": "1",
+       "cpv_code": false
+      }
+     ],
+     "title": "Dhenia me qera e ekonomise Pyjore Drin Gjader Kire, ngastra nr.4, Loti II ne siperfaqe prej 10.0327 ha \"Per park fotovoltaik'",
+     "value": {
+      "amount": 1434676,
+      "currency": "ALL"
+     },
+     "description": "Dhenia me qera e ekonomise Pyjore Drin Gjader Kire, ngastra nr.4, Loti II ne siperfaqe prej 10.0327 ha \"Per park fotovoltaik'",
+     "procuringEntity": {
+      "id": "AL-QKB-Bashkia Vau Dejes",
+      "name": "Bashkia Vau Dejes"
+     },
+     "participationFees": [
+      {
+       "id": "1",
+       "value": {
+        "amount": 7173,
+        "currency": "ALL"
+       },
+       "description": "Fee payable for submitting a complaint"
+      }
+     ],
+     "mainProcurementCategory": [
+      "Mallra"
+     ]
+    },
+    "parties": [
+     {
+      "id": "AL-QKB-false",
+      "name": "z Energy Group",
+      "roles": [
+       "complainant"
+      ],
+      "address": {
+       "streetAddress": "Shkoder Beltoje , Rruga \"Beltoje-Mali Hebaj\", Nr.banese 14, "
+      },
+      "identifier": {
+       "id": "false",
+       "scheme": "AL-QKB",
+       "legalName": "z Energy Group"
+      }
+     },
+     {
+      "id": "1",
+      "name": "Bashkia Vau Dejes",
+      "roles": [
+       "procuringEntity"
+      ],
+      "identifier": {
+       "id": "Oustin",
+       "scheme": "AL-DPT"
+      }
+     }
+    ],
+    "language": "sq",
+    "complaints": {
+     "id": "1399/2023",
+     "date": "2023-06-19T00:00:00Z",
+     "author": {
+      "id": "AL-QKB-false",
+      "name": "z Energy Group"
+     },
+     "decision": {
+      "id": "673/2023",
+      "date": "2023-07-25T00:00:00Z",
+      "type": "VP - Vendim Perfundimtar",
+      "result": "VP - Vendim Perfundimtar",
+      "appealResult": "resolved"
+     },
+     "reviewDate": "2023-06-19T00:00:00Z",
+     "publicProcurementCommissionProtocolDate": "2023-06-19T00:00:00Z"
+    },
+    "initiationType": "tender"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-k348cx-Ankand Dhenie me qera",
+    "ocid_native": true,
+    "stage": "tender",
+    "title": "Dhenia me qera e ekonomise Pyjore Drin Gjader Kire, ngastra nr.4, Loti II ne siperfaqe prej 10.0327 ha \"Per park fotovoltaik'",
+    "description": "Dhenia me qera e ekonomise Pyjore Drin Gjader Kire, ngastra nr.4, Loti II ne siperfaqe prej 10.0327 ha \"Per park fotovoltaik'",
+    "buyer": null,
+    "country": "AL",
+    "status": null,
+    "procurement_method": null,
+    "main_category": [
+     "Mallra"
+    ],
+    "value": {
+     "amount": "1434676.00",
+     "currency": "ALL"
+    },
+    "published_at": "2023-06-19T00:00:00+00:00",
+    "updated_at": "2023-06-19T00:00:00+00:00",
+    "tender_start": null,
+    "tender_end": null,
+    "classifications": [],
+    "items": [
+     {
+      "id": "1"
+     }
+    ],
+    "language": "sq",
+    "url": null
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "ocds-k348cx-Ankand \"Shina hekurudhore, skrap hekurudhor etj' pesha 397,869 kg-2023-11-21T00:00:00Z",
+   "content_hash": "929a3a37877c69f851f7b958e40924d0cf69389afc7d98c6f9884707c7d83b4a",
+   "fetched_at": "2026-11-03T17:38:32+00:00",
+   "publisher": "Public Procurement Commission (PPC)",
+   "published_at": "2023-11-21T00:00:00+00:00",
+   "source_updated_at": "2023-11-21T00:00:00+00:00",
+   "language": "sq",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "id": "ocds-k348cx-Ankand \"Shina hekurudhore, skrap hekurudhor etj' pesha 397,869 kg-2023-11-21T00:00:00Z",
+    "tag": [
+     "compiled"
+    ],
+    "date": "2023-11-21T00:00:00Z",
+    "ocid": "ocds-k348cx-Ankand \"Shina hekurudhore, skrap hekurudhor etj' pesha 397,869 kg",
+    "tender": {
+     "id": "Ankand \"Shina hekurudhore, skrap hekurudhor etj' pesha 397,869 kg",
+     "items": [
+      {
+       "id": "1",
+       "cpv_code": false
+      }
+     ],
+     "title": "\"Shina hekurudhore, skrap hekurudhor etj\" pesha 397,869 kg",
+     "value": {
+      "amount": 7957380,
+      "currency": "ALL"
+     },
+     "description": "\"Shina hekurudhore, skrap hekurudhor etj\" pesha 397,869 kg",
+     "procuringEntity": {
+      "id": "AL-QKB-Hekurudha Shqiptare sh.a",
+      "name": "Hekurudha Shqiptare sh.a"
+     },
+     "participationFees": [
+      {
+       "id": "1",
+       "value": {
+        "amount": 39787,
+        "currency": "ALL"
+       },
+       "description": "Fee payable for submitting a complaint"
+      }
+     ],
+     "mainProcurementCategory": [
+      "Mallra"
+     ]
+    },
+    "parties": [
+     {
+      "id": "AL-QKB-K91602003E",
+      "name": "CEKREZI METAL",
+      "roles": [
+       "complainant"
+      ],
+      "address": {
+       "streetAddress": "    Tirane TIRANE Vaqarr Truall me nr.pasurie 291/1, zona kadastrale 3712, Vaqarr"
+      },
+      "identifier": {
+       "id": "K91602003E",
+       "scheme": "AL-QKB",
+       "legalName": "CEKREZI METAL"
+      }
+     },
+     {
+      "id": "1",
+      "name": "Hekurudha Shqiptare sh.a",
+      "roles": [
+       "procuringEntity"
+      ],
+      "identifier": {
+       "id": "K91602003E",
+       "scheme": "AL-DPT"
+      }
+     }
+    ],
+    "language": "sq",
+    "complaints": {
+     "id": "2897/2023",
+     "date": "2023-11-21T00:00:00Z",
+     "author": {
+      "id": "AL-QKB-K91602003E",
+      "name": "CEKREZI METAL"
+     },
+     "decision": {
+      "id": "51/2024",
+      "date": "2024-01-12T00:00:00Z",
+      "type": "VP - Vendim Perfundimtar",
+      "result": "VP - Vendim Perfundimtar",
+      "appealResult": "resolved"
+     },
+     "reviewDate": "2023-11-21T00:00:00Z",
+     "publicProcurementCommissionProtocolDate": "2023-11-21T00:00:00Z"
+    },
+    "initiationType": "tender"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-k348cx-Ankand \"Shina hekurudhore, skrap hekurudhor etj' pesha 397,869 kg",
+    "ocid_native": true,
+    "stage": "tender",
+    "title": "\"Shina hekurudhore, skrap hekurudhor etj\" pesha 397,869 kg",
+    "description": "\"Shina hekurudhore, skrap hekurudhor etj\" pesha 397,869 kg",
+    "buyer": null,
+    "country": "AL",
+    "status": null,
+    "procurement_method": null,
+    "main_category": [
+     "Mallra"
+    ],
+    "value": {
+     "amount": "7957380.00",
+     "currency": "ALL"
+    },
+    "published_at": "2023-11-21T00:00:00+00:00",
+    "updated_at": "2023-11-21T00:00:00+00:00",
+    "tender_start": null,
+    "tender_end": null,
+    "classifications": [],
+    "items": [
+     {
+      "id": "1"
+     }
+    ],
+    "language": "sq",
+    "url": null
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "ocds-k348cx-08-2025-04-07T00:00:00Z",
+   "content_hash": "9bb70527b89c785baf045345c7a94ffbba83c44b31f5418014d3aa5575b3d8f9",
+   "fetched_at": "2026-11-03T17:38:32+00:00",
+   "publisher": "Public Procurement Commission (PPC)",
+   "published_at": "2025-04-07T00:00:00+00:00",
+   "source_updated_at": "2025-04-07T00:00:00+00:00",
+   "language": "sq",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "id": "ocds-k348cx-08-2025-04-07T00:00:00Z",
+    "tag": [
+     "compiled"
+    ],
+    "date": "2025-04-07T00:00:00Z",
+    "ocid": "ocds-k348cx-08",
+    "tender": {
+     "id": "08",
+     "items": [
+      {
+       "id": "1",
+       "cpv_code": "14710000‐1"
+      }
+     ],
+     "title": "\"Shitje skrap metale te zeza dhe metale me ngjyre te perftuar nga kategorizimi i mjeteve te transportit, mjeteve te blinduara agregateve dhe armatimit te vleresuar jashte perdorimit.",
+     "value": {
+      "amount": 145623149,
+      "currency": "ALL"
+     },
+     "description": "\"Shitje skrap metale te zeza dhe metale me ngjyre te perftuar nga kategorizimi i mjeteve te transportit, mjeteve te blinduara agregateve dhe armatimit te vleresuar jashte perdorimit.",
+     "identifiers": "1A/2025",
+     "tenderPeriod": {
+      "endDate": "2025-03-17T00:00:00Z"
+     },
+     "procuringEntity": {
+      "id": "AL-QKB-Reparti Ushtarak  4001",
+      "name": "Reparti Ushtarak  4001"
+     },
+     "participationFees": [
+      {
+       "id": "1",
+       "value": {
+        "amount": 728116,
+        "currency": "ALL"
+       },
+       "description": "Fee payable for submitting a complaint"
+      }
+     ],
+     "mainProcurementCategory": [
+      "Mallra"
+     ]
+    },
+    "parties": [
+     {
+      "id": "AL-QKB-J64102272V",
+      "name": "''SHIJAKU''",
+      "roles": [
+       "complainant"
+      ],
+      "address": {
+       "streetAddress": "    Durres KRUJE Fushe Kruje Rruga Kombëtare Fushë Krujë - Vorë, km. 1, në anën e majtë, pranë mbikalimit Fushë Krujë, numër pasurie 325/34, zona kadastrale 1042"
+      },
+      "identifier": {
+       "id": "J64102272V",
+       "scheme": "AL-QKB",
+       "legalName": "''SHIJAKU''"
+      }
+     },
+     {
+      "id": "1",
+      "name": "Reparti Ushtarak  4001",
+      "roles": [
+       "procuringEntity"
+      ],
+      "identifier": {
+       "id": "J64102272V",
+       "scheme": "AL-DPT"
+      }
+     }
+    ],
+    "language": "sq",
+    "complaints": {
+     "id": "905/2025",
+     "date": "2025-04-07T00:00:00Z",
+     "author": {
+      "id": "AL-QKB-J64102272V",
+      "name": "''SHIJAKU''"
+     },
+     "decision": {
+      "id": "470/2025",
+      "date": "2025-04-09T00:00:00Z",
+      "type": "VPA - Vendim Pezullim Ankandi",
+      "result": "VPA - Vendim Pezullim Ankandi",
+      "appealResult": "resolved"
+     },
+     "reviewDate": "2025-04-07T00:00:00Z",
+     "identifiers": [
+      {
+       "id": "1A/2025",
+       "scheme": "AL-KPP-Electronic-number"
+      }
+     ],
+     "publicProcurementCommissionProtocolDate": "2025-04-04T00:00:00Z"
+    },
+    "initiationType": "tender"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-k348cx-08",
+    "ocid_native": true,
+    "stage": "tender",
+    "title": "\"Shitje skrap metale te zeza dhe metale me ngjyre te perftuar nga kategorizimi i mjeteve te transportit, mjeteve te blinduara agregateve dhe armatimit te vleresuar jashte perdorimit.",
+    "description": "\"Shitje skrap metale te zeza dhe metale me ngjyre te perftuar nga kategorizimi i mjeteve te transportit, mjeteve te blinduara agregateve dhe armatimit te vleresuar jashte perdorimit.",
+    "buyer": null,
+    "country": "AL",
+    "status": null,
+    "procurement_method": null,
+    "main_category": [
+     "Mallra"
+    ],
+    "value": {
+     "amount": "145623149.00",
+     "currency": "ALL"
+    },
+    "published_at": "2025-04-07T00:00:00+00:00",
+    "updated_at": "2025-04-07T00:00:00+00:00",
+    "tender_start": null,
+    "tender_end": "2025-03-17T00:00:00+00:00",
+    "classifications": [],
+    "items": [
+     {
+      "id": "1"
+     }
+    ],
+    "language": "sq",
+    "url": null
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "ocds-k348cx-8-2025-04-09T00:00:00Z",
+   "content_hash": "e9c7c0cadbbfb69ee27b0cf26edd8042c8b4860412b70e9e9c59a0ea8e2062b9",
+   "fetched_at": "2026-11-03T17:38:32+00:00",
+   "publisher": "Public Procurement Commission (PPC)",
+   "published_at": "2025-04-09T00:00:00+00:00",
+   "source_updated_at": "2025-04-09T00:00:00+00:00",
+   "language": "sq",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "id": "ocds-k348cx-8-2025-04-09T00:00:00Z",
+    "tag": [
+     "compiled"
+    ],
+    "date": "2025-04-09T00:00:00Z",
+    "ocid": "ocds-k348cx-8",
+    "tender": {
+     "id": "8",
+     "items": [
+      {
+       "id": "1",
+       "cpv_code": "14700000‐8"
+      }
+     ],
+     "title": "Shitje skrap metale te zeza dhe metale me ngjyre te perfituara nga kategorizimi i mjeteve te transportit, mjeteve te blinduara agregate dhe armatimit te vleresuar jashte perdorimit.",
+     "value": {
+      "amount": 145623149,
+      "currency": "ALL"
+     },
+     "description": "Shitje skrap metale te zeza dhe metale me ngjyre te perfituara nga kategorizimi i mjeteve te transportit, mjeteve te blinduara agregate dhe armatimit te vleresuar jashte perdorimit.",
+     "identifiers": "1A/2023 Ref ",
+     "tenderPeriod": {
+      "endDate": "2025-03-17T00:00:00Z"
+     },
+     "procuringEntity": {
+      "id": "AL-QKB-Reparti Ushtarak  4001",
+      "name": "Reparti Ushtarak  4001"
+     },
+     "participationFees": [
+      {
+       "id": "1",
+       "value": {
+        "amount": 728116,
+        "currency": "ALL"
+       },
+       "description": "Fee payable for submitting a complaint"
+      }
+     ],
+     "mainProcurementCategory": [
+      "Mallra"
+     ]
+    },
+    "parties": [
+     {
+      "id": "AL-QKB-K22113003Q",
+      "name": "RAFAELO 2002",
+      "roles": [
+       "complainant"
+      ],
+      "address": {
+       "streetAddress": "Njesia Bashkiake nr.11, Rruga 29 Nentori, kthesa e Kamzes, zone kadastrale nr.8310, numer pasurie 12/104."
+      },
+      "identifier": {
+       "id": "K22113003Q",
+       "scheme": "AL-QKB",
+       "legalName": "RAFAELO 2002"
+      }
+     },
+     {
+      "id": "1",
+      "name": "Reparti Ushtarak  4001",
+      "roles": [
+       "procuringEntity"
+      ],
+      "identifier": {
+       "id": "K22113003Q",
+       "scheme": "AL-DPT"
+      }
+     }
+    ],
+    "language": "sq",
+    "complaints": {
+     "id": "934/2025",
+     "date": "2025-04-09T00:00:00Z",
+     "author": {
+      "id": "AL-QKB-K22113003Q",
+      "name": "RAFAELO 2002"
+     },
+     "decision": {
+      "id": "503/2025",
+      "date": "2025-04-14T00:00:00Z",
+      "type": "VPA - Vendim Pezullim Ankandi",
+      "result": "VPA - Vendim Pezullim Ankandi",
+      "appealResult": "resolved"
+     },
+     "reviewDate": "2025-04-09T00:00:00Z",
+     "identifiers": [
+      {
+       "id": "1A/2023 Ref ",
+       "scheme": "AL-KPP-Electronic-number"
+      }
+     ],
+     "publicProcurementCommissionProtocolDate": "2025-04-09T00:00:00Z"
+    },
+    "initiationType": "tender"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-k348cx-8",
+    "ocid_native": true,
+    "stage": "tender",
+    "title": "Shitje skrap metale te zeza dhe metale me ngjyre te perfituara nga kategorizimi i mjeteve te transportit, mjeteve te blinduara agregate dhe armatimit te vleresuar jashte perdorimit.",
+    "description": "Shitje skrap metale te zeza dhe metale me ngjyre te perfituara nga kategorizimi i mjeteve te transportit, mjeteve te blinduara agregate dhe armatimit te vleresuar jashte perdorimit.",
+    "buyer": null,
+    "country": "AL",
+    "status": null,
+    "procurement_method": null,
+    "main_category": [
+     "Mallra"
+    ],
+    "value": {
+     "amount": "145623149.00",
+     "currency": "ALL"
+    },
+    "published_at": "2025-04-09T00:00:00+00:00",
+    "updated_at": "2025-04-09T00:00:00+00:00",
+    "tender_start": null,
+    "tender_end": "2025-03-17T00:00:00+00:00",
+    "classifications": [],
+    "items": [
+     {
+      "id": "1"
+     }
+    ],
+    "language": "sq",
+    "url": null
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "ocds-k348cx-71-2024-11-18T00:00:00Z",
+   "content_hash": "11b98a97ec4d30061b517ebdce3451a5823c265ee17bcff6f0026cdd57b38f0e",
+   "fetched_at": "2026-11-03T17:38:32+00:00",
+   "publisher": "Public Procurement Commission (PPC)",
+   "published_at": "2024-11-18T00:00:00+00:00",
+   "source_updated_at": "2024-11-18T00:00:00+00:00",
+   "language": "sq",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "id": "ocds-k348cx-71-2024-11-18T00:00:00Z",
+    "tag": [
+     "compiled"
+    ],
+    "date": "2024-11-18T00:00:00Z",
+    "ocid": "ocds-k348cx-71",
+    "tender": {
+     "id": "71",
+     "items": [
+      {
+       "id": "1",
+       "cpv_code": "UA.4422/4 Prot 22.10.2024"
+      }
+     ],
+     "title": "Loti  2 : Shitje e vajit te trasformatorit",
+     "value": {
+      "amount": 1320000,
+      "currency": "ALL"
+     },
+     "description": "Loti  2 : Shitje e vajit te trasformatorit",
+     "identifiers": "loti 2",
+     "tenderPeriod": {
+      "endDate": "2024-11-18T00:00:00Z"
+     },
+     "procuringEntity": {
+      "id": "AL-QKB-Operatori i Sistemit te Transmetimit",
+      "name": "Operatori i Sistemit te Transmetimit"
+     },
+     "participationFees": [
+      {
+       "id": "1",
+       "value": {
+        "amount": 5280,
+        "currency": "ALL"
+       },
+       "description": "Fee payable for submitting a complaint"
+      }
+     ],
+     "mainProcurementCategory": [
+      "Mallra"
+     ]
+    },
+    "parties": [
+     {
+      "id": "AL-QKB-L91323019S",
+      "name": "Eidon",
+      "roles": [
+       "complainant"
+      ],
+      "address": {
+       "streetAddress": "Rruga Kodra e Diellit, Ndertesa Nr.2, Hyrja 15, Ap.11, 1044"
+      },
+      "identifier": {
+       "id": "L91323019S",
+       "scheme": "AL-QKB",
+       "legalName": "Eidon"
+      }
+     },
+     {
+      "id": "1",
+      "name": "Operatori i Sistemit te Transmetimit",
+      "roles": [
+       "procuringEntity"
+      ],
+      "identifier": {
+       "id": "L91323019S",
+       "scheme": "AL-DPT"
+      }
+     }
+    ],
+    "language": "sq",
+    "complaints": {
+     "id": "3381/2024",
+     "date": "2024-11-18T00:00:00Z",
+     "author": {
+      "id": "AL-QKB-L91323019S",
+      "name": "Eidon"
+     },
+     "decision": {
+      "id": "1751/2024",
+      "date": "2024-12-10T00:00:00Z",
+      "type": "VP - Vendim Perfundimtar",
+      "result": "VP - Vendim Perfundimtar",
+      "appealResult": "resolved"
+     },
+     "reviewDate": "2024-11-18T00:00:00Z",
+     "identifiers": [
+      {
+       "id": "loti 2",
+       "scheme": "AL-KPP-Electronic-number"
+      }
+     ],
+     "publicProcurementCommissionProtocolDate": "2024-11-16T00:00:00Z"
+    },
+    "initiationType": "tender"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-k348cx-71",
+    "ocid_native": true,
+    "stage": "tender",
+    "title": "Loti  2 : Shitje e vajit te trasformatorit",
+    "description": "Loti  2 : Shitje e vajit te trasformatorit",
+    "buyer": null,
+    "country": "AL",
+    "status": null,
+    "procurement_method": null,
+    "main_category": [
+     "Mallra"
+    ],
+    "value": {
+     "amount": "1320000.00",
+     "currency": "ALL"
+    },
+    "published_at": "2024-11-18T00:00:00+00:00",
+    "updated_at": "2024-11-18T00:00:00+00:00",
+    "tender_start": null,
+    "tender_end": "2024-11-18T00:00:00+00:00",
+    "classifications": [],
+    "items": [
+     {
+      "id": "1"
+     }
+    ],
+    "language": "sq",
+    "url": null
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "ocds-k348cx-Blerje e vogel-2022-06-29T00:00:00Z",
+   "content_hash": "b393aada074f005a40173f7cb846ee340b479112dd86fcc6ae044f39286cc85e",
+   "fetched_at": "2026-11-03T17:38:32+00:00",
+   "publisher": "Public Procurement Commission (PPC)",
+   "published_at": "2022-06-29T00:00:00+00:00",
+   "source_updated_at": "2022-06-29T00:00:00+00:00",
+   "language": "sq",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "id": "ocds-k348cx-Blerje e vogel-2022-06-29T00:00:00Z",
+    "tag": [
+     "compiled"
+    ],
+    "date": "2022-06-29T00:00:00Z",
+    "ocid": "ocds-k348cx-Blerje e vogel",
+    "tender": {
+     "id": "Blerje e vogel",
+     "items": [
+      {
+       "id": "1",
+       "cpv_code": false
+      }
+     ],
+     "title": "Blerje Bileta Avioni",
+     "value": {
+      "currency": "ALL"
+     },
+     "description": "Blerje Bileta Avioni",
+     "procuringEntity": {
+      "id": "AL-QKB-Drejtoria e Pergjithshme e RTSH",
+      "name": "Drejtoria e Pergjithshme e RTSH"
+     },
+     "participationFees": [
+      {
+       "id": "1",
+       "value": {
+        "currency": "ALL"
+       },
+       "description": "Fee payable for submitting a complaint"
+      }
+     ],
+     "mainProcurementCategory": [
+      "Mallra"
+     ]
+    },
+    "parties": [
+     {
+      "id": "AL-QKB-K71617011W",
+      "name": "EXPLORER TRAVEL & TOURS",
+      "roles": [
+       "complainant"
+      ],
+      "address": {
+       "streetAddress": "    Tirane TIRANE Tirane Rr.\"Mujo Ulqinaku\", Pall.5 (Mbrapa Kishës Katolike), K.1"
+      },
+      "identifier": {
+       "id": "K71617011W",
+       "scheme": "AL-QKB",
+       "legalName": "EXPLORER TRAVEL & TOURS"
+      }
+     },
+     {
+      "id": "1",
+      "name": "Drejtoria e Pergjithshme e RTSH",
+      "roles": [
+       "procuringEntity"
+      ],
+      "identifier": {
+       "id": "K71617011W",
+       "scheme": "AL-DPT"
+      }
+     }
+    ],
+    "language": "sq",
+    "complaints": {
+     "id": "1386/2022",
+     "date": "2022-06-29T00:00:00Z",
+     "author": {
+      "id": "AL-QKB-K71617011W",
+      "name": "EXPLORER TRAVEL & TOURS"
+     },
+     "decision": {
+      "id": "620/2022",
+      "date": "2022-06-30T00:00:00Z",
+      "type": "VP - Vendim Perfundimtar",
+      "result": "VP - Vendim Perfundimtar",
+      "appealResult": "resolved"
+     },
+     "reviewDate": "2022-06-29T00:00:00Z",
+     "publicProcurementCommissionProtocolDate": "2022-06-29T00:00:00Z"
+    },
+    "initiationType": "tender"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-k348cx-Blerje e vogel",
+    "ocid_native": true,
+    "stage": "tender",
+    "title": "Blerje Bileta Avioni",
+    "description": "Blerje Bileta Avioni",
+    "buyer": null,
+    "country": "AL",
+    "status": null,
+    "procurement_method": null,
+    "main_category": [
+     "Mallra"
+    ],
+    "value": null,
+    "published_at": "2022-06-29T00:00:00+00:00",
+    "updated_at": "2022-06-29T00:00:00+00:00",
+    "tender_start": null,
+    "tender_end": null,
+    "classifications": [],
+    "items": [
+     {
+      "id": "1"
+     }
+    ],
+    "language": "sq",
+    "url": null
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "ocds-k348cx-88 -2025-01-13T00:00:00Z",
+   "content_hash": "9f46c99c803af1ab5100b732c60411ba169dbdbe9f4d3313f621de2e9c1094f9",
+   "fetched_at": "2026-11-03T17:38:32+00:00",
+   "publisher": "Public Procurement Commission (PPC)",
+   "published_at": "2025-01-13T00:00:00+00:00",
+   "source_updated_at": "2025-01-13T00:00:00+00:00",
+   "language": "sq",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "id": "ocds-k348cx-88 -2025-01-13T00:00:00Z",
+    "tag": [
+     "compiled"
+    ],
+    "date": "2025-01-13T00:00:00Z",
+    "ocid": "ocds-k348cx-88 ",
+    "tender": {
+     "id": "88 ",
+     "items": [
+      {
+       "id": "1",
+       "cpv_code": "0"
+      }
+     ],
+     "title": ": Shitje te pasurive te Shoqerise: Nr.13/50, ne Zonen kadastrale 2441 Volumi\n9, Faqe 187 dhe Nr.13/51 ne Zonen kadastrale 2441 Volumi 9, Faqe 188, Cerrik, me siperfaqe\ntotale 48 150 m2, ne pronesi te PETROL ALBA  SHA ne likujdim.\n",
+     "value": {
+      "amount": 31266135,
+      "currency": "ALL"
+     },
+     "description": ": Shitje te pasurive te Shoqerise: Nr.13/50, ne Zonen kadastrale 2441 Volumi\n9, Faqe 187 dhe Nr.13/51 ne Zonen kadastrale 2441 Volumi 9, Faqe 188, Cerrik, me siperfaqe\ntotale 48 150 m2, ne pronesi te PETROL ALBA  SHA ne likujdim.\n",
+     "identifiers": "1146/1201",
+     "tenderPeriod": {
+      "endDate": "2024-12-26T00:00:00Z"
+     },
+     "procuringEntity": {
+      "id": "AL-QKB-Petrol Alba Sh.a",
+      "name": "Petrol Alba Sh.a"
+     },
+     "participationFees": [
+      {
+       "id": "1",
+       "value": {
+        "amount": 156331,
+        "currency": "ALL"
+       },
+       "description": "Fee payable for submitting a complaint"
+      }
+     ],
+     "mainProcurementCategory": [
+      "Shërbime"
+     ]
+    },
+    "parties": [
+     {
+      "id": "AL-QKB-J61828072Q",
+      "name": "GERTI",
+      "roles": [
+       "complainant"
+      ],
+      "address": {
+       "streetAddress": "Rruga Vore - Rinas, km 3, Zona Kadastrale 3319, Nr. Pasurie 178/36, Vol.2, Fq. 205"
+      },
+      "identifier": {
+       "id": "J61828072Q",
+       "scheme": "AL-QKB",
+       "legalName": "GERTI"
+      }
+     },
+     {
+      "id": "1",
+      "name": "Petrol Alba Sh.a",
+      "roles": [
+       "procuringEntity"
+      ],
+      "identifier": {
+       "id": "J61828072Q",
+       "scheme": "AL-DPT"
+      }
+     }
+    ],
+    "language": "sq",
+    "complaints": {
+     "id": "103/2025",
+     "date": "2025-01-13T00:00:00Z",
+     "author": {
+      "id": "AL-QKB-J61828072Q",
+      "name": "GERTI"
+     },
+     "decision": {
+      "id": "185/2025",
+      "date": "2025-02-05T00:00:00Z",
+      "type": "VP - Vendim Perfundimtar",
+      "result": "VP - Vendim Perfundimtar",
+      "appealResult": "resolved"
+     },
+     "reviewDate": "2025-01-13T00:00:00Z",
+     "identifiers": [
+      {
+       "id": "1146/1201",
+       "scheme": "AL-KPP-Electronic-number"
+      }
+     ],
+     "publicProcurementCommissionProtocolDate": "2025-01-13T00:00:00Z"
+    },
+    "initiationType": "tender"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-k348cx-88 ",
+    "ocid_native": true,
+    "stage": "tender",
+    "title": ": Shitje te pasurive te Shoqerise: Nr.13/50, ne Zonen kadastrale 2441 Volumi\n9, Faqe 187 dhe Nr.13/51 ne Zonen kadastrale 2441 Volumi 9, Faqe 188, Cerrik, me siperfaqe\ntotale 48 150 m2, ne pronesi te PETROL ALBA  SHA ne likujdim.\n",
+    "description": ": Shitje te pasurive te Shoqerise: Nr.13/50, ne Zonen kadastrale 2441 Volumi\n9, Faqe 187 dhe Nr.13/51 ne Zonen kadastrale 2441 Volumi 9, Faqe 188, Cerrik, me siperfaqe\ntotale 48 150 m2, ne pronesi te PETROL ALBA  SHA ne likujdim.\n",
+    "buyer": null,
+    "country": "AL",
+    "status": null,
+    "procurement_method": null,
+    "main_category": [
+     "Shërbime"
+    ],
+    "value": {
+     "amount": "31266135.00",
+     "currency": "ALL"
+    },
+    "published_at": "2025-01-13T00:00:00+00:00",
+    "updated_at": "2025-01-13T00:00:00+00:00",
+    "tender_start": null,
+    "tender_end": "2024-12-26T00:00:00+00:00",
+    "classifications": [],
+    "items": [
+     {
+      "id": "1"
+     }
+    ],
+    "language": "sq",
+    "url": null
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "ocds-k348cx-Ankand - Remonti i Kaldajave Elbasan-2023-11-23T00:00:00Z",
+   "content_hash": "4effe041c082fea8f4dc519f910b305cffe7f7572e028bac66940c2cc9b6d72c",
+   "fetched_at": "2026-11-03T17:38:32+00:00",
+   "publisher": "Public Procurement Commission (PPC)",
+   "published_at": "2023-11-23T00:00:00+00:00",
+   "source_updated_at": "2023-11-23T00:00:00+00:00",
+   "language": "sq",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "id": "ocds-k348cx-Ankand - Remonti i Kaldajave Elbasan-2023-11-23T00:00:00Z",
+    "tag": [
+     "compiled"
+    ],
+    "date": "2023-11-23T00:00:00Z",
+    "ocid": "ocds-k348cx-Ankand - Remonti i Kaldajave Elbasan",
+    "tender": {
+     "id": "Ankand - Remonti i Kaldajave Elbasan",
+     "items": [
+      {
+       "id": "1",
+       "cpv_code": false
+      }
+     ],
+     "title": "Remonti i Kaldajave",
+     "value": {
+      "currency": "ALL"
+     },
+     "description": "Remonti i Kaldajave",
+     "procuringEntity": {
+      "id": "AL-QKB-Petrol Alba Sh.a",
+      "name": "Petrol Alba Sh.a"
+     },
+     "participationFees": [
+      {
+       "id": "1",
+       "value": {
+        "currency": "ALL"
+       },
+       "description": "Fee payable for submitting a complaint"
+      }
+     ],
+     "mainProcurementCategory": [
+      "Punë"
+     ]
+    },
+    "parties": [
+     {
+      "id": "AL-QKB-false",
+      "name": "Rystem Ruci P.F",
+      "roles": [
+       "complainant"
+      ],
+      "address": {
+       "streetAddress": "false"
+      },
+      "identifier": {
+       "id": "false",
+       "scheme": "AL-QKB",
+       "legalName": "Rystem Ruci P.F"
+      }
+     },
+     {
+      "id": "1",
+      "name": "Petrol Alba Sh.a",
+      "roles": [
+       "procuringEntity"
+      ],
+      "identifier": {
+       "scheme": "AL-DPT"
+      }
+     }
+    ],
+    "language": "sq",
+    "complaints": {
+     "id": "2946/2023",
+     "date": "2023-11-23T00:00:00Z",
+     "author": {
+      "id": "AL-QKB-false",
+      "name": "Rystem Ruci P.F"
+     },
+     "decision": {
+      "id": "1369/2023",
+      "date": "2023-12-27T00:00:00Z",
+      "type": "VP - Vendim Perfundimtar",
+      "result": "VP - Vendim Perfundimtar",
+      "appealResult": "resolved"
+     },
+     "reviewDate": "2023-11-23T00:00:00Z",
+     "publicProcurementCommissionProtocolDate": "2023-11-23T00:00:00Z"
+    },
+    "initiationType": "tender"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-k348cx-Ankand - Remonti i Kaldajave Elbasan",
+    "ocid_native": true,
+    "stage": "tender",
+    "title": "Remonti i Kaldajave",
+    "description": "Remonti i Kaldajave",
+    "buyer": null,
+    "country": "AL",
+    "status": null,
+    "procurement_method": null,
+    "main_category": [
+     "Punë"
+    ],
+    "value": null,
+    "published_at": "2023-11-23T00:00:00+00:00",
+    "updated_at": "2023-11-23T00:00:00+00:00",
+    "tender_start": null,
+    "tender_end": null,
+    "classifications": [],
+    "items": [
+     {
+      "id": "1"
+     }
+    ],
+    "language": "sq",
+    "url": null
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "ocds-k348cx-Ankand \"Skrap hekurudhor\"1,661,802.3-2023-07-17T00:00:00Z",
+   "content_hash": "ce8ec3900af3674274d78a64f0a8911f43298a391aaa7d56f73ceddb52dc76fe",
+   "fetched_at": "2026-11-03T17:38:32+00:00",
+   "publisher": "Public Procurement Commission (PPC)",
+   "published_at": "2023-07-17T00:00:00+00:00",
+   "source_updated_at": "2023-07-17T00:00:00+00:00",
+   "language": "sq",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "id": "ocds-k348cx-Ankand \"Skrap hekurudhor\"1,661,802.3-2023-07-17T00:00:00Z",
+    "tag": [
+     "compiled"
+    ],
+    "date": "2023-07-17T00:00:00Z",
+    "ocid": "ocds-k348cx-Ankand \"Skrap hekurudhor\"1,661,802.3",
+    "tender": {
+     "id": "Ankand \"Skrap hekurudhor\"1,661,802.3",
+     "items": [
+      {
+       "id": "1",
+       "cpv_code": false
+      }
+     ],
+     "title": "\"Skrap hekurudhor\" (shina hekurudhore), 1,661,802.3 kg",
+     "value": {
+      "amount": 41545075.5,
+      "currency": "ALL"
+     },
+     "description": "\"Skrap hekurudhor\" (shina hekurudhore), 1,661,802.3 kg",
+     "procuringEntity": {
+      "id": "AL-QKB-Hekurudha Shqiptare sh.a",
+      "name": "Hekurudha Shqiptare sh.a"
+     },
+     "participationFees": [
+      {
+       "id": "1",
+       "value": {
+        "amount": 207725,
+        "currency": "ALL"
+       },
+       "description": "Fee payable for submitting a complaint"
+      }
+     ],
+     "mainProcurementCategory": [
+      "Mallra"
+     ]
+    },
+    "parties": [
+     {
+      "id": "AL-QKB-K91602003E",
+      "name": "CEKREZI METAL",
+      "roles": [
+       "complainant"
+      ],
+      "address": {
+       "streetAddress": "    Tirane TIRANE Vaqarr Truall me nr.pasurie 291/1, zona kadastrale 3712, Vaqarr"
+      },
+      "identifier": {
+       "id": "K91602003E",
+       "scheme": "AL-QKB",
+       "legalName": "CEKREZI METAL"
+      }
+     },
+     {
+      "id": "1",
+      "name": "Hekurudha Shqiptare sh.a",
+      "roles": [
+       "procuringEntity"
+      ],
+      "identifier": {
+       "id": "K91602003E",
+       "scheme": "AL-DPT"
+      }
+     }
+    ],
+    "language": "sq",
+    "complaints": {
+     "id": "1712/2023",
+     "date": "2023-07-17T00:00:00Z",
+     "author": {
+      "id": "AL-QKB-K91602003E",
+      "name": "CEKREZI METAL"
+     },
+     "decision": {
+      "id": "933/2023",
+      "date": "2023-09-19T00:00:00Z",
+      "type": "VP - Vendim Perfundimtar",
+      "result": "VP - Vendim Perfundimtar",
+      "appealResult": "resolved"
+     },
+     "reviewDate": "2023-07-17T00:00:00Z",
+     "publicProcurementCommissionProtocolDate": "2023-07-17T00:00:00Z"
+    },
+    "initiationType": "tender"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-k348cx-Ankand \"Skrap hekurudhor\"1,661,802.3",
+    "ocid_native": true,
+    "stage": "tender",
+    "title": "\"Skrap hekurudhor\" (shina hekurudhore), 1,661,802.3 kg",
+    "description": "\"Skrap hekurudhor\" (shina hekurudhore), 1,661,802.3 kg",
+    "buyer": null,
+    "country": "AL",
+    "status": null,
+    "procurement_method": null,
+    "main_category": [
+     "Mallra"
+    ],
+    "value": {
+     "amount": "41545075.50",
+     "currency": "ALL"
+    },
+    "published_at": "2023-07-17T00:00:00+00:00",
+    "updated_at": "2023-07-17T00:00:00+00:00",
+    "tender_start": null,
+    "tender_end": null,
+    "classifications": [],
+    "items": [
+     {
+      "id": "1"
+     }
+    ],
+    "language": "sq",
+    "url": null
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "ocds-k348cx-false-2023-10-05T00:00:00Z",
+   "content_hash": "6c0e70d9f3cdf62b2eb992fcc8d82c91a0381df556b7797eaa6ac01cbed1ecc0",
+   "fetched_at": "2026-11-03T17:38:32+00:00",
+   "publisher": "Public Procurement Commission (PPC)",
+   "published_at": "2023-10-05T00:00:00+00:00",
+   "source_updated_at": "2023-10-05T00:00:00+00:00",
+   "language": "sq",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "id": "ocds-k348cx-false-2023-10-05T00:00:00Z",
+    "tag": [
+     "compiled"
+    ],
+    "date": "2023-10-05T00:00:00Z",
+    "ocid": "ocds-k348cx-false",
+    "tender": {
+     "id": "false",
+     "items": [
+      {
+       "id": "1",
+       "cpv_code": false
+      }
+     ],
+     "title": "Blerje pajisje dhe softe per permiresimin cilesor te produkteve te inteligjences (O1001)",
+     "value": {
+      "amount": 26342000,
+      "currency": "ALL"
+     },
+     "description": "Blerje pajisje dhe softe per permiresimin cilesor te produkteve te inteligjences (O1001)",
+     "procuringEntity": {
+      "id": "AL-QKB-Ministria e Mbrojtjes",
+      "name": "Ministria e Mbrojtjes"
+     },
+     "participationFees": [
+      {
+       "id": "1",
+       "value": {
+        "amount": 131710,
+        "currency": "ALL"
+       },
+       "description": "Fee payable for submitting a complaint"
+      }
+     ],
+     "mainProcurementCategory": [
+      "Mallra"
+     ]
+    },
+    "parties": [
+     {
+      "id": "AL-QKB-K21710002J",
+      "name": "Advanced Business Solutions",
+      "roles": [
+       "complainant"
+      ],
+      "address": {
+       "streetAddress": "Rruga Papa Gjon Pali II-te, Shkalla 1, Kati 5-te (me ashensor), Ap 13, Tirane"
+      },
+      "identifier": {
+       "id": "K21710002J",
+       "scheme": "AL-QKB",
+       "legalName": "Advanced Business Solutions"
+      }
+     },
+     {
+      "id": "1",
+      "name": "Ministria e Mbrojtjes",
+      "roles": [
+       "procuringEntity"
+      ],
+      "identifier": {
+       "id": "L51511023L",
+       "scheme": "AL-DPT"
+      }
+     },
+     {
+      "id": "AL-QKB-J61929021e",
+      "name": "TCN",
+      "roles": [
+       "complainant"
+      ],
+      "address": {
+       "streetAddress": "    Tirane TIRANE Tirane Njesia Bashkiake Nr. 9, Bulevardi Zogu i Pare, Pallati 53, Hyrja 3/77, 1016."
+      },
+      "identifier": {
+       "id": "J61929021e",
+       "scheme": "AL-QKB",
+       "legalName": "TCN"
+      }
+     },
+     {
+      "id": "AL-QKB-M26321202H",
+      "name": "Albora Muçobega",
+      "roles": [
+       "complainant"
+      ],
+      "address": {
+       "streetAddress": "    Fier FIER Fier L. 15 Tetori, Rr. Xoxi Andoni, Pll. Alfred Gjini, Kati i 8-të, Banesa nr.39, Fier."
+      },
+      "identifier": {
+       "id": "M26321202H",
+       "scheme": "AL-QKB",
+       "legalName": "Albora Muçobega"
+      }
+     },
+     {
+      "id": "AL-QKB-L51511023L",
+      "name": "XPERT SYSTEMS",
+      "roles": [
+       "complainant"
+      ],
+      "address": {
+       "streetAddress": " Njësia Bashkiake nr.10, rruga Mihal Duri nr.3, kati i III, Tiranë "
+      },
+      "identifier": {
+       "id": "L51511023L",
+       "scheme": "AL-QKB",
+       "legalName": "XPERT SYSTEMS"
+      }
+     }
+    ],
+    "language": "sq",
+    "complaints": {
+     "id": "2438/2023",
+     "date": "2023-10-05T00:00:00Z",
+     "author": {
+      "id": "AL-QKB-L51511023L",
+      "name": "XPERT SYSTEMS"
+     },
+     "decision": {
+      "id": "1182/2023",
+      "date": "2023-11-17T00:00:00Z",
+      "type": "VP - Vendim Perfundimtar",
+      "result": "VP - Vendim Perfundimtar",
+      "appealResult": "resolved"
+     },
+     "reviewDate": "2023-10-05T00:00:00Z",
+     "publicProcurementCommissionProtocolDate": "2023-10-05T00:00:00Z"
+    },
+    "initiationType": "tender"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-k348cx-false",
+    "ocid_native": true,
+    "stage": "tender",
+    "title": "Blerje pajisje dhe softe per permiresimin cilesor te produkteve te inteligjences (O1001)",
+    "description": "Blerje pajisje dhe softe per permiresimin cilesor te produkteve te inteligjences (O1001)",
+    "buyer": null,
+    "country": "AL",
+    "status": null,
+    "procurement_method": null,
+    "main_category": [
+     "Mallra"
+    ],
+    "value": {
+     "amount": "26342000.00",
+     "currency": "ALL"
+    },
+    "published_at": "2023-10-05T00:00:00+00:00",
+    "updated_at": "2023-10-05T00:00:00+00:00",
+    "tender_start": null,
+    "tender_end": null,
+    "classifications": [],
+    "items": [
+     {
+      "id": "1"
+     }
+    ],
+    "language": "sq",
+    "url": null
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "ocds-k348cx-34-2023-05-31T00:00:00Z",
+   "content_hash": "006079a64f8cc9152a6cffcd612602b33645e63e5012c8fb2610414dd9e51d1d",
+   "fetched_at": "2026-11-03T17:38:32+00:00",
+   "publisher": "Public Procurement Commission (PPC)",
+   "published_at": "2023-05-31T00:00:00+00:00",
+   "source_updated_at": "2023-05-31T00:00:00+00:00",
+   "language": "sq",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "id": "ocds-k348cx-34-2023-05-31T00:00:00Z",
+    "tag": [
+     "compiled"
+    ],
+    "date": "2023-05-31T00:00:00Z",
+    "ocid": "ocds-k348cx-34",
+    "tender": {
+     "id": "34",
+     "items": [
+      {
+       "id": "1",
+       "cpv_code": "77231000-8"
+      }
+     ],
+     "title": "Objekti i perdorimit eshte dhenia ne perdorim te perkohshem te siperfaqes kullosore\"Per qellime pushimi,argetimi,shendetsore,shoqerore dhe per veprimtari turistike , kampingje\"",
+     "value": {
+      "amount": 11550,
+      "currency": "ALL"
+     },
+     "description": "Objekti i perdorimit eshte dhenia ne perdorim te perkohshem te siperfaqes kullosore\"Per qellime pushimi,argetimi,shendetsore,shoqerore dhe per veprimtari turistike , kampingje\"",
+     "identifiers": "Nr.REF.2 –A /2023",
+     "tenderPeriod": {
+      "endDate": "2023-05-10T00:00:00Z"
+     },
+     "procuringEntity": {
+      "id": "AL-QKB-Bashkia Selenice",
+      "name": "Bashkia Selenice"
+     },
+     "participationFees": [
+      {
+       "id": "1",
+       "value": {
+        "amount": 58,
+        "currency": "ALL"
+       },
+       "description": "Fee payable for submitting a complaint"
+      }
+     ],
+     "mainProcurementCategory": [
+      "Mallra"
+     ]
+    },
+    "parties": [
+     {
+      "id": "AL-QKB-M26321202H",
+      "name": "Albora Muçobega",
+      "roles": [
+       "complainant"
+      ],
+      "address": {
+       "streetAddress": "    Fier FIER Fier L. 15 Tetori, Rr. Xoxi Andoni, Pll. Alfred Gjini, Kati i 8-të, Banesa nr.39, Fier."
+      },
+      "identifier": {
+       "id": "M26321202H",
+       "scheme": "AL-QKB",
+       "legalName": "Albora Muçobega"
+      }
+     },
+     {
+      "id": "1",
+      "name": "Bashkia Selenice",
+      "roles": [
+       "procuringEntity"
+      ],
+      "identifier": {
+       "id": "M26321202H",
+       "scheme": "AL-DPT"
+      }
+     }
+    ],
+    "language": "sq",
+    "complaints": {
+     "id": "1235/2023",
+     "date": "2023-05-31T00:00:00Z",
+     "author": {
+      "id": "AL-QKB-M26321202H",
+      "name": "Albora Muçobega"
+     },
+     "decision": {
+      "id": "676/2023",
+      "date": "2023-07-26T00:00:00Z",
+      "type": "VP - Vendim Perfundimtar",
+      "result": "VP - Vendim Perfundimtar",
+      "appealResult": "resolved"
+     },
+     "reviewDate": "2023-05-31T00:00:00Z",
+     "identifiers": [
+      {
+       "id": "Nr.REF.2 –A /2023",
+       "scheme": "AL-KPP-Electronic-number"
+      }
+     ],
+     "publicProcurementCommissionProtocolDate": "2023-05-30T00:00:00Z"
+    },
+    "initiationType": "tender"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-k348cx-34",
+    "ocid_native": true,
+    "stage": "tender",
+    "title": "Objekti i perdorimit eshte dhenia ne perdorim te perkohshem te siperfaqes kullosore\"Per qellime pushimi,argetimi,shendetsore,shoqerore dhe per veprimtari turistike , kampingje\"",
+    "description": "Objekti i perdorimit eshte dhenia ne perdorim te perkohshem te siperfaqes kullosore\"Per qellime pushimi,argetimi,shendetsore,shoqerore dhe per veprimtari turistike , kampingje\"",
+    "buyer": null,
+    "country": "AL",
+    "status": null,
+    "procurement_method": null,
+    "main_category": [
+     "Mallra"
+    ],
+    "value": {
+     "amount": "11550.00",
+     "currency": "ALL"
+    },
+    "published_at": "2023-05-31T00:00:00+00:00",
+    "updated_at": "2023-05-31T00:00:00+00:00",
+    "tender_start": null,
+    "tender_end": "2023-05-10T00:00:00+00:00",
+    "classifications": [],
+    "items": [
+     {
+      "id": "1"
+     }
+    ],
+    "language": "sq",
+    "url": null
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "ocds-k348cx-Buletini Nr. 67 datë 7 Tetor 2024-2024-11-25T00:00:00Z",
+   "content_hash": "515391e12333f5fc57525786ec3121edd204606e9dde39f72569a9b156d523df",
+   "fetched_at": "2026-11-03T17:38:32+00:00",
+   "publisher": "Public Procurement Commission (PPC)",
+   "published_at": "2024-11-25T00:00:00+00:00",
+   "source_updated_at": "2024-11-25T00:00:00+00:00",
+   "language": "sq",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "id": "ocds-k348cx-Buletini Nr. 67 datë 7 Tetor 2024-2024-11-25T00:00:00Z",
+    "tag": [
+     "compiled"
+    ],
+    "date": "2024-11-25T00:00:00Z",
+    "ocid": "ocds-k348cx-Buletini Nr. 67 datë 7 Tetor 2024",
+    "tender": {
+     "id": "Buletini Nr. 67 datë 7 Tetor 2024",
+     "items": [
+      {
+       "id": "1",
+       "cpv_code": "67"
+      }
+     ],
+     "title": "Loti II – Shitje prodhime te dyta pyjore (rrenje shqope dhe mare), per sasine totale prej\n360reqind e gjashtedhjete) kv, ne ekonomine pyjore Paper Sollak.",
+     "value": {
+      "amount": 36000,
+      "currency": "ALL"
+     },
+     "description": "Loti II – Shitje prodhime te dyta pyjore (rrenje shqope dhe mare), per sasine totale prej\n360reqind e gjashtedhjete) kv, ne ekonomine pyjore Paper Sollak.",
+     "identifiers": "67",
+     "tenderPeriod": {
+      "endDate": "2024-10-28T00:00:00Z"
+     },
+     "procuringEntity": {
+      "id": "AL-QKB-Bashkia Elbasan",
+      "name": "Bashkia Elbasan"
+     },
+     "participationFees": [
+      {
+       "id": "1",
+       "value": {
+        "amount": 180,
+        "currency": "ALL"
+       },
+       "description": "Fee payable for submitting a complaint"
+      }
+     ],
+     "mainProcurementCategory": [
+      "Mallra"
+     ]
+    },
+    "parties": [
+     {
+      "id": "AL-QKB-M12127005L",
+      "name": "SUFA PIPE",
+      "roles": [
+       "complainant"
+      ],
+      "address": {
+       "streetAddress": "Lagjja Sultaf, Godine Private 1 kateshe nr3"
+      },
+      "identifier": {
+       "id": "M12127005L",
+       "scheme": "AL-QKB",
+       "legalName": "SUFA PIPE"
+      }
+     },
+     {
+      "id": "1",
+      "name": "Bashkia Elbasan",
+      "roles": [
+       "procuringEntity"
+      ],
+      "identifier": {
+       "id": "M12127005L",
+       "scheme": "AL-DPT"
+      }
+     }
+    ],
+    "language": "sq",
+    "complaints": {
+     "id": "3455/2024",
+     "date": "2024-11-25T00:00:00Z",
+     "author": {
+      "id": "AL-QKB-M12127005L",
+      "name": "SUFA PIPE"
+     },
+     "decision": {
+      "id": "1840/2024",
+      "date": "2024-12-24T00:00:00Z",
+      "type": "VP - Vendim Perfundimtar",
+      "result": "VP - Vendim Perfundimtar",
+      "appealResult": "resolved"
+     },
+     "reviewDate": "2024-11-25T00:00:00Z",
+     "identifiers": [
+      {
+       "id": "67",
+       "scheme": "AL-KPP-Electronic-number"
+      }
+     ],
+     "publicProcurementCommissionProtocolDate": "2024-11-25T00:00:00Z"
+    },
+    "initiationType": "tender"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-k348cx-Buletini Nr. 67 datë 7 Tetor 2024",
+    "ocid_native": true,
+    "stage": "tender",
+    "title": "Loti II – Shitje prodhime te dyta pyjore (rrenje shqope dhe mare), per sasine totale prej\n360reqind e gjashtedhjete) kv, ne ekonomine pyjore Paper Sollak.",
+    "description": "Loti II – Shitje prodhime te dyta pyjore (rrenje shqope dhe mare), per sasine totale prej\n360reqind e gjashtedhjete) kv, ne ekonomine pyjore Paper Sollak.",
+    "buyer": null,
+    "country": "AL",
+    "status": null,
+    "procurement_method": null,
+    "main_category": [
+     "Mallra"
+    ],
+    "value": {
+     "amount": "36000.00",
+     "currency": "ALL"
+    },
+    "published_at": "2024-11-25T00:00:00+00:00",
+    "updated_at": "2024-11-25T00:00:00+00:00",
+    "tender_start": null,
+    "tender_end": "2024-10-28T00:00:00+00:00",
+    "classifications": [],
+    "items": [
+     {
+      "id": "1"
+     }
+    ],
+    "language": "sq",
+    "url": null
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "ocds-k348cx-Nr.696 prot-2024-01-22T00:00:00Z",
+   "content_hash": "02ed2e6b9a2884f0748cb7fbf8e2062d483a433258e758aad6769f6e11c9ab78",
+   "fetched_at": "2026-11-03T17:38:32+00:00",
+   "publisher": "Public Procurement Commission (PPC)",
+   "published_at": "2024-01-22T00:00:00+00:00",
+   "source_updated_at": "2024-01-22T00:00:00+00:00",
+   "language": "sq",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "id": "ocds-k348cx-Nr.696 prot-2024-01-22T00:00:00Z",
+    "tag": [
+     "compiled"
+    ],
+    "date": "2024-01-22T00:00:00Z",
+    "ocid": "ocds-k348cx-Nr.696 prot",
+    "tender": {
+     "id": "Nr.696 prot",
+     "items": [
+      {
+       "id": "1",
+       "cpv_code": "na"
+      }
+     ],
+     "title": "Loti i Trete Blerje Sistem Anti – Dron autonom i palevizshem m",
+     "value": {
+      "amount": 24066667,
+      "currency": "ALL"
+     },
+     "description": "Loti i Trete Blerje Sistem Anti – Dron autonom i palevizshem m",
+     "identifiers": "na",
+     "procuringEntity": {
+      "id": "AL-QKB-Prokuroria e Posacme Kunder Korrupsionit dhe Krimit te Organizuar",
+      "name": "Prokuroria e Posacme Kunder Korrupsionit dhe Krimit te Organizuar"
+     },
+     "participationFees": [
+      {
+       "id": "1",
+       "value": {
+        "amount": 120333,
+        "currency": "ALL"
+       },
+       "description": "Fee payable for submitting a complaint"
+      }
+     ],
+     "mainProcurementCategory": [
+      "Mallra"
+     ]
+    },
+    "parties": [
+     {
+      "id": "AL-QKB-K11324003F",
+      "name": "SINTEZA  CO",
+      "roles": [
+       "complainant"
+      ],
+      "address": {
+       "streetAddress": "Rruga e Barrikadave, Tirane"
+      },
+      "identifier": {
+       "id": "K11324003F",
+       "scheme": "AL-QKB",
+       "legalName": "SINTEZA  CO"
+      }
+     },
+     {
+      "id": "1",
+      "name": "Prokuroria e Posacme Kunder Korrupsionit dhe Krimit te Organizuar",
+      "roles": [
+       "procuringEntity"
+      ],
+      "identifier": {
+       "id": "K11324003F",
+       "scheme": "AL-DPT"
+      }
+     }
+    ],
+    "language": "sq",
+    "complaints": {
+     "id": "145/2024",
+     "date": "2024-01-22T00:00:00Z",
+     "author": {
+      "id": "AL-QKB-K11324003F",
+      "name": "SINTEZA  CO"
+     },
+     "decision": {
+      "id": "155/2024",
+      "date": "2024-02-08T00:00:00Z",
+      "type": "VP - Vendim Perfundimtar",
+      "result": "VP - Vendim Perfundimtar",
+      "appealResult": "resolved"
+     },
+     "reviewDate": "2024-01-22T00:00:00Z",
+     "identifiers": [
+      {
+       "id": "na",
+       "scheme": "AL-KPP-Electronic-number"
+      }
+     ],
+     "publicProcurementCommissionProtocolDate": "2024-01-22T00:00:00Z"
+    },
+    "initiationType": "tender"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-k348cx-Nr.696 prot",
+    "ocid_native": true,
+    "stage": "tender",
+    "title": "Loti i Trete Blerje Sistem Anti – Dron autonom i palevizshem m",
+    "description": "Loti i Trete Blerje Sistem Anti – Dron autonom i palevizshem m",
+    "buyer": null,
+    "country": "AL",
+    "status": null,
+    "procurement_method": null,
+    "main_category": [
+     "Mallra"
+    ],
+    "value": {
+     "amount": "24066667.00",
+     "currency": "ALL"
+    },
+    "published_at": "2024-01-22T00:00:00+00:00",
+    "updated_at": "2024-01-22T00:00:00+00:00",
+    "tender_start": null,
+    "tender_end": null,
+    "classifications": [],
+    "items": [
+     {
+      "id": "1"
+     }
+    ],
+    "language": "sq",
+    "url": null
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "ocds-k348cx-11-2025-04-11T00:00:00Z",
+   "content_hash": "43992a61de2d039d36d0265e690c75cd40c1439ff67ba3bbfe3cba7384b7c33d",
+   "fetched_at": "2026-11-03T17:38:32+00:00",
+   "publisher": "Public Procurement Commission (PPC)",
+   "published_at": "2025-04-11T00:00:00+00:00",
+   "source_updated_at": "2025-04-11T00:00:00+00:00",
+   "language": "sq",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "id": "ocds-k348cx-11-2025-04-11T00:00:00Z",
+    "tag": [
+     "compiled"
+    ],
+    "date": "2025-04-11T00:00:00Z",
+    "ocid": "ocds-k348cx-11",
+    "tender": {
+     "id": "11",
+     "items": [
+      {
+       "id": "1",
+       "cpv_code": "14700000-8"
+      }
+     ],
+     "title": "SHITJE SKRAP METALIK I GATSHEM PER FURRE DHE JO  I GATSHEM",
+     "value": {
+      "amount": 50709393,
+      "currency": "ALL"
+     },
+     "description": "SHITJE SKRAP METALIK I GATSHEM PER FURRE DHE JO  I GATSHEM",
+     "identifiers": "1A/2025",
+     "tenderPeriod": {
+      "endDate": "2025-03-25T00:00:00Z"
+     },
+     "procuringEntity": {
+      "id": "AL-QKB-Reparti Ushtarak Nr.1001 Komanda e Forces Tokesore Tirane",
+      "name": "Reparti Ushtarak Nr.1001 Komanda e Forces Tokesore Tirane"
+     },
+     "participationFees": [
+      {
+       "id": "1",
+       "value": {
+        "amount": 253547,
+        "currency": "ALL"
+       },
+       "description": "Fee payable for submitting a complaint"
+      }
+     ],
+     "mainProcurementCategory": [
+      "Mallra"
+     ]
+    },
+    "parties": [
+     {
+      "id": "AL-QKB-K91602003E",
+      "name": "CEKREZI METAL",
+      "roles": [
+       "complainant"
+      ],
+      "address": {
+       "streetAddress": "    Tirane TIRANE Vaqarr Truall me nr.pasurie 291/1, zona kadastrale 3712, Vaqarr"
+      },
+      "identifier": {
+       "id": "K91602003E",
+       "scheme": "AL-QKB",
+       "legalName": "CEKREZI METAL"
+      }
+     },
+     {
+      "id": "1",
+      "name": "Reparti Ushtarak Nr.1001 Komanda e Forces Tokesore Tirane",
+      "roles": [
+       "procuringEntity"
+      ],
+      "identifier": {
+       "id": "K91602003E",
+       "scheme": "AL-DPT"
+      }
+     }
+    ],
+    "language": "sq",
+    "complaints": {
+     "id": "954/2025",
+     "date": "2025-04-11T00:00:00Z",
+     "author": {
+      "id": "AL-QKB-K91602003E",
+      "name": "CEKREZI METAL"
+     },
+     "decision": {
+      "id": "502/2025",
+      "date": "2025-04-14T00:00:00Z",
+      "type": "VPA - Vendim Pezullim Ankandi",
+      "result": "VPA - Vendim Pezullim Ankandi",
+      "appealResult": "resolved"
+     },
+     "reviewDate": "2025-04-11T00:00:00Z",
+     "identifiers": [
+      {
+       "id": "1A/2025",
+       "scheme": "AL-KPP-Electronic-number"
+      }
+     ],
+     "publicProcurementCommissionProtocolDate": "2025-04-10T00:00:00Z"
+    },
+    "initiationType": "tender"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-k348cx-11",
+    "ocid_native": true,
+    "stage": "tender",
+    "title": "SHITJE SKRAP METALIK I GATSHEM PER FURRE DHE JO  I GATSHEM",
+    "description": "SHITJE SKRAP METALIK I GATSHEM PER FURRE DHE JO  I GATSHEM",
+    "buyer": null,
+    "country": "AL",
+    "status": null,
+    "procurement_method": null,
+    "main_category": [
+     "Mallra"
+    ],
+    "value": {
+     "amount": "50709393.00",
+     "currency": "ALL"
+    },
+    "published_at": "2025-04-11T00:00:00+00:00",
+    "updated_at": "2025-04-11T00:00:00+00:00",
+    "tender_start": null,
+    "tender_end": "2025-03-25T00:00:00+00:00",
+    "classifications": [],
+    "items": [
+     {
+      "id": "1"
+     }
+    ],
+    "language": "sq",
+    "url": null
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "ocds-k348cx-Ankand-2024-08-27T00:00:00Z",
+   "content_hash": "5e65d7df0c9088655805bdefc319e7849854e6715f8c671d5d9c2ea08cfcc456",
+   "fetched_at": "2026-11-03T17:38:32+00:00",
+   "publisher": "Public Procurement Commission (PPC)",
+   "published_at": "2024-08-27T00:00:00+00:00",
+   "source_updated_at": "2024-08-27T00:00:00+00:00",
+   "language": "sq",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "id": "ocds-k348cx-Ankand-2024-08-27T00:00:00Z",
+    "tag": [
+     "compiled"
+    ],
+    "date": "2024-08-27T00:00:00Z",
+    "ocid": "ocds-k348cx-Ankand",
+    "tender": {
+     "id": "Ankand",
+     "items": [
+      {
+       "id": "1",
+       "cpv_code": false
+      }
+     ],
+     "title": "Shitje Pasurie Shoqerise Ish Fabrika e Kepuceve Korce",
+     "value": {
+      "amount": 7364568,
+      "currency": "ALL"
+     },
+     "description": "Shitje Pasurie Shoqerise Ish Fabrika e Kepuceve Korce",
+     "procuringEntity": {
+      "id": "AL-QKB-Petrol Alba Sh.a",
+      "name": "Petrol Alba Sh.a"
+     },
+     "participationFees": [
+      {
+       "id": "1",
+       "value": {
+        "amount": 36823,
+        "currency": "ALL"
+       },
+       "description": "Fee payable for submitting a complaint"
+      }
+     ],
+     "mainProcurementCategory": [
+      "Mallra"
+     ]
+    },
+    "parties": [
+     {
+      "id": "AL-QKB-K37426001Q",
+      "name": "COLOSSEO CONSTRUCTION",
+      "roles": [
+       "complainant"
+      ],
+      "address": {
+       "streetAddress": "Lagjja “3 Heronjtë”, Rruga Marin Bicikemi, Shkodër"
+      },
+      "identifier": {
+       "id": "K37426001Q",
+       "scheme": "AL-QKB",
+       "legalName": "COLOSSEO CONSTRUCTION"
+      }
+     },
+     {
+      "id": "1",
+      "name": "Petrol Alba Sh.a",
+      "roles": [
+       "procuringEntity"
+      ],
+      "identifier": {
+       "id": "K91602003E",
+       "scheme": "AL-DPT"
+      }
+     },
+     {
+      "id": "AL-QKB-false",
+      "name": "Mirela Troka",
+      "roles": [
+       "complainant"
+      ],
+      "address": {
+       "streetAddress": "false"
+      },
+      "identifier": {
+       "id": "false",
+       "scheme": "AL-QKB",
+       "legalName": "Mirela Troka"
+      }
+     },
+     {
+      "id": "AL-QKB-k22113003Q",
+      "name": "RAFAELO 2002",
+      "roles": [
+       "complainant"
+      ],
+      "address": {
+       "streetAddress": "    Tirane TIRANE Tirane Njësia Bashkiake nr.11, Rruga 29 Nentori, kthesa e Kamzës, zonë kadastrale nr.8310, numër pasurie 12/104."
+      },
+      "identifier": {
+       "id": "k22113003Q",
+       "scheme": "AL-QKB",
+       "legalName": "RAFAELO 2002"
+      }
+     },
+     {
+      "id": "AL-QKB-K91602003E",
+      "name": "CEKREZI METAL",
+      "roles": [
+       "complainant"
+      ],
+      "address": {
+       "streetAddress": "    Tirane TIRANE Vaqarr Truall me nr.pasurie 291/1, zona kadastrale 3712, Vaqarr"
+      },
+      "identifier": {
+       "id": "K91602003E",
+       "scheme": "AL-QKB",
+       "legalName": "CEKREZI METAL"
+      }
+     }
+    ],
+    "language": "sq",
+    "complaints": {
+     "id": "2416/2024",
+     "date": "2024-08-27T00:00:00Z",
+     "author": {
+      "id": "AL-QKB-false",
+      "name": "Mirela Troka"
+     },
+     "decision": {
+      "id": "1355/2024",
+      "date": "2024-09-30T00:00:00Z",
+      "type": "VP - Vendim Perfundimtar",
+      "result": "VP - Vendim Perfundimtar",
+      "appealResult": "resolved"
+     },
+     "reviewDate": "2024-08-27T00:00:00Z",
+     "publicProcurementCommissionProtocolDate": "2024-08-27T00:00:00Z"
+    },
+    "initiationType": "tender"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-k348cx-Ankand",
+    "ocid_native": true,
+    "stage": "tender",
+    "title": "Shitje Pasurie Shoqerise Ish Fabrika e Kepuceve Korce",
+    "description": "Shitje Pasurie Shoqerise Ish Fabrika e Kepuceve Korce",
+    "buyer": null,
+    "country": "AL",
+    "status": null,
+    "procurement_method": null,
+    "main_category": [
+     "Mallra"
+    ],
+    "value": {
+     "amount": "7364568.00",
+     "currency": "ALL"
+    },
+    "published_at": "2024-08-27T00:00:00+00:00",
+    "updated_at": "2024-08-27T00:00:00+00:00",
+    "tender_start": null,
+    "tender_end": null,
+    "classifications": [],
+    "items": [
+     {
+      "id": "1"
+     }
+    ],
+    "language": "sq",
+    "url": null
+   },
+   "awards": [],
+   "contracts": []
+  }
+ ],
+ "rejected": []
+}

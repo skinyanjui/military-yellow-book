@@ -4,6 +4,7 @@ import argparse
 import datetime
 import json
 import os
+import re
 import sys
 
 from . import bundle as B
@@ -16,9 +17,21 @@ CONNECTORS = {c.source_id: c for c in (uk.UkFindATender, uk.UkContractsFinder, t
                                        worldbank.WorldBankNotices, secop.ColombiaSecop, gated.SamOpportunities, gated.ChileLicitaciones, gated.ChileOrdenes)}
 
 
+CATALOGUE = os.path.join(os.path.dirname(__file__), "..", "catalog", "ocp_registry.json")
+
+
+def ocp_opts(source_id):
+    """publication id, ISO2 country, licence and publisher for an OCP child source, from the catalogue file (not guessed)."""
+    for s in json.load(open(CATALOGUE))["sources"]:
+        if s["source_id"] == source_id:
+            m = re.search(r"country code ([A-Z]{2})", s.get("notes") or "")
+            return {"publication": int(source_id.rsplit("_", 1)[1]), "country": m.group(1) if m else None, "licence": s.get("licence"), "publisher": s["owner_institution"]}
+    raise SystemExit("%s is not in the OCP catalogue file" % source_id)
+
+
 def build_connector(source_id, client, **opts):
     if source_id.startswith("ocp_pub_"):
-        return OcdsBulk(client, source_id, **opts)
+        return OcdsBulk(client, source_id, **{**ocp_opts(source_id), **opts})
     if source_id not in CONNECTORS:
         raise SystemExit("no connector for %s" % source_id)
     return CONNECTORS[source_id](client, **opts)

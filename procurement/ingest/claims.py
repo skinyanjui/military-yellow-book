@@ -64,7 +64,9 @@ def live_claims(samples_dir, endpoints):
 if __name__ == "__main__":
     base = os.path.join(os.path.dirname(__file__), "..")
     reviewed = json.load(open(os.path.join(base, "evidence", "claims_reviewed.json")))
-    manifest = {s["source_id"]: s["endpoint_url"] for s in json.load(open(os.path.join(base, "manifest", "procurement_source_manifest.json")))["sources"]}
+    from .connectors import pncp, secop, ted, uk, usaspending, worldbank
+    manifest = {"uk_fts": uk.UkFindATender.BASE, "uk_cf": uk.UkContractsFinder.BASE, "ted": ted.Ted.URL, "brazil_pncp": pncp.BASE + "/contratacoes/publicacao",
+                "usaspending": usaspending.URL, "worldbank_procurement": worldbank.API, "colombia_secop": secop.URL}
     ok, bad = verify(reviewed, Client(min_interval=1.0, timeout=60, retries=2))
     live = live_claims(os.path.join(base, "samples"), manifest)
     json.dump({"verified_on": reviewed["reviewed_on"], "claims": ok + live}, open(sys.argv[1], "w"), ensure_ascii=False, indent=1)

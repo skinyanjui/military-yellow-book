@@ -239,7 +239,7 @@
    "source_id": "colombia_secop",
    "field": "authentication",
    "method": "live_call",
-   "url": "",
+   "url": "https://www.datos.gov.co/resource/jbjy-vk9h.json",
    "value": "none needed: an anonymous request returned 20 records that validated",
    "quote": "run 64d08eba-f891-4b86-a265-1dba438ef0e4, 2026-11-03T17:27:18+00:00, no credential sent"
   },
@@ -247,7 +247,7 @@
    "source_id": "colombia_secop",
    "field": "licence_in_records",
    "method": "live_call",
-   "url": "",
+   "url": "https://www.datos.gov.co/resource/jbjy-vk9h.json",
    "value": "CC BY-SA 4.0 (as reported by the datos.gov.co catalog)",
    "quote": "licence carried by the records of run 64d08eba-f891-4b86-a265-1dba438ef0e4"
   },
@@ -263,7 +263,7 @@
    "source_id": "uk_cf",
    "field": "authentication",
    "method": "live_call",
-   "url": "",
+   "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search",
    "value": "none needed: an anonymous request returned 20 records that validated",
    "quote": "run 4279dbcf-be11-490f-999d-832e96a1974c, 2026-11-03T17:26:58+00:00, no credential sent"
   },
@@ -271,7 +271,7 @@
    "source_id": "uk_cf",
    "field": "licence_in_records",
    "method": "live_call",
-   "url": "",
+   "url": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search",
    "value": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
    "quote": "licence carried by the records of run 4279dbcf-be11-490f-999d-832e96a1974c"
   },
@@ -303,7 +303,7 @@
    "source_id": "worldbank_procurement",
    "field": "authentication",
    "method": "live_call",
-   "url": "",
+   "url": "https://datacatalogapi.worldbank.org/dexapps/fone/api/apiservice",
    "value": "none needed: an anonymous request returned 20 records that validated",
    "quote": "run c9ca5758-ed2f-4ee7-9b3d-0e31b05a13a2, 2026-11-03T17:27:03+00:00, no credential sent"
   },
@@ -311,7 +311,7 @@
    "source_id": "worldbank_procurement",
    "field": "licence_in_records",
    "method": "live_call",
-   "url": "",
+   "url": "https://datacatalogapi.worldbank.org/dexapps/fone/api/apiservice",
    "value": "CC BY 4.0",
    "quote": "licence carried by the records of run c9ca5758-ed2f-4ee7-9b3d-0e31b05a13a2"
   }

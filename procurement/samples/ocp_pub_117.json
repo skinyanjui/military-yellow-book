@@ -1,0 +1,170 @@
+{
+ "run": {
+  "run_id": "db35226b-5b30-41b7-b20a-3822d6e7abf4",
+  "source_id": "ocp_pub_117",
+  "mode": "test",
+  "started_at": "2026-11-03T17:38:34+00:00",
+  "params": {
+   "limit": 20,
+   "since": "2026-10-27T17:38:34",
+   "until": "2026-11-03T17:38:34",
+   "publication": 117,
+   "country": "IT",
+   "licence": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+   "publisher": "Autorità Nazionale Anticorruzione (ANAC)",
+   "days": 7,
+   "schema_errors": 0
+  },
+  "cursor_before": null,
+  "transform_version": "myb-procurement-0.1",
+  "status": "failed",
+  "fetched": 20,
+  "drift": {
+   "missing": [],
+   "unexpected": []
+  }
+ },
+ "records": [],
+ "rejected": [
+  {
+   "external_id": "ocds-hu01ve-012/T/2024-2025-07-18 16:33:31.703T12:00:00Z",
+   "reason": "bad_date",
+   "detail": {
+    "value": "2025-07-18 16:33:31.703T12:00:00Z"
+   }
+  },
+  {
+   "external_id": "ocds-hu01ve-012UG-2025-07-19 16:33:25.430T12:00:00Z",
+   "reason": "bad_date",
+   "detail": {
+    "value": "2025-07-19 16:33:25.430T12:00:00Z"
+   }
+  },
+  {
+   "external_id": "ocds-hu01ve-01304660200-36-2024-11-24 18:01:26.182T12:00:00Z",
+   "reason": "bad_date",
+   "detail": {
+    "value": "2024-11-24 18:01:26.182T12:00:00Z"
+   }
+  },
+  {
+   "external_id": "ocds-hu01ve-01307110484-2-2025-08-29 16:30:10.139T12:00:00Z",
+   "reason": "bad_date",
+   "detail": {
+    "value": "2025-08-29 16:30:10.139T12:00:00Z"
+   }
+  },
+  {
+   "external_id": "ocds-hu01ve-01314370196verde-2025-07-18 16:35:19.241T12:00:00Z",
+   "reason": "bad_date",
+   "detail": {
+    "value": "2025-07-18 16:35:19.241T12:00:00Z"
+   }
+  },
+  {
+   "external_id": "ocds-hu01ve-01314470186-2024-0001-2024-12-20 17:41:47.329T12:00:00Z",
+   "reason": "bad_date",
+   "detail": {
+    "value": "2024-12-20 17:41:47.329T12:00:00Z"
+   }
+  },
+  {
+   "external_id": "ocds-hu01ve-013/2024/ASD-2025-06-17 16:30:43.930T12:00:00Z",
+   "reason": "bad_date",
+   "detail": {
+    "value": "2025-06-17 16:30:43.930T12:00:00Z"
+   }
+  },
+  {
+   "external_id": "ocds-hu01ve-01320740580-1SSPTUSERT4RM-2025-07-18 16:32:16.149T12:00:00Z",
+   "reason": "bad_date",
+   "detail": {
+    "value": "2025-07-18 16:32:16.149T12:00:00Z"
+   }
+  },
+  {
+   "external_id": "ocds-hu01ve-0133-2024-50e7a0f4-d36f-4f8c-aa30-ebdb6d8f4f4d-2025-08-25 16:30:37.4",
+   "reason": "bad_date",
+   "detail": {
+    "value": "2025-08-25 16:30:37.493T12:00:00Z"
+   }
+  },
+  {
+   "external_id": "ocds-hu01ve-01336730153501-2025-07-18 16:31:53.300T12:00:00Z",
+   "reason": "bad_date",
+   "detail": {
+    "value": "2025-07-18 16:31:53.300T12:00:00Z"
+   }
+  },
+  {
+   "external_id": "ocds-hu01ve-013757103632-2025-07-18 16:32:27.243T12:00:00Z",
+   "reason": "bad_date",
+   "detail": {
+    "value": "2025-07-18 16:32:27.243T12:00:00Z"
+   }
+  },
+  {
+   "external_id": "ocds-hu01ve-01397270495-2024-01-2025-07-19 16:31:14.360T12:00:00Z",
+   "reason": "bad_date",
+   "detail": {
+    "value": "2025-07-19 16:31:14.360T12:00:00Z"
+   }
+  },
+  {
+   "external_id": "ocds-hu01ve-01397270495-2024-02-2025-07-18 16:32:41.329T12:00:00Z",
+   "reason": "bad_date",
+   "detail": {
+    "value": "2025-07-18 16:32:41.329T12:00:00Z"
+   }
+  },
+  {
+   "external_id": "ocds-hu01ve- 013e1c43-6b29-4df5-b2bf-a8cee84eb1ef-2025-02-22 17:30:40.160T12:00:",
+   "reason": "bad_date",
+   "detail": {
+    "value": "2025-02-22 17:30:40.160T12:00:00Z"
+   }
+  },
+  {
+   "external_id": "ocds-hu01ve-013feaa6-91d9-48bd-b9a7-90db92f33601-2025-07-18 16:31:03.041T12:00:0",
+   "reason": "bad_date",
+   "detail": {
+    "value": "2025-07-18 16:31:03.041T12:00:00Z"
+   }
+  },
+  {
+   "external_id": "ocds-hu01ve-013UG -2025-07-19 16:32:27.058T12:00:00Z",
+   "reason": "bad_date",
+   "detail": {
+    "value": "2025-07-19 16:32:27.058T12:00:00Z"
+   }
+  },
+  {
+   "external_id": "ocds-hu01ve-014/2024/ASD-2025-07-19 16:33:42.258T12:00:00Z",
+   "reason": "bad_date",
+   "detail": {
+    "value": "2025-07-19 16:33:42.258T12:00:00Z"
+   }
+  },
+  {
+   "external_id": "ocds-hu01ve-014-2024-UT-2025-07-18 16:32:50.211T12:00:00Z",
+   "reason": "bad_date",
+   "detail": {
+    "value": "2025-07-18 16:32:50.211T12:00:00Z"
+   }
+  },
+  {
+   "external_id": "ocds-hu01ve-0142-2024-5ddd9f31-c083-4d53-bd3f-39ebef038e8c-2025-07-19 16:34:26.7",
+   "reason": "bad_date",
+   "detail": {
+    "value": "2025-07-19 16:34:26.747T12:00:00Z"
+   }
+  },
+  {
+   "external_id": "ocds-hu01ve- 014264108804-2025-07-18 16:35:11.737T12:00:00Z",
+   "reason": "bad_date",
+   "detail": {
+    "value": "2025-07-18 16:35:11.737T12:00:00Z"
+   }
+  }
+ ]
+}
