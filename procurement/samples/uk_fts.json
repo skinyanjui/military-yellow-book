@@ -1,0 +1,5562 @@
+{
+ "run": {
+  "run_id": "6c49bf19-c4ef-4cc4-914f-3340e5487d9a",
+  "source_id": "uk_fts",
+  "mode": "test",
+  "started_at": "2026-11-03T17:26:57+00:00",
+  "params": {
+   "limit": 20,
+   "since": "2026-10-27T17:26:57",
+   "until": "2026-11-03T17:26:57",
+   "days": 7,
+   "schema_errors": 0
+  },
+  "cursor_before": null,
+  "transform_version": "myb-procurement-0.1",
+  "status": "success",
+  "fetched": 20,
+  "drift": {
+   "missing": [],
+   "unexpected": []
+  },
+  "cursor_after": {
+   "high_water": "2026-11-03T17:24:46"
+  }
+ },
+ "records": [
+  {
+   "external_id": "104434-2026",
+   "content_hash": "e326ebf2af9c5b64088e643af2fa59fb173d8802154b753da7b6561ae1484b65",
+   "fetched_at": "2026-11-03T17:26:57+00:00",
+   "source_url": "https://www.find-tender.service.gov.uk/Notice/104434-2026",
+   "publisher": "Cabinet Office",
+   "published_at": "2026-11-03T17:24:46+00:00",
+   "source_updated_at": "2026-11-03T17:24:46+00:00",
+   "language": "en",
+   "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "ocid": "ocds-h6vhtk-079715",
+    "buyerID": [],
+    "id": "104434-2026",
+    "tag": [
+     "award",
+     "contract"
+    ],
+    "date": "2026-11-03T17:24:46Z",
+    "initiationType": "tender",
+    "parties": [
+     {
+      "name": "THE OPEN UNIVERSITY",
+      "id": "GB-CHC-RC000391",
+      "identifier": {
+       "scheme": "GB-CHC",
+       "id": "RC000391"
+      },
+      "additionalIdentifiers": [
+       {
+        "scheme": "GB-PPON",
+        "id": "PYNW-6296-ZJQQ"
+       }
+      ],
+      "address": {
+       "streetAddress": "Walton Hall",
+       "locality": "Milton Keynes",
+       "postalCode": "MK7 6AA",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKJ12"
+      },
+      "contactPoint": {
+       "email": "finance-tenders@open.ac.uk"
+      },
+      "roles": [
+       "buyer"
+      ],
+      "details": {
+       "classifications": [
+        {
+         "scheme": "UK_CA_TYPE",
+         "id": "publicAuthoritySubCentralGovernment",
+         "description": "Public authority - sub-central government"
+        }
+       ]
+      }
+     },
+     {
+      "name": "SOUTHBANK CENTRE",
+      "id": "GB-COH-02238415",
+      "identifier": {
+       "scheme": "GB-COH",
+       "id": "02238415"
+      },
+      "additionalIdentifiers": [
+       {
+        "scheme": "GB-CHC",
+        "id": "298909"
+       }
+      ],
+      "address": {
+       "streetAddress": "Southbank Centre",
+       "locality": "London",
+       "postalCode": "SE1 8XX",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKI45"
+      },
+      "contactPoint": {
+       "email": "finance@southbankcentre.co.uk"
+      },
+      "roles": [
+       "supplier"
+      ],
+      "details": {
+       "url": "https://www.southbankcentre.co.uk/",
+       "scale": "large",
+       "vcse": false
+      }
+     }
+    ],
+    "buyer": {
+     "id": "GB-CHC-RC000391",
+     "name": "THE OPEN UNIVERSITY"
+    },
+    "tender": {
+     "id": "OUPA11774",
+     "legalBasis": {
+      "id": "2023/54",
+      "scheme": "UKPGA",
+      "uri": "https://www.legislation.gov.uk/ukpga/2023/54/contents"
+     },
+     "title": "LD27CD Venue Hire",
+     "description": "LD27CD Ceremony Venue Hire - Royal Festival Hall / Southbank",
+     "status": "complete",
+     "procurementMethodDetails": "Below threshold - unknown",
+     "lots": [
+      {
+       "id": "1",
+       "status": "complete",
+       "description": null
+      }
+     ]
+    },
+    "awards": [
+     {
+      "id": "1",
+      "status": "active",
+      "mainProcurementCategory": "services",
+      "suppliers": [
+       {
+        "id": "GB-COH-02238415",
+        "name": "SOUTHBANK CENTRE"
+       }
+      ],
+      "items": [
+       {
+        "id": "1",
+        "additionalClassifications": [
+         {
+          "scheme": "CPV",
+          "id": "79952000",
+          "description": "Event services"
+         }
+        ],
+        "deliveryAddresses": [
+         {
+          "region": "UK",
+          "country": "GB",
+          "countryName": "United Kingdom"
+         }
+        ],
+        "relatedLot": "1"
+       }
+      ],
+      "relatedLots": [
+       "1"
+      ]
+     }
+    ],
+    "contracts": [
+     {
+      "id": "1",
+      "awardID": "1",
+      "status": "active",
+      "period": {
+       "startDate": "2026-07-29T00:00:00+01:00",
+       "endDate": "2027-04-06T23:59:59+01:00"
+      },
+      "value": {
+       "amountGross": 57240,
+       "amount": 47700,
+       "currency": "GBP"
+      },
+      "aboveThreshold": false,
+      "dateSigned": "2026-07-29T00:00:00+01:00",
+      "statusDetails": null,
+      "documents": [
+       {
+        "id": "104434-2026",
+        "documentType": "contractNotice",
+        "noticeType": "UK7",
+        "description": "Contract details notice on Find a Tender",
+        "url": "https://www.find-tender.service.gov.uk/Notice/104434-2026",
+        "datePublished": "2026-11-03T17:24:46Z",
+        "format": "text/html"
+       }
+      ]
+     }
+    ],
+    "language": "en"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-h6vhtk-079715",
+    "ocid_native": true,
+    "stage": "contract",
+    "title": "LD27CD Venue Hire",
+    "description": "LD27CD Ceremony Venue Hire - Royal Festival Hall / Southbank",
+    "buyer": {
+     "name": "THE OPEN UNIVERSITY",
+     "id": "RC000391",
+     "scheme": "GB-CHC",
+     "country": "GB"
+    },
+    "country": "GB",
+    "status": "complete",
+    "procurement_method": "Below threshold - unknown",
+    "main_category": null,
+    "value": null,
+    "published_at": "2026-11-03T17:24:46+00:00",
+    "updated_at": "2026-11-03T17:24:46+00:00",
+    "tender_start": null,
+    "tender_end": null,
+    "classifications": [],
+    "items": [],
+    "language": "en",
+    "url": "https://www.find-tender.service.gov.uk/Notice/104434-2026"
+   },
+   "awards": [
+    {
+     "award_id": "1",
+     "title": null,
+     "status": "active",
+     "date": null,
+     "value": null,
+     "suppliers": [
+      {
+       "name": "SOUTHBANK CENTRE",
+       "id": "02238415",
+       "scheme": "GB-COH"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "1",
+     "award_id": "1",
+     "title": null,
+     "status": "active",
+     "date_signed": "2026-07-29T00:00:00+01:00",
+     "period_start": "2026-07-29T00:00:00+01:00",
+     "period_end": "2027-04-06T23:59:59+01:00",
+     "value": {
+      "amount": "47700.00",
+      "currency": "GBP"
+     }
+    }
+   ]
+  },
+  {
+   "external_id": "104433-2026",
+   "content_hash": "bb4291d757e936298ce8e466f65ded6a5613f80dae6ff58d21394af829dc7eb7",
+   "fetched_at": "2026-11-03T17:26:57+00:00",
+   "source_url": "https://www.find-tender.service.gov.uk/Notice/104433-2026",
+   "publisher": "Cabinet Office",
+   "published_at": "2026-11-03T17:24:39+00:00",
+   "source_updated_at": "2026-11-03T17:24:39+00:00",
+   "language": "en",
+   "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "ocid": "ocds-h6vhtk-079714",
+    "buyerID": [],
+    "id": "104433-2026",
+    "tag": [
+     "tender"
+    ],
+    "date": "2026-11-03T17:24:39Z",
+    "initiationType": "tender",
+    "parties": [
+     {
+      "name": "Barcud Cyfyngedig",
+      "id": "GB-PPON-PBDQ-6117-NNYZ",
+      "identifier": {
+       "scheme": "GB-PPON",
+       "id": "PBDQ-6117-NNYZ"
+      },
+      "address": {
+       "streetAddress": "Unit 4, Pont Steffan Business Park,",
+       "locality": "Ceredigion",
+       "postalCode": "SA48 7HH",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKL14"
+      },
+      "contactPoint": {
+       "email": "procurement@barcudsharedservices.org.uk"
+      },
+      "roles": [
+       "buyer"
+      ],
+      "details": {
+       "classifications": [
+        {
+         "scheme": "UK_CA_TYPE",
+         "id": "publicAuthoritySubCentralGovernment",
+         "description": "Public authority - sub-central government"
+        },
+        {
+         "scheme": "UK_CA_DEVOLVED_REGULATIONS",
+         "id": "GB-WLS",
+         "description": "Welsh devolved regulations apply"
+        }
+       ]
+      }
+     },
+     {
+      "name": "Barcud Shared Service ",
+      "id": "GB-PPON-PVGZ-2679-RJTL",
+      "identifier": {
+       "scheme": "GB-PPON",
+       "id": "PVGZ-2679-RJTL"
+      },
+      "address": {
+       "streetAddress": "2 Alexandra Gate, Ffordd Pengam, ",
+       "locality": "Cardiff. ",
+       "postalCode": "CF24 2SA",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKL22"
+      },
+      "contactPoint": {
+       "email": "procurement@barcudsharedservices.org.uk"
+      },
+      "roles": [
+       "procuringEntity"
+      ],
+      "roleDetails": "Tender Management "
+     }
+    ],
+    "buyer": {
+     "id": "GB-PPON-PBDQ-6117-NNYZ",
+     "name": "Barcud Cyfyngedig"
+    },
+    "tender": {
+     "id": "ocds-h6vhtk-079714",
+     "legalBasis": {
+      "id": "2023/54",
+      "scheme": "UKPGA",
+      "uri": "https://www.legislation.gov.uk/ukpga/2023/54/contents"
+     },
+     "title": "BHA26009 - Provision of External Mobility Scooter Storage",
+     "description": "Provision of two external mobility scooter storage units and associated works. ",
+     "status": "active",
+     "items": [
+      {
+       "id": "1",
+       "additionalClassifications": [
+        {
+         "scheme": "CPV",
+         "id": "45210000",
+         "description": "Building construction work"
+        }
+       ],
+       "deliveryAddresses": [
+        {
+         "region": "UKL",
+         "country": "GB",
+         "countryName": "United Kingdom"
+        }
+       ],
+       "relatedLot": "1"
+      }
+     ],
+     "value": {
+      "amountGross": 140000.0,
+      "amount": 116666.67,
+      "currency": "GBP"
+     },
+     "procurementMethod": "open",
+     "procurementMethodDetails": "Below threshold - open competition",
+     "mainProcurementCategory": "works",
+     "aboveThreshold": false,
+     "submissionMethodDetails": "https://www.sell2wales.gov.wales/",
+     "submissionTerms": {
+      "electronicSubmissionPolicy": "allowed"
+     },
+     "tenderPeriod": {
+      "endDate": "2026-11-09T16:00:00+00:00"
+     },
+     "enquiryPeriod": {
+      "endDate": "2026-11-06T12:00:00+00:00"
+     },
+     "lots": [
+      {
+       "id": "1",
+       "status": "active",
+       "value": {
+        "amountGross": 140000.0,
+        "amount": 116666.67,
+        "currency": "GBP"
+       },
+       "awardCriteria": {
+        "criteria": [
+         {
+          "type": "price",
+          "name": "Price",
+          "numbers": [
+           {
+            "number": 100.0,
+            "weight": "percentageExact"
+           }
+          ]
+         }
+        ]
+       },
+       "suitability": {
+        "sme": true
+       },
+       "contractPeriod": {
+        "startDate": "2027-01-04T00:00:00+00:00",
+        "endDate": "2027-03-01T23:59:59+00:00"
+       },
+       "description": null
+      }
+     ],
+     "documents": [
+      {
+       "id": "L-1",
+       "documentType": "biddingDocuments",
+       "description": "Form of Tender 1269 Hafan yr Efail",
+       "url": "https://www.sell2wales.gov.wales/Assets/NoticeBuilder_FileDownload.aspx?id=385527"
+      },
+      {
+       "id": "L-2",
+       "documentType": "biddingDocuments",
+       "description": "Form of Tender 1305  Llys Pedr",
+       "url": "https://www.sell2wales.gov.wales/Assets/NoticeBuilder_FileDownload.aspx?id=385528"
+      },
+      {
+       "id": "L-3",
+       "documentType": "biddingDocuments",
+       "description": "Llys Pedr Blank Tender Letter 16_10_2026",
+       "url": "https://www.sell2wales.gov.wales/Assets/NoticeBuilder_FileDownload.aspx?id=385529"
+      },
+      {
+       "id": "L-4",
+       "documentType": "biddingDocuments",
+       "description": "LP-0016_PP",
+       "url": "https://www.sell2wales.gov.wales/Assets/NoticeBuilder_FileDownload.aspx?id=385530"
+      },
+      {
+       "id": "L-5",
+       "documentType": "biddingDocuments",
+       "description": "LP-1269B Location Plan",
+       "url": "https://www.sell2wales.gov.wales/Assets/NoticeBuilder_FileDownload.aspx?id=385531"
+      },
+      {
+       "id": "L-6",
+       "documentType": "biddingDocuments",
+       "description": "LP-1305B Location Plan",
+       "url": "https://www.sell2wales.gov.wales/Assets/NoticeBuilder_FileDownload.aspx?id=385532"
+      },
+      {
+       "id": "L-7",
+       "documentType": "biddingDocuments",
+       "description": "PCI Llys Pedr  Hafan yr Efail",
+       "url": "https://www.sell2wales.gov.wales/Assets/NoticeBuilder_FileDownload.aspx?id=385533"
+      },
+      {
+       "id": "L-8",
+       "documentType": "biddingDocuments",
+       "description": "P-SS-1269A Proposed Scooter Store",
+       "url": "https://www.sell2wales.gov.wales/Assets/NoticeBuilder_FileDownload.aspx?id=385534"
+      },
+      {
+       "id": "L-9",
+       "documentType": "biddingDocuments",
+       "description": "P-SS-1305B Propsoed Scooter Store",
+       "url": "https://www.sell2wales.gov.wales/Assets/NoticeBuilder_FileDownload.aspx?id=385535"
+      },
+      {
+       "id": "L-10",
+       "documentType": "biddingDocuments",
+       "description": "Schedules Hafan yr Efail 1269",
+       "url": "https://www.sell2wales.gov.wales/Assets/NoticeBuilder_FileDownload.aspx?id=385536"
+      },
+      {
+       "id": "L-11",
+       "documentType": "biddingDocuments",
+       "description": "Schedules Llys Pedr 1305",
+       "url": "https://www.sell2wales.gov.wales/Assets/NoticeBuilder_FileDownload.aspx?id=385537"
+      },
+      {
+       "id": "L-12",
+       "documentType": "biddingDocuments",
+       "description": "T-1269A Propsoed Site Layout Plan",
+       "url": "https://www.sell2wales.gov.wales/Assets/NoticeBuilder_FileDownload.aspx?id=385538"
+      },
+      {
+       "id": "L-13",
+       "documentType": "biddingDocuments",
+       "description": "T-1305A 01 Proposed Site Layout Plan",
+       "url": "https://www.sell2wales.gov.wales/Assets/NoticeBuilder_FileDownload.aspx?id=385539"
+      },
+      {
+       "id": "L-14",
+       "documentType": "biddingDocuments",
+       "description": "T-1305A 02 Retaining Wall",
+       "url": "https://www.sell2wales.gov.wales/Assets/NoticeBuilder_FileDownload.aspx?id=385540"
+      },
+      {
+       "id": "L-15",
+       "documentType": "biddingDocuments",
+       "description": "T-1305A 03 Permeable Parking",
+       "url": "https://www.sell2wales.gov.wales/Assets/NoticeBuilder_FileDownload.aspx?id=385541"
+      },
+      {
+       "id": "L-16",
+       "documentType": "biddingDocuments",
+       "description": "T-1305A 04 Permeable Paving",
+       "url": "https://www.sell2wales.gov.wales/Assets/NoticeBuilder_FileDownload.aspx?id=385542"
+      },
+      {
+       "id": "L-17",
+       "documentType": "biddingDocuments",
+       "description": "T-1305A 05 Kerb Bedding",
+       "url": "https://www.sell2wales.gov.wales/Assets/NoticeBuilder_FileDownload.aspx?id=385543"
+      },
+      {
+       "id": "L-18",
+       "documentType": "biddingDocuments",
+       "description": "T-1305A 06 Highway Jointing",
+       "url": "https://www.sell2wales.gov.wales/Assets/NoticeBuilder_FileDownload.aspx?id=385544"
+      },
+      {
+       "id": "L-19",
+       "documentType": "biddingDocuments",
+       "description": "T-1305A 07 Pipe Trench",
+       "url": "https://www.sell2wales.gov.wales/Assets/NoticeBuilder_FileDownload.aspx?id=385545"
+      },
+      {
+       "id": "104433-2026",
+       "documentType": "tenderNotice",
+       "noticeType": "UK4",
+       "description": "Tender notice on Find a Tender",
+       "url": "https://www.find-tender.service.gov.uk/Notice/104433-2026",
+       "datePublished": "2026-11-03T17:24:39Z",
+       "format": "text/html"
+      }
+     ]
+    },
+    "language": "en"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-h6vhtk-079714",
+    "ocid_native": true,
+    "stage": "tender",
+    "title": "BHA26009 - Provision of External Mobility Scooter Storage",
+    "description": "Provision of two external mobility scooter storage units and associated works. ",
+    "buyer": {
+     "name": "Barcud Cyfyngedig",
+     "id": "PBDQ-6117-NNYZ",
+     "scheme": "GB-PPON",
+     "country": "GB"
+    },
+    "country": "GB",
+    "status": "active",
+    "procurement_method": "Below threshold - open competition",
+    "main_category": "works",
+    "value": {
+     "amount": "116666.67",
+     "currency": "GBP"
+    },
+    "published_at": "2026-11-03T17:24:39+00:00",
+    "updated_at": "2026-11-03T17:24:39+00:00",
+    "tender_start": null,
+    "tender_end": "2026-11-09T16:00:00+00:00",
+    "classifications": [],
+    "items": [
+     {
+      "id": "1"
+     }
+    ],
+    "language": "en",
+    "url": "https://www.find-tender.service.gov.uk/Notice/104433-2026"
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "104432-2026",
+   "content_hash": "7fb88ff3a217abd07110acb8b4765e843a68fae31d584052ae4fae0c3d387476",
+   "fetched_at": "2026-11-03T17:26:57+00:00",
+   "source_url": "https://www.find-tender.service.gov.uk/Notice/104432-2026",
+   "publisher": "Cabinet Office",
+   "published_at": "2026-11-03T17:23:05+00:00",
+   "source_updated_at": "2026-11-03T17:23:05+00:00",
+   "language": "en",
+   "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "ocid": "ocds-h6vhtk-079713",
+    "id": "104432-2026",
+    "tag": [
+     "award",
+     "contract"
+    ],
+    "date": "2026-11-03T17:23:05Z",
+    "initiationType": "tender",
+    "parties": [
+     {
+      "name": "Department of Health & Social Care",
+      "id": "GB-PPON-PMQG-9965-CHZR",
+      "identifier": {
+       "scheme": "GB-PPON",
+       "id": "PMQG-9965-CHZR"
+      },
+      "address": {
+       "streetAddress": "39 Victoria Street",
+       "locality": "London",
+       "postalCode": "SW1H 0EU",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKI32"
+      },
+      "contactPoint": {
+       "name": "Jay Bains",
+       "email": "ccsinbox@dhsc.gov.uk",
+       "telephone": "02071047545"
+      },
+      "roles": [
+       "buyer"
+      ],
+      "details": {
+       "url": "https://www.gov.uk/government/organisations/department-of-health-and-social-care",
+       "classifications": [
+        {
+         "scheme": "UK_CA_TYPE",
+         "id": "publicAuthorityCentralGovernment",
+         "description": "Public authority - central government"
+        }
+       ]
+      }
+     },
+     {
+      "name": "Mildmay Hospital Ltd",
+      "id": "GB-COH-01921087",
+      "identifier": {
+       "scheme": "GB-COH",
+       "id": "01921087"
+      },
+      "address": {
+       "streetAddress": "19 Tabernacle Gardens",
+       "locality": "London",
+       "postalCode": "E2 7DZ",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKI42"
+      },
+      "contactPoint": {
+       "email": "info@mildmay.org",
+       "telephone": "+44 (0)20 7613 6300"
+      },
+      "roles": [
+       "supplier"
+      ],
+      "details": {
+       "url": "https://www.mildmay.org/",
+       "scale": "sme",
+       "vcse": false
+      }
+     }
+    ],
+    "buyer": {
+     "id": "GB-PPON-PMQG-9965-CHZR",
+     "name": "Department of Health & Social Care"
+    },
+    "tender": {
+     "id": "C485770",
+     "legalBasis": {
+      "id": "2023/54",
+      "scheme": "UKPGA",
+      "uri": "https://www.legislation.gov.uk/ukpga/2023/54/contents"
+     },
+     "title": "DHSC:GPH: Intermediate Care Pathway For Rough Sleepers (Mildmay) 2026-27",
+     "description": "Delivery of access to inpatient beds where people’s immediate physical healthcare needs (such as infections and acute injuries, chronic unmanaged health conditions and uncomplicated drug and alcohol detoxification) can be treated alongside mental health and wider work undertaken by a multi-disciplinary team to enhance motivation and assess ongoing social care needs.",
+     "status": "complete",
+     "procurementMethod": "direct",
+     "procurementMethodDetails": "Below threshold - without competition",
+     "specialRegime": [
+      "lightTouch"
+     ],
+     "lots": [
+      {
+       "id": "1",
+       "status": "complete"
+      }
+     ]
+    },
+    "awards": [
+     {
+      "id": "1",
+      "status": "active",
+      "mainProcurementCategory": "services",
+      "suppliers": [
+       {
+        "id": "GB-COH-01921087",
+        "name": "Mildmay Hospital Ltd"
+       }
+      ],
+      "items": [
+       {
+        "id": "1",
+        "additionalClassifications": [
+         {
+          "scheme": "CPV",
+          "id": "85100000",
+          "description": "Health services"
+         },
+         {
+          "scheme": "CPV",
+          "id": "85144000",
+          "description": "Residential health facilities services"
+         },
+         {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+         }
+        ],
+        "relatedLot": "1"
+       }
+      ],
+      "relatedLots": [
+       "1"
+      ]
+     }
+    ],
+    "contracts": [
+     {
+      "id": "1",
+      "awardID": "1",
+      "title": "DHSC:GPH: Intermediate Care Pathway For Rough Sleepers (Mildmay) 2026-27",
+      "status": "active",
+      "period": {
+       "startDate": "2026-11-09T00:00:00Z",
+       "endDate": "2027-03-31T23:59:59+01:00",
+       "maxExtentDate": "2027-09-30T23:59:59+01:00"
+      },
+      "hasRenewal": true,
+      "renewal": {
+       "description": "Optional to the Authority and subject to budget availability for a period or periods of up to 6 months."
+      },
+      "value": {
+       "amountGross": 596000.0,
+       "amount": 596000.0,
+       "currency": "GBP"
+      },
+      "aboveThreshold": false,
+      "dateSigned": "2026-11-03T00:00:00Z",
+      "documents": [
+       {
+        "id": "104432-2026",
+        "documentType": "contractNotice",
+        "noticeType": "UK7",
+        "description": "Contract details notice on Find a Tender",
+        "url": "https://www.find-tender.service.gov.uk/Notice/104432-2026",
+        "datePublished": "2026-11-03T17:23:05Z",
+        "format": "text/html"
+       }
+      ]
+     }
+    ],
+    "language": "en"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-h6vhtk-079713",
+    "ocid_native": true,
+    "stage": "contract",
+    "title": "DHSC:GPH: Intermediate Care Pathway For Rough Sleepers (Mildmay) 2026-27",
+    "description": "Delivery of access to inpatient beds where people’s immediate physical healthcare needs (such as infections and acute injuries, chronic unmanaged health conditions and uncomplicated drug and alcohol detoxification) can be treated alongside mental health and wider work undertaken by a multi-disciplinary team to enhance motivation and assess ongoing social care needs.",
+    "buyer": {
+     "name": "Department of Health & Social Care",
+     "id": "PMQG-9965-CHZR",
+     "scheme": "GB-PPON",
+     "country": "GB"
+    },
+    "country": "GB",
+    "status": "complete",
+    "procurement_method": "Below threshold - without competition",
+    "main_category": null,
+    "value": null,
+    "published_at": "2026-11-03T17:23:05+00:00",
+    "updated_at": "2026-11-03T17:23:05+00:00",
+    "tender_start": null,
+    "tender_end": null,
+    "classifications": [],
+    "items": [],
+    "language": "en",
+    "url": "https://www.find-tender.service.gov.uk/Notice/104432-2026"
+   },
+   "awards": [
+    {
+     "award_id": "1",
+     "title": null,
+     "status": "active",
+     "date": null,
+     "value": null,
+     "suppliers": [
+      {
+       "name": "Mildmay Hospital Ltd",
+       "id": "01921087",
+       "scheme": "GB-COH"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "1",
+     "award_id": "1",
+     "title": "DHSC:GPH: Intermediate Care Pathway For Rough Sleepers (Mildmay) 2026-27",
+     "status": "active",
+     "date_signed": "2026-11-03T00:00:00+00:00",
+     "period_start": "2026-11-09T00:00:00+00:00",
+     "period_end": "2027-03-31T23:59:59+01:00",
+     "value": {
+      "amount": "596000.00",
+      "currency": "GBP"
+     }
+    }
+   ]
+  },
+  {
+   "external_id": "104431-2026",
+   "content_hash": "18665f43aa806a8bf311ff5458d85722b17953ea7887d37555f09359bf9fdaad",
+   "fetched_at": "2026-11-03T17:26:57+00:00",
+   "source_url": "https://www.find-tender.service.gov.uk/Notice/104431-2026",
+   "publisher": "Cabinet Office",
+   "published_at": "2026-11-03T17:13:30+00:00",
+   "source_updated_at": "2026-11-03T17:13:30+00:00",
+   "language": "en",
+   "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "id": "104431-2026",
+    "tag": [
+     "planningUpdate"
+    ],
+    "date": "2026-11-03T17:13:30Z",
+    "initiationType": "tender",
+    "ocid": "ocds-h6vhtk-0796d8",
+    "parties": [
+     {
+      "name": "London Borough of Hounslow",
+      "id": "GB-PPON-PQYY-1684-DYLV",
+      "identifier": {
+       "scheme": "GB-PPON",
+       "id": "PQYY-1684-DYLV"
+      },
+      "address": {
+       "streetAddress": "Hounslow House, 7 Bath Road",
+       "locality": "Hounslow, London",
+       "postalCode": "TW3 3EB",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKI75"
+      },
+      "contactPoint": {
+       "email": "procurement@hounslow.gov.uk"
+      },
+      "roles": [
+       "buyer"
+      ],
+      "details": {
+       "classifications": [
+        {
+         "scheme": "UK_CA_TYPE",
+         "id": "publicAuthoritySubCentralGovernment",
+         "description": "Public authority - sub-central government"
+        }
+       ]
+      }
+     }
+    ],
+    "buyer": {
+     "id": "GB-PPON-PQYY-1684-DYLV",
+     "name": "London Borough of Hounslow"
+    },
+    "planning": {
+     "milestones": [
+      {
+       "id": "engagement",
+       "type": "engagement",
+       "description": "How The Engagement Will Work\nThe Council will conduct a two-stage preliminary market engagement.\nStage 1 will share details of the heat network and the current reference design work, so that interested parties can explore the opportunity and the Council can obtain feedback on the scheme proposal. It will comprise of a one-hour webinar presented by the Council on Wednesday 18 November 2026 at 12 noon, held online via Microsoft Teams.\nStage 2 is expected to be held in February or March 2027 and will be supported by a more detailed Project Information Document. This stage will include in person presentation, meetings at Hounslow House and a site visit to Thames Water's Mogden Sewage Waste Water Works and West Middlesex University Hospital.\nHow To Take Part\nIf your organisation is interested in becoming the Council's Heat Network Development Partner and wishes to take part, please register your interest via the Council's eTendering portal https://procontract.due-north.com/Advert?advertId=cd2c8a30-93d7-f111-8142-6045bdf14b1f&fromProjectDashboard=True by 23:59 on Monday 16 November 2026 where a link is provided to the webinar. Questions may be submitted via the portal before and after the engagement up to the deadline of 1pm on 4 December 2026. The Council and its advisers will respond via the portal. The webinar presentation, together with an anonymised record of questions, responses and any other relevant information shared during the engagement, excluding information identified as commercially sensitive, will be made available on the portal to all registered parties.\nRelated Opportunity\nThe Council is also procuring a partner for a Strategic Energy Partnership (\"SEP\") to help fund and deliver a diverse portfolio of energy projects and programmes across the borough. A separate preliminary market engagement notice has been published for that opportunity (Portal Ref: DN834966). Organisations may take part in either or both engagements.\nFair And Transparent Engagement\n•\tTaking part in this engagement is not a condition of taking part in any future procurement and will not give any organisation an advantage.\n•\tA summary of the questions, answers and key information shared at each stage will be published to all registered parties via the portal and included in any future procurement documents. Questions will be anonymised and commercially sensitive information will not be disclosed.\nThe Council is supported by Womble Bond Dickenson (UK) LLP, AECOM and Amberside Advisors. When registering, please declare any relationship with the Council, its officers or its advisers that could give rise to a conflict of interest.\nIndicative Timetable\nThe indicative timetable for the Hounslow Heat Network engagement and procurement is as follows (subject to change):\nStage 1 Engagement\nPreliminary market engagement notice published: Tuesday 3 Nov 2026\nRegistration deadline; webinar invitation and information pack issued: Monday 16 Nov 2026, 23:59pm\nWebinar: Wednesday 18 Nov 2026, 12:00\nDeadline for submission of questions: Wednesday 4 Dec 2026, 1pm\nPublication of Stage 1 engagement feedback: By Thursday 15 Jan 2027\nStage 2 engagement\nStage 2 in person event including site visit (details to follow):  Feb/ Mar 2027\nProcurement\nTender notice published with tender documentation: Spring 2027\nThe Council currently expects to use the competitive flexible procedure under the Procurement Act 2023, including stages of dialogue. The procedure will be confirmed in the tender notice and associated tender documents.\nAll communications will be via the Council's eTendering portal https://procontract.due-north.com/Advert?advertId=cd2c8a30-93d7-f111-8142-6045bdf14b1f&fromProjectDashboard=True.\n_______________________________________________________________\nIMPORTANT INFORMATION\nThis notice is not a call for competition or an invitation to tender and does not bind the Council to carry out a procurement process.\nInformation provided through this engagement is subject to change and does not represent final decisions or commitments.\nThe Council and its advisers are not liable for any costs that interested parties may incur in taking part in this preliminary market engagement.\nInformation submitted may be subject to disclosure under the Freedom of Information Act 2000 and the Environmental Information Regulations 2004. Please identify any information you consider commercially sensitive. Personal data will be handled in line with the Council's privacy notice (https://www.hounslow.gov.uk/privacy-notice).\nThis engagement is carried out in compliance with sections 16 and 17 of the Procurement Act 2023.",
+       "dueDate": "2026-12-04T23:59:59Z",
+       "status": "scheduled"
+      }
+     ],
+     "documents": [
+      {
+       "id": "104431-2026",
+       "documentType": "marketEngagementNotice",
+       "noticeType": "UK2",
+       "description": "Preliminary market engagement notice on Find a Tender",
+       "url": "https://www.find-tender.service.gov.uk/Notice/104431-2026",
+       "datePublished": "2026-11-03T17:13:30Z",
+       "format": "text/html"
+      }
+     ]
+    },
+    "tender": {
+     "id": "ocds-h6vhtk-0796d8",
+     "legalBasis": {
+      "id": "2023/54",
+      "scheme": "UKPGA",
+      "uri": "https://www.legislation.gov.uk/ukpga/2023/54/contents"
+     },
+     "title": "Hounslow Heat Network",
+     "description": "Following Cabinet approval in December 2025, the London Borough of Hounslow (\"the Council\") intends to commence a procurement process in Spring 2027 to select a Heat Network Development Partner (\"HNDP\") to fund and deliver a district heating network across the borough (the \"Hounslow Heat Network\").\nThe Council proposes to partner with the HNDP through a Joint Venture with Golden Share.\nScheme Overview\nThe Hounslow Heat Network is a borough-wide low-carbon infrastructure programme to modernise and improve the resilience of heat supply across the borough. It is intended to be delivered in phases, starting with an anchor scheme using heat recovery from Thames Water's Mogden Waste Water Treatment Works and expanding in the future to serve public, commercial and residential customers across the borough.\n•\tScale: the full build-out is expected to supply 484 GWh of annual heat demand through a 69 km network.\n•\tFirst phase (the reference scheme): 45 GWh annual heat demand through a 9.57km network with anchor loads, including West Middlesex University Hospital and new build and Council-owned assets.\n•\tFunding: the Council has secured £10.55m of Green Heat Network Fund (\"GHNF\") funding.\n•\tStrategic importance: identified by the Greater London Authority (\"GLA\") as a strategically valuable heat network area. Hounslow is also part of the National Zoning pipeline, having secured DESNZ funding to form a Zone Coordination Body for the borough and surrounding area.\nWho Should Take Part\nThe Council would like to hear from organisations with experience in the development, financing, construction and operation of heat networks, including those able to bring capital and delivery capability to the project. Consortia are welcome, as are smaller organisations interested in future supply chain opportunities.",
+     "items": [
+      {
+       "id": "1",
+       "additionalClassifications": [
+        {
+         "scheme": "CPV",
+         "id": "09320000",
+         "description": "Steam, hot water and associated products"
+        },
+        {
+         "scheme": "CPV",
+         "id": "42160000",
+         "description": "Boiler installations"
+        },
+        {
+         "scheme": "CPV",
+         "id": "42511110",
+         "description": "Heat pumps"
+        },
+        {
+         "scheme": "CPV",
+         "id": "44622000",
+         "description": "Heat-recovery systems"
+        },
+        {
+         "scheme": "CPV",
+         "id": "45232140",
+         "description": "District-heating mains construction work"
+        },
+        {
+         "scheme": "CPV",
+         "id": "45232141",
+         "description": "Heating works"
+        },
+        {
+         "scheme": "CPV",
+         "id": "45232142",
+         "description": "Heat-transfer station construction work"
+        },
+        {
+         "scheme": "CPV",
+         "id": "45251250",
+         "description": "District-heating plant construction work"
+        },
+        {
+         "scheme": "CPV",
+         "id": "45259300",
+         "description": "Heating-plant repair and maintenance work"
+        },
+        {
+         "scheme": "CPV",
+         "id": "45331000",
+         "description": "Heating, ventilation and air-conditioning installation work"
+        },
+        {
+         "scheme": "CPV",
+         "id": "50720000",
+         "description": "Repair and maintenance services of central heating"
+        },
+        {
+         "scheme": "CPV",
+         "id": "65400000",
+         "description": "Other sources of energy supplies and distribution"
+        },
+        {
+         "scheme": "CPV",
+         "id": "66122000",
+         "description": "Corporate finance and venture capital services"
+        },
+        {
+         "scheme": "CPV",
+         "id": "71314000",
+         "description": "Energy and related services"
+        },
+        {
+         "scheme": "CPV",
+         "id": "71321200",
+         "description": "Heating-system design services"
+        },
+        {
+         "scheme": "CPV",
+         "id": "71334000",
+         "description": "Mechanical and electrical engineering services"
+        }
+       ],
+       "deliveryAddresses": [
+        {
+         "region": "UKI75",
+         "country": "GB",
+         "countryName": "United Kingdom"
+        }
+       ],
+       "relatedLot": "1"
+      }
+     ],
+     "value": {
+      "amountGross": 500000000,
+      "currency": "GBP"
+     },
+     "mainProcurementCategory": "works",
+     "additionalProcurementCategories": [
+      "services"
+     ],
+     "aboveThreshold": true,
+     "lots": [
+      {
+       "id": "1",
+       "suitability": {
+        "sme": true,
+        "vcse": true
+       },
+       "contractPeriod": {
+        "startDate": "2028-04-18T00:00:00+01:00",
+        "endDate": "2032-03-03T23:59:59Z",
+        "maxExtentDate": "2040-03-05T23:59:59Z"
+       },
+       "hasRenewal": true,
+       "status": "planning"
+      }
+     ],
+     "communication": {
+      "futureNoticeDate": "2027-02-19T23:59:59Z"
+     },
+     "amendments": [
+      {
+       "description": "No amendment",
+       "id": "104431-2026"
+      }
+     ],
+     "status": "planning"
+    },
+    "language": "en"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-h6vhtk-0796d8",
+    "ocid_native": true,
+    "stage": "tender",
+    "title": "Hounslow Heat Network",
+    "description": "Following Cabinet approval in December 2025, the London Borough of Hounslow (\"the Council\") intends to commence a procurement process in Spring 2027 to select a Heat Network Development Partner (\"HNDP\") to fund and deliver a district heating network across the borough (the \"Hounslow Heat Network\").\nThe Council proposes to partner with the HNDP through a Joint Venture with Golden Share.\nScheme Overview\nThe Hounslow Heat Network is a borough-wide low-carbon infrastructure programme to modernise and improve the resilience of heat supply across the borough. It is intended to be delivered in phases, starting with an anchor scheme using heat recovery from Thames Water's Mogden Waste Water Treatment Works and expanding in the future to serve public, commercial and residential customers across the borough.\n•\tScale: the full build-out is expected to supply 484 GWh of annual heat demand through a 69 km network.\n•\tFirst phase (the reference scheme): 45 GWh annual heat demand through a 9.57km network with anchor loads, including West Middlesex University Hospital and new build and Council-owned assets.\n•\tFunding: the Council has secured £10.55m of Green Heat Network Fund (\"GHNF\") funding.\n•\tStrategic importance: identified by the Greater London Authority (\"GLA\") as a strategically valuable heat network area. Hounslow is also part of the National Zoning pipeline, having secured DESNZ funding to form a Zone Coordination Body for the borough and surrounding area.\nWho Should Take Part\nThe Council would like to hear from organisations with experience in the development, financing, construction and operation of heat networks, including those able to bring capital and delivery capability to the project. Consortia are welcome, as are smaller organisations interested in future supply chain opportunities.",
+    "buyer": {
+     "name": "London Borough of Hounslow",
+     "id": "PQYY-1684-DYLV",
+     "scheme": "GB-PPON",
+     "country": "GB"
+    },
+    "country": "GB",
+    "status": "planning",
+    "procurement_method": null,
+    "main_category": "works",
+    "value": null,
+    "published_at": "2026-11-03T17:13:30+00:00",
+    "updated_at": "2026-11-03T17:13:30+00:00",
+    "tender_start": null,
+    "tender_end": null,
+    "classifications": [],
+    "items": [
+     {
+      "id": "1"
+     }
+    ],
+    "language": "en",
+    "url": "https://www.find-tender.service.gov.uk/Notice/104431-2026"
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "104430-2026",
+   "content_hash": "186b6e598495ad7d9c9457021d98f8e5182c031f3b44f72df36d68741b251d4d",
+   "fetched_at": "2026-11-03T17:26:57+00:00",
+   "source_url": "https://www.find-tender.service.gov.uk/Notice/104430-2026",
+   "publisher": "Cabinet Office",
+   "published_at": "2026-11-03T17:09:00+00:00",
+   "source_updated_at": "2026-11-03T17:09:00+00:00",
+   "language": "en",
+   "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "ocid": "ocds-h6vhtk-079712",
+    "id": "104430-2026",
+    "tag": [
+     "planning"
+    ],
+    "date": "2026-11-03T17:09:00Z",
+    "initiationType": "tender",
+    "parties": [
+     {
+      "name": "Greater Manchester Combined Authority",
+      "id": "GB-PPON-PXBN-3793-LCTQ",
+      "identifier": {
+       "scheme": "GB-PPON",
+       "id": "PXBN-3793-LCTQ"
+      },
+      "address": {
+       "streetAddress": "56 Oxford Street",
+       "locality": "Manchester",
+       "postalCode": "M1 6EU",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKD33"
+      },
+      "contactPoint": {
+       "email": "procurement@gmp.police.uk"
+      },
+      "roles": [
+       "buyer"
+      ],
+      "details": {
+       "classifications": [
+        {
+         "scheme": "UK_CA_TYPE",
+         "id": "publicAuthoritySubCentralGovernment",
+         "description": "Public authority - sub-central government"
+        }
+       ]
+      }
+     }
+    ],
+    "buyer": {
+     "id": "GB-PPON-PXBN-3793-LCTQ",
+     "name": "Greater Manchester Combined Authority"
+    },
+    "planning": {
+     "milestones": [
+      {
+       "id": "engagement",
+       "type": "engagement",
+       "description": "Interested parties are invited to complete the short questionnaire, which will allow GMP to better understand the current market and assist the Force in the development of the final specification and most appropriate route to market.\nExpressions of interest, and requests to complete the questionnaire can be made by contacting Chris Garner (GMP Procurement Officer) via email at procurement@gmp.police.uk.\nClarifications may also be sought via the same address. Please quote reference A1353 on all correspondence.\nIt should be noted that tender documents have not yet been issued for this contract. The full specification will be made available at the start of any formal procurement process.\nThe deadline for receipt of completed responses is 17:00 on Wednesday 18th November 2026.",
+       "dueDate": "2026-11-18T23:59:59Z",
+       "status": "scheduled"
+      }
+     ],
+     "documents": [
+      {
+       "id": "104430-2026",
+       "documentType": "marketEngagementNotice",
+       "noticeType": "UK2",
+       "description": "Preliminary market engagement notice on Find a Tender",
+       "url": "https://www.find-tender.service.gov.uk/Notice/104430-2026",
+       "datePublished": "2026-11-03T17:09:00Z",
+       "format": "text/html"
+      }
+     ]
+    },
+    "tender": {
+     "id": "A1353",
+     "legalBasis": {
+      "id": "2023/54",
+      "scheme": "UKPGA",
+      "uri": "https://www.legislation.gov.uk/ukpga/2023/54/contents"
+     },
+     "title": "UPS Upgrade and Managed Service",
+     "description": "Greater Manchester Combined Authority (GMCA), as the contracting authority for Greater Manchester Police (GMP), would like to hear from suppliers willing to share information about practical solutions for an Uninterruptible Power Supply (UPS) solution.\nThe requirement is for the support of multiple critical business services and infrastructure. One new UPS of approximately 250KW (kilo watts) is required, and ongoing support & maintenance of approximately 60 smaller UPS's.",
+     "items": [
+      {
+       "id": "1",
+       "additionalClassifications": [
+        {
+         "scheme": "CPV",
+         "id": "72000000",
+         "description": "IT services: consulting, software development, Internet and support"
+        }
+       ],
+       "deliveryAddresses": [
+        {
+         "region": "UKD3",
+         "country": "GB",
+         "countryName": "United Kingdom"
+        }
+       ],
+       "relatedLot": "1"
+      }
+     ],
+     "mainProcurementCategory": "services",
+     "aboveThreshold": true,
+     "lots": [
+      {
+       "id": "1",
+       "suitability": {
+        "sme": true
+       },
+       "contractPeriod": {
+        "startDate": "2027-07-01T00:00:00Z",
+        "endDate": "2030-06-30T23:59:59Z",
+        "maxExtentDate": "2033-06-30T23:59:59Z"
+       },
+       "hasRenewal": true,
+       "status": "planning"
+      }
+     ],
+     "status": "planning"
+    },
+    "language": "en"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-h6vhtk-079712",
+    "ocid_native": true,
+    "stage": "tender",
+    "title": "UPS Upgrade and Managed Service",
+    "description": "Greater Manchester Combined Authority (GMCA), as the contracting authority for Greater Manchester Police (GMP), would like to hear from suppliers willing to share information about practical solutions for an Uninterruptible Power Supply (UPS) solution.\nThe requirement is for the support of multiple critical business services and infrastructure. One new UPS of approximately 250KW (kilo watts) is required, and ongoing support & maintenance of approximately 60 smaller UPS's.",
+    "buyer": {
+     "name": "Greater Manchester Combined Authority",
+     "id": "PXBN-3793-LCTQ",
+     "scheme": "GB-PPON",
+     "country": "GB"
+    },
+    "country": "GB",
+    "status": "planning",
+    "procurement_method": null,
+    "main_category": "services",
+    "value": null,
+    "published_at": "2026-11-03T17:09:00+00:00",
+    "updated_at": "2026-11-03T17:09:00+00:00",
+    "tender_start": null,
+    "tender_end": null,
+    "classifications": [],
+    "items": [
+     {
+      "id": "1"
+     }
+    ],
+    "language": "en",
+    "url": "https://www.find-tender.service.gov.uk/Notice/104430-2026"
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "104429-2026",
+   "content_hash": "a72c556905d79456dbf6d6d6896d1d52560ce3922efcf38e71d8df333538fe33",
+   "fetched_at": "2026-11-03T17:26:57+00:00",
+   "source_url": "https://www.find-tender.service.gov.uk/Notice/104429-2026",
+   "publisher": "Cabinet Office",
+   "published_at": "2026-11-03T17:06:32+00:00",
+   "source_updated_at": "2026-11-03T17:06:32+00:00",
+   "language": "en",
+   "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "buyerID": [],
+    "id": "104429-2026",
+    "tag": [
+     "award",
+     "contract"
+    ],
+    "date": "2026-11-03T17:06:32Z",
+    "initiationType": "tender",
+    "ocid": "ocds-h6vhtk-051e27",
+    "parties": [
+     {
+      "name": "Cumberland Council",
+      "id": "GB-PPON-PJGX-9191-DYLV",
+      "identifier": {
+       "scheme": "GB-PPON",
+       "id": "PJGX-9191-DYLV"
+      },
+      "address": {
+       "streetAddress": "Cumbria House, 107-117 Botchergate",
+       "locality": "Carlisle",
+       "postalCode": "CA1 1RD",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKD12"
+      },
+      "contactPoint": {
+       "email": "procurement.place@cumbria.gov.uk"
+      },
+      "roles": [
+       "buyer"
+      ],
+      "details": {
+       "classifications": [
+        {
+         "scheme": "UK_CA_TYPE",
+         "id": "publicAuthoritySubCentralGovernment",
+         "description": "Public authority - sub-central government"
+        }
+       ]
+      }
+     },
+     {
+      "name": "C. U. LIGHTING LIMITED",
+      "id": "GB-COH-02196886",
+      "identifier": {
+       "scheme": "GB-COH",
+       "id": "02196886"
+      },
+      "additionalIdentifiers": [
+       {
+        "scheme": "GB-PPON",
+        "id": "PQNB-9317-BNZY"
+       }
+      ],
+      "address": {
+       "streetAddress": "Charles House Lower Road",
+       "locality": "Ware",
+       "postalCode": "SG12 9TA",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKH23"
+      },
+      "roles": [
+       "tenderer"
+      ],
+      "details": {
+       "url": "http://www.cuphosco.com",
+       "scale": "sme",
+       "vcse": false
+      }
+     },
+     {
+      "name": "MALLATITE LIMITED",
+      "id": "GB-COH-02621328",
+      "identifier": {
+       "scheme": "GB-COH",
+       "id": "02621328"
+      },
+      "additionalIdentifiers": [
+       {
+        "scheme": "GB-PPON",
+        "id": "PPZY-9446-VYVW"
+       }
+      ],
+      "address": {
+       "streetAddress": "Westhaven House, Arleston Way",
+       "locality": "Solihull",
+       "postalCode": "B90 4LH",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKG32"
+      },
+      "contactPoint": {
+       "email": "david.howell@mallatite.co.uk"
+      },
+      "roles": [
+       "supplier",
+       "tenderer"
+      ],
+      "details": {
+       "url": "http://www.mallatite.co.uk",
+       "scale": "sme",
+       "vcse": false,
+       "publicServiceMissionOrganization": false,
+       "shelteredWorkshop": false
+      }
+     },
+     {
+      "name": "VALMONT STAINTON LIMITED",
+      "id": "GB-COH-03829923",
+      "identifier": {
+       "scheme": "GB-COH",
+       "id": "03829923"
+      },
+      "additionalIdentifiers": [
+       {
+        "scheme": "GB-PPON",
+        "id": "PBJW-7799-VYLJ"
+       }
+      ],
+      "address": {
+       "streetAddress": "Unit 5 Dukesway",
+       "locality": "Stockton-On-Tees",
+       "postalCode": "TS17 9LT",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKC11"
+      },
+      "contactPoint": {
+       "email": "valmontuk@valmont.com"
+      },
+      "roles": [
+       "supplier",
+       "tenderer"
+      ],
+      "details": {
+       "url": "https://www.valmontstructures.eu/",
+       "scale": "sme",
+       "vcse": false,
+       "publicServiceMissionOrganization": false,
+       "shelteredWorkshop": false
+      }
+     },
+     {
+      "name": "ZG LIGHTING (UK) LIMITED",
+      "id": "GB-COH-02851586",
+      "identifier": {
+       "scheme": "GB-COH",
+       "id": "02851586"
+      },
+      "additionalIdentifiers": [
+       {
+        "scheme": "GB-PPON",
+        "id": "PJGM-2493-DWRR"
+       }
+      ],
+      "address": {
+       "streetAddress": "Chiltern Park",
+       "locality": "Chalfont St Peter",
+       "postalCode": "SL9 9FG",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKJ13"
+      },
+      "contactPoint": {
+       "email": "UK&Ireland-bidmanagement@zumtobelgroup.com"
+      },
+      "roles": [
+       "supplier",
+       "tenderer"
+      ],
+      "details": {
+       "url": "https://z.lighting/en/",
+       "scale": "large",
+       "vcse": false,
+       "publicServiceMissionOrganization": false,
+       "shelteredWorkshop": false
+      }
+     },
+     {
+      "name": "URBIS SCHRÉDER LTD",
+      "id": "GB-COH-01095726",
+      "identifier": {
+       "scheme": "GB-COH",
+       "id": "01095726"
+      },
+      "additionalIdentifiers": [
+       {
+        "scheme": "GB-PPON",
+        "id": "PNQY-3585-ZJGN"
+       }
+      ],
+      "address": {
+       "streetAddress": "Sapphire House Lime Tree Way, Hampshire International Business Park, Chineham",
+       "locality": "Basingstoke",
+       "postalCode": "RG24 8GG",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKJ37"
+      },
+      "contactPoint": {
+       "email": "sales@urbis-schreder.com"
+      },
+      "roles": [
+       "supplier",
+       "tenderer"
+      ],
+      "details": {
+       "url": "https://uk.schreder.com/en",
+       "scale": "sme",
+       "vcse": false,
+       "publicServiceMissionOrganization": false,
+       "shelteredWorkshop": false
+      }
+     },
+     {
+      "name": "LUCY ZODION LIMITED",
+      "id": "GB-COH-07448407",
+      "identifier": {
+       "scheme": "GB-COH",
+       "id": "07448407"
+      },
+      "additionalIdentifiers": [
+       {
+        "scheme": "GB-PPON",
+        "id": "PMBG-2838-TCDY"
+       }
+      ],
+      "address": {
+       "streetAddress": "Eagle Works",
+       "locality": "Oxford",
+       "postalCode": "OX2 6EE",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKJ14"
+      },
+      "contactPoint": {
+       "email": "LZ-Tendering@lucyzodion.com"
+      },
+      "roles": [
+       "supplier",
+       "tenderer"
+      ],
+      "details": {
+       "url": "http://www.lucyzodion.com",
+       "scale": "sme",
+       "vcse": false,
+       "publicServiceMissionOrganization": false,
+       "shelteredWorkshop": false
+      }
+     },
+     {
+      "name": "Glasdon (UK) Limited",
+      "id": "GB-COH-2160576",
+      "identifier": {
+       "scheme": "GB-COH",
+       "id": "2160576"
+      },
+      "additionalIdentifiers": [
+       {
+        "scheme": "GB-PPON",
+        "id": "PNHZ-1811-DPBN"
+       }
+      ],
+      "address": {
+       "streetAddress": "Glasdon House, Preston New Road",
+       "locality": "Blackpool",
+       "postalCode": "FY4 4WA",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKD42"
+      },
+      "contactPoint": {
+       "email": "tenders@glasdon-uk.co.uk"
+      },
+      "roles": [
+       "supplier",
+       "tenderer"
+      ],
+      "details": {
+       "url": "http://www.glasdon.com",
+       "scale": "sme",
+       "vcse": false,
+       "publicServiceMissionOrganization": false,
+       "shelteredWorkshop": false
+      }
+     },
+     {
+      "name": "ESDECLOM LIMITED",
+      "id": "GB-COH-10013626",
+      "identifier": {
+       "scheme": "GB-COH",
+       "id": "10013626"
+      },
+      "additionalIdentifiers": [
+       {
+        "scheme": "GB-PPON",
+        "id": "PJGD-3337-CWVH"
+       }
+      ],
+      "address": {
+       "streetAddress": "8 Jopling Road",
+       "locality": "Woking",
+       "postalCode": "GU24 9FN",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKJ25"
+      },
+      "contactPoint": {
+       "email": "info@esdeclom.com"
+      },
+      "roles": [
+       "supplier",
+       "tenderer"
+      ],
+      "details": {
+       "url": "http://www.esdeclom.com",
+       "scale": "sme",
+       "vcse": false,
+       "publicServiceMissionOrganization": false,
+       "shelteredWorkshop": false
+      }
+     }
+    ],
+    "buyer": {
+     "id": "GB-PPON-PJGX-9191-DYLV",
+     "name": "Cumberland Council"
+    },
+    "tender": {
+     "id": "DN814685",
+     "legalBasis": {
+      "id": "2023/54",
+      "scheme": "UKPGA",
+      "uri": "https://www.legislation.gov.uk/ukpga/2023/54/contents"
+     },
+     "title": "Road Lighting Materials Framework 2026-2030",
+     "description": "Procurement of CC Bespoke Road Lighting Materials Framework, required for purchasing road lighting materials over 3 lots, as previous framework (Lot 1: Columns, Lot 2: Luminaires, Lot 3: Electrical Materials).",
+     "status": "complete",
+     "procurementMethod": "open",
+     "procurementMethodDetails": "Open procedure",
+     "techniques": {
+      "hasFrameworkAgreement": true
+     },
+     "lots": [
+      {
+       "id": "1",
+       "status": "complete",
+       "description": null
+      },
+      {
+       "id": "2",
+       "status": "complete",
+       "description": null
+      },
+      {
+       "id": "3",
+       "status": "complete",
+       "description": null
+      }
+     ]
+    },
+    "bids": {
+     "details": [
+      {
+       "id": "1",
+       "status": "valid",
+       "tenderers": [
+        {
+         "id": "GB-COH-02621328",
+         "name": "MALLATITE LIMITED"
+        }
+       ],
+       "relatedLots": [
+        "1",
+        "3"
+       ]
+      },
+      {
+       "id": "2",
+       "status": "valid",
+       "tenderers": [
+        {
+         "id": "GB-COH-03829923",
+         "name": "VALMONT STAINTON LIMITED"
+        }
+       ],
+       "relatedLots": [
+        "1"
+       ]
+      },
+      {
+       "id": "3",
+       "status": "valid",
+       "tenderers": [
+        {
+         "id": "GB-COH-02851586",
+         "name": "ZG LIGHTING (UK) LIMITED"
+        }
+       ],
+       "relatedLots": [
+        "2"
+       ]
+      },
+      {
+       "id": "4",
+       "status": "valid",
+       "tenderers": [
+        {
+         "id": "GB-COH-01095726",
+         "name": "URBIS SCHRÉDER LTD"
+        }
+       ],
+       "relatedLots": [
+        "2"
+       ]
+      },
+      {
+       "id": "5",
+       "status": "valid",
+       "tenderers": [
+        {
+         "id": "GB-COH-07448407",
+         "name": "LUCY ZODION LIMITED"
+        }
+       ],
+       "relatedLots": [
+        "3"
+       ]
+      },
+      {
+       "id": "6",
+       "status": "valid",
+       "tenderers": [
+        {
+         "id": "GB-COH-2160576",
+         "name": "Glasdon (UK) Limited"
+        }
+       ],
+       "relatedLots": [
+        "3"
+       ]
+      },
+      {
+       "id": "7",
+       "status": "valid",
+       "tenderers": [
+        {
+         "id": "GB-COH-10013626",
+         "name": "ESDECLOM LIMITED"
+        }
+       ],
+       "relatedLots": [
+        "3"
+       ]
+      },
+      {
+       "id": "8",
+       "status": "valid",
+       "tenderers": [
+        {
+         "id": "GB-COH-02196886",
+         "name": "C. U. LIGHTING LIMITED"
+        }
+       ],
+       "relatedLots": [
+        "2"
+       ]
+      }
+     ],
+     "statistics": [
+      {
+       "id": "1",
+       "measure": "bids",
+       "value": 2,
+       "relatedLot": "1"
+      },
+      {
+       "id": "2",
+       "measure": "bids",
+       "value": 3,
+       "relatedLot": "2"
+      },
+      {
+       "id": "3",
+       "measure": "bids",
+       "value": 5,
+       "relatedLot": "3"
+      },
+      {
+       "id": "4",
+       "measure": "finalStageBids",
+       "value": 2,
+       "relatedLot": "1"
+      },
+      {
+       "id": "5",
+       "measure": "smeFinalStageBids",
+       "value": 2,
+       "relatedLot": "1"
+      },
+      {
+       "id": "6",
+       "measure": "vcseFinalStageBids",
+       "value": 0,
+       "relatedLot": "1"
+      },
+      {
+       "id": "7",
+       "measure": "finalStageBids",
+       "value": 3,
+       "relatedLot": "2"
+      },
+      {
+       "id": "8",
+       "measure": "smeFinalStageBids",
+       "value": 2,
+       "relatedLot": "2"
+      },
+      {
+       "id": "9",
+       "measure": "vcseFinalStageBids",
+       "value": 0,
+       "relatedLot": "2"
+      },
+      {
+       "id": "10",
+       "measure": "finalStageBids",
+       "value": 4,
+       "relatedLot": "3"
+      },
+      {
+       "id": "11",
+       "measure": "smeFinalStageBids",
+       "value": 4,
+       "relatedLot": "3"
+      },
+      {
+       "id": "12",
+       "measure": "vcseFinalStageBids",
+       "value": 0,
+       "relatedLot": "3"
+      }
+     ]
+    },
+    "awards": [
+     {
+      "id": "1",
+      "title": "Road Lighting Materials Framework 2026 - 2030",
+      "status": "pending",
+      "date": "2026-11-03T00:00:00Z",
+      "value": {
+       "amountGross": 5760000.0,
+       "amount": 4800000.0,
+       "currency": "GBP"
+      },
+      "mainProcurementCategory": "goods",
+      "aboveThreshold": true,
+      "suppliers": [
+       {
+        "id": "GB-COH-02621328",
+        "name": "MALLATITE LIMITED"
+       },
+       {
+        "id": "GB-COH-03829923",
+        "name": "VALMONT STAINTON LIMITED"
+       }
+      ],
+      "items": [
+       {
+        "id": "1",
+        "additionalClassifications": [
+         {
+          "scheme": "CPV",
+          "id": "34928500",
+          "description": "Street-lighting equipment"
+         }
+        ],
+        "deliveryAddresses": [
+         {
+          "region": "UKD1",
+          "country": "GB",
+          "countryName": "United Kingdom"
+         }
+        ],
+        "relatedLot": "1"
+       }
+      ],
+      "standstillPeriod": {
+       "endDate": "2026-11-12T23:59:59+00:00"
+      },
+      "contractPeriod": {
+       "startDate": "2026-11-16T00:00:00Z",
+       "endDate": "2030-11-15T23:59:59Z"
+      },
+      "relatedLots": [
+       "1"
+      ],
+      "documents": [
+       {
+        "id": "104429-2026",
+        "documentType": "awardNotice",
+        "noticeType": "UK6",
+        "description": "Contract award notice on Find a Tender",
+        "url": "https://www.find-tender.service.gov.uk/Notice/104429-2026",
+        "datePublished": "2026-11-03T17:06:32Z",
+        "format": "text/html"
+       }
+      ],
+      "assessmentSummariesDateSent": "2026-11-03T00:00:00Z",
+      "milestones": [
+       {
+        "id": "1",
+        "type": "futureSignatureDate",
+        "dueDate": "2026-11-13T23:59:59Z",
+        "status": "scheduled"
+       }
+      ]
+     },
+     {
+      "id": "2",
+      "title": "Road Lighting Materials Framework 2026 - 2030",
+      "status": "pending",
+      "date": "2026-11-03T00:00:00Z",
+      "value": {
+       "amountGross": 5760000.0,
+       "amount": 4800000.0,
+       "currency": "GBP"
+      },
+      "mainProcurementCategory": "goods",
+      "aboveThreshold": true,
+      "suppliers": [
+       {
+        "id": "GB-COH-02851586",
+        "name": "ZG LIGHTING (UK) LIMITED"
+       },
+       {
+        "id": "GB-COH-01095726",
+        "name": "URBIS SCHRÉDER LTD"
+       }
+      ],
+      "items": [
+       {
+        "id": "2",
+        "additionalClassifications": [
+         {
+          "scheme": "CPV",
+          "id": "34928500",
+          "description": "Street-lighting equipment"
+         }
+        ],
+        "deliveryAddresses": [
+         {
+          "region": "UKD1",
+          "country": "GB",
+          "countryName": "United Kingdom"
+         }
+        ],
+        "relatedLot": "2"
+       }
+      ],
+      "standstillPeriod": {
+       "endDate": "2026-11-12T23:59:59+00:00"
+      },
+      "contractPeriod": {
+       "startDate": "2026-11-16T00:00:00Z",
+       "endDate": "2030-11-15T23:59:59Z"
+      },
+      "relatedLots": [
+       "2"
+      ],
+      "documents": [
+       {
+        "id": "104429-2026",
+        "documentType": "awardNotice",
+        "noticeType": "UK6",
+        "description": "Contract award notice on Find a Tender",
+        "url": "https://www.find-tender.service.gov.uk/Notice/104429-2026",
+        "datePublished": "2026-11-03T17:06:32Z",
+        "format": "text/html"
+       }
+      ],
+      "assessmentSummariesDateSent": "2026-11-03T00:00:00Z",
+      "milestones": [
+       {
+        "id": "1",
+        "type": "futureSignatureDate",
+        "dueDate": "2026-11-13T23:59:59Z",
+        "status": "scheduled"
+       }
+      ]
+     },
+     {
+      "id": "3",
+      "title": "Road Lighting Materials Framework 2026 - 2030",
+      "status": "pending",
+      "date": "2026-11-03T00:00:00Z",
+      "value": {
+       "amountGross": 5760000.0,
+       "amount": 4800000.0,
+       "currency": "GBP"
+      },
+      "mainProcurementCategory": "goods",
+      "aboveThreshold": true,
+      "suppliers": [
+       {
+        "id": "GB-COH-07448407",
+        "name": "LUCY ZODION LIMITED"
+       },
+       {
+        "id": "GB-COH-02621328",
+        "name": "MALLATITE LIMITED"
+       },
+       {
+        "id": "GB-COH-2160576",
+        "name": "Glasdon (UK) Limited"
+       },
+       {
+        "id": "GB-COH-10013626",
+        "name": "ESDECLOM LIMITED"
+       }
+      ],
+      "items": [
+       {
+        "id": "3",
+        "additionalClassifications": [
+         {
+          "scheme": "CPV",
+          "id": "34928500",
+          "description": "Street-lighting equipment"
+         }
+        ],
+        "deliveryAddresses": [
+         {
+          "region": "UKD1",
+          "country": "GB",
+          "countryName": "United Kingdom"
+         }
+        ],
+        "relatedLot": "3"
+       }
+      ],
+      "standstillPeriod": {
+       "endDate": "2026-11-12T23:59:59+00:00"
+      },
+      "contractPeriod": {
+       "startDate": "2026-11-16T00:00:00Z",
+       "endDate": "2030-11-15T23:59:59Z"
+      },
+      "relatedLots": [
+       "3"
+      ],
+      "documents": [
+       {
+        "id": "104429-2026",
+        "documentType": "awardNotice",
+        "noticeType": "UK6",
+        "description": "Contract award notice on Find a Tender",
+        "url": "https://www.find-tender.service.gov.uk/Notice/104429-2026",
+        "datePublished": "2026-11-03T17:06:32Z",
+        "format": "text/html"
+       }
+      ],
+      "assessmentSummariesDateSent": "2026-11-03T00:00:00Z",
+      "milestones": [
+       {
+        "id": "1",
+        "type": "futureSignatureDate",
+        "dueDate": "2026-11-13T23:59:59Z",
+        "status": "scheduled"
+       }
+      ]
+     }
+    ],
+    "language": "en"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-h6vhtk-051e27",
+    "ocid_native": true,
+    "stage": "contract",
+    "title": "Road Lighting Materials Framework 2026-2030",
+    "description": "Procurement of CC Bespoke Road Lighting Materials Framework, required for purchasing road lighting materials over 3 lots, as previous framework (Lot 1: Columns, Lot 2: Luminaires, Lot 3: Electrical Materials).",
+    "buyer": {
+     "name": "Cumberland Council",
+     "id": "PJGX-9191-DYLV",
+     "scheme": "GB-PPON",
+     "country": "GB"
+    },
+    "country": "GB",
+    "status": "complete",
+    "procurement_method": "Open procedure",
+    "main_category": null,
+    "value": null,
+    "published_at": "2026-11-03T17:06:32+00:00",
+    "updated_at": "2026-11-03T17:06:32+00:00",
+    "tender_start": null,
+    "tender_end": null,
+    "classifications": [],
+    "items": [],
+    "language": "en",
+    "url": "https://www.find-tender.service.gov.uk/Notice/104429-2026"
+   },
+   "awards": [
+    {
+     "award_id": "1",
+     "title": "Road Lighting Materials Framework 2026 - 2030",
+     "status": "pending",
+     "date": "2026-11-03T00:00:00+00:00",
+     "value": {
+      "amount": "4800000.00",
+      "currency": "GBP"
+     },
+     "suppliers": [
+      {
+       "name": "MALLATITE LIMITED",
+       "id": "02621328",
+       "scheme": "GB-COH"
+      },
+      {
+       "name": "VALMONT STAINTON LIMITED",
+       "id": "03829923",
+       "scheme": "GB-COH"
+      }
+     ]
+    },
+    {
+     "award_id": "2",
+     "title": "Road Lighting Materials Framework 2026 - 2030",
+     "status": "pending",
+     "date": "2026-11-03T00:00:00+00:00",
+     "value": {
+      "amount": "4800000.00",
+      "currency": "GBP"
+     },
+     "suppliers": [
+      {
+       "name": "ZG LIGHTING (UK) LIMITED",
+       "id": "02851586",
+       "scheme": "GB-COH"
+      },
+      {
+       "name": "URBIS SCHRÉDER LTD",
+       "id": "01095726",
+       "scheme": "GB-COH"
+      }
+     ]
+    },
+    {
+     "award_id": "3",
+     "title": "Road Lighting Materials Framework 2026 - 2030",
+     "status": "pending",
+     "date": "2026-11-03T00:00:00+00:00",
+     "value": {
+      "amount": "4800000.00",
+      "currency": "GBP"
+     },
+     "suppliers": [
+      {
+       "name": "LUCY ZODION LIMITED",
+       "id": "07448407",
+       "scheme": "GB-COH"
+      },
+      {
+       "name": "MALLATITE LIMITED",
+       "id": "02621328",
+       "scheme": "GB-COH"
+      },
+      {
+       "name": "Glasdon (UK) Limited",
+       "id": "2160576",
+       "scheme": "GB-COH"
+      },
+      {
+       "name": "ESDECLOM LIMITED",
+       "id": "10013626",
+       "scheme": "GB-COH"
+      }
+     ]
+    }
+   ],
+   "contracts": []
+  },
+  {
+   "external_id": "104428-2026",
+   "content_hash": "98ed8a58b7880d43f687243fb8442e4f70bd8ce354a934d8e413ad4f776db04a",
+   "fetched_at": "2026-11-03T17:26:57+00:00",
+   "source_url": "https://www.find-tender.service.gov.uk/Notice/104428-2026",
+   "publisher": "Cabinet Office",
+   "published_at": "2026-11-03T17:02:26+00:00",
+   "source_updated_at": "2026-11-03T17:02:26+00:00",
+   "language": "en",
+   "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "ocid": "ocds-h6vhtk-079711",
+    "id": "104428-2026",
+    "tag": [
+     "tender"
+    ],
+    "date": "2026-11-03T17:02:26Z",
+    "initiationType": "tender",
+    "parties": [
+     {
+      "name": "Weston College",
+      "id": "GB-UKPRN-10007459",
+      "identifier": {
+       "scheme": "GB-UKPRN",
+       "id": "10007459"
+      },
+      "additionalIdentifiers": [
+       {
+        "scheme": "GB-PPON",
+        "id": "PDXW-8796-BVPP"
+       }
+      ],
+      "address": {
+       "streetAddress": "Knightstone Road",
+       "locality": "Weston-super-Mare",
+       "postalCode": "BS23 2AL",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKK12"
+      },
+      "contactPoint": {
+       "email": "WCGTender@weston.ac.uk"
+      },
+      "roles": [
+       "buyer"
+      ],
+      "details": {
+       "url": "http://www.weston.ac.uk",
+       "classifications": [
+        {
+         "scheme": "UK_CA_TYPE",
+         "id": "publicAuthoritySubCentralGovernment",
+         "description": "Public authority - sub-central government"
+        }
+       ]
+      }
+     }
+    ],
+    "buyer": {
+     "id": "GB-UKPRN-10007459",
+     "name": "Weston College"
+    },
+    "tender": {
+     "id": "AMTECPRO-0007",
+     "legalBasis": {
+      "id": "2023/54",
+      "scheme": "UKPGA",
+      "uri": "https://www.legislation.gov.uk/ukpga/2023/54/contents"
+     },
+     "title": "CTC Relocation Project",
+     "description": "Weston College Group invites suitably qualified and experienced contractors to submit a tender for the completion of the yielding-up, dismantling, removal, site clearance and restoration works required at the College's Construction Training Centre (CTC).\nThe works are required to facilitate the surrender of the site in accordance with planning obligations and landlord requirements and include the removal of modular buildings, associated structures, external works, below-ground services, foundations and hardstanding, together with reinstatement and restoration of the site. The programme of works is defined within the project master programme.\nThe successful contractor shall act as Principal Contractor under the Construction (Design and Management) Regulations 2015 and shall coordinate the project works. Certain specialist works will be undertaken by contractors appointed directly by Weston College. The Principal Contractor shall provide access, coordination, supervision and contractor attendances as described within this specification.",
+     "status": "active",
+     "items": [
+      {
+       "id": "1",
+       "additionalClassifications": [
+        {
+         "scheme": "CPV",
+         "id": "45000000",
+         "description": "Construction work"
+        }
+       ],
+       "deliveryAddresses": [
+        {
+         "region": "UKK1",
+         "country": "GB",
+         "countryName": "United Kingdom"
+        }
+       ],
+       "relatedLot": "1"
+      }
+     ],
+     "value": {
+      "amountGross": 600000,
+      "amount": 500000,
+      "currency": "GBP"
+     },
+     "procurementMethod": "open",
+     "procurementMethodDetails": "Below threshold - open competition",
+     "mainProcurementCategory": "works",
+     "specialRegime": [
+      "concession"
+     ],
+     "aboveThreshold": false,
+     "submissionMethodDetails": "Responses must be submitted by email to AMTEC.procurement@weston.ac.uk by no later than 12pm, Monday 4 December 2026.",
+     "submissionTerms": {
+      "electronicSubmissionPolicy": "notAllowed"
+     },
+     "tenderPeriod": {
+      "endDate": "2026-12-04T12:00:00Z"
+     },
+     "enquiryPeriod": {
+      "endDate": "2026-11-13T12:00:00Z"
+     },
+     "otherRequirements": {
+      "reservedParticipationLocation": {
+       "gazetteer": {
+        "scheme": "GB-ONS",
+        "identifiers": [
+         "K02000001"
+        ]
+       },
+       "description": null
+      }
+     },
+     "lots": [
+      {
+       "id": "1",
+       "status": "active",
+       "value": {
+        "amountGross": 600000,
+        "amount": 500000,
+        "currency": "GBP"
+       },
+       "selectionCriteria": {
+        "criteria": [
+         {
+          "description": "Tenders must provide responses using the ITT Form. The ITT can only be accessed following an Expression of Interest sent to AMTEC.procurement@weston.ac.uk. The college reserves the right to disqualify you if you do not submit your tender in a manner consistent with the provisions set out in Instructions to Tenderers, Specification, Terms and Conditions and the Tender Response Form."
+         }
+        ]
+       },
+       "suitability": {
+        "sme": true
+       },
+       "contractPeriod": {
+        "startDate": "2027-01-06T00:00:00Z",
+        "endDate": "2027-03-18T23:59:59Z"
+       },
+       "awardCriteria": {
+        "description": "Tender Evaluation and Award Criteria\n7.1 Evaluation Methodology\nWeston College Group will evaluate tenders on the basis of lowest compliant price.\nTenderers must submit a complete and compliant tender response in accordance with the requirements of this ITT. Only tenders deemed compliant with the requirements of the ITT will be considered for financial evaluation.\nThe evaluation process will comprise the following stages:\nA. Compliance Assessment\nAll tender submissions will be reviewed to confirm that:\n•\tThe tender has been completed in full\n•\tAll requested information and supporting documentation have been provided\n•\tThe Tenderer meets the minimum requirements of the ITT\n•\tThe Tenderer's proposal complies with the specification, scope of works and contractual requirements\nWeston College Group reserves the right to seek clarification of any aspect of a submission where necessary.\nB. Financial Evaluation\nA thorough analysis will be undertaken to determine the lowest compliant tender.\nThe submitted pricing schedule will be reviewed to ensure that all tenders are assessed on a comparable basis and that the prices submitted fully reflect the requirements of the works. Where necessary, Tenderers may be requested to provide clarification or supporting information to confirm the basis of their pricing.\nC. Due Diligence\nThe Tenderer acknowledges and agrees that, as part of the evaluation process, Weston College Group reserves the right to undertake appropriate due diligence activities, including but not limited to:\n•\tCredit checks;\n•\tFinancial standing assessments;\n•\tReference checks; and\n•\tOther background verifications considered necessary by the College.\nTenderers shall cooperate fully with any reasonable requests for information or supporting documentation.\nD. Tender Ranking and Award\nFollowing completion of the compliance, financial and due diligence assessments, compliant tenders will be ranked in ascending order of tender price.\nThe contract will be awarded to the lowest priced compliant Tenderer, subject to:\n•\tCompliance with all mandatory requirements of the ITT;\n•\tSatisfactory due diligence outcomes; and\n•\tConfirmation that the submitted price fully reflects the scope of works and contract requirements.\n7.2 Financial Evaluation\nCost Assessment\nTender prices will be reviewed to ensure that:\n•\tPrices have been submitted on a like-for-like basis;\n•\tThe tender sum includes all costs associated with delivering the works described within this ITT;\n•\tAny exclusions, qualifications or assumptions are clearly identified; and\n•\tThe submission represents a bona fide and deliverable offer.\nThe College reserves the right to seek clarification where pricing anomalies, omissions or qualifications are identified.\nTender Ranking\nCompliant tenders will be ranked in accordance with their total tender price as follows:\nRank 1: Lowest compliant tender price\nRank 2: Second lowest compliant tender price\nRank 3: Third lowest compliant tender price\nSubsequent Rankings: Remaining compliant tender prices in ascending order"
+       }
+      }
+     ],
+     "documents": [
+      {
+       "id": "A-25055",
+       "documentType": "biddingDocuments",
+       "url": "https://www.find-tender.service.gov.uk/Notice/Attachment/A-25055",
+       "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+      },
+      {
+       "id": "104428-2026",
+       "documentType": "tenderNotice",
+       "noticeType": "UK4",
+       "description": "Tender notice on Find a Tender",
+       "url": "https://www.find-tender.service.gov.uk/Notice/104428-2026",
+       "datePublished": "2026-11-03T17:02:26Z",
+       "format": "text/html"
+      }
+     ]
+    },
+    "language": "en"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-h6vhtk-079711",
+    "ocid_native": true,
+    "stage": "tender",
+    "title": "CTC Relocation Project",
+    "description": "Weston College Group invites suitably qualified and experienced contractors to submit a tender for the completion of the yielding-up, dismantling, removal, site clearance and restoration works required at the College's Construction Training Centre (CTC).\nThe works are required to facilitate the surrender of the site in accordance with planning obligations and landlord requirements and include the removal of modular buildings, associated structures, external works, below-ground services, foundations and hardstanding, together with reinstatement and restoration of the site. The programme of works is defined within the project master programme.\nThe successful contractor shall act as Principal Contractor under the Construction (Design and Management) Regulations 2015 and shall coordinate the project works. Certain specialist works will be undertaken by contractors appointed directly by Weston College. The Principal Contractor shall provide access, coordination, supervision and contractor attendances as described within this specification.",
+    "buyer": {
+     "name": "Weston College",
+     "id": "10007459",
+     "scheme": "GB-UKPRN",
+     "country": "GB"
+    },
+    "country": "GB",
+    "status": "active",
+    "procurement_method": "Below threshold - open competition",
+    "main_category": "works",
+    "value": {
+     "amount": "500000.00",
+     "currency": "GBP"
+    },
+    "published_at": "2026-11-03T17:02:26+00:00",
+    "updated_at": "2026-11-03T17:02:26+00:00",
+    "tender_start": null,
+    "tender_end": "2026-12-04T12:00:00+00:00",
+    "classifications": [],
+    "items": [
+     {
+      "id": "1"
+     }
+    ],
+    "language": "en",
+    "url": "https://www.find-tender.service.gov.uk/Notice/104428-2026"
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "104427-2026",
+   "content_hash": "e524b0fbadccb0283f7eddbbbc1ad4f6165065416c088ea8c919c27b86998391",
+   "fetched_at": "2026-11-03T17:26:57+00:00",
+   "source_url": "https://www.find-tender.service.gov.uk/Notice/104427-2026",
+   "publisher": "Cabinet Office",
+   "published_at": "2026-11-03T17:00:24+00:00",
+   "source_updated_at": "2026-11-03T17:00:24+00:00",
+   "language": "en",
+   "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "buyerID": [],
+    "id": "104427-2026",
+    "tag": [
+     "award",
+     "contract"
+    ],
+    "date": "2026-11-03T17:00:24Z",
+    "initiationType": "tender",
+    "ocid": "ocds-h6vhtk-065603",
+    "parties": [
+     {
+      "name": "Durham County Council",
+      "id": "GB-PPON-PMPB-8772-VYWM",
+      "identifier": {
+       "scheme": "GB-PPON",
+       "id": "PMPB-8772-VYWM"
+      },
+      "address": {
+       "streetAddress": "Corten House, Dunholme Close",
+       "locality": "Durham",
+       "postalCode": "DH1 5WB",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKC14"
+      },
+      "contactPoint": {
+       "email": "corporate.procurement@durham.gov.uk"
+      },
+      "roles": [
+       "buyer"
+      ],
+      "details": {
+       "url": "http://www.durham.gov.uk/",
+       "classifications": [
+        {
+         "scheme": "UK_CA_TYPE",
+         "id": "publicAuthoritySubCentralGovernment",
+         "description": "Public authority - sub-central government"
+        }
+       ]
+      }
+     },
+     {
+      "name": "Angel Trust - A Charity For The People",
+      "id": "GB-CHC-1778926",
+      "identifier": {
+       "scheme": "GB-CHC",
+       "id": "1778926"
+      },
+      "additionalIdentifiers": [
+       {
+        "scheme": "GB-PPON",
+        "id": "PYLC-8449-YRXN"
+       }
+      ],
+      "address": {
+       "streetAddress": "3 Belvedere House",
+       "locality": "Bishop Auckland",
+       "postalCode": "DL14 7JN",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKC14"
+      },
+      "contactPoint": {
+       "email": "clairmcgregor@angeltrust.co.uk"
+      },
+      "roles": [
+       "supplier"
+      ],
+      "details": {
+       "url": "http://www.angeltrust.co.uk",
+       "scale": "sme",
+       "vcse": true,
+       "publicServiceMissionOrganization": false,
+       "shelteredWorkshop": false
+      }
+     }
+    ],
+    "buyer": {
+     "id": "GB-PPON-PMPB-8772-VYWM",
+     "name": "Durham County Council"
+    },
+    "tender": {
+     "id": "OPEN20261086",
+     "legalBasis": {
+      "id": "2023/54",
+      "scheme": "UKPGA",
+      "uri": "https://www.legislation.gov.uk/ukpga/2023/54/contents"
+     },
+     "title": "Health, Wellbeing and Night Hub",
+     "description": "The Health, Wellbeing and Night Hub aims to deliver a preventative, integrated response for adults at risk of homelessness, rough sleeping, or poor health outcomes, particularly those discharged from hospital or unable to safely return to accommodation.\nThe service aims to:\n•Prevent discharge to the street for eligible adults\n•Provide immediate, short-term step-down support following hospital discharge\n•Identify housing needs early and support move-on solutions\n•Support access to appropriate services such as Housing and homelessness services,\n•Provide welfare benefits and financial support.GP registration and health appointments (not exhaustive)\n•Reduce rough sleeping and repeat homelessness\n•Improve service user engagement with statutory and voluntary services",
+     "status": "complete",
+     "procurementMethod": "open",
+     "procurementMethodDetails": "Competitive flexible procedure",
+     "specialRegime": [
+      "lightTouch"
+     ],
+     "lots": [
+      {
+       "id": "1",
+       "status": "complete",
+       "description": null
+      }
+     ],
+     "documents": [
+      {
+       "id": "conflictOfInterest",
+       "documentType": "conflictOfInterest",
+       "description": "Not published"
+      }
+     ]
+    },
+    "awards": [
+     {
+      "id": "1",
+      "status": "active",
+      "mainProcurementCategory": "services",
+      "suppliers": [
+       {
+        "id": "GB-CHC-1778926",
+        "name": "Angel Trust - A Charity For The People"
+       }
+      ],
+      "items": [
+       {
+        "id": "1",
+        "additionalClassifications": [
+         {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+         }
+        ],
+        "deliveryAddresses": [
+         {
+          "region": "UKC14",
+          "country": "GB",
+          "countryName": "United Kingdom"
+         }
+        ],
+        "relatedLot": "1"
+       }
+      ],
+      "relatedLots": [
+       "1"
+      ]
+     }
+    ],
+    "contracts": [
+     {
+      "id": "1",
+      "awardID": "1",
+      "status": "active",
+      "period": {
+       "startDate": "2027-04-01T00:00:00+01:00",
+       "endDate": "2029-03-31T23:59:59+01:00",
+       "maxExtentDate": "2031-03-31T23:59:59+01:00"
+      },
+      "hasRenewal": true,
+      "renewal": {
+       "description": "2 x 12 month extension periods are available subject to performance, funding and commissioner approval."
+      },
+      "hasOptions": true,
+      "options": {
+       "description": "Funding for these services is reliant upon the continued availability of funds from both the Council's core budget and The Homeless Prevention Funding. Funding amounts and sources are uncertain over the contract term and therefore DCC may need to invoke either contract modifications or termination as permitted under the relevant sections of the contract terms and conditions.\nAt the Council's discretion, should the Council acquire further funding, including from different sources, additional services may be required and may slightly differ to that detailed in the Specification but will fall under the remit of the Health, Wellbeing and Night Hub service.\nThe Council reserves the right to apply inflationary uplifts to the contract value at its sole discretion and will be based upon the availability of funding and commissioning priorities.\nThe Council reserves the right to modify the service specification if new legislation and/or guidance regarding the delivery of this service is published by the Government.\nIf a successful bidder's contract is terminated, either at the Council's or the provider's discretion, the council has the discretion to approach one or all of the other successful\nbidders to offer them the opportunity to deliver the Health, Wellbeing and Night Hub service OR go to market for a new supplier."
+      },
+      "value": {
+       "amountGross": 1393422.84,
+       "amount": 1393422.84,
+       "currency": "GBP"
+      },
+      "aboveThreshold": true,
+      "dateSigned": "2026-11-03T00:00:00Z",
+      "statusDetails": null,
+      "documents": [
+       {
+        "id": "104427-2026",
+        "documentType": "contractNotice",
+        "noticeType": "UK7",
+        "description": "Contract details notice on Find a Tender",
+        "url": "https://www.find-tender.service.gov.uk/Notice/104427-2026",
+        "datePublished": "2026-11-03T17:00:24Z",
+        "format": "text/html"
+       }
+      ]
+     }
+    ],
+    "language": "en"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-h6vhtk-065603",
+    "ocid_native": true,
+    "stage": "contract",
+    "title": "Health, Wellbeing and Night Hub",
+    "description": "The Health, Wellbeing and Night Hub aims to deliver a preventative, integrated response for adults at risk of homelessness, rough sleeping, or poor health outcomes, particularly those discharged from hospital or unable to safely return to accommodation.\nThe service aims to:\n•Prevent discharge to the street for eligible adults\n•Provide immediate, short-term step-down support following hospital discharge\n•Identify housing needs early and support move-on solutions\n•Support access to appropriate services such as Housing and homelessness services,\n•Provide welfare benefits and financial support.GP registration and health appointments (not exhaustive)\n•Reduce rough sleeping and repeat homelessness\n•Improve service user engagement with statutory and voluntary services",
+    "buyer": {
+     "name": "Durham County Council",
+     "id": "PMPB-8772-VYWM",
+     "scheme": "GB-PPON",
+     "country": "GB"
+    },
+    "country": "GB",
+    "status": "complete",
+    "procurement_method": "Competitive flexible procedure",
+    "main_category": null,
+    "value": null,
+    "published_at": "2026-11-03T17:00:24+00:00",
+    "updated_at": "2026-11-03T17:00:24+00:00",
+    "tender_start": null,
+    "tender_end": null,
+    "classifications": [],
+    "items": [],
+    "language": "en",
+    "url": "https://www.find-tender.service.gov.uk/Notice/104427-2026"
+   },
+   "awards": [
+    {
+     "award_id": "1",
+     "title": null,
+     "status": "active",
+     "date": null,
+     "value": null,
+     "suppliers": [
+      {
+       "name": "Angel Trust - A Charity For The People",
+       "id": "1778926",
+       "scheme": "GB-CHC"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "1",
+     "award_id": "1",
+     "title": null,
+     "status": "active",
+     "date_signed": "2026-11-03T00:00:00+00:00",
+     "period_start": "2027-04-01T00:00:00+01:00",
+     "period_end": "2029-03-31T23:59:59+01:00",
+     "value": {
+      "amount": "1393422.84",
+      "currency": "GBP"
+     }
+    }
+   ]
+  },
+  {
+   "external_id": "104425-2026",
+   "content_hash": "dbc4f72e09cc417f632fb6745f22ce4b300b29a31fe1a7dfd02635f463a8e9da",
+   "fetched_at": "2026-11-03T17:26:57+00:00",
+   "source_url": "https://www.find-tender.service.gov.uk/Notice/104425-2026",
+   "publisher": "Cabinet Office",
+   "published_at": "2026-11-03T16:55:48+00:00",
+   "source_updated_at": "2026-11-03T16:55:48+00:00",
+   "language": "en",
+   "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "buyerID": [],
+    "id": "104425-2026",
+    "tag": [
+     "award",
+     "contract"
+    ],
+    "date": "2026-11-03T16:55:48Z",
+    "initiationType": "tender",
+    "ocid": "ocds-h6vhtk-06b4ea",
+    "parties": [
+     {
+      "name": "LIVERPOOL HOPE UNIVERSITY",
+      "id": "GB-COH-03285547",
+      "identifier": {
+       "scheme": "GB-COH",
+       "id": "03285547"
+      },
+      "additionalIdentifiers": [
+       {
+        "scheme": "GB-PPON",
+        "id": "PXCM-1417-MQRR"
+       }
+      ],
+      "address": {
+       "streetAddress": "HOPE PARK, TAGGART AVENUE",
+       "locality": "LIVERPOOL",
+       "postalCode": "L16 9JD",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKD72"
+      },
+      "contactPoint": {
+       "name": "Steven Parker",
+       "email": "procurement@hope.ac.uk"
+      },
+      "roles": [
+       "buyer"
+      ],
+      "details": {
+       "url": "https://www.hope.ac.uk/",
+       "classifications": [
+        {
+         "scheme": "UK_CA_TYPE",
+         "id": "publicAuthoritySubCentralGovernment",
+         "description": "Public authority - sub-central government"
+        }
+       ]
+      }
+     },
+     {
+      "name": "UNI-QUEST LTD",
+      "id": "GB-COH-08640061",
+      "identifier": {
+       "scheme": "GB-COH",
+       "id": "08640061"
+      },
+      "additionalIdentifiers": [
+       {
+        "scheme": "GB-PPON",
+        "id": "PTCQ-9772-JYZR"
+       }
+      ],
+      "address": {
+       "streetAddress": "77 Sidney Street",
+       "locality": "Sheffield",
+       "postalCode": "S1 4RG",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKE32"
+      },
+      "contactPoint": {
+       "email": "info@uni-quest.co.uk"
+      },
+      "roles": [
+       "supplier"
+      ],
+      "details": {
+       "url": "https://www.uni-quest.co.uk/",
+       "scale": "sme",
+       "vcse": false,
+       "publicServiceMissionOrganization": false,
+       "shelteredWorkshop": false
+      }
+     }
+    ],
+    "buyer": {
+     "id": "GB-COH-03285547",
+     "name": "LIVERPOOL HOPE UNIVERSITY"
+    },
+    "tender": {
+     "id": "LHU - 00000181",
+     "legalBasis": {
+      "id": "2023/54",
+      "scheme": "UKPGA",
+      "uri": "https://www.legislation.gov.uk/ukpga/2023/54/contents"
+     },
+     "title": "Student Enquiry & Management Conversion Services Provider",
+     "description": "CONTRACT AWARD NOTICE\nLiverpool Hope University invited tenders for the provision of enquiry and conversion management services to support conversion of enquirers, applicants and offer holders across our programme portfolio.\nThe University would like the service to cover both the phases of enquiry to application (enquiries) and offer to enrolment (conversion), noting the contract may be phased in implementation.",
+     "status": "complete",
+     "procurementMethod": "open",
+     "procurementMethodDetails": "Competitive flexible procedure",
+     "lots": [
+      {
+       "id": "1",
+       "status": "complete",
+       "description": null
+      }
+     ],
+     "documents": [
+      {
+       "id": "conflictOfInterest",
+       "documentType": "conflictOfInterest",
+       "description": "Not published"
+      }
+     ]
+    },
+    "awards": [
+     {
+      "id": "1",
+      "status": "active",
+      "mainProcurementCategory": "services",
+      "suppliers": [
+       {
+        "id": "GB-COH-08640061",
+        "name": "UNI-QUEST LTD"
+       }
+      ],
+      "items": [
+       {
+        "id": "1",
+        "additionalClassifications": [
+         {
+          "scheme": "CPV",
+          "id": "75121000",
+          "description": "Administrative educational services"
+         }
+        ],
+        "deliveryAddresses": [
+         {
+          "region": "UKD72",
+          "country": "GB",
+          "countryName": "United Kingdom"
+         }
+        ],
+        "relatedLot": "1"
+       }
+      ],
+      "relatedLots": [
+       "1"
+      ]
+     }
+    ],
+    "contracts": [
+     {
+      "id": "1",
+      "awardID": "1",
+      "title": "Student Enquiry & Management Conversion Services Provider",
+      "status": "active",
+      "period": {
+       "startDate": "2026-09-18T00:00:00+01:00",
+       "endDate": "2029-09-17T23:59:59+01:00",
+       "maxExtentDate": "2031-09-17T23:59:59+01:00"
+      },
+      "hasRenewal": true,
+      "renewal": {
+       "description": "Option to extend for a period (or periods) of up to a further two (2) years."
+      },
+      "value": {
+       "amountGross": 1407000,
+       "amount": 1172500,
+       "currency": "GBP"
+      },
+      "aboveThreshold": true,
+      "dateSigned": "2026-09-17T00:00:00+01:00",
+      "noAgreedMetricsRationale": "N/A",
+      "statusDetails": null,
+      "documents": [
+       {
+        "id": "104425-2026",
+        "documentType": "contractNotice",
+        "noticeType": "UK7",
+        "description": "Contract details notice on Find a Tender",
+        "url": "https://www.find-tender.service.gov.uk/Notice/104425-2026",
+        "datePublished": "2026-11-03T16:55:48Z",
+        "format": "text/html"
+       }
+      ]
+     }
+    ],
+    "language": "en"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-h6vhtk-06b4ea",
+    "ocid_native": true,
+    "stage": "contract",
+    "title": "Student Enquiry & Management Conversion Services Provider",
+    "description": "CONTRACT AWARD NOTICE\nLiverpool Hope University invited tenders for the provision of enquiry and conversion management services to support conversion of enquirers, applicants and offer holders across our programme portfolio.\nThe University would like the service to cover both the phases of enquiry to application (enquiries) and offer to enrolment (conversion), noting the contract may be phased in implementation.",
+    "buyer": {
+     "name": "LIVERPOOL HOPE UNIVERSITY",
+     "id": "03285547",
+     "scheme": "GB-COH",
+     "country": "GB"
+    },
+    "country": "GB",
+    "status": "complete",
+    "procurement_method": "Competitive flexible procedure",
+    "main_category": null,
+    "value": null,
+    "published_at": "2026-11-03T16:55:48+00:00",
+    "updated_at": "2026-11-03T16:55:48+00:00",
+    "tender_start": null,
+    "tender_end": null,
+    "classifications": [],
+    "items": [],
+    "language": "en",
+    "url": "https://www.find-tender.service.gov.uk/Notice/104425-2026"
+   },
+   "awards": [
+    {
+     "award_id": "1",
+     "title": null,
+     "status": "active",
+     "date": null,
+     "value": null,
+     "suppliers": [
+      {
+       "name": "UNI-QUEST LTD",
+       "id": "08640061",
+       "scheme": "GB-COH"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "1",
+     "award_id": "1",
+     "title": "Student Enquiry & Management Conversion Services Provider",
+     "status": "active",
+     "date_signed": "2026-09-17T00:00:00+01:00",
+     "period_start": "2026-09-18T00:00:00+01:00",
+     "period_end": "2029-09-17T23:59:59+01:00",
+     "value": {
+      "amount": "1172500.00",
+      "currency": "GBP"
+     }
+    }
+   ]
+  },
+  {
+   "external_id": "104424-2026",
+   "content_hash": "612b470312b1278e156fcbf16cd1763bbd429c4fb094d2c642cf671fa5e88920",
+   "fetched_at": "2026-11-03T17:26:57+00:00",
+   "source_url": "https://www.find-tender.service.gov.uk/Notice/104424-2026",
+   "publisher": "Cabinet Office",
+   "published_at": "2026-11-03T16:55:04+00:00",
+   "source_updated_at": "2026-11-03T16:55:04+00:00",
+   "language": "en",
+   "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "id": "104424-2026",
+    "tag": [
+     "planningUpdate"
+    ],
+    "date": "2026-11-03T16:55:04Z",
+    "initiationType": "tender",
+    "ocid": "ocds-h6vhtk-07970e",
+    "parties": [
+     {
+      "name": "London Borough of Hounslow",
+      "id": "GB-PPON-PQYY-1684-DYLV",
+      "identifier": {
+       "scheme": "GB-PPON",
+       "id": "PQYY-1684-DYLV"
+      },
+      "address": {
+       "streetAddress": "Hounslow House, 7 Bath Road",
+       "locality": "Hounslow, London",
+       "postalCode": "TW3 3EB",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKI75"
+      },
+      "contactPoint": {
+       "email": "procurement@hounslow.gov.uk"
+      },
+      "roles": [
+       "buyer"
+      ],
+      "details": {
+       "classifications": [
+        {
+         "scheme": "UK_CA_TYPE",
+         "id": "publicAuthoritySubCentralGovernment",
+         "description": "Public authority - sub-central government"
+        }
+       ]
+      }
+     }
+    ],
+    "buyer": {
+     "id": "GB-PPON-PQYY-1684-DYLV",
+     "name": "London Borough of Hounslow"
+    },
+    "planning": {
+     "milestones": [
+      {
+       "id": "engagement",
+       "type": "engagement",
+       "description": "How The Engagement Will Work\nThe Council will conduct a two-stage preliminary market engagement.\nStage 1 will allow interested parties and the Council to explore the SEP opportunity and share information to refine the partnership structure, approach and proposed pipeline. It will comprise:\n•\ta webinar presented by the Council on Wednesday 25 November 2026 at 12:00, held online via Microsoft Teams; and\n•\tone-to-one interviews with the Council and its advisors over a two-week period from Monday 7 December 2026 to 18 December 2026\nStage 2 is expected to take place in spring 2027 and will provide more detailed information on the proposed pipeline, the Council's commercial development work and procurement approach.\nHow To Take Part\nIf your organisation is interested in becoming the Council's Strategic Energy Partner and wishes to take part, please register your interest via the Council's eTendering portal https://procontract.due-north.com/Advert?advertId=f38838eb-84d7-f111-8142-6045bdf14b1f by 23:59 on Monday 23 November 2026 where a link is provided to the webinar.\nMarket Engagement interviews\nInterview slots are limited and will be prioritised to organisations intending to bid as the primary contractor or a lead specialist contractor.\nA primary contractor would be contracting directly with the Council as the Partner, solely, leading a consortium or partnership. A lead specialist contractor for a key area of decarbonisation delivery or investment who would be part of a consortium or partnership. Participants must confirm their intention on the portal with their interview request.\nInterviews are subject to a Non-Disclosure Agreement (NDA), available on the portal. Invitations will be issued once the signed NDA has been uploaded on the portal. Members of a potential consortium or partnership are asked to attend a single interview together.\nThe Council welcomes feedback from across the market, including supply chain organisations, SMEs and VCSEs.\nQuestions may be submitted via the portal, before and after the engagement, up to the deadline in the timetable below. Interviewees will be subject to the confidentiality provisions of the NDA. The Council and its advisors will respond via the portal. The webinar presentation, together with an anonymised record of questions, responses and any other relevant information shared during the engagement, excluding information identified as commercially sensitive, will be made available on the portal to all registered parties.\nRelated Opportunity\nThe Council is also procuring a Heat Network Development Partner to fund and deliver a district heating network across the borough (the \"Hounslow Heat Network\"). A separate preliminary market engagement notice has been published for that opportunity (Portal Ref: DN834949). The Hounslow Heat Network is not being procured as part of the SEP.\nOrganisations may take part in either or both engagements.\nFair And Transparent Engagement\n•\tTaking part in this engagement is not a condition of taking part in any future procurement and will not give any organisation an advantage.\n•\tA summary of the questions, answers and key information shared at each stage will be published to all registered parties via the portal and included in any future procurement documents. Questions will be anonymised and commercially sensitive information will not be disclosed.\n•\tThe Council is supported by Womble Bond Dickinson (UK) LLP and Amberside Advisors. When registering, please declare any relationship with the Council, its officers or its advisors that could give rise to a conflict of interest.\nIndicative Timetable\nThe indicative timetable for the SEP engagement and procurement is as follows (subject to change):\nStage 1 engagement\nPreliminary market engagement notice published: Tuesday 3 Nov 2026\nRegistration deadline; webinar invitation and information pack issued:\tMonday 23 Nov 2026, 23:59\nWebinar: Wednesday 25 Nov 2026, 12:00\nOne-to-one interviews: Monday 7 - Friday 18 Dec 2026\nDeadline for submission of questions: Friday 18 Dec 2026, 1pm\nPublication of Stage 1 engagement feedback: Thursday 14 Jan 2027\nStage 2 engagement\nStage 2 engagement event (details to follow): Q2 2027\nProcurement\nTender notice published with full tender documentation: Q3 2027\nThe Council currently expects to use the competitive flexible procedure under the Procurement Act 2023, including stages of dialogue. The procedure will be confirmed in the tender notice and associated tender documents.\nAll communications will be via the Council's eTendering portal https://procontract.due-north.com/Advert?advertId=f38838eb-84d7-f111-8142-6045bdf14b1f.\n_______________________________________________________________\nIMPORTANT INFORMATION\nThis notice is not a call for competition or an invitation to tender and does not bind the Council to carry out a procurement process.\nInformation provided through this engagement is subject to change and does not represent final decisions or commitments.\nThe Council and its advisers are not liable for any costs that interested parties may incur in taking part in this preliminary market engagement.\nInformation submitted may be subject to disclosure under the Freedom of Information Act 2000 and the Environmental Information Regulations 2004. Please identify any information you consider commercially sensitive. Personal data will be handled in accordance with the Council's privacy notice\n(https://www.hounslow.gov.uk/privacy-notice).\nThis engagement is carried out in compliance with sections 16 and 17 of the Procurement Act 2023.",
+       "dueDate": "2026-12-18T23:59:59Z",
+       "status": "scheduled"
+      }
+     ],
+     "documents": [
+      {
+       "id": "104424-2026",
+       "documentType": "marketEngagementNotice",
+       "noticeType": "UK2",
+       "description": "Preliminary market engagement notice on Find a Tender",
+       "url": "https://www.find-tender.service.gov.uk/Notice/104424-2026",
+       "datePublished": "2026-11-03T16:55:04Z",
+       "format": "text/html"
+      }
+     ]
+    },
+    "tender": {
+     "id": "ocds-h6vhtk-07970e",
+     "legalBasis": {
+      "id": "2023/54",
+      "scheme": "UKPGA",
+      "uri": "https://www.legislation.gov.uk/ukpga/2023/54/contents"
+     },
+     "title": "Hounslow Strategic Energy Partnership",
+     "description": "The Opportunity\nFollowing Cabinet approval in December 2025, the London Borough of Hounslow (\"the Council\") intends to commence a procurement mid-late 2027 to select a Strategic Energy Partner (\"the Partner\") for a Strategic Energy Partnership (\"SEP\"). The Partner will help unlock investment and deliver a diverse portfolio of energy projects and programmes to drive the borough's energy transformation, accelerate decarbonisation and support the Council's net zero ambitions for both its own operations and estate and the wider borough.\nAn estimated £500m+ pipeline of energy infrastructure has been identified to support the borough's regeneration, growth and decarbonisation agenda. This includes building retrofit, renewable energy generation, vehicle fleet decarbonisation and EV charging infrastructure.\nThe Council aims to structure a commercially viable partnership that can fund, develop and deliver this pipeline in support of the borough's economic, social and environmental objectives. A key role of the Partner will be to identify and develop further pipeline opportunities and innovative energy solutions.\nThe partnership is intended as a long-term collaboration with the Council, the partnership and the respective roles of the Council and the Partner will be shaped by the feedback received through this engagement.\nWho Should Take Part\nThe Council would like to hear from organisations with experience in large-scale or place-based energy, infrastructure or related sectors, including those able to bring capital and delivery capability to the partnership. Consortia are welcome, as are smaller organisations interested in future supply chain opportunities.",
+     "items": [
+      {
+       "id": "1",
+       "additionalClassifications": [
+        {
+         "scheme": "CPV",
+         "id": "09310000",
+         "description": "Electricity"
+        },
+        {
+         "scheme": "CPV",
+         "id": "09320000",
+         "description": "Steam, hot water and associated products"
+        },
+        {
+         "scheme": "CPV",
+         "id": "09330000",
+         "description": "Solar energy"
+        },
+        {
+         "scheme": "CPV",
+         "id": "24111600",
+         "description": "Hydrogen"
+        },
+        {
+         "scheme": "CPV",
+         "id": "31121300",
+         "description": "Wind-energy generators"
+        },
+        {
+         "scheme": "CPV",
+         "id": "39715200",
+         "description": "Heating equipment"
+        },
+        {
+         "scheme": "CPV",
+         "id": "42511110",
+         "description": "Heat pumps"
+        },
+        {
+         "scheme": "CPV",
+         "id": "45261215",
+         "description": "Solar panel roof-covering work"
+        },
+        {
+         "scheme": "CPV",
+         "id": "45321000",
+         "description": "Thermal insulation work"
+        },
+        {
+         "scheme": "CPV",
+         "id": "45331000",
+         "description": "Heating, ventilation and air-conditioning installation work"
+        },
+        {
+         "scheme": "CPV",
+         "id": "51110000",
+         "description": "Installation services of electrical equipment"
+        },
+        {
+         "scheme": "CPV",
+         "id": "65310000",
+         "description": "Electricity distribution"
+        },
+        {
+         "scheme": "CPV",
+         "id": "65320000",
+         "description": "Operation of electrical installations"
+        },
+        {
+         "scheme": "CPV",
+         "id": "65400000",
+         "description": "Other sources of energy supplies and distribution"
+        },
+        {
+         "scheme": "CPV",
+         "id": "66114000",
+         "description": "Financial leasing services"
+        },
+        {
+         "scheme": "CPV",
+         "id": "66122000",
+         "description": "Corporate finance and venture capital services"
+        },
+        {
+         "scheme": "CPV",
+         "id": "71314000",
+         "description": "Energy and related services"
+        },
+        {
+         "scheme": "CPV",
+         "id": "71334000",
+         "description": "Mechanical and electrical engineering services"
+        },
+        {
+         "scheme": "CPV",
+         "id": "90713000",
+         "description": "Environmental issues consultancy services"
+        }
+       ],
+       "deliveryAddresses": [
+        {
+         "region": "UKI75",
+         "country": "GB",
+         "countryName": "United Kingdom"
+        }
+       ],
+       "relatedLot": "1"
+      }
+     ],
+     "value": {
+      "amountGross": 500000000,
+      "currency": "GBP"
+     },
+     "mainProcurementCategory": "services",
+     "aboveThreshold": true,
+     "lots": [
+      {
+       "id": "1",
+       "suitability": {
+        "sme": true,
+        "vcse": true
+       },
+       "contractPeriod": {
+        "startDate": "2028-10-24T00:00:00+01:00",
+        "endDate": "2043-10-24T23:59:59Z",
+        "maxExtentDate": "2048-10-24T23:59:59Z"
+       },
+       "hasRenewal": true,
+       "status": "planning"
+      }
+     ],
+     "communication": {
+      "futureNoticeDate": "2027-10-08T23:59:59+01:00"
+     },
+     "amendments": [
+      {
+       "description": "Link issues corrected",
+       "id": "104424-2026"
+      }
+     ],
+     "status": "planning"
+    },
+    "language": "en"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-h6vhtk-07970e",
+    "ocid_native": true,
+    "stage": "tender",
+    "title": "Hounslow Strategic Energy Partnership",
+    "description": "The Opportunity\nFollowing Cabinet approval in December 2025, the London Borough of Hounslow (\"the Council\") intends to commence a procurement mid-late 2027 to select a Strategic Energy Partner (\"the Partner\") for a Strategic Energy Partnership (\"SEP\"). The Partner will help unlock investment and deliver a diverse portfolio of energy projects and programmes to drive the borough's energy transformation, accelerate decarbonisation and support the Council's net zero ambitions for both its own operations and estate and the wider borough.\nAn estimated £500m+ pipeline of energy infrastructure has been identified to support the borough's regeneration, growth and decarbonisation agenda. This includes building retrofit, renewable energy generation, vehicle fleet decarbonisation and EV charging infrastructure.\nThe Council aims to structure a commercially viable partnership that can fund, develop and deliver this pipeline in support of the borough's economic, social and environmental objectives. A key role of the Partner will be to identify and develop further pipeline opportunities and innovative energy solutions.\nThe partnership is intended as a long-term collaboration with the Council, the partnership and the respective roles of the Council and the Partner will be shaped by the feedback received through this engagement.\nWho Should Take Part\nThe Council would like to hear from organisations with experience in large-scale or place-based energy, infrastructure or related sectors, including those able to bring capital and delivery capability to the partnership. Consortia are welcome, as are smaller organisations interested in future supply chain opportunities.",
+    "buyer": {
+     "name": "London Borough of Hounslow",
+     "id": "PQYY-1684-DYLV",
+     "scheme": "GB-PPON",
+     "country": "GB"
+    },
+    "country": "GB",
+    "status": "planning",
+    "procurement_method": null,
+    "main_category": "services",
+    "value": null,
+    "published_at": "2026-11-03T16:55:04+00:00",
+    "updated_at": "2026-11-03T16:55:04+00:00",
+    "tender_start": null,
+    "tender_end": null,
+    "classifications": [],
+    "items": [
+     {
+      "id": "1"
+     }
+    ],
+    "language": "en",
+    "url": "https://www.find-tender.service.gov.uk/Notice/104424-2026"
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "104423-2026",
+   "content_hash": "3da1fc8b6db357aac50bb9c64df4293d2008586f0c6e60d7abd288aea5b78359",
+   "fetched_at": "2026-11-03T17:26:57+00:00",
+   "source_url": "https://www.find-tender.service.gov.uk/Notice/104423-2026",
+   "publisher": "Cabinet Office",
+   "published_at": "2026-11-03T16:50:40+00:00",
+   "source_updated_at": "2026-11-03T16:50:40+00:00",
+   "language": "en",
+   "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "ocid": "ocds-h6vhtk-079710",
+    "id": "104423-2026",
+    "tag": [
+     "planning"
+    ],
+    "date": "2026-11-03T16:50:40Z",
+    "initiationType": "tender",
+    "planning": {
+     "documents": [
+      {
+       "id": "104423-2026",
+       "documentType": "plannedProcurementNotice",
+       "noticeType": "UK3",
+       "description": "Planned procurement notice on Find a Tender",
+       "url": "https://www.find-tender.service.gov.uk/Notice/104423-2026",
+       "datePublished": "2026-11-03T16:50:40Z",
+       "format": "text/html"
+      }
+     ]
+    },
+    "parties": [
+     {
+      "name": "Police and Crime Commissioner for Lancashire",
+      "id": "GB-PPON-PDVC-9719-ZQGL",
+      "identifier": {
+       "scheme": "GB-PPON",
+       "id": "PDVC-9719-ZQGL"
+      },
+      "address": {
+       "streetAddress": "Lancashire Police, Saunders Lane, Hutton",
+       "locality": "Preston",
+       "postalCode": "PR4 5SB",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKD45"
+      },
+      "contactPoint": {
+       "email": "ProcurementSupport@lancashire.police.uk"
+      },
+      "roles": [
+       "buyer"
+      ],
+      "details": {
+       "classifications": [
+        {
+         "scheme": "UK_CA_TYPE",
+         "id": "publicAuthoritySubCentralGovernment",
+         "description": "Public authority - sub-central government"
+        }
+       ]
+      }
+     }
+    ],
+    "buyer": {
+     "id": "GB-PPON-PDVC-9719-ZQGL",
+     "name": "Police and Crime Commissioner for Lancashire"
+    },
+    "tender": {
+     "id": "ocds-h6vhtk-079710",
+     "legalBasis": {
+      "id": "2023/54",
+      "scheme": "UKPGA",
+      "uri": "https://www.legislation.gov.uk/ukpga/2023/54/contents"
+     },
+     "title": "Vehicle Repairs Service",
+     "description": "Lancashire Constabulary’s Fleet Department require Accident/Collision and Vehicle Mechanical Repair Service to repair and maintain vehicles. The Authority is seeking to procure the services of between 5 and 8 suppliers to provide a broad range of repairs to Police Vehicles, to support our Vehicle Maintenance Strategies over a 2 year period, with the option to extend for a further 2 years.\nThe existing Lancashire Constabulary Vehicle Repairs Service Framework Agreement is due to expire 30th September 2027. The Constabulary will be replacing this with a new framework, estimated to start on 1st October 2027.\nThe estimated spend for the replacement framework will be in the region of £4 million.\nSuppliers will need to be located within a 60-mile radius (via Google Maps) to our Headquarters site (PR4 5SB).  This will enable site visits for vehicle inspections and face to face contract management to take place at a location based within a distance that would not add unnecessary costs or delay to the service.\nThis criterion is also essential to meet carbon reduction and net zero targets, in addition to our obligation to reduce contract costs.\nSuppliers outside of the specified radius are permitted to set up/utilise appropriate subcontracting arrangements within the radius. This can include the location and use of suitable sub-contractors who may be able to carry out this service on behalf of the supplier.\nAll vehicle repairs shall be completed strictly in accordance with the vehicle manufacturer's latest repair methods, technical bulletins, approved repair procedures and specifications current at the time of repair.\nUnder no circumstances shall repair methods be used that deviate from manufacturer-approved processes unless written approval is obtained from the Lancashire Constabulary.\nQualifications that technicians undertaking repairs must possess include:\n•\tATA Accreditation (or equivalent).\n•\tManufacturer-specific training where available.\n•\tEvidence of ongoing CPD and technical updates.\nLancashire Constabulary will be conducting Pre-Market Engagement. Please keep an eye out for the UK2 Notice, and information included on our external websites.",
+     "status": "planned",
+     "items": [
+      {
+       "id": "1",
+       "additionalClassifications": [
+        {
+         "scheme": "CPV",
+         "id": "34114200",
+         "description": "Police cars"
+        },
+        {
+         "scheme": "CPV",
+         "id": "50111000",
+         "description": "Fleet management, repair and maintenance services"
+        }
+       ],
+       "deliveryAddresses": [
+        {
+         "region": "UKD4",
+         "country": "GB",
+         "countryName": "United Kingdom"
+        }
+       ],
+       "relatedLot": "1"
+      }
+     ],
+     "value": {
+      "amountGross": 4800000,
+      "amount": 4000000,
+      "currency": "GBP"
+     },
+     "procurementMethod": "open",
+     "procurementMethodDetails": "Open procedure",
+     "mainProcurementCategory": "services",
+     "aboveThreshold": true,
+     "techniques": {
+      "hasFrameworkAgreement": true,
+      "frameworkAgreement": {
+       "type": "closed"
+      }
+     },
+     "submissionMethodDetails": "Atamis E-Tendering System - https://atamis-7459.my.site.com/login",
+     "submissionTerms": {
+      "electronicSubmissionPolicy": "allowed",
+      "languages": [
+       "en"
+      ]
+     },
+     "tenderPeriod": {
+      "endDate": "2027-03-25T00:00:00Z"
+     },
+     "awardPeriod": {
+      "endDate": "2027-06-18T23:59:59Z"
+     },
+     "lots": [
+      {
+       "id": "1",
+       "status": "planned",
+       "value": {
+        "amountGross": 4800000,
+        "amount": 4000000,
+        "currency": "GBP"
+       },
+       "suitability": {
+        "sme": true
+       },
+       "contractPeriod": {
+        "startDate": "2027-10-01T00:00:00Z",
+        "endDate": "2029-09-30T23:59:59Z",
+        "maxExtentDate": "2031-09-30T23:59:59Z"
+       },
+       "hasRenewal": true,
+       "renewal": {
+        "description": "This contract is a 2 year contract, with the option to extend for a further 2 years."
+       }
+      }
+     ],
+     "communication": {
+      "futureNoticeDate": "2027-02-11T23:59:59Z"
+     }
+    },
+    "language": "en"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-h6vhtk-079710",
+    "ocid_native": true,
+    "stage": "tender",
+    "title": "Vehicle Repairs Service",
+    "description": "Lancashire Constabulary’s Fleet Department require Accident/Collision and Vehicle Mechanical Repair Service to repair and maintain vehicles. The Authority is seeking to procure the services of between 5 and 8 suppliers to provide a broad range of repairs to Police Vehicles, to support our Vehicle Maintenance Strategies over a 2 year period, with the option to extend for a further 2 years.\nThe existing Lancashire Constabulary Vehicle Repairs Service Framework Agreement is due to expire 30th September 2027. The Constabulary will be replacing this with a new framework, estimated to start on 1st October 2027.\nThe estimated spend for the replacement framework will be in the region of £4 million.\nSuppliers will need to be located within a 60-mile radius (via Google Maps) to our Headquarters site (PR4 5SB).  This will enable site visits for vehicle inspections and face to face contract management to take place at a location based within a distance that would not add unnecessary costs or delay to the service.\nThis criterion is also essential to meet carbon reduction and net zero targets, in addition to our obligation to reduce contract costs.\nSuppliers outside of the specified radius are permitted to set up/utilise appropriate subcontracting arrangements within the radius. This can include the location and use of suitable sub-contractors who may be able to carry out this service on behalf of the supplier.\nAll vehicle repairs shall be completed strictly in accordance with the vehicle manufacturer's latest repair methods, technical bulletins, approved repair procedures and specifications current at the time of repair.\nUnder no circumstances shall repair methods be used that deviate from manufacturer-approved processes unless written approval is obtained from the Lancashire Constabulary.\nQualifications that technicians undertaking repairs must possess include:\n•\tATA Accreditation (or equivalent).\n•\tManufacturer-specific training where available.\n•\tEvidence of ongoing CPD and technical updates.\nLancashire Constabulary will be conducting Pre-Market Engagement. Please keep an eye out for the UK2 Notice, and information included on our external websites.",
+    "buyer": {
+     "name": "Police and Crime Commissioner for Lancashire",
+     "id": "PDVC-9719-ZQGL",
+     "scheme": "GB-PPON",
+     "country": "GB"
+    },
+    "country": "GB",
+    "status": "planned",
+    "procurement_method": "Open procedure",
+    "main_category": "services",
+    "value": {
+     "amount": "4000000.00",
+     "currency": "GBP"
+    },
+    "published_at": "2026-11-03T16:50:40+00:00",
+    "updated_at": "2026-11-03T16:50:40+00:00",
+    "tender_start": null,
+    "tender_end": "2027-03-25T00:00:00+00:00",
+    "classifications": [],
+    "items": [
+     {
+      "id": "1"
+     }
+    ],
+    "language": "en",
+    "url": "https://www.find-tender.service.gov.uk/Notice/104423-2026"
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "104422-2026",
+   "content_hash": "030942b9dbdd20114c73921b6f6a726959d79d93976738c4f49765ded35a2012",
+   "fetched_at": "2026-11-03T17:26:57+00:00",
+   "source_url": "https://www.find-tender.service.gov.uk/Notice/104422-2026",
+   "publisher": "Cabinet Office",
+   "published_at": "2026-11-03T16:50:23+00:00",
+   "source_updated_at": "2026-11-03T16:50:23+00:00",
+   "language": "en",
+   "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "ocid": "ocds-h6vhtk-07970f",
+    "buyerID": [],
+    "id": "104422-2026",
+    "tag": [
+     "award",
+     "contract"
+    ],
+    "date": "2026-11-03T16:50:23Z",
+    "initiationType": "tender",
+    "parties": [
+     {
+      "name": "THE OPEN UNIVERSITY",
+      "id": "GB-CHC-RC000391",
+      "identifier": {
+       "scheme": "GB-CHC",
+       "id": "RC000391"
+      },
+      "additionalIdentifiers": [
+       {
+        "scheme": "GB-PPON",
+        "id": "PYNW-6296-ZJQQ"
+       }
+      ],
+      "address": {
+       "streetAddress": "Walton Hall",
+       "locality": "Milton Keynes",
+       "postalCode": "MK7 6AA",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKJ12"
+      },
+      "contactPoint": {
+       "email": "finance-tenders@open.ac.uk"
+      },
+      "roles": [
+       "buyer"
+      ],
+      "details": {
+       "classifications": [
+        {
+         "scheme": "UK_CA_TYPE",
+         "id": "publicAuthoritySubCentralGovernment",
+         "description": "Public authority - sub-central government"
+        }
+       ]
+      }
+     },
+     {
+      "name": "Bellrock Advisory LLP",
+      "id": "GB-COH-OC302030",
+      "identifier": {
+       "scheme": "GB-COH",
+       "id": "OC302030"
+      },
+      "additionalIdentifiers": [
+       {
+        "scheme": "GB-PPON",
+        "id": "PRMC-4659-PWGN"
+       }
+      ],
+      "address": {
+       "streetAddress": "6-8 Greencoat Place",
+       "locality": "London",
+       "postalCode": "SW1P 1PL",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKI32"
+      },
+      "contactPoint": {
+       "email": "dan.green@bellrock.co.uk"
+      },
+      "roles": [
+       "supplier"
+      ],
+      "details": {
+       "scale": "large",
+       "vcse": false
+      }
+     }
+    ],
+    "buyer": {
+     "id": "GB-CHC-RC000391",
+     "name": "THE OPEN UNIVERSITY"
+    },
+    "tender": {
+     "id": "OUPA11805",
+     "legalBasis": {
+      "id": "2023/54",
+      "scheme": "UKPGA",
+      "uri": "https://www.legislation.gov.uk/ukpga/2023/54/contents"
+     },
+     "title": "LED lighting upgrade designs to RIBA4",
+     "description": "Design work for an LED lighting upgrade project to RIBA Stage 4 requirements.",
+     "status": "complete",
+     "procurementMethodDetails": "Below threshold - unknown",
+     "lots": [
+      {
+       "id": "1",
+       "status": "complete",
+       "description": null
+      }
+     ]
+    },
+    "awards": [
+     {
+      "id": "1",
+      "status": "active",
+      "mainProcurementCategory": "services",
+      "suppliers": [
+       {
+        "id": "GB-COH-OC302030",
+        "name": "Bellrock Advisory LLP"
+       }
+      ],
+      "items": [
+       {
+        "id": "1",
+        "additionalClassifications": [
+         {
+          "scheme": "CPV",
+          "id": "71320000",
+          "description": "Engineering design services"
+         }
+        ],
+        "deliveryAddresses": [
+         {
+          "region": "UK",
+          "country": "GB",
+          "countryName": "United Kingdom"
+         }
+        ],
+        "relatedLot": "1"
+       }
+      ],
+      "relatedLots": [
+       "1"
+      ]
+     }
+    ],
+    "contracts": [
+     {
+      "id": "1",
+      "awardID": "1",
+      "status": "active",
+      "period": {
+       "startDate": "2026-07-24T00:00:00+01:00",
+       "endDate": "2026-09-30T23:59:59+01:00"
+      },
+      "value": {
+       "amountGross": 45915,
+       "amount": 38263,
+       "currency": "GBP"
+      },
+      "aboveThreshold": false,
+      "dateSigned": "2026-07-20T00:00:00+01:00",
+      "statusDetails": null,
+      "documents": [
+       {
+        "id": "104422-2026",
+        "documentType": "contractNotice",
+        "noticeType": "UK7",
+        "description": "Contract details notice on Find a Tender",
+        "url": "https://www.find-tender.service.gov.uk/Notice/104422-2026",
+        "datePublished": "2026-11-03T16:50:23Z",
+        "format": "text/html"
+       }
+      ]
+     }
+    ],
+    "language": "en"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-h6vhtk-07970f",
+    "ocid_native": true,
+    "stage": "contract",
+    "title": "LED lighting upgrade designs to RIBA4",
+    "description": "Design work for an LED lighting upgrade project to RIBA Stage 4 requirements.",
+    "buyer": {
+     "name": "THE OPEN UNIVERSITY",
+     "id": "RC000391",
+     "scheme": "GB-CHC",
+     "country": "GB"
+    },
+    "country": "GB",
+    "status": "complete",
+    "procurement_method": "Below threshold - unknown",
+    "main_category": null,
+    "value": null,
+    "published_at": "2026-11-03T16:50:23+00:00",
+    "updated_at": "2026-11-03T16:50:23+00:00",
+    "tender_start": null,
+    "tender_end": null,
+    "classifications": [],
+    "items": [],
+    "language": "en",
+    "url": "https://www.find-tender.service.gov.uk/Notice/104422-2026"
+   },
+   "awards": [
+    {
+     "award_id": "1",
+     "title": null,
+     "status": "active",
+     "date": null,
+     "value": null,
+     "suppliers": [
+      {
+       "name": "Bellrock Advisory LLP",
+       "id": "OC302030",
+       "scheme": "GB-COH"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "1",
+     "award_id": "1",
+     "title": null,
+     "status": "active",
+     "date_signed": "2026-07-20T00:00:00+01:00",
+     "period_start": "2026-07-24T00:00:00+01:00",
+     "period_end": "2026-09-30T23:59:59+01:00",
+     "value": {
+      "amount": "38263.00",
+      "currency": "GBP"
+     }
+    }
+   ]
+  },
+  {
+   "external_id": "104421-2026",
+   "content_hash": "6ee25ee73928039a4929c29042fd9eef82ee3596af4fa2b3e633a85ff5dcdb45",
+   "fetched_at": "2026-11-03T17:26:57+00:00",
+   "source_url": "https://www.find-tender.service.gov.uk/Notice/104421-2026",
+   "publisher": "Cabinet Office",
+   "published_at": "2026-11-03T16:46:56+00:00",
+   "source_updated_at": "2026-11-03T16:46:56+00:00",
+   "language": "en",
+   "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "id": "104421-2026",
+    "tag": [
+     "tender"
+    ],
+    "date": "2026-11-03T16:46:56Z",
+    "initiationType": "tender",
+    "ocid": "ocds-h6vhtk-06bd55",
+    "parties": [
+     {
+      "name": "St Helens Council",
+      "id": "GB-PPON-PPYM-6238-VHLR",
+      "identifier": {
+       "scheme": "GB-PPON",
+       "id": "PPYM-6238-VHLR"
+      },
+      "address": {
+       "streetAddress": "Town Hall",
+       "locality": "St Helens",
+       "postalCode": "WA10 1HP",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKD71"
+      },
+      "contactPoint": {
+       "email": "procurement@star-procurement.gov.uk"
+      },
+      "roles": [
+       "buyer"
+      ],
+      "details": {
+       "classifications": [
+        {
+         "scheme": "UK_CA_TYPE",
+         "id": "publicAuthoritySubCentralGovernment",
+         "description": "Public authority - sub-central government"
+        }
+       ]
+      }
+     }
+    ],
+    "buyer": {
+     "id": "GB-PPON-PPYM-6238-VHLR",
+     "name": "St Helens Council"
+    },
+    "tender": {
+     "id": "021119",
+     "legalBasis": {
+      "id": "2023/54",
+      "scheme": "UKPGA",
+      "uri": "https://www.legislation.gov.uk/ukpga/2023/54/contents"
+     },
+     "title": "Provision of Exercise to Music Classes",
+     "description": "Provision of Exercise to Music Classes within the Borough of St Helens.",
+     "status": "active",
+     "items": [
+      {
+       "id": "1",
+       "additionalClassifications": [
+        {
+         "scheme": "CPV",
+         "id": "92610000",
+         "description": "Sports facilities operation services"
+        }
+       ],
+       "deliveryAddresses": [
+        {
+         "region": "UKD",
+         "country": "GB",
+         "countryName": "United Kingdom"
+        }
+       ],
+       "relatedLot": "1"
+      }
+     ],
+     "value": {
+      "amountGross": 1200000,
+      "currency": "GBP"
+     },
+     "procurementMethod": "open",
+     "procurementMethodDetails": "Open procedure",
+     "mainProcurementCategory": "services",
+     "aboveThreshold": true,
+     "submissionMethodDetails": "Please submit your bid via The Chest and submit any clarifications via the messaging facility.https://www.the-chest.org.uk/",
+     "submissionTerms": {
+      "electronicSubmissionPolicy": "allowed",
+      "languages": [
+       "en"
+      ]
+     },
+     "tenderPeriod": {
+      "endDate": "2026-11-30T17:00:00Z"
+     },
+     "enquiryPeriod": {
+      "endDate": "2026-11-14T12:00:00Z"
+     },
+     "awardPeriod": {
+      "endDate": "2027-02-22T23:59:59Z"
+     },
+     "lots": [
+      {
+       "id": "1",
+       "status": "active",
+       "value": {
+        "amountGross": 1200000,
+        "currency": "GBP"
+       },
+       "awardCriteria": {
+        "criteria": [
+         {
+          "type": "quality",
+          "name": "Quality Questions 1 to 6",
+          "numbers": [
+           {
+            "number": 70,
+            "weight": "percentageExact"
+           }
+          ]
+         },
+         {
+          "type": "quality",
+          "name": "Social Value",
+          "numbers": [
+           {
+            "number": 10,
+            "weight": "percentageExact"
+           }
+          ]
+         },
+         {
+          "type": "price",
+          "name": "Commercial Response",
+          "numbers": [
+           {
+            "number": 20,
+            "weight": "percentageExact"
+           }
+          ]
+         }
+        ]
+       },
+       "suitability": {
+        "sme": true
+       },
+       "contractPeriod": {
+        "startDate": "2027-03-01T00:00:00Z",
+        "endDate": "2032-02-29T23:59:59Z"
+       }
+      }
+     ],
+     "documents": [
+      {
+       "id": "conflictOfInterest",
+       "documentType": "conflictOfInterest",
+       "description": "Not published"
+      },
+      {
+       "id": "L-1",
+       "documentType": "biddingDocuments",
+       "description": "Please submit your response via The Chest Portal and submit any questions via the messaging facility",
+       "url": "https://www.the-chest.org.uk/"
+      },
+      {
+       "id": "104421-2026",
+       "documentType": "tenderNotice",
+       "noticeType": "UK4",
+       "description": "Tender notice on Find a Tender",
+       "url": "https://www.find-tender.service.gov.uk/Notice/104421-2026",
+       "datePublished": "2026-11-03T16:46:56Z",
+       "format": "text/html"
+      }
+     ],
+     "hasRecurrence": true,
+     "recurrence": {
+      "dates": [
+       {
+        "startDate": "2031-08-01T23:59:59+01:00"
+       }
+      ]
+     }
+    },
+    "language": "en"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-h6vhtk-06bd55",
+    "ocid_native": true,
+    "stage": "tender",
+    "title": "Provision of Exercise to Music Classes",
+    "description": "Provision of Exercise to Music Classes within the Borough of St Helens.",
+    "buyer": {
+     "name": "St Helens Council",
+     "id": "PPYM-6238-VHLR",
+     "scheme": "GB-PPON",
+     "country": "GB"
+    },
+    "country": "GB",
+    "status": "active",
+    "procurement_method": "Open procedure",
+    "main_category": "services",
+    "value": null,
+    "published_at": "2026-11-03T16:46:56+00:00",
+    "updated_at": "2026-11-03T16:46:56+00:00",
+    "tender_start": null,
+    "tender_end": "2026-11-30T17:00:00+00:00",
+    "classifications": [],
+    "items": [
+     {
+      "id": "1"
+     }
+    ],
+    "language": "en",
+    "url": "https://www.find-tender.service.gov.uk/Notice/104421-2026"
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "104420-2026",
+   "content_hash": "c62ff4a0c7d3c7b06c5fdf1ba24cd2e762bcaa3cef34c8a7c2c20327c2de3505",
+   "fetched_at": "2026-11-03T17:26:57+00:00",
+   "source_url": "https://www.find-tender.service.gov.uk/Notice/104420-2026",
+   "publisher": "Cabinet Office",
+   "published_at": "2026-11-03T16:41:57+00:00",
+   "source_updated_at": "2026-11-03T16:41:57+00:00",
+   "language": "en",
+   "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "ocid": "ocds-h6vhtk-07970e",
+    "id": "104420-2026",
+    "tag": [
+     "planning"
+    ],
+    "date": "2026-11-03T16:41:57Z",
+    "initiationType": "tender",
+    "parties": [
+     {
+      "name": "London Borough of Hounslow",
+      "id": "GB-PPON-PQYY-1684-DYLV",
+      "identifier": {
+       "scheme": "GB-PPON",
+       "id": "PQYY-1684-DYLV"
+      },
+      "address": {
+       "streetAddress": "Hounslow House, 7 Bath Road",
+       "locality": "Hounslow, London",
+       "postalCode": "TW3 3EB",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKI75"
+      },
+      "contactPoint": {
+       "email": "procurement@hounslow.gov.uk"
+      },
+      "roles": [
+       "buyer"
+      ],
+      "details": {
+       "classifications": [
+        {
+         "scheme": "UK_CA_TYPE",
+         "id": "publicAuthoritySubCentralGovernment",
+         "description": "Public authority - sub-central government"
+        }
+       ]
+      }
+     }
+    ],
+    "buyer": {
+     "id": "GB-PPON-PQYY-1684-DYLV",
+     "name": "London Borough of Hounslow"
+    },
+    "planning": {
+     "milestones": [
+      {
+       "id": "engagement",
+       "type": "engagement",
+       "description": "How The Engagement Will Work\nThe Council will conduct a two-stage preliminary market engagement.\nStage 1 will allow interested parties and the Council to explore the SEP opportunity and share information to refine the partnership structure, approach and proposed pipeline. It will comprise:\n•\ta webinar presented by the Council on Wednesday 25 November 2026 at 12:00, held online via Microsoft Teams; and\n•\tone-to-one interviews with the Council and its advisors over a two-week period from Monday 7 December 2026 to 18 December 2026\nStage 2 is expected to take place in spring 2027 and will provide more detailed information on the proposed pipeline, the Council’s commercial development work and procurement approach.\nHow To Take Part\nIf your organisation is interested in becoming the Council’s Strategic Energy Partner and wishes to take part, please register your interest via the Council’s eTendering portal https://procontract.due-north.com/Advert?advertId=f38838eb-84d7-f111-8142-6045bdf14b1f by 23:59 on Monday 23 November 2026 where a link is provided to the webinar.\nMarket Engagement interviews\nInterview slots are limited and will be prioritised to organisations intending to bid as the primary contractor or a lead specialist contractor.\nA primary contractor would be contracting directly with the Council as the Partner, solely, leading a consortium or partnership. A lead specialist contractor for a key area of decarbonisation delivery or investment who would be part of a consortium or partnership. Participants must confirm their intention on the portal with their interview request.\nInterviews are subject to a Non-Disclosure Agreement (NDA), available on the portal. Invitations will be issued once the signed NDA has been uploaded on the portal. Members of a potential consortium or partnership are asked to attend a single interview together.\nThe Council welcomes feedback from across the market, including supply chain organisations, SMEs and VCSEs.\nQuestions may be submitted via the portal, before and after the engagement, up to the deadline in the timetable below. Interviewees will be subject to the confidentiality provisions of the NDA. The Council and its advisors will respond via the portal. The webinar presentation, together with an anonymised record of questions, responses and any other relevant information shared during the engagement, excluding information identified as commercially sensitive, will be made available on the portal to all registered parties.\nRelated Opportunity\nThe Council is also procuring a Heat Network Development Partner to fund and deliver a district heating network across the borough (the “Hounslow Heat Network”). A separate preliminary market engagement notice has been published for that opportunity (Portal Ref: DN834949). The Hounslow Heat Network is not being procured as part of the SEP.\nOrganisations may take part in either or both engagements.\nFair And Transparent Engagement\n•\tTaking part in this engagement is not a condition of taking part in any future procurement and will not give any organisation an advantage.\n•\tA summary of the questions, answers and key information shared at each stage will be published to all registered parties via the portal and included in any future procurement documents. Questions will be anonymised and commercially sensitive information will not be disclosed.\n•\tThe Council is supported by Womble Bond Dickinson (UK) LLP and Amberside Advisors. When registering, please declare any relationship with the Council, its officers or its advisors that could give rise to a conflict of interest.\nIndicative Timetable\nThe indicative timetable for the SEP engagement and procurement is as follows (subject to change):\nStage 1 engagement\nPreliminary market engagement notice published: Tuesday 3 Nov 2026\nRegistration deadline; webinar invitation and information pack issued:\tMonday 23 Nov 2026, 23:59\nWebinar: Wednesday 25 Nov 2026, 12:00\nOne-to-one interviews: Monday 7 – Friday 18 Dec 2026\nDeadline for submission of questions: Friday 18 Dec 2026, 1pm\nPublication of Stage 1 engagement feedback: Thursday 14 Jan 2027\nStage 2 engagement\nStage 2 engagement event (details to follow): Q2 2027\nProcurement\nTender notice published with full tender documentation: Q3 2027\nThe Council currently expects to use the competitive flexible procedure under the Procurement Act 2023, including stages of dialogue. The procedure will be confirmed in the tender notice and associated tender documents.\nAll communications will be via the Council’s eTendering portal https://procontract.due-north.com/Advert?advertId=f38838eb-84d7-f111-8142-6045bdf14b1f.\n_______________________________________________________________\nIMPORTANT INFORMATION\nThis notice is not a call for competition or an invitation to tender and does not bind the Council to carry out a procurement process.\nInformation provided through this engagement is subject to change and does not represent final decisions or commitments.\nThe Council and its advisers are not liable for any costs that interested parties may incur in taking part in this preliminary market engagement.\nInformation submitted may be subject to disclosure under the Freedom of Information Act 2000 and the Environmental Information Regulations 2004. Please identify any information you consider commercially sensitive. Personal data will be handled in accordance with the Council’s privacy notice\n(https://www.hounslow.gov.uk/privacy-notice).\nThis engagement is carried out in compliance with sections 16 and 17 of the Procurement Act 2023.",
+       "dueDate": "2026-12-18T23:59:59Z",
+       "status": "scheduled"
+      }
+     ],
+     "documents": [
+      {
+       "id": "104420-2026",
+       "documentType": "marketEngagementNotice",
+       "noticeType": "UK2",
+       "description": "Preliminary market engagement notice on Find a Tender",
+       "url": "https://www.find-tender.service.gov.uk/Notice/104420-2026",
+       "datePublished": "2026-11-03T16:41:57Z",
+       "format": "text/html"
+      }
+     ]
+    },
+    "tender": {
+     "id": "ocds-h6vhtk-07970e",
+     "legalBasis": {
+      "id": "2023/54",
+      "scheme": "UKPGA",
+      "uri": "https://www.legislation.gov.uk/ukpga/2023/54/contents"
+     },
+     "title": "Hounslow Strategic Energy Partnership",
+     "description": "The Opportunity\nFollowing Cabinet approval in December 2025, the London Borough of Hounslow (“the Council”) intends to commence a procurement mid-late 2027 to select a Strategic Energy Partner (“the Partner”) for a Strategic Energy Partnership (“SEP”). The Partner will help unlock investment and deliver a diverse portfolio of energy projects and programmes to drive the borough’s energy transformation, accelerate decarbonisation and support the Council’s net zero ambitions for both its own operations and estate and the wider borough.\nAn estimated £500m+ pipeline of energy infrastructure has been identified to support the borough’s regeneration, growth and decarbonisation agenda. This includes building retrofit, renewable energy generation, vehicle fleet decarbonisation and EV charging infrastructure.\nThe Council aims to structure a commercially viable partnership that can fund, develop and deliver this pipeline in support of the borough’s economic, social and environmental objectives. A key role of the Partner will be to identify and develop further pipeline opportunities and innovative energy solutions.\nThe partnership is intended as a long-term collaboration with the Council, the partnership and the respective roles of the Council and the Partner will be shaped by the feedback received through this engagement.\nWho Should Take Part\nThe Council would like to hear from organisations with experience in large-scale or place-based energy, infrastructure or related sectors, including those able to bring capital and delivery capability to the partnership. Consortia are welcome, as are smaller organisations interested in future supply chain opportunities.",
+     "items": [
+      {
+       "id": "1",
+       "additionalClassifications": [
+        {
+         "scheme": "CPV",
+         "id": "09310000",
+         "description": "Electricity"
+        },
+        {
+         "scheme": "CPV",
+         "id": "09320000",
+         "description": "Steam, hot water and associated products"
+        },
+        {
+         "scheme": "CPV",
+         "id": "09330000",
+         "description": "Solar energy"
+        },
+        {
+         "scheme": "CPV",
+         "id": "24111600",
+         "description": "Hydrogen"
+        },
+        {
+         "scheme": "CPV",
+         "id": "31121300",
+         "description": "Wind-energy generators"
+        },
+        {
+         "scheme": "CPV",
+         "id": "39715200",
+         "description": "Heating equipment"
+        },
+        {
+         "scheme": "CPV",
+         "id": "42511110",
+         "description": "Heat pumps"
+        },
+        {
+         "scheme": "CPV",
+         "id": "45261215",
+         "description": "Solar panel roof-covering work"
+        },
+        {
+         "scheme": "CPV",
+         "id": "45321000",
+         "description": "Thermal insulation work"
+        },
+        {
+         "scheme": "CPV",
+         "id": "45331000",
+         "description": "Heating, ventilation and air-conditioning installation work"
+        },
+        {
+         "scheme": "CPV",
+         "id": "51110000",
+         "description": "Installation services of electrical equipment"
+        },
+        {
+         "scheme": "CPV",
+         "id": "65310000",
+         "description": "Electricity distribution"
+        },
+        {
+         "scheme": "CPV",
+         "id": "65320000",
+         "description": "Operation of electrical installations"
+        },
+        {
+         "scheme": "CPV",
+         "id": "65400000",
+         "description": "Other sources of energy supplies and distribution"
+        },
+        {
+         "scheme": "CPV",
+         "id": "66114000",
+         "description": "Financial leasing services"
+        },
+        {
+         "scheme": "CPV",
+         "id": "66122000",
+         "description": "Corporate finance and venture capital services"
+        },
+        {
+         "scheme": "CPV",
+         "id": "71314000",
+         "description": "Energy and related services"
+        },
+        {
+         "scheme": "CPV",
+         "id": "71334000",
+         "description": "Mechanical and electrical engineering services"
+        },
+        {
+         "scheme": "CPV",
+         "id": "90713000",
+         "description": "Environmental issues consultancy services"
+        }
+       ],
+       "deliveryAddresses": [
+        {
+         "region": "UKI75",
+         "country": "GB",
+         "countryName": "United Kingdom"
+        }
+       ],
+       "relatedLot": "1"
+      }
+     ],
+     "value": {
+      "amountGross": 500000000,
+      "currency": "GBP"
+     },
+     "mainProcurementCategory": "services",
+     "aboveThreshold": true,
+     "lots": [
+      {
+       "id": "1",
+       "suitability": {
+        "sme": true,
+        "vcse": true
+       },
+       "contractPeriod": {
+        "startDate": "2028-10-24T00:00:00Z",
+        "endDate": "2043-10-24T23:59:59Z",
+        "maxExtentDate": "2048-10-24T23:59:59Z"
+       },
+       "hasRenewal": true,
+       "status": "planning"
+      }
+     ],
+     "communication": {
+      "futureNoticeDate": "2027-10-07T23:59:59Z"
+     },
+     "status": "planning"
+    },
+    "language": "en"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-h6vhtk-07970e",
+    "ocid_native": true,
+    "stage": "tender",
+    "title": "Hounslow Strategic Energy Partnership",
+    "description": "The Opportunity\nFollowing Cabinet approval in December 2025, the London Borough of Hounslow (“the Council”) intends to commence a procurement mid-late 2027 to select a Strategic Energy Partner (“the Partner”) for a Strategic Energy Partnership (“SEP”). The Partner will help unlock investment and deliver a diverse portfolio of energy projects and programmes to drive the borough’s energy transformation, accelerate decarbonisation and support the Council’s net zero ambitions for both its own operations and estate and the wider borough.\nAn estimated £500m+ pipeline of energy infrastructure has been identified to support the borough’s regeneration, growth and decarbonisation agenda. This includes building retrofit, renewable energy generation, vehicle fleet decarbonisation and EV charging infrastructure.\nThe Council aims to structure a commercially viable partnership that can fund, develop and deliver this pipeline in support of the borough’s economic, social and environmental objectives. A key role of the Partner will be to identify and develop further pipeline opportunities and innovative energy solutions.\nThe partnership is intended as a long-term collaboration with the Council, the partnership and the respective roles of the Council and the Partner will be shaped by the feedback received through this engagement.\nWho Should Take Part\nThe Council would like to hear from organisations with experience in large-scale or place-based energy, infrastructure or related sectors, including those able to bring capital and delivery capability to the partnership. Consortia are welcome, as are smaller organisations interested in future supply chain opportunities.",
+    "buyer": {
+     "name": "London Borough of Hounslow",
+     "id": "PQYY-1684-DYLV",
+     "scheme": "GB-PPON",
+     "country": "GB"
+    },
+    "country": "GB",
+    "status": "planning",
+    "procurement_method": null,
+    "main_category": "services",
+    "value": null,
+    "published_at": "2026-11-03T16:41:57+00:00",
+    "updated_at": "2026-11-03T16:41:57+00:00",
+    "tender_start": null,
+    "tender_end": null,
+    "classifications": [],
+    "items": [
+     {
+      "id": "1"
+     }
+    ],
+    "language": "en",
+    "url": "https://www.find-tender.service.gov.uk/Notice/104420-2026"
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "104418-2026",
+   "content_hash": "053cea02ee51ce658f932b5e84aa1dbae4669a2a8364f8bb2b2fd588cf4b0b33",
+   "fetched_at": "2026-11-03T17:26:57+00:00",
+   "source_url": "https://www.find-tender.service.gov.uk/Notice/104418-2026",
+   "publisher": "Cabinet Office",
+   "published_at": "2026-11-03T16:37:56+00:00",
+   "source_updated_at": "2026-11-03T16:37:56+00:00",
+   "language": "en",
+   "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "ocid": "ocds-h6vhtk-07970d",
+    "buyerID": [],
+    "id": "104418-2026",
+    "tag": [
+     "award",
+     "contract"
+    ],
+    "date": "2026-11-03T16:37:56Z",
+    "initiationType": "tender",
+    "parties": [
+     {
+      "name": "Kent County Council",
+      "id": "GB-PPON-PLDL-8938-YGYW",
+      "identifier": {
+       "scheme": "GB-PPON",
+       "id": "PLDL-8938-YGYW"
+      },
+      "address": {
+       "streetAddress": "County Hall",
+       "locality": "Maidstone",
+       "postalCode": "ME14 1XQ",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKJ45"
+      },
+      "contactPoint": {
+       "email": "sourcingsupportteam@kent.gov.uk"
+      },
+      "roles": [
+       "buyer"
+      ],
+      "details": {
+       "url": "https://www.kent.gov.uk/",
+       "classifications": [
+        {
+         "scheme": "UK_CA_TYPE",
+         "id": "publicAuthoritySubCentralGovernment",
+         "description": "Public authority - sub-central government"
+        }
+       ]
+      }
+     },
+     {
+      "name": "CSS SOUTH LIMITED",
+      "id": "GB-COH-12255925",
+      "identifier": {
+       "scheme": "GB-COH",
+       "id": "12255925"
+      },
+      "additionalIdentifiers": [
+       {
+        "scheme": "GB-PPON",
+        "id": "PNHL-8947-QZXN"
+       }
+      ],
+      "address": {
+       "streetAddress": "Unit 3 Consort Way",
+       "locality": "Burgess Hill",
+       "postalCode": "RH15 9TJ",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKJ28"
+      },
+      "contactPoint": {
+       "email": "amy@cssouth.co.uk"
+      },
+      "roles": [
+       "supplier"
+      ],
+      "details": {
+       "scale": "sme",
+       "vcse": false
+      }
+     }
+    ],
+    "buyer": {
+     "id": "GB-PPON-PLDL-8938-YGYW",
+     "name": "Kent County Council"
+    },
+    "tender": {
+     "id": "ocds-h6vhtk-07970d",
+     "legalBasis": {
+      "id": "2023/54",
+      "scheme": "UKPGA",
+      "uri": "https://www.legislation.gov.uk/ukpga/2023/54/contents"
+     },
+     "title": "Canterbury Adult Support Unit",
+     "description": "Landscaping works/DDA ramp/fencing/ground  drainage and resurfacing.",
+     "status": "complete",
+     "procurementMethodDetails": "Below threshold - unknown",
+     "lots": [
+      {
+       "id": "1",
+       "status": "complete",
+       "description": null
+      }
+     ]
+    },
+    "awards": [
+     {
+      "id": "1",
+      "status": "active",
+      "mainProcurementCategory": "goods",
+      "suppliers": [
+       {
+        "id": "GB-COH-12255925",
+        "name": "CSS SOUTH LIMITED"
+       }
+      ],
+      "items": [
+       {
+        "id": "1",
+        "additionalClassifications": [
+         {
+          "scheme": "CPV",
+          "id": "44420000",
+          "description": "Goods used in construction"
+         }
+        ],
+        "relatedLot": "1"
+       }
+      ],
+      "relatedLots": [
+       "1"
+      ]
+     }
+    ],
+    "contracts": [
+     {
+      "id": "1",
+      "awardID": "1",
+      "status": "active",
+      "period": {
+       "startDate": "2026-06-17T00:00:00+01:00",
+       "endDate": "2026-07-01T23:59:59+01:00"
+      },
+      "value": {
+       "amountGross": 35753.04,
+       "amount": 29794.2,
+       "currency": "GBP"
+      },
+      "aboveThreshold": false,
+      "dateSigned": "2026-06-09T00:00:00+01:00",
+      "statusDetails": null,
+      "documents": [
+       {
+        "id": "104418-2026",
+        "documentType": "contractNotice",
+        "noticeType": "UK7",
+        "description": "Contract details notice on Find a Tender",
+        "url": "https://www.find-tender.service.gov.uk/Notice/104418-2026",
+        "datePublished": "2026-11-03T16:37:56Z",
+        "format": "text/html"
+       }
+      ]
+     }
+    ],
+    "language": "en"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-h6vhtk-07970d",
+    "ocid_native": true,
+    "stage": "contract",
+    "title": "Canterbury Adult Support Unit",
+    "description": "Landscaping works/DDA ramp/fencing/ground  drainage and resurfacing.",
+    "buyer": {
+     "name": "Kent County Council",
+     "id": "PLDL-8938-YGYW",
+     "scheme": "GB-PPON",
+     "country": "GB"
+    },
+    "country": "GB",
+    "status": "complete",
+    "procurement_method": "Below threshold - unknown",
+    "main_category": null,
+    "value": null,
+    "published_at": "2026-11-03T16:37:56+00:00",
+    "updated_at": "2026-11-03T16:37:56+00:00",
+    "tender_start": null,
+    "tender_end": null,
+    "classifications": [],
+    "items": [],
+    "language": "en",
+    "url": "https://www.find-tender.service.gov.uk/Notice/104418-2026"
+   },
+   "awards": [
+    {
+     "award_id": "1",
+     "title": null,
+     "status": "active",
+     "date": null,
+     "value": null,
+     "suppliers": [
+      {
+       "name": "CSS SOUTH LIMITED",
+       "id": "12255925",
+       "scheme": "GB-COH"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "1",
+     "award_id": "1",
+     "title": null,
+     "status": "active",
+     "date_signed": "2026-06-09T00:00:00+01:00",
+     "period_start": "2026-06-17T00:00:00+01:00",
+     "period_end": "2026-07-01T23:59:59+01:00",
+     "value": {
+      "amount": "29794.20",
+      "currency": "GBP"
+     }
+    }
+   ]
+  },
+  {
+   "external_id": "104417-2026",
+   "content_hash": "76da44c046d419e607365e4edd0716dcabcdd92be78183284b30f6e10577119b",
+   "fetched_at": "2026-11-03T17:26:57+00:00",
+   "source_url": "https://www.find-tender.service.gov.uk/Notice/104417-2026",
+   "publisher": "Cabinet Office",
+   "published_at": "2026-11-03T16:37:39+00:00",
+   "source_updated_at": "2026-11-03T16:37:39+00:00",
+   "language": "en",
+   "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "buyerID": [],
+    "id": "104417-2026",
+    "tag": [
+     "award",
+     "contract"
+    ],
+    "date": "2026-11-03T16:37:39Z",
+    "initiationType": "tender",
+    "ocid": "ocds-h6vhtk-060378",
+    "parties": [
+     {
+      "name": "TRANSPORT UK EAST MIDLANDS LIMITED",
+      "id": "GB-COH-09860485",
+      "identifier": {
+       "scheme": "GB-COH",
+       "id": "09860485"
+      },
+      "additionalIdentifiers": [
+       {
+        "scheme": "GB-PPON",
+        "id": "PYJP-8287-BJGL"
+       }
+      ],
+      "address": {
+       "streetAddress": "2nd Floor St Andrew's House",
+       "locality": "London",
+       "postalCode": "EC4A 3AG",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKI31"
+      },
+      "contactPoint": {
+       "email": "Procurement@eastmidlandsrailway.co.uk"
+      },
+      "roles": [
+       "buyer"
+      ],
+      "details": {
+       "classifications": [
+        {
+         "scheme": "UK_CA_TYPE",
+         "id": "privateUtility",
+         "description": "Private utility"
+        }
+       ]
+      }
+     },
+     {
+      "name": "GB RAILFREIGHT LIMITED",
+      "id": "GB-COH-03707899",
+      "identifier": {
+       "scheme": "GB-COH",
+       "id": "03707899"
+      },
+      "additionalIdentifiers": [
+       {
+        "scheme": "GB-PPON",
+        "id": "PGZM-3128-DZHR"
+       }
+      ],
+      "address": {
+       "streetAddress": "5th Floor 62 - 64 Cornhill",
+       "locality": "London",
+       "postalCode": "EC3V 3NH",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKI31"
+      },
+      "contactPoint": {
+       "email": "daniel.crossley@gbrailfreight.com"
+      },
+      "roles": [
+       "supplier"
+      ],
+      "details": {
+       "url": "https://www.gbrailfreight.com/",
+       "scale": "large",
+       "vcse": false,
+       "publicServiceMissionOrganization": false,
+       "shelteredWorkshop": false
+      }
+     }
+    ],
+    "buyer": {
+     "id": "GB-COH-09860485",
+     "name": "TRANSPORT UK EAST MIDLANDS LIMITED"
+    },
+    "tender": {
+     "id": "EMR/SH/01",
+     "legalBasis": {
+      "id": "2023/54",
+      "scheme": "UKPGA",
+      "uri": "https://www.legislation.gov.uk/ukpga/2023/54/contents"
+     },
+     "title": "Provision of Class 360 Maintenance/Refurbishment Moves",
+     "description": "East Midlands Railway (EMR) operates a fleet of twenty-one (21) Class 360 Electric Multiple Units (EMUs) on services between Corby and London St Pancras. The fleet is maintained at Bedford Cauldwell Depot, with heavy maintenance activities and fleet refurbishment works undertaken at Siemens' Kings Heath Depot, Northampton.\nThe contract provides for the movement of Class 360 train units between Kettering Depot Sidings and Northampton Kings Heath Depot to support planned maintenance, overhaul and refurbishment activities. The contract also includes an option for train movements between Northampton Kings Heath Depot and Cricklewood A-E Sidings when required.\nThe Class 360 fleet comprises four-car electric multiple units of the Siemens Desiro Classic platform, fitted with Dellner 12 couplers and compatible braking control systems to facilitate movement operations.\nThe appointed supplier is responsible for the safe, reliable and efficient transportation of train units, including planning, coordination and delivery of movement services in accordance with all applicable railway safety requirements and operational standards.\nKey objectives of the contract are:\nSafe and damage-free movement of rolling stock.\nReliable and timely delivery of units to meet maintenance and operational schedules.\nEfficient and cost-effective service provision.\nFlexibility to accommodate changing operational requirements.\nMinimisation of environmental impacts through efficient operational practices and resource utilisation.",
+     "status": "complete",
+     "procurementMethod": "open",
+     "procurementMethodDetails": "Competitive flexible procedure",
+     "specialRegime": [
+      "utilities"
+     ],
+     "lots": [
+      {
+       "id": "1",
+       "status": "complete",
+       "description": null
+      }
+     ]
+    },
+    "awards": [
+     {
+      "id": "1",
+      "status": "pending",
+      "date": "2026-10-29T00:00:00Z",
+      "value": {
+       "amountGross": 1104480,
+       "amount": 920400,
+       "currency": "GBP"
+      },
+      "mainProcurementCategory": "services",
+      "aboveThreshold": true,
+      "suppliers": [
+       {
+        "id": "GB-COH-03707899",
+        "name": "GB RAILFREIGHT LIMITED"
+       }
+      ],
+      "items": [
+       {
+        "id": "1",
+        "additionalClassifications": [
+         {
+          "scheme": "CPV",
+          "id": "50200000",
+          "description": "Repair, maintenance and associated services related to aircraft, railways, roads and marine equipment"
+         }
+        ],
+        "deliveryAddresses": [
+         {
+          "region": "UKC",
+          "country": "GB",
+          "countryName": "United Kingdom"
+         },
+         {
+          "region": "UKD",
+          "country": "GB",
+          "countryName": "United Kingdom"
+         },
+         {
+          "region": "UKE",
+          "country": "GB",
+          "countryName": "United Kingdom"
+         },
+         {
+          "region": "UKF",
+          "country": "GB",
+          "countryName": "United Kingdom"
+         },
+         {
+          "region": "UKG",
+          "country": "GB",
+          "countryName": "United Kingdom"
+         },
+         {
+          "region": "UKH",
+          "country": "GB",
+          "countryName": "United Kingdom"
+         },
+         {
+          "region": "UKI",
+          "country": "GB",
+          "countryName": "United Kingdom"
+         },
+         {
+          "region": "UKJ",
+          "country": "GB",
+          "countryName": "United Kingdom"
+         },
+         {
+          "region": "UKK",
+          "country": "GB",
+          "countryName": "United Kingdom"
+         }
+        ],
+        "relatedLot": "1"
+       }
+      ],
+      "standstillPeriod": {
+       "endDate": "2026-11-12T23:59:59+00:00"
+      },
+      "contractPeriod": {
+       "startDate": "2026-12-01T00:00:00Z",
+       "endDate": "2028-11-30T23:59:59Z",
+       "maxExtentDate": "2029-11-30T23:59:59Z"
+      },
+      "hasRenewal": true,
+      "renewal": {
+       "description": "Option to extend: one extension period of up to 12 months following the initial 24-month term, exercisable at the Client's discretion subject to satisfactory performance and ongoing business requirements."
+      },
+      "relatedLots": [
+       "1"
+      ],
+      "documents": [
+       {
+        "id": "104417-2026",
+        "documentType": "awardNotice",
+        "noticeType": "UK6",
+        "description": "Contract award notice on Find a Tender",
+        "url": "https://www.find-tender.service.gov.uk/Notice/104417-2026",
+        "datePublished": "2026-11-03T16:37:39Z",
+        "format": "text/html"
+       }
+      ],
+      "assessmentSummariesDateSent": "2026-11-03T00:00:00Z",
+      "milestones": [
+       {
+        "id": "1",
+        "type": "futureSignatureDate",
+        "dueDate": "2026-11-30T23:59:59Z",
+        "status": "scheduled"
+       }
+      ]
+     }
+    ],
+    "language": "en"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-h6vhtk-060378",
+    "ocid_native": true,
+    "stage": "contract",
+    "title": "Provision of Class 360 Maintenance/Refurbishment Moves",
+    "description": "East Midlands Railway (EMR) operates a fleet of twenty-one (21) Class 360 Electric Multiple Units (EMUs) on services between Corby and London St Pancras. The fleet is maintained at Bedford Cauldwell Depot, with heavy maintenance activities and fleet refurbishment works undertaken at Siemens' Kings Heath Depot, Northampton.\nThe contract provides for the movement of Class 360 train units between Kettering Depot Sidings and Northampton Kings Heath Depot to support planned maintenance, overhaul and refurbishment activities. The contract also includes an option for train movements between Northampton Kings Heath Depot and Cricklewood A-E Sidings when required.\nThe Class 360 fleet comprises four-car electric multiple units of the Siemens Desiro Classic platform, fitted with Dellner 12 couplers and compatible braking control systems to facilitate movement operations.\nThe appointed supplier is responsible for the safe, reliable and efficient transportation of train units, including planning, coordination and delivery of movement services in accordance with all applicable railway safety requirements and operational standards.\nKey objectives of the contract are:\nSafe and damage-free movement of rolling stock.\nReliable and timely delivery of units to meet maintenance and operational schedules.\nEfficient and cost-effective service provision.\nFlexibility to accommodate changing operational requirements.\nMinimisation of environmental impacts through efficient operational practices and resource utilisation.",
+    "buyer": {
+     "name": "TRANSPORT UK EAST MIDLANDS LIMITED",
+     "id": "09860485",
+     "scheme": "GB-COH",
+     "country": "GB"
+    },
+    "country": "GB",
+    "status": "complete",
+    "procurement_method": "Competitive flexible procedure",
+    "main_category": null,
+    "value": null,
+    "published_at": "2026-11-03T16:37:39+00:00",
+    "updated_at": "2026-11-03T16:37:39+00:00",
+    "tender_start": null,
+    "tender_end": null,
+    "classifications": [],
+    "items": [],
+    "language": "en",
+    "url": "https://www.find-tender.service.gov.uk/Notice/104417-2026"
+   },
+   "awards": [
+    {
+     "award_id": "1",
+     "title": null,
+     "status": "pending",
+     "date": "2026-10-29T00:00:00+00:00",
+     "value": {
+      "amount": "920400.00",
+      "currency": "GBP"
+     },
+     "suppliers": [
+      {
+       "name": "GB RAILFREIGHT LIMITED",
+       "id": "03707899",
+       "scheme": "GB-COH"
+      }
+     ]
+    }
+   ],
+   "contracts": []
+  },
+  {
+   "external_id": "104416-2026",
+   "content_hash": "9f0f341f1e76bb4c211230fdddd2a34201fe25f9cc7d3b80fdab8c5791dcfd7e",
+   "fetched_at": "2026-11-03T17:26:57+00:00",
+   "source_url": "https://www.find-tender.service.gov.uk/Notice/104416-2026",
+   "publisher": "Cabinet Office",
+   "published_at": "2026-11-03T16:37:28+00:00",
+   "source_updated_at": "2026-11-03T16:37:28+00:00",
+   "language": "en",
+   "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "buyerID": [],
+    "id": "104416-2026",
+    "tag": [
+     "tenderUpdate"
+    ],
+    "date": "2026-11-03T16:37:28Z",
+    "initiationType": "tender",
+    "ocid": "ocds-h6vhtk-078a87",
+    "parties": [
+     {
+      "name": "Chelmsford City Council",
+      "id": "GB-PPON-PYRZ-1467-WNJW",
+      "identifier": {
+       "scheme": "GB-PPON",
+       "id": "PYRZ-1467-WNJW"
+      },
+      "address": {
+       "streetAddress": "Civic Centre, Duke Street",
+       "locality": "Chelmsford",
+       "postalCode": "CM11JE",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKH36"
+      },
+      "contactPoint": {
+       "email": "procurement@chelmsford.gov.uk",
+       "telephone": "01245606777"
+      },
+      "roles": [
+       "buyer"
+      ],
+      "details": {
+       "classifications": [
+        {
+         "scheme": "UK_CA_TYPE",
+         "id": "publicAuthoritySubCentralGovernment",
+         "description": "Public authority - sub-central government"
+        }
+       ]
+      }
+     }
+    ],
+    "buyer": {
+     "id": "GB-PPON-PYRZ-1467-WNJW",
+     "name": "Chelmsford City Council"
+    },
+    "tender": {
+     "id": "CCC/2026/SITEFINDER",
+     "legalBasis": {
+      "id": "2023/54",
+      "scheme": "UKPGA",
+      "uri": "https://www.legislation.gov.uk/ukpga/2023/54/contents"
+     },
+     "title": "Housing Site Identification, Landowner Engagement and Consultancy Services.",
+     "description": "Chelmsford City Council is seeking tenders from suitably qualified and experienced consultants to identify privately owned sites within the Chelmsford City administrative area suitable for residential development and capable of being secured for future housing delivery.\nFor more information about this opportunity, please visit the eSourcing portal at: \nhttps://www.delta-esourcing.com/tenders/UK-UK-Chelmsford:-Real-estate-agency-services-on-a-fee-or-contract-basis./JE7Q63AB7D\nTo respond to this opportunity, please click here: \nhttps://www.delta-esourcing.com/respond/JE7Q63AB7D",
+     "status": "active",
+     "items": [
+      {
+       "id": "1",
+       "additionalClassifications": [
+        {
+         "scheme": "CPV",
+         "id": "70300000",
+         "description": "Real estate agency services on a fee or contract basis"
+        }
+       ],
+       "deliveryAddresses": [
+        {
+         "region": "UKH36",
+         "country": "GB",
+         "countryName": "United Kingdom"
+        }
+       ],
+       "relatedLot": "1"
+      }
+     ],
+     "value": {
+      "amountGross": 240000.0,
+      "amount": 200000.0,
+      "currency": "GBP"
+     },
+     "procurementMethod": "open",
+     "procurementMethodDetails": "Open procedure",
+     "mainProcurementCategory": "services",
+     "aboveThreshold": true,
+     "submissionMethodDetails": "https://www.delta-esourcing.com/delta/buyers/select/viewListStatus.html?id=1076084729",
+     "submissionTerms": {
+      "electronicSubmissionPolicy": "allowed",
+      "languages": [
+       "en"
+      ]
+     },
+     "tenderPeriod": {
+      "endDate": "2026-11-16T12:00:00+00:00"
+     },
+     "enquiryPeriod": {
+      "endDate": "2026-11-09T15:00:00+00:00"
+     },
+     "awardPeriod": {
+      "endDate": "2026-11-30T23:59:59+00:00"
+     },
+     "lots": [
+      {
+       "id": "1",
+       "status": "active",
+       "value": {
+        "amountGross": 240000.0,
+        "amount": 200000.0,
+        "currency": "GBP"
+       },
+       "awardCriteria": {
+        "criteria": [
+         {
+          "type": "quality",
+          "name": "Quality",
+          "numbers": [
+           {
+            "number": 90,
+            "weight": "percentageExact"
+           }
+          ]
+         },
+         {
+          "type": "price",
+          "name": "Commercial",
+          "numbers": [
+           {
+            "number": 10,
+            "weight": "percentageExact"
+           }
+          ]
+         }
+        ]
+       },
+       "suitability": {
+        "sme": true
+       },
+       "contractPeriod": {
+        "startDate": "2027-01-12T00:00:00+00:00",
+        "endDate": "2028-04-28T23:59:59+01:00",
+        "maxExtentDate": "2030-04-26T23:59:59+01:00"
+       },
+       "hasRenewal": true,
+       "renewal": {
+        "description": "An option, at the Council's sole discretion, to extend for a further period of up to 2 years."
+       },
+       "description": null
+      }
+     ],
+     "documents": [
+      {
+       "id": "conflictOfInterest",
+       "documentType": "conflictOfInterest",
+       "description": "Not published"
+      },
+      {
+       "id": "104416-2026",
+       "documentType": "tenderNotice",
+       "noticeType": "UK4",
+       "description": "Tender notice on Find a Tender",
+       "url": "https://www.find-tender.service.gov.uk/Notice/104416-2026",
+       "datePublished": "2026-11-03T16:37:28Z",
+       "format": "text/html"
+      }
+     ]
+    },
+    "language": "en"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-h6vhtk-078a87",
+    "ocid_native": true,
+    "stage": "tender",
+    "title": "Housing Site Identification, Landowner Engagement and Consultancy Services.",
+    "description": "Chelmsford City Council is seeking tenders from suitably qualified and experienced consultants to identify privately owned sites within the Chelmsford City administrative area suitable for residential development and capable of being secured for future housing delivery.\nFor more information about this opportunity, please visit the eSourcing portal at: \nhttps://www.delta-esourcing.com/tenders/UK-UK-Chelmsford:-Real-estate-agency-services-on-a-fee-or-contract-basis./JE7Q63AB7D\nTo respond to this opportunity, please click here: \nhttps://www.delta-esourcing.com/respond/JE7Q63AB7D",
+    "buyer": {
+     "name": "Chelmsford City Council",
+     "id": "PYRZ-1467-WNJW",
+     "scheme": "GB-PPON",
+     "country": "GB"
+    },
+    "country": "GB",
+    "status": "active",
+    "procurement_method": "Open procedure",
+    "main_category": "services",
+    "value": {
+     "amount": "200000.00",
+     "currency": "GBP"
+    },
+    "published_at": "2026-11-03T16:37:28+00:00",
+    "updated_at": "2026-11-03T16:37:28+00:00",
+    "tender_start": null,
+    "tender_end": "2026-11-16T12:00:00+00:00",
+    "classifications": [],
+    "items": [
+     {
+      "id": "1"
+     }
+    ],
+    "language": "en",
+    "url": "https://www.find-tender.service.gov.uk/Notice/104416-2026"
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "104414-2026",
+   "content_hash": "ab66c02a99dd897bf8802e07bd4edeae663e31b499d049c1494e5a745b9b4def",
+   "fetched_at": "2026-11-03T17:26:57+00:00",
+   "source_url": "https://www.find-tender.service.gov.uk/Notice/104414-2026",
+   "publisher": "Cabinet Office",
+   "published_at": "2026-11-03T16:34:55+00:00",
+   "source_updated_at": "2026-11-03T16:34:55+00:00",
+   "language": "en",
+   "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "ocid": "ocds-h6vhtk-07970c",
+    "id": "104414-2026",
+    "tag": [
+     "planning"
+    ],
+    "date": "2026-11-03T16:34:55Z",
+    "initiationType": "tender",
+    "parties": [
+     {
+      "name": "The North Yorkshire Council",
+      "id": "GB-PPON-PNXY-8263-XCNL",
+      "identifier": {
+       "scheme": "GB-PPON",
+       "id": "PNXY-8263-XCNL"
+      },
+      "address": {
+       "streetAddress": "County Hall, Racecourse Lane,",
+       "locality": "Northallerton",
+       "postalCode": "DL7 8AD",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKE22"
+      },
+      "contactPoint": {
+       "name": "Claudine Scatchard",
+       "email": "Claudine.Scatchard@northyorks.gov.uk",
+       "telephone": "+44 1609534969"
+      },
+      "roles": [
+       "buyer"
+      ],
+      "details": {
+       "url": "https://www.northyorks.gov.uk",
+       "classifications": [
+        {
+         "scheme": "UK_CA_TYPE",
+         "id": "publicAuthoritySubCentralGovernment",
+         "description": "Public authority - sub-central government"
+        }
+       ]
+      }
+     }
+    ],
+    "buyer": {
+     "id": "GB-PPON-PNXY-8263-XCNL",
+     "name": "The North Yorkshire Council"
+    },
+    "planning": {
+     "milestones": [
+      {
+       "id": "engagement",
+       "type": "engagement",
+       "description": "https://uk.eu-supply.com/app/rfq/rwlentrance_s.asp?PID=110685&TID=100115684&B=",
+       "dueDate": "2026-11-17T23:59:59Z",
+       "status": "scheduled"
+      }
+     ],
+     "documents": [
+      {
+       "id": "104414-2026",
+       "documentType": "marketEngagementNotice",
+       "noticeType": "UK2",
+       "description": "Preliminary market engagement notice on Find a Tender",
+       "url": "https://www.find-tender.service.gov.uk/Notice/104414-2026",
+       "datePublished": "2026-11-03T16:34:55Z",
+       "format": "text/html"
+      }
+     ]
+    },
+    "tender": {
+     "id": "847-NYC-CD",
+     "legalBasis": {
+      "id": "2023/54",
+      "scheme": "UKPGA",
+      "uri": "https://www.legislation.gov.uk/ukpga/2023/54/contents"
+     },
+     "title": "Request for Information - Supply of Retail Products to the 'Active North Yorkshire' Leisure Venues",
+     "description": "North Yorkshire Council (the Authority) is requesting information from suppliers to help determine the scope and feasibility of its requirement, to understand the range of potential solutions available in the market, and to assist with informing our specification and future route to market for the supply of retail products across all of the Authority’s ‘Active North Yorkshire’ Leisure venues. The Authority is seeking information from the market to better understand the range of products available for purchase at the ‘Active North Yorkshire’ Leisure and Wellbeing Hub venues, to help improve our users’ enjoyment of, and accessibility to, swimming and the sports activities available at our venues. The primary products we require includes a range of swimming and pool-side related equipment.",
+     "items": [
+      {
+       "id": "LOT-0000",
+       "additionalClassifications": [
+        {
+         "scheme": "CPV",
+         "id": "18412800",
+         "description": "Swimwear"
+        },
+        {
+         "scheme": "CPV",
+         "id": "37400000",
+         "description": "Sports goods and equipment"
+        },
+        {
+         "scheme": "CPV",
+         "id": "37412340",
+         "description": "Swim goggles or swim fins"
+        },
+        {
+         "scheme": "CPV",
+         "id": "37452110",
+         "description": "Badminton birdies or shuttlecocks"
+        }
+       ],
+       "deliveryAddresses": [
+        {
+         "region": "UKE22",
+         "country": "GB",
+         "countryName": "United Kingdom"
+        }
+       ],
+       "relatedLot": "LOT-0000"
+      }
+     ],
+     "value": {
+      "amountGross": 1080000,
+      "amount": 900000,
+      "currency": "GBP"
+     },
+     "mainProcurementCategory": "goods",
+     "additionalProcurementCategories": [
+      "services"
+     ],
+     "aboveThreshold": true,
+     "lots": [
+      {
+       "id": "LOT-0000",
+       "suitability": {
+        "sme": true
+       },
+       "contractPeriod": {
+        "startDate": "2027-05-01T00:00:00Z",
+        "endDate": "2032-04-30T23:59:59+01:00",
+        "maxExtentDate": "2036-04-30T23:59:59+01:00"
+       },
+       "hasRenewal": true,
+       "description": null,
+       "status": "planning"
+      }
+     ],
+     "communication": {
+      "futureNoticeDate": "2027-01-11T23:59:59Z"
+     },
+     "status": "planning"
+    },
+    "language": "en"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-h6vhtk-07970c",
+    "ocid_native": true,
+    "stage": "tender",
+    "title": "Request for Information - Supply of Retail Products to the 'Active North Yorkshire' Leisure Venues",
+    "description": "North Yorkshire Council (the Authority) is requesting information from suppliers to help determine the scope and feasibility of its requirement, to understand the range of potential solutions available in the market, and to assist with informing our specification and future route to market for the supply of retail products across all of the Authority’s ‘Active North Yorkshire’ Leisure venues. The Authority is seeking information from the market to better understand the range of products available for purchase at the ‘Active North Yorkshire’ Leisure and Wellbeing Hub venues, to help improve our users’ enjoyment of, and accessibility to, swimming and the sports activities available at our venues. The primary products we require includes a range of swimming and pool-side related equipment.",
+    "buyer": {
+     "name": "The North Yorkshire Council",
+     "id": "PNXY-8263-XCNL",
+     "scheme": "GB-PPON",
+     "country": "GB"
+    },
+    "country": "GB",
+    "status": "planning",
+    "procurement_method": null,
+    "main_category": "goods",
+    "value": {
+     "amount": "900000.00",
+     "currency": "GBP"
+    },
+    "published_at": "2026-11-03T16:34:55+00:00",
+    "updated_at": "2026-11-03T16:34:55+00:00",
+    "tender_start": null,
+    "tender_end": null,
+    "classifications": [],
+    "items": [
+     {
+      "id": "LOT-0000"
+     }
+    ],
+    "language": "en",
+    "url": "https://www.find-tender.service.gov.uk/Notice/104414-2026"
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "104413-2026",
+   "content_hash": "3b54217e340a9ff88de00686fd43123c805f95f664d2bdc464af066cfe65c220",
+   "fetched_at": "2026-11-03T17:26:57+00:00",
+   "source_url": "https://www.find-tender.service.gov.uk/Notice/104413-2026",
+   "publisher": "Cabinet Office",
+   "published_at": "2026-11-03T16:34:11+00:00",
+   "source_updated_at": "2026-11-03T16:34:11+00:00",
+   "language": "en",
+   "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "ocid": "ocds-h6vhtk-07970b",
+    "buyerID": [],
+    "id": "104413-2026",
+    "tag": [
+     "award",
+     "contract"
+    ],
+    "date": "2026-11-03T16:34:11Z",
+    "initiationType": "tender",
+    "parties": [
+     {
+      "name": "Devon County Council",
+      "id": "GB-PPON-PJRC-4623-RJBH",
+      "identifier": {
+       "scheme": "GB-PPON",
+       "id": "PJRC-4623-RJBH"
+      },
+      "address": {
+       "streetAddress": "County Hall, Topsham Road,",
+       "locality": "Exeter,",
+       "postalCode": "EX2 4QD",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKK43"
+      },
+      "contactPoint": {
+       "email": "procurement-mailbox@devon.gov.uk"
+      },
+      "roles": [
+       "buyer"
+      ],
+      "details": {
+       "classifications": [
+        {
+         "scheme": "UK_CA_TYPE",
+         "id": "publicAuthoritySubCentralGovernment",
+         "description": "Public authority - sub-central government"
+        }
+       ]
+      }
+     },
+     {
+      "name": "THE HEPATITIS C TRUST",
+      "id": "GB-COH-05069924",
+      "identifier": {
+       "scheme": "GB-COH",
+       "id": "05069924"
+      },
+      "additionalIdentifiers": [
+       {
+        "scheme": "GB-PPON",
+        "id": "PTYT-7693-RMNP"
+       }
+      ],
+      "address": {
+       "streetAddress": "72 Weston Street",
+       "locality": "London",
+       "postalCode": "SE1 3QG",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKI44"
+      },
+      "contactPoint": {
+       "email": "rachel.halford@hepctrust.org.uk"
+      },
+      "roles": [
+       "supplier"
+      ],
+      "details": {
+       "url": "http://www.hepctrust.org.uk",
+       "scale": "large",
+       "vcse": true
+      }
+     }
+    ],
+    "buyer": {
+     "id": "GB-PPON-PJRC-4623-RJBH",
+     "name": "Devon County Council"
+    },
+    "tender": {
+     "id": "CP2683-25",
+     "legalBasis": {
+      "id": "2023/54",
+      "scheme": "UKPGA",
+      "uri": "https://www.legislation.gov.uk/ukpga/2023/54/contents"
+     },
+     "title": "Targeted Peer-Led Delivery of Needle and Syringe Provision and Harm Reduction",
+     "description": "Devon County Council is commissioning a Targeted Peer-Led Delivery of Needle and Syringe Provision and Harm Reduction Service. The Service seeks to reduce alcohol and other drug-related harm across Devon by leveraging the unique insights and trust of individuals with lived experience of substance use. Its primary aim is to provide an accessible, non-judgmental harm reduction service - including needle and syringe provision, Naloxone distribution, wound care, and blood-borne virus testing, through a peer-led model. By empowering peers to deliver education, support, and outreach, the Service's objectives are to decrease the transmission of blood-borne viruses, prevent overdoses, promote safer drug use practices, and foster a supportive community environment that encourages engagement with treatment and health services.",
+     "status": "complete",
+     "procurementMethod": "limited",
+     "procurementMethodDetails": "Below threshold - limited competition",
+     "specialRegime": [
+      "lightTouch"
+     ],
+     "lots": [
+      {
+       "id": "1",
+       "status": "complete",
+       "description": null
+      }
+     ]
+    },
+    "bids": {
+     "statistics": [
+      {
+       "id": "1",
+       "measure": "bids",
+       "value": 2,
+       "relatedLot": "1"
+      },
+      {
+       "id": "2",
+       "measure": "finalStageBids",
+       "value": 2,
+       "relatedLot": "1"
+      },
+      {
+       "id": "3",
+       "measure": "smeFinalStageBids",
+       "value": 2,
+       "relatedLot": "1"
+      },
+      {
+       "id": "4",
+       "measure": "vcseFinalStageBids",
+       "value": 2,
+       "relatedLot": "1"
+      }
+     ]
+    },
+    "awards": [
+     {
+      "id": "1",
+      "status": "active",
+      "date": "2026-11-03T00:00:00Z",
+      "value": {
+       "amountGross": 195700,
+       "amount": 195700,
+       "currency": "GBP"
+      },
+      "mainProcurementCategory": "services",
+      "aboveThreshold": false,
+      "suppliers": [
+       {
+        "id": "GB-COH-05069924",
+        "name": "THE HEPATITIS C TRUST"
+       }
+      ],
+      "items": [
+       {
+        "id": "1",
+        "additionalClassifications": [
+         {
+          "scheme": "CPV",
+          "id": "80560000",
+          "description": "Health and first-aid training services"
+         },
+         {
+          "scheme": "CPV",
+          "id": "85000000",
+          "description": "Health and social work services"
+         }
+        ],
+        "deliveryAddresses": [
+         {
+          "region": "UKC",
+          "country": "GB",
+          "countryName": "United Kingdom"
+         },
+         {
+          "region": "UKD",
+          "country": "GB",
+          "countryName": "United Kingdom"
+         },
+         {
+          "region": "UKE",
+          "country": "GB",
+          "countryName": "United Kingdom"
+         },
+         {
+          "region": "UKF",
+          "country": "GB",
+          "countryName": "United Kingdom"
+         },
+         {
+          "region": "UKG",
+          "country": "GB",
+          "countryName": "United Kingdom"
+         },
+         {
+          "region": "UKH",
+          "country": "GB",
+          "countryName": "United Kingdom"
+         },
+         {
+          "region": "UKI",
+          "country": "GB",
+          "countryName": "United Kingdom"
+         },
+         {
+          "region": "UKJ",
+          "country": "GB",
+          "countryName": "United Kingdom"
+         },
+         {
+          "region": "UKK",
+          "country": "GB",
+          "countryName": "United Kingdom"
+         }
+        ],
+        "relatedLot": "1"
+       }
+      ],
+      "contractPeriod": {
+       "startDate": "2027-03-01T00:00:00Z",
+       "endDate": "2028-03-31T23:59:59+01:00",
+       "maxExtentDate": "2029-03-31T23:59:59+01:00"
+      },
+      "hasRenewal": true,
+      "renewal": {
+       "description": "There is an option to extend the contract for a further 12 months at the Authority's discretion."
+      },
+      "relatedLots": [
+       "1"
+      ],
+      "documents": [
+       {
+        "id": "104413-2026",
+        "documentType": "awardNotice",
+        "noticeType": "UK6",
+        "description": "Contract award notice on Find a Tender",
+        "url": "https://www.find-tender.service.gov.uk/Notice/104413-2026",
+        "datePublished": "2026-11-03T16:34:11Z",
+        "format": "text/html"
+       }
+      ],
+      "milestones": [
+       {
+        "id": "1",
+        "type": "futureSignatureDate",
+        "dueDate": "2026-11-13T23:59:59Z",
+        "status": "scheduled"
+       }
+      ]
+     }
+    ],
+    "language": "en"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-h6vhtk-07970b",
+    "ocid_native": true,
+    "stage": "contract",
+    "title": "Targeted Peer-Led Delivery of Needle and Syringe Provision and Harm Reduction",
+    "description": "Devon County Council is commissioning a Targeted Peer-Led Delivery of Needle and Syringe Provision and Harm Reduction Service. The Service seeks to reduce alcohol and other drug-related harm across Devon by leveraging the unique insights and trust of individuals with lived experience of substance use. Its primary aim is to provide an accessible, non-judgmental harm reduction service - including needle and syringe provision, Naloxone distribution, wound care, and blood-borne virus testing, through a peer-led model. By empowering peers to deliver education, support, and outreach, the Service's objectives are to decrease the transmission of blood-borne viruses, prevent overdoses, promote safer drug use practices, and foster a supportive community environment that encourages engagement with treatment and health services.",
+    "buyer": {
+     "name": "Devon County Council",
+     "id": "PJRC-4623-RJBH",
+     "scheme": "GB-PPON",
+     "country": "GB"
+    },
+    "country": "GB",
+    "status": "complete",
+    "procurement_method": "Below threshold - limited competition",
+    "main_category": null,
+    "value": null,
+    "published_at": "2026-11-03T16:34:11+00:00",
+    "updated_at": "2026-11-03T16:34:11+00:00",
+    "tender_start": null,
+    "tender_end": null,
+    "classifications": [],
+    "items": [],
+    "language": "en",
+    "url": "https://www.find-tender.service.gov.uk/Notice/104413-2026"
+   },
+   "awards": [
+    {
+     "award_id": "1",
+     "title": null,
+     "status": "active",
+     "date": "2026-11-03T00:00:00+00:00",
+     "value": {
+      "amount": "195700.00",
+      "currency": "GBP"
+     },
+     "suppliers": [
+      {
+       "name": "THE HEPATITIS C TRUST",
+       "id": "05069924",
+       "scheme": "GB-COH"
+      }
+     ]
+    }
+   ],
+   "contracts": []
+  },
+  {
+   "external_id": "104412-2026",
+   "content_hash": "dd910dd097aa1e5ade008814c0ed64308172457378c50ca2ab39ec461197da5a",
+   "fetched_at": "2026-11-03T17:26:57+00:00",
+   "source_url": "https://www.find-tender.service.gov.uk/Notice/104412-2026",
+   "publisher": "Cabinet Office",
+   "published_at": "2026-11-03T16:33:54+00:00",
+   "source_updated_at": "2026-11-03T16:33:54+00:00",
+   "language": "en",
+   "licence": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "ocid": "ocds-h6vhtk-07970a",
+    "buyerID": [],
+    "id": "104412-2026",
+    "tag": [
+     "award",
+     "contract"
+    ],
+    "date": "2026-11-03T16:33:54Z",
+    "initiationType": "tender",
+    "parties": [
+     {
+      "name": "Police & Crime Commissioner for Merseyside & Chief Constable for Merseyside",
+      "id": "GB-PPON-PBLY-7223-BPGL",
+      "identifier": {
+       "scheme": "GB-PPON",
+       "id": "PBLY-7223-BPGL"
+      },
+      "address": {
+       "streetAddress": "Merseyside Police Headquarters",
+       "locality": "Liverpool",
+       "postalCode": "L3 3AN",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKD72"
+      },
+      "contactPoint": {
+       "email": "procurement@merseyside.police.uk"
+      },
+      "roles": [
+       "buyer"
+      ],
+      "details": {
+       "url": "https://www.merseysidepcc.info/",
+       "classifications": [
+        {
+         "scheme": "UK_CA_TYPE",
+         "id": "publicAuthoritySubCentralGovernment",
+         "description": "Public authority - sub-central government"
+        }
+       ]
+      }
+     },
+     {
+      "name": "ESAFE GLOBAL LIMITED",
+      "id": "GB-COH-06169753",
+      "identifier": {
+       "scheme": "GB-COH",
+       "id": "06169753"
+      },
+      "additionalIdentifiers": [
+       {
+        "scheme": "GB-PPON",
+        "id": "PQWY-3955-CPGR"
+       }
+      ],
+      "address": {
+       "streetAddress": "2nd Floor 2 Whitehall Quay",
+       "locality": "Leeds",
+       "postalCode": "LS1 4HR",
+       "country": "GB",
+       "countryName": "United Kingdom",
+       "region": "UKE42"
+      },
+      "contactPoint": {
+       "email": "help@esafeglobal.com"
+      },
+      "roles": [
+       "supplier"
+      ],
+      "details": {
+       "url": "https://smoothwall.com/esafe",
+       "scale": "sme",
+       "vcse": false
+      }
+     }
+    ],
+    "buyer": {
+     "id": "GB-PPON-PBLY-7223-BPGL",
+     "name": "Police & Crime Commissioner for Merseyside & Chief Constable for Merseyside"
+    },
+    "tender": {
+     "id": "PCC/PD/1277",
+     "legalBasis": {
+      "id": "2023/54",
+      "scheme": "UKPGA",
+      "uri": "https://www.legislation.gov.uk/ukpga/2023/54/contents"
+     },
+     "title": "E-Safe Software licenses",
+     "description": "£29,500.00 1 year renewal\n(35400.00 Incl VAT)",
+     "status": "complete",
+     "procurementMethod": "direct",
+     "procurementMethodDetails": "Below threshold - without competition",
+     "lots": [
+      {
+       "id": "1",
+       "status": "complete",
+       "description": null
+      }
+     ]
+    },
+    "awards": [
+     {
+      "id": "1",
+      "status": "active",
+      "mainProcurementCategory": "goods",
+      "suppliers": [
+       {
+        "id": "GB-COH-06169753",
+        "name": "ESAFE GLOBAL LIMITED"
+       }
+      ],
+      "items": [
+       {
+        "id": "1",
+        "additionalClassifications": [
+         {
+          "scheme": "CPV",
+          "id": "48000000",
+          "description": "Software package and information systems"
+         }
+        ],
+        "deliveryAddresses": [
+         {
+          "region": "UKD7",
+          "country": "GB",
+          "countryName": "United Kingdom"
+         }
+        ],
+        "relatedLot": "1"
+       }
+      ],
+      "relatedLots": [
+       "1"
+      ]
+     }
+    ],
+    "contracts": [
+     {
+      "id": "1",
+      "awardID": "1",
+      "status": "active",
+      "period": {
+       "startDate": "2026-09-01T00:00:00+01:00",
+       "endDate": "2027-08-31T23:59:59+01:00"
+      },
+      "value": {
+       "amountGross": 35000.0,
+       "amount": 29500.0,
+       "currency": "GBP"
+      },
+      "aboveThreshold": false,
+      "dateSigned": "2026-09-01T00:00:00+01:00",
+      "statusDetails": null,
+      "documents": [
+       {
+        "id": "104412-2026",
+        "documentType": "contractNotice",
+        "noticeType": "UK7",
+        "description": "Contract details notice on Find a Tender",
+        "url": "https://www.find-tender.service.gov.uk/Notice/104412-2026",
+        "datePublished": "2026-11-03T16:33:54Z",
+        "format": "text/html"
+       }
+      ]
+     }
+    ],
+    "language": "en"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "ocds-h6vhtk-07970a",
+    "ocid_native": true,
+    "stage": "contract",
+    "title": "E-Safe Software licenses",
+    "description": "£29,500.00 1 year renewal\n(35400.00 Incl VAT)",
+    "buyer": {
+     "name": "Police & Crime Commissioner for Merseyside & Chief Constable for Merseyside",
+     "id": "PBLY-7223-BPGL",
+     "scheme": "GB-PPON",
+     "country": "GB"
+    },
+    "country": "GB",
+    "status": "complete",
+    "procurement_method": "Below threshold - without competition",
+    "main_category": null,
+    "value": null,
+    "published_at": "2026-11-03T16:33:54+00:00",
+    "updated_at": "2026-11-03T16:33:54+00:00",
+    "tender_start": null,
+    "tender_end": null,
+    "classifications": [],
+    "items": [],
+    "language": "en",
+    "url": "https://www.find-tender.service.gov.uk/Notice/104412-2026"
+   },
+   "awards": [
+    {
+     "award_id": "1",
+     "title": null,
+     "status": "active",
+     "date": null,
+     "value": null,
+     "suppliers": [
+      {
+       "name": "ESAFE GLOBAL LIMITED",
+       "id": "06169753",
+       "scheme": "GB-COH"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "1",
+     "award_id": "1",
+     "title": null,
+     "status": "active",
+     "date_signed": "2026-09-01T00:00:00+01:00",
+     "period_start": "2026-09-01T00:00:00+01:00",
+     "period_end": "2027-08-31T23:59:59+01:00",
+     "value": {
+      "amount": "29500.00",
+      "currency": "GBP"
+     }
+    }
+   ]
+  }
+ ],
+ "rejected": []
+}

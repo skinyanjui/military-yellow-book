@@ -1,0 +1,59 @@
+[
+ {
+  "internal_id": 309506838,
+  "Award ID": "N0002417C2100",
+  "Recipient Name": "ELECTRIC BOAT CORPORATION",
+  "Recipient UEI": "E7BEKJ4V9528",
+  "Award Amount": 35737749929.0,
+  "Start Date": "2017-02-14",
+  "End Date": "2036-06-02",
+  "Awarding Agency": "Department of Defense",
+  "Awarding Sub Agency": "Department of the Navy",
+  "PSC": {
+   "code": "1905",
+   "description": "COMBAT SHIPS AND LANDING VESSELS"
+  },
+  "Description": "SSN 802 AND 803 LONG LEAD TIME MATERIAL",
+  "generated_internal_id": "CONT_AWD_N0002417C2100_9700_-NONE-_-NONE-",
+  "awarding_agency_id": 1173,
+  "agency_slug": "department-of-defense"
+ },
+ {
+  "internal_id": 298557808,
+  "Award ID": "FA862511C6600",
+  "Recipient Name": "THE BOEING COMPANY",
+  "Recipient UEI": "WZWRLY4G3PL8",
+  "Award Amount": 31972918249.03,
+  "Start Date": "2011-02-24",
+  "End Date": "2027-07-31",
+  "Awarding Agency": "Department of Defense",
+  "Awarding Sub Agency": "Department of the Air Force",
+  "PSC": {
+   "code": "1510",
+   "description": "AIRCRAFT, FIXED WING"
+  },
+  "Description": "KC-X MODERNIZATION PROGRAM",
+  "generated_internal_id": "CONT_AWD_FA862511C6600_9700_-NONE-_-NONE-",
+  "awarding_agency_id": 1173,
+  "agency_slug": "department-of-defense"
+ },
+ {
+  "internal_id": 309506843,
+  "Award ID": "N0002417C2117",
+  "Recipient Name": "ELECTRIC BOAT CORPORATION",
+  "Recipient UEI": "E7BEKJ4V9528",
+  "Award Amount": 31505020631.0,
+  "Start Date": "2017-09-21",
+  "End Date": "2031-12-31",
+  "Awarding Agency": "Department of Defense",
+  "Awarding Sub Agency": "Department of the Navy",
+  "PSC": {
+   "code": "1905",
+   "description": "COMBAT SHIPS AND LANDING VESSELS"
+  },
+  "Description": "COLUMBIA CLASS DESIGN COMPLETION",
+  "generated_internal_id": "CONT_AWD_N0002417C2117_9700_-NONE-_-NONE-",
+  "awarding_agency_id": 1173,
+  "agency_slug": "department-of-defense"
+ }
+]

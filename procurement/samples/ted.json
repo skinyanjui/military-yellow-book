@@ -1,0 +1,3324 @@
+{
+ "run": {
+  "run_id": "d9759017-a17e-440e-ba99-e2615d277ab1",
+  "source_id": "ted",
+  "mode": "test",
+  "started_at": "2026-11-03T17:27:00+00:00",
+  "params": {
+   "limit": 20,
+   "since": "2026-10-27T17:27:00",
+   "until": "2026-11-03T17:27:00",
+   "days": 7,
+   "schema_errors": 0
+  },
+  "cursor_before": null,
+  "transform_version": "myb-procurement-0.1",
+  "status": "success",
+  "fetched": 20,
+  "drift": {
+   "missing": [],
+   "unexpected": []
+  },
+  "cursor_after": {
+   "high_water": "2026-10-26T00:00:00"
+  }
+ },
+ "records": [
+  {
+   "external_id": "741139-2026",
+   "content_hash": "072c4536c2e6a90e9b08ff82282562ace3ba26c58a28a96c7fbd13fb38ea03ea",
+   "fetched_at": "2026-11-03T17:27:00+00:00",
+   "source_url": "https://ted.europa.eu/en/notice/741139-2026/html",
+   "publisher": "Publications Office of the European Union (TED)",
+   "published_at": "2026-10-27T00:00:00+01:00",
+   "source_updated_at": "2026-10-26T00:00:00+00:00",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "notice-identifier": "31560680-ed31-482d-ad06-7abad89d1b1d",
+    "deadline-receipt-tender-date-lot": [
+     "2026-10-30+01:00",
+     "2026-10-30+01:00",
+     "2026-10-30+01:00"
+    ],
+    "notice-type": "cn-standard",
+    "publication-number": "741139-2026",
+    "legal-basis": [
+     "32014L0024"
+    ],
+    "dispatch-date": "2026-10-26Z",
+    "buyer-country": [
+     "POL"
+    ],
+    "description-lot": {
+     "pol": [
+      "Szczegółowy opis przedmiotu zamówienia zawiera załącznik nr 2 do SWZ",
+      "Szczegółowy opis przedmiotu zamówienia zawiera załącznik nr 2 do SWZ",
+      "Szczegółowy opis przedmiotu zamówienia zawiera załącznik nr 2 do SWZ"
+     ]
+    },
+    "procedure-type": "open",
+    "classification-cpv": [
+     "48000000",
+     "35120000",
+     "72000000",
+     "31122000",
+     "35100000",
+     "72000000",
+     "32420000",
+     "48600000",
+     "48600000",
+     "31122000",
+     "48810000",
+     "72000000",
+     "64216120",
+     "35120000",
+     "48000000",
+     "35100000",
+     "72000000",
+     "32420000"
+    ],
+    "contract-nature": [
+     "supplies",
+     "services",
+     "supplies",
+     "supplies",
+     "supplies",
+     "services",
+     "services"
+    ],
+    "buyer-name": {
+     "pol": [
+      "Gmina Świlcza"
+     ]
+    },
+    "publication-date": "2026-10-27+01:00",
+    "notice-title": {
+     "hun": "Lengyelország – Szoftvercsomag és információs rendszerek – Dostawa oprogramowania i urządzeń IT. Dostawa UPS i agregatu Dostawa rozwiązań OT w ramach projektu „Cyberbezpieczny Wodociąg”",
+     "lav": "Polija – Programmatūras pakotne un informācijas sistēmas – Dostawa oprogramowania i urządzeń IT. Dostawa UPS i agregatu Dostawa rozwiązań OT w ramach projektu „Cyberbezpieczny Wodociąg”",
+     "swe": "Polen – Programvara och informationssystem – Dostawa oprogramowania i urządzeń IT. Dostawa UPS i agregatu Dostawa rozwiązań OT w ramach projektu „Cyberbezpieczny Wodociąg”",
+     "gle": "An Pholainn – Software package and information systems – Dostawa oprogramowania i urządzeń IT. Dostawa UPS i agregatu Dostawa rozwiązań OT w ramach projektu „Cyberbezpieczny Wodociąg”",
+     "ell": "Πολωνία – Πακέτα λογισμικού και συστήματα πληροφορικής – Dostawa oprogramowania i urządzeń IT. Dostawa UPS i agregatu Dostawa rozwiązań OT w ramach projektu „Cyberbezpieczny Wodociąg”",
+     "spa": "Polonia – Paquetes de software y sistemas de información – Dostawa oprogramowania i urządzeń IT. Dostawa UPS i agregatu Dostawa rozwiązań OT w ramach projektu „Cyberbezpieczny Wodociąg”",
+     "est": "Poola – Tarkvarapaketid ja infosüsteemid – Dostawa oprogramowania i urządzeń IT. Dostawa UPS i agregatu Dostawa rozwiązań OT w ramach projektu „Cyberbezpieczny Wodociąg”",
+     "nld": "Polen – Software en informatiesystemen – Dostawa oprogramowania i urządzeń IT. Dostawa UPS i agregatu Dostawa rozwiązań OT w ramach projektu „Cyberbezpieczny Wodociąg”",
+     "fin": "Puola – Ohjelmatuotteet ja tietojärjestelmät – Dostawa oprogramowania i urządzeń IT. Dostawa UPS i agregatu Dostawa rozwiązań OT w ramach projektu „Cyberbezpieczny Wodociąg”",
+     "pol": "Polska – Pakiety oprogramowania i systemy informatyczne – Dostawa oprogramowania i urządzeń IT. Dostawa UPS i agregatu Dostawa rozwiązań OT w ramach projektu „Cyberbezpieczny Wodociąg”",
+     "hrv": "Poljska – Programski paketi i informacijski sustavi – Dostawa oprogramowania i urządzeń IT. Dostawa UPS i agregatu Dostawa rozwiązań OT w ramach projektu „Cyberbezpieczny Wodociąg”",
+     "ces": "Polsko – Balíky programů a informační systémy – Dostawa oprogramowania i urządzeń IT. Dostawa UPS i agregatu Dostawa rozwiązań OT w ramach projektu „Cyberbezpieczny Wodociąg”",
+     "dan": "Polen – Programpakker og informationssystemer – Dostawa oprogramowania i urządzeń IT. Dostawa UPS i agregatu Dostawa rozwiązań OT w ramach projektu „Cyberbezpieczny Wodociąg”",
+     "ron": "Polonia – Pachete software şi sisteme informatice – Dostawa oprogramowania i urządzeń IT. Dostawa UPS i agregatu Dostawa rozwiązań OT w ramach projektu „Cyberbezpieczny Wodociąg”",
+     "por": "Polónia – Pacotes de software e sistemas de informação – Dostawa oprogramowania i urządzeń IT. Dostawa UPS i agregatu Dostawa rozwiązań OT w ramach projektu „Cyberbezpieczny Wodociąg”",
+     "slk": "Poľsko – Softvérové balíky a informačné systémy – Dostawa oprogramowania i urządzeń IT. Dostawa UPS i agregatu Dostawa rozwiązań OT w ramach projektu „Cyberbezpieczny Wodociąg”",
+     "fra": "Pologne – Logiciels et systèmes d'information – Dostawa oprogramowania i urządzeń IT. Dostawa UPS i agregatu Dostawa rozwiązań OT w ramach projektu „Cyberbezpieczny Wodociąg”",
+     "mlt": "Il-Polonja – Pakketti tas-softwer u sistemi ta' informazzjoni – Dostawa oprogramowania i urządzeń IT. Dostawa UPS i agregatu Dostawa rozwiązań OT w ramach projektu „Cyberbezpieczny Wodociąg”",
+     "deu": "Polen – Softwarepaket und Informationssysteme – Dostawa oprogramowania i urządzeń IT. Dostawa UPS i agregatu Dostawa rozwiązań OT w ramach projektu „Cyberbezpieczny Wodociąg”",
+     "lit": "Lenkija – Programinės įrangos paketai ir informacinės sistemos – Dostawa oprogramowania i urządzeń IT. Dostawa UPS i agregatu Dostawa rozwiązań OT w ramach projektu „Cyberbezpieczny Wodociąg”",
+     "ita": "Polonia – Pacchetti software e sistemi di informazione – Dostawa oprogramowania i urządzeń IT. Dostawa UPS i agregatu Dostawa rozwiązań OT w ramach projektu „Cyberbezpieczny Wodociąg”",
+     "bul": "Полша – Софтуерни пакети и информационни системи – Dostawa oprogramowania i urządzeń IT. Dostawa UPS i agregatu Dostawa rozwiązań OT w ramach projektu „Cyberbezpieczny Wodociąg”",
+     "slv": "Poljska – Programski paketi in informacijski sistemi – Dostawa oprogramowania i urządzeń IT. Dostawa UPS i agregatu Dostawa rozwiązań OT w ramach projektu „Cyberbezpieczny Wodociąg”",
+     "eng": "Poland – Software package and information systems – Dostawa oprogramowania i urządzeń IT. Dostawa UPS i agregatu Dostawa rozwiązań OT w ramach projektu „Cyberbezpieczny Wodociąg”"
+    },
+    "links": {
+     "xml": "https://ted.europa.eu/en/notice/741139-2026/xml",
+     "html": "https://ted.europa.eu/en/notice/741139-2026/html"
+    }
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-ted-741139-2026",
+    "ocid_native": false,
+    "stage": "tender",
+    "title": "Poland – Software package and information systems – Dostawa oprogramowania i urządzeń IT. Dostawa UPS i agregatu Dostawa rozwiązań OT w ramach projektu „Cyberbezpieczny Wodociąg”",
+    "description": "Szczegółowy opis przedmiotu zamówienia zawiera załącznik nr 2 do SWZ",
+    "buyer": {
+     "name": "Gmina Świlcza",
+     "country": "PL"
+    },
+    "country": "PL",
+    "procurement_method": "open",
+    "main_category": "supplies",
+    "value": null,
+    "published_at": "2026-10-27T00:00:00+01:00",
+    "updated_at": "2026-10-26T00:00:00+00:00",
+    "tender_end": "2026-10-30T00:00:00+01:00",
+    "classifications": [
+     {
+      "scheme": "CPV",
+      "id": "48000000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "35120000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "72000000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "31122000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "35100000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "32420000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "48600000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "48810000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "64216120"
+     }
+    ],
+    "url": "https://ted.europa.eu/en/notice/741139-2026/html"
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "741185-2026",
+   "content_hash": "b72dfff3f0be14c1b0f9d1986be779c68910987084210e58a925d2a5d9c5072c",
+   "fetched_at": "2026-11-03T17:27:00+00:00",
+   "source_url": "https://ted.europa.eu/en/notice/741185-2026/html",
+   "publisher": "Publications Office of the European Union (TED)",
+   "published_at": "2026-10-27T00:00:00+01:00",
+   "source_updated_at": "2026-10-26T00:00:00+00:00",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "notice-identifier": "5e5202fa-9b88-4673-83ee-0e5399a85aad",
+    "deadline-receipt-tender-date-lot": [
+     "2026-12-07+02:00"
+    ],
+    "notice-type": "cn-standard",
+    "publication-number": "741185-2026",
+    "legal-basis": [
+     "32014L0024"
+    ],
+    "dispatch-date": "2026-10-26Z",
+    "buyer-country": [
+     "LVA"
+    ],
+    "description-lot": {
+     "lav": [
+      "Brilles kaujas 2.līmenis KFT"
+     ]
+    },
+    "procedure-type": "open",
+    "classification-cpv": [
+     "35810000",
+     "35810000"
+    ],
+    "contract-nature": [
+     "supplies",
+     "supplies"
+    ],
+    "buyer-name": {
+     "lav": [
+      "Valsts aizsardzības loģistikas un iepirkumu centrs"
+     ]
+    },
+    "publication-date": "2026-10-27+01:00",
+    "notice-title": {
+     "hun": "Lettország – Egyéni felszerelés – Brilles kaujas 2.līmenis KFT",
+     "lav": "Latvija – Individuālais aprīkojums – Brilles kaujas 2.līmenis KFT",
+     "swe": "Lettland – Persedlar – Brilles kaujas 2.līmenis KFT",
+     "gle": "An Laitvia – Individual equipment – Brilles kaujas 2.līmenis KFT",
+     "ell": "Λετονία – Ατομικός εξοπλισμός – Brilles kaujas 2.līmenis KFT",
+     "spa": "Letonia – Equipo individual – Brilles kaujas 2.līmenis KFT",
+     "est": "Läti – Isikuvarustus – Brilles kaujas 2.līmenis KFT",
+     "nld": "Letland – Persoonlijke uitrusting – Brilles kaujas 2.līmenis KFT",
+     "fin": "Latvia – Yksilölliset varusteet – Brilles kaujas 2.līmenis KFT",
+     "pol": "Łotwa – Sprzęt osobisty – Brilles kaujas 2.līmenis KFT",
+     "hrv": "Latvija – Individualna oprema – Brilles kaujas 2.līmenis KFT",
+     "ces": "Lotyšsko – Individuální výstroj – Brilles kaujas 2.līmenis KFT",
+     "dan": "Letland – Personlig udrustning – Brilles kaujas 2.līmenis KFT",
+     "ron": "Letonia – Echipament individual – Brilles kaujas 2.līmenis KFT",
+     "por": "Letónia – Equipamento individual – Brilles kaujas 2.līmenis KFT",
+     "slk": "Lotyšsko – Individuálny výstroj – Brilles kaujas 2.līmenis KFT",
+     "fra": "Lettonie – Équipement individuel – Brilles kaujas 2.līmenis KFT",
+     "mlt": "Il-Latvja – Tagħmir individwali – Brilles kaujas 2.līmenis KFT",
+     "deu": "Lettland – Persönliche Ausrüstung – Brilles kaujas 2.līmenis KFT",
+     "lit": "Latvija – Individuali įranga – Brilles kaujas 2.līmenis KFT",
+     "ita": "Lettonia – Attrezzature individuali – Brilles kaujas 2.līmenis KFT",
+     "bul": "Лaтвия – Индивидуална екипировка – Brilles kaujas 2.līmenis KFT",
+     "slv": "Latvija – Oprema posameznika – Brilles kaujas 2.līmenis KFT",
+     "eng": "Latvia – Individual equipment – Brilles kaujas 2.līmenis KFT"
+    },
+    "links": {
+     "xml": "https://ted.europa.eu/en/notice/741185-2026/xml",
+     "html": "https://ted.europa.eu/en/notice/741185-2026/html"
+    }
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-ted-741185-2026",
+    "ocid_native": false,
+    "stage": "tender",
+    "title": "Latvia – Individual equipment – Brilles kaujas 2.līmenis KFT",
+    "description": "Brilles kaujas 2.līmenis KFT",
+    "buyer": {
+     "name": "Valsts aizsardzības loģistikas un iepirkumu centrs",
+     "country": "LV"
+    },
+    "country": "LV",
+    "procurement_method": "open",
+    "main_category": "supplies",
+    "value": null,
+    "published_at": "2026-10-27T00:00:00+01:00",
+    "updated_at": "2026-10-26T00:00:00+00:00",
+    "tender_end": "2026-12-07T00:00:00+02:00",
+    "classifications": [
+     {
+      "scheme": "CPV",
+      "id": "35810000"
+     }
+    ],
+    "url": "https://ted.europa.eu/en/notice/741185-2026/html"
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "741210-2026",
+   "content_hash": "911f4b1fb13beeda7d2f892d9013592b689c153f6045872bb0f20d9ff37bc17b",
+   "fetched_at": "2026-11-03T17:27:00+00:00",
+   "source_url": "https://ted.europa.eu/en/notice/741210-2026/html",
+   "publisher": "Publications Office of the European Union (TED)",
+   "published_at": "2026-10-27T00:00:00+01:00",
+   "source_updated_at": "2026-10-26T00:00:00+00:00",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "notice-identifier": "bc53d531-7d92-4669-b27a-055416418f4e",
+    "notice-type": "can-modif",
+    "publication-number": "741210-2026",
+    "legal-basis": [
+     "32014L0024"
+    ],
+    "dispatch-date": "2026-10-26Z",
+    "total-value-cur": [
+     "EUR"
+    ],
+    "buyer-country": [
+     "LVA"
+    ],
+    "total-value": 109128,
+    "description-lot": {
+     "lav": [
+      "Aprīkojuma iegāde objektu (patvertņu) pielāgošanai un aprīkošanai civilās aizsardzības mērķiem Alūksnē, saskaņā ar Tehnisko specifikāciju (1. pielikums)."
+     ]
+    },
+    "classification-cpv": [
+     "35100000",
+     "42990000",
+     "31000000",
+     "31120000",
+     "31224810",
+     "31300000",
+     "34000000",
+     "44000000",
+     "32300000",
+     "32000000",
+     "44114200",
+     "35100000"
+    ],
+    "contract-nature": [
+     "supplies",
+     "supplies"
+    ],
+    "buyer-name": {
+     "lav": [
+      "Alūksnes novada pašvaldība"
+     ]
+    },
+    "publication-date": "2026-10-27+01:00",
+    "notice-title": {
+     "hun": "Lettország – Vészhelyzeti és biztonsági berendezések – Aprīkojuma iegāde objektu (patvertņu) pielāgošanai un aprīkošanai civilās aizsardzības mērķiem Alūksnē",
+     "lav": "Latvija – Iekārtas ārkārtējām situācijām un drošības iekārtas – Aprīkojuma iegāde objektu (patvertņu) pielāgošanai un aprīkošanai civilās aizsardzības mērķiem Alūksnē",
+     "swe": "Lettland – Nöd- och säkerhetsutrustning – Aprīkojuma iegāde objektu (patvertņu) pielāgošanai un aprīkošanai civilās aizsardzības mērķiem Alūksnē",
+     "gle": "An Laitvia – Emergency and security equipment – Aprīkojuma iegāde objektu (patvertņu) pielāgošanai un aprīkošanai civilās aizsardzības mērķiem Alūksnē",
+     "ell": "Λετονία – Εξοπλισμός εκτάκτου ανάγκης και ασφαλείας – Aprīkojuma iegāde objektu (patvertņu) pielāgošanai un aprīkošanai civilās aizsardzības mērķiem Alūksnē",
+     "spa": "Letonia – Equipo de emergencia y seguridad – Aprīkojuma iegāde objektu (patvertņu) pielāgošanai un aprīkošanai civilās aizsardzības mērķiem Alūksnē",
+     "est": "Läti – Avarii- ja turvaseadmed – Aprīkojuma iegāde objektu (patvertņu) pielāgošanai un aprīkošanai civilās aizsardzības mērķiem Alūksnē",
+     "nld": "Letland – Nood- en veiligheidsuitrusting – Aprīkojuma iegāde objektu (patvertņu) pielāgošanai un aprīkošanai civilās aizsardzības mērķiem Alūksnē",
+     "fin": "Latvia – Pelastus- ja turvavälineet – Aprīkojuma iegāde objektu (patvertņu) pielāgošanai un aprīkošanai civilās aizsardzības mērķiem Alūksnē",
+     "pol": "Łotwa – Urządzenia awaryjne i zabezpieczające – Aprīkojuma iegāde objektu (patvertņu) pielāgošanai un aprīkošanai civilās aizsardzības mērķiem Alūksnē",
+     "hrv": "Latvija – Interventna i sigurnosna oprema – Aprīkojuma iegāde objektu (patvertņu) pielāgošanai un aprīkošanai civilās aizsardzības mērķiem Alūksnē",
+     "ces": "Lotyšsko – Nouzové a bezpečnostní zařízení – Aprīkojuma iegāde objektu (patvertņu) pielāgošanai un aprīkošanai civilās aizsardzības mērķiem Alūksnē",
+     "dan": "Letland – Nød- og sikkerhedsudstyr – Aprīkojuma iegāde objektu (patvertņu) pielāgošanai un aprīkošanai civilās aizsardzības mērķiem Alūksnē",
+     "ron": "Letonia – Echipament de urgenţă şi de siguranţă – Aprīkojuma iegāde objektu (patvertņu) pielāgošanai un aprīkošanai civilās aizsardzības mērķiem Alūksnē",
+     "por": "Letónia – Equipamento de emergência e de segurança – Aprīkojuma iegāde objektu (patvertņu) pielāgošanai un aprīkošanai civilās aizsardzības mērķiem Alūksnē",
+     "slk": "Lotyšsko – Pohotovostné a zabezpečovacie zariadenia – Aprīkojuma iegāde objektu (patvertņu) pielāgošanai un aprīkošanai civilās aizsardzības mērķiem Alūksnē",
+     "fra": "Lettonie – Matériel de secours et de sécurité – Aprīkojuma iegāde objektu (patvertņu) pielāgošanai un aprīkošanai civilās aizsardzības mērķiem Alūksnē",
+     "mlt": "Il-Latvja – Apparat ta' l-emerġenza u s-sigurtà – Aprīkojuma iegāde objektu (patvertņu) pielāgošanai un aprīkošanai civilās aizsardzības mērķiem Alūksnē",
+     "deu": "Lettland – Not- und Sicherheitsausrüstungen – Aprīkojuma iegāde objektu (patvertņu) pielāgošanai un aprīkošanai civilās aizsardzības mērķiem Alūksnē",
+     "lit": "Latvija – Avariniai ir apsaugos įrenginiai – Aprīkojuma iegāde objektu (patvertņu) pielāgošanai un aprīkošanai civilās aizsardzības mērķiem Alūksnē",
+     "ita": "Lettonia – Apparecchiature di emergenza e di sicurezza – Aprīkojuma iegāde objektu (patvertņu) pielāgošanai un aprīkošanai civilās aizsardzības mērķiem Alūksnē",
+     "bul": "Лaтвия – Оборудване за авариини ситуации и осигуряване на безопасност – Aprīkojuma iegāde objektu (patvertņu) pielāgošanai un aprīkošanai civilās aizsardzības mērķiem Alūksnē",
+     "slv": "Latvija – Oprema za nujne primere in varnost – Aprīkojuma iegāde objektu (patvertņu) pielāgošanai un aprīkošanai civilās aizsardzības mērķiem Alūksnē",
+     "eng": "Latvia – Emergency and security equipment – Aprīkojuma iegāde objektu (patvertņu) pielāgošanai un aprīkošanai civilās aizsardzības mērķiem Alūksnē"
+    },
+    "links": {
+     "xml": "https://ted.europa.eu/en/notice/741210-2026/xml",
+     "html": "https://ted.europa.eu/en/notice/741210-2026/html"
+    }
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-ted-741210-2026",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "Latvia – Emergency and security equipment – Aprīkojuma iegāde objektu (patvertņu) pielāgošanai un aprīkošanai civilās aizsardzības mērķiem Alūksnē",
+    "description": "Aprīkojuma iegāde objektu (patvertņu) pielāgošanai un aprīkošanai civilās aizsardzības mērķiem Alūksnē, saskaņā ar Tehnisko specifikāciju (1. pielikums).",
+    "buyer": {
+     "name": "Alūksnes novada pašvaldība",
+     "country": "LV"
+    },
+    "country": "LV",
+    "procurement_method": null,
+    "main_category": "supplies",
+    "value": {
+     "amount": "109128.00",
+     "currency": "EUR"
+    },
+    "published_at": "2026-10-27T00:00:00+01:00",
+    "updated_at": "2026-10-26T00:00:00+00:00",
+    "tender_end": null,
+    "classifications": [
+     {
+      "scheme": "CPV",
+      "id": "35100000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "42990000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "31000000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "31120000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "31224810"
+     },
+     {
+      "scheme": "CPV",
+      "id": "31300000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "34000000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "44000000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "32300000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "32000000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "44114200"
+     }
+    ],
+    "url": "https://ted.europa.eu/en/notice/741210-2026/html"
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "741271-2026",
+   "content_hash": "f7ed533bb8efe546aebf243320039ec41501f0edc2aa63439f0ec85ade1e62ae",
+   "fetched_at": "2026-11-03T17:27:00+00:00",
+   "source_url": "https://ted.europa.eu/en/notice/741271-2026/html",
+   "publisher": "Publications Office of the European Union (TED)",
+   "published_at": "2026-10-27T00:00:00+01:00",
+   "source_updated_at": "2026-10-26T00:00:00+01:00",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "notice-identifier": "1fc5ff3c-2851-4e7b-b012-028a0ceb348b",
+    "notice-type": "can-standard",
+    "publication-number": "741271-2026",
+    "winner-country": [
+     "CZE"
+    ],
+    "legal-basis": [
+     "32014L0025"
+    ],
+    "dispatch-date": "2026-10-26+01:00",
+    "total-value-cur": [
+     "CZK"
+    ],
+    "buyer-country": [
+     "CZE"
+    ],
+    "total-value": 66059280,
+    "description-lot": {
+     "ces": [
+      "Předmětem veřejné zakázky jsou dodávky autonomního elektrotechnického hasicího systému (AEHS). AEHS umožňuje autonomní odpojení přívodu a vývodu od elektrické energie (napájení) a uhašení vnitřního prostoru skříně. AEHS bude Zadavatelem naistalován do skříní nn. AEHS musí být plně integrovatelný do pojistkových spodků nn (požadována kompatibilita s pojistkovým spodkem), přičemž musí v případě poruchy proudových spojů galvanicky odpojit předmětné zařízení od elektrického energie (napájení) a v případě dosažení specifikovaných parametrů prostředí aktivovat hasicí systém zařízení, a to vše bez předpokladu přenosu informací do dispečerského řídicího systému."
+     ]
+    },
+    "procedure-type": "neg-w-call",
+    "classification-cpv": [
+     "35111300",
+     "35111300"
+    ],
+    "contract-nature": [
+     "supplies",
+     "supplies"
+    ],
+    "buyer-name": {
+     "ces": [
+      "ČEZ Distribuce, a. s."
+     ]
+    },
+    "publication-date": "2026-10-27+01:00",
+    "winner-name": {
+     "ces": [
+      "ASES GROUP, s.r.o."
+     ]
+    },
+    "notice-title": {
+     "hun": "Csehország – Tűzoltó készülékek – Dodávky autonomního elektrotechnického hasicího systému",
+     "lav": "Čehija – Ugunsdzēšanas aparāts – Dodávky autonomního elektrotechnického hasicího systému",
+     "swe": "Tjeckien – Brandsläckare – Dodávky autonomního elektrotechnického hasicího systému",
+     "gle": "An tSeicia – Fire extinguishers – Dodávky autonomního elektrotechnického hasicího systému",
+     "ell": "Τσεχία – Πυροκατασβεστήρες – Dodávky autonomního elektrotechnického hasicího systému",
+     "spa": "Chequia – Extintores – Dodávky autonomního elektrotechnického hasicího systému",
+     "est": "Tšehhi – Tulekustutid – Dodávky autonomního elektrotechnického hasicího systému",
+     "nld": "Tsjechië – Brandblustoestellen – Dodávky autonomního elektrotechnického hasicího systému",
+     "fin": "Tšekki – Sammuttimet – Dodávky autonomního elektrotechnického hasicího systému",
+     "pol": "Czechy – Gaśnice – Dodávky autonomního elektrotechnického hasicího systému",
+     "hrv": "Češka – Aparati za gašenje – Dodávky autonomního elektrotechnického hasicího systému",
+     "ces": "Česko – Hasicí přístroje – Dodávky autonomního elektrotechnického hasicího systému",
+     "dan": "Tjekkiet – Brandslukkere – Dodávky autonomního elektrotechnického hasicího systému",
+     "ron": "Cehia – Extinctoare – Dodávky autonomního elektrotechnického hasicího systému",
+     "por": "Chéquia – Extintores – Dodávky autonomního elektrotechnického hasicího systému",
+     "slk": "Česko – Hasiace zariadenia – Dodávky autonomního elektrotechnického hasicího systému",
+     "fra": "Tchéquie – Appareils extincteurs – Dodávky autonomního elektrotechnického hasicího systému",
+     "mlt": "Iċ-Ċekja – Apparat li jitfi n-nar (estinturi) – Dodávky autonomního elektrotechnického hasicího systému",
+     "deu": "Tschechien – Feuerlöscher – Dodávky autonomního elektrotechnického hasicího systému",
+     "lit": "Čekija – Ugnies gesintuvai – Dodávky autonomního elektrotechnického hasicího systému",
+     "ita": "Cechia – Estintori – Dodávky autonomního elektrotechnického hasicího systému",
+     "bul": "Чехия – Пожарогасители – Dodávky autonomního elektrotechnického hasicího systému",
+     "slv": "Češka – Gasilni aparati – Dodávky autonomního elektrotechnického hasicího systému",
+     "eng": "Czechia – Fire extinguishers – Dodávky autonomního elektrotechnického hasicího systému"
+    },
+    "links": {
+     "xml": "https://ted.europa.eu/en/notice/741271-2026/xml",
+     "html": "https://ted.europa.eu/en/notice/741271-2026/html"
+    }
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-ted-741271-2026",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "Czechia – Fire extinguishers – Dodávky autonomního elektrotechnického hasicího systému",
+    "description": "Předmětem veřejné zakázky jsou dodávky autonomního elektrotechnického hasicího systému (AEHS). AEHS umožňuje autonomní odpojení přívodu a vývodu od elektrické energie (napájení) a uhašení vnitřního prostoru skříně. AEHS bude Zadavatelem naistalován do skříní nn. AEHS musí být plně integrovatelný do pojistkových spodků nn (požadována kompatibilita s pojistkovým spodkem), přičemž musí v případě poruchy proudových spojů galvanicky odpojit předmětné zařízení od elektrického energie (napájení) a v případě dosažení specifikovaných parametrů prostředí aktivovat hasicí systém zařízení, a to vše bez předpokladu přenosu informací do dispečerského řídicího systému.",
+    "buyer": {
+     "name": "ČEZ Distribuce, a. s.",
+     "country": "CZ"
+    },
+    "country": "CZ",
+    "procurement_method": "neg-w-call",
+    "main_category": "supplies",
+    "value": {
+     "amount": "66059280.00",
+     "currency": "CZK"
+    },
+    "published_at": "2026-10-27T00:00:00+01:00",
+    "updated_at": "2026-10-26T00:00:00+01:00",
+    "tender_end": null,
+    "classifications": [
+     {
+      "scheme": "CPV",
+      "id": "35111300"
+     }
+    ],
+    "url": "https://ted.europa.eu/en/notice/741271-2026/html"
+   },
+   "awards": [
+    {
+     "award_id": "741271-2026-awarded",
+     "title": null,
+     "status": "active",
+     "date": "2026-10-27T00:00:00+01:00",
+     "value": null,
+     "suppliers": [
+      {
+       "name": "A"
+      },
+      {
+       "name": "S"
+      },
+      {
+       "name": "E"
+      },
+      null,
+      {
+       "name": "G"
+      },
+      {
+       "name": "R"
+      },
+      {
+       "name": "O"
+      },
+      {
+       "name": "U"
+      },
+      {
+       "name": "P"
+      },
+      {
+       "name": ","
+      },
+      {
+       "name": "s"
+      },
+      {
+       "name": "."
+      },
+      {
+       "name": "r"
+      },
+      {
+       "name": "o"
+      }
+     ]
+    }
+   ],
+   "contracts": []
+  },
+  {
+   "external_id": "741273-2026",
+   "content_hash": "c586934687720914cfe702f26b55fdf49697fb72b05f40b4fabe474bbbfb524d",
+   "fetched_at": "2026-11-03T17:27:00+00:00",
+   "source_url": "https://ted.europa.eu/en/notice/741273-2026/html",
+   "publisher": "Publications Office of the European Union (TED)",
+   "published_at": "2026-10-27T00:00:00+01:00",
+   "source_updated_at": "2026-10-26T00:00:00+01:00",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "notice-identifier": "c813421d-0367-4b43-8b61-c0aa2828d40f",
+    "notice-type": "can-standard",
+    "publication-number": "741273-2026",
+    "winner-country": [
+     "NLD"
+    ],
+    "legal-basis": [
+     "32014L0024"
+    ],
+    "dispatch-date": "2026-10-26+01:00",
+    "total-value-cur": [
+     "EUR"
+    ],
+    "buyer-country": [
+     "NLD"
+    ],
+    "total-value": 1,
+    "description-lot": {
+     "nld": [
+      "Periodieke keuring van ademluchtcilinders. Deze dienstverleningsovereenkomst heeft een looptijd van 6 jaar, met als doel alle ademluchtcilinders twee keer te kunnen keuren. In het jaar 2027 en het jaar 2032. Zie Offerteleiddraad"
+     ]
+    },
+    "procedure-type": "open",
+    "classification-cpv": [
+     "75250000",
+     "35111100",
+     "75250000",
+     "35111100"
+    ],
+    "contract-nature": [
+     "services",
+     "services"
+    ],
+    "buyer-name": {
+     "nld": [
+      "Veiligheidsregio Noord Holland Noord"
+     ]
+    },
+    "publication-date": "2026-10-27+01:00",
+    "winner-name": {
+     "nld": [
+      "Procylma B.V."
+     ]
+    },
+    "notice-title": {
+     "hun": "Hollandia – Tűzoltási és mentési szolgáltatások – Keuring ademluchtcilinders",
+     "lav": "Nīderlande – Ugunsdzēsēju komandas un glābšanas pakalpojumi – Keuring ademluchtcilinders",
+     "swe": "Nederländerna – Brandkårs- och räddningstjänster – Keuring ademluchtcilinders",
+     "gle": "An Ísiltír – Fire-brigade and rescue services – Keuring ademluchtcilinders",
+     "ell": "Κάτω Χώρες – Πυροσβεστικές υπηρεσίες και υπηρεσίες διάσωσης – Keuring ademluchtcilinders",
+     "spa": "Países Bajos – Servicios de los cuerpos de bomberos y servicios de rescate – Keuring ademluchtcilinders",
+     "est": "Madalmaad – Tuletõrje- ja päästeteenused – Keuring ademluchtcilinders",
+     "nld": "Nederland – Brandweer- en reddingsdiensten – Keuring ademluchtcilinders",
+     "fin": "Alankomaat – Palonsammutus- ja pelastuspalvelut – Keuring ademluchtcilinders",
+     "pol": "Niderlandy – Usługi straży pożarnej oraz ratownicze – Keuring ademluchtcilinders",
+     "hrv": "Nizozemska – Usluge vatrogasnih postrojbi i usluge spašavanja – Keuring ademluchtcilinders",
+     "ces": "Nizozemsko – Požární ochrana a záchranné služby – Keuring ademluchtcilinders",
+     "dan": "Nederlandene – Brandvæsen og redningstjenester – Keuring ademluchtcilinders",
+     "ron": "Ţările de Jos – Servicii de pompieri şi de salvare – Keuring ademluchtcilinders",
+     "por": "Países Baixos – Serviços de socorro e de incêndios – Keuring ademluchtcilinders",
+     "slk": "Holandsko – Služby požiarnych zborov a záchranné služby – Keuring ademluchtcilinders",
+     "fra": "Pays-Bas – Services d'incendie et de secours – Keuring ademluchtcilinders",
+     "mlt": "In-Netherlands – Servizzi tal-brigata għat-tifi tan-nar u tas-salvataġġ – Keuring ademluchtcilinders",
+     "deu": "Niederlande – Dienstleistungen der Feuerwehr und von Rettungsdiensten – Keuring ademluchtcilinders",
+     "lit": "Nyderlandai – Ugniagesių ir gelbėjimo paslaugos – Keuring ademluchtcilinders",
+     "ita": "Paesi Bassi – Servizi dei vigili del fuoco e di salvataggio – Keuring ademluchtcilinders",
+     "bul": "Нидерландия – Услуги по пожарна и аварийна безопасност – Keuring ademluchtcilinders",
+     "slv": "Nizozemska – Storitve gasilskih in reševalnih služb – Keuring ademluchtcilinders",
+     "eng": "Netherlands – Fire-brigade and rescue services – Keuring ademluchtcilinders"
+    },
+    "links": {
+     "xml": "https://ted.europa.eu/en/notice/741273-2026/xml",
+     "html": "https://ted.europa.eu/en/notice/741273-2026/html"
+    }
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-ted-741273-2026",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "Netherlands – Fire-brigade and rescue services – Keuring ademluchtcilinders",
+    "description": "Periodieke keuring van ademluchtcilinders. Deze dienstverleningsovereenkomst heeft een looptijd van 6 jaar, met als doel alle ademluchtcilinders twee keer te kunnen keuren. In het jaar 2027 en het jaar 2032. Zie Offerteleiddraad",
+    "buyer": {
+     "name": "Veiligheidsregio Noord Holland Noord",
+     "country": "NL"
+    },
+    "country": "NL",
+    "procurement_method": "open",
+    "main_category": "services",
+    "value": {
+     "amount": "1.00",
+     "currency": "EUR"
+    },
+    "published_at": "2026-10-27T00:00:00+01:00",
+    "updated_at": "2026-10-26T00:00:00+01:00",
+    "tender_end": null,
+    "classifications": [
+     {
+      "scheme": "CPV",
+      "id": "75250000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "35111100"
+     }
+    ],
+    "url": "https://ted.europa.eu/en/notice/741273-2026/html"
+   },
+   "awards": [
+    {
+     "award_id": "741273-2026-awarded",
+     "title": null,
+     "status": "active",
+     "date": "2026-10-27T00:00:00+01:00",
+     "value": null,
+     "suppliers": [
+      {
+       "name": "P"
+      },
+      {
+       "name": "r"
+      },
+      {
+       "name": "o"
+      },
+      {
+       "name": "c"
+      },
+      {
+       "name": "y"
+      },
+      {
+       "name": "l"
+      },
+      {
+       "name": "m"
+      },
+      {
+       "name": "a"
+      },
+      null,
+      {
+       "name": "B"
+      },
+      {
+       "name": "."
+      },
+      {
+       "name": "V"
+      }
+     ]
+    }
+   ],
+   "contracts": []
+  },
+  {
+   "external_id": "741329-2026",
+   "content_hash": "ae0f06e8bbf4a083b4976586a563acc18bf4bf83fd79e593e23ab6fb4f230d36",
+   "fetched_at": "2026-11-03T17:27:00+00:00",
+   "source_url": "https://ted.europa.eu/en/notice/741329-2026/html",
+   "publisher": "Publications Office of the European Union (TED)",
+   "published_at": "2026-10-27T00:00:00+01:00",
+   "source_updated_at": "2026-10-23T00:00:00+02:00",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "notice-identifier": "bcb434c6-34b7-41aa-8e49-9c18b4ff6141",
+    "deadline-receipt-tender-date-lot": [
+     "2026-11-05+01:00",
+     "2026-11-05+01:00",
+     "2026-11-05+01:00"
+    ],
+    "notice-type": "cn-standard",
+    "publication-number": "741329-2026",
+    "legal-basis": [
+     "32014L0024"
+    ],
+    "dispatch-date": "2026-10-23+02:00",
+    "buyer-country": [
+     "FRA"
+    ],
+    "description-lot": {
+     "fra": [
+      "MAINTENANCE PORTAILS",
+      "MAINTENANCE DES SERRURES ELECTROMECANIQUE",
+      "MAINTENANCE DES EQUIPEMENTS DE CONTROLE D'ACCES ET VIDEOPROTECTION"
+     ]
+    },
+    "procedure-type": "open",
+    "classification-cpv": [
+     "50324100",
+     "50710000",
+     "44521100",
+     "50324200",
+     "50324100",
+     "50324100",
+     "50324100",
+     "44221200",
+     "50710000",
+     "44521100",
+     "50324200",
+     "44521100",
+     "50710000",
+     "44521100",
+     "50324200",
+     "35125000",
+     "50710000",
+     "44521100",
+     "50324200"
+    ],
+    "contract-nature": [
+     "services",
+     "services",
+     "services",
+     "services"
+    ],
+    "buyer-name": {
+     "fra": [
+      "Société du Canal de Provence et d'Aménagement de la Région Provençale"
+     ]
+    },
+    "publication-date": "2026-10-27+01:00",
+    "notice-title": {
+     "hun": "Franciaország – Rendszer-karbantartási szolgáltatások – Maintenance des systèmes d'accès de la SCP",
+     "lav": "Francija – Sistēmu uzturēšanas pakalpojumi – Maintenance des systèmes d'accès de la SCP",
+     "swe": "Frankrike – Systemunderhåll – Maintenance des systèmes d'accès de la SCP",
+     "gle": "An Fhrainc – System maintenance services – Maintenance des systèmes d'accès de la SCP",
+     "ell": "Γαλλία – Υπηρεσίες συντήρησης συστημάτων – Maintenance des systèmes d'accès de la SCP",
+     "spa": "Francia – Servicios de mantenimiento de sistemas – Maintenance des systèmes d'accès de la SCP",
+     "est": "Prantsusmaa – Süsteemihooldusteenused – Maintenance des systèmes d'accès de la SCP",
+     "nld": "Frankrijk – Systeemonderhoud – Maintenance des systèmes d'accès de la SCP",
+     "fin": "Ranska – Järjestelmän ylläpito – Maintenance des systèmes d'accès de la SCP",
+     "pol": "Francja – Usługi w zakresie konserwacji systemu – Maintenance des systèmes d'accès de la SCP",
+     "hrv": "Francuska – Usluge održavanja sustava – Maintenance des systèmes d'accès de la SCP",
+     "ces": "Francie – Údržba systémů – Maintenance des systèmes d'accès de la SCP",
+     "dan": "Frankrig – Vedligeholdelse af systemer – Maintenance des systèmes d'accès de la SCP",
+     "ron": "Franţa – Servicii de întreţinere a sistemelor – Maintenance des systèmes d'accès de la SCP",
+     "por": "França – Serviços de manutenção de sistemas – Maintenance des systèmes d'accès de la SCP",
+     "slk": "Francúzsko – Údržba systémov – Maintenance des systèmes d'accès de la SCP",
+     "fra": "France – Services de maintenance de systèmes – Maintenance des systèmes d'accès de la SCP",
+     "mlt": "Franza – Servizzi tal-manutenzjoni tas-sistemi – Maintenance des systèmes d'accès de la SCP",
+     "deu": "Frankreich – Systemwartung – Maintenance des systèmes d'accès de la SCP",
+     "lit": "Prancūzija – Sistemos priežiūros paslaugos – Maintenance des systèmes d'accès de la SCP",
+     "ita": "Francia – Servizi di manutenzione di sistemi – Maintenance des systèmes d'accès de la SCP",
+     "bul": "Фpaнция – Услуги по поддържане на компютърни системи – Maintenance des systèmes d'accès de la SCP",
+     "slv": "Francija – Storitve vzdrževanja sistemov – Maintenance des systèmes d'accès de la SCP",
+     "eng": "France – System maintenance services – Maintenance des systèmes d'accès de la SCP"
+    },
+    "links": {
+     "xml": "https://ted.europa.eu/en/notice/741329-2026/xml",
+     "html": "https://ted.europa.eu/en/notice/741329-2026/html"
+    }
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-ted-741329-2026",
+    "ocid_native": false,
+    "stage": "tender",
+    "title": "France – System maintenance services – Maintenance des systèmes d'accès de la SCP",
+    "description": "MAINTENANCE PORTAILS",
+    "buyer": {
+     "name": "Société du Canal de Provence et d'Aménagement de la Région Provençale",
+     "country": "FR"
+    },
+    "country": "FR",
+    "procurement_method": "open",
+    "main_category": "services",
+    "value": null,
+    "published_at": "2026-10-27T00:00:00+01:00",
+    "updated_at": "2026-10-23T00:00:00+02:00",
+    "tender_end": "2026-11-05T00:00:00+01:00",
+    "classifications": [
+     {
+      "scheme": "CPV",
+      "id": "50324100"
+     },
+     {
+      "scheme": "CPV",
+      "id": "50710000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "44521100"
+     },
+     {
+      "scheme": "CPV",
+      "id": "50324200"
+     },
+     {
+      "scheme": "CPV",
+      "id": "44221200"
+     },
+     {
+      "scheme": "CPV",
+      "id": "35125000"
+     }
+    ],
+    "url": "https://ted.europa.eu/en/notice/741329-2026/html"
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "741430-2026",
+   "content_hash": "bdfa66e12754a9c6d1179131cadbc91092b461666998aaf563a1f8a27d65e4db",
+   "fetched_at": "2026-11-03T17:27:00+00:00",
+   "source_url": "https://ted.europa.eu/en/notice/741430-2026/html",
+   "publisher": "Publications Office of the European Union (TED)",
+   "published_at": "2026-10-27T00:00:00+01:00",
+   "source_updated_at": "2026-10-26T00:00:00+01:00",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "notice-identifier": "4309fe82-029a-48e5-a04f-05785048da1e",
+    "notice-type": "can-standard",
+    "publication-number": "741430-2026",
+    "winner-country": [
+     "CZE"
+    ],
+    "legal-basis": [
+     "32014L0024"
+    ],
+    "dispatch-date": "2026-10-26+01:00",
+    "total-value-cur": [
+     "CZK"
+    ],
+    "buyer-country": [
+     "CZE"
+    ],
+    "total-value": 87964,
+    "description-lot": {
+     "ces": [
+      "Předmětem plnění veřejné zakázky jsou zkoušky, kontroly, opravy hasicích přístrojů a požárně bezpečnostních zařízení (dále jen „PBZ“) dle § 2 odst. 4 písm. e) dle vyhlášky č. 246/2001 o požární prevenci (dále jen „vyhláška“), v areálech a vozidlech Pražských služeb a dále dodávky hasicích přístrojů, PBZ, spotřebního materiálu, poskytování služeb a dalšího souvisejícího plnění."
+     ]
+    },
+    "procedure-type": "oth-single",
+    "classification-cpv": [
+     "50413200",
+     "35111300",
+     "50413200",
+     "35111300"
+    ],
+    "contract-nature": [
+     "services",
+     "services"
+    ],
+    "buyer-name": {
+     "ces": [
+      "Pražské služby, a.s."
+     ]
+    },
+    "publication-date": "2026-10-27+01:00",
+    "winner-name": {
+     "ces": [
+      "EAF protect s.r.o."
+     ]
+    },
+    "notice-title": {
+     "hun": "Csehország – Tűzoltó készülékkel kapcsolatos javítási és karbantartási szolgáltatások – Zkoušky, kontroly, opravy hasicích přístrojů a požárně bezpečnostních zařízení v areálech a vozidlech Pražských služeb",
+     "lav": "Čehija – Ugunsdzēšanas aprīkojuma remonta un tehniskās apkopes pakalpojumi – Zkoušky, kontroly, opravy hasicích přístrojů a požárně bezpečnostních zařízení v areálech a vozidlech Pražských služeb",
+     "swe": "Tjeckien – Reparation och underhåll av utrustning och anordningar för brandbekämpning – Zkoušky, kontroly, opravy hasicích přístrojů a požárně bezpečnostních zařízení v areálech a vozidlech Pražských služeb",
+     "gle": "An tSeicia – Repair and maintenance services of firefighting equipment – Zkoušky, kontroly, opravy hasicích přístrojů a požárně bezpečnostních zařízení v areálech a vozidlech Pražských služeb",
+     "ell": "Τσεχία – Υπηρεσίες επισκευής και συντήρησης εξοπλισμού πυρόσβεσης – Zkoušky, kontroly, opravy hasicích přístrojů a požárně bezpečnostních zařízení v areálech a vozidlech Pražských služeb",
+     "spa": "Chequia – Servicios de reparación y mantenimiento de instalaciones contra incendios – Zkoušky, kontroly, opravy hasicích přístrojů a požárně bezpečnostních zařízení v areálech a vozidlech Pražských služeb",
+     "est": "Tšehhi – Tuletõrjeseadmete hooldusteenused – Zkoušky, kontroly, opravy hasicích přístrojů a požárně bezpečnostních zařízení v areálech a vozidlech Pražských služeb",
+     "nld": "Tsjechië – Reparatie en onderhoud van brandblusinstallaties – Zkoušky, kontroly, opravy hasicích přístrojů a požárně bezpečnostních zařízení v areálech a vozidlech Pražských služeb",
+     "fin": "Tšekki – Palontorjuntalaitteiden korjaus ja huolto – Zkoušky, kontroly, opravy hasicích přístrojů a požárně bezpečnostních zařízení v areálech a vozidlech Pražských služeb",
+     "pol": "Czechy – Usługi w zakresie napraw i konserwacji sprzętu gaśniczego – Zkoušky, kontroly, opravy hasicích přístrojů a požárně bezpečnostních zařízení v areálech a vozidlech Pražských služeb",
+     "hrv": "Češka – Usluge popravaka i održavanja vatrogasne opreme – Zkoušky, kontroly, opravy hasicích přístrojů a požárně bezpečnostních zařízení v areálech a vozidlech Pražských služeb",
+     "ces": "Česko – Opravy a údržba protipožárních systémů a hasicích přístrojů – Zkoušky, kontroly, opravy hasicích přístrojů a požárně bezpečnostních zařízení v areálech a vozidlech Pražských služeb",
+     "dan": "Tjekkiet – Reparation og vedligeholdelse af brandslukningsanlæg – Zkoušky, kontroly, opravy hasicích přístrojů a požárně bezpečnostních zařízení v areálech a vozidlech Pražských služeb",
+     "ron": "Cehia – Servicii de reparare şi de întreţinere a echipamentului de stingere a incendiilor – Zkoušky, kontroly, opravy hasicích přístrojů a požárně bezpečnostních zařízení v areálech a vozidlech Pražských služeb",
+     "por": "Chéquia – Serviços de reparação e manutenção de equipamento de combate a incêndios – Zkoušky, kontroly, opravy hasicích přístrojů a požárně bezpečnostních zařízení v areálech a vozidlech Pražských služeb",
+     "slk": "Česko – Opravy a údržba protipožiarnych zariadení – Zkoušky, kontroly, opravy hasicích přístrojů a požárně bezpečnostních zařízení v areálech a vozidlech Pražských služeb",
+     "fra": "Tchéquie – Services de réparation et d'entretien d'installations d'extinction d'incendie – Zkoušky, kontroly, opravy hasicích přístrojů a požárně bezpečnostních zařízení v areálech a vozidlech Pražských služeb",
+     "mlt": "Iċ-Ċekja – Servizzi ta’ tiswija u tal-manutenzjoni ta’ l-apparat tat-tifi tan-nar – Zkoušky, kontroly, opravy hasicích přístrojů a požárně bezpečnostních zařízení v areálech a vozidlech Pražských služeb",
+     "deu": "Tschechien – Reparatur und Wartung von Feuerlöschanlagen – Zkoušky, kontroly, opravy hasicích přístrojů a požárně bezpečnostních zařízení v areálech a vozidlech Pražských služeb",
+     "lit": "Čekija – Gaisrų gesinimo įrenginių priežiūros paslaugos – Zkoušky, kontroly, opravy hasicích přístrojů a požárně bezpečnostních zařízení v areálech a vozidlech Pražských služeb",
+     "ita": "Cechia – Servizi di riparazione e manutenzione di impianti antincendio – Zkoušky, kontroly, opravy hasicích přístrojů a požárně bezpečnostních zařízení v areálech a vozidlech Pražských služeb",
+     "bul": "Чехия – Услуги по ремонт и поддържане на пожарогасители – Zkoušky, kontroly, opravy hasicích přístrojů a požárně bezpečnostních zařízení v areálech a vozidlech Pražských služeb",
+     "slv": "Češka – Storitve popravila in vzdrževanja opreme za gašenje požara – Zkoušky, kontroly, opravy hasicích přístrojů a požárně bezpečnostních zařízení v areálech a vozidlech Pražských služeb",
+     "eng": "Czechia – Repair and maintenance services of firefighting equipment – Zkoušky, kontroly, opravy hasicích přístrojů a požárně bezpečnostních zařízení v areálech a vozidlech Pražských služeb"
+    },
+    "links": {
+     "xml": "https://ted.europa.eu/en/notice/741430-2026/xml",
+     "html": "https://ted.europa.eu/en/notice/741430-2026/html"
+    }
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-ted-741430-2026",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "Czechia – Repair and maintenance services of firefighting equipment – Zkoušky, kontroly, opravy hasicích přístrojů a požárně bezpečnostních zařízení v areálech a vozidlech Pražských služeb",
+    "description": "Předmětem plnění veřejné zakázky jsou zkoušky, kontroly, opravy hasicích přístrojů a požárně bezpečnostních zařízení (dále jen „PBZ“) dle § 2 odst. 4 písm. e) dle vyhlášky č. 246/2001 o požární prevenci (dále jen „vyhláška“), v areálech a vozidlech Pražských služeb a dále dodávky hasicích přístrojů, PBZ, spotřebního materiálu, poskytování služeb a dalšího souvisejícího plnění.",
+    "buyer": {
+     "name": "Pražské služby, a.s.",
+     "country": "CZ"
+    },
+    "country": "CZ",
+    "procurement_method": "oth-single",
+    "main_category": "services",
+    "value": {
+     "amount": "87964.00",
+     "currency": "CZK"
+    },
+    "published_at": "2026-10-27T00:00:00+01:00",
+    "updated_at": "2026-10-26T00:00:00+01:00",
+    "tender_end": null,
+    "classifications": [
+     {
+      "scheme": "CPV",
+      "id": "50413200"
+     },
+     {
+      "scheme": "CPV",
+      "id": "35111300"
+     }
+    ],
+    "url": "https://ted.europa.eu/en/notice/741430-2026/html"
+   },
+   "awards": [
+    {
+     "award_id": "741430-2026-awarded",
+     "title": null,
+     "status": "active",
+     "date": "2026-10-27T00:00:00+01:00",
+     "value": null,
+     "suppliers": [
+      {
+       "name": "E"
+      },
+      {
+       "name": "A"
+      },
+      {
+       "name": "F"
+      },
+      null,
+      {
+       "name": "p"
+      },
+      {
+       "name": "r"
+      },
+      {
+       "name": "o"
+      },
+      {
+       "name": "t"
+      },
+      {
+       "name": "e"
+      },
+      {
+       "name": "c"
+      },
+      {
+       "name": "s"
+      },
+      {
+       "name": "."
+      }
+     ]
+    }
+   ],
+   "contracts": []
+  },
+  {
+   "external_id": "741580-2026",
+   "content_hash": "3825f413daddb4f86f49d06591a2af46aef5e906e030573484589e17b83b04c4",
+   "fetched_at": "2026-11-03T17:27:00+00:00",
+   "source_url": "https://ted.europa.eu/en/notice/741580-2026/html",
+   "publisher": "Publications Office of the European Union (TED)",
+   "published_at": "2026-10-27T00:00:00+01:00",
+   "source_updated_at": "2026-10-26T00:00:00+01:00",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "notice-identifier": "921ea683-02ae-4b3b-bf4a-3cea028ab1b2",
+    "notice-type": "can-standard",
+    "publication-number": "741580-2026",
+    "winner-country": [
+     "DEU"
+    ],
+    "legal-basis": [
+     "32009L0081"
+    ],
+    "dispatch-date": "2026-10-26+01:00",
+    "total-value-cur": [
+     "EUR"
+    ],
+    "buyer-country": [
+     "DEU"
+    ],
+    "total-value": 1744750,
+    "description-lot": {
+     "deu": [
+      "Beschaffung von ballistischen Trägersystemen (BTS) Mindesabnahmemenge: 3.100 Stück Geschätzte Abnahmemenge: 3.500 Stück Maximale Abnahmemenge: 5.000 Stück"
+     ]
+    },
+    "procedure-type": "restricted",
+    "classification-cpv": [
+     "35000000",
+     "35000000"
+    ],
+    "contract-nature": [
+     "supplies",
+     "supplies"
+    ],
+    "buyer-name": {
+     "deu": [
+      "Land Baden-Württemberg vertreten durch das Logistikzentrum Baden-Württemberg"
+     ]
+    },
+    "publication-date": "2026-10-27+01:00",
+    "winner-name": {
+     "deu": [
+      "Mehler Vario System GmbH"
+     ]
+    },
+    "notice-title": {
+     "hun": "Németország – Biztonsági, tűzoltó, rendőrségi és védelmi felszerelések – Ballistische Trägersysteme (BTS)",
+     "lav": "Vācija – Drošības, ugunsdzēsības, policijas un aizsardzības aprīkojums – Ballistische Trägersysteme (BTS)",
+     "swe": "Tyskland – Säkerhets-, brandbekämpnings-, polis- och försvarsutrustning – Ballistische Trägersysteme (BTS)",
+     "gle": "An Ghearmáin – Security, fire-fighting, police and defence equipment – Ballistische Trägersysteme (BTS)",
+     "ell": "Γερμανία – Εξοπλισμός ασφαλείας και πυρόσβεσης, αστυνομικός και αμυντικός εξοπλισμός – Ballistische Trägersysteme (BTS)",
+     "spa": "Alemania – Equipo de seguridad, extinción de incendios, policía y defensa – Ballistische Trägersysteme (BTS)",
+     "est": "Saksamaa – Turva-, tuletõrje-, politsei- ja kaitseseadmed – Ballistische Trägersysteme (BTS)",
+     "nld": "Duitsland – Uitrusting voor veiligheid, brandweer, politie en leger – Ballistische Trägersysteme (BTS)",
+     "fin": "Saksa – Turva-, palontorjunta-, poliisi- ja maanpuolustusvälineet – Ballistische Trägersysteme (BTS)",
+     "pol": "Niemcy – Sprzęt bezpieczeństwa, gaśniczy, policyjny i obronny – Ballistische Trägersysteme (BTS)",
+     "hrv": "Njemačka – Sigurnosna, vatrogasna policijska i obrambena oprema – Ballistische Trägersysteme (BTS)",
+     "ces": "Německo – Bezpečnostní, hasičské, policejní a ochranné vybavení – Ballistische Trägersysteme (BTS)",
+     "dan": "Tyskland – Sikkerheds-, brandbekæmpelses, politi- og forsvarsudstyr – Ballistische Trägersysteme (BTS)",
+     "ron": "Germania – Echipament de securitate, de luptă împotriva incendiilor, de poliţie şi de apărare – Ballistische Trägersysteme (BTS)",
+     "por": "Alemanha – Equipamento de segurança, combate a incêndios, polícia e defesa – Ballistische Trägersysteme (BTS)",
+     "slk": "Nemecko – Bezpečnostné, hasičské, policajné a ochranné vybavenie – Ballistische Trägersysteme (BTS)",
+     "fra": "Allemagne – Équipement de sécurité, de lutte contre l'incendie, de police et de défense – Ballistische Trägersysteme (BTS)",
+     "mlt": "Il-Ġermanja – Tagħmir għas-sigurtà, tifi tan-nar, pulizija u difiża – Ballistische Trägersysteme (BTS)",
+     "deu": "Deutschland – Ausrüstung für Sicherheitszwecke, Brandbekämpfung, Polizei und Verteidigung – Ballistische Trägersysteme (BTS)",
+     "lit": "Vokietija – Apsaugos, gaisrų gesinimo, policijos ir gynybos įrenginiai – Ballistische Trägersysteme (BTS)",
+     "ita": "Germania – Attrezzature di sicurezza, antincendio, per la polizia e di difesa – Ballistische Trägersysteme (BTS)",
+     "bul": "Гepмaния – Оборудване за безопасност, противопожарно, полицейско и отбранително оборудване – Ballistische Trägersysteme (BTS)",
+     "slv": "Nemčija – Varnostna, gasilska, policijska in obrambna oprema – Ballistische Trägersysteme (BTS)",
+     "eng": "Germany – Security, fire-fighting, police and defence equipment – Ballistische Trägersysteme (BTS)"
+    },
+    "links": {
+     "xml": "https://ted.europa.eu/en/notice/741580-2026/xml",
+     "html": "https://ted.europa.eu/en/notice/741580-2026/html"
+    }
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-ted-741580-2026",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "Germany – Security, fire-fighting, police and defence equipment – Ballistische Trägersysteme (BTS)",
+    "description": "Beschaffung von ballistischen Trägersystemen (BTS) Mindesabnahmemenge: 3.100 Stück Geschätzte Abnahmemenge: 3.500 Stück Maximale Abnahmemenge: 5.000 Stück",
+    "buyer": {
+     "name": "Land Baden-Württemberg vertreten durch das Logistikzentrum Baden-Württemberg",
+     "country": "DE"
+    },
+    "country": "DE",
+    "procurement_method": "restricted",
+    "main_category": "supplies",
+    "value": {
+     "amount": "1744750.00",
+     "currency": "EUR"
+    },
+    "published_at": "2026-10-27T00:00:00+01:00",
+    "updated_at": "2026-10-26T00:00:00+01:00",
+    "tender_end": null,
+    "classifications": [
+     {
+      "scheme": "CPV",
+      "id": "35000000"
+     }
+    ],
+    "url": "https://ted.europa.eu/en/notice/741580-2026/html"
+   },
+   "awards": [
+    {
+     "award_id": "741580-2026-awarded",
+     "title": null,
+     "status": "active",
+     "date": "2026-10-27T00:00:00+01:00",
+     "value": null,
+     "suppliers": [
+      {
+       "name": "M"
+      },
+      {
+       "name": "e"
+      },
+      {
+       "name": "h"
+      },
+      {
+       "name": "l"
+      },
+      {
+       "name": "r"
+      },
+      null,
+      {
+       "name": "V"
+      },
+      {
+       "name": "a"
+      },
+      {
+       "name": "i"
+      },
+      {
+       "name": "o"
+      },
+      {
+       "name": "S"
+      },
+      {
+       "name": "y"
+      },
+      {
+       "name": "s"
+      },
+      {
+       "name": "t"
+      },
+      {
+       "name": "m"
+      },
+      {
+       "name": "G"
+      },
+      {
+       "name": "b"
+      },
+      {
+       "name": "H"
+      }
+     ]
+    }
+   ],
+   "contracts": []
+  },
+  {
+   "external_id": "741694-2026",
+   "content_hash": "80f5c082ffb5ce685233a588078c72ca6ea7b8e8344d06777adfd7bc4140ab8b",
+   "fetched_at": "2026-11-03T17:27:00+00:00",
+   "source_url": "https://ted.europa.eu/en/notice/741694-2026/html",
+   "publisher": "Publications Office of the European Union (TED)",
+   "published_at": "2026-10-27T00:00:00+01:00",
+   "source_updated_at": "2026-10-26T00:00:00+01:00",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "notice-identifier": "e4b2025b-d23d-4665-a250-7f4532a606d1",
+    "deadline-receipt-tender-date-lot": [
+     "2026-11-26+01:00",
+     "2026-11-26+01:00"
+    ],
+    "notice-type": "cn-standard",
+    "publication-number": "741694-2026",
+    "legal-basis": [
+     "32014L0024"
+    ],
+    "dispatch-date": "2026-10-26+01:00",
+    "buyer-country": [
+     "DEU"
+    ],
+    "description-lot": {
+     "deu": [
+      "Die Gemeinde Bad Füssing beabsichtigt für ihre Feuerwehren Egglfing und Würding in zwei Losen zwei baugleiche Feuerwehrfahrzeuge zu beschaffen. Die ausgeschriebenen Fahrzeuge müssen zur Erzielung einheitlicher technischer Standards der Vorgegebenen, im Schwerpunkt funktionalen, Leistungsbeschreibung entsprechen. Die Leistungsbeschreibung soll die Erstellung des Angebotes und die anschließende Auswertung erleichtern.",
+      "Die Gemeinde Bad Füssing beabsichtigt für ihre Feuerwehren Egglfing und Würding in zwei Losen zwei baugleiche Feuerwehrfahrzeuge zu beschaffen. Die ausgeschriebenen Fahrzeuge müssen zur Erzielung einheitlicher technischer Standards der Vorgegebenen, im Schwerpunkt funktionalen, Leistungsbeschreibung entsprechen. Die Leistungsbeschreibung soll die Erstellung des Angebotes und die anschließende Auswertung erleichtern."
+     ]
+    },
+    "procedure-type": "open",
+    "classification-cpv": [
+     "34144210",
+     "34144213",
+     "35111000",
+     "34144210",
+     "35111000"
+    ],
+    "contract-nature": [
+     "supplies",
+     "supplies",
+     "supplies"
+    ],
+    "buyer-name": {
+     "deu": [
+      "Gemeinde Bad Füssing"
+     ]
+    },
+    "publication-date": "2026-10-27+01:00",
+    "notice-title": {
+     "hun": "Németország – Tűzoltójárművek – Beschaffung von 2 baugleichen Löschgruppenfahrzeuges LF 10 mit Beladung für die Feuerwehren Egglfing und Würding",
+     "lav": "Vācija – Ugunsdzēsības transportlīdzekļi – Beschaffung von 2 baugleichen Löschgruppenfahrzeuges LF 10 mit Beladung für die Feuerwehren Egglfing und Würding",
+     "swe": "Tyskland – Brandfordon – Beschaffung von 2 baugleichen Löschgruppenfahrzeuges LF 10 mit Beladung für die Feuerwehren Egglfing und Würding",
+     "gle": "An Ghearmáin – Firefighting vehicles – Beschaffung von 2 baugleichen Löschgruppenfahrzeuges LF 10 mit Beladung für die Feuerwehren Egglfing und Würding",
+     "ell": "Γερμανία – Πυροσβεστικά οχήματα – Beschaffung von 2 baugleichen Löschgruppenfahrzeuges LF 10 mit Beladung für die Feuerwehren Egglfing und Würding",
+     "spa": "Alemania – Vehículos de extinción de incendios – Beschaffung von 2 baugleichen Löschgruppenfahrzeuges LF 10 mit Beladung für die Feuerwehren Egglfing und Würding",
+     "est": "Saksamaa – Tuletõrjeautod – Beschaffung von 2 baugleichen Löschgruppenfahrzeuges LF 10 mit Beladung für die Feuerwehren Egglfing und Würding",
+     "nld": "Duitsland – Brandbluswagens – Beschaffung von 2 baugleichen Löschgruppenfahrzeuges LF 10 mit Beladung für die Feuerwehren Egglfing und Würding",
+     "fin": "Saksa – Paloautot – Beschaffung von 2 baugleichen Löschgruppenfahrzeuges LF 10 mit Beladung für die Feuerwehren Egglfing und Würding",
+     "pol": "Niemcy – Wozy strażackie – Beschaffung von 2 baugleichen Löschgruppenfahrzeuges LF 10 mit Beladung für die Feuerwehren Egglfing und Würding",
+     "hrv": "Njemačka – Vatrogasna vozila – Beschaffung von 2 baugleichen Löschgruppenfahrzeuges LF 10 mit Beladung für die Feuerwehren Egglfing und Würding",
+     "ces": "Německo – Hasičská vozidla – Beschaffung von 2 baugleichen Löschgruppenfahrzeuges LF 10 mit Beladung für die Feuerwehren Egglfing und Würding",
+     "dan": "Tyskland – Brandkøretøjer – Beschaffung von 2 baugleichen Löschgruppenfahrzeuges LF 10 mit Beladung für die Feuerwehren Egglfing und Würding",
+     "ron": "Germania – Vehicule de pompieri – Beschaffung von 2 baugleichen Löschgruppenfahrzeuges LF 10 mit Beladung für die Feuerwehren Egglfing und Würding",
+     "por": "Alemanha – Veículos de combate a incêndios – Beschaffung von 2 baugleichen Löschgruppenfahrzeuges LF 10 mit Beladung für die Feuerwehren Egglfing und Würding",
+     "slk": "Nemecko – Požiarnické vozidlá – Beschaffung von 2 baugleichen Löschgruppenfahrzeuges LF 10 mit Beladung für die Feuerwehren Egglfing und Würding",
+     "fra": "Allemagne – Véhicules de lutte contre l'incendie – Beschaffung von 2 baugleichen Löschgruppenfahrzeuges LF 10 mit Beladung für die Feuerwehren Egglfing und Würding",
+     "mlt": "Il-Ġermanja – Vetturi għat-tifi tan-nar – Beschaffung von 2 baugleichen Löschgruppenfahrzeuges LF 10 mit Beladung für die Feuerwehren Egglfing und Würding",
+     "deu": "Deutschland – Feuerwehrfahrzeuge – Beschaffung von 2 baugleichen Löschgruppenfahrzeuges LF 10 mit Beladung für die Feuerwehren Egglfing und Würding",
+     "lit": "Vokietija – Ugniagesių automobiliai – Beschaffung von 2 baugleichen Löschgruppenfahrzeuges LF 10 mit Beladung für die Feuerwehren Egglfing und Würding",
+     "ita": "Germania – Veicoli di lotta antincendio – Beschaffung von 2 baugleichen Löschgruppenfahrzeuges LF 10 mit Beladung für die Feuerwehren Egglfing und Würding",
+     "bul": "Гepмaния – Пожарни коли – Beschaffung von 2 baugleichen Löschgruppenfahrzeuges LF 10 mit Beladung für die Feuerwehren Egglfing und Würding",
+     "slv": "Nemčija – Gasilska vozila – Beschaffung von 2 baugleichen Löschgruppenfahrzeuges LF 10 mit Beladung für die Feuerwehren Egglfing und Würding",
+     "eng": "Germany – Firefighting vehicles – Beschaffung von 2 baugleichen Löschgruppenfahrzeuges LF 10 mit Beladung für die Feuerwehren Egglfing und Würding"
+    },
+    "links": {
+     "xml": "https://ted.europa.eu/en/notice/741694-2026/xml",
+     "html": "https://ted.europa.eu/en/notice/741694-2026/html"
+    }
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-ted-741694-2026",
+    "ocid_native": false,
+    "stage": "tender",
+    "title": "Germany – Firefighting vehicles – Beschaffung von 2 baugleichen Löschgruppenfahrzeuges LF 10 mit Beladung für die Feuerwehren Egglfing und Würding",
+    "description": "Die Gemeinde Bad Füssing beabsichtigt für ihre Feuerwehren Egglfing und Würding in zwei Losen zwei baugleiche Feuerwehrfahrzeuge zu beschaffen. Die ausgeschriebenen Fahrzeuge müssen zur Erzielung einheitlicher technischer Standards der Vorgegebenen, im Schwerpunkt funktionalen, Leistungsbeschreibung entsprechen. Die Leistungsbeschreibung soll die Erstellung des Angebotes und die anschließende Auswertung erleichtern.",
+    "buyer": {
+     "name": "Gemeinde Bad Füssing",
+     "country": "DE"
+    },
+    "country": "DE",
+    "procurement_method": "open",
+    "main_category": "supplies",
+    "value": null,
+    "published_at": "2026-10-27T00:00:00+01:00",
+    "updated_at": "2026-10-26T00:00:00+01:00",
+    "tender_end": "2026-11-26T00:00:00+01:00",
+    "classifications": [
+     {
+      "scheme": "CPV",
+      "id": "34144210"
+     },
+     {
+      "scheme": "CPV",
+      "id": "34144213"
+     },
+     {
+      "scheme": "CPV",
+      "id": "35111000"
+     }
+    ],
+    "url": "https://ted.europa.eu/en/notice/741694-2026/html"
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "741711-2026",
+   "content_hash": "0e3b1bfbebf24053458bcdaf53819258afb2be10621e4742e7434fb31b250cda",
+   "fetched_at": "2026-11-03T17:27:00+00:00",
+   "source_url": "https://ted.europa.eu/en/notice/741711-2026/html",
+   "publisher": "Publications Office of the European Union (TED)",
+   "published_at": "2026-10-27T00:00:00+01:00",
+   "source_updated_at": "2026-10-26T00:00:00+01:00",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "notice-identifier": "c406fd3c-4555-4cf0-8b2b-b9625fe34776",
+    "deadline-receipt-tender-date-lot": [
+     "2026-11-27+01:00",
+     "2026-11-27+01:00"
+    ],
+    "notice-type": "cn-standard",
+    "publication-number": "741711-2026",
+    "legal-basis": [
+     "32014L0024"
+    ],
+    "dispatch-date": "2026-10-26+01:00",
+    "buyer-country": [
+     "DEU"
+    ],
+    "description-lot": {
+     "deu": [
+      "Los 1: Brandschutz- und Technische Hilfeleistungskleidung EN469:2020 LEVEL 1 und Kleidungsstücke an Brandschutzkleidung EN469:2020 LEVEL 2.",
+      "Los 2: Uniformen, Sportkleidung und Kleidung für die Jugendfeuerwehr.“"
+     ]
+    },
+    "procedure-type": "open",
+    "classification-cpv": [
+     "35811100",
+     "35810000",
+     "35800000",
+     "35000000",
+     "35811100",
+     "35810000",
+     "35810000",
+     "35800000",
+     "35000000",
+     "35800000",
+     "35000000"
+    ],
+    "contract-nature": [
+     "supplies",
+     "supplies",
+     "supplies"
+    ],
+    "buyer-name": {
+     "deu": [
+      "Stadt Wuppertal"
+     ]
+    },
+    "publication-date": "2026-10-27+01:00",
+    "notice-title": {
+     "hun": "Németország – Tűzoltó-egyenruha – Rahmenvereinbarung über Schutzkleidung für den Brandschutz und die Technische Hilfe der Feuerwehr Wuppertal sowie Uniformen Sportkleidung und Kleidung für die Jugendfeuerwehr.“",
+     "lav": "Vācija – Ugunsdzēsēju formas tērpi – Rahmenvereinbarung über Schutzkleidung für den Brandschutz und die Technische Hilfe der Feuerwehr Wuppertal sowie Uniformen Sportkleidung und Kleidung für die Jugendfeuerwehr.“",
+     "swe": "Tyskland – Branduniformer – Rahmenvereinbarung über Schutzkleidung für den Brandschutz und die Technische Hilfe der Feuerwehr Wuppertal sowie Uniformen Sportkleidung und Kleidung für die Jugendfeuerwehr.“",
+     "gle": "An Ghearmáin – Fire-brigade uniforms – Rahmenvereinbarung über Schutzkleidung für den Brandschutz und die Technische Hilfe der Feuerwehr Wuppertal sowie Uniformen Sportkleidung und Kleidung für die Jugendfeuerwehr.“",
+     "ell": "Γερμανία – Στολές πυροσβεστών – Rahmenvereinbarung über Schutzkleidung für den Brandschutz und die Technische Hilfe der Feuerwehr Wuppertal sowie Uniformen Sportkleidung und Kleidung für die Jugendfeuerwehr.“",
+     "spa": "Alemania – Uniformes para el cuerpo de bomberos – Rahmenvereinbarung über Schutzkleidung für den Brandschutz und die Technische Hilfe der Feuerwehr Wuppertal sowie Uniformen Sportkleidung und Kleidung für die Jugendfeuerwehr.“",
+     "est": "Saksamaa – Tuletõrjujate vormirõivad – Rahmenvereinbarung über Schutzkleidung für den Brandschutz und die Technische Hilfe der Feuerwehr Wuppertal sowie Uniformen Sportkleidung und Kleidung für die Jugendfeuerwehr.“",
+     "nld": "Duitsland – Brandweeruniformen – Rahmenvereinbarung über Schutzkleidung für den Brandschutz und die Technische Hilfe der Feuerwehr Wuppertal sowie Uniformen Sportkleidung und Kleidung für die Jugendfeuerwehr.“",
+     "fin": "Saksa – Palomiesten puvut – Rahmenvereinbarung über Schutzkleidung für den Brandschutz und die Technische Hilfe der Feuerwehr Wuppertal sowie Uniformen Sportkleidung und Kleidung für die Jugendfeuerwehr.“",
+     "pol": "Niemcy – Mundury strażackie – Rahmenvereinbarung über Schutzkleidung für den Brandschutz und die Technische Hilfe der Feuerwehr Wuppertal sowie Uniformen Sportkleidung und Kleidung für die Jugendfeuerwehr.“",
+     "hrv": "Njemačka – Vatrogasne uniforme – Rahmenvereinbarung über Schutzkleidung für den Brandschutz und die Technische Hilfe der Feuerwehr Wuppertal sowie Uniformen Sportkleidung und Kleidung für die Jugendfeuerwehr.“",
+     "ces": "Německo – Požárnické uniformy – Rahmenvereinbarung über Schutzkleidung für den Brandschutz und die Technische Hilfe der Feuerwehr Wuppertal sowie Uniformen Sportkleidung und Kleidung für die Jugendfeuerwehr.“",
+     "dan": "Tyskland – Uniformer til brandfolk – Rahmenvereinbarung über Schutzkleidung für den Brandschutz und die Technische Hilfe der Feuerwehr Wuppertal sowie Uniformen Sportkleidung und Kleidung für die Jugendfeuerwehr.“",
+     "ron": "Germania – Uniforme de pompieri – Rahmenvereinbarung über Schutzkleidung für den Brandschutz und die Technische Hilfe der Feuerwehr Wuppertal sowie Uniformen Sportkleidung und Kleidung für die Jugendfeuerwehr.“",
+     "por": "Alemanha – Uniformes para bombeiros – Rahmenvereinbarung über Schutzkleidung für den Brandschutz und die Technische Hilfe der Feuerwehr Wuppertal sowie Uniformen Sportkleidung und Kleidung für die Jugendfeuerwehr.“",
+     "slk": "Nemecko – Požiarnické uniformy – Rahmenvereinbarung über Schutzkleidung für den Brandschutz und die Technische Hilfe der Feuerwehr Wuppertal sowie Uniformen Sportkleidung und Kleidung für die Jugendfeuerwehr.“",
+     "fra": "Allemagne – Uniformes de pompiers – Rahmenvereinbarung über Schutzkleidung für den Brandschutz und die Technische Hilfe der Feuerwehr Wuppertal sowie Uniformen Sportkleidung und Kleidung für die Jugendfeuerwehr.“",
+     "mlt": "Il-Ġermanja – Uniformijiet tal-ħaddiema tat-tifi tan-nar – Rahmenvereinbarung über Schutzkleidung für den Brandschutz und die Technische Hilfe der Feuerwehr Wuppertal sowie Uniformen Sportkleidung und Kleidung für die Jugendfeuerwehr.“",
+     "deu": "Deutschland – Feuerwehruniformen – Rahmenvereinbarung über Schutzkleidung für den Brandschutz und die Technische Hilfe der Feuerwehr Wuppertal sowie Uniformen Sportkleidung und Kleidung für die Jugendfeuerwehr.“",
+     "lit": "Vokietija – Ugniagesių uniformos – Rahmenvereinbarung über Schutzkleidung für den Brandschutz und die Technische Hilfe der Feuerwehr Wuppertal sowie Uniformen Sportkleidung und Kleidung für die Jugendfeuerwehr.“",
+     "ita": "Germania – Uniformi per vigili del fuoco – Rahmenvereinbarung über Schutzkleidung für den Brandschutz und die Technische Hilfe der Feuerwehr Wuppertal sowie Uniformen Sportkleidung und Kleidung für die Jugendfeuerwehr.“",
+     "bul": "Гepмaния – Пожарникарски униформи – Rahmenvereinbarung über Schutzkleidung für den Brandschutz und die Technische Hilfe der Feuerwehr Wuppertal sowie Uniformen Sportkleidung und Kleidung für die Jugendfeuerwehr.“",
+     "slv": "Nemčija – Gasilske uniforme – Rahmenvereinbarung über Schutzkleidung für den Brandschutz und die Technische Hilfe der Feuerwehr Wuppertal sowie Uniformen Sportkleidung und Kleidung für die Jugendfeuerwehr.“",
+     "eng": "Germany – Fire-brigade uniforms – Rahmenvereinbarung über Schutzkleidung für den Brandschutz und die Technische Hilfe der Feuerwehr Wuppertal sowie Uniformen Sportkleidung und Kleidung für die Jugendfeuerwehr.“"
+    },
+    "links": {
+     "xml": "https://ted.europa.eu/en/notice/741711-2026/xml",
+     "html": "https://ted.europa.eu/en/notice/741711-2026/html"
+    }
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-ted-741711-2026",
+    "ocid_native": false,
+    "stage": "tender",
+    "title": "Germany – Fire-brigade uniforms – Rahmenvereinbarung über Schutzkleidung für den Brandschutz und die Technische Hilfe der Feuerwehr Wuppertal sowie Uniformen Sportkleidung und Kleidung für die Jugendfeuerwehr.“",
+    "description": "Los 1: Brandschutz- und Technische Hilfeleistungskleidung EN469:2020 LEVEL 1 und Kleidungsstücke an Brandschutzkleidung EN469:2020 LEVEL 2.",
+    "buyer": {
+     "name": "Stadt Wuppertal",
+     "country": "DE"
+    },
+    "country": "DE",
+    "procurement_method": "open",
+    "main_category": "supplies",
+    "value": null,
+    "published_at": "2026-10-27T00:00:00+01:00",
+    "updated_at": "2026-10-26T00:00:00+01:00",
+    "tender_end": "2026-11-27T00:00:00+01:00",
+    "classifications": [
+     {
+      "scheme": "CPV",
+      "id": "35811100"
+     },
+     {
+      "scheme": "CPV",
+      "id": "35810000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "35800000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "35000000"
+     }
+    ],
+    "url": "https://ted.europa.eu/en/notice/741711-2026/html"
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "741747-2026",
+   "content_hash": "9c5371a0b1589e0fc8ce7f37235184512a2eab35fbb5d82a6fa442c34f02165f",
+   "fetched_at": "2026-11-03T17:27:00+00:00",
+   "source_url": "https://ted.europa.eu/en/notice/741747-2026/html",
+   "publisher": "Publications Office of the European Union (TED)",
+   "published_at": "2026-10-27T00:00:00+01:00",
+   "source_updated_at": "2026-10-26T00:00:00+01:00",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "notice-identifier": "4b375094-3f85-4699-a7f8-4d9097479608",
+    "notice-type": "can-standard",
+    "publication-number": "741747-2026",
+    "winner-country": [
+     "CZE",
+     "CZE"
+    ],
+    "legal-basis": [
+     "32014L0024"
+    ],
+    "dispatch-date": "2026-10-26+01:00",
+    "total-value-cur": [
+     "CZK"
+    ],
+    "buyer-country": [
+     "CZE"
+    ],
+    "total-value": 1976146,
+    "description-lot": {
+     "ces": [
+      "Optická zrcadla a optické filtry jsou přesné optické elementy vyrobené z vysoce kvalitních skel s co nejvyšší kvalitou minimálně jednoho povrchu, na kterém jsou naneseny kovové či dielektrické vrstvy sloužící ke zvýšení odrazivosti či propustnosti povrchu pro daný rozsah vlnových délek světla. Plochy optické kvality mohou být rovinné, konkávní či konvexní. Filtrování vlnových délek může být selektivní na průchod či na odraz, případně vyladěné pro průchod jedné vlnové délky a odraz jiné.",
+      "Kategorie obsahuje jednoduché optické komponenty určené k fokusaci, defokusaci a lomu laserového svazku, k přenosu obrazu mezi předmětovou a obrazovou rovinou a k vytváření virtuálních obrazů v komplexní optické apartuře. Jedná se tedy především o spojné a rozptylné čočky (např. bikonvex, plankonvex, achromatické dublety a triplety, asférické a cylindrické čočky), hranoly (např. pravoúhlý hranol, koutový hranol) a optické desky (např. planparalelní okénko, optický klín či rovinný substrát). Optické elementy mohou být specifikovány včetně kovové objímky s běžně používanými typy závitů (RMS, SM1, C-Mount apod.)",
+      "Kategorie obsahuje optické elementy, které mění fázové zpoždění mezi osami polarizace (čtvrtvlnné a půlvlnné destičky), polarizátory, polarizační děliče svazku, Faradayovy izolátory a polarizační zařízení založená na kapalných krystalech.",
+      "Jedná se o soustavu jednoduchých optických členů mezi sebou určitým způsobem nerozebíratelně spojených pro získání optických vlastností, které není možné dosáhnout jednoduchou optikou. Tato zařízení kombinují přesně navržené čočky, zrcadla a další optické členy umístěné na předem daných místech. Tyto systémy mohou být buď pevné nepohyblivé, nebo nastavitelné tak, aby při změně polohy optických členů došlo k požadované změně optických parametrů jako je např. zvětšení nebo numerická apertura. Do této kategorie tedy spadají mikroskopové objektivy, teleskopy, periskopy apod.",
+      "Vláknovou optiku tvoří optické vláknové děliče svazku (splittery), optické vláknové cirkulátory, kolimátory světla s optickým vláknem nebo optovláknovým konektorem, optovláknové útlumové články nebo vláknové Braggovy mřížky a jiné speciální optovláknové struktury. Tyto prvky jsou realizovány standardními jednomodovými a vícemodovými optickými vlákny, polarizačně závislými optickými vlákny, plastovými vlákny a dalšími, v závislosti na požadavcích. Dále se tyto optovláknové prvky mohou lišit v závislosti na požadované vlnové délce a maximálním útlumu prvku.",
+      "Modulátory světelného svazku jsou určené pro změnu amplitudy, frekvence, fáze, polarizace či směru světla šířícího se volně v prostoru. Jedná se o aktivní optické elementy využívající elektro-optického jevu, akusto-optického jevu či interakce světla s plochou aktivních elementů (mikrozrcátek, vrstvou kapalných krystalů, pružnou membránou s aktuátory apod.) Modulátor může být specifikován včetně řídicí jednotky s odpovídajícími frekvenčními a napěťovými parametry.",
+      "Jedná se o detektory a řídicí jednotky zajišťující měření vlastností světelného svazku. V kategorii jsou zastoupeny měřicí hlavy i celé přístroje určené ke zjištění polarizace, vlnové délky, spektrální charakteristiky a intenzity světla.",
+      "Optická křemenná a speciální vlákna pro rozsah vlnových délek 240 – 2000 nm, jednomodová a mnohamodová s průměry jádra 2,5 μm – 2 mm, radiačně odolná a další. Mikrostrukturní optická vlákna s pevným a dutým jádrem a různým tvarem mikrostruktur. Optická vlákna mohou být zakončena různými typy optovláknových konektorů dle specifikace.",
+      "Kategorie obsahuje základní mechanické elementy bez pohyblivých součástí pro budování optických sestav ve volném prostoru či v klecovém systému. Kvůli náročným požadavkům na stabilitu optických systémů musí být všechny elementy kovové s povrchovou úpravou zabraňující degradaci povrchů vlivem vlhkosti či mechanického otěru. Typickými zástupci této kategorie jsou stojánky, tyčky, kostky a držáčky pro volně stojící elementy i klecové systémy, závitové desky, breadboardy a montážní tyče.",
+      "Jedná se o zařízení umožňující lineární, rotační či naklápěcí pohyb v jedné nebo více osách. Jedná se o přesná zařízení vyrobená z kovových součástí a sloužící k přesnému polohování optických a mechanických elementů vůči optické ose. Mechanismy neobsahují elektroniku ani motorky k řízení rotace.",
+      "Zařízení zajišťující polohování, posun, rotací a naklápění optických elementů či částí optických sestavy je celokovové konstrukce s přesnými rozměry a minimální vůlí. Pohyb je zajištěn pomocí krokových či stejnosměrných motorů, servomechanismů, piezoelektrických členů a je řízen pomocí počítače prostřednictvím standardních sběrnic a programovacích nástrojů.",
+      "V kategorii se nachází optické elementy vytvářející změnu šíření světla statickými optickými mřížkami či prostorovými filtry, ať již se jedná o fokusaci, rozklad světla do barevných složek, tvarování či dělení laserového svazku.",
+      "V této kategorii se nachází technické prvky zabraňující šíření laserového záření mimo optickou cestu (blokování svazku, stínítka) a ochranné prostředky sloužící k ochraně zraku experimentátora."
+     ]
+    },
+    "procedure-type": "oth-single",
+    "classification-cpv": [
+     "38624000",
+     "38640000",
+     "38621000",
+     "38519200",
+     "38641000",
+     "38519620",
+     "38519610",
+     "38433300",
+     "38622000",
+     "38623000",
+     "38620000",
+     "38636000",
+     "38630000",
+     "30191200",
+     "38635000",
+     "32561000",
+     "32560000",
+     "42671100",
+     "44500000",
+     "38519650",
+     "18143000",
+     "33735100",
+     "35113400",
+     "39522120",
+     "30194900",
+     "38300000",
+     "38519100",
+     "38636100",
+     "38624000",
+     "38624000",
+     "38624000",
+     "38624000",
+     "38624000",
+     "38624000",
+     "38624000",
+     "38624000",
+     "38624000",
+     "38624000",
+     "38624000",
+     "38624000",
+     "38624000",
+     "38622000",
+     "38623000",
+     "38636000",
+     "38620000",
+     "38635000",
+     "38519200",
+     "38641000",
+     "38519610",
+     "38519620",
+     "32561000",
+     "38640000",
+     "38630000",
+     "30191200",
+     "38300000",
+     "32560000",
+     "42671100",
+     "44500000",
+     "38519650",
+     "38433300",
+     "18143000",
+     "33735100",
+     "35113400",
+     "39522120",
+     "30194900"
+    ],
+    "contract-nature": [
+     "supplies",
+     "supplies",
+     "supplies",
+     "supplies",
+     "supplies",
+     "supplies",
+     "supplies",
+     "supplies",
+     "supplies",
+     "supplies",
+     "supplies",
+     "supplies",
+     "supplies",
+     "supplies"
+    ],
+    "buyer-name": {
+     "ces": [
+      "Ústav přístrojové techniky AV ČR, v. v. i."
+     ]
+    },
+    "publication-date": "2026-10-27+01:00",
+    "winner-name": {
+     "ces": [
+      "OptiXs, s.r.o.",
+      "OptiXs, s.r.o.",
+      "OptiXs, s.r.o.",
+      "OptiXs, s.r.o.",
+      "OptiXs, s.r.o.",
+      "OptiXs, s.r.o.",
+      "OptiXs, s.r.o.",
+      "OptiXs, s.r.o.",
+      "OptiXs, s.r.o.",
+      "Narran s.r.o.",
+      "Narran s.r.o.",
+      "OptiXs, s.r.o.",
+      "OptiXs, s.r.o."
+     ]
+    },
+    "notice-title": {
+     "hun": "Csehország – Optikai segédeszközök – Zavedení dynamického nákupního systému pro optické a optomechanické komponenty",
+     "lav": "Čehija – Optiskie palīglīdzekļi – Zavedení dynamického nákupního systému pro optické a optomechanické komponenty",
+     "swe": "Tjeckien – Synhjälpmedel – Zavedení dynamického nákupního systému pro optické a optomechanické komponenty",
+     "gle": "An tSeicia – Optical aids – Zavedení dynamického nákupního systému pro optické a optomechanické komponenty",
+     "ell": "Τσεχία – Οπτικά βοηθήματα – Zavedení dynamického nákupního systému pro optické a optomechanické komponenty",
+     "spa": "Chequia – Ayudas ópticas – Zavedení dynamického nákupního systému pro optické a optomechanické komponenty",
+     "est": "Tšehhi – Optilised abivahendid – Zavedení dynamického nákupního systému pro optické a optomechanické komponenty",
+     "nld": "Tsjechië – Optische hulpmiddelen – Zavedení dynamického nákupního systému pro optické a optomechanické komponenty",
+     "fin": "Tšekki – Optiset apuvälineet – Zavedení dynamického nákupního systému pro optické a optomechanické komponenty",
+     "pol": "Czechy – Pomoce optyczne – Zavedení dynamického nákupního systému pro optické a optomechanické komponenty",
+     "hrv": "Češka – Optička pomagala – Zavedení dynamického nákupního systému pro optické a optomechanické komponenty",
+     "ces": "Česko – Optické pomůcky – Zavedení dynamického nákupního systému pro optické a optomechanické komponenty",
+     "dan": "Tjekkiet – Optiske hjælpemidler – Zavedení dynamického nákupního systému pro optické a optomechanické komponenty",
+     "ron": "Cehia – Dispozitive de ajutor optic – Zavedení dynamického nákupního systému pro optické a optomechanické komponenty",
+     "por": "Chéquia – Próteses oculares – Zavedení dynamického nákupního systému pro optické a optomechanické komponenty",
+     "slk": "Česko – Optické pomôcky – Zavedení dynamického nákupního systému pro optické a optomechanické komponenty",
+     "fra": "Tchéquie – Dispositifs d'aide optique – Zavedení dynamického nákupního systému pro optické a optomechanické komponenty",
+     "mlt": "Iċ-Ċekja – Għajnuniet ottiċi – Zavedení dynamického nákupního systému pro optické a optomechanické komponenty",
+     "deu": "Tschechien – Optische Hilfen – Zavedení dynamického nákupního systému pro optické a optomechanické komponenty",
+     "lit": "Čekija – Optinės pagalbinės priemonės – Zavedení dynamického nákupního systému pro optické a optomechanické komponenty",
+     "ita": "Cechia – Ausili ottici – Zavedení dynamického nákupního systému pro optické a optomechanické komponenty",
+     "bul": "Чехия – Помощни оптически средства – Zavedení dynamického nákupního systému pro optické a optomechanické komponenty",
+     "slv": "Češka – Optična pomagala – Zavedení dynamického nákupního systému pro optické a optomechanické komponenty",
+     "eng": "Czechia – Optical aids – Zavedení dynamického nákupního systému pro optické a optomechanické komponenty"
+    },
+    "links": {
+     "xml": "https://ted.europa.eu/en/notice/741747-2026/xml",
+     "html": "https://ted.europa.eu/en/notice/741747-2026/html"
+    }
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-ted-741747-2026",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "Czechia – Optical aids – Zavedení dynamického nákupního systému pro optické a optomechanické komponenty",
+    "description": "Optická zrcadla a optické filtry jsou přesné optické elementy vyrobené z vysoce kvalitních skel s co nejvyšší kvalitou minimálně jednoho povrchu, na kterém jsou naneseny kovové či dielektrické vrstvy sloužící ke zvýšení odrazivosti či propustnosti povrchu pro daný rozsah vlnových délek světla. Plochy optické kvality mohou být rovinné, konkávní či konvexní. Filtrování vlnových délek může být selektivní na průchod či na odraz, případně vyladěné pro průchod jedné vlnové délky a odraz jiné.",
+    "buyer": {
+     "name": "Ústav přístrojové techniky AV ČR, v. v. i.",
+     "country": "CZ"
+    },
+    "country": "CZ",
+    "procurement_method": "oth-single",
+    "main_category": "supplies",
+    "value": {
+     "amount": "1976146.00",
+     "currency": "CZK"
+    },
+    "published_at": "2026-10-27T00:00:00+01:00",
+    "updated_at": "2026-10-26T00:00:00+01:00",
+    "tender_end": null,
+    "classifications": [
+     {
+      "scheme": "CPV",
+      "id": "38624000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "38640000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "38621000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "38519200"
+     },
+     {
+      "scheme": "CPV",
+      "id": "38641000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "38519620"
+     },
+     {
+      "scheme": "CPV",
+      "id": "38519610"
+     },
+     {
+      "scheme": "CPV",
+      "id": "38433300"
+     },
+     {
+      "scheme": "CPV",
+      "id": "38622000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "38623000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "38620000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "38636000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "38630000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "30191200"
+     },
+     {
+      "scheme": "CPV",
+      "id": "38635000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "32561000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "32560000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "42671100"
+     },
+     {
+      "scheme": "CPV",
+      "id": "44500000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "38519650"
+     },
+     {
+      "scheme": "CPV",
+      "id": "18143000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "33735100"
+     },
+     {
+      "scheme": "CPV",
+      "id": "35113400"
+     },
+     {
+      "scheme": "CPV",
+      "id": "39522120"
+     },
+     {
+      "scheme": "CPV",
+      "id": "30194900"
+     },
+     {
+      "scheme": "CPV",
+      "id": "38300000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "38519100"
+     },
+     {
+      "scheme": "CPV",
+      "id": "38636100"
+     }
+    ],
+    "url": "https://ted.europa.eu/en/notice/741747-2026/html"
+   },
+   "awards": [
+    {
+     "award_id": "741747-2026-awarded",
+     "title": null,
+     "status": "active",
+     "date": "2026-10-27T00:00:00+01:00",
+     "value": null,
+     "suppliers": [
+      {
+       "name": "O"
+      },
+      {
+       "name": "p"
+      },
+      {
+       "name": "t"
+      },
+      {
+       "name": "i"
+      },
+      {
+       "name": "X"
+      },
+      {
+       "name": "s"
+      },
+      {
+       "name": ","
+      },
+      null,
+      {
+       "name": "."
+      },
+      {
+       "name": "r"
+      },
+      {
+       "name": "o"
+      }
+     ]
+    }
+   ],
+   "contracts": []
+  },
+  {
+   "external_id": "741774-2026",
+   "content_hash": "17bccc0c7eb1ddf5abcb697375da86eec917263cdcf0da98e0aae5a450aac9f4",
+   "fetched_at": "2026-11-03T17:27:00+00:00",
+   "source_url": "https://ted.europa.eu/en/notice/741774-2026/html",
+   "publisher": "Publications Office of the European Union (TED)",
+   "published_at": "2026-10-27T00:00:00+01:00",
+   "source_updated_at": "2026-10-26T00:00:00+01:00",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "notice-identifier": "852eafe7-8c49-4be4-b2c5-011135caa828",
+    "notice-type": "cn-standard",
+    "publication-number": "741774-2026",
+    "legal-basis": [
+     "32009L0081"
+    ],
+    "dispatch-date": "2026-10-26+01:00",
+    "total-value-cur": [
+     "EUR"
+    ],
+    "buyer-country": [
+     "FRA"
+    ],
+    "total-value": 1800000,
+    "description-lot": {
+     "fra": [
+      "Gilet pare-balles port discret et housse zone équatoriale",
+      "Gilet pare-balles port discret/apparent complet + Housse à port discret et apparent"
+     ]
+    },
+    "procedure-type": "restricted",
+    "classification-cpv": [
+     "35815100",
+     "35815100",
+     "35815100"
+    ],
+    "contract-nature": [
+     "supplies",
+     "supplies",
+     "supplies"
+    ],
+    "buyer-name": {
+     "fra": [
+      "PFC RBT"
+     ]
+    },
+    "publication-date": "2026-10-27+01:00",
+    "notice-title": {
+     "hun": "Franciaország – Golyóálló mellény – FABRICATION DE GILETS PARE-BALLES A PORT DISCRET ET A PORT APPARENT",
+     "lav": "Francija – Ložu necaurlaidīgās vestes – FABRICATION DE GILETS PARE-BALLES A PORT DISCRET ET A PORT APPARENT",
+     "swe": "Frankrike – Skottsäkra västar – FABRICATION DE GILETS PARE-BALLES A PORT DISCRET ET A PORT APPARENT",
+     "gle": "An Fhrainc – Bullet-proof vests – FABRICATION DE GILETS PARE-BALLES A PORT DISCRET ET A PORT APPARENT",
+     "ell": "Γαλλία – Αλεξίσφαιρα γιλέκα – FABRICATION DE GILETS PARE-BALLES A PORT DISCRET ET A PORT APPARENT",
+     "spa": "Francia – Chalecos antibalas – FABRICATION DE GILETS PARE-BALLES A PORT DISCRET ET A PORT APPARENT",
+     "est": "Prantsusmaa – Kuulikindlad vestid – FABRICATION DE GILETS PARE-BALLES A PORT DISCRET ET A PORT APPARENT",
+     "nld": "Frankrijk – Kogelvrije vesten – FABRICATION DE GILETS PARE-BALLES A PORT DISCRET ET A PORT APPARENT",
+     "fin": "Ranska – Luodinkestävät liivit – FABRICATION DE GILETS PARE-BALLES A PORT DISCRET ET A PORT APPARENT",
+     "pol": "Francja – Kamizelki kuloodporne – FABRICATION DE GILETS PARE-BALLES A PORT DISCRET ET A PORT APPARENT",
+     "hrv": "Francuska – Neprobojni prsluci – FABRICATION DE GILETS PARE-BALLES A PORT DISCRET ET A PORT APPARENT",
+     "ces": "Francie – Neprůstřelné vesty – FABRICATION DE GILETS PARE-BALLES A PORT DISCRET ET A PORT APPARENT",
+     "dan": "Frankrig – Skudsikre veste – FABRICATION DE GILETS PARE-BALLES A PORT DISCRET ET A PORT APPARENT",
+     "ron": "Franţa – Veste antiglonţ – FABRICATION DE GILETS PARE-BALLES A PORT DISCRET ET A PORT APPARENT",
+     "por": "França – Coletes à prova de bala – FABRICATION DE GILETS PARE-BALLES A PORT DISCRET ET A PORT APPARENT",
+     "slk": "Francúzsko – Nepriestrelné vesty – FABRICATION DE GILETS PARE-BALLES A PORT DISCRET ET A PORT APPARENT",
+     "fra": "France – Gilets pare-balles – FABRICATION DE GILETS PARE-BALLES A PORT DISCRET ET A PORT APPARENT",
+     "mlt": "Franza – Flokkijiet ta' kontra l-bullets – FABRICATION DE GILETS PARE-BALLES A PORT DISCRET ET A PORT APPARENT",
+     "deu": "Frankreich – Kugelsichere Westen – FABRICATION DE GILETS PARE-BALLES A PORT DISCRET ET A PORT APPARENT",
+     "lit": "Prancūzija – Neperšaunamosios liemenės – FABRICATION DE GILETS PARE-BALLES A PORT DISCRET ET A PORT APPARENT",
+     "ita": "Francia – Giubbotti antiproiettile – FABRICATION DE GILETS PARE-BALLES A PORT DISCRET ET A PORT APPARENT",
+     "bul": "Фpaнция – Противокуршумни жилетки – FABRICATION DE GILETS PARE-BALLES A PORT DISCRET ET A PORT APPARENT",
+     "slv": "Francija – Neprebojni telovniki – FABRICATION DE GILETS PARE-BALLES A PORT DISCRET ET A PORT APPARENT",
+     "eng": "France – Bullet-proof vests – FABRICATION DE GILETS PARE-BALLES A PORT DISCRET ET A PORT APPARENT"
+    },
+    "links": {
+     "xml": "https://ted.europa.eu/en/notice/741774-2026/xml",
+     "html": "https://ted.europa.eu/en/notice/741774-2026/html"
+    }
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-ted-741774-2026",
+    "ocid_native": false,
+    "stage": "tender",
+    "title": "France – Bullet-proof vests – FABRICATION DE GILETS PARE-BALLES A PORT DISCRET ET A PORT APPARENT",
+    "description": "Gilet pare-balles port discret et housse zone équatoriale",
+    "buyer": {
+     "name": "PFC RBT",
+     "country": "FR"
+    },
+    "country": "FR",
+    "procurement_method": "restricted",
+    "main_category": "supplies",
+    "value": {
+     "amount": "1800000.00",
+     "currency": "EUR"
+    },
+    "published_at": "2026-10-27T00:00:00+01:00",
+    "updated_at": "2026-10-26T00:00:00+01:00",
+    "tender_end": null,
+    "classifications": [
+     {
+      "scheme": "CPV",
+      "id": "35815100"
+     }
+    ],
+    "url": "https://ted.europa.eu/en/notice/741774-2026/html"
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "741853-2026",
+   "content_hash": "ffd2d66dc56feacd1c58af4cd4d6cb7aea33d6423045e7ae411f078a343b5fdd",
+   "fetched_at": "2026-11-03T17:27:00+00:00",
+   "source_url": "https://ted.europa.eu/en/notice/741853-2026/html",
+   "publisher": "Publications Office of the European Union (TED)",
+   "published_at": "2026-10-27T00:00:00+01:00",
+   "source_updated_at": "2026-10-26T00:00:00+01:00",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "notice-identifier": "ccb82f81-6d92-4fd4-b0ca-9ce9fda5dddf",
+    "notice-type": "can-standard",
+    "publication-number": "741853-2026",
+    "winner-country": [
+     "DEU"
+    ],
+    "legal-basis": [
+     "32014L0024"
+    ],
+    "dispatch-date": "2026-10-26+01:00",
+    "total-value-cur": [
+     "EUR"
+    ],
+    "buyer-country": [
+     "DEU"
+    ],
+    "total-value": 474256,
+    "description-lot": {
+     "deu": [
+      "10 m^2 Doppelkammerzwinger inklusive Schutzhütte und 12m^2 Doppelkammerzwinger inklusive Schutzhütte. Abrufbar bis zu einem Höchstvolumen von 237.128,00€ Netto, ohne Abnahmeverpflichtung. Das Höchstvolumen entspricht dem geschätzten Gesamtbedarfsvolumen.",
+      "10 m^2 Doppelkammerzwinger inklusive Schutzhütte und 12m^2 Doppelkammerzwinger inklusive Schutzhütte. Abrufbar bis zu einem Höchstvolumen von 237.128,00€ Netto, ohne Abnahmeverpflichtung. Das Höchstvolumen entspricht dem geschätzten Gesamtbedarfsvolumen."
+     ]
+    },
+    "procedure-type": "open",
+    "classification-cpv": [
+     "35000000",
+     "98380000",
+     "35000000",
+     "35000000"
+    ],
+    "contract-nature": [
+     "supplies",
+     "supplies",
+     "supplies"
+    ],
+    "buyer-name": {
+     "deu": [
+      "Bundesrepublik Deutschland, vertreten durch das Bundesministerium des Innern, vertreten durch das Beschaffungsamt des BMI"
+     ]
+    },
+    "publication-date": "2026-10-27+01:00",
+    "winner-name": {
+     "deu": [
+      "BROMET-Bronnhuber GmbH",
+      "BROMET-Bronnhuber GmbH"
+     ]
+    },
+    "notice-title": {
+     "hun": "Németország – Biztonsági, tűzoltó, rendőrségi és védelmi felszerelések – Doppelkammerzwinger für Diensthunde",
+     "lav": "Vācija – Drošības, ugunsdzēsības, policijas un aizsardzības aprīkojums – Doppelkammerzwinger für Diensthunde",
+     "swe": "Tyskland – Säkerhets-, brandbekämpnings-, polis- och försvarsutrustning – Doppelkammerzwinger für Diensthunde",
+     "gle": "An Ghearmáin – Security, fire-fighting, police and defence equipment – Doppelkammerzwinger für Diensthunde",
+     "ell": "Γερμανία – Εξοπλισμός ασφαλείας και πυρόσβεσης, αστυνομικός και αμυντικός εξοπλισμός – Doppelkammerzwinger für Diensthunde",
+     "spa": "Alemania – Equipo de seguridad, extinción de incendios, policía y defensa – Doppelkammerzwinger für Diensthunde",
+     "est": "Saksamaa – Turva-, tuletõrje-, politsei- ja kaitseseadmed – Doppelkammerzwinger für Diensthunde",
+     "nld": "Duitsland – Uitrusting voor veiligheid, brandweer, politie en leger – Doppelkammerzwinger für Diensthunde",
+     "fin": "Saksa – Turva-, palontorjunta-, poliisi- ja maanpuolustusvälineet – Doppelkammerzwinger für Diensthunde",
+     "pol": "Niemcy – Sprzęt bezpieczeństwa, gaśniczy, policyjny i obronny – Doppelkammerzwinger für Diensthunde",
+     "hrv": "Njemačka – Sigurnosna, vatrogasna policijska i obrambena oprema – Doppelkammerzwinger für Diensthunde",
+     "ces": "Německo – Bezpečnostní, hasičské, policejní a ochranné vybavení – Doppelkammerzwinger für Diensthunde",
+     "dan": "Tyskland – Sikkerheds-, brandbekæmpelses, politi- og forsvarsudstyr – Doppelkammerzwinger für Diensthunde",
+     "ron": "Germania – Echipament de securitate, de luptă împotriva incendiilor, de poliţie şi de apărare – Doppelkammerzwinger für Diensthunde",
+     "por": "Alemanha – Equipamento de segurança, combate a incêndios, polícia e defesa – Doppelkammerzwinger für Diensthunde",
+     "slk": "Nemecko – Bezpečnostné, hasičské, policajné a ochranné vybavenie – Doppelkammerzwinger für Diensthunde",
+     "fra": "Allemagne – Équipement de sécurité, de lutte contre l'incendie, de police et de défense – Doppelkammerzwinger für Diensthunde",
+     "mlt": "Il-Ġermanja – Tagħmir għas-sigurtà, tifi tan-nar, pulizija u difiża – Doppelkammerzwinger für Diensthunde",
+     "deu": "Deutschland – Ausrüstung für Sicherheitszwecke, Brandbekämpfung, Polizei und Verteidigung – Doppelkammerzwinger für Diensthunde",
+     "lit": "Vokietija – Apsaugos, gaisrų gesinimo, policijos ir gynybos įrenginiai – Doppelkammerzwinger für Diensthunde",
+     "ita": "Germania – Attrezzature di sicurezza, antincendio, per la polizia e di difesa – Doppelkammerzwinger für Diensthunde",
+     "bul": "Гepмaния – Оборудване за безопасност, противопожарно, полицейско и отбранително оборудване – Doppelkammerzwinger für Diensthunde",
+     "slv": "Nemčija – Varnostna, gasilska, policijska in obrambna oprema – Doppelkammerzwinger für Diensthunde",
+     "eng": "Germany – Security, fire-fighting, police and defence equipment – Doppelkammerzwinger für Diensthunde"
+    },
+    "links": {
+     "xml": "https://ted.europa.eu/en/notice/741853-2026/xml",
+     "html": "https://ted.europa.eu/en/notice/741853-2026/html"
+    }
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-ted-741853-2026",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "Germany – Security, fire-fighting, police and defence equipment – Doppelkammerzwinger für Diensthunde",
+    "description": "10 m^2 Doppelkammerzwinger inklusive Schutzhütte und 12m^2 Doppelkammerzwinger inklusive Schutzhütte. Abrufbar bis zu einem Höchstvolumen von 237.128,00€ Netto, ohne Abnahmeverpflichtung. Das Höchstvolumen entspricht dem geschätzten Gesamtbedarfsvolumen.",
+    "buyer": {
+     "name": "Bundesrepublik Deutschland, vertreten durch das Bundesministerium des Innern, vertreten durch das Beschaffungsamt des BMI",
+     "country": "DE"
+    },
+    "country": "DE",
+    "procurement_method": "open",
+    "main_category": "supplies",
+    "value": {
+     "amount": "474256.00",
+     "currency": "EUR"
+    },
+    "published_at": "2026-10-27T00:00:00+01:00",
+    "updated_at": "2026-10-26T00:00:00+01:00",
+    "tender_end": null,
+    "classifications": [
+     {
+      "scheme": "CPV",
+      "id": "35000000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "98380000"
+     }
+    ],
+    "url": "https://ted.europa.eu/en/notice/741853-2026/html"
+   },
+   "awards": [
+    {
+     "award_id": "741853-2026-awarded",
+     "title": null,
+     "status": "active",
+     "date": "2026-10-27T00:00:00+01:00",
+     "value": null,
+     "suppliers": [
+      {
+       "name": "B"
+      },
+      {
+       "name": "R"
+      },
+      {
+       "name": "O"
+      },
+      {
+       "name": "M"
+      },
+      {
+       "name": "E"
+      },
+      {
+       "name": "T"
+      },
+      {
+       "name": "-"
+      },
+      {
+       "name": "r"
+      },
+      {
+       "name": "o"
+      },
+      {
+       "name": "n"
+      },
+      {
+       "name": "h"
+      },
+      {
+       "name": "u"
+      },
+      {
+       "name": "b"
+      },
+      {
+       "name": "e"
+      },
+      null,
+      {
+       "name": "G"
+      },
+      {
+       "name": "m"
+      },
+      {
+       "name": "H"
+      }
+     ]
+    }
+   ],
+   "contracts": []
+  },
+  {
+   "external_id": "741854-2026",
+   "content_hash": "91081b2c9456c9fa9a48d9e410a1fbaff5f187aef95505f880a47c63ea295def",
+   "fetched_at": "2026-11-03T17:27:00+00:00",
+   "source_url": "https://ted.europa.eu/en/notice/741854-2026/html",
+   "publisher": "Publications Office of the European Union (TED)",
+   "published_at": "2026-10-27T00:00:00+01:00",
+   "source_updated_at": "2026-10-26T00:00:00+00:00",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "notice-identifier": "c52758f4-0578-4539-aa25-2bcd86acbf47",
+    "notice-type": "can-standard",
+    "publication-number": "741854-2026",
+    "winner-country": [
+     "POL",
+     "POL"
+    ],
+    "legal-basis": [
+     "32014L0024"
+    ],
+    "dispatch-date": "2026-10-26Z",
+    "total-value-cur": [
+     "PLN"
+    ],
+    "buyer-country": [
+     "POL"
+    ],
+    "total-value": 195800,
+    "description-lot": {
+     "pol": [
+      "Część I: Dostawa agregatu prądotwórczego o mocy znamionowej min. 22kVA – 1 sztuka",
+      "Część II: Dostawa agregatu prądotwórczego na przyczepie o mocy znamionowej min. 20kVA z gniazdami podłączeniowymi, zgodny z normą emisji spalin STAGE V - 1 sztuka",
+      "Część III: Dostawa masztu oświetleniowego LED z własnym zasilaniem na przyczepie – 1 sztuka",
+      "Część IV: Dostawa przyczepki ratowniczej terenowej – 1 sztuka",
+      "Część V: Dostawa namiotu z systemem szybkiego rozkładania i składania z wyposażeniem - 1 sztuka",
+      "Część VI: Dostawa cystern do przewozu wody pitnej o poj. 500 litrów na przyczepie o maksymalnym DMC 750 kg z burtami – 3 sztuki"
+     ]
+    },
+    "procedure-type": "open",
+    "classification-cpv": [
+     "35110000",
+     "31122000",
+     "31122000",
+     "31527260",
+     "34223300",
+     "39522530",
+     "34144212",
+     "35110000",
+     "35110000"
+    ],
+    "contract-nature": [
+     "supplies",
+     "supplies",
+     "supplies",
+     "supplies",
+     "supplies",
+     "supplies",
+     "supplies"
+    ],
+    "buyer-name": {
+     "pol": [
+      "Gmina Bogatynia"
+     ]
+    },
+    "publication-date": "2026-10-27+01:00",
+    "winner-name": {
+     "pol": [
+      "KADIMEX SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+      "MTS PROJECT SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ"
+     ]
+    },
+    "notice-title": {
+     "hun": "Lengyelország – Tűzoltó, mentő- és biztonsági felszerelések – Dostawa sprzętu niezbędnego do realizacji zadań związanych z ochroną ludności i obroną cywilną",
+     "lav": "Polija – Ugunsdzēsības, glābšanas un drošības aprīkojums – Dostawa sprzętu niezbędnego do realizacji zadań związanych z ochroną ludności i obroną cywilną",
+     "swe": "Polen – Brandbekämpnings-, nöd- och säkerhetsutrustning – Dostawa sprzętu niezbędnego do realizacji zadań związanych z ochroną ludności i obroną cywilną",
+     "gle": "An Pholainn – Firefighting, rescue and safety equipment – Dostawa sprzętu niezbędnego do realizacji zadań związanych z ochroną ludności i obroną cywilną",
+     "ell": "Πολωνία – Εξοπλισμός πυρόσβεσης, διάσωσης και ασφαλείας – Dostawa sprzętu niezbędnego do realizacji zadań związanych z ochroną ludności i obroną cywilną",
+     "spa": "Polonia – Equipo de extinción de incendios, salvamento y seguridad – Dostawa sprzętu niezbędnego do realizacji zadań związanych z ochroną ludności i obroną cywilną",
+     "est": "Poola – Tuletõrje-, pääste- ja turvaseadmed – Dostawa sprzętu niezbędnego do realizacji zadań związanych z ochroną ludności i obroną cywilną",
+     "nld": "Polen – Uitrusting voor brandbestrijding, redding en veiligheid – Dostawa sprzętu niezbędnego do realizacji zadań związanych z ochroną ludności i obroną cywilną",
+     "fin": "Puola – Palontorjunta-, pelastus- ja turvavälineet – Dostawa sprzętu niezbędnego do realizacji zadań związanych z ochroną ludności i obroną cywilną",
+     "pol": "Polska – Sprzęt gaśniczy, ratowniczy i bezpieczeństwa – Dostawa sprzętu niezbędnego do realizacji zadań związanych z ochroną ludności i obroną cywilną",
+     "hrv": "Poljska – Vatrogasna oprema, oprema za spašavanje i sigurnosna oprema – Dostawa sprzętu niezbędnego do realizacji zadań związanych z ochroną ludności i obroną cywilną",
+     "ces": "Polsko – Hasičské, záchranářské a bezpečnostní vybavení – Dostawa sprzętu niezbędnego do realizacji zadań związanych z ochroną ludności i obroną cywilną",
+     "dan": "Polen – Brandbekæmpelses-, rednings- og sikkerhedsudstyr – Dostawa sprzętu niezbędnego do realizacji zadań związanych z ochroną ludności i obroną cywilną",
+     "ron": "Polonia – Echipament de luptă împotriva incendiilor, de salvare şi de siguranţă – Dostawa sprzętu niezbędnego do realizacji zadań związanych z ochroną ludności i obroną cywilną",
+     "por": "Polónia – Equipamento de combate a incêndios, socorro e segurança – Dostawa sprzętu niezbędnego do realizacji zadań związanych z ochroną ludności i obroną cywilną",
+     "slk": "Poľsko – Hasičské, záchranárske a bezpečnostné vybavenie – Dostawa sprzętu niezbędnego do realizacji zadań związanych z ochroną ludności i obroną cywilną",
+     "fra": "Pologne – Équipement de lutte contre l'incendie, de sauvetage et de sécurité – Dostawa sprzętu niezbędnego do realizacji zadań związanych z ochroną ludności i obroną cywilną",
+     "mlt": "Il-Polonja – Tagħmir għat-tifi tan-nar, salavataġġ u sigurtà – Dostawa sprzętu niezbędnego do realizacji zadań związanych z ochroną ludności i obroną cywilną",
+     "deu": "Polen – Ausrüstung für Brandbekämpfung, Rettung und Sicherheit – Dostawa sprzętu niezbędnego do realizacji zadań związanych z ochroną ludności i obroną cywilną",
+     "lit": "Lenkija – Gaisrų gesinimo, gelbėjimo ir saugos įrenginiai – Dostawa sprzętu niezbędnego do realizacji zadań związanych z ochroną ludności i obroną cywilną",
+     "ita": "Polonia – Attrezzature antincendio, di salvataggio e di sicurezza – Dostawa sprzętu niezbędnego do realizacji zadań związanych z ochroną ludności i obroną cywilną",
+     "bul": "Полша – Противопожарно, спасително оборудване и оборудване за безопасност – Dostawa sprzętu niezbędnego do realizacji zadań związanych z ochroną ludności i obroną cywilną",
+     "slv": "Poljska – Gasilska, reševalna in varnostna oprema – Dostawa sprzętu niezbędnego do realizacji zadań związanych z ochroną ludności i obroną cywilną",
+     "eng": "Poland – Firefighting, rescue and safety equipment – Dostawa sprzętu niezbędnego do realizacji zadań związanych z ochroną ludności i obroną cywilną"
+    },
+    "links": {
+     "xml": "https://ted.europa.eu/en/notice/741854-2026/xml",
+     "html": "https://ted.europa.eu/en/notice/741854-2026/html"
+    }
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-ted-741854-2026",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "Poland – Firefighting, rescue and safety equipment – Dostawa sprzętu niezbędnego do realizacji zadań związanych z ochroną ludności i obroną cywilną",
+    "description": "Część I: Dostawa agregatu prądotwórczego o mocy znamionowej min. 22kVA – 1 sztuka",
+    "buyer": {
+     "name": "Gmina Bogatynia",
+     "country": "PL"
+    },
+    "country": "PL",
+    "procurement_method": "open",
+    "main_category": "supplies",
+    "value": {
+     "amount": "195800.00",
+     "currency": "PLN"
+    },
+    "published_at": "2026-10-27T00:00:00+01:00",
+    "updated_at": "2026-10-26T00:00:00+00:00",
+    "tender_end": null,
+    "classifications": [
+     {
+      "scheme": "CPV",
+      "id": "35110000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "31122000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "31527260"
+     },
+     {
+      "scheme": "CPV",
+      "id": "34223300"
+     },
+     {
+      "scheme": "CPV",
+      "id": "39522530"
+     },
+     {
+      "scheme": "CPV",
+      "id": "34144212"
+     }
+    ],
+    "url": "https://ted.europa.eu/en/notice/741854-2026/html"
+   },
+   "awards": [
+    {
+     "award_id": "741854-2026-awarded",
+     "title": null,
+     "status": "active",
+     "date": "2026-10-27T00:00:00+01:00",
+     "value": null,
+     "suppliers": [
+      {
+       "name": "K"
+      },
+      {
+       "name": "A"
+      },
+      {
+       "name": "D"
+      },
+      {
+       "name": "I"
+      },
+      {
+       "name": "M"
+      },
+      {
+       "name": "E"
+      },
+      {
+       "name": "X"
+      },
+      null,
+      {
+       "name": "S"
+      },
+      {
+       "name": "P"
+      },
+      {
+       "name": "Ó"
+      },
+      {
+       "name": "Ł"
+      },
+      {
+       "name": "Z"
+      },
+      {
+       "name": "O"
+      },
+      {
+       "name": "G"
+      },
+      {
+       "name": "R"
+      },
+      {
+       "name": "N"
+      },
+      {
+       "name": "C"
+      },
+      {
+       "name": "Ą"
+      },
+      {
+       "name": "W"
+      },
+      {
+       "name": "L"
+      },
+      {
+       "name": "Ś"
+      }
+     ]
+    }
+   ],
+   "contracts": []
+  },
+  {
+   "external_id": "741890-2026",
+   "content_hash": "3f0eed6fc65b4b1a8b0dbe7e6698a1bd4010fa54da03ebd92c89619d57e18a6b",
+   "fetched_at": "2026-11-03T17:27:00+00:00",
+   "source_url": "https://ted.europa.eu/en/notice/741890-2026/html",
+   "publisher": "Publications Office of the European Union (TED)",
+   "published_at": "2026-10-27T00:00:00+01:00",
+   "source_updated_at": "2026-10-23T00:00:00+02:00",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "notice-identifier": "fa0fbfcf-b22a-4235-9377-363c1aa43859",
+    "deadline-receipt-tender-date-lot": [
+     "2026-11-24+02:00"
+    ],
+    "notice-type": "cn-standard",
+    "publication-number": "741890-2026",
+    "legal-basis": [
+     "32014L0024"
+    ],
+    "dispatch-date": "2026-10-23+02:00",
+    "buyer-country": [
+     "FRA"
+    ],
+    "description-lot": {
+     "fra": [
+      "Maintenance et renouvellement des équipements de détection intrusion - Années 2027-2030."
+     ]
+    },
+    "procedure-type": "open",
+    "classification-cpv": [
+     "50610000",
+     "51220000",
+     "35120000",
+     "50610000"
+    ],
+    "contract-nature": [
+     "services",
+     "services"
+    ],
+    "buyer-name": {
+     "fra": [
+      "Commune de Talence"
+     ]
+    },
+    "publication-date": "2026-10-27+01:00",
+    "notice-title": {
+     "hun": "Franciaország – Biztonsági eszközökkel kapcsolatos javítási és karbantartási szolgáltatások – Maintenance et renouvellement des équipements de détection intrusion - Années 2027-2030.",
+     "lav": "Francija – Drošības iekārtu remonta un tehniskās apkopes pakalpojumi – Maintenance et renouvellement des équipements de détection intrusion - Années 2027-2030.",
+     "swe": "Frankrike – Reparation och underhåll av säkerhetsutrustning – Maintenance et renouvellement des équipements de détection intrusion - Années 2027-2030.",
+     "gle": "An Fhrainc – Repair and maintenance services of security equipment – Maintenance et renouvellement des équipements de détection intrusion - Années 2027-2030.",
+     "ell": "Γαλλία – Υπηρεσίες επισκευής και συντήρησης εξοπλισμού ασφαλείας – Maintenance et renouvellement des équipements de détection intrusion - Années 2027-2030.",
+     "spa": "Francia – Servicios de reparación y mantenimiento de equipos de seguridad – Maintenance et renouvellement des équipements de détection intrusion - Années 2027-2030.",
+     "est": "Prantsusmaa – Turvaseadmete remondi- ja hooldusteenused – Maintenance et renouvellement des équipements de détection intrusion - Années 2027-2030.",
+     "nld": "Frankrijk – Reparatie- en onderhoudsdiensten voor beveiligingsuitrusting – Maintenance et renouvellement des équipements de détection intrusion - Années 2027-2030.",
+     "fin": "Ranska – Turvalaitteiden ja -varusteiden korjaus ja huolto – Maintenance et renouvellement des équipements de détection intrusion - Années 2027-2030.",
+     "pol": "Francja – Usługi w zakresie napraw i konserwacji sprzętu bezpieczeństwa – Maintenance et renouvellement des équipements de détection intrusion - Années 2027-2030.",
+     "hrv": "Francuska – Usluge popravaka i održavanja sigurnosne opreme – Maintenance et renouvellement des équipements de détection intrusion - Années 2027-2030.",
+     "ces": "Francie – Opravy a údržba bezpečnostního zařízení – Maintenance et renouvellement des équipements de détection intrusion - Années 2027-2030.",
+     "dan": "Frankrig – Reparation og vedligeholdelse af sikkerhedsmateriel – Maintenance et renouvellement des équipements de détection intrusion - Années 2027-2030.",
+     "ron": "Franţa – Servicii de reparare şi de întreţinere a echipamentului de securitate – Maintenance et renouvellement des équipements de détection intrusion - Années 2027-2030.",
+     "por": "França – Serviços de reparação e manutenção de equipamento de segurança – Maintenance et renouvellement des équipements de détection intrusion - Années 2027-2030.",
+     "slk": "Francúzsko – Služby na opravu a údržbu bezpečnostných zariadení – Maintenance et renouvellement des équipements de détection intrusion - Années 2027-2030.",
+     "fra": "France – Services de réparation et d'entretien du matériel de sécurité – Maintenance et renouvellement des équipements de détection intrusion - Années 2027-2030.",
+     "mlt": "Franza – Servizzi ta' tiswija u manutenzjoni ta' materjali ta' sigurtà – Maintenance et renouvellement des équipements de détection intrusion - Années 2027-2030.",
+     "deu": "Frankreich – Reparatur und Wartung von Sicherheitsausrüstung – Maintenance et renouvellement des équipements de détection intrusion - Années 2027-2030.",
+     "lit": "Prancūzija – Apsaugos įrangos remonto ir priežiūros paslaugos – Maintenance et renouvellement des équipements de détection intrusion - Années 2027-2030.",
+     "ita": "Francia – Servizi di riparazione e manutenzione di attrezzature di sicurezza – Maintenance et renouvellement des équipements de détection intrusion - Années 2027-2030.",
+     "bul": "Фpaнция – Услуги по ремонт и поддържане на съоръжението за безопасност – Maintenance et renouvellement des équipements de détection intrusion - Années 2027-2030.",
+     "slv": "Francija – Storitve popravila in vzdrževanja varnostne opreme – Maintenance et renouvellement des équipements de détection intrusion - Années 2027-2030.",
+     "eng": "France – Repair and maintenance services of security equipment – Maintenance et renouvellement des équipements de détection intrusion - Années 2027-2030."
+    },
+    "links": {
+     "xml": "https://ted.europa.eu/en/notice/741890-2026/xml",
+     "html": "https://ted.europa.eu/en/notice/741890-2026/html"
+    }
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-ted-741890-2026",
+    "ocid_native": false,
+    "stage": "tender",
+    "title": "France – Repair and maintenance services of security equipment – Maintenance et renouvellement des équipements de détection intrusion - Années 2027-2030.",
+    "description": "Maintenance et renouvellement des équipements de détection intrusion - Années 2027-2030.",
+    "buyer": {
+     "name": "Commune de Talence",
+     "country": "FR"
+    },
+    "country": "FR",
+    "procurement_method": "open",
+    "main_category": "services",
+    "value": null,
+    "published_at": "2026-10-27T00:00:00+01:00",
+    "updated_at": "2026-10-23T00:00:00+02:00",
+    "tender_end": "2026-11-24T00:00:00+02:00",
+    "classifications": [
+     {
+      "scheme": "CPV",
+      "id": "50610000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "51220000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "35120000"
+     }
+    ],
+    "url": "https://ted.europa.eu/en/notice/741890-2026/html"
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "741975-2026",
+   "content_hash": "042ce76e7fa323e3e5b4953f9b7a8e07cf7aba8c2092cf25d4faa7b48df031e4",
+   "fetched_at": "2026-11-03T17:27:00+00:00",
+   "source_url": "https://ted.europa.eu/en/notice/741975-2026/html",
+   "publisher": "Publications Office of the European Union (TED)",
+   "published_at": "2026-10-27T00:00:00+01:00",
+   "source_updated_at": "2026-10-26T00:00:00+01:00",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "notice-identifier": "b7fb7527-a752-449d-a4af-f02e6a61bef6",
+    "notice-type": "can-standard",
+    "publication-number": "741975-2026",
+    "winner-country": [
+     "CZE"
+    ],
+    "legal-basis": [
+     "32014L0024"
+    ],
+    "dispatch-date": "2026-10-26+01:00",
+    "total-value-cur": [
+     "CZK"
+    ],
+    "buyer-country": [
+     "CZE"
+    ],
+    "total-value": 5544,
+    "description-lot": {
+     "ces": [
+      "Předmětem zadávacího řízení je uzavření rámcové dohody na dodávky služebně pracovních stejnokrojů 15 PČR 2020. Podrobné informace viz zadávací dokumentace."
+     ]
+    },
+    "procedure-type": "open",
+    "classification-cpv": [
+     "35811200",
+     "35811200"
+    ],
+    "contract-nature": [
+     "supplies",
+     "supplies"
+    ],
+    "buyer-name": {
+     "ces": [
+      "Ministerstvo vnitra"
+     ]
+    },
+    "publication-date": "2026-10-27+01:00",
+    "winner-name": {
+     "ces": [
+      "VESTIMENTUM s.r.o."
+     ]
+    },
+    "notice-title": {
+     "hun": "Csehország – Rendőregyenruha – Rámcová dohoda na dodávky služebně pracovních stejnokrojů 15 PČR 2020",
+     "lav": "Čehija – Policistu formas tērpi – Rámcová dohoda na dodávky služebně pracovních stejnokrojů 15 PČR 2020",
+     "swe": "Tjeckien – Polisuniformer – Rámcová dohoda na dodávky služebně pracovních stejnokrojů 15 PČR 2020",
+     "gle": "An tSeicia – Police uniforms – Rámcová dohoda na dodávky služebně pracovních stejnokrojů 15 PČR 2020",
+     "ell": "Τσεχία – Στολές αστυνομικών – Rámcová dohoda na dodávky služebně pracovních stejnokrojů 15 PČR 2020",
+     "spa": "Chequia – Uniformes de policía – Rámcová dohoda na dodávky služebně pracovních stejnokrojů 15 PČR 2020",
+     "est": "Tšehhi – Politsei vormirõivad – Rámcová dohoda na dodávky služebně pracovních stejnokrojů 15 PČR 2020",
+     "nld": "Tsjechië – Politie-uniformen – Rámcová dohoda na dodávky služebně pracovních stejnokrojů 15 PČR 2020",
+     "fin": "Tšekki – Poliisien virkapuvut – Rámcová dohoda na dodávky služebně pracovních stejnokrojů 15 PČR 2020",
+     "pol": "Czechy – Mundury policyjne – Rámcová dohoda na dodávky služebně pracovních stejnokrojů 15 PČR 2020",
+     "hrv": "Češka – Policijske uniforme – Rámcová dohoda na dodávky služebně pracovních stejnokrojů 15 PČR 2020",
+     "ces": "Česko – Policejní uniformy – Rámcová dohoda na dodávky služebně pracovních stejnokrojů 15 PČR 2020",
+     "dan": "Tjekkiet – Uniformer til politiet – Rámcová dohoda na dodávky služebně pracovních stejnokrojů 15 PČR 2020",
+     "ron": "Cehia – Uniforme de poliţie – Rámcová dohoda na dodávky služebně pracovních stejnokrojů 15 PČR 2020",
+     "por": "Chéquia – Uniformes para a polícia – Rámcová dohoda na dodávky služebně pracovních stejnokrojů 15 PČR 2020",
+     "slk": "Česko – Policajné uniformy – Rámcová dohoda na dodávky služebně pracovních stejnokrojů 15 PČR 2020",
+     "fra": "Tchéquie – Uniformes de police – Rámcová dohoda na dodávky služebně pracovních stejnokrojů 15 PČR 2020",
+     "mlt": "Iċ-Ċekja – Uniforijiet tal-pulizija – Rámcová dohoda na dodávky služebně pracovních stejnokrojů 15 PČR 2020",
+     "deu": "Tschechien – Polizeiuniformen – Rámcová dohoda na dodávky služebně pracovních stejnokrojů 15 PČR 2020",
+     "lit": "Čekija – Policininkų uniformos – Rámcová dohoda na dodávky služebně pracovních stejnokrojů 15 PČR 2020",
+     "ita": "Cechia – Uniformi per la polizia – Rámcová dohoda na dodávky služebně pracovních stejnokrojů 15 PČR 2020",
+     "bul": "Чехия – Полицейски униформи – Rámcová dohoda na dodávky služebně pracovních stejnokrojů 15 PČR 2020",
+     "slv": "Češka – Policijske uniforme – Rámcová dohoda na dodávky služebně pracovních stejnokrojů 15 PČR 2020",
+     "eng": "Czechia – Police uniforms – Rámcová dohoda na dodávky služebně pracovních stejnokrojů 15 PČR 2020"
+    },
+    "links": {
+     "xml": "https://ted.europa.eu/en/notice/741975-2026/xml",
+     "html": "https://ted.europa.eu/en/notice/741975-2026/html"
+    }
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-ted-741975-2026",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "Czechia – Police uniforms – Rámcová dohoda na dodávky služebně pracovních stejnokrojů 15 PČR 2020",
+    "description": "Předmětem zadávacího řízení je uzavření rámcové dohody na dodávky služebně pracovních stejnokrojů 15 PČR 2020. Podrobné informace viz zadávací dokumentace.",
+    "buyer": {
+     "name": "Ministerstvo vnitra",
+     "country": "CZ"
+    },
+    "country": "CZ",
+    "procurement_method": "open",
+    "main_category": "supplies",
+    "value": {
+     "amount": "5544.00",
+     "currency": "CZK"
+    },
+    "published_at": "2026-10-27T00:00:00+01:00",
+    "updated_at": "2026-10-26T00:00:00+01:00",
+    "tender_end": null,
+    "classifications": [
+     {
+      "scheme": "CPV",
+      "id": "35811200"
+     }
+    ],
+    "url": "https://ted.europa.eu/en/notice/741975-2026/html"
+   },
+   "awards": [
+    {
+     "award_id": "741975-2026-awarded",
+     "title": null,
+     "status": "active",
+     "date": "2026-10-27T00:00:00+01:00",
+     "value": null,
+     "suppliers": [
+      {
+       "name": "V"
+      },
+      {
+       "name": "E"
+      },
+      {
+       "name": "S"
+      },
+      {
+       "name": "T"
+      },
+      {
+       "name": "I"
+      },
+      {
+       "name": "M"
+      },
+      {
+       "name": "N"
+      },
+      {
+       "name": "U"
+      },
+      null,
+      {
+       "name": "s"
+      },
+      {
+       "name": "."
+      },
+      {
+       "name": "r"
+      },
+      {
+       "name": "o"
+      }
+     ]
+    }
+   ],
+   "contracts": []
+  },
+  {
+   "external_id": "742032-2026",
+   "content_hash": "cad6d11e251de5c55faf2eac89de75ec8c761f864860adf75cd73bf8148e20ad",
+   "fetched_at": "2026-11-03T17:27:00+00:00",
+   "source_url": "https://ted.europa.eu/en/notice/742032-2026/html",
+   "publisher": "Publications Office of the European Union (TED)",
+   "published_at": "2026-10-27T00:00:00+01:00",
+   "source_updated_at": "2026-10-26T00:00:00+00:00",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "notice-identifier": "7806901a-0442-477d-963a-3da513660e90",
+    "deadline-receipt-tender-date-lot": [
+     "2026-11-26+01:00",
+     "2026-11-26+01:00",
+     "2026-11-26+01:00",
+     "2026-11-26+01:00",
+     "2026-11-26+01:00",
+     "2026-11-26+01:00",
+     "2026-11-26+01:00",
+     "2026-11-26+01:00",
+     "2026-11-26+01:00",
+     "2026-11-26+01:00",
+     "2026-11-26+01:00",
+     "2026-11-26+01:00",
+     "2026-11-26+01:00",
+     "2026-11-26+01:00"
+    ],
+    "notice-type": "cn-standard",
+    "publication-number": "742032-2026",
+    "legal-basis": [
+     "32014L0024"
+    ],
+    "dispatch-date": "2026-10-26Z",
+    "buyer-country": [
+     "POL"
+    ],
+    "description-lot": {
+     "pol": [
+      "Dokładny opis przedmiotu zamówienia zawarty jest w załączniku nr 2 (dla danej części zamówienia) do SWZ. (Formularz asortymentowo – cenowy)",
+      "Dokładny opis przedmiotu zamówienia zawarty jest w załączniku nr 2(dla danej części zamówienia) do SWZ. (Formularz asortymentowo – cenowy)",
+      "Dokładny opis przedmiotu zamówienia zawarty jest w załączniku nr 2 (dla danej części zamówienia) do SWZ. (Formularz asortymentowo – cenowy)",
+      "Dokładny opis przedmiotu zamówienia zawarty jest w załączniku nr 2 (dla danej części zamówienia) do SWZ. (Formularz asortymentowo – cenowy)",
+      "Dokładny opis przedmiotu zamówienia zawarty jest w załączniku nr 2 (dla danej części zamówienia) do SWZ. (Formularz asortymentowo – cenowy)",
+      "Dokładny opis przedmiotu zamówienia zawarty jest w załączniku nr 2 (dla danej części zamówienia) do SWZ. (Formularz asortymentowo – cenowy)",
+      "Dokładny opis przedmiotu zamówienia zawarty jest w załączniku nr 2 (dla danej części zamówienia) do SWZ. (Formularz asortymentowo – cenowy)",
+      "Dokładny opis przedmiotu zamówienia zawarty jest w załączniku nr 2 (dla danej części zamówienia) do SWZ. (Formularz asortymentowo – cenowy)",
+      "Dokładny opis przedmiotu zamówienia zawarty jest w załączniku nr 2 (dla danej części zamówienia) do SWZ. (Formularz asortymentowo – cenowy)",
+      "Dokładny opis przedmiotu zamówienia zawarty jest w załączniku nr 2 (dla danej części zamówienia) do SWZ. (Formularz asortymentowo – cenowy)",
+      "Dokładny opis przedmiotu zamówienia zawarty jest w załączniku nr 2 (dla danej części zamówienia) do SWZ. (Formularz asortymentowo – cenowy)",
+      "Dokładny opis przedmiotu zamówienia zawarty jest w załączniku nr 2 (dla danej części zamówienia) do SWZ. (Formularz asortymentowo – cenowy)",
+      "Dokładny opis przedmiotu zamówienia zawarty jest w załączniku nr 2 (dla danej części zamówienia) do SWZ. (Formularz asortymentowo – cenowy)",
+      "Dokładny opis przedmiotu zamówienia zawarty jest w załączniku nr 2 (dla danej części zamówienia) do SWZ. (Formularz asortymentowo – cenowy)"
+     ]
+    },
+    "procedure-type": "open",
+    "classification-cpv": [
+     "33191000",
+     "33198000",
+     "38910000",
+     "35113400",
+     "33198000",
+     "33198000",
+     "33198000",
+     "33191000",
+     "38910000",
+     "33191000",
+     "33191000",
+     "33191000",
+     "33191000",
+     "33191000",
+     "33191000",
+     "33191000",
+     "33191000",
+     "35113400",
+     "38910000",
+     "38910000",
+     "38910000"
+    ],
+    "contract-nature": [
+     "supplies",
+     "supplies",
+     "supplies",
+     "supplies",
+     "supplies",
+     "supplies",
+     "supplies",
+     "supplies",
+     "supplies",
+     "supplies",
+     "supplies",
+     "supplies",
+     "supplies",
+     "supplies",
+     "supplies"
+    ],
+    "buyer-name": {
+     "pol": [
+      "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY IM. BŁOGOSŁAWIONEGO KSIĘDZA JERZEGO POPIEŁUSZKI WE WŁOCŁAWKU"
+     ]
+    },
+    "publication-date": "2026-10-27+01:00",
+    "notice-title": {
+     "hun": "Lengyelország – Sterilizáló-, fertőtlenítő- és egészségügyi eszközök – Dostawa wyposażenia do przeprowadzania procesów mycia, dezynfekcji i sterylizacji w tym sterylizacji niskotemperaturowej dla Centralnej Sterylizatorni przez okres 24 miesięcy.",
+     "lav": "Polija – Sterilizācijas, dezinfekcijas un higiēnas ierīces – Dostawa wyposażenia do przeprowadzania procesów mycia, dezynfekcji i sterylizacji w tym sterylizacji niskotemperaturowej dla Centralnej Sterylizatorni przez okres 24 miesięcy.",
+     "swe": "Polen – Utrustning för sterilisering, desinfektion och hygien – Dostawa wyposażenia do przeprowadzania procesów mycia, dezynfekcji i sterylizacji w tym sterylizacji niskotemperaturowej dla Centralnej Sterylizatorni przez okres 24 miesięcy.",
+     "gle": "An Pholainn – Sterilisation, disinfection and hygiene devices – Dostawa wyposażenia do przeprowadzania procesów mycia, dezynfekcji i sterylizacji w tym sterylizacji niskotemperaturowej dla Centralnej Sterylizatorni przez okres 24 miesięcy.",
+     "ell": "Πολωνία – Συσκευές αποστείρωσης, απολύμανσης και υγιεινής δοντιών – Dostawa wyposażenia do przeprowadzania procesów mycia, dezynfekcji i sterylizacji w tym sterylizacji niskotemperaturowej dla Centralnej Sterylizatorni przez okres 24 miesięcy.",
+     "spa": "Polonia – Aparatos para esterilización, desinfección e higiene – Dostawa wyposażenia do przeprowadzania procesów mycia, dezynfekcji i sterylizacji w tym sterylizacji niskotemperaturowej dla Centralnej Sterylizatorni przez okres 24 miesięcy.",
+     "est": "Poola – Steriliseerimis-, desinfitseerimis- ja hügieeniseadmed – Dostawa wyposażenia do przeprowadzania procesów mycia, dezynfekcji i sterylizacji w tym sterylizacji niskotemperaturowej dla Centralnej Sterylizatorni przez okres 24 miesięcy.",
+     "nld": "Polen – Instrumentarium voor sterilisatie, desinfectie en reiniging – Dostawa wyposażenia do przeprowadzania procesów mycia, dezynfekcji i sterylizacji w tym sterylizacji niskotemperaturowej dla Centralnej Sterylizatorni przez okres 24 miesięcy.",
+     "fin": "Puola – Sterilointi-, desinfektio- ja hygienialaitteet – Dostawa wyposażenia do przeprowadzania procesów mycia, dezynfekcji i sterylizacji w tym sterylizacji niskotemperaturowej dla Centralnej Sterylizatorni przez okres 24 miesięcy.",
+     "pol": "Polska – Urządzenia sterylizujące, dezynfekcyjne i higieniczne – Dostawa wyposażenia do przeprowadzania procesów mycia, dezynfekcji i sterylizacji w tym sterylizacji niskotemperaturowej dla Centralnej Sterylizatorni przez okres 24 miesięcy.",
+     "hrv": "Poljska – Naprave za sterilizaciju, dezinfekciju i higijenu – Dostawa wyposażenia do przeprowadzania procesów mycia, dezynfekcji i sterylizacji w tym sterylizacji niskotemperaturowej dla Centralnej Sterylizatorni przez okres 24 miesięcy.",
+     "ces": "Polsko – Sterilizační, desinfekční a hygienické přístroje – Dostawa wyposażenia do przeprowadzania procesów mycia, dezynfekcji i sterylizacji w tym sterylizacji niskotemperaturowej dla Centralnej Sterylizatorni przez okres 24 miesięcy.",
+     "dan": "Polen – Udstyr til sterilisation, desinfektion og hygiejne – Dostawa wyposażenia do przeprowadzania procesów mycia, dezynfekcji i sterylizacji w tym sterylizacji niskotemperaturowej dla Centralnej Sterylizatorni przez okres 24 miesięcy.",
+     "ron": "Polonia – Aparate de sterilizare, de dezinfectare şi de igienizare – Dostawa wyposażenia do przeprowadzania procesów mycia, dezynfekcji i sterylizacji w tym sterylizacji niskotemperaturowej dla Centralnej Sterylizatorni przez okres 24 miesięcy.",
+     "por": "Polónia – Aparelhos para esterilização, desinfecção e higiene – Dostawa wyposażenia do przeprowadzania procesów mycia, dezynfekcji i sterylizacji w tym sterylizacji niskotemperaturowej dla Centralnej Sterylizatorni przez okres 24 miesięcy.",
+     "slk": "Poľsko – Sterilizačné, dezinfekčné a hygienické prístroje – Dostawa wyposażenia do przeprowadzania procesów mycia, dezynfekcji i sterylizacji w tym sterylizacji niskotemperaturowej dla Centralnej Sterylizatorni przez okres 24 miesięcy.",
+     "fra": "Pologne – Dispositifs de stérilisation, de désinfection et d'hygiène – Dostawa wyposażenia do przeprowadzania procesów mycia, dezynfekcji i sterylizacji w tym sterylizacji niskotemperaturowej dla Centralnej Sterylizatorni przez okres 24 miesięcy.",
+     "mlt": "Il-Polonja – Apparati ta' l-isterilizzazzjoni, id-disinfettazzjoni u l-iġjene – Dostawa wyposażenia do przeprowadzania procesów mycia, dezynfekcji i sterylizacji w tym sterylizacji niskotemperaturowej dla Centralnej Sterylizatorni przez okres 24 miesięcy.",
+     "deu": "Polen – Sterilisierungs-, Desinfektions- und Reinigungsausrüstung – Dostawa wyposażenia do przeprowadzania procesów mycia, dezynfekcji i sterylizacji w tym sterylizacji niskotemperaturowej dla Centralnej Sterylizatorni przez okres 24 miesięcy.",
+     "lit": "Lenkija – Sterilizacijos, dezinfekcijos ir higienos prietaisai – Dostawa wyposażenia do przeprowadzania procesów mycia, dezynfekcji i sterylizacji w tym sterylizacji niskotemperaturowej dla Centralnej Sterylizatorni przez okres 24 miesięcy.",
+     "ita": "Polonia – Apparecchi per la sterilizzazione, la disinfezione e l'igiene – Dostawa wyposażenia do przeprowadzania procesów mycia, dezynfekcji i sterylizacji w tym sterylizacji niskotemperaturowej dla Centralnej Sterylizatorni przez okres 24 miesięcy.",
+     "bul": "Полша – Устройства за стерилизиране, дезинфекция и поддържане на хигиена – Dostawa wyposażenia do przeprowadzania procesów mycia, dezynfekcji i sterylizacji w tym sterylizacji niskotemperaturowej dla Centralnej Sterylizatorni przez okres 24 miesięcy.",
+     "slv": "Poljska – Naprave za sterilizacijo, dezinfekcijo in čiščenje – Dostawa wyposażenia do przeprowadzania procesów mycia, dezynfekcji i sterylizacji w tym sterylizacji niskotemperaturowej dla Centralnej Sterylizatorni przez okres 24 miesięcy.",
+     "eng": "Poland – Sterilisation, disinfection and hygiene devices – Dostawa wyposażenia do przeprowadzania procesów mycia, dezynfekcji i sterylizacji w tym sterylizacji niskotemperaturowej dla Centralnej Sterylizatorni przez okres 24 miesięcy."
+    },
+    "links": {
+     "xml": "https://ted.europa.eu/en/notice/742032-2026/xml",
+     "html": "https://ted.europa.eu/en/notice/742032-2026/html"
+    }
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-ted-742032-2026",
+    "ocid_native": false,
+    "stage": "tender",
+    "title": "Poland – Sterilisation, disinfection and hygiene devices – Dostawa wyposażenia do przeprowadzania procesów mycia, dezynfekcji i sterylizacji w tym sterylizacji niskotemperaturowej dla Centralnej Sterylizatorni przez okres 24 miesięcy.",
+    "description": "Dokładny opis przedmiotu zamówienia zawarty jest w załączniku nr 2 (dla danej części zamówienia) do SWZ. (Formularz asortymentowo – cenowy)",
+    "buyer": {
+     "name": "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY IM. BŁOGOSŁAWIONEGO KSIĘDZA JERZEGO POPIEŁUSZKI WE WŁOCŁAWKU",
+     "country": "PL"
+    },
+    "country": "PL",
+    "procurement_method": "open",
+    "main_category": "supplies",
+    "value": null,
+    "published_at": "2026-10-27T00:00:00+01:00",
+    "updated_at": "2026-10-26T00:00:00+00:00",
+    "tender_end": "2026-11-26T00:00:00+01:00",
+    "classifications": [
+     {
+      "scheme": "CPV",
+      "id": "33191000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "33198000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "38910000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "35113400"
+     }
+    ],
+    "url": "https://ted.europa.eu/en/notice/742032-2026/html"
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "742037-2026",
+   "content_hash": "53b1e258018433b58d66835333a7dc816e5861bc0353073e91bf5e4fa8ef94b5",
+   "fetched_at": "2026-11-03T17:27:00+00:00",
+   "source_url": "https://ted.europa.eu/en/notice/742037-2026/html",
+   "publisher": "Publications Office of the European Union (TED)",
+   "published_at": "2026-10-27T00:00:00+01:00",
+   "source_updated_at": "2026-10-26T00:00:00+01:00",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "notice-identifier": "cde594b0-6a6e-450b-912e-f149ac771024",
+    "notice-type": "can-standard",
+    "publication-number": "742037-2026",
+    "winner-country": [
+     "DEU"
+    ],
+    "legal-basis": [
+     "32014L0024"
+    ],
+    "dispatch-date": "2026-10-26+01:00",
+    "total-value-cur": [
+     "EUR"
+    ],
+    "buyer-country": [
+     "DEU"
+    ],
+    "description-lot": {
+     "deu": [
+      "Lieferung von 16 vollständigen Beladungssätzen zur Ausstattung von Wasserförderzügen mit den erforderlichen Geräten und Materialien zur Wasserförderung über lange Wegstrecken. Art und Umfang im Detail ergeben sich aus dem Leistungsverzeichnis sowie den weiteren Vergabeunterlagen. Vor Zuschlagserteilung ist eine Musterlieferung mit Ladungssicherungs-Zertifizierung sowie eine vierwöchige praktische Erprobung der Muster an zwei WF-Z-Standorten vorgesehen. Weitere Informationen entnehmen Sie bitte der Leistungsbeschreibung."
+     ]
+    },
+    "procedure-type": "open",
+    "classification-cpv": [
+     "35111000",
+     "35111000"
+    ],
+    "contract-nature": [
+     "supplies",
+     "supplies"
+    ],
+    "buyer-name": {
+     "deu": [
+      "Bezirksregierung Düsseldorf"
+     ]
+    },
+    "publication-date": "2026-10-27+01:00",
+    "winner-name": {
+     "deu": [
+      "Dönges GmbH & Co KG"
+     ]
+    },
+    "notice-title": {
+     "hun": "Németország – Tűzoltó berendezések – Katastrophenschutz-Ausstattungssatz Wasserförderzug",
+     "lav": "Vācija – Ugunsdzēsības aprīkojums – Katastrophenschutz-Ausstattungssatz Wasserförderzug",
+     "swe": "Tyskland – Brandbekämpningsutrustning – Katastrophenschutz-Ausstattungssatz Wasserförderzug",
+     "gle": "An Ghearmáin – Firefighting equipment – Katastrophenschutz-Ausstattungssatz Wasserförderzug",
+     "ell": "Γερμανία – Πυροσβεστικός εξοπλισμός – Katastrophenschutz-Ausstattungssatz Wasserförderzug",
+     "spa": "Alemania – Equipo de extinción de incendios – Katastrophenschutz-Ausstattungssatz Wasserförderzug",
+     "est": "Saksamaa – Tuletõrjeseadmed – Katastrophenschutz-Ausstattungssatz Wasserförderzug",
+     "nld": "Duitsland – Brandblusuitrusting – Katastrophenschutz-Ausstattungssatz Wasserförderzug",
+     "fin": "Saksa – Palonsammutusvälineet – Katastrophenschutz-Ausstattungssatz Wasserförderzug",
+     "pol": "Niemcy – Sprzęt gaśniczy – Katastrophenschutz-Ausstattungssatz Wasserförderzug",
+     "hrv": "Njemačka – Vatrogasna oprema – Katastrophenschutz-Ausstattungssatz Wasserförderzug",
+     "ces": "Německo – Hasičské vybavení – Katastrophenschutz-Ausstattungssatz Wasserförderzug",
+     "dan": "Tyskland – Brandbekæmpelsesudstyr – Katastrophenschutz-Ausstattungssatz Wasserförderzug",
+     "ron": "Germania – Echipament de stingere a incendiilor – Katastrophenschutz-Ausstattungssatz Wasserförderzug",
+     "por": "Alemanha – Equipamento de combate a incêndios – Katastrophenschutz-Ausstattungssatz Wasserförderzug",
+     "slk": "Nemecko – Protipožiarne zariadenia – Katastrophenschutz-Ausstattungssatz Wasserförderzug",
+     "fra": "Allemagne – Matériel de lutte contre l'incendie – Katastrophenschutz-Ausstattungssatz Wasserförderzug",
+     "mlt": "Il-Ġermanja – Apparat għat-tifi tan-nar – Katastrophenschutz-Ausstattungssatz Wasserförderzug",
+     "deu": "Deutschland – Brandbekämpfungsausrüstung – Katastrophenschutz-Ausstattungssatz Wasserförderzug",
+     "lit": "Vokietija – Gaisrų gesinimo įrenginiai – Katastrophenschutz-Ausstattungssatz Wasserförderzug",
+     "ita": "Germania – Attrezzature di lotta antincendio – Katastrophenschutz-Ausstattungssatz Wasserförderzug",
+     "bul": "Гepмaния – Противопожарно оборудване – Katastrophenschutz-Ausstattungssatz Wasserförderzug",
+     "slv": "Nemčija – Oprema za gašenje požara – Katastrophenschutz-Ausstattungssatz Wasserförderzug",
+     "eng": "Germany – Firefighting equipment – Katastrophenschutz-Ausstattungssatz Wasserförderzug"
+    },
+    "links": {
+     "xml": "https://ted.europa.eu/en/notice/742037-2026/xml",
+     "html": "https://ted.europa.eu/en/notice/742037-2026/html"
+    }
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-ted-742037-2026",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "Germany – Firefighting equipment – Katastrophenschutz-Ausstattungssatz Wasserförderzug",
+    "description": "Lieferung von 16 vollständigen Beladungssätzen zur Ausstattung von Wasserförderzügen mit den erforderlichen Geräten und Materialien zur Wasserförderung über lange Wegstrecken. Art und Umfang im Detail ergeben sich aus dem Leistungsverzeichnis sowie den weiteren Vergabeunterlagen. Vor Zuschlagserteilung ist eine Musterlieferung mit Ladungssicherungs-Zertifizierung sowie eine vierwöchige praktische Erprobung der Muster an zwei WF-Z-Standorten vorgesehen. Weitere Informationen entnehmen Sie bitte der Leistungsbeschreibung.",
+    "buyer": {
+     "name": "Bezirksregierung Düsseldorf",
+     "country": "DE"
+    },
+    "country": "DE",
+    "procurement_method": "open",
+    "main_category": "supplies",
+    "value": null,
+    "published_at": "2026-10-27T00:00:00+01:00",
+    "updated_at": "2026-10-26T00:00:00+01:00",
+    "tender_end": null,
+    "classifications": [
+     {
+      "scheme": "CPV",
+      "id": "35111000"
+     }
+    ],
+    "url": "https://ted.europa.eu/en/notice/742037-2026/html"
+   },
+   "awards": [
+    {
+     "award_id": "742037-2026-awarded",
+     "title": null,
+     "status": "active",
+     "date": "2026-10-27T00:00:00+01:00",
+     "value": null,
+     "suppliers": [
+      {
+       "name": "D"
+      },
+      {
+       "name": "ö"
+      },
+      {
+       "name": "n"
+      },
+      {
+       "name": "g"
+      },
+      {
+       "name": "e"
+      },
+      {
+       "name": "s"
+      },
+      null,
+      {
+       "name": "G"
+      },
+      {
+       "name": "m"
+      },
+      {
+       "name": "b"
+      },
+      {
+       "name": "H"
+      },
+      {
+       "name": "&"
+      },
+      {
+       "name": "C"
+      },
+      {
+       "name": "o"
+      },
+      {
+       "name": "K"
+      }
+     ]
+    }
+   ],
+   "contracts": []
+  },
+  {
+   "external_id": "742056-2026",
+   "content_hash": "ffd9fafde6ae6d0aa8892e292f83ae55f8dd5f2450f493db305be8b2cbf4b1f8",
+   "fetched_at": "2026-11-03T17:27:00+00:00",
+   "source_url": "https://ted.europa.eu/en/notice/742056-2026/html",
+   "publisher": "Publications Office of the European Union (TED)",
+   "published_at": "2026-10-27T00:00:00+01:00",
+   "source_updated_at": "2026-10-26T00:00:00+01:00",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "notice-identifier": "21a36a28-bcc5-4fdc-882a-3a8bb36bfa68",
+    "deadline-receipt-tender-date-lot": [
+     "2026-11-26+01:00",
+     "2026-11-26+01:00"
+    ],
+    "notice-type": "cn-standard",
+    "publication-number": "742056-2026",
+    "legal-basis": [
+     "32014L0024"
+    ],
+    "dispatch-date": "2026-10-26+01:00",
+    "buyer-country": [
+     "DEU"
+    ],
+    "description-lot": {
+     "deu": [
+      "Feuerwehr Bünde, Dünner Straße 20, 32257 Bünde; Lieferung eines Löschgruppenfahrzeugs (LF-20) in 2 Losen Los 1: Fahrgestell und Aufbau Los 2: Feuerwehrtechnische Beladung",
+      "Feuerwehr Bünde, Dünner Straße 20, 32257 Bünde; Lieferung eines Löschgruppenfahrzeugs (LF-20) in 2 Losen Los 1: Fahrgestell und Aufbau Los 2: Feuerwehrtechnische Beladung"
+     ]
+    },
+    "procedure-type": "open",
+    "classification-cpv": [
+     "34144210",
+     "34144213",
+     "34139000",
+     "35111000",
+     "34144210",
+     "34144210",
+     "34144213",
+     "34139000",
+     "34144213",
+     "35111000"
+    ],
+    "contract-nature": [
+     "supplies",
+     "supplies",
+     "supplies"
+    ],
+    "buyer-name": {
+     "deu": [
+      "Stadt Bünde -Feuerwehr-"
+     ]
+    },
+    "publication-date": "2026-10-27+01:00",
+    "notice-title": {
+     "hun": "Németország – Tűzoltójárművek – Feuerwehr Bünde, Dünner Straße 20, 32257 Bünde; Lieferung eines Löschgruppenfahrzeugs (LF-20) in 2 Losen ( Los 1: Fahrgestell und Aufbau, Los 2: Feuerwehrtechnische Beladung)",
+     "lav": "Vācija – Ugunsdzēsības transportlīdzekļi – Feuerwehr Bünde, Dünner Straße 20, 32257 Bünde; Lieferung eines Löschgruppenfahrzeugs (LF-20) in 2 Losen ( Los 1: Fahrgestell und Aufbau, Los 2: Feuerwehrtechnische Beladung)",
+     "swe": "Tyskland – Brandfordon – Feuerwehr Bünde, Dünner Straße 20, 32257 Bünde; Lieferung eines Löschgruppenfahrzeugs (LF-20) in 2 Losen ( Los 1: Fahrgestell und Aufbau, Los 2: Feuerwehrtechnische Beladung)",
+     "gle": "An Ghearmáin – Firefighting vehicles – Feuerwehr Bünde, Dünner Straße 20, 32257 Bünde; Lieferung eines Löschgruppenfahrzeugs (LF-20) in 2 Losen ( Los 1: Fahrgestell und Aufbau, Los 2: Feuerwehrtechnische Beladung)",
+     "ell": "Γερμανία – Πυροσβεστικά οχήματα – Feuerwehr Bünde, Dünner Straße 20, 32257 Bünde; Lieferung eines Löschgruppenfahrzeugs (LF-20) in 2 Losen ( Los 1: Fahrgestell und Aufbau, Los 2: Feuerwehrtechnische Beladung)",
+     "spa": "Alemania – Vehículos de extinción de incendios – Feuerwehr Bünde, Dünner Straße 20, 32257 Bünde; Lieferung eines Löschgruppenfahrzeugs (LF-20) in 2 Losen ( Los 1: Fahrgestell und Aufbau, Los 2: Feuerwehrtechnische Beladung)",
+     "est": "Saksamaa – Tuletõrjeautod – Feuerwehr Bünde, Dünner Straße 20, 32257 Bünde; Lieferung eines Löschgruppenfahrzeugs (LF-20) in 2 Losen ( Los 1: Fahrgestell und Aufbau, Los 2: Feuerwehrtechnische Beladung)",
+     "nld": "Duitsland – Brandbluswagens – Feuerwehr Bünde, Dünner Straße 20, 32257 Bünde; Lieferung eines Löschgruppenfahrzeugs (LF-20) in 2 Losen ( Los 1: Fahrgestell und Aufbau, Los 2: Feuerwehrtechnische Beladung)",
+     "fin": "Saksa – Paloautot – Feuerwehr Bünde, Dünner Straße 20, 32257 Bünde; Lieferung eines Löschgruppenfahrzeugs (LF-20) in 2 Losen ( Los 1: Fahrgestell und Aufbau, Los 2: Feuerwehrtechnische Beladung)",
+     "pol": "Niemcy – Wozy strażackie – Feuerwehr Bünde, Dünner Straße 20, 32257 Bünde; Lieferung eines Löschgruppenfahrzeugs (LF-20) in 2 Losen ( Los 1: Fahrgestell und Aufbau, Los 2: Feuerwehrtechnische Beladung)",
+     "hrv": "Njemačka – Vatrogasna vozila – Feuerwehr Bünde, Dünner Straße 20, 32257 Bünde; Lieferung eines Löschgruppenfahrzeugs (LF-20) in 2 Losen ( Los 1: Fahrgestell und Aufbau, Los 2: Feuerwehrtechnische Beladung)",
+     "ces": "Německo – Hasičská vozidla – Feuerwehr Bünde, Dünner Straße 20, 32257 Bünde; Lieferung eines Löschgruppenfahrzeugs (LF-20) in 2 Losen ( Los 1: Fahrgestell und Aufbau, Los 2: Feuerwehrtechnische Beladung)",
+     "dan": "Tyskland – Brandkøretøjer – Feuerwehr Bünde, Dünner Straße 20, 32257 Bünde; Lieferung eines Löschgruppenfahrzeugs (LF-20) in 2 Losen ( Los 1: Fahrgestell und Aufbau, Los 2: Feuerwehrtechnische Beladung)",
+     "ron": "Germania – Vehicule de pompieri – Feuerwehr Bünde, Dünner Straße 20, 32257 Bünde; Lieferung eines Löschgruppenfahrzeugs (LF-20) in 2 Losen ( Los 1: Fahrgestell und Aufbau, Los 2: Feuerwehrtechnische Beladung)",
+     "por": "Alemanha – Veículos de combate a incêndios – Feuerwehr Bünde, Dünner Straße 20, 32257 Bünde; Lieferung eines Löschgruppenfahrzeugs (LF-20) in 2 Losen ( Los 1: Fahrgestell und Aufbau, Los 2: Feuerwehrtechnische Beladung)",
+     "slk": "Nemecko – Požiarnické vozidlá – Feuerwehr Bünde, Dünner Straße 20, 32257 Bünde; Lieferung eines Löschgruppenfahrzeugs (LF-20) in 2 Losen ( Los 1: Fahrgestell und Aufbau, Los 2: Feuerwehrtechnische Beladung)",
+     "fra": "Allemagne – Véhicules de lutte contre l'incendie – Feuerwehr Bünde, Dünner Straße 20, 32257 Bünde; Lieferung eines Löschgruppenfahrzeugs (LF-20) in 2 Losen ( Los 1: Fahrgestell und Aufbau, Los 2: Feuerwehrtechnische Beladung)",
+     "mlt": "Il-Ġermanja – Vetturi għat-tifi tan-nar – Feuerwehr Bünde, Dünner Straße 20, 32257 Bünde; Lieferung eines Löschgruppenfahrzeugs (LF-20) in 2 Losen ( Los 1: Fahrgestell und Aufbau, Los 2: Feuerwehrtechnische Beladung)",
+     "deu": "Deutschland – Feuerwehrfahrzeuge – Feuerwehr Bünde, Dünner Straße 20, 32257 Bünde; Lieferung eines Löschgruppenfahrzeugs (LF-20) in 2 Losen ( Los 1: Fahrgestell und Aufbau, Los 2: Feuerwehrtechnische Beladung)",
+     "lit": "Vokietija – Ugniagesių automobiliai – Feuerwehr Bünde, Dünner Straße 20, 32257 Bünde; Lieferung eines Löschgruppenfahrzeugs (LF-20) in 2 Losen ( Los 1: Fahrgestell und Aufbau, Los 2: Feuerwehrtechnische Beladung)",
+     "ita": "Germania – Veicoli di lotta antincendio – Feuerwehr Bünde, Dünner Straße 20, 32257 Bünde; Lieferung eines Löschgruppenfahrzeugs (LF-20) in 2 Losen ( Los 1: Fahrgestell und Aufbau, Los 2: Feuerwehrtechnische Beladung)",
+     "bul": "Гepмaния – Пожарни коли – Feuerwehr Bünde, Dünner Straße 20, 32257 Bünde; Lieferung eines Löschgruppenfahrzeugs (LF-20) in 2 Losen ( Los 1: Fahrgestell und Aufbau, Los 2: Feuerwehrtechnische Beladung)",
+     "slv": "Nemčija – Gasilska vozila – Feuerwehr Bünde, Dünner Straße 20, 32257 Bünde; Lieferung eines Löschgruppenfahrzeugs (LF-20) in 2 Losen ( Los 1: Fahrgestell und Aufbau, Los 2: Feuerwehrtechnische Beladung)",
+     "eng": "Germany – Firefighting vehicles – Feuerwehr Bünde, Dünner Straße 20, 32257 Bünde; Lieferung eines Löschgruppenfahrzeugs (LF-20) in 2 Losen ( Los 1: Fahrgestell und Aufbau, Los 2: Feuerwehrtechnische Beladung)"
+    },
+    "links": {
+     "xml": "https://ted.europa.eu/en/notice/742056-2026/xml",
+     "html": "https://ted.europa.eu/en/notice/742056-2026/html"
+    }
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-ted-742056-2026",
+    "ocid_native": false,
+    "stage": "tender",
+    "title": "Germany – Firefighting vehicles – Feuerwehr Bünde, Dünner Straße 20, 32257 Bünde; Lieferung eines Löschgruppenfahrzeugs (LF-20) in 2 Losen ( Los 1: Fahrgestell und Aufbau, Los 2: Feuerwehrtechnische Beladung)",
+    "description": "Feuerwehr Bünde, Dünner Straße 20, 32257 Bünde; Lieferung eines Löschgruppenfahrzeugs (LF-20) in 2 Losen Los 1: Fahrgestell und Aufbau Los 2: Feuerwehrtechnische Beladung",
+    "buyer": {
+     "name": "Stadt Bünde -Feuerwehr-",
+     "country": "DE"
+    },
+    "country": "DE",
+    "procurement_method": "open",
+    "main_category": "supplies",
+    "value": null,
+    "published_at": "2026-10-27T00:00:00+01:00",
+    "updated_at": "2026-10-26T00:00:00+01:00",
+    "tender_end": "2026-11-26T00:00:00+01:00",
+    "classifications": [
+     {
+      "scheme": "CPV",
+      "id": "34144210"
+     },
+     {
+      "scheme": "CPV",
+      "id": "34144213"
+     },
+     {
+      "scheme": "CPV",
+      "id": "34139000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "35111000"
+     }
+    ],
+    "url": "https://ted.europa.eu/en/notice/742056-2026/html"
+   },
+   "awards": [],
+   "contracts": []
+  },
+  {
+   "external_id": "742074-2026",
+   "content_hash": "60ce251eeb7c5e83567b3965b0500b71bc2d4e9e0eff37b61634c83e88ef8614",
+   "fetched_at": "2026-11-03T17:27:00+00:00",
+   "source_url": "https://ted.europa.eu/en/notice/742074-2026/html",
+   "publisher": "Publications Office of the European Union (TED)",
+   "published_at": "2026-10-27T00:00:00+01:00",
+   "source_updated_at": "2026-10-26T00:00:00+01:00",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "notice-identifier": "59e766e2-c1ee-4c38-a4cd-5af6ee0a2295",
+    "notice-type": "can-standard",
+    "publication-number": "742074-2026",
+    "winner-country": [
+     "SVK"
+    ],
+    "legal-basis": [
+     "32014L0025"
+    ],
+    "dispatch-date": "2026-10-26+01:00",
+    "total-value-cur": [
+     "EUR"
+    ],
+    "buyer-country": [
+     "SVK"
+    ],
+    "total-value": 14658.5,
+    "description-lot": {
+     "slk": [
+      "Vytvorením tohto DNS pre kategóriu 1 je zriadenie DNS, prostredníctvom ktorého sa budú priebežne, podľa potreby obstarávateľa, zadávať jednotlivé zákazky na nákup hardvéru a podpory hardvérových produktov počas 48 mesiacov po zriadení DNS. Konkrétny rozsah predmetu zákazky, podrobná špecifikácia, ako aj ostatné doplňujúce informácie budú súčasťou jednotlivých výziev na predkladanie ponúk v rámci zriadeného DNS, ktoré budú zaslané všetkým zaradeným záujemcom do tejto kategórie prostredníctvom elektronického nastroja JOSEPHINE pre CPV kódy: 30200000 Počítačové zariadenia a spotrebný materiál 30210000-4 Stroje na spracovanie údajov (hardvér) 30230000-0 Zariadenia súvisiace s počítačmi 32400000-7 Siete 35125100-7 Snímače 48820000-2 Servery 72600000-6 Počítačové podporné služby a poradenstvo 72700000-7 Služby pre počítačové siete Predmetom jednotlivých zákaziek, môžu byť v nevyhnutnom rozsahu aj prislúchajúce služby, štandardne poskytované s príslušným HW napr. v prípade ak výrobca vyžaduje inštaláciu/oživenie predajcom (certifikovaným technikom dodávateľa). Obstarávateľ plánuje realizovať čiastkové zákazky najmä no nie výlučne vo vzťahu k nasledovným technológiám: Kategória 1: DELL servery Cisco Switch Cisco Router Cisco Call manager server Hitachi storege SUN storage Predmetom jednotlivých zákaziek, môžu byť v nevyhnutnom rozsahu aj prislúchajúce služby, štandardne poskytované s príslušným HW napr. v prípade ak výrobca vyžaduje inštaláciu/oživenie predajcom (certifikovaným technikom dodávateľa)."
+     ]
+    },
+    "procedure-type": "restricted",
+    "classification-cpv": [
+     "30200000",
+     "30200000",
+     "30230000",
+     "32400000",
+     "35125100",
+     "48820000",
+     "72600000",
+     "72700000",
+     "30210000"
+    ],
+    "contract-nature": [
+     "supplies",
+     "supplies"
+    ],
+    "buyer-name": {
+     "slk": [
+      "Východoslovenská vodárenská spoločnosť, a.s."
+     ]
+    },
+    "publication-date": "2026-10-27+01:00",
+    "winner-name": {
+     "slk": [
+      "Arminius a. s."
+     ]
+    },
+    "notice-title": {
+     "hun": "Szlovákia – Számítógépek és tartozékaik – Nákup hardvéru a podpory hardvérových produktov a nákup licencií k štandardným softvérovým produktom a podpory týchto produktov",
+     "lav": "Slovākija – Datoru iekārtas un piederumi – Nákup hardvéru a podpory hardvérových produktov a nákup licencií k štandardným softvérovým produktom a podpory týchto produktov",
+     "swe": "Slovakien – Datorer och datamateriel – Nákup hardvéru a podpory hardvérových produktov a nákup licencií k štandardným softvérovým produktom a podpory týchto produktov",
+     "gle": "An tSlóvaic – Computer equipment and supplies – Nákup hardvéru a podpory hardvérových produktov a nákup licencií k štandardným softvérovým produktom a podpory týchto produktov",
+     "ell": "Σλοβακία – Εξοπλισμός ηλεκτρονικών υπολογιστών και προμήθειες – Nákup hardvéru a podpory hardvérových produktov a nákup licencií k štandardným softvérovým produktom a podpory týchto produktov",
+     "spa": "Eslovaquia – Equipo y material informático – Nákup hardvéru a podpory hardvérových produktov a nákup licencií k štandardným softvérovým produktom a podpory týchto produktov",
+     "est": "Slovakkia – Arvutiseadmed ja nende tarvikud – Nákup hardvéru a podpory hardvérových produktov a nákup licencií k štandardným softvérovým produktom a podpory týchto produktov",
+     "nld": "Slowakije – Computeruitrusting en -benodigdheden – Nákup hardvéru a podpory hardvérových produktov a nákup licencií k štandardným softvérovým produktom a podpory týchto produktov",
+     "fin": "Slovakia – Atk-laitteet ja -tarvikkeet – Nákup hardvéru a podpory hardvérových produktov a nákup licencií k štandardným softvérovým produktom a podpory týchto produktov",
+     "pol": "Słowacja – Urządzenia komputerowe – Nákup hardvéru a podpory hardvérových produktov a nákup licencií k štandardným softvérovým produktom a podpory týchto produktov",
+     "hrv": "Slovačka – Računarska oprema i potrepštine – Nákup hardvéru a podpory hardvérových produktov a nákup licencií k štandardným softvérovým produktom a podpory týchto produktov",
+     "ces": "Slovensko – Počítače – Nákup hardvéru a podpory hardvérových produktov a nákup licencií k štandardným softvérovým produktom a podpory týchto produktov",
+     "dan": "Slovakiet – Edb-maskiner og -artikler – Nákup hardvéru a podpory hardvérových produktov a nákup licencií k štandardným softvérovým produktom a podpory týchto produktov",
+     "ron": "Slovacia – Echipament şi accesorii pentru computer – Nákup hardvéru a podpory hardvérových produktov a nákup licencií k štandardným softvérovým produktom a podpory týchto produktov",
+     "por": "Eslováquia – Equipamento e material informático – Nákup hardvéru a podpory hardvérových produktov a nákup licencií k štandardným softvérovým produktom a podpory týchto produktov",
+     "slk": "Slovensko – Počítačové zariadenia a spotrebný materiál – Nákup hardvéru a podpory hardvérových produktov a nákup licencií k štandardným softvérovým produktom a podpory týchto produktov",
+     "fra": "Slovaquie – Matériel et fournitures informatiques – Nákup hardvéru a podpory hardvérových produktov a nákup licencií k štandardným softvérovým produktom a podpory týchto produktov",
+     "mlt": "Is-Slovakkja – Apparat u aċċessorji tal-kompjuter – Nákup hardvéru a podpory hardvérových produktov a nákup licencií k štandardným softvérovým produktom a podpory týchto produktov",
+     "deu": "Slowakei – Computeranlagen und Zubehör – Nákup hardvéru a podpory hardvérových produktov a nákup licencií k štandardným softvérovým produktom a podpory týchto produktov",
+     "lit": "Slovakija – Kompiuterinė įranga ir reikmenys – Nákup hardvéru a podpory hardvérových produktov a nákup licencií k štandardným softvérovým produktom a podpory týchto produktov",
+     "ita": "Slovacchia – Apparecchiature informatiche e forniture – Nákup hardvéru a podpory hardvérových produktov a nákup licencií k štandardným softvérovým produktom a podpory týchto produktov",
+     "bul": "Словакия – Компютърно оборудване и принадлежности – Nákup hardvéru a podpory hardvérových produktov a nákup licencií k štandardným softvérovým produktom a podpory týchto produktov",
+     "slv": "Slovaška – Računalniška oprema in pribor – Nákup hardvéru a podpory hardvérových produktov a nákup licencií k štandardným softvérovým produktom a podpory týchto produktov",
+     "eng": "Slovakia – Computer equipment and supplies – Nákup hardvéru a podpory hardvérových produktov a nákup licencií k štandardným softvérovým produktom a podpory týchto produktov"
+    },
+    "links": {
+     "xml": "https://ted.europa.eu/en/notice/742074-2026/xml",
+     "html": "https://ted.europa.eu/en/notice/742074-2026/html"
+    }
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-ted-742074-2026",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "Slovakia – Computer equipment and supplies – Nákup hardvéru a podpory hardvérových produktov a nákup licencií k štandardným softvérovým produktom a podpory týchto produktov",
+    "description": "Vytvorením tohto DNS pre kategóriu 1 je zriadenie DNS, prostredníctvom ktorého sa budú priebežne, podľa potreby obstarávateľa, zadávať jednotlivé zákazky na nákup hardvéru a podpory hardvérových produktov počas 48 mesiacov po zriadení DNS. Konkrétny rozsah predmetu zákazky, podrobná špecifikácia, ako aj ostatné doplňujúce informácie budú súčasťou jednotlivých výziev na predkladanie ponúk v rámci zriadeného DNS, ktoré budú zaslané všetkým zaradeným záujemcom do tejto kategórie prostredníctvom elektronického nastroja JOSEPHINE pre CPV kódy: 30200000 Počítačové zariadenia a spotrebný materiál 30210000-4 Stroje na spracovanie údajov (hardvér) 30230000-0 Zariadenia súvisiace s počítačmi 32400000-7 Siete 35125100-7 Snímače 48820000-2 Servery 72600000-6 Počítačové podporné služby a poradenstvo 72700000-7 Služby pre počítačové siete Predmetom jednotlivých zákaziek, môžu byť v nevyhnutnom rozsahu aj prislúchajúce služby, štandardne poskytované s príslušným HW napr. v prípade ak výrobca vyžaduje inštaláciu/oživenie predajcom (certifikovaným technikom dodávateľa). Obstarávateľ plánuje realizovať čiastkové zákazky najmä no nie výlučne vo vzťahu k nasledovným technológiám: Kategória 1: DELL servery Cisco Switch Cisco Router Cisco Call manager server Hitachi storege SUN storage Predmetom jednotlivých zákaziek, môžu byť v nevyhnutnom rozsahu aj prislúchajúce služby, štandardne poskytované s príslušným HW napr. v prípade ak výrobca vyžaduje inštaláciu/oživenie predajcom (certifikovaným technikom dodávateľa).",
+    "buyer": {
+     "name": "Východoslovenská vodárenská spoločnosť, a.s.",
+     "country": "SK"
+    },
+    "country": "SK",
+    "procurement_method": "restricted",
+    "main_category": "supplies",
+    "value": {
+     "amount": "14658.50",
+     "currency": "EUR"
+    },
+    "published_at": "2026-10-27T00:00:00+01:00",
+    "updated_at": "2026-10-26T00:00:00+01:00",
+    "tender_end": null,
+    "classifications": [
+     {
+      "scheme": "CPV",
+      "id": "30200000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "30230000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "32400000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "35125100"
+     },
+     {
+      "scheme": "CPV",
+      "id": "48820000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "72600000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "72700000"
+     },
+     {
+      "scheme": "CPV",
+      "id": "30210000"
+     }
+    ],
+    "url": "https://ted.europa.eu/en/notice/742074-2026/html"
+   },
+   "awards": [
+    {
+     "award_id": "742074-2026-awarded",
+     "title": null,
+     "status": "active",
+     "date": "2026-10-27T00:00:00+01:00",
+     "value": null,
+     "suppliers": [
+      {
+       "name": "A"
+      },
+      {
+       "name": "r"
+      },
+      {
+       "name": "m"
+      },
+      {
+       "name": "i"
+      },
+      {
+       "name": "n"
+      },
+      {
+       "name": "u"
+      },
+      {
+       "name": "s"
+      },
+      null,
+      {
+       "name": "a"
+      },
+      {
+       "name": "."
+      }
+     ]
+    }
+   ],
+   "contracts": []
+  }
+ ],
+ "rejected": []
+}

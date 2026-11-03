@@ -1,0 +1,2247 @@
+{
+ "run": {
+  "run_id": "fc6bd385-600a-4214-a570-78aac1cd01aa",
+  "source_id": "brazil_pncp",
+  "mode": "test",
+  "started_at": "2026-11-03T17:27:01+00:00",
+  "params": {
+   "limit": 20,
+   "since": "2026-10-27T17:27:01",
+   "until": "2026-11-03T17:27:01",
+   "days": 7,
+   "schema_errors": 0
+  },
+  "cursor_before": null,
+  "transform_version": "myb-procurement-0.1",
+  "status": "success",
+  "fetched": 20,
+  "drift": {
+   "missing": [],
+   "unexpected": []
+  },
+  "cursor_after": {
+   "high_water": "2026-10-27T04:29:25"
+  }
+ },
+ "records": [
+  {
+   "external_id": "compra:88124961000159-1-000129/2026",
+   "content_hash": "1728d8f92ce54a029611614bd5ba6b3bb3c8ccd63d4c7197fd0474499d5c176f",
+   "fetched_at": "2026-11-03T17:27:01+00:00",
+   "source_url": "https://pregaobanrisul.com.br/editais/0066_2026/358385",
+   "publisher": "Portal Nacional de Contratações Públicas (PNCP)",
+   "published_at": "2026-10-27T00:00:46-03:00",
+   "source_updated_at": "2026-10-27T00:00:55-03:00",
+   "language": "pt",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "valorTotalHomologado": null,
+    "orgaoEntidade": {
+     "cnpj": "88124961000159",
+     "razaoSocial": "MUNICIPIO DE SANTANA DO LIVRAMENTO",
+     "poderId": "N",
+     "esferaId": "M"
+    },
+    "dataInclusao": "2026-10-27T00:00:46",
+    "dataAtualizacao": "2026-10-27T00:00:46",
+    "numeroControlePNCP": "88124961000159-1-000129/2026",
+    "processo": "7347",
+    "objetoCompra": "REGISTRO DE PREÇOS DE MATERIAL DE LIMPEZA, HIGIENE E COZINHA",
+    "informacaoComplementar": "",
+    "dataAberturaProposta": "2026-10-27T08:00:00",
+    "dataEncerramentoProposta": "2026-11-11T08:00:00",
+    "dataPublicacaoPncp": "2026-10-27T00:00:46",
+    "dataAtualizacaoGlobal": "2026-10-27T00:00:55",
+    "unidadeOrgao": {
+     "ufNome": "Rio Grande do Sul",
+     "ufSigla": "RS",
+     "municipioNome": "Sant'Ana do Livramento",
+     "nomeUnidade": "PREFEITURA MUNICIPAL DE SANT´ANA DO LIVRAMENTO",
+     "codigoUnidade": "154476",
+     "codigoIbge": "4317103"
+    },
+    "orgaoSubRogado": null,
+    "unidadeSubRogada": null,
+    "amparoLegal": {
+     "nome": "Lei 14.133/2021, Art. 28, I",
+     "descricao": "pregão: modalidade de licitação obrigatória para aquisição de bens e serviços comuns",
+     "codigo": 1
+    },
+    "linkSistemaOrigem": "https://pregaobanrisul.com.br/editais/0066_2026/358385",
+    "linkProcessoEletronico": null,
+    "justificativaPresencial": null,
+    "anoCompra": 2026,
+    "sequencialCompra": 129,
+    "emendaParlamentar": null,
+    "numeroCompra": "0066",
+    "srp": true,
+    "valorTotalEstimado": 4161875.51,
+    "modalidadeId": 6,
+    "modalidadeNome": "Pregão - Eletrônico",
+    "modoDisputaId": 1,
+    "modoDisputaNome": "Aberto",
+    "tipoInstrumentoConvocatorioCodigo": 1,
+    "tipoInstrumentoConvocatorioNome": "Edital",
+    "fontesOrcamentarias": [],
+    "situacaoCompraId": 1,
+    "situacaoCompraNome": "Divulgada no PNCP"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-brazil_pncp-88124961000159-1-000129/2026",
+    "ocid_native": false,
+    "stage": "tender",
+    "title": "REGISTRO DE PREÇOS DE MATERIAL DE LIMPEZA, HIGIENE E COZINHA",
+    "description": "REGISTRO DE PREÇOS DE MATERIAL DE LIMPEZA, HIGIENE E COZINHA",
+    "buyer": {
+     "name": "MUNICIPIO DE SANTANA DO LIVRAMENTO",
+     "id": "88124961000159",
+     "scheme": "BR-CNPJ",
+     "country": "BR"
+    },
+    "country": "BR",
+    "status": "Divulgada no PNCP",
+    "procurement_method": "Pregão - Eletrônico",
+    "value": {
+     "amount": "4161875.51",
+     "currency": "BRL"
+    },
+    "published_at": "2026-10-27T00:00:46-03:00",
+    "updated_at": "2026-10-27T00:00:55-03:00",
+    "tender_start": "2026-10-27T08:00:00-03:00",
+    "tender_end": "2026-11-11T08:00:00-03:00",
+    "language": "pt",
+    "url": "https://pregaobanrisul.com.br/editais/0066_2026/358385"
+   },
+   "awards": [],
+   "contracts": [],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "naive_timestamps_assumed_brasilia_time"
+   ]
+  },
+  {
+   "external_id": "compra:88117700000101-1-000295/2026",
+   "content_hash": "aea2083b784af957d89a8f5ad01070fd5c00a19f59cb42f02d6c6a7db56352d2",
+   "fetched_at": "2026-11-03T17:27:01+00:00",
+   "source_url": "https://pregaobanrisul.com.br/editais/0079_2026/358618",
+   "publisher": "Portal Nacional de Contratações Públicas (PNCP)",
+   "published_at": "2026-10-27T00:00:57-03:00",
+   "source_updated_at": "2026-10-27T00:01:01-03:00",
+   "language": "pt",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "valorTotalHomologado": null,
+    "orgaoEntidade": {
+     "cnpj": "88117700000101",
+     "razaoSocial": "MUNICIPIO DE SAO JERONIMO",
+     "poderId": "N",
+     "esferaId": "M"
+    },
+    "dataInclusao": "2026-10-27T00:00:57",
+    "dataAtualizacao": "2026-10-27T00:00:57",
+    "numeroControlePNCP": "88117700000101-1-000295/2026",
+    "processo": "295",
+    "objetoCompra": "Aquisição de livros literários destinados à Educação Infantil e ao Ensino Fundamental da Rede Municipal de Ensino.",
+    "informacaoComplementar": "",
+    "dataAberturaProposta": "2026-10-27T20:00:00",
+    "dataEncerramentoProposta": "2026-11-11T09:00:00",
+    "dataPublicacaoPncp": "2026-10-27T00:00:57",
+    "dataAtualizacaoGlobal": "2026-10-27T00:01:01",
+    "unidadeOrgao": {
+     "ufNome": "Rio Grande do Sul",
+     "ufSigla": "RS",
+     "municipioNome": "São Jerônimo",
+     "nomeUnidade": "PREFEITURA MUNICIPAL DE SÃO JERÔNIMO",
+     "codigoUnidade": "35399",
+     "codigoIbge": "4318408"
+    },
+    "orgaoSubRogado": null,
+    "unidadeSubRogada": null,
+    "amparoLegal": {
+     "nome": "Lei 14.133/2021, Art. 28, I",
+     "descricao": "pregão: modalidade de licitação obrigatória para aquisição de bens e serviços comuns",
+     "codigo": 1
+    },
+    "linkSistemaOrigem": "https://pregaobanrisul.com.br/editais/0079_2026/358618",
+    "linkProcessoEletronico": null,
+    "justificativaPresencial": null,
+    "anoCompra": 2026,
+    "sequencialCompra": 295,
+    "emendaParlamentar": null,
+    "numeroCompra": "0079",
+    "srp": false,
+    "valorTotalEstimado": 40667.4,
+    "modalidadeId": 6,
+    "modalidadeNome": "Pregão - Eletrônico",
+    "modoDisputaId": 1,
+    "modoDisputaNome": "Aberto",
+    "tipoInstrumentoConvocatorioCodigo": 1,
+    "tipoInstrumentoConvocatorioNome": "Edital",
+    "fontesOrcamentarias": [],
+    "situacaoCompraId": 1,
+    "situacaoCompraNome": "Divulgada no PNCP"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-brazil_pncp-88117700000101-1-000295/2026",
+    "ocid_native": false,
+    "stage": "tender",
+    "title": "Aquisição de livros literários destinados à Educação Infantil e ao Ensino Fundamental da Rede Municipal de Ensino.",
+    "description": "Aquisição de livros literários destinados à Educação Infantil e ao Ensino Fundamental da Rede Municipal de Ensino.",
+    "buyer": {
+     "name": "MUNICIPIO DE SAO JERONIMO",
+     "id": "88117700000101",
+     "scheme": "BR-CNPJ",
+     "country": "BR"
+    },
+    "country": "BR",
+    "status": "Divulgada no PNCP",
+    "procurement_method": "Pregão - Eletrônico",
+    "value": {
+     "amount": "40667.40",
+     "currency": "BRL"
+    },
+    "published_at": "2026-10-27T00:00:57-03:00",
+    "updated_at": "2026-10-27T00:01:01-03:00",
+    "tender_start": "2026-10-27T20:00:00-03:00",
+    "tender_end": "2026-11-11T09:00:00-03:00",
+    "language": "pt",
+    "url": "https://pregaobanrisul.com.br/editais/0079_2026/358618"
+   },
+   "awards": [],
+   "contracts": [],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "naive_timestamps_assumed_brasilia_time"
+   ]
+  },
+  {
+   "external_id": "compra:88117700000101-1-000296/2026",
+   "content_hash": "b55d92e5ebece9bd8f14d36f7e0da19a2f8713621935deabb33d8e724035f7f0",
+   "fetched_at": "2026-11-03T17:27:01+00:00",
+   "source_url": "https://pregaobanrisul.com.br/editais/0080_2026/358622",
+   "publisher": "Portal Nacional de Contratações Públicas (PNCP)",
+   "published_at": "2026-10-27T00:01:03-03:00",
+   "source_updated_at": "2026-10-27T00:01:08-03:00",
+   "language": "pt",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "valorTotalHomologado": null,
+    "orgaoEntidade": {
+     "cnpj": "88117700000101",
+     "razaoSocial": "MUNICIPIO DE SAO JERONIMO",
+     "poderId": "N",
+     "esferaId": "M"
+    },
+    "dataInclusao": "2026-10-27T00:01:03",
+    "dataAtualizacao": "2026-10-27T00:01:03",
+    "numeroControlePNCP": "88117700000101-1-000296/2026",
+    "processo": "283",
+    "objetoCompra": "Aquisição de material de expediente para compor o Kit Aluno nas escolas municipais.",
+    "informacaoComplementar": "",
+    "dataAberturaProposta": "2026-10-27T20:00:00",
+    "dataEncerramentoProposta": "2026-11-11T13:00:00",
+    "dataPublicacaoPncp": "2026-10-27T00:01:03",
+    "dataAtualizacaoGlobal": "2026-10-27T00:01:08",
+    "unidadeOrgao": {
+     "ufNome": "Rio Grande do Sul",
+     "ufSigla": "RS",
+     "municipioNome": "São Jerônimo",
+     "nomeUnidade": "PREFEITURA MUNICIPAL DE SÃO JERÔNIMO",
+     "codigoUnidade": "35399",
+     "codigoIbge": "4318408"
+    },
+    "orgaoSubRogado": null,
+    "unidadeSubRogada": null,
+    "amparoLegal": {
+     "nome": "Lei 14.133/2021, Art. 28, I",
+     "descricao": "pregão: modalidade de licitação obrigatória para aquisição de bens e serviços comuns",
+     "codigo": 1
+    },
+    "linkSistemaOrigem": "https://pregaobanrisul.com.br/editais/0080_2026/358622",
+    "linkProcessoEletronico": null,
+    "justificativaPresencial": null,
+    "anoCompra": 2026,
+    "sequencialCompra": 296,
+    "emendaParlamentar": null,
+    "numeroCompra": "0080",
+    "srp": false,
+    "valorTotalEstimado": 43606.8,
+    "modalidadeId": 6,
+    "modalidadeNome": "Pregão - Eletrônico",
+    "modoDisputaId": 1,
+    "modoDisputaNome": "Aberto",
+    "tipoInstrumentoConvocatorioCodigo": 1,
+    "tipoInstrumentoConvocatorioNome": "Edital",
+    "fontesOrcamentarias": [],
+    "situacaoCompraId": 1,
+    "situacaoCompraNome": "Divulgada no PNCP"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-brazil_pncp-88117700000101-1-000296/2026",
+    "ocid_native": false,
+    "stage": "tender",
+    "title": "Aquisição de material de expediente para compor o Kit Aluno nas escolas municipais.",
+    "description": "Aquisição de material de expediente para compor o Kit Aluno nas escolas municipais.",
+    "buyer": {
+     "name": "MUNICIPIO DE SAO JERONIMO",
+     "id": "88117700000101",
+     "scheme": "BR-CNPJ",
+     "country": "BR"
+    },
+    "country": "BR",
+    "status": "Divulgada no PNCP",
+    "procurement_method": "Pregão - Eletrônico",
+    "value": {
+     "amount": "43606.80",
+     "currency": "BRL"
+    },
+    "published_at": "2026-10-27T00:01:03-03:00",
+    "updated_at": "2026-10-27T00:01:08-03:00",
+    "tender_start": "2026-10-27T20:00:00-03:00",
+    "tender_end": "2026-11-11T13:00:00-03:00",
+    "language": "pt",
+    "url": "https://pregaobanrisul.com.br/editais/0080_2026/358622"
+   },
+   "awards": [],
+   "contracts": [],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "naive_timestamps_assumed_brasilia_time"
+   ]
+  },
+  {
+   "external_id": "compra:04216419000136-1-000050/2026",
+   "content_hash": "e09d2053f04180aadd2981676793bdcea99079bdfdb2fcd4fbbcb20daf91c3c7",
+   "fetched_at": "2026-11-03T17:27:01+00:00",
+   "source_url": "https://pregaobanrisul.com.br/editais/0028_2026/358628",
+   "publisher": "Portal Nacional de Contratações Públicas (PNCP)",
+   "published_at": "2026-10-27T00:01:10-03:00",
+   "source_updated_at": "2026-10-27T00:01:16-03:00",
+   "language": "pt",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "valorTotalHomologado": null,
+    "orgaoEntidade": {
+     "cnpj": "04216419000136",
+     "razaoSocial": "MUNICIPIO DE BOZANO",
+     "poderId": "N",
+     "esferaId": "M"
+    },
+    "dataInclusao": "2026-10-27T00:01:10",
+    "dataAtualizacao": "2026-10-27T00:01:10",
+    "numeroControlePNCP": "04216419000136-1-000050/2026",
+    "processo": "0028",
+    "objetoCompra": "Contratação de pessoa jurídica especializada, para a prestação de serviços médico-veterinários, destinados diretamente aos produtores de leite da circunscrição do Município de Bozano, mediante atendimento nas respectivas propriedades rurais cadastradas, cujo deslocamento se dará com veículo próprio.",
+    "informacaoComplementar": "",
+    "dataAberturaProposta": "2026-10-27T08:00:00",
+    "dataEncerramentoProposta": "2026-11-16T08:15:00",
+    "dataPublicacaoPncp": "2026-10-27T00:01:10",
+    "dataAtualizacaoGlobal": "2026-10-27T00:01:16",
+    "unidadeOrgao": {
+     "ufNome": "Rio Grande do Sul",
+     "ufSigla": "RS",
+     "municipioNome": "Bozano",
+     "nomeUnidade": "MUNICÍPIO DE BOZANO",
+     "codigoUnidade": "165729",
+     "codigoIbge": "4302584"
+    },
+    "orgaoSubRogado": null,
+    "unidadeSubRogada": null,
+    "amparoLegal": {
+     "nome": "Lei 14.133/2021, Art. 28, I",
+     "descricao": "pregão: modalidade de licitação obrigatória para aquisição de bens e serviços comuns",
+     "codigo": 1
+    },
+    "linkSistemaOrigem": "https://pregaobanrisul.com.br/editais/0028_2026/358628",
+    "linkProcessoEletronico": null,
+    "justificativaPresencial": null,
+    "anoCompra": 2026,
+    "sequencialCompra": 50,
+    "emendaParlamentar": null,
+    "numeroCompra": "0028",
+    "srp": false,
+    "valorTotalEstimado": 78852.0,
+    "modalidadeId": 6,
+    "modalidadeNome": "Pregão - Eletrônico",
+    "modoDisputaId": 1,
+    "modoDisputaNome": "Aberto",
+    "tipoInstrumentoConvocatorioCodigo": 1,
+    "tipoInstrumentoConvocatorioNome": "Edital",
+    "fontesOrcamentarias": [],
+    "situacaoCompraId": 1,
+    "situacaoCompraNome": "Divulgada no PNCP"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-brazil_pncp-04216419000136-1-000050/2026",
+    "ocid_native": false,
+    "stage": "tender",
+    "title": "Contratação de pessoa jurídica especializada, para a prestação de serviços médico-veterinários, destinados diretamente aos produtores de leite da circunscrição do Município de Bozano, mediante atendim",
+    "description": "Contratação de pessoa jurídica especializada, para a prestação de serviços médico-veterinários, destinados diretamente aos produtores de leite da circunscrição do Município de Bozano, mediante atendimento nas respectivas propriedades rurais cadastradas, cujo deslocamento se dará com veículo próprio.",
+    "buyer": {
+     "name": "MUNICIPIO DE BOZANO",
+     "id": "04216419000136",
+     "scheme": "BR-CNPJ",
+     "country": "BR"
+    },
+    "country": "BR",
+    "status": "Divulgada no PNCP",
+    "procurement_method": "Pregão - Eletrônico",
+    "value": {
+     "amount": "78852.00",
+     "currency": "BRL"
+    },
+    "published_at": "2026-10-27T00:01:10-03:00",
+    "updated_at": "2026-10-27T00:01:16-03:00",
+    "tender_start": "2026-10-27T08:00:00-03:00",
+    "tender_end": "2026-11-16T08:15:00-03:00",
+    "language": "pt",
+    "url": "https://pregaobanrisul.com.br/editais/0028_2026/358628"
+   },
+   "awards": [],
+   "contracts": [],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "naive_timestamps_assumed_brasilia_time"
+   ]
+  },
+  {
+   "external_id": "compra:01616520000196-1-000134/2026",
+   "content_hash": "b9096819845401f790f368c782fc9741a5d67e669e1b1367c0b3aa7001518ee8",
+   "fetched_at": "2026-11-03T17:27:01+00:00",
+   "source_url": "https://www.portaldecompraspublicas.com.br/processos/GO/Prefeitura-Municipal-de-Aguas-Lindas-de-Goias-2994/PE-21-2026-2026-492401",
+   "publisher": "Portal Nacional de Contratações Públicas (PNCP)",
+   "published_at": "2026-10-27T02:56:11-03:00",
+   "source_updated_at": "2026-10-27T03:22:29-03:00",
+   "language": "pt",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "valorTotalHomologado": null,
+    "orgaoEntidade": {
+     "cnpj": "01616520000196",
+     "razaoSocial": "MUNICIPIO DE AGUAS LINDAS DE GOIAS",
+     "poderId": "N",
+     "esferaId": "M"
+    },
+    "dataInclusao": "2026-10-27T02:56:11",
+    "dataAtualizacao": "2026-10-27T02:56:11",
+    "numeroControlePNCP": "01616520000196-1-000134/2026",
+    "processo": "2026005804",
+    "objetoCompra": "[Portal de Compras Públicas] - Aquisição de instrumentais e materiais odontológicos permanentes destinados ao Centro de Especialidades Odontológicas (CEO) e às unidades de Saúde Bucal da Atenção Primária do município de Águas Lindas de Goiás.",
+    "informacaoComplementar": "",
+    "dataAberturaProposta": "2026-07-02T09:00:00",
+    "dataEncerramentoProposta": "2026-07-14T09:00:00",
+    "dataPublicacaoPncp": "2026-10-27T02:56:11",
+    "dataAtualizacaoGlobal": "2026-10-27T03:22:29",
+    "unidadeOrgao": {
+     "ufNome": "Goiás",
+     "ufSigla": "GO",
+     "municipioNome": "Águas Lindas de Goiás",
+     "nomeUnidade": "SECRETARIA MUNICIPAL DE SAÚDE",
+     "codigoUnidade": "5580",
+     "codigoIbge": "5200258"
+    },
+    "orgaoSubRogado": null,
+    "unidadeSubRogada": null,
+    "amparoLegal": {
+     "nome": "Lei 14.133/2021, Art. 28, I",
+     "descricao": "pregão: modalidade de licitação obrigatória para aquisição de bens e serviços comuns",
+     "codigo": 1
+    },
+    "linkSistemaOrigem": "https://www.portaldecompraspublicas.com.br/processos/GO/Prefeitura-Municipal-de-Aguas-Lindas-de-Goias-2994/PE-21-2026-2026-492401",
+    "linkProcessoEletronico": null,
+    "justificativaPresencial": "",
+    "anoCompra": 2026,
+    "sequencialCompra": 134,
+    "emendaParlamentar": null,
+    "numeroCompra": "21",
+    "srp": false,
+    "valorTotalEstimado": 104236.2,
+    "modalidadeId": 6,
+    "modalidadeNome": "Pregão - Eletrônico",
+    "modoDisputaId": 1,
+    "modoDisputaNome": "Aberto",
+    "tipoInstrumentoConvocatorioCodigo": 1,
+    "tipoInstrumentoConvocatorioNome": "Edital",
+    "fontesOrcamentarias": [],
+    "situacaoCompraId": 1,
+    "situacaoCompraNome": "Divulgada no PNCP"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-brazil_pncp-01616520000196-1-000134/2026",
+    "ocid_native": false,
+    "stage": "tender",
+    "title": "[Portal de Compras Públicas] - Aquisição de instrumentais e materiais odontológicos permanentes destinados ao Centro de Especialidades Odontológicas (CEO) e às unidades de Saúde Bucal da Atenção Primá",
+    "description": "[Portal de Compras Públicas] - Aquisição de instrumentais e materiais odontológicos permanentes destinados ao Centro de Especialidades Odontológicas (CEO) e às unidades de Saúde Bucal da Atenção Primária do município de Águas Lindas de Goiás.",
+    "buyer": {
+     "name": "MUNICIPIO DE AGUAS LINDAS DE GOIAS",
+     "id": "01616520000196",
+     "scheme": "BR-CNPJ",
+     "country": "BR"
+    },
+    "country": "BR",
+    "status": "Divulgada no PNCP",
+    "procurement_method": "Pregão - Eletrônico",
+    "value": {
+     "amount": "104236.20",
+     "currency": "BRL"
+    },
+    "published_at": "2026-10-27T02:56:11-03:00",
+    "updated_at": "2026-10-27T03:22:29-03:00",
+    "tender_start": "2026-07-02T09:00:00-03:00",
+    "tender_end": "2026-07-14T09:00:00-03:00",
+    "language": "pt",
+    "url": "https://www.portaldecompraspublicas.com.br/processos/GO/Prefeitura-Municipal-de-Aguas-Lindas-de-Goias-2994/PE-21-2026-2026-492401"
+   },
+   "awards": [],
+   "contracts": [],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "naive_timestamps_assumed_brasilia_time"
+   ]
+  },
+  {
+   "external_id": "compra:87896882000101-1-000055/2026",
+   "content_hash": "f056a0f06d4ef1aa6332c7ac07855c81b5c9199c2324ec259a78e6fb80041d8f",
+   "fetched_at": "2026-11-03T17:27:01+00:00",
+   "source_url": "https://www.portaldecompraspublicas.com.br/processos/RS/Prefeitura-Municipal-de-Sao-Francisco-de-Assis-38/RPE-038-2026-2026-491636",
+   "publisher": "Portal Nacional de Contratações Públicas (PNCP)",
+   "published_at": "2026-10-27T02:57:57-03:00",
+   "source_updated_at": "2026-10-27T03:03:26-03:00",
+   "language": "pt",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "valorTotalHomologado": 36000.0,
+    "orgaoEntidade": {
+     "cnpj": "87896882000101",
+     "razaoSocial": "MUNICIPIO DE SAO FRANCISCO DE ASSIS",
+     "poderId": "N",
+     "esferaId": "M"
+    },
+    "dataInclusao": "2026-10-27T02:57:57",
+    "dataAtualizacao": "2026-10-27T02:58:47",
+    "numeroControlePNCP": "87896882000101-1-000055/2026",
+    "processo": "681/2025",
+    "objetoCompra": "[Portal de Compras Públicas] - Pregão Eletrônico para Registro de Preços nº038/2026 - Serviços de Manutenção e Preventiva e Corretiva de Câmaras de Conservação de Imunobiológicos das Unidades de Saúde",
+    "informacaoComplementar": "",
+    "dataAberturaProposta": "2026-06-29T14:00:00",
+    "dataEncerramentoProposta": "2026-07-14T08:29:00",
+    "dataPublicacaoPncp": "2026-10-27T02:57:57",
+    "dataAtualizacaoGlobal": "2026-10-27T03:03:26",
+    "unidadeOrgao": {
+     "ufNome": "Rio Grande do Sul",
+     "ufSigla": "RS",
+     "municipioNome": "São Francisco de Assis",
+     "nomeUnidade": "SECRETARIA DA SAÚDE",
+     "codigoUnidade": "1413",
+     "codigoIbge": "4318101"
+    },
+    "orgaoSubRogado": null,
+    "unidadeSubRogada": null,
+    "amparoLegal": {
+     "nome": "Lei 14.133/2021, Art. 28, I",
+     "descricao": "pregão: modalidade de licitação obrigatória para aquisição de bens e serviços comuns",
+     "codigo": 1
+    },
+    "linkSistemaOrigem": "https://www.portaldecompraspublicas.com.br/processos/RS/Prefeitura-Municipal-de-Sao-Francisco-de-Assis-38/RPE-038-2026-2026-491636",
+    "linkProcessoEletronico": null,
+    "justificativaPresencial": "",
+    "anoCompra": 2026,
+    "sequencialCompra": 55,
+    "emendaParlamentar": null,
+    "numeroCompra": "038",
+    "srp": true,
+    "valorTotalEstimado": 41900.0,
+    "modalidadeId": 6,
+    "modalidadeNome": "Pregão - Eletrônico",
+    "modoDisputaId": 1,
+    "modoDisputaNome": "Aberto",
+    "tipoInstrumentoConvocatorioCodigo": 1,
+    "tipoInstrumentoConvocatorioNome": "Edital",
+    "fontesOrcamentarias": [],
+    "situacaoCompraId": 1,
+    "situacaoCompraNome": "Divulgada no PNCP"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-brazil_pncp-87896882000101-1-000055/2026",
+    "ocid_native": false,
+    "stage": "tender",
+    "title": "[Portal de Compras Públicas] - Pregão Eletrônico para Registro de Preços nº038/2026 - Serviços de Manutenção e Preventiva e Corretiva de Câmaras de Conservação de Imunobiológicos das Unidades de Saúde",
+    "description": "[Portal de Compras Públicas] - Pregão Eletrônico para Registro de Preços nº038/2026 - Serviços de Manutenção e Preventiva e Corretiva de Câmaras de Conservação de Imunobiológicos das Unidades de Saúde",
+    "buyer": {
+     "name": "MUNICIPIO DE SAO FRANCISCO DE ASSIS",
+     "id": "87896882000101",
+     "scheme": "BR-CNPJ",
+     "country": "BR"
+    },
+    "country": "BR",
+    "status": "Divulgada no PNCP",
+    "procurement_method": "Pregão - Eletrônico",
+    "value": {
+     "amount": "41900.00",
+     "currency": "BRL"
+    },
+    "published_at": "2026-10-27T02:57:57-03:00",
+    "updated_at": "2026-10-27T03:03:26-03:00",
+    "tender_start": "2026-06-29T14:00:00-03:00",
+    "tender_end": "2026-07-14T08:29:00-03:00",
+    "language": "pt",
+    "url": "https://www.portaldecompraspublicas.com.br/processos/RS/Prefeitura-Municipal-de-Sao-Francisco-de-Assis-38/RPE-038-2026-2026-491636"
+   },
+   "awards": [],
+   "contracts": [],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "naive_timestamps_assumed_brasilia_time"
+   ]
+  },
+  {
+   "external_id": "compra:00508903000188-1-002109/2026",
+   "content_hash": "0c0d0f6e758f6bf06f94098678fd8955758464d99d515bdf9836a818e3c29f93",
+   "fetched_at": "2026-11-03T17:27:01+00:00",
+   "source_url": "https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/compras/acompanhamento-compra?compra=09002205000732026",
+   "publisher": "Portal Nacional de Contratações Públicas (PNCP)",
+   "published_at": "2026-10-27T04:00:01-03:00",
+   "source_updated_at": "2026-10-27T04:06:20-03:00",
+   "language": "pt",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "valorTotalHomologado": null,
+    "orgaoEntidade": {
+     "cnpj": "00508903000188",
+     "razaoSocial": "JUSTICA FEDERAL DE PRIMEIRA INSTANCIA",
+     "poderId": "J",
+     "esferaId": "F"
+    },
+    "dataInclusao": "2026-10-27T04:00:01",
+    "dataAtualizacao": "2026-10-27T04:00:01",
+    "numeroControlePNCP": "00508903000188-1-002109/2026",
+    "processo": "0003934-62.2025.4.01.8006",
+    "objetoCompra": "Aquisição de equipamentos eletrodomésticos para compor reserva técnica e suprir as demandas da Seção Judiciária do Estado de Goiás, bem como as Subseções a ela vinculadas.",
+    "informacaoComplementar": "PARA TODOS OS ITENS, ATENTAR PARA A DESCRIÇÃO CONTIDA NO TERMO DE REFERÊNCIA. ALGUNS CATMATS FORAM USADOS POR SEMELHANÇA, PARA MERO CADASTRO NO COMPRAS.GOV.BR. ALÉM DISSO, ATENTAR PARA AS DEMAIS CONDIÇÕES DE CONTRATAÇÃO, COMO LOCAL DE ENTREGA ETC.",
+    "dataAberturaProposta": "2026-10-27T08:00:00",
+    "dataEncerramentoProposta": "2026-11-10T14:00:00",
+    "dataPublicacaoPncp": "2026-10-27T04:00:01",
+    "dataAtualizacaoGlobal": "2026-10-27T04:06:20",
+    "unidadeOrgao": {
+     "ufNome": "Goiás",
+     "ufSigla": "GO",
+     "municipioNome": "Goiânia",
+     "nomeUnidade": "JUSTICA FEDERAL DE 1A. INSTANCIA/GO",
+     "codigoUnidade": "090022",
+     "codigoIbge": "5208707"
+    },
+    "orgaoSubRogado": null,
+    "unidadeSubRogada": null,
+    "amparoLegal": {
+     "nome": "Lei 14.133/2021, Art. 28, I",
+     "descricao": "pregão: modalidade de licitação obrigatória para aquisição de bens e serviços comuns",
+     "codigo": 1
+    },
+    "linkSistemaOrigem": "https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/compras/acompanhamento-compra?compra=09002205000732026",
+    "linkProcessoEletronico": "https://sei.trf1.jus.br/sei/controlador.php",
+    "justificativaPresencial": null,
+    "anoCompra": 2026,
+    "sequencialCompra": 2109,
+    "emendaParlamentar": null,
+    "numeroCompra": "73",
+    "srp": false,
+    "valorTotalEstimado": 87621.31,
+    "modalidadeId": 6,
+    "modalidadeNome": "Pregão - Eletrônico",
+    "modoDisputaId": 1,
+    "modoDisputaNome": "Aberto",
+    "tipoInstrumentoConvocatorioCodigo": 1,
+    "tipoInstrumentoConvocatorioNome": "Edital",
+    "fontesOrcamentarias": [
+     {
+      "codigo": 4,
+      "nome": "Federal",
+      "descricao": "Recurso orçamentário federal disponível e devidamente vinculado à despesa que será realizada.",
+      "dataInclusao": "2026-10-27T04:00:02"
+     }
+    ],
+    "situacaoCompraId": 1,
+    "situacaoCompraNome": "Divulgada no PNCP"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-brazil_pncp-00508903000188-1-002109/2026",
+    "ocid_native": false,
+    "stage": "tender",
+    "title": "Aquisição de equipamentos eletrodomésticos para compor reserva técnica e suprir as demandas da Seção Judiciária do Estado de Goiás, bem como as Subseções a ela vinculadas.",
+    "description": "Aquisição de equipamentos eletrodomésticos para compor reserva técnica e suprir as demandas da Seção Judiciária do Estado de Goiás, bem como as Subseções a ela vinculadas.",
+    "buyer": {
+     "name": "JUSTICA FEDERAL DE PRIMEIRA INSTANCIA",
+     "id": "00508903000188",
+     "scheme": "BR-CNPJ",
+     "country": "BR"
+    },
+    "country": "BR",
+    "status": "Divulgada no PNCP",
+    "procurement_method": "Pregão - Eletrônico",
+    "value": {
+     "amount": "87621.31",
+     "currency": "BRL"
+    },
+    "published_at": "2026-10-27T04:00:01-03:00",
+    "updated_at": "2026-10-27T04:06:20-03:00",
+    "tender_start": "2026-10-27T08:00:00-03:00",
+    "tender_end": "2026-11-10T14:00:00-03:00",
+    "language": "pt",
+    "url": "https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/compras/acompanhamento-compra?compra=09002205000732026"
+   },
+   "awards": [],
+   "contracts": [],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "naive_timestamps_assumed_brasilia_time"
+   ]
+  },
+  {
+   "external_id": "compra:00394502000144-1-014488/2026",
+   "content_hash": "957545dacf1594a3c94771890fd2cf35aed09614a6596634a8f3403269e3f5e5",
+   "fetched_at": "2026-11-03T17:27:01+00:00",
+   "source_url": "https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/compras/acompanhamento-compra?compra=78933005000492026",
+   "publisher": "Portal Nacional de Contratações Públicas (PNCP)",
+   "published_at": "2026-10-27T04:00:02-03:00",
+   "source_updated_at": "2026-10-27T04:29:25-03:00",
+   "language": "pt",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "valorTotalHomologado": null,
+    "orgaoEntidade": {
+     "cnpj": "00394502000144",
+     "razaoSocial": "COMANDO DA MARINHA",
+     "poderId": "E",
+     "esferaId": "F"
+    },
+    "dataInclusao": "2026-10-27T04:00:02",
+    "dataAtualizacao": "2026-10-27T04:00:02",
+    "numeroControlePNCP": "00394502000144-1-014488/2026",
+    "processo": "63049.000310/2026-35",
+    "objetoCompra": "AQUISIÇÃO DE MATERIAL PARA INSPEÇÃO E MANUTENÇÃO DE AUXÍLIOS A NAVEGAÇÃO",
+    "informacaoComplementar": null,
+    "dataAberturaProposta": "2026-10-27T08:00:00",
+    "dataEncerramentoProposta": "2026-11-10T08:00:00",
+    "dataPublicacaoPncp": "2026-10-27T04:00:02",
+    "dataAtualizacaoGlobal": "2026-10-27T04:29:25",
+    "unidadeOrgao": {
+     "ufNome": "Paraná",
+     "ufSigla": "PR",
+     "municipioNome": "Paranaguá",
+     "nomeUnidade": "CAPITANIA DOS PORTOS DO PARANá",
+     "codigoUnidade": "789330",
+     "codigoIbge": "4118204"
+    },
+    "orgaoSubRogado": null,
+    "unidadeSubRogada": null,
+    "amparoLegal": {
+     "nome": "Lei 14.133/2021, Art. 28, I",
+     "descricao": "pregão: modalidade de licitação obrigatória para aquisição de bens e serviços comuns",
+     "codigo": 1
+    },
+    "linkSistemaOrigem": "https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/compras/acompanhamento-compra?compra=78933005000492026",
+    "linkProcessoEletronico": "https://licitacoescontratos.dadm.mb/",
+    "justificativaPresencial": null,
+    "anoCompra": 2026,
+    "sequencialCompra": 14488,
+    "emendaParlamentar": null,
+    "numeroCompra": "49",
+    "srp": true,
+    "valorTotalEstimado": 962822.45,
+    "modalidadeId": 6,
+    "modalidadeNome": "Pregão - Eletrônico",
+    "modoDisputaId": 3,
+    "modoDisputaNome": "Aberto-Fechado",
+    "tipoInstrumentoConvocatorioCodigo": 1,
+    "tipoInstrumentoConvocatorioNome": "Edital",
+    "fontesOrcamentarias": [
+     {
+      "codigo": 4,
+      "nome": "Federal",
+      "descricao": "Recurso orçamentário federal disponível e devidamente vinculado à despesa que será realizada.",
+      "dataInclusao": "2026-10-27T04:00:03"
+     }
+    ],
+    "situacaoCompraId": 1,
+    "situacaoCompraNome": "Divulgada no PNCP"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-brazil_pncp-00394502000144-1-014488/2026",
+    "ocid_native": false,
+    "stage": "tender",
+    "title": "AQUISIÇÃO DE MATERIAL PARA INSPEÇÃO E MANUTENÇÃO DE AUXÍLIOS A NAVEGAÇÃO",
+    "description": "AQUISIÇÃO DE MATERIAL PARA INSPEÇÃO E MANUTENÇÃO DE AUXÍLIOS A NAVEGAÇÃO",
+    "buyer": {
+     "name": "COMANDO DA MARINHA",
+     "id": "00394502000144",
+     "scheme": "BR-CNPJ",
+     "country": "BR"
+    },
+    "country": "BR",
+    "status": "Divulgada no PNCP",
+    "procurement_method": "Pregão - Eletrônico",
+    "value": {
+     "amount": "962822.45",
+     "currency": "BRL"
+    },
+    "published_at": "2026-10-27T04:00:02-03:00",
+    "updated_at": "2026-10-27T04:29:25-03:00",
+    "tender_start": "2026-10-27T08:00:00-03:00",
+    "tender_end": "2026-11-10T08:00:00-03:00",
+    "language": "pt",
+    "url": "https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/compras/acompanhamento-compra?compra=78933005000492026"
+   },
+   "awards": [],
+   "contracts": [],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "naive_timestamps_assumed_brasilia_time"
+   ]
+  },
+  {
+   "external_id": "compra:00444232000139-1-001435/2026",
+   "content_hash": "98f1c2c65be29e2361cd0363ccc02515aa3801656bdff17b71f7efc8c6cdb2dc",
+   "fetched_at": "2026-11-03T17:27:01+00:00",
+   "source_url": "https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/compras/acompanhamento-compra?compra=16800605002742026",
+   "publisher": "Portal Nacional de Contratações Públicas (PNCP)",
+   "published_at": "2026-10-27T04:00:04-03:00",
+   "source_updated_at": "2026-10-27T04:08:57-03:00",
+   "language": "pt",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "valorTotalHomologado": null,
+    "orgaoEntidade": {
+     "cnpj": "00444232000139",
+     "razaoSocial": "INDUSTRIA DE MATERIAL BELICO DO BRASIL IMBEL",
+     "poderId": "N",
+     "esferaId": "N"
+    },
+    "dataInclusao": "2026-10-27T04:00:04",
+    "dataAtualizacao": "2026-10-27T04:00:04",
+    "numeroControlePNCP": "00444232000139-1-001435/2026",
+    "processo": "2026/000309-FJF",
+    "objetoCompra": "Óleo Lubrificante Hidráulico Mineral Castrol Hyspin AWS 68 ",
+    "informacaoComplementar": null,
+    "dataAberturaProposta": "2026-10-27T08:00:00",
+    "dataEncerramentoProposta": "2026-11-16T09:00:00",
+    "dataPublicacaoPncp": "2026-10-27T04:00:04",
+    "dataAtualizacaoGlobal": "2026-10-27T04:08:57",
+    "unidadeOrgao": {
+     "ufNome": "Minas Gerais",
+     "ufSigla": "MG",
+     "municipioNome": "Juiz de Fora",
+     "nomeUnidade": "INDUSTRIA DE MATERIAL BELICO DO BRASIL/FJF",
+     "codigoUnidade": "168006",
+     "codigoIbge": "3136702"
+    },
+    "orgaoSubRogado": null,
+    "unidadeSubRogada": null,
+    "amparoLegal": {
+     "nome": "Lei 13.303/2016, Art. 32, IV",
+     "descricao": "Pregão: modalidade de licitação preferencial para a aquisição de bens e serviços comuns, assim considerados aqueles cujos padrões de desempenho e qualidade possam ser objetivamente definidos pelo edital, por meio de especificações usuais no mercado;",
+     "codigo": 113
+    },
+    "linkSistemaOrigem": "https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/compras/acompanhamento-compra?compra=16800605002742026",
+    "linkProcessoEletronico": "https://www.gov.br/compras/pt-br",
+    "justificativaPresencial": null,
+    "anoCompra": 2026,
+    "sequencialCompra": 1435,
+    "emendaParlamentar": null,
+    "numeroCompra": "274",
+    "srp": true,
+    "valorTotalEstimado": 16705.08,
+    "modalidadeId": 6,
+    "modalidadeNome": "Pregão - Eletrônico",
+    "modoDisputaId": 1,
+    "modoDisputaNome": "Aberto",
+    "tipoInstrumentoConvocatorioCodigo": 1,
+    "tipoInstrumentoConvocatorioNome": "Edital",
+    "fontesOrcamentarias": [
+     {
+      "codigo": 4,
+      "nome": "Federal",
+      "descricao": "Recurso orçamentário federal disponível e devidamente vinculado à despesa que será realizada.",
+      "dataInclusao": "2026-10-27T04:00:05"
+     }
+    ],
+    "situacaoCompraId": 1,
+    "situacaoCompraNome": "Divulgada no PNCP"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-brazil_pncp-00444232000139-1-001435/2026",
+    "ocid_native": false,
+    "stage": "tender",
+    "title": "Óleo Lubrificante Hidráulico Mineral Castrol Hyspin AWS 68 ",
+    "description": "Óleo Lubrificante Hidráulico Mineral Castrol Hyspin AWS 68 ",
+    "buyer": {
+     "name": "INDUSTRIA DE MATERIAL BELICO DO BRASIL IMBEL",
+     "id": "00444232000139",
+     "scheme": "BR-CNPJ",
+     "country": "BR"
+    },
+    "country": "BR",
+    "status": "Divulgada no PNCP",
+    "procurement_method": "Pregão - Eletrônico",
+    "value": {
+     "amount": "16705.08",
+     "currency": "BRL"
+    },
+    "published_at": "2026-10-27T04:00:04-03:00",
+    "updated_at": "2026-10-27T04:08:57-03:00",
+    "tender_start": "2026-10-27T08:00:00-03:00",
+    "tender_end": "2026-11-16T09:00:00-03:00",
+    "language": "pt",
+    "url": "https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/compras/acompanhamento-compra?compra=16800605002742026"
+   },
+   "awards": [],
+   "contracts": [],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "naive_timestamps_assumed_brasilia_time"
+   ]
+  },
+  {
+   "external_id": "compra:00394452000103-1-022983/2026",
+   "content_hash": "c866561c94097f05eaf465c272a5c8168a1a4a5e5fa87c8528749a9368c707b1",
+   "fetched_at": "2026-11-03T17:27:01+00:00",
+   "source_url": "https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/compras/acompanhamento-compra?compra=16029705001282026",
+   "publisher": "Portal Nacional de Contratações Públicas (PNCP)",
+   "published_at": "2026-10-27T04:00:04-03:00",
+   "source_updated_at": "2026-10-27T04:22:19-03:00",
+   "language": "pt",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "valorTotalHomologado": null,
+    "orgaoEntidade": {
+     "cnpj": "00394452000103",
+     "razaoSocial": "COMANDO DO EXERCITO",
+     "poderId": "E",
+     "esferaId": "F"
+    },
+    "dataInclusao": "2026-10-27T04:00:04",
+    "dataAtualizacao": "2026-10-27T04:00:04",
+    "numeroControlePNCP": "00394452000103-1-022983/2026",
+    "processo": "64277.011043/2025-10",
+    "objetoCompra": "Aquisição de equipamentos e materiais de rancho.",
+    "informacaoComplementar": null,
+    "dataAberturaProposta": "2026-10-27T08:00:00",
+    "dataEncerramentoProposta": "2026-11-11T09:30:00",
+    "dataPublicacaoPncp": "2026-10-27T04:00:04",
+    "dataAtualizacaoGlobal": "2026-10-27T04:22:19",
+    "unidadeOrgao": {
+     "ufNome": "Rio de Janeiro",
+     "ufSigla": "RJ",
+     "municipioNome": "Rio de Janeiro",
+     "nomeUnidade": "COMANDO DA 1 DIVISAO DE EXERCITO/RJ",
+     "codigoUnidade": "160297",
+     "codigoIbge": "3304557"
+    },
+    "orgaoSubRogado": null,
+    "unidadeSubRogada": null,
+    "amparoLegal": {
+     "nome": "Lei 14.133/2021, Art. 28, I",
+     "descricao": "pregão: modalidade de licitação obrigatória para aquisição de bens e serviços comuns",
+     "codigo": 1
+    },
+    "linkSistemaOrigem": "https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/compras/acompanhamento-compra?compra=16029705001282026",
+    "linkProcessoEletronico": "https://www.1de.eb.mil.br/index.php/acesso-a-informacao/secao-de-aquisicoes-licitacoes-e-contratos",
+    "justificativaPresencial": null,
+    "anoCompra": 2026,
+    "sequencialCompra": 22983,
+    "emendaParlamentar": null,
+    "numeroCompra": "128",
+    "srp": true,
+    "valorTotalEstimado": 5958678.28,
+    "modalidadeId": 6,
+    "modalidadeNome": "Pregão - Eletrônico",
+    "modoDisputaId": 3,
+    "modoDisputaNome": "Aberto-Fechado",
+    "tipoInstrumentoConvocatorioCodigo": 1,
+    "tipoInstrumentoConvocatorioNome": "Edital",
+    "fontesOrcamentarias": [
+     {
+      "codigo": 4,
+      "nome": "Federal",
+      "descricao": "Recurso orçamentário federal disponível e devidamente vinculado à despesa que será realizada.",
+      "dataInclusao": "2026-10-27T04:00:05"
+     }
+    ],
+    "situacaoCompraId": 1,
+    "situacaoCompraNome": "Divulgada no PNCP"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-brazil_pncp-00394452000103-1-022983/2026",
+    "ocid_native": false,
+    "stage": "tender",
+    "title": "Aquisição de equipamentos e materiais de rancho.",
+    "description": "Aquisição de equipamentos e materiais de rancho.",
+    "buyer": {
+     "name": "COMANDO DO EXERCITO",
+     "id": "00394452000103",
+     "scheme": "BR-CNPJ",
+     "country": "BR"
+    },
+    "country": "BR",
+    "status": "Divulgada no PNCP",
+    "procurement_method": "Pregão - Eletrônico",
+    "value": {
+     "amount": "5958678.28",
+     "currency": "BRL"
+    },
+    "published_at": "2026-10-27T04:00:04-03:00",
+    "updated_at": "2026-10-27T04:22:19-03:00",
+    "tender_start": "2026-10-27T08:00:00-03:00",
+    "tender_end": "2026-11-11T09:30:00-03:00",
+    "language": "pt",
+    "url": "https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/compras/acompanhamento-compra?compra=16029705001282026"
+   },
+   "awards": [],
+   "contracts": [],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "naive_timestamps_assumed_brasilia_time"
+   ]
+  },
+  {
+   "external_id": "contrato:83102830000157-2-001917/2026",
+   "content_hash": "48f242f4d5abb580a8f4d5ecd7c41711b14096fa02e6b98407a86d324b8a9047",
+   "fetched_at": "2026-11-03T17:27:01+00:00",
+   "source_url": "https://pncp.gov.br/app/editais/12075748000132/2025/81",
+   "publisher": "Portal Nacional de Contratações Públicas (PNCP)",
+   "published_at": "2026-10-27T00:00:13-03:00",
+   "source_updated_at": "2026-10-27T00:00:14-03:00",
+   "language": "pt",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "numeroControlePncpCompra": "12075748000132-1-000081/2025",
+    "numeroControlePncpAta": "12075748000132-1-000081/2025-000041",
+    "codigoPaisFornecedor": null,
+    "orgaoEntidade": {
+     "cnpj": "83102830000157",
+     "razaoSocial": "MUNICIPIO DE BARRA VELHA",
+     "poderId": "N",
+     "esferaId": "M"
+    },
+    "anoContrato": 2026,
+    "sequencialContrato": 1917,
+    "dataAtualizacao": "2026-10-27T00:00:14",
+    "numeroControlePNCP": "83102830000157-2-001917/2026",
+    "emendaParlamentar": null,
+    "processo": "000043/2025",
+    "informacaoComplementar": null,
+    "dataPublicacaoPncp": "2026-10-27T00:00:13",
+    "dataAtualizacaoGlobal": "2026-10-27T00:00:14",
+    "unidadeOrgao": {
+     "ufNome": "Santa Catarina",
+     "ufSigla": "SC",
+     "municipioNome": "Barra Velha",
+     "codigoIbge": "4202107",
+     "codigoUnidade": "CIN461",
+     "nomeUnidade": "MUNICÍPIO DE BARRA VELHA"
+    },
+    "orgaoSubRogado": null,
+    "unidadeSubRogada": null,
+    "tipoPessoa": "PJ",
+    "niFornecedor": "08824171004304",
+    "nomeRazaoSocialFornecedor": "J. C. M. NITEROI REFRIGERACAO LTDA",
+    "receita": false,
+    "numeroParcelas": 1,
+    "numeroRetificacao": 0,
+    "temRemanejamento": false,
+    "frutoAdesao": false,
+    "tipoContrato": {
+     "id": 8,
+     "nome": "Outros"
+    },
+    "numeroContratoEmpenho": "AF355656",
+    "categoriaProcesso": {
+     "id": 2,
+     "nome": "Compras"
+    },
+    "tipoPessoaSubContratada": null,
+    "objetoContrato": "APARELHOS DE AR-CONDICIONADO E CORRELATOS - LEI 14.133/2021 (RENOVADO)",
+    "valorInicial": 4600.0,
+    "valorParcela": 4600.0,
+    "valorGlobal": 4600.0,
+    "valorAcumulado": null,
+    "dataAssinatura": "2026-10-26",
+    "dataVigenciaInicio": "2026-10-26",
+    "dataVigenciaFim": "2026-11-25",
+    "identificadorCipi": null,
+    "urlCipi": null,
+    "usuarioNome": "Inovea Tecnologia Ltda"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-brazil_pncp-12075748000132-1-000081/2025",
+    "ocid_native": false,
+    "stage": "contract",
+    "title": "APARELHOS DE AR-CONDICIONADO E CORRELATOS - LEI 14.133/2021 (RENOVADO)",
+    "description": "APARELHOS DE AR-CONDICIONADO E CORRELATOS - LEI 14.133/2021 (RENOVADO)",
+    "buyer": {
+     "name": "MUNICIPIO DE BARRA VELHA",
+     "id": "83102830000157",
+     "scheme": "BR-CNPJ",
+     "country": "BR"
+    },
+    "country": "BR",
+    "published_at": "2026-10-27T00:00:13-03:00",
+    "updated_at": "2026-10-27T00:00:14-03:00",
+    "language": "pt",
+    "url": "https://pncp.gov.br/app/editais/12075748000132/2025/81"
+   },
+   "awards": [
+    {
+     "award_id": "83102830000157-2-001917/2026",
+     "status": null,
+     "date": "2026-10-26T00:00:00-03:00",
+     "value": null,
+     "suppliers": [
+      {
+       "name": "J. C. M. NITEROI REFRIGERACAO LTDA",
+       "id": "08824171004304",
+       "scheme": "BR-CNPJ",
+       "country": "BR"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "83102830000157-2-001917/2026",
+     "award_id": "83102830000157-2-001917/2026",
+     "title": "APARELHOS DE AR-CONDICIONADO E CORRELATOS - LEI 14.133/2021 (RENOVADO)",
+     "date_signed": "2026-10-26T00:00:00-03:00",
+     "period_start": "2026-10-26T00:00:00-03:00",
+     "period_end": "2026-11-25T00:00:00-03:00",
+     "value": {
+      "amount": "4600.00",
+      "currency": "BRL"
+     }
+    }
+   ],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "naive_timestamps_assumed_brasilia_time"
+   ]
+  },
+  {
+   "external_id": "contrato:80881915000192-2-000022/2026",
+   "content_hash": "efbe0252f2f296dfc024f0f8237bd682a59be16b59625afb60fa8acd7d958425",
+   "fetched_at": "2026-11-03T17:27:01+00:00",
+   "source_url": "https://pncp.gov.br/app/editais/80881915000192/2026/89",
+   "publisher": "Portal Nacional de Contratações Públicas (PNCP)",
+   "published_at": "2026-10-27T00:00:16-03:00",
+   "source_updated_at": "2026-10-27T00:00:20-03:00",
+   "language": "pt",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "numeroControlePncpCompra": "80881915000192-1-000089/2026",
+    "numeroControlePncpAta": null,
+    "codigoPaisFornecedor": null,
+    "orgaoEntidade": {
+     "cnpj": "80881915000192",
+     "razaoSocial": "MUNICIPIO DE LINDOESTE",
+     "poderId": "N",
+     "esferaId": "M"
+    },
+    "anoContrato": 2026,
+    "sequencialContrato": 22,
+    "dataAtualizacao": "2026-10-27T00:00:20",
+    "numeroControlePNCP": "80881915000192-2-000022/2026",
+    "emendaParlamentar": null,
+    "processo": "IL24/2026",
+    "informacaoComplementar": null,
+    "dataPublicacaoPncp": "2026-10-27T00:00:16",
+    "dataAtualizacaoGlobal": "2026-10-27T00:00:20",
+    "unidadeOrgao": {
+     "ufNome": "Paraná",
+     "ufSigla": "PR",
+     "municipioNome": "Lindoeste",
+     "codigoIbge": "4113452",
+     "codigoUnidade": "2",
+     "nomeUnidade": "Prefeitura Municipal de Lindoeste"
+    },
+    "orgaoSubRogado": null,
+    "unidadeSubRogada": null,
+    "tipoPessoa": "PJ",
+    "niFornecedor": "18921843000196",
+    "nomeRazaoSocialFornecedor": "JARDEL RODRIGUES DE OLIVEIRA 05039218907",
+    "receita": false,
+    "numeroParcelas": 1,
+    "numeroRetificacao": 0,
+    "temRemanejamento": false,
+    "frutoAdesao": false,
+    "tipoContrato": {
+     "id": 1,
+     "nome": "Contrato (termo inicial)"
+    },
+    "numeroContratoEmpenho": "97/2026",
+    "categoriaProcesso": {
+     "id": 8,
+     "nome": "Serviços"
+    },
+    "tipoPessoaSubContratada": null,
+    "objetoContrato": "CONTRATAÇÃO DE SHOW ARTÍSTICO/MATINÉ COM A BANDA CRUZEIRO – FESTA DE SÃO VICENTE – LINHA TANGARÁ",
+    "valorInicial": 4000.0,
+    "valorParcela": 4000.0,
+    "valorGlobal": 4000.0,
+    "valorAcumulado": null,
+    "dataAssinatura": "2026-09-17",
+    "dataVigenciaInicio": "2026-09-17",
+    "dataVigenciaFim": "2026-12-17",
+    "identificadorCipi": null,
+    "urlCipi": null,
+    "usuarioNome": "Pública Tecnologia Ltda."
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-brazil_pncp-80881915000192-1-000089/2026",
+    "ocid_native": false,
+    "stage": "contract",
+    "title": "CONTRATAÇÃO DE SHOW ARTÍSTICO/MATINÉ COM A BANDA CRUZEIRO – FESTA DE SÃO VICENTE – LINHA TANGARÁ",
+    "description": "CONTRATAÇÃO DE SHOW ARTÍSTICO/MATINÉ COM A BANDA CRUZEIRO – FESTA DE SÃO VICENTE – LINHA TANGARÁ",
+    "buyer": {
+     "name": "MUNICIPIO DE LINDOESTE",
+     "id": "80881915000192",
+     "scheme": "BR-CNPJ",
+     "country": "BR"
+    },
+    "country": "BR",
+    "published_at": "2026-10-27T00:00:16-03:00",
+    "updated_at": "2026-10-27T00:00:20-03:00",
+    "language": "pt",
+    "url": "https://pncp.gov.br/app/editais/80881915000192/2026/89"
+   },
+   "awards": [
+    {
+     "award_id": "80881915000192-2-000022/2026",
+     "status": null,
+     "date": "2026-09-17T00:00:00-03:00",
+     "value": null,
+     "suppliers": [
+      {
+       "name": "JARDEL RODRIGUES DE OLIVEIRA 05039218907",
+       "id": "18921843000196",
+       "scheme": "BR-CNPJ",
+       "country": "BR"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "80881915000192-2-000022/2026",
+     "award_id": "80881915000192-2-000022/2026",
+     "title": "CONTRATAÇÃO DE SHOW ARTÍSTICO/MATINÉ COM A BANDA CRUZEIRO – FESTA DE SÃO VICENTE – LINHA TANGARÁ",
+     "date_signed": "2026-09-17T00:00:00-03:00",
+     "period_start": "2026-09-17T00:00:00-03:00",
+     "period_end": "2026-12-17T00:00:00-03:00",
+     "value": {
+      "amount": "4000.00",
+      "currency": "BRL"
+     }
+    }
+   ],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "naive_timestamps_assumed_brasilia_time"
+   ]
+  },
+  {
+   "external_id": "contrato:83039842000184-2-003094/2026",
+   "content_hash": "fc962399a547de7234e951753f5e1c85cc8e96485119f7f50813570bc0326044",
+   "fetched_at": "2026-11-03T17:27:01+00:00",
+   "source_url": "https://pncp.gov.br/app/editais/12075748000132/2025/81",
+   "publisher": "Portal Nacional de Contratações Públicas (PNCP)",
+   "published_at": "2026-10-27T00:00:16-03:00",
+   "source_updated_at": "2026-10-27T00:00:16-03:00",
+   "language": "pt",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "numeroControlePncpCompra": "12075748000132-1-000081/2025",
+    "numeroControlePncpAta": "12075748000132-1-000081/2025-000040",
+    "codigoPaisFornecedor": null,
+    "orgaoEntidade": {
+     "cnpj": "83039842000184",
+     "razaoSocial": "MUNICIPIO DE VIDEIRA",
+     "poderId": "N",
+     "esferaId": "M"
+    },
+    "anoContrato": 2026,
+    "sequencialContrato": 3094,
+    "dataAtualizacao": "2026-10-27T00:00:16",
+    "numeroControlePNCP": "83039842000184-2-003094/2026",
+    "emendaParlamentar": null,
+    "processo": "000043/2025",
+    "informacaoComplementar": null,
+    "dataPublicacaoPncp": "2026-10-27T00:00:16",
+    "dataAtualizacaoGlobal": "2026-10-27T00:00:16",
+    "unidadeOrgao": {
+     "ufNome": "Santa Catarina",
+     "ufSigla": "SC",
+     "municipioNome": "Videira",
+     "codigoIbge": "4219309",
+     "codigoUnidade": "CIN20",
+     "nomeUnidade": "MUNICÍPIO DE VIDEIRA"
+    },
+    "orgaoSubRogado": null,
+    "unidadeSubRogada": null,
+    "tipoPessoa": "PJ",
+    "niFornecedor": "08824171004304",
+    "nomeRazaoSocialFornecedor": "J. C. M. NITEROI REFRIGERACAO LTDA",
+    "receita": false,
+    "numeroParcelas": 1,
+    "numeroRetificacao": 0,
+    "temRemanejamento": false,
+    "frutoAdesao": false,
+    "tipoContrato": {
+     "id": 8,
+     "nome": "Outros"
+    },
+    "numeroContratoEmpenho": "AF356197",
+    "categoriaProcesso": {
+     "id": 2,
+     "nome": "Compras"
+    },
+    "tipoPessoaSubContratada": null,
+    "objetoContrato": "APARELHOS DE AR-CONDICIONADO E CORRELATOS - LEI 14.133/2021 (RENOVADO)",
+    "valorInicial": 103500.0,
+    "valorParcela": 103500.0,
+    "valorGlobal": 103500.0,
+    "valorAcumulado": null,
+    "dataAssinatura": "2026-10-26",
+    "dataVigenciaInicio": "2026-10-26",
+    "dataVigenciaFim": "2026-11-25",
+    "identificadorCipi": null,
+    "urlCipi": null,
+    "usuarioNome": "Inovea Tecnologia Ltda"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-brazil_pncp-12075748000132-1-000081/2025",
+    "ocid_native": false,
+    "stage": "contract",
+    "title": "APARELHOS DE AR-CONDICIONADO E CORRELATOS - LEI 14.133/2021 (RENOVADO)",
+    "description": "APARELHOS DE AR-CONDICIONADO E CORRELATOS - LEI 14.133/2021 (RENOVADO)",
+    "buyer": {
+     "name": "MUNICIPIO DE VIDEIRA",
+     "id": "83039842000184",
+     "scheme": "BR-CNPJ",
+     "country": "BR"
+    },
+    "country": "BR",
+    "published_at": "2026-10-27T00:00:16-03:00",
+    "updated_at": "2026-10-27T00:00:16-03:00",
+    "language": "pt",
+    "url": "https://pncp.gov.br/app/editais/12075748000132/2025/81"
+   },
+   "awards": [
+    {
+     "award_id": "83039842000184-2-003094/2026",
+     "status": null,
+     "date": "2026-10-26T00:00:00-03:00",
+     "value": null,
+     "suppliers": [
+      {
+       "name": "J. C. M. NITEROI REFRIGERACAO LTDA",
+       "id": "08824171004304",
+       "scheme": "BR-CNPJ",
+       "country": "BR"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "83039842000184-2-003094/2026",
+     "award_id": "83039842000184-2-003094/2026",
+     "title": "APARELHOS DE AR-CONDICIONADO E CORRELATOS - LEI 14.133/2021 (RENOVADO)",
+     "date_signed": "2026-10-26T00:00:00-03:00",
+     "period_start": "2026-10-26T00:00:00-03:00",
+     "period_end": "2026-11-25T00:00:00-03:00",
+     "value": {
+      "amount": "103500.00",
+      "currency": "BRL"
+     }
+    }
+   ],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "naive_timestamps_assumed_brasilia_time"
+   ]
+  },
+  {
+   "external_id": "contrato:82939448000130-2-000446/2026",
+   "content_hash": "708ce91377bde2490d82fccb6806906be45682508869a955859d25f173f6ed8a",
+   "fetched_at": "2026-11-03T17:27:01+00:00",
+   "source_url": "https://pncp.gov.br/app/editais/12075748000132/2025/81",
+   "publisher": "Portal Nacional de Contratações Públicas (PNCP)",
+   "published_at": "2026-10-27T00:00:19-03:00",
+   "source_updated_at": "2026-10-27T00:00:19-03:00",
+   "language": "pt",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "numeroControlePncpCompra": "12075748000132-1-000081/2025",
+    "numeroControlePncpAta": "12075748000132-1-000081/2025-000040",
+    "codigoPaisFornecedor": null,
+    "orgaoEntidade": {
+     "cnpj": "82939448000130",
+     "razaoSocial": "MUNICIPIO DE IBICARE",
+     "poderId": "N",
+     "esferaId": "M"
+    },
+    "anoContrato": 2026,
+    "sequencialContrato": 446,
+    "dataAtualizacao": "2026-10-27T00:00:19",
+    "numeroControlePNCP": "82939448000130-2-000446/2026",
+    "emendaParlamentar": null,
+    "processo": "000043/2025",
+    "informacaoComplementar": null,
+    "dataPublicacaoPncp": "2026-10-27T00:00:19",
+    "dataAtualizacaoGlobal": "2026-10-27T00:00:19",
+    "unidadeOrgao": {
+     "ufNome": "Santa Catarina",
+     "ufSigla": "SC",
+     "municipioNome": "Ibicaré",
+     "codigoIbge": "4206801",
+     "codigoUnidade": "CIN55",
+     "nomeUnidade": "MUNICÍPIO DE IBICARÉ"
+    },
+    "orgaoSubRogado": null,
+    "unidadeSubRogada": null,
+    "tipoPessoa": "PJ",
+    "niFornecedor": "08824171004304",
+    "nomeRazaoSocialFornecedor": "J. C. M. NITEROI REFRIGERACAO LTDA",
+    "receita": false,
+    "numeroParcelas": 1,
+    "numeroRetificacao": 0,
+    "temRemanejamento": false,
+    "frutoAdesao": false,
+    "tipoContrato": {
+     "id": 8,
+     "nome": "Outros"
+    },
+    "numeroContratoEmpenho": "AF356279",
+    "categoriaProcesso": {
+     "id": 2,
+     "nome": "Compras"
+    },
+    "tipoPessoaSubContratada": null,
+    "objetoContrato": "APARELHOS DE AR-CONDICIONADO E CORRELATOS - LEI 14.133/2021 (RENOVADO)",
+    "valorInicial": 6900.0,
+    "valorParcela": 6900.0,
+    "valorGlobal": 6900.0,
+    "valorAcumulado": null,
+    "dataAssinatura": "2026-10-26",
+    "dataVigenciaInicio": "2026-10-26",
+    "dataVigenciaFim": "2026-11-25",
+    "identificadorCipi": null,
+    "urlCipi": null,
+    "usuarioNome": "Inovea Tecnologia Ltda"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-brazil_pncp-12075748000132-1-000081/2025",
+    "ocid_native": false,
+    "stage": "contract",
+    "title": "APARELHOS DE AR-CONDICIONADO E CORRELATOS - LEI 14.133/2021 (RENOVADO)",
+    "description": "APARELHOS DE AR-CONDICIONADO E CORRELATOS - LEI 14.133/2021 (RENOVADO)",
+    "buyer": {
+     "name": "MUNICIPIO DE IBICARE",
+     "id": "82939448000130",
+     "scheme": "BR-CNPJ",
+     "country": "BR"
+    },
+    "country": "BR",
+    "published_at": "2026-10-27T00:00:19-03:00",
+    "updated_at": "2026-10-27T00:00:19-03:00",
+    "language": "pt",
+    "url": "https://pncp.gov.br/app/editais/12075748000132/2025/81"
+   },
+   "awards": [
+    {
+     "award_id": "82939448000130-2-000446/2026",
+     "status": null,
+     "date": "2026-10-26T00:00:00-03:00",
+     "value": null,
+     "suppliers": [
+      {
+       "name": "J. C. M. NITEROI REFRIGERACAO LTDA",
+       "id": "08824171004304",
+       "scheme": "BR-CNPJ",
+       "country": "BR"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "82939448000130-2-000446/2026",
+     "award_id": "82939448000130-2-000446/2026",
+     "title": "APARELHOS DE AR-CONDICIONADO E CORRELATOS - LEI 14.133/2021 (RENOVADO)",
+     "date_signed": "2026-10-26T00:00:00-03:00",
+     "period_start": "2026-10-26T00:00:00-03:00",
+     "period_end": "2026-11-25T00:00:00-03:00",
+     "value": {
+      "amount": "6900.00",
+      "currency": "BRL"
+     }
+    }
+   ],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "naive_timestamps_assumed_brasilia_time"
+   ]
+  },
+  {
+   "external_id": "contrato:83102277000152-2-000851/2026",
+   "content_hash": "fa3a9d5460232135e944bf07c9481e4cc0eefef3b77d36b853936e73764aadd7",
+   "fetched_at": "2026-11-03T17:27:01+00:00",
+   "source_url": "https://pncp.gov.br/app/editais/83102277000152/2026/553",
+   "publisher": "Portal Nacional de Contratações Públicas (PNCP)",
+   "published_at": "2026-10-27T00:00:33-03:00",
+   "source_updated_at": "2026-10-27T00:00:33-03:00",
+   "language": "pt",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "numeroControlePncpCompra": "83102277000152-1-000553/2026",
+    "numeroControlePncpAta": null,
+    "codigoPaisFornecedor": null,
+    "orgaoEntidade": {
+     "cnpj": "83102277000152",
+     "razaoSocial": "MUNICIPIO DE ITAJAI",
+     "poderId": "N",
+     "esferaId": "M"
+    },
+    "anoContrato": 2026,
+    "sequencialContrato": 851,
+    "dataAtualizacao": "2026-10-27T00:00:33",
+    "numeroControlePNCP": "83102277000152-2-000851/2026",
+    "emendaParlamentar": null,
+    "processo": "PE 162/2026",
+    "informacaoComplementar": null,
+    "dataPublicacaoPncp": "2026-10-27T00:00:33",
+    "dataAtualizacaoGlobal": "2026-10-27T00:00:33",
+    "unidadeOrgao": {
+     "ufNome": "Santa Catarina",
+     "ufSigla": "SC",
+     "municipioNome": "Itajaí",
+     "codigoIbge": "4208203",
+     "codigoUnidade": "1",
+     "nomeUnidade": "PREFEITURA MUNICIPAL DE ITAJAÍ - SC"
+    },
+    "orgaoSubRogado": null,
+    "unidadeSubRogada": null,
+    "tipoPessoa": "PJ",
+    "niFornecedor": "90180605000102",
+    "nomeRazaoSocialFornecedor": "GENTE SEGURADORA S/A",
+    "receita": false,
+    "numeroParcelas": 1,
+    "numeroRetificacao": 0,
+    "temRemanejamento": false,
+    "frutoAdesao": false,
+    "tipoContrato": {
+     "id": 1,
+     "nome": "Contrato (termo inicial)"
+    },
+    "numeroContratoEmpenho": "492/2026",
+    "categoriaProcesso": {
+     "id": 8,
+     "nome": "Serviços"
+    },
+    "tipoPessoaSubContratada": null,
+    "objetoContrato": "CONTRATAÇÃO  DE  EMPRESA  ESPECIALIZADA  NA    PRESTAÇÃO  DE SERVIÇOS  DE  SEGURO  DE  FROTAS  PARA  AS  VIATURAS  DO  CORPO  DE  BOMBEIROS  MILITAR  DE ITAJAÍ/SC",
+    "valorInicial": 11220.0,
+    "valorParcela": 11220.0,
+    "valorGlobal": 11220.0,
+    "valorAcumulado": null,
+    "dataAssinatura": "2026-10-20",
+    "dataVigenciaInicio": "2026-10-20",
+    "dataVigenciaFim": "2027-10-20",
+    "identificadorCipi": null,
+    "urlCipi": null,
+    "usuarioNome": "Pública Tecnologia Ltda."
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-brazil_pncp-83102277000152-1-000553/2026",
+    "ocid_native": false,
+    "stage": "contract",
+    "title": "CONTRATAÇÃO  DE  EMPRESA  ESPECIALIZADA  NA    PRESTAÇÃO  DE SERVIÇOS  DE  SEGURO  DE  FROTAS  PARA  AS  VIATURAS  DO  CORPO  DE  BOMBEIROS  MILITAR  DE ITAJAÍ/SC",
+    "description": "CONTRATAÇÃO  DE  EMPRESA  ESPECIALIZADA  NA    PRESTAÇÃO  DE SERVIÇOS  DE  SEGURO  DE  FROTAS  PARA  AS  VIATURAS  DO  CORPO  DE  BOMBEIROS  MILITAR  DE ITAJAÍ/SC",
+    "buyer": {
+     "name": "MUNICIPIO DE ITAJAI",
+     "id": "83102277000152",
+     "scheme": "BR-CNPJ",
+     "country": "BR"
+    },
+    "country": "BR",
+    "published_at": "2026-10-27T00:00:33-03:00",
+    "updated_at": "2026-10-27T00:00:33-03:00",
+    "language": "pt",
+    "url": "https://pncp.gov.br/app/editais/83102277000152/2026/553"
+   },
+   "awards": [
+    {
+     "award_id": "83102277000152-2-000851/2026",
+     "status": null,
+     "date": "2026-10-20T00:00:00-03:00",
+     "value": null,
+     "suppliers": [
+      {
+       "name": "GENTE SEGURADORA S/A",
+       "id": "90180605000102",
+       "scheme": "BR-CNPJ",
+       "country": "BR"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "83102277000152-2-000851/2026",
+     "award_id": "83102277000152-2-000851/2026",
+     "title": "CONTRATAÇÃO  DE  EMPRESA  ESPECIALIZADA  NA    PRESTAÇÃO  DE SERVIÇOS  DE  SEGURO  DE  FROTAS  PARA  AS  VIATURAS  DO  CORPO  DE  BOMBEIROS  MILITAR  DE ITAJAÍ/SC",
+     "date_signed": "2026-10-20T00:00:00-03:00",
+     "period_start": "2026-10-20T00:00:00-03:00",
+     "period_end": "2027-10-20T00:00:00-03:00",
+     "value": {
+      "amount": "11220.00",
+      "currency": "BRL"
+     }
+    }
+   ],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "naive_timestamps_assumed_brasilia_time"
+   ]
+  },
+  {
+   "external_id": "contrato:00394460005887-2-005973/2026",
+   "content_hash": "99db185f50392edf4f5818274977c103d682c8043aaedcea4031a802eb4a006b",
+   "fetched_at": "2026-11-03T17:27:01+00:00",
+   "source_url": "https://pncp.gov.br/app/editais/00394460005887/2026/67",
+   "publisher": "Portal Nacional de Contratações Públicas (PNCP)",
+   "published_at": "2026-10-27T00:30:03-03:00",
+   "source_updated_at": "2026-10-27T00:30:06-03:00",
+   "language": "pt",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "numeroControlePncpCompra": "00394460005887-1-000067/2026",
+    "numeroControlePncpAta": null,
+    "codigoPaisFornecedor": null,
+    "orgaoEntidade": {
+     "cnpj": "00394460005887",
+     "razaoSocial": "MINISTERIO DA ECONOMIA",
+     "poderId": "E",
+     "esferaId": "F"
+    },
+    "anoContrato": 2026,
+    "sequencialContrato": 5973,
+    "dataAtualizacao": "2026-10-27T00:30:06",
+    "numeroControlePNCP": "00394460005887-2-005973/2026",
+    "emendaParlamentar": null,
+    "processo": "13032555938202684",
+    "informacaoComplementar": null,
+    "dataPublicacaoPncp": "2026-10-27T00:30:03",
+    "dataAtualizacaoGlobal": "2026-10-27T00:30:06",
+    "unidadeOrgao": {
+     "ufNome": "São Paulo",
+     "ufSigla": "SP",
+     "municipioNome": "São Paulo",
+     "codigoIbge": "3550308",
+     "codigoUnidade": "800100",
+     "nomeUnidade": "Superintendência Regional da Receita Federal do Brasil da 8ª Região Fiscal"
+    },
+    "orgaoSubRogado": null,
+    "unidadeSubRogada": null,
+    "tipoPessoa": "PJ",
+    "niFornecedor": "61698645000134",
+    "nomeRazaoSocialFornecedor": "VIP STORE'S IMPORT LTDA",
+    "receita": true,
+    "numeroParcelas": 1,
+    "numeroRetificacao": 0,
+    "temRemanejamento": false,
+    "frutoAdesao": false,
+    "tipoContrato": {
+     "id": 1,
+     "nome": "Contrato (termo inicial)"
+    },
+    "numeroContratoEmpenho": "0800100/2164",
+    "categoriaProcesso": {
+     "id": 11,
+     "nome": "Alienação de bens móveis/imóveis"
+    },
+    "tipoPessoaSubContratada": null,
+    "objetoContrato": "Alienação de mercadorias apreendidas pela Receita Federal",
+    "valorInicial": 50111.0,
+    "valorParcela": 50111.0,
+    "valorGlobal": 50111.0,
+    "valorAcumulado": null,
+    "dataAssinatura": "2026-10-26",
+    "dataVigenciaInicio": "2026-10-26",
+    "dataVigenciaFim": "2026-11-25",
+    "identificadorCipi": null,
+    "urlCipi": null,
+    "usuarioNome": "Ministério da Fazenda / Receita Federal"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-brazil_pncp-00394460005887-1-000067/2026",
+    "ocid_native": false,
+    "stage": "contract",
+    "title": "Alienação de mercadorias apreendidas pela Receita Federal",
+    "description": "Alienação de mercadorias apreendidas pela Receita Federal",
+    "buyer": {
+     "name": "MINISTERIO DA ECONOMIA",
+     "id": "00394460005887",
+     "scheme": "BR-CNPJ",
+     "country": "BR"
+    },
+    "country": "BR",
+    "published_at": "2026-10-27T00:30:03-03:00",
+    "updated_at": "2026-10-27T00:30:06-03:00",
+    "language": "pt",
+    "url": "https://pncp.gov.br/app/editais/00394460005887/2026/67"
+   },
+   "awards": [
+    {
+     "award_id": "00394460005887-2-005973/2026",
+     "status": null,
+     "date": "2026-10-26T00:00:00-03:00",
+     "value": null,
+     "suppliers": [
+      {
+       "name": "VIP STORE'S IMPORT LTDA",
+       "id": "61698645000134",
+       "scheme": "BR-CNPJ",
+       "country": "BR"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "00394460005887-2-005973/2026",
+     "award_id": "00394460005887-2-005973/2026",
+     "title": "Alienação de mercadorias apreendidas pela Receita Federal",
+     "date_signed": "2026-10-26T00:00:00-03:00",
+     "period_start": "2026-10-26T00:00:00-03:00",
+     "period_end": "2026-11-25T00:00:00-03:00",
+     "value": {
+      "amount": "50111.00",
+      "currency": "BRL"
+     }
+    }
+   ],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "naive_timestamps_assumed_brasilia_time"
+   ]
+  },
+  {
+   "external_id": "contrato:00394460005887-2-005974/2026",
+   "content_hash": "7b432b44e90861becac19f58bde134d29e394407d2b27760619f0d1e00b70322",
+   "fetched_at": "2026-11-03T17:27:01+00:00",
+   "source_url": "https://pncp.gov.br/app/editais/00394460005887/2026/67",
+   "publisher": "Portal Nacional de Contratações Públicas (PNCP)",
+   "published_at": "2026-10-27T00:30:19-03:00",
+   "source_updated_at": "2026-10-27T00:30:23-03:00",
+   "language": "pt",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "numeroControlePncpCompra": "00394460005887-1-000067/2026",
+    "numeroControlePncpAta": null,
+    "codigoPaisFornecedor": null,
+    "orgaoEntidade": {
+     "cnpj": "00394460005887",
+     "razaoSocial": "MINISTERIO DA ECONOMIA",
+     "poderId": "E",
+     "esferaId": "F"
+    },
+    "anoContrato": 2026,
+    "sequencialContrato": 5974,
+    "dataAtualizacao": "2026-10-27T00:30:23",
+    "numeroControlePNCP": "00394460005887-2-005974/2026",
+    "emendaParlamentar": null,
+    "processo": "13032555938202684",
+    "informacaoComplementar": null,
+    "dataPublicacaoPncp": "2026-10-27T00:30:19",
+    "dataAtualizacaoGlobal": "2026-10-27T00:30:23",
+    "unidadeOrgao": {
+     "ufNome": "São Paulo",
+     "ufSigla": "SP",
+     "municipioNome": "São Paulo",
+     "codigoIbge": "3550308",
+     "codigoUnidade": "800100",
+     "nomeUnidade": "Superintendência Regional da Receita Federal do Brasil da 8ª Região Fiscal"
+    },
+    "orgaoSubRogado": null,
+    "unidadeSubRogada": null,
+    "tipoPessoa": "PJ",
+    "niFornecedor": "39470670000107",
+    "nomeRazaoSocialFornecedor": "SOLDSHOP NEGOCIOS & OPORTUNIDADES LTDA",
+    "receita": true,
+    "numeroParcelas": 1,
+    "numeroRetificacao": 0,
+    "temRemanejamento": false,
+    "frutoAdesao": false,
+    "tipoContrato": {
+     "id": 1,
+     "nome": "Contrato (termo inicial)"
+    },
+    "numeroContratoEmpenho": "0800100/2271",
+    "categoriaProcesso": {
+     "id": 11,
+     "nome": "Alienação de bens móveis/imóveis"
+    },
+    "tipoPessoaSubContratada": null,
+    "objetoContrato": "Alienação de mercadorias apreendidas pela Receita Federal",
+    "valorInicial": 1300.0,
+    "valorParcela": 1300.0,
+    "valorGlobal": 1300.0,
+    "valorAcumulado": null,
+    "dataAssinatura": "2026-10-26",
+    "dataVigenciaInicio": "2026-10-26",
+    "dataVigenciaFim": "2026-11-25",
+    "identificadorCipi": null,
+    "urlCipi": null,
+    "usuarioNome": "Ministério da Fazenda / Receita Federal"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-brazil_pncp-00394460005887-1-000067/2026",
+    "ocid_native": false,
+    "stage": "contract",
+    "title": "Alienação de mercadorias apreendidas pela Receita Federal",
+    "description": "Alienação de mercadorias apreendidas pela Receita Federal",
+    "buyer": {
+     "name": "MINISTERIO DA ECONOMIA",
+     "id": "00394460005887",
+     "scheme": "BR-CNPJ",
+     "country": "BR"
+    },
+    "country": "BR",
+    "published_at": "2026-10-27T00:30:19-03:00",
+    "updated_at": "2026-10-27T00:30:23-03:00",
+    "language": "pt",
+    "url": "https://pncp.gov.br/app/editais/00394460005887/2026/67"
+   },
+   "awards": [
+    {
+     "award_id": "00394460005887-2-005974/2026",
+     "status": null,
+     "date": "2026-10-26T00:00:00-03:00",
+     "value": null,
+     "suppliers": [
+      {
+       "name": "SOLDSHOP NEGOCIOS & OPORTUNIDADES LTDA",
+       "id": "39470670000107",
+       "scheme": "BR-CNPJ",
+       "country": "BR"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "00394460005887-2-005974/2026",
+     "award_id": "00394460005887-2-005974/2026",
+     "title": "Alienação de mercadorias apreendidas pela Receita Federal",
+     "date_signed": "2026-10-26T00:00:00-03:00",
+     "period_start": "2026-10-26T00:00:00-03:00",
+     "period_end": "2026-11-25T00:00:00-03:00",
+     "value": {
+      "amount": "1300.00",
+      "currency": "BRL"
+     }
+    }
+   ],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "naive_timestamps_assumed_brasilia_time"
+   ]
+  },
+  {
+   "external_id": "contrato:00394460005887-2-005975/2026",
+   "content_hash": "7aa0055f40ed4c66c131d7c443359bfaa8ec66ed4c3e308b58cec5221ebdec8b",
+   "fetched_at": "2026-11-03T17:27:01+00:00",
+   "source_url": "https://pncp.gov.br/app/editais/00394460005887/2026/67",
+   "publisher": "Portal Nacional de Contratações Públicas (PNCP)",
+   "published_at": "2026-10-27T00:30:29-03:00",
+   "source_updated_at": "2026-10-27T00:30:30-03:00",
+   "language": "pt",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "numeroControlePncpCompra": "00394460005887-1-000067/2026",
+    "numeroControlePncpAta": null,
+    "codigoPaisFornecedor": null,
+    "orgaoEntidade": {
+     "cnpj": "00394460005887",
+     "razaoSocial": "MINISTERIO DA ECONOMIA",
+     "poderId": "E",
+     "esferaId": "F"
+    },
+    "anoContrato": 2026,
+    "sequencialContrato": 5975,
+    "dataAtualizacao": "2026-10-27T00:30:30",
+    "numeroControlePNCP": "00394460005887-2-005975/2026",
+    "emendaParlamentar": null,
+    "processo": "13032555938202684",
+    "informacaoComplementar": null,
+    "dataPublicacaoPncp": "2026-10-27T00:30:29",
+    "dataAtualizacaoGlobal": "2026-10-27T00:30:30",
+    "unidadeOrgao": {
+     "ufNome": "São Paulo",
+     "ufSigla": "SP",
+     "municipioNome": "São Paulo",
+     "codigoIbge": "3550308",
+     "codigoUnidade": "800100",
+     "nomeUnidade": "Superintendência Regional da Receita Federal do Brasil da 8ª Região Fiscal"
+    },
+    "orgaoSubRogado": null,
+    "unidadeSubRogada": null,
+    "tipoPessoa": "PJ",
+    "niFornecedor": "39470670000107",
+    "nomeRazaoSocialFornecedor": "SOLDSHOP NEGOCIOS & OPORTUNIDADES LTDA",
+    "receita": true,
+    "numeroParcelas": 1,
+    "numeroRetificacao": 0,
+    "temRemanejamento": false,
+    "frutoAdesao": false,
+    "tipoContrato": {
+     "id": 1,
+     "nome": "Contrato (termo inicial)"
+    },
+    "numeroContratoEmpenho": "0800100/2274",
+    "categoriaProcesso": {
+     "id": 11,
+     "nome": "Alienação de bens móveis/imóveis"
+    },
+    "tipoPessoaSubContratada": null,
+    "objetoContrato": "Alienação de mercadorias apreendidas pela Receita Federal",
+    "valorInicial": 1300.0,
+    "valorParcela": 1300.0,
+    "valorGlobal": 1300.0,
+    "valorAcumulado": null,
+    "dataAssinatura": "2026-10-26",
+    "dataVigenciaInicio": "2026-10-26",
+    "dataVigenciaFim": "2026-11-25",
+    "identificadorCipi": null,
+    "urlCipi": null,
+    "usuarioNome": "Ministério da Fazenda / Receita Federal"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-brazil_pncp-00394460005887-1-000067/2026",
+    "ocid_native": false,
+    "stage": "contract",
+    "title": "Alienação de mercadorias apreendidas pela Receita Federal",
+    "description": "Alienação de mercadorias apreendidas pela Receita Federal",
+    "buyer": {
+     "name": "MINISTERIO DA ECONOMIA",
+     "id": "00394460005887",
+     "scheme": "BR-CNPJ",
+     "country": "BR"
+    },
+    "country": "BR",
+    "published_at": "2026-10-27T00:30:29-03:00",
+    "updated_at": "2026-10-27T00:30:30-03:00",
+    "language": "pt",
+    "url": "https://pncp.gov.br/app/editais/00394460005887/2026/67"
+   },
+   "awards": [
+    {
+     "award_id": "00394460005887-2-005975/2026",
+     "status": null,
+     "date": "2026-10-26T00:00:00-03:00",
+     "value": null,
+     "suppliers": [
+      {
+       "name": "SOLDSHOP NEGOCIOS & OPORTUNIDADES LTDA",
+       "id": "39470670000107",
+       "scheme": "BR-CNPJ",
+       "country": "BR"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "00394460005887-2-005975/2026",
+     "award_id": "00394460005887-2-005975/2026",
+     "title": "Alienação de mercadorias apreendidas pela Receita Federal",
+     "date_signed": "2026-10-26T00:00:00-03:00",
+     "period_start": "2026-10-26T00:00:00-03:00",
+     "period_end": "2026-11-25T00:00:00-03:00",
+     "value": {
+      "amount": "1300.00",
+      "currency": "BRL"
+     }
+    }
+   ],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "naive_timestamps_assumed_brasilia_time"
+   ]
+  },
+  {
+   "external_id": "contrato:00394460005887-2-005976/2026",
+   "content_hash": "6f673d9e33aa94bdc7896c23ce6d7876ef30b3d3552f57c4bf41083877ac1586",
+   "fetched_at": "2026-11-03T17:27:01+00:00",
+   "source_url": "https://pncp.gov.br/app/editais/00394460005887/2026/67",
+   "publisher": "Portal Nacional de Contratações Públicas (PNCP)",
+   "published_at": "2026-10-27T00:30:36-03:00",
+   "source_updated_at": "2026-10-27T00:30:36-03:00",
+   "language": "pt",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "numeroControlePncpCompra": "00394460005887-1-000067/2026",
+    "numeroControlePncpAta": null,
+    "codigoPaisFornecedor": null,
+    "orgaoEntidade": {
+     "cnpj": "00394460005887",
+     "razaoSocial": "MINISTERIO DA ECONOMIA",
+     "poderId": "E",
+     "esferaId": "F"
+    },
+    "anoContrato": 2026,
+    "sequencialContrato": 5976,
+    "dataAtualizacao": "2026-10-27T00:30:36",
+    "numeroControlePNCP": "00394460005887-2-005976/2026",
+    "emendaParlamentar": null,
+    "processo": "13032555938202684",
+    "informacaoComplementar": null,
+    "dataPublicacaoPncp": "2026-10-27T00:30:36",
+    "dataAtualizacaoGlobal": "2026-10-27T00:30:36",
+    "unidadeOrgao": {
+     "ufNome": "São Paulo",
+     "ufSigla": "SP",
+     "municipioNome": "São Paulo",
+     "codigoIbge": "3550308",
+     "codigoUnidade": "800100",
+     "nomeUnidade": "Superintendência Regional da Receita Federal do Brasil da 8ª Região Fiscal"
+    },
+    "orgaoSubRogado": null,
+    "unidadeSubRogada": null,
+    "tipoPessoa": "PJ",
+    "niFornecedor": "39470670000107",
+    "nomeRazaoSocialFornecedor": "SOLDSHOP NEGOCIOS & OPORTUNIDADES LTDA",
+    "receita": true,
+    "numeroParcelas": 1,
+    "numeroRetificacao": 0,
+    "temRemanejamento": false,
+    "frutoAdesao": false,
+    "tipoContrato": {
+     "id": 1,
+     "nome": "Contrato (termo inicial)"
+    },
+    "numeroContratoEmpenho": "0800100/2287",
+    "categoriaProcesso": {
+     "id": 11,
+     "nome": "Alienação de bens móveis/imóveis"
+    },
+    "tipoPessoaSubContratada": null,
+    "objetoContrato": "Alienação de mercadorias apreendidas pela Receita Federal",
+    "valorInicial": 31888.0,
+    "valorParcela": 31888.0,
+    "valorGlobal": 31888.0,
+    "valorAcumulado": null,
+    "dataAssinatura": "2026-10-26",
+    "dataVigenciaInicio": "2026-10-26",
+    "dataVigenciaFim": "2026-11-25",
+    "identificadorCipi": null,
+    "urlCipi": null,
+    "usuarioNome": "Ministério da Fazenda / Receita Federal"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-brazil_pncp-00394460005887-1-000067/2026",
+    "ocid_native": false,
+    "stage": "contract",
+    "title": "Alienação de mercadorias apreendidas pela Receita Federal",
+    "description": "Alienação de mercadorias apreendidas pela Receita Federal",
+    "buyer": {
+     "name": "MINISTERIO DA ECONOMIA",
+     "id": "00394460005887",
+     "scheme": "BR-CNPJ",
+     "country": "BR"
+    },
+    "country": "BR",
+    "published_at": "2026-10-27T00:30:36-03:00",
+    "updated_at": "2026-10-27T00:30:36-03:00",
+    "language": "pt",
+    "url": "https://pncp.gov.br/app/editais/00394460005887/2026/67"
+   },
+   "awards": [
+    {
+     "award_id": "00394460005887-2-005976/2026",
+     "status": null,
+     "date": "2026-10-26T00:00:00-03:00",
+     "value": null,
+     "suppliers": [
+      {
+       "name": "SOLDSHOP NEGOCIOS & OPORTUNIDADES LTDA",
+       "id": "39470670000107",
+       "scheme": "BR-CNPJ",
+       "country": "BR"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "00394460005887-2-005976/2026",
+     "award_id": "00394460005887-2-005976/2026",
+     "title": "Alienação de mercadorias apreendidas pela Receita Federal",
+     "date_signed": "2026-10-26T00:00:00-03:00",
+     "period_start": "2026-10-26T00:00:00-03:00",
+     "period_end": "2026-11-25T00:00:00-03:00",
+     "value": {
+      "amount": "31888.00",
+      "currency": "BRL"
+     }
+    }
+   ],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "naive_timestamps_assumed_brasilia_time"
+   ]
+  },
+  {
+   "external_id": "contrato:00394460005887-2-005977/2026",
+   "content_hash": "bc3d3cedea217c3fdd51e037219b19d7da09b62be40349d22482d9ba4788fcbf",
+   "fetched_at": "2026-11-03T17:27:01+00:00",
+   "source_url": "https://pncp.gov.br/app/editais/00394460005887/2026/67",
+   "publisher": "Portal Nacional de Contratações Públicas (PNCP)",
+   "published_at": "2026-10-27T00:30:41-03:00",
+   "source_updated_at": "2026-10-27T00:30:41-03:00",
+   "language": "pt",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "numeroControlePncpCompra": "00394460005887-1-000067/2026",
+    "numeroControlePncpAta": null,
+    "codigoPaisFornecedor": null,
+    "orgaoEntidade": {
+     "cnpj": "00394460005887",
+     "razaoSocial": "MINISTERIO DA ECONOMIA",
+     "poderId": "E",
+     "esferaId": "F"
+    },
+    "anoContrato": 2026,
+    "sequencialContrato": 5977,
+    "dataAtualizacao": "2026-10-27T00:30:41",
+    "numeroControlePNCP": "00394460005887-2-005977/2026",
+    "emendaParlamentar": null,
+    "processo": "13032555938202684",
+    "informacaoComplementar": null,
+    "dataPublicacaoPncp": "2026-10-27T00:30:41",
+    "dataAtualizacaoGlobal": "2026-10-27T00:30:41",
+    "unidadeOrgao": {
+     "ufNome": "São Paulo",
+     "ufSigla": "SP",
+     "municipioNome": "São Paulo",
+     "codigoIbge": "3550308",
+     "codigoUnidade": "800100",
+     "nomeUnidade": "Superintendência Regional da Receita Federal do Brasil da 8ª Região Fiscal"
+    },
+    "orgaoSubRogado": null,
+    "unidadeSubRogada": null,
+    "tipoPessoa": "PJ",
+    "niFornecedor": "61698645000134",
+    "nomeRazaoSocialFornecedor": "VIP STORE'S IMPORT LTDA",
+    "receita": true,
+    "numeroParcelas": 1,
+    "numeroRetificacao": 0,
+    "temRemanejamento": false,
+    "frutoAdesao": false,
+    "tipoContrato": {
+     "id": 1,
+     "nome": "Contrato (termo inicial)"
+    },
+    "numeroContratoEmpenho": "0800100/2171",
+    "categoriaProcesso": {
+     "id": 11,
+     "nome": "Alienação de bens móveis/imóveis"
+    },
+    "tipoPessoaSubContratada": null,
+    "objetoContrato": "Alienação de mercadorias apreendidas pela Receita Federal",
+    "valorInicial": 4000.0,
+    "valorParcela": 4000.0,
+    "valorGlobal": 4000.0,
+    "valorAcumulado": null,
+    "dataAssinatura": "2026-10-26",
+    "dataVigenciaInicio": "2026-10-26",
+    "dataVigenciaFim": "2026-11-25",
+    "identificadorCipi": null,
+    "urlCipi": null,
+    "usuarioNome": "Ministério da Fazenda / Receita Federal"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-brazil_pncp-00394460005887-1-000067/2026",
+    "ocid_native": false,
+    "stage": "contract",
+    "title": "Alienação de mercadorias apreendidas pela Receita Federal",
+    "description": "Alienação de mercadorias apreendidas pela Receita Federal",
+    "buyer": {
+     "name": "MINISTERIO DA ECONOMIA",
+     "id": "00394460005887",
+     "scheme": "BR-CNPJ",
+     "country": "BR"
+    },
+    "country": "BR",
+    "published_at": "2026-10-27T00:30:41-03:00",
+    "updated_at": "2026-10-27T00:30:41-03:00",
+    "language": "pt",
+    "url": "https://pncp.gov.br/app/editais/00394460005887/2026/67"
+   },
+   "awards": [
+    {
+     "award_id": "00394460005887-2-005977/2026",
+     "status": null,
+     "date": "2026-10-26T00:00:00-03:00",
+     "value": null,
+     "suppliers": [
+      {
+       "name": "VIP STORE'S IMPORT LTDA",
+       "id": "61698645000134",
+       "scheme": "BR-CNPJ",
+       "country": "BR"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "00394460005887-2-005977/2026",
+     "award_id": "00394460005887-2-005977/2026",
+     "title": "Alienação de mercadorias apreendidas pela Receita Federal",
+     "date_signed": "2026-10-26T00:00:00-03:00",
+     "period_start": "2026-10-26T00:00:00-03:00",
+     "period_end": "2026-11-25T00:00:00-03:00",
+     "value": {
+      "amount": "4000.00",
+      "currency": "BRL"
+     }
+    }
+   ],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "naive_timestamps_assumed_brasilia_time"
+   ]
+  }
+ ],
+ "rejected": []
+}

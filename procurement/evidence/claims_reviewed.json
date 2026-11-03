@@ -1,0 +1,231 @@
+{
+ "reviewed_on": "2026-11-03",
+ "how": "Candidate sentences were extracted by ingest/docs_extract.py; the wording of each value was written by a person/AI reading them; ingest/claims.py re-fetches every URL and refuses a claim whose quote is not on the page verbatim.",
+ "claims": [
+  {
+   "source_id": "sam_opportunities",
+   "field": "authentication",
+   "method": "doc_read",
+   "url": "https://open.gsa.gov/api/get-opportunities-public-api/",
+   "value": "API key required; a registered SAM.gov user requests a public key on the Account Details page",
+   "quote": "Registered user can request for a public API on"
+  },
+  {
+   "source_id": "sam_opportunities",
+   "field": "rate_limit",
+   "method": "doc_read",
+   "url": "https://open.gsa.gov/api/get-opportunities-public-api/",
+   "value": "Daily request limits depend on the account role (federal, non-federal, general); the page states no numbers",
+   "quote": "Request per day are limited based on the federal or non-federal or general roles."
+  },
+  {
+   "source_id": "sam_opportunities",
+   "field": "licence",
+   "method": "not_stated",
+   "url": "https://open.gsa.gov/api/get-opportunities-public-api/",
+   "value": "no licence or redistribution statement found in the text of this page",
+   "quote": null
+  },
+  {
+   "source_id": "ted",
+   "field": "authentication",
+   "method": "doc_read",
+   "url": "https://docs.ted.europa.eu/api/latest/search.html",
+   "value": "none required; the Search API is openly accessible",
+   "quote": "does not require authentication, making it openly accessible to any system or user"
+  },
+  {
+   "source_id": "ted",
+   "field": "rate_limit",
+   "method": "not_stated",
+   "url": "https://docs.ted.europa.eu/api/latest/search.html",
+   "value": "no rate limit stated in the text of this page",
+   "quote": null
+  },
+  {
+   "source_id": "ted",
+   "field": "licence",
+   "method": "not_stated",
+   "url": "https://docs.ted.europa.eu/api/latest/search.html",
+   "value": "no licence statement found in the text of this page",
+   "quote": null
+  },
+  {
+   "source_id": "ted_xml",
+   "field": "robots",
+   "method": "live_call",
+   "url": "https://ted.europa.eu/en/simap/xml-bulk-download",
+   "check": "robots_unreadable",
+   "value": "ted.europa.eu/robots.txt answers HTTP 202 with an HTML challenge page, so permission for automated fetching of this page cannot be established and it is not fetched; the anonymous API on api.ted.europa.eu is the automated route, and the bulk XML needs a manual or approved download",
+   "quote": "robots.txt could not be read (HTTP 202, text/html); treated as not permitted"
+  },
+  {
+   "source_id": "uk_fts",
+   "field": "licence",
+   "method": "doc_read",
+   "url": "https://www.find-tender.service.gov.uk/Developer/Documentation",
+   "value": "Open Government Licence (v3.0 per the page footer)",
+   "quote": "Notice data is available under the Open Government Licence"
+  },
+  {
+   "source_id": "uk_fts",
+   "field": "authentication",
+   "method": "not_stated",
+   "url": "https://www.find-tender.service.gov.uk/Developer/Documentation",
+   "value": "no authentication statement in the text of this page; see the live_call claim",
+   "quote": null
+  },
+  {
+   "source_id": "uk_fts",
+   "field": "rate_limit",
+   "method": "not_stated",
+   "url": "https://www.find-tender.service.gov.uk/Developer/Documentation",
+   "value": "no rate limit stated in the text of this page",
+   "quote": null
+  },
+  {
+   "source_id": "uk_cf",
+   "field": "authentication",
+   "method": "doc_read",
+   "url": "https://www.contractsfinder.service.gov.uk/apidocumentation",
+   "value": "required for certain parts of the Web API (token endpoint, client_credentials); the OCDS search was reachable anonymously in the live call",
+   "quote": "Authentication is required to access certain parts of the Web API."
+  },
+  {
+   "source_id": "uk_cf",
+   "field": "endpoint_search",
+   "method": "doc_read",
+   "url": "https://www.contractsfinder.service.gov.uk/apidocumentation",
+   "value": "OCDS release-package search with publishedFrom, publishedTo, stages, limit and cursor",
+   "quote": "GET Published/Notices/OCDS/Search?publishedFrom={publishedFrom}&publishedTo={publishedTo}&stages={stages}&limit={limit}&cursor={cursor}"
+  },
+  {
+   "source_id": "uk_cf",
+   "field": "endpoint_record",
+   "method": "doc_read",
+   "url": "https://www.contractsfinder.service.gov.uk/apidocumentation",
+   "value": "single OCDS record by ocid (used for the publisher cross-check)",
+   "quote": "GET Published/OCDS/Record/{ocid}"
+  },
+  {
+   "source_id": "uk_cf",
+   "field": "rate_limit",
+   "method": "not_stated",
+   "url": "https://www.contractsfinder.service.gov.uk/apidocumentation",
+   "value": "no rate limit stated in the text of this page",
+   "quote": null
+  },
+  {
+   "source_id": "worldbank_procurement",
+   "field": "licence",
+   "method": "doc_read",
+   "url": "https://datacatalog.worldbank.org/search/dataset/0037776/procurement-notice",
+   "value": "Creative Commons Attribution 4.0 (World Bank Data Catalog page for the Procurement Notice dataset)",
+   "quote": "Creative Commons Attribution 4"
+  },
+  {
+   "source_id": "worldbank_procurement",
+   "field": "access",
+   "method": "doc_read",
+   "url": "https://datacatalog.worldbank.org/search/dataset/0037776/procurement-notice",
+   "value": "classified Public: users inside and outside the Bank can access it",
+   "quote": "classified as Public under the Access to Information Classification Policy"
+  },
+  {
+   "source_id": "worldbank_procurement",
+   "field": "rate_limit",
+   "method": "not_stated",
+   "url": "https://financesone.worldbank.org/procurement%20notice/DS00979",
+   "value": "the Finances One page is script-rendered; no rate limit in the fetched text",
+   "quote": null
+  },
+  {
+   "source_id": "chile_mercado",
+   "field": "authentication",
+   "method": "doc_read",
+   "url": "https://www.chilecompra.cl/api/",
+   "value": "a ticket is required: requested with Clave Unica and delivered by email",
+   "quote": "Para usarla, se solicita un ticket y se recibe un código por correo electrónico."
+  },
+  {
+   "source_id": "chile_mercado",
+   "field": "rate_limit",
+   "method": "doc_read",
+   "url": "https://www.chilecompra.cl/api/",
+   "value": "10,000 requests per day per ticket, not modifiable",
+   "quote": "Cada ticket de acceso cuenta con un límite diario de 10.000 solicitudes."
+  },
+  {
+   "source_id": "chile_mercado",
+   "field": "ip_policy",
+   "method": "doc_read",
+   "url": "https://www.chilecompra.cl/api/",
+   "value": "IP-based validation may apply, with access restrictions based on the number of requests from one IP",
+   "quote": "pudiendo establecerse restricciones de acceso según la cantidad de solicitudes realizadas desde una misma IP"
+  },
+  {
+   "source_id": "chile_orders",
+   "field": "authentication",
+   "method": "doc_read",
+   "url": "https://www.chilecompra.cl/api/",
+   "value": "a ticket is required: requested with Clave Unica and delivered by email",
+   "quote": "Para usarla, se solicita un ticket y se recibe un código por correo electrónico."
+  },
+  {
+   "source_id": "chile_orders",
+   "field": "rate_limit",
+   "method": "doc_read",
+   "url": "https://www.chilecompra.cl/api/",
+   "value": "10,000 requests per day per ticket, not modifiable",
+   "quote": "Cada ticket de acceso cuenta con un límite diario de 10.000 solicitudes."
+  },
+  {
+   "source_id": "chile_ocds",
+   "field": "licence",
+   "method": "not_stated",
+   "url": "https://datos-abiertos.chilecompra.cl/descargas/procesos-ocds",
+   "value": "the page is script-rendered; nothing readable in the fetched text",
+   "quote": null
+  },
+  {
+   "source_id": "colombia_secop",
+   "field": "dataset_id",
+   "method": "doc_read",
+   "url": "https://www.datos.gov.co/api/views/jbjy-vk9h.json",
+   "value": "dataset jbjy-vk9h, 'SECOP II - Contratos Electronicos', on the datos.gov.co Socrata catalogue",
+   "quote": "\"name\" : \"SECOP II - Contratos Electrónicos\""
+  },
+  {
+   "source_id": "colombia_secop",
+   "field": "licence",
+   "method": "doc_read",
+   "url": "https://www.datos.gov.co/api/views/jbjy-vk9h.json",
+   "value": "CC BY-SA 4.0 (licenseId CC_40_BY_SA in the catalogue metadata)",
+   "quote": "\"licenseId\" : \"CC_40_BY_SA\""
+  },
+  {
+   "source_id": "colombia_secop",
+   "field": "licence",
+   "method": "not_stated",
+   "url": "https://www.colombiacompra.gov.co/transparencia/datos-abiertos",
+   "value": "no licence statement found in the text of this page",
+   "quote": null
+  },
+  {
+   "source_id": "brazil_pncp",
+   "field": "documentation",
+   "method": "doc_read",
+   "url": "https://pncp.gov.br/api/consulta/v3/api-docs",
+   "value": "machine-readable OpenAPI description of the PNCP consulta API, published by Serpro",
+   "quote": "API PNCP CONSULTA"
+  },
+  {
+   "source_id": "usaspending",
+   "field": "documentation",
+   "method": "doc_read",
+   "url": "https://api.usaspending.gov/docs/endpoints",
+   "value": "the award search endpoint is documented in the public endpoint list",
+   "quote": "spending_by_award"
+  }
+ ]
+}

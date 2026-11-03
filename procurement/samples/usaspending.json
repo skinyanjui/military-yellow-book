@@ -1,0 +1,1729 @@
+{
+ "run": {
+  "run_id": "cd460779-b45b-4a00-a5b4-6820c6e6097b",
+  "source_id": "usaspending",
+  "mode": "test",
+  "started_at": "2026-11-03T17:27:17+00:00",
+  "params": {
+   "limit": 20,
+   "since": "2026-06-06T17:27:17",
+   "until": "2026-11-03T17:27:17",
+   "days": 150,
+   "schema_errors": 0
+  },
+  "cursor_before": null,
+  "transform_version": "myb-procurement-0.1",
+  "status": "success",
+  "fetched": 20,
+  "drift": {
+   "missing": [],
+   "unexpected": []
+  },
+  "cursor_after": {
+   "high_water": "2024-06-28T00:00:00"
+  }
+ },
+ "records": [
+  {
+   "external_id": "CONT_AWD_N0002417C2100_9700_-NONE-_-NONE-",
+   "content_hash": "31a5c598fb80c82b23dff42c0c3ffa858ecac243bcef6c059004c8f08f3c34d9",
+   "fetched_at": "2026-11-03T17:27:17+00:00",
+   "source_url": "https://www.usaspending.gov/award/CONT_AWD_N0002417C2100_9700_-NONE-_-NONE-",
+   "publisher": "USAspending.gov (US Treasury)",
+   "published_at": "2017-02-14T00:00:00+00:00",
+   "source_updated_at": "2017-02-14T00:00:00+00:00",
+   "language": "en",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "internal_id": 309506838,
+    "Award ID": "N0002417C2100",
+    "Recipient Name": "ELECTRIC BOAT CORPORATION",
+    "Recipient UEI": "E7BEKJ4V9528",
+    "Award Amount": 35737749929.0,
+    "Start Date": "2017-02-14",
+    "End Date": "2036-06-02",
+    "Awarding Agency": "Department of Defense",
+    "Awarding Sub Agency": "Department of the Navy",
+    "PSC": {
+     "code": "1905",
+     "description": "COMBAT SHIPS AND LANDING VESSELS"
+    },
+    "Description": "SSN 802 AND 803 LONG LEAD TIME MATERIAL",
+    "generated_internal_id": "CONT_AWD_N0002417C2100_9700_-NONE-_-NONE-",
+    "awarding_agency_id": 1173,
+    "agency_slug": "department-of-defense"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-usaspending-CONT_AWD_N0002417C2100_9700_-NONE-_-NONE-",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "SSN 802 AND 803 LONG LEAD TIME MATERIAL",
+    "description": "SSN 802 AND 803 LONG LEAD TIME MATERIAL",
+    "buyer": {
+     "name": "Department of the Navy",
+     "country": "US"
+    },
+    "country": "US",
+    "main_category": "goods",
+    "published_at": "2017-02-14T00:00:00+00:00",
+    "updated_at": "2017-02-14T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "PSC",
+      "id": "1905",
+      "description": "COMBAT SHIPS AND LANDING VESSELS"
+     }
+    ],
+    "language": "en",
+    "url": "https://www.usaspending.gov/award/CONT_AWD_N0002417C2100_9700_-NONE-_-NONE-"
+   },
+   "awards": [
+    {
+     "award_id": "N0002417C2100",
+     "date": "2017-02-14T00:00:00+00:00",
+     "obligated": {
+      "amount": "35737749929.00",
+      "currency": "USD"
+     },
+     "suppliers": [
+      {
+       "name": "ELECTRIC BOAT CORPORATION",
+       "id": "E7BEKJ4V9528",
+       "scheme": "US-UEI",
+       "country": "US"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "N0002417C2100",
+     "award_id": "N0002417C2100",
+     "period_start": "2017-02-14T00:00:00+00:00",
+     "period_end": "2036-06-02T00:00:00+00:00"
+    }
+   ],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_is_awarding_sub_agency_of:Department of Defense"
+   ]
+  },
+  {
+   "external_id": "CONT_AWD_FA862511C6600_9700_-NONE-_-NONE-",
+   "content_hash": "d0e271401e5ed64044a5b0f1394c3ccf6d4f53a90a79fe65c47c00371549ff11",
+   "fetched_at": "2026-11-03T17:27:17+00:00",
+   "source_url": "https://www.usaspending.gov/award/CONT_AWD_FA862511C6600_9700_-NONE-_-NONE-",
+   "publisher": "USAspending.gov (US Treasury)",
+   "published_at": "2011-02-24T00:00:00+00:00",
+   "source_updated_at": "2011-02-24T00:00:00+00:00",
+   "language": "en",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "internal_id": 298557808,
+    "Award ID": "FA862511C6600",
+    "Recipient Name": "THE BOEING COMPANY",
+    "Recipient UEI": "WZWRLY4G3PL8",
+    "Award Amount": 31972918249.03,
+    "Start Date": "2011-02-24",
+    "End Date": "2027-07-31",
+    "Awarding Agency": "Department of Defense",
+    "Awarding Sub Agency": "Department of the Air Force",
+    "PSC": {
+     "code": "1510",
+     "description": "AIRCRAFT, FIXED WING"
+    },
+    "Description": "KC-X MODERNIZATION PROGRAM",
+    "generated_internal_id": "CONT_AWD_FA862511C6600_9700_-NONE-_-NONE-",
+    "awarding_agency_id": 1173,
+    "agency_slug": "department-of-defense"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-usaspending-CONT_AWD_FA862511C6600_9700_-NONE-_-NONE-",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "KC-X MODERNIZATION PROGRAM",
+    "description": "KC-X MODERNIZATION PROGRAM",
+    "buyer": {
+     "name": "Department of the Air Force",
+     "country": "US"
+    },
+    "country": "US",
+    "main_category": "goods",
+    "published_at": "2011-02-24T00:00:00+00:00",
+    "updated_at": "2011-02-24T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "PSC",
+      "id": "1510",
+      "description": "AIRCRAFT, FIXED WING"
+     }
+    ],
+    "language": "en",
+    "url": "https://www.usaspending.gov/award/CONT_AWD_FA862511C6600_9700_-NONE-_-NONE-"
+   },
+   "awards": [
+    {
+     "award_id": "FA862511C6600",
+     "date": "2011-02-24T00:00:00+00:00",
+     "obligated": {
+      "amount": "31972918249.03",
+      "currency": "USD"
+     },
+     "suppliers": [
+      {
+       "name": "THE BOEING COMPANY",
+       "id": "WZWRLY4G3PL8",
+       "scheme": "US-UEI",
+       "country": "US"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "FA862511C6600",
+     "award_id": "FA862511C6600",
+     "period_start": "2011-02-24T00:00:00+00:00",
+     "period_end": "2027-07-31T00:00:00+00:00"
+    }
+   ],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_is_awarding_sub_agency_of:Department of Defense"
+   ]
+  },
+  {
+   "external_id": "CONT_AWD_N0002417C2117_9700_-NONE-_-NONE-",
+   "content_hash": "8c5e93e1dd91d3df813d9b9be27e8f86a8de791e0ad05bdb3eeb5497b9ca864f",
+   "fetched_at": "2026-11-03T17:27:17+00:00",
+   "source_url": "https://www.usaspending.gov/award/CONT_AWD_N0002417C2117_9700_-NONE-_-NONE-",
+   "publisher": "USAspending.gov (US Treasury)",
+   "published_at": "2017-09-21T00:00:00+00:00",
+   "source_updated_at": "2017-09-21T00:00:00+00:00",
+   "language": "en",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "internal_id": 309506843,
+    "Award ID": "N0002417C2117",
+    "Recipient Name": "ELECTRIC BOAT CORPORATION",
+    "Recipient UEI": "E7BEKJ4V9528",
+    "Award Amount": 31505020631.0,
+    "Start Date": "2017-09-21",
+    "End Date": "2031-12-31",
+    "Awarding Agency": "Department of Defense",
+    "Awarding Sub Agency": "Department of the Navy",
+    "PSC": {
+     "code": "1905",
+     "description": "COMBAT SHIPS AND LANDING VESSELS"
+    },
+    "Description": "COLUMBIA CLASS DESIGN COMPLETION",
+    "generated_internal_id": "CONT_AWD_N0002417C2117_9700_-NONE-_-NONE-",
+    "awarding_agency_id": 1173,
+    "agency_slug": "department-of-defense"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-usaspending-CONT_AWD_N0002417C2117_9700_-NONE-_-NONE-",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "COLUMBIA CLASS DESIGN COMPLETION",
+    "description": "COLUMBIA CLASS DESIGN COMPLETION",
+    "buyer": {
+     "name": "Department of the Navy",
+     "country": "US"
+    },
+    "country": "US",
+    "main_category": "goods",
+    "published_at": "2017-09-21T00:00:00+00:00",
+    "updated_at": "2017-09-21T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "PSC",
+      "id": "1905",
+      "description": "COMBAT SHIPS AND LANDING VESSELS"
+     }
+    ],
+    "language": "en",
+    "url": "https://www.usaspending.gov/award/CONT_AWD_N0002417C2117_9700_-NONE-_-NONE-"
+   },
+   "awards": [
+    {
+     "award_id": "N0002417C2117",
+     "date": "2017-09-21T00:00:00+00:00",
+     "obligated": {
+      "amount": "31505020631.00",
+      "currency": "USD"
+     },
+     "suppliers": [
+      {
+       "name": "ELECTRIC BOAT CORPORATION",
+       "id": "E7BEKJ4V9528",
+       "scheme": "US-UEI",
+       "country": "US"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "N0002417C2117",
+     "award_id": "N0002417C2117",
+     "period_start": "2017-09-21T00:00:00+00:00",
+     "period_end": "2031-12-31T00:00:00+00:00"
+    }
+   ],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_is_awarding_sub_agency_of:Department of Defense"
+   ]
+  },
+  {
+   "external_id": "CONT_AWD_N0001920C0009_9700_-NONE-_-NONE-",
+   "content_hash": "324058cdcfcf1acbc1bd3f60510483a3aa7d403e7189a8c8cf91e9d65042954d",
+   "fetched_at": "2026-11-03T17:27:17+00:00",
+   "source_url": "https://www.usaspending.gov/award/CONT_AWD_N0001920C0009_9700_-NONE-_-NONE-",
+   "publisher": "USAspending.gov (US Treasury)",
+   "published_at": "2019-11-26T00:00:00+00:00",
+   "source_updated_at": "2019-11-26T00:00:00+00:00",
+   "language": "en",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "internal_id": 309496612,
+    "Award ID": "N0001920C0009",
+    "Recipient Name": "LOCKHEED MARTIN CORPORATION",
+    "Recipient UEI": "G4KDGE4JFFK7",
+    "Award Amount": 30154748689.06,
+    "Start Date": "2019-11-26",
+    "End Date": "2028-06-01",
+    "Awarding Agency": "Department of Defense",
+    "Awarding Sub Agency": "Department of the Navy",
+    "PSC": {
+     "code": "1510",
+     "description": "AIRCRAFT, FIXED WING"
+    },
+    "Description": "THE PURPOSE OF THIS MODIFICATION IS TO AWARD F-35A LRIP 15 USAF  AIRCRAFT* LONG LEAD FUNDING",
+    "generated_internal_id": "CONT_AWD_N0001920C0009_9700_-NONE-_-NONE-",
+    "awarding_agency_id": 1173,
+    "agency_slug": "department-of-defense"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-usaspending-CONT_AWD_N0001920C0009_9700_-NONE-_-NONE-",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "THE PURPOSE OF THIS MODIFICATION IS TO AWARD F-35A LRIP 15 USAF  AIRCRAFT* LONG LEAD FUNDING",
+    "description": "THE PURPOSE OF THIS MODIFICATION IS TO AWARD F-35A LRIP 15 USAF  AIRCRAFT* LONG LEAD FUNDING",
+    "buyer": {
+     "name": "Department of the Navy",
+     "country": "US"
+    },
+    "country": "US",
+    "main_category": "goods",
+    "published_at": "2019-11-26T00:00:00+00:00",
+    "updated_at": "2019-11-26T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "PSC",
+      "id": "1510",
+      "description": "AIRCRAFT, FIXED WING"
+     }
+    ],
+    "language": "en",
+    "url": "https://www.usaspending.gov/award/CONT_AWD_N0001920C0009_9700_-NONE-_-NONE-"
+   },
+   "awards": [
+    {
+     "award_id": "N0001920C0009",
+     "date": "2019-11-26T00:00:00+00:00",
+     "obligated": {
+      "amount": "30154748689.06",
+      "currency": "USD"
+     },
+     "suppliers": [
+      {
+       "name": "LOCKHEED MARTIN CORPORATION",
+       "id": "G4KDGE4JFFK7",
+       "scheme": "US-UEI",
+       "country": "US"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "N0001920C0009",
+     "award_id": "N0001920C0009",
+     "period_start": "2019-11-26T00:00:00+00:00",
+     "period_end": "2028-06-01T00:00:00+00:00"
+    }
+   ],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_is_awarding_sub_agency_of:Department of Defense"
+   ]
+  },
+  {
+   "external_id": "CONT_AWD_N0001923C0003_9700_-NONE-_-NONE-",
+   "content_hash": "71fe0abb66e96128635909d84fea76df2fad4619c916ffa5cd770017e29a7698",
+   "fetched_at": "2026-11-03T17:27:17+00:00",
+   "source_url": "https://www.usaspending.gov/award/CONT_AWD_N0001923C0003_9700_-NONE-_-NONE-",
+   "publisher": "USAspending.gov (US Treasury)",
+   "published_at": "2022-12-23T00:00:00+00:00",
+   "source_updated_at": "2022-12-23T00:00:00+00:00",
+   "language": "en",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "internal_id": 309498654,
+    "Award ID": "N0001923C0003",
+    "Recipient Name": "LOCKHEED MARTIN CORPORATION",
+    "Recipient UEI": "G4KDGE4JFFK7",
+    "Award Amount": 24588054059.0,
+    "Start Date": "2022-12-23",
+    "End Date": "2031-04-30",
+    "Awarding Agency": "Department of Defense",
+    "Awarding Sub Agency": "Department of the Navy",
+    "PSC": {
+     "code": "1510",
+     "description": "AIRCRAFT, FIXED WING"
+    },
+    "Description": "THE PURPOSE OF THIS CONTRACT IS TO AWARD LONG LEAD FUNDING FOR F-35A, F-35B, AND F-35C AIRCRAFT FOR U.S. SERVICES, NON-DOD PARTNERS, AND FMS CUSTOMERS",
+    "generated_internal_id": "CONT_AWD_N0001923C0003_9700_-NONE-_-NONE-",
+    "awarding_agency_id": 1173,
+    "agency_slug": "department-of-defense"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-usaspending-CONT_AWD_N0001923C0003_9700_-NONE-_-NONE-",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "THE PURPOSE OF THIS CONTRACT IS TO AWARD LONG LEAD FUNDING FOR F-35A, F-35B, AND F-35C AIRCRAFT FOR U.S. SERVICES, NON-DOD PARTNERS, AND FMS CUSTOMERS",
+    "description": "THE PURPOSE OF THIS CONTRACT IS TO AWARD LONG LEAD FUNDING FOR F-35A, F-35B, AND F-35C AIRCRAFT FOR U.S. SERVICES, NON-DOD PARTNERS, AND FMS CUSTOMERS",
+    "buyer": {
+     "name": "Department of the Navy",
+     "country": "US"
+    },
+    "country": "US",
+    "main_category": "goods",
+    "published_at": "2022-12-23T00:00:00+00:00",
+    "updated_at": "2022-12-23T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "PSC",
+      "id": "1510",
+      "description": "AIRCRAFT, FIXED WING"
+     }
+    ],
+    "language": "en",
+    "url": "https://www.usaspending.gov/award/CONT_AWD_N0001923C0003_9700_-NONE-_-NONE-"
+   },
+   "awards": [
+    {
+     "award_id": "N0001923C0003",
+     "date": "2022-12-23T00:00:00+00:00",
+     "obligated": {
+      "amount": "24588054059.00",
+      "currency": "USD"
+     },
+     "suppliers": [
+      {
+       "name": "LOCKHEED MARTIN CORPORATION",
+       "id": "G4KDGE4JFFK7",
+       "scheme": "US-UEI",
+       "country": "US"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "N0001923C0003",
+     "award_id": "N0001923C0003",
+     "period_start": "2022-12-23T00:00:00+00:00",
+     "period_end": "2031-04-30T00:00:00+00:00"
+    }
+   ],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_is_awarding_sub_agency_of:Department of Defense"
+   ]
+  },
+  {
+   "external_id": "CONT_AWD_HT940216C0002_9700_-NONE-_-NONE-",
+   "content_hash": "c54b45ca3adac23c3d6f92fc40e0764f083313c2f3735940532c93694bf459e8",
+   "fetched_at": "2026-11-03T17:27:17+00:00",
+   "source_url": "https://www.usaspending.gov/award/CONT_AWD_HT940216C0002_9700_-NONE-_-NONE-",
+   "publisher": "USAspending.gov (US Treasury)",
+   "published_at": "2016-08-01T00:00:00+00:00",
+   "source_updated_at": "2016-08-01T00:00:00+00:00",
+   "language": "en",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "internal_id": 307885716,
+    "Award ID": "HT940216C0002",
+    "Recipient Name": "HEALTH NET FEDERAL SERVICES, LLC",
+    "Recipient UEI": "F7NGF6NJFB96",
+    "Award Amount": 23484451360.07,
+    "Start Date": "2016-08-01",
+    "End Date": "2026-05-01",
+    "Awarding Agency": "Department of Defense",
+    "Awarding Sub Agency": "Defense Health Agency",
+    "PSC": {
+     "code": "Q201",
+     "description": "MEDICAL- MANAGED HEALTHCARE"
+    },
+    "Description": "IGF::OT::IGF  MANAGED CARE SUPPORT SERVICES IN SUPPORT OF THE TRICARE PROGRAM",
+    "generated_internal_id": "CONT_AWD_HT940216C0002_9700_-NONE-_-NONE-",
+    "awarding_agency_id": 1173,
+    "agency_slug": "department-of-defense"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-usaspending-CONT_AWD_HT940216C0002_9700_-NONE-_-NONE-",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "IGF::OT::IGF  MANAGED CARE SUPPORT SERVICES IN SUPPORT OF THE TRICARE PROGRAM",
+    "description": "IGF::OT::IGF  MANAGED CARE SUPPORT SERVICES IN SUPPORT OF THE TRICARE PROGRAM",
+    "buyer": {
+     "name": "Defense Health Agency",
+     "country": "US"
+    },
+    "country": "US",
+    "main_category": null,
+    "published_at": "2016-08-01T00:00:00+00:00",
+    "updated_at": "2016-08-01T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "PSC",
+      "id": "Q201",
+      "description": "MEDICAL- MANAGED HEALTHCARE"
+     }
+    ],
+    "language": "en",
+    "url": "https://www.usaspending.gov/award/CONT_AWD_HT940216C0002_9700_-NONE-_-NONE-"
+   },
+   "awards": [
+    {
+     "award_id": "HT940216C0002",
+     "date": "2016-08-01T00:00:00+00:00",
+     "obligated": {
+      "amount": "23484451360.07",
+      "currency": "USD"
+     },
+     "suppliers": [
+      {
+       "name": "HEALTH NET FEDERAL SERVICES, LLC",
+       "id": "F7NGF6NJFB96",
+       "scheme": "US-UEI",
+       "country": "US"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "HT940216C0002",
+     "award_id": "HT940216C0002",
+     "period_start": "2016-08-01T00:00:00+00:00",
+     "period_end": "2026-05-01T00:00:00+00:00"
+    }
+   ],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_is_awarding_sub_agency_of:Department of Defense"
+   ]
+  },
+  {
+   "external_id": "CONT_AWD_N0002412C2115_9700_-NONE-_-NONE-",
+   "content_hash": "0afca3fe203375ba4ce68a517470b82429f3c7849e03aeb552684eb0071f51d6",
+   "fetched_at": "2026-11-03T17:27:17+00:00",
+   "source_url": "https://www.usaspending.gov/award/CONT_AWD_N0002412C2115_9700_-NONE-_-NONE-",
+   "publisher": "USAspending.gov (US Treasury)",
+   "published_at": "2012-04-13T00:00:00+00:00",
+   "source_updated_at": "2012-04-13T00:00:00+00:00",
+   "language": "en",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "internal_id": 309505151,
+    "Award ID": "N0002412C2115",
+    "Recipient Name": "ELECTRIC BOAT CORPORATION",
+    "Recipient UEI": "E7BEKJ4V9528",
+    "Award Amount": 20395165895.0,
+    "Start Date": "2012-04-13",
+    "End Date": "2026-06-30",
+    "Awarding Agency": "Department of Defense",
+    "Awarding Sub Agency": "Department of the Navy",
+    "PSC": {
+     "code": "1905",
+     "description": "COMBAT SHIPS AND LANDING VESSELS"
+    },
+    "Description": "SSN 792 LONG LEAD TIME MATERIAL",
+    "generated_internal_id": "CONT_AWD_N0002412C2115_9700_-NONE-_-NONE-",
+    "awarding_agency_id": 1173,
+    "agency_slug": "department-of-defense"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-usaspending-CONT_AWD_N0002412C2115_9700_-NONE-_-NONE-",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "SSN 792 LONG LEAD TIME MATERIAL",
+    "description": "SSN 792 LONG LEAD TIME MATERIAL",
+    "buyer": {
+     "name": "Department of the Navy",
+     "country": "US"
+    },
+    "country": "US",
+    "main_category": "goods",
+    "published_at": "2012-04-13T00:00:00+00:00",
+    "updated_at": "2012-04-13T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "PSC",
+      "id": "1905",
+      "description": "COMBAT SHIPS AND LANDING VESSELS"
+     }
+    ],
+    "language": "en",
+    "url": "https://www.usaspending.gov/award/CONT_AWD_N0002412C2115_9700_-NONE-_-NONE-"
+   },
+   "awards": [
+    {
+     "award_id": "N0002412C2115",
+     "date": "2012-04-13T00:00:00+00:00",
+     "obligated": {
+      "amount": "20395165895.00",
+      "currency": "USD"
+     },
+     "suppliers": [
+      {
+       "name": "ELECTRIC BOAT CORPORATION",
+       "id": "E7BEKJ4V9528",
+       "scheme": "US-UEI",
+       "country": "US"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "N0002412C2115",
+     "award_id": "N0002412C2115",
+     "period_start": "2012-04-13T00:00:00+00:00",
+     "period_end": "2026-06-30T00:00:00+00:00"
+    }
+   ],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_is_awarding_sub_agency_of:Department of Defense"
+   ]
+  },
+  {
+   "external_id": "CONT_AWD_N0001914C0067_9700_-NONE-_-NONE-",
+   "content_hash": "0a7a3263c52b723195f04fc595b1ed269e51b13cf419effc379ef2960b7ee198",
+   "fetched_at": "2026-11-03T17:27:17+00:00",
+   "source_url": "https://www.usaspending.gov/award/CONT_AWD_N0001914C0067_9700_-NONE-_-NONE-",
+   "publisher": "USAspending.gov (US Treasury)",
+   "published_at": "2014-08-14T00:00:00+00:00",
+   "source_updated_at": "2014-08-14T00:00:00+00:00",
+   "language": "en",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "internal_id": 309494374,
+    "Award ID": "N0001914C0067",
+    "Recipient Name": "THE BOEING COMPANY",
+    "Recipient UEI": "WZWRLY4G3PL8",
+    "Award Amount": 18111838529.78,
+    "Start Date": "2014-08-14",
+    "End Date": "2027-04-30",
+    "Awarding Agency": "Department of Defense",
+    "Awarding Sub Agency": "Defense Contract Management Agency",
+    "PSC": {
+     "code": "1510",
+     "description": "AIRCRAFT, FIXED WING"
+    },
+    "Description": "USN P-8A FRP II LONG LEAD MATERIAL",
+    "generated_internal_id": "CONT_AWD_N0001914C0067_9700_-NONE-_-NONE-",
+    "awarding_agency_id": 1173,
+    "agency_slug": "department-of-defense"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-usaspending-CONT_AWD_N0001914C0067_9700_-NONE-_-NONE-",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "USN P-8A FRP II LONG LEAD MATERIAL",
+    "description": "USN P-8A FRP II LONG LEAD MATERIAL",
+    "buyer": {
+     "name": "Defense Contract Management Agency",
+     "country": "US"
+    },
+    "country": "US",
+    "main_category": "goods",
+    "published_at": "2014-08-14T00:00:00+00:00",
+    "updated_at": "2014-08-14T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "PSC",
+      "id": "1510",
+      "description": "AIRCRAFT, FIXED WING"
+     }
+    ],
+    "language": "en",
+    "url": "https://www.usaspending.gov/award/CONT_AWD_N0001914C0067_9700_-NONE-_-NONE-"
+   },
+   "awards": [
+    {
+     "award_id": "N0001914C0067",
+     "date": "2014-08-14T00:00:00+00:00",
+     "obligated": {
+      "amount": "18111838529.78",
+      "currency": "USD"
+     },
+     "suppliers": [
+      {
+       "name": "THE BOEING COMPANY",
+       "id": "WZWRLY4G3PL8",
+       "scheme": "US-UEI",
+       "country": "US"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "N0001914C0067",
+     "award_id": "N0001914C0067",
+     "period_start": "2014-08-14T00:00:00+00:00",
+     "period_end": "2027-04-30T00:00:00+00:00"
+    }
+   ],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_is_awarding_sub_agency_of:Department of Defense"
+   ]
+  },
+  {
+   "external_id": "CONT_AWD_N0002418C2130_9700_-NONE-_-NONE-",
+   "content_hash": "08559da5ff824505b83951fa2c49894e0a0af08279dba1b9cb29fd54a55c5d1d",
+   "fetched_at": "2026-11-03T17:27:17+00:00",
+   "source_url": "https://www.usaspending.gov/award/CONT_AWD_N0002418C2130_9700_-NONE-_-NONE-",
+   "publisher": "USAspending.gov (US Treasury)",
+   "published_at": "2018-07-12T00:00:00+00:00",
+   "source_updated_at": "2018-07-12T00:00:00+00:00",
+   "language": "en",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "internal_id": 309507609,
+    "Award ID": "N0002418C2130",
+    "Recipient Name": "FLUOR MARINE PROPULSION, LLC",
+    "Recipient UEI": "CWHMVCX7K1N6",
+    "Award Amount": 14981924100.48,
+    "Start Date": "2018-07-12",
+    "End Date": "2028-09-30",
+    "Awarding Agency": "Department of Defense",
+    "Awarding Sub Agency": "Department of the Navy",
+    "PSC": {
+     "code": "4470",
+     "description": "NUCLEAR REACTORS"
+    },
+    "Description": "NAVAL NUCLEAR LABORATORY",
+    "generated_internal_id": "CONT_AWD_N0002418C2130_9700_-NONE-_-NONE-",
+    "awarding_agency_id": 1173,
+    "agency_slug": "department-of-defense"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-usaspending-CONT_AWD_N0002418C2130_9700_-NONE-_-NONE-",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "NAVAL NUCLEAR LABORATORY",
+    "description": "NAVAL NUCLEAR LABORATORY",
+    "buyer": {
+     "name": "Department of the Navy",
+     "country": "US"
+    },
+    "country": "US",
+    "main_category": "goods",
+    "published_at": "2018-07-12T00:00:00+00:00",
+    "updated_at": "2018-07-12T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "PSC",
+      "id": "4470",
+      "description": "NUCLEAR REACTORS"
+     }
+    ],
+    "language": "en",
+    "url": "https://www.usaspending.gov/award/CONT_AWD_N0002418C2130_9700_-NONE-_-NONE-"
+   },
+   "awards": [
+    {
+     "award_id": "N0002418C2130",
+     "date": "2018-07-12T00:00:00+00:00",
+     "obligated": {
+      "amount": "14981924100.48",
+      "currency": "USD"
+     },
+     "suppliers": [
+      {
+       "name": "FLUOR MARINE PROPULSION, LLC",
+       "id": "CWHMVCX7K1N6",
+       "scheme": "US-UEI",
+       "country": "US"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "N0002418C2130",
+     "award_id": "N0002418C2130",
+     "period_start": "2018-07-12T00:00:00+00:00",
+     "period_end": "2028-09-30T00:00:00+00:00"
+    }
+   ],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_is_awarding_sub_agency_of:Department of Defense"
+   ]
+  },
+  {
+   "external_id": "CONT_AWD_FA821920C0006_9700_-NONE-_-NONE-",
+   "content_hash": "ee9d0de6726cf643455f5ef8e257c53e79be9585b8a455fe50dcfe157396d59c",
+   "fetched_at": "2026-11-03T17:27:17+00:00",
+   "source_url": "https://www.usaspending.gov/award/CONT_AWD_FA821920C0006_9700_-NONE-_-NONE-",
+   "publisher": "USAspending.gov (US Treasury)",
+   "published_at": "2020-09-08T00:00:00+00:00",
+   "source_updated_at": "2020-09-08T00:00:00+00:00",
+   "language": "en",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "internal_id": 298461744,
+    "Award ID": "FA821920C0006",
+    "Recipient Name": "NORTHROP GRUMMAN SYSTEMS CORP",
+    "Recipient UEI": "D8QQPFNYJD63",
+    "Award Amount": 14379062923.19,
+    "Start Date": "2020-09-08",
+    "End Date": "2029-03-10",
+    "Awarding Agency": "Department of Defense",
+    "Awarding Sub Agency": "Department of the Air Force",
+    "PSC": {
+     "code": "AC24",
+     "description": "NATIONAL DEFENSE R&D SERVICES; ATOMIC ENERGY DEFENSE ACTIVITIES; R&D ADMINISTRATIVE EXPENSES"
+    },
+    "Description": "GROUND-BASED STRATEGIC DETERRENT (GBSD) ENGINEERING AND MANUFACTURING DEVELOPMENT (EMD) AND EARLY PRODUCTION AND DEPLOYMENT (P&D)",
+    "generated_internal_id": "CONT_AWD_FA821920C0006_9700_-NONE-_-NONE-",
+    "awarding_agency_id": 1173,
+    "agency_slug": "department-of-defense"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-usaspending-CONT_AWD_FA821920C0006_9700_-NONE-_-NONE-",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "GROUND-BASED STRATEGIC DETERRENT (GBSD) ENGINEERING AND MANUFACTURING DEVELOPMENT (EMD) AND EARLY PRODUCTION AND DEPLOYMENT (P&D)",
+    "description": "GROUND-BASED STRATEGIC DETERRENT (GBSD) ENGINEERING AND MANUFACTURING DEVELOPMENT (EMD) AND EARLY PRODUCTION AND DEPLOYMENT (P&D)",
+    "buyer": {
+     "name": "Department of the Air Force",
+     "country": "US"
+    },
+    "country": "US",
+    "main_category": null,
+    "published_at": "2020-09-08T00:00:00+00:00",
+    "updated_at": "2020-09-08T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "PSC",
+      "id": "AC24",
+      "description": "NATIONAL DEFENSE R&D SERVICES; ATOMIC ENERGY DEFENSE ACTIVITIES; R&D ADMINISTRATIVE EXPENSES"
+     }
+    ],
+    "language": "en",
+    "url": "https://www.usaspending.gov/award/CONT_AWD_FA821920C0006_9700_-NONE-_-NONE-"
+   },
+   "awards": [
+    {
+     "award_id": "FA821920C0006",
+     "date": "2020-09-08T00:00:00+00:00",
+     "obligated": {
+      "amount": "14379062923.19",
+      "currency": "USD"
+     },
+     "suppliers": [
+      {
+       "name": "NORTHROP GRUMMAN SYSTEMS CORP",
+       "id": "D8QQPFNYJD63",
+       "scheme": "US-UEI",
+       "country": "US"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "FA821920C0006",
+     "award_id": "FA821920C0006",
+     "period_start": "2020-09-08T00:00:00+00:00",
+     "period_end": "2029-03-10T00:00:00+00:00"
+    }
+   ],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_is_awarding_sub_agency_of:Department of Defense"
+   ]
+  },
+  {
+   "external_id": "CONT_AWD_N0002416C2116_9700_-NONE-_-NONE-",
+   "content_hash": "12dd4d56b6ed8e7ac3be38da7ae5cb2f4db794db6d7924e99b2c3d12094c3aab",
+   "fetched_at": "2026-11-03T17:27:17+00:00",
+   "source_url": "https://www.usaspending.gov/award/CONT_AWD_N0002416C2116_9700_-NONE-_-NONE-",
+   "publisher": "USAspending.gov (US Treasury)",
+   "published_at": "2016-05-23T00:00:00+00:00",
+   "source_updated_at": "2016-05-23T00:00:00+00:00",
+   "language": "en",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "internal_id": 309506484,
+    "Award ID": "N0002416C2116",
+    "Recipient Name": "HUNTINGTON INGALLS INC",
+    "Recipient UEI": "WMXDDH6HJNA5",
+    "Award Amount": 13426828974.85,
+    "Start Date": "2016-05-23",
+    "End Date": "2036-06-02",
+    "Awarding Agency": "Department of Defense",
+    "Awarding Sub Agency": "Department of the Navy",
+    "PSC": {
+     "code": "1905",
+     "description": "COMBAT SHIPS AND LANDING VESSELS"
+    },
+    "Description": "CVN 80 ENGINEERING EFFORTS AND STEEL",
+    "generated_internal_id": "CONT_AWD_N0002416C2116_9700_-NONE-_-NONE-",
+    "awarding_agency_id": 1173,
+    "agency_slug": "department-of-defense"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-usaspending-CONT_AWD_N0002416C2116_9700_-NONE-_-NONE-",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "CVN 80 ENGINEERING EFFORTS AND STEEL",
+    "description": "CVN 80 ENGINEERING EFFORTS AND STEEL",
+    "buyer": {
+     "name": "Department of the Navy",
+     "country": "US"
+    },
+    "country": "US",
+    "main_category": "goods",
+    "published_at": "2016-05-23T00:00:00+00:00",
+    "updated_at": "2016-05-23T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "PSC",
+      "id": "1905",
+      "description": "COMBAT SHIPS AND LANDING VESSELS"
+     }
+    ],
+    "language": "en",
+    "url": "https://www.usaspending.gov/award/CONT_AWD_N0002416C2116_9700_-NONE-_-NONE-"
+   },
+   "awards": [
+    {
+     "award_id": "N0002416C2116",
+     "date": "2016-05-23T00:00:00+00:00",
+     "obligated": {
+      "amount": "13426828974.85",
+      "currency": "USD"
+     },
+     "suppliers": [
+      {
+       "name": "HUNTINGTON INGALLS INC",
+       "id": "WMXDDH6HJNA5",
+       "scheme": "US-UEI",
+       "country": "US"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "N0002416C2116",
+     "award_id": "N0002416C2116",
+     "period_start": "2016-05-23T00:00:00+00:00",
+     "period_end": "2036-06-02T00:00:00+00:00"
+    }
+   ],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_is_awarding_sub_agency_of:Department of Defense"
+   ]
+  },
+  {
+   "external_id": "CONT_AWD_W31P4Q20C0023_9700_-NONE-_-NONE-",
+   "content_hash": "848653a91c0699acdc31b0dc0c1236b3dd4ab0db81600db480ececf567a33dd9",
+   "fetched_at": "2026-11-03T17:27:17+00:00",
+   "source_url": "https://www.usaspending.gov/award/CONT_AWD_W31P4Q20C0023_9700_-NONE-_-NONE-",
+   "publisher": "USAspending.gov (US Treasury)",
+   "published_at": "2020-04-30T00:00:00+00:00",
+   "source_updated_at": "2020-04-30T00:00:00+00:00",
+   "language": "en",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "internal_id": 348949116,
+    "Award ID": "W31P4Q20C0023",
+    "Recipient Name": "LOCKHEED MARTIN CORPORATION",
+    "Recipient UEI": "XFJMYSYFJEK4",
+    "Award Amount": 10475265354.17,
+    "Start Date": "2020-04-30",
+    "End Date": "2033-09-30",
+    "Awarding Agency": "Department of Defense",
+    "Awarding Sub Agency": "Department of the Army",
+    "PSC": {
+     "code": "1410",
+     "description": "GUIDED MISSILES"
+    },
+    "Description": "THE CONTRACT AWARD IS FOR THE FY21/FY22/FY23 BASE AND OPTION PRICING FOR PHASE ARRAY TRACKING RADAR TO INTERCEPT ON TARGET (PATRIOT) ADVANCED CAPABILITY-3 (PAC-3) PRODUCTION REQUIREMENTS FOR THE UNITED STATES (US) AND FOREIGN MILITARY SALES (FMS)",
+    "generated_internal_id": "CONT_AWD_W31P4Q20C0023_9700_-NONE-_-NONE-",
+    "awarding_agency_id": 1173,
+    "agency_slug": "department-of-defense"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-usaspending-CONT_AWD_W31P4Q20C0023_9700_-NONE-_-NONE-",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "THE CONTRACT AWARD IS FOR THE FY21/FY22/FY23 BASE AND OPTION PRICING FOR PHASE ARRAY TRACKING RADAR TO INTERCEPT ON TARGET (PATRIOT) ADVANCED CAPABILITY-3 (PAC-3) PRODUCTION REQUIREMENTS FOR THE UNITE",
+    "description": "THE CONTRACT AWARD IS FOR THE FY21/FY22/FY23 BASE AND OPTION PRICING FOR PHASE ARRAY TRACKING RADAR TO INTERCEPT ON TARGET (PATRIOT) ADVANCED CAPABILITY-3 (PAC-3) PRODUCTION REQUIREMENTS FOR THE UNITED STATES (US) AND FOREIGN MILITARY SALES (FMS)",
+    "buyer": {
+     "name": "Department of the Army",
+     "country": "US"
+    },
+    "country": "US",
+    "main_category": "goods",
+    "published_at": "2020-04-30T00:00:00+00:00",
+    "updated_at": "2020-04-30T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "PSC",
+      "id": "1410",
+      "description": "GUIDED MISSILES"
+     }
+    ],
+    "language": "en",
+    "url": "https://www.usaspending.gov/award/CONT_AWD_W31P4Q20C0023_9700_-NONE-_-NONE-"
+   },
+   "awards": [
+    {
+     "award_id": "W31P4Q20C0023",
+     "date": "2020-04-30T00:00:00+00:00",
+     "obligated": {
+      "amount": "10475265354.17",
+      "currency": "USD"
+     },
+     "suppliers": [
+      {
+       "name": "LOCKHEED MARTIN CORPORATION",
+       "id": "XFJMYSYFJEK4",
+       "scheme": "US-UEI",
+       "country": "US"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "W31P4Q20C0023",
+     "award_id": "W31P4Q20C0023",
+     "period_start": "2020-04-30T00:00:00+00:00",
+     "period_end": "2033-09-30T00:00:00+00:00"
+    }
+   ],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_is_awarding_sub_agency_of:Department of Defense"
+   ]
+  },
+  {
+   "external_id": "CONT_AWD_HQ014717C0032_9700_-NONE-_-NONE-",
+   "content_hash": "98e851e43963a33c5a07996f71e9255201cf2398a432af9d5a60a4c360dd3a85",
+   "fetched_at": "2026-11-03T17:27:17+00:00",
+   "source_url": "https://www.usaspending.gov/award/CONT_AWD_HQ014717C0032_9700_-NONE-_-NONE-",
+   "publisher": "USAspending.gov (US Treasury)",
+   "published_at": "2017-03-27T00:00:00+00:00",
+   "source_updated_at": "2017-03-27T00:00:00+00:00",
+   "language": "en",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "internal_id": 307239358,
+    "Award ID": "HQ014717C0032",
+    "Recipient Name": "LOCKHEED MARTIN CORPORATION",
+    "Recipient UEI": "XFJMYSYFJEK4",
+    "Award Amount": 10449417335.07,
+    "Start Date": "2017-03-27",
+    "End Date": "2029-01-01",
+    "Awarding Agency": "Department of Defense",
+    "Awarding Sub Agency": "Missile Defense Agency",
+    "PSC": {
+     "code": "1410",
+     "description": "GUIDED MISSILES"
+    },
+    "Description": "HQ0147-17-C-0032 UNDEFINITIZED CONTRACT ACTION (UCA) FOR THAAD INTERCEPTOR LOT 9 PRODUCTION - QTY OF 23",
+    "generated_internal_id": "CONT_AWD_HQ014717C0032_9700_-NONE-_-NONE-",
+    "awarding_agency_id": 1173,
+    "agency_slug": "department-of-defense"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-usaspending-CONT_AWD_HQ014717C0032_9700_-NONE-_-NONE-",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "HQ0147-17-C-0032 UNDEFINITIZED CONTRACT ACTION (UCA) FOR THAAD INTERCEPTOR LOT 9 PRODUCTION - QTY OF 23",
+    "description": "HQ0147-17-C-0032 UNDEFINITIZED CONTRACT ACTION (UCA) FOR THAAD INTERCEPTOR LOT 9 PRODUCTION - QTY OF 23",
+    "buyer": {
+     "name": "Missile Defense Agency",
+     "country": "US"
+    },
+    "country": "US",
+    "main_category": "goods",
+    "published_at": "2017-03-27T00:00:00+00:00",
+    "updated_at": "2017-03-27T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "PSC",
+      "id": "1410",
+      "description": "GUIDED MISSILES"
+     }
+    ],
+    "language": "en",
+    "url": "https://www.usaspending.gov/award/CONT_AWD_HQ014717C0032_9700_-NONE-_-NONE-"
+   },
+   "awards": [
+    {
+     "award_id": "HQ014717C0032",
+     "date": "2017-03-27T00:00:00+00:00",
+     "obligated": {
+      "amount": "10449417335.07",
+      "currency": "USD"
+     },
+     "suppliers": [
+      {
+       "name": "LOCKHEED MARTIN CORPORATION",
+       "id": "XFJMYSYFJEK4",
+       "scheme": "US-UEI",
+       "country": "US"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "HQ014717C0032",
+     "award_id": "HQ014717C0032",
+     "period_start": "2017-03-27T00:00:00+00:00",
+     "period_end": "2029-01-01T00:00:00+00:00"
+    }
+   ],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_is_awarding_sub_agency_of:Department of Defense"
+   ]
+  },
+  {
+   "external_id": "CONT_AWD_W31P4Q24C0022_9700_-NONE-_-NONE-",
+   "content_hash": "84aa949cda667c851302b1e27feece68593ef9222d4d5a097e52510743b31013",
+   "fetched_at": "2026-11-03T17:27:17+00:00",
+   "source_url": "https://www.usaspending.gov/award/CONT_AWD_W31P4Q24C0022_9700_-NONE-_-NONE-",
+   "publisher": "USAspending.gov (US Treasury)",
+   "published_at": "2024-06-28T00:00:00+00:00",
+   "source_updated_at": "2024-06-28T00:00:00+00:00",
+   "language": "en",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "internal_id": 348950884,
+    "Award ID": "W31P4Q24C0022",
+    "Recipient Name": "LOCKHEED MARTIN CORPORATION",
+    "Recipient UEI": "XFJMYSYFJEK4",
+    "Award Amount": 10310520635.43,
+    "Start Date": "2024-06-28",
+    "End Date": "2036-03-31",
+    "Awarding Agency": "Department of Defense",
+    "Awarding Sub Agency": "Department of the Army",
+    "PSC": {
+     "code": "1410",
+     "description": "GUIDED MISSILES"
+    },
+    "Description": "EXECUTE PHASED ARRAY TRACKING RADAR TO INTERCEPT ON TARGET (PATRIOT) ADVANCED CAPABILITY-3 (PAC-3) MISSILE PRODUCTION BY PROVIDING INCIDENTAL SERVICES, HARDWARE, FACILITIES, EQUIPMENT, AND TECHNICAL, PLANNING, MANAGEMENT, AND MANUFACTURING EFFORTS.",
+    "generated_internal_id": "CONT_AWD_W31P4Q24C0022_9700_-NONE-_-NONE-",
+    "awarding_agency_id": 1173,
+    "agency_slug": "department-of-defense"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-usaspending-CONT_AWD_W31P4Q24C0022_9700_-NONE-_-NONE-",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "EXECUTE PHASED ARRAY TRACKING RADAR TO INTERCEPT ON TARGET (PATRIOT) ADVANCED CAPABILITY-3 (PAC-3) MISSILE PRODUCTION BY PROVIDING INCIDENTAL SERVICES, HARDWARE, FACILITIES, EQUIPMENT, AND TECHNICAL, ",
+    "description": "EXECUTE PHASED ARRAY TRACKING RADAR TO INTERCEPT ON TARGET (PATRIOT) ADVANCED CAPABILITY-3 (PAC-3) MISSILE PRODUCTION BY PROVIDING INCIDENTAL SERVICES, HARDWARE, FACILITIES, EQUIPMENT, AND TECHNICAL, PLANNING, MANAGEMENT, AND MANUFACTURING EFFORTS.",
+    "buyer": {
+     "name": "Department of the Army",
+     "country": "US"
+    },
+    "country": "US",
+    "main_category": "goods",
+    "published_at": "2024-06-28T00:00:00+00:00",
+    "updated_at": "2024-06-28T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "PSC",
+      "id": "1410",
+      "description": "GUIDED MISSILES"
+     }
+    ],
+    "language": "en",
+    "url": "https://www.usaspending.gov/award/CONT_AWD_W31P4Q24C0022_9700_-NONE-_-NONE-"
+   },
+   "awards": [
+    {
+     "award_id": "W31P4Q24C0022",
+     "date": "2024-06-28T00:00:00+00:00",
+     "obligated": {
+      "amount": "10310520635.43",
+      "currency": "USD"
+     },
+     "suppliers": [
+      {
+       "name": "LOCKHEED MARTIN CORPORATION",
+       "id": "XFJMYSYFJEK4",
+       "scheme": "US-UEI",
+       "country": "US"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "W31P4Q24C0022",
+     "award_id": "W31P4Q24C0022",
+     "period_start": "2024-06-28T00:00:00+00:00",
+     "period_end": "2036-03-31T00:00:00+00:00"
+    }
+   ],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_is_awarding_sub_agency_of:Department of Defense"
+   ]
+  },
+  {
+   "external_id": "CONT_AWD_W58RGZ08C0003_9700_-NONE-_-NONE-",
+   "content_hash": "4b0e04d524c22e985d8d429f622a705724d2927e4819f056bf4af9cead0b3073",
+   "fetched_at": "2026-11-03T17:27:17+00:00",
+   "source_url": "https://www.usaspending.gov/award/CONT_AWD_W58RGZ08C0003_9700_-NONE-_-NONE-",
+   "publisher": "USAspending.gov (US Treasury)",
+   "published_at": "2007-12-12T00:00:00+00:00",
+   "source_updated_at": "2007-12-12T00:00:00+00:00",
+   "language": "en",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "internal_id": 349070655,
+    "Award ID": "W58RGZ08C0003",
+    "Recipient Name": "SIKORSKY AIRCRAFT CORPORATION",
+    "Recipient UEI": "UTJWTSLMFNG4",
+    "Award Amount": 9971022710.49,
+    "Start Date": "2007-12-12",
+    "End Date": "2026-04-16",
+    "Awarding Agency": "Department of Defense",
+    "Awarding Sub Agency": "Department of the Army",
+    "PSC": {
+     "code": "1520",
+     "description": "AIRCRAFT, ROTARY WING"
+    },
+    "Description": "PROCUREMENT OF 54 EACH ARMY UH-60M BLACK HAWK HELICOPTERS; 18 EACH NAVY MH-60S SEA HAWK HELICOPTERS; 25 EACH NAVY NH-60R SEA HAWK HELICOPTERS; 9 EACH UH-60M BLACK HAWK HELICOPTER FOR BAHRAIN DEFENSE FORCE; TOOLING; PROGRAM SYSTEMS MANAGEMENT; TECHNICAL PUBLICATIONS.",
+    "generated_internal_id": "CONT_AWD_W58RGZ08C0003_9700_-NONE-_-NONE-",
+    "awarding_agency_id": 1173,
+    "agency_slug": "department-of-defense"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-usaspending-CONT_AWD_W58RGZ08C0003_9700_-NONE-_-NONE-",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "PROCUREMENT OF 54 EACH ARMY UH-60M BLACK HAWK HELICOPTERS; 18 EACH NAVY MH-60S SEA HAWK HELICOPTERS; 25 EACH NAVY NH-60R SEA HAWK HELICOPTERS; 9 EACH UH-60M BLACK HAWK HELICOPTER FOR BAHRAIN DEFENSE F",
+    "description": "PROCUREMENT OF 54 EACH ARMY UH-60M BLACK HAWK HELICOPTERS; 18 EACH NAVY MH-60S SEA HAWK HELICOPTERS; 25 EACH NAVY NH-60R SEA HAWK HELICOPTERS; 9 EACH UH-60M BLACK HAWK HELICOPTER FOR BAHRAIN DEFENSE FORCE; TOOLING; PROGRAM SYSTEMS MANAGEMENT; TECHNICAL PUBLICATIONS.",
+    "buyer": {
+     "name": "Department of the Army",
+     "country": "US"
+    },
+    "country": "US",
+    "main_category": "goods",
+    "published_at": "2007-12-12T00:00:00+00:00",
+    "updated_at": "2007-12-12T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "PSC",
+      "id": "1520",
+      "description": "AIRCRAFT, ROTARY WING"
+     }
+    ],
+    "language": "en",
+    "url": "https://www.usaspending.gov/award/CONT_AWD_W58RGZ08C0003_9700_-NONE-_-NONE-"
+   },
+   "awards": [
+    {
+     "award_id": "W58RGZ08C0003",
+     "date": "2007-12-12T00:00:00+00:00",
+     "obligated": {
+      "amount": "9971022710.49",
+      "currency": "USD"
+     },
+     "suppliers": [
+      {
+       "name": "SIKORSKY AIRCRAFT CORPORATION",
+       "id": "UTJWTSLMFNG4",
+       "scheme": "US-UEI",
+       "country": "US"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "W58RGZ08C0003",
+     "award_id": "W58RGZ08C0003",
+     "period_start": "2007-12-12T00:00:00+00:00",
+     "period_end": "2026-04-16T00:00:00+00:00"
+    }
+   ],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_is_awarding_sub_agency_of:Department of Defense"
+   ]
+  },
+  {
+   "external_id": "CONT_AWD_HT940223C0001_9700_-NONE-_-NONE-",
+   "content_hash": "9fef4d6ceaa8a97b06bd3922c8209359fc7ab6701e254e4c727dbb472c5b835b",
+   "fetched_at": "2026-11-03T17:27:17+00:00",
+   "source_url": "https://www.usaspending.gov/award/CONT_AWD_HT940223C0001_9700_-NONE-_-NONE-",
+   "publisher": "USAspending.gov (US Treasury)",
+   "published_at": "2023-02-01T00:00:00+00:00",
+   "source_updated_at": "2023-02-01T00:00:00+00:00",
+   "language": "en",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "internal_id": 307885857,
+    "Award ID": "HT940223C0001",
+    "Recipient Name": "HUMANA GOVERNMENT BUSINESS INC",
+    "Recipient UEI": "ZE6ZM6NKSV43",
+    "Award Amount": 9372151291.16,
+    "Start Date": "2023-02-01",
+    "End Date": "2029-12-31",
+    "Awarding Agency": "Department of Defense",
+    "Awarding Sub Agency": "Defense Health Agency",
+    "PSC": {
+     "code": "Q201",
+     "description": "MEDICAL- MANAGED HEALTHCARE"
+    },
+    "Description": "TRICARE MANAGED CARE SUPPORT SERVICES CONTRACT, 5TH GENERATION EAST REGION",
+    "generated_internal_id": "CONT_AWD_HT940223C0001_9700_-NONE-_-NONE-",
+    "awarding_agency_id": 1173,
+    "agency_slug": "department-of-defense"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-usaspending-CONT_AWD_HT940223C0001_9700_-NONE-_-NONE-",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "TRICARE MANAGED CARE SUPPORT SERVICES CONTRACT, 5TH GENERATION EAST REGION",
+    "description": "TRICARE MANAGED CARE SUPPORT SERVICES CONTRACT, 5TH GENERATION EAST REGION",
+    "buyer": {
+     "name": "Defense Health Agency",
+     "country": "US"
+    },
+    "country": "US",
+    "main_category": null,
+    "published_at": "2023-02-01T00:00:00+00:00",
+    "updated_at": "2023-02-01T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "PSC",
+      "id": "Q201",
+      "description": "MEDICAL- MANAGED HEALTHCARE"
+     }
+    ],
+    "language": "en",
+    "url": "https://www.usaspending.gov/award/CONT_AWD_HT940223C0001_9700_-NONE-_-NONE-"
+   },
+   "awards": [
+    {
+     "award_id": "HT940223C0001",
+     "date": "2023-02-01T00:00:00+00:00",
+     "obligated": {
+      "amount": "9372151291.16",
+      "currency": "USD"
+     },
+     "suppliers": [
+      {
+       "name": "HUMANA GOVERNMENT BUSINESS INC",
+       "id": "ZE6ZM6NKSV43",
+       "scheme": "US-UEI",
+       "country": "US"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "HT940223C0001",
+     "award_id": "HT940223C0001",
+     "period_start": "2023-02-01T00:00:00+00:00",
+     "period_end": "2029-12-31T00:00:00+00:00"
+    }
+   ],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_is_awarding_sub_agency_of:Department of Defense"
+   ]
+  },
+  {
+   "external_id": "CONT_AWD_HT940223C0002_9700_-NONE-_-NONE-",
+   "content_hash": "9c8dd391e68ec60bee27562cec035884313905cbfdb16252576b7b67510722f6",
+   "fetched_at": "2026-11-03T17:27:17+00:00",
+   "source_url": "https://www.usaspending.gov/award/CONT_AWD_HT940223C0002_9700_-NONE-_-NONE-",
+   "publisher": "USAspending.gov (US Treasury)",
+   "published_at": "2024-01-01T00:00:00+00:00",
+   "source_updated_at": "2024-01-01T00:00:00+00:00",
+   "language": "en",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "internal_id": 307885858,
+    "Award ID": "HT940223C0002",
+    "Recipient Name": "TRIWEST HEALTHCARE ALLIANCE CORP",
+    "Recipient UEI": "J7M9HPTGJ1S9",
+    "Award Amount": 9229784861.9,
+    "Start Date": "2024-01-01",
+    "End Date": "2026-12-31",
+    "Awarding Agency": "Department of Defense",
+    "Awarding Sub Agency": "Defense Health Agency",
+    "PSC": {
+     "code": "Q201",
+     "description": "MEDICAL- MANAGED HEALTHCARE"
+    },
+    "Description": "TRICARE MANAGED CARE SUPPORT SERVICES CONTRACT, 5TH GENERATION WEST REGION",
+    "generated_internal_id": "CONT_AWD_HT940223C0002_9700_-NONE-_-NONE-",
+    "awarding_agency_id": 1173,
+    "agency_slug": "department-of-defense"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-usaspending-CONT_AWD_HT940223C0002_9700_-NONE-_-NONE-",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "TRICARE MANAGED CARE SUPPORT SERVICES CONTRACT, 5TH GENERATION WEST REGION",
+    "description": "TRICARE MANAGED CARE SUPPORT SERVICES CONTRACT, 5TH GENERATION WEST REGION",
+    "buyer": {
+     "name": "Defense Health Agency",
+     "country": "US"
+    },
+    "country": "US",
+    "main_category": null,
+    "published_at": "2024-01-01T00:00:00+00:00",
+    "updated_at": "2024-01-01T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "PSC",
+      "id": "Q201",
+      "description": "MEDICAL- MANAGED HEALTHCARE"
+     }
+    ],
+    "language": "en",
+    "url": "https://www.usaspending.gov/award/CONT_AWD_HT940223C0002_9700_-NONE-_-NONE-"
+   },
+   "awards": [
+    {
+     "award_id": "HT940223C0002",
+     "date": "2024-01-01T00:00:00+00:00",
+     "obligated": {
+      "amount": "9229784861.90",
+      "currency": "USD"
+     },
+     "suppliers": [
+      {
+       "name": "TRIWEST HEALTHCARE ALLIANCE CORP",
+       "id": "J7M9HPTGJ1S9",
+       "scheme": "US-UEI",
+       "country": "US"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "HT940223C0002",
+     "award_id": "HT940223C0002",
+     "period_start": "2024-01-01T00:00:00+00:00",
+     "period_end": "2026-12-31T00:00:00+00:00"
+    }
+   ],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_is_awarding_sub_agency_of:Department of Defense"
+   ]
+  },
+  {
+   "external_id": "CONT_AWD_F0470102C0002_9700_-NONE-_-NONE-",
+   "content_hash": "57c91c21d5a3e3e3180da344709fd9f073a396890a94aeac112c7bbbeeb8ddae",
+   "fetched_at": "2026-11-03T17:27:17+00:00",
+   "source_url": "https://www.usaspending.gov/award/CONT_AWD_F0470102C0002_9700_-NONE-_-NONE-",
+   "publisher": "USAspending.gov (US Treasury)",
+   "published_at": "2001-11-16T00:00:00+00:00",
+   "source_updated_at": "2001-11-16T00:00:00+00:00",
+   "language": "en",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "internal_id": 297664627,
+    "Award ID": "F0470102C0002",
+    "Recipient Name": "LOCKHEED MARTIN CORP",
+    "Recipient UEI": "CQWLW9XRQTH5",
+    "Award Amount": 9032605785.68,
+    "Start Date": "2001-11-16",
+    "End Date": "2021-01-31",
+    "Awarding Agency": "Department of Defense",
+    "Awarding Sub Agency": "Defense Contract Management Agency",
+    "PSC": {
+     "code": "AR92",
+     "description": "R&D- SPACE: OTHER (APPLIED RESEARCH/EXPLORATORY DEVELOPMENT)"
+    },
+    "Description": "200207!000021!5700!CZ62  !SMC/PKJ LOS ANGELES AFB         !F0470102C0002  !A!N! !N!                   !20011116!20070630!872978978!196596688!834951691!N!LOCKHEED MARTIN CORPORATION   !1111 LOCKHEED MARTIN WAY  !SUNNYVALE           !CA!94089!77000!085!06!SUNNYVALE           !SANTA CLARA           !CALIFORNIA!+000012250000!N!N!000000000000!AR92!RDTE/SPACE - OTHER - APPLIED RESEARCH             !A2 !MISSILE AND SPACE SYSTEMS     !3GFK!MILSTAR                       !541710!E! !1! ! ! ! ! !99990909!B! ! !B! !D!N!J!2!001!N!2A!Z!N!Z!  !  !N!C!N! ! ! !A!A!A!A!000!A!C!N! ! ! ! !    !      !0001!",
+    "generated_internal_id": "CONT_AWD_F0470102C0002_9700_-NONE-_-NONE-",
+    "awarding_agency_id": 1173,
+    "agency_slug": "department-of-defense"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-usaspending-CONT_AWD_F0470102C0002_9700_-NONE-_-NONE-",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "200207!000021!5700!CZ62  !SMC/PKJ LOS ANGELES AFB         !F0470102C0002  !A!N! !N!                   !20011116!20070630!872978978!196596688!834951691!N!LOCKHEED MARTIN CORPORATION   !1111 LOCKHEED MA",
+    "description": "200207!000021!5700!CZ62  !SMC/PKJ LOS ANGELES AFB         !F0470102C0002  !A!N! !N!                   !20011116!20070630!872978978!196596688!834951691!N!LOCKHEED MARTIN CORPORATION   !1111 LOCKHEED MARTIN WAY  !SUNNYVALE           !CA!94089!77000!085!06!SUNNYVALE           !SANTA CLARA           !CALIFORNIA!+000012250000!N!N!000000000000!AR92!RDTE/SPACE - OTHER - APPLIED RESEARCH             !A2 !MISSILE AND SPACE SYSTEMS     !3GFK!MILSTAR                       !541710!E! !1! ! ! ! ! !99990909!B! ! !B! !D!N!J!2!001!N!2A!Z!N!Z!  !  !N!C!N! ! ! !A!A!A!A!000!A!C!N! ! ! ! !    !      !0001!",
+    "buyer": {
+     "name": "Defense Contract Management Agency",
+     "country": "US"
+    },
+    "country": "US",
+    "main_category": null,
+    "published_at": "2001-11-16T00:00:00+00:00",
+    "updated_at": "2001-11-16T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "PSC",
+      "id": "AR92",
+      "description": "R&D- SPACE: OTHER (APPLIED RESEARCH/EXPLORATORY DEVELOPMENT)"
+     }
+    ],
+    "language": "en",
+    "url": "https://www.usaspending.gov/award/CONT_AWD_F0470102C0002_9700_-NONE-_-NONE-"
+   },
+   "awards": [
+    {
+     "award_id": "F0470102C0002",
+     "date": "2001-11-16T00:00:00+00:00",
+     "obligated": {
+      "amount": "9032605785.68",
+      "currency": "USD"
+     },
+     "suppliers": [
+      {
+       "name": "LOCKHEED MARTIN CORP",
+       "id": "CQWLW9XRQTH5",
+       "scheme": "US-UEI",
+       "country": "US"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "F0470102C0002",
+     "award_id": "F0470102C0002",
+     "period_start": "2001-11-16T00:00:00+00:00",
+     "period_end": "2021-01-31T00:00:00+00:00"
+    }
+   ],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_is_awarding_sub_agency_of:Department of Defense"
+   ]
+  },
+  {
+   "external_id": "CONT_AWD_FA861108C2897_9700_-NONE-_-NONE-",
+   "content_hash": "06798f11a51515b35e8e2edae1350e498f665e73099fdfedc08e0d4400b47fcf",
+   "fetched_at": "2026-11-03T17:27:17+00:00",
+   "source_url": "https://www.usaspending.gov/award/CONT_AWD_FA861108C2897_9700_-NONE-_-NONE-",
+   "publisher": "USAspending.gov (US Treasury)",
+   "published_at": "2008-01-01T00:00:00+00:00",
+   "source_updated_at": "2008-01-01T00:00:00+00:00",
+   "language": "en",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "internal_id": 298553472,
+    "Award ID": "FA861108C2897",
+    "Recipient Name": "LOCKHEED MARTIN CORPORATION",
+    "Recipient UEI": "G4KDGE4JFFK7",
+    "Award Amount": 8821412144.17,
+    "Start Date": "2008-01-01",
+    "End Date": "2024-08-29",
+    "Awarding Agency": "Department of Defense",
+    "Awarding Sub Agency": "Defense Contract Management Agency",
+    "PSC": {
+     "code": "J016",
+     "description": "MAINT/REPAIR/REBUILD OF EQUIPMENT- AIRCRAFT COMPONENTS AND ACCESSORIES"
+    },
+    "Description": "FOLLOW-ON AGILE SUSTAINMENT TO THE RAPTOR (FASTER)",
+    "generated_internal_id": "CONT_AWD_FA861108C2897_9700_-NONE-_-NONE-",
+    "awarding_agency_id": 1173,
+    "agency_slug": "department-of-defense"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-usaspending-CONT_AWD_FA861108C2897_9700_-NONE-_-NONE-",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "FOLLOW-ON AGILE SUSTAINMENT TO THE RAPTOR (FASTER)",
+    "description": "FOLLOW-ON AGILE SUSTAINMENT TO THE RAPTOR (FASTER)",
+    "buyer": {
+     "name": "Defense Contract Management Agency",
+     "country": "US"
+    },
+    "country": "US",
+    "main_category": null,
+    "published_at": "2008-01-01T00:00:00+00:00",
+    "updated_at": "2008-01-01T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "PSC",
+      "id": "J016",
+      "description": "MAINT/REPAIR/REBUILD OF EQUIPMENT- AIRCRAFT COMPONENTS AND ACCESSORIES"
+     }
+    ],
+    "language": "en",
+    "url": "https://www.usaspending.gov/award/CONT_AWD_FA861108C2897_9700_-NONE-_-NONE-"
+   },
+   "awards": [
+    {
+     "award_id": "FA861108C2897",
+     "date": "2008-01-01T00:00:00+00:00",
+     "obligated": {
+      "amount": "8821412144.17",
+      "currency": "USD"
+     },
+     "suppliers": [
+      {
+       "name": "LOCKHEED MARTIN CORPORATION",
+       "id": "G4KDGE4JFFK7",
+       "scheme": "US-UEI",
+       "country": "US"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "FA861108C2897",
+     "award_id": "FA861108C2897",
+     "period_start": "2008-01-01T00:00:00+00:00",
+     "period_end": "2024-08-29T00:00:00+00:00"
+    }
+   ],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_is_awarding_sub_agency_of:Department of Defense"
+   ]
+  },
+  {
+   "external_id": "CONT_AWD_N0001918C1037_9700_-NONE-_-NONE-",
+   "content_hash": "5c2475c453c07c5b8898dc7ec9e0bc8cc0ffc72e8f02a752f35ea375fd7b9091",
+   "fetched_at": "2026-11-03T17:27:17+00:00",
+   "source_url": "https://www.usaspending.gov/award/CONT_AWD_N0001918C1037_9700_-NONE-_-NONE-",
+   "publisher": "USAspending.gov (US Treasury)",
+   "published_at": "2018-02-15T00:00:00+00:00",
+   "source_updated_at": "2018-02-15T00:00:00+00:00",
+   "language": "en",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "internal_id": 309495115,
+    "Award ID": "N0001918C1037",
+    "Recipient Name": "NORTHROP GRUMMAN SYSTEMS CORPORATION",
+    "Recipient UEI": "PK8PM2GNVMP8",
+    "Award Amount": 8494620560.67,
+    "Start Date": "2018-02-15",
+    "End Date": "2030-02-01",
+    "Awarding Agency": "Department of Defense",
+    "Awarding Sub Agency": "Department of the Navy",
+    "PSC": {
+     "code": "1510",
+     "description": "AIRCRAFT, FIXED WING"
+    },
+    "Description": "E-2D ADVANCED HAWKEYE AIRCRAFT (FRP-7)",
+    "generated_internal_id": "CONT_AWD_N0001918C1037_9700_-NONE-_-NONE-",
+    "awarding_agency_id": 1173,
+    "agency_slug": "department-of-defense"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-usaspending-CONT_AWD_N0001918C1037_9700_-NONE-_-NONE-",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "E-2D ADVANCED HAWKEYE AIRCRAFT (FRP-7)",
+    "description": "E-2D ADVANCED HAWKEYE AIRCRAFT (FRP-7)",
+    "buyer": {
+     "name": "Department of the Navy",
+     "country": "US"
+    },
+    "country": "US",
+    "main_category": "goods",
+    "published_at": "2018-02-15T00:00:00+00:00",
+    "updated_at": "2018-02-15T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "PSC",
+      "id": "1510",
+      "description": "AIRCRAFT, FIXED WING"
+     }
+    ],
+    "language": "en",
+    "url": "https://www.usaspending.gov/award/CONT_AWD_N0001918C1037_9700_-NONE-_-NONE-"
+   },
+   "awards": [
+    {
+     "award_id": "N0001918C1037",
+     "date": "2018-02-15T00:00:00+00:00",
+     "obligated": {
+      "amount": "8494620560.67",
+      "currency": "USD"
+     },
+     "suppliers": [
+      {
+       "name": "NORTHROP GRUMMAN SYSTEMS CORPORATION",
+       "id": "PK8PM2GNVMP8",
+       "scheme": "US-UEI",
+       "country": "US"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "contract_id": "N0001918C1037",
+     "award_id": "N0001918C1037",
+     "period_start": "2018-02-15T00:00:00+00:00",
+     "period_end": "2030-02-01T00:00:00+00:00"
+    }
+   ],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_is_awarding_sub_agency_of:Department of Defense"
+   ]
+  }
+ ],
+ "rejected": []
+}

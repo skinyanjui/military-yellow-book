@@ -1,0 +1,1369 @@
+{
+ "run": {
+  "run_id": "c9ca5758-ed2f-4ee7-9b3d-0e31b05a13a2",
+  "source_id": "worldbank_procurement",
+  "mode": "test",
+  "started_at": "2026-11-03T17:27:03+00:00",
+  "params": {
+   "limit": 20,
+   "since": "2026-10-27T17:27:03",
+   "until": "2026-11-03T17:27:03",
+   "days": 7,
+   "schema_errors": 0
+  },
+  "cursor_before": null,
+  "transform_version": "myb-procurement-0.1",
+  "status": "success",
+  "fetched": 20,
+  "drift": {
+   "missing": [],
+   "unexpected": []
+  },
+  "cursor_after": {
+   "high_water": "2026-11-01T00:00:00"
+  }
+ },
+ "records": [
+  {
+   "external_id": "478503",
+   "content_hash": "2649b01b207dc2c729c3f06989c2099e647b52cc70786330ec30e6ee37da90a9",
+   "fetched_at": "2026-11-03T17:27:03+00:00",
+   "source_url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478503",
+   "publisher": "World Bank Group (Finances One)",
+   "published_at": "2026-11-01T00:00:00+00:00",
+   "source_updated_at": "2026-11-01T00:00:00+00:00",
+   "language": "en",
+   "licence": "CC BY 4.0",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "bid_description": "Design,print and distribute coffee and cocoa farms/farmers Identification Cards (Farmer IDs)",
+    "country_code": "UG",
+    "country_name": "Uganda",
+    "deadline_date": "01-Nov-2026",
+    "id": 478503,
+    "publication___fiscal_year": 2027,
+    "publication___calendar_year": 2026,
+    "notice_type": "Contract Award",
+    "procurement_category": "Non-consulting Services",
+    "procurement_method": "Request for Bids",
+    "project_id": "P173296",
+    "publication_date": "01-Nov-2026",
+    "region": "Eastern And Southern Africa",
+    "sector": "Livestock;Agricultural Extension, Research, and Other Support Activities;Public Administration - Agriculture, Fishing & Forestry;Agricultural markets, commercialization and agri-business",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478503"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-worldbank-478503",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "Design,print and distribute coffee and cocoa farms/farmers Identification Cards (Farmer IDs)",
+    "description": "Design,print and distribute coffee and cocoa farms/farmers Identification Cards (Farmer IDs)",
+    "buyer": null,
+    "country": "UG",
+    "status": "Contract Award",
+    "procurement_method": "Request for Bids",
+    "main_category": "Non-consulting Services",
+    "published_at": "2026-11-01T00:00:00+00:00",
+    "updated_at": "2026-11-01T00:00:00+00:00",
+    "tender_end": "2026-11-01T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "WB-sector",
+      "id": "Livestock"
+     },
+     {
+      "scheme": "WB-sector",
+      "id": "Agricultural Extension, Research, and Other Support Activities"
+     },
+     {
+      "scheme": "WB-sector",
+      "id": "Public Administration - Agriculture, Fishing & Forestry"
+     },
+     {
+      "scheme": "WB-sector",
+      "id": "Agricultural markets, commercialization and agri-business"
+     }
+    ],
+    "financier": "World Bank",
+    "project_id": "P173296",
+    "language": "en",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478503"
+   },
+   "awards": [],
+   "contracts": [],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_not_in_dataset"
+   ]
+  },
+  {
+   "external_id": "478504",
+   "content_hash": "bd20ce239154c2f98803846e0e98efc896806b70d83d7c8368923defec9bca84",
+   "fetched_at": "2026-11-03T17:27:03+00:00",
+   "source_url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478504",
+   "publisher": "World Bank Group (Finances One)",
+   "published_at": "2026-11-01T00:00:00+00:00",
+   "source_updated_at": "2026-11-01T00:00:00+00:00",
+   "language": "en",
+   "licence": "CC BY 4.0",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "bid_description": "New school construction at Peam Ro Pre-primary School, Peamkoh village, Peam Ro commune, Peam Rodistrict, Prey Veng province",
+    "country_code": "KH",
+    "country_name": "Cambodia",
+    "deadline_date": "01-Nov-2026",
+    "id": 478504,
+    "publication___fiscal_year": 2027,
+    "publication___calendar_year": 2026,
+    "notice_type": "Contract Award",
+    "procurement_category": "Works",
+    "procurement_method": "Request for Quotations",
+    "project_id": "P174335",
+    "publication_date": "01-Nov-2026",
+    "region": "East Asia And Pacific",
+    "sector": "Other Education;Public Administration - Education",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478504"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-worldbank-478504",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "New school construction at Peam Ro Pre-primary School, Peamkoh village, Peam Ro commune, Peam Rodistrict, Prey Veng province",
+    "description": "New school construction at Peam Ro Pre-primary School, Peamkoh village, Peam Ro commune, Peam Rodistrict, Prey Veng province",
+    "buyer": null,
+    "country": "KH",
+    "status": "Contract Award",
+    "procurement_method": "Request for Quotations",
+    "main_category": "Works",
+    "published_at": "2026-11-01T00:00:00+00:00",
+    "updated_at": "2026-11-01T00:00:00+00:00",
+    "tender_end": "2026-11-01T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "WB-sector",
+      "id": "Other Education"
+     },
+     {
+      "scheme": "WB-sector",
+      "id": "Public Administration - Education"
+     }
+    ],
+    "financier": "World Bank",
+    "project_id": "P174335",
+    "language": "en",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478504"
+   },
+   "awards": [],
+   "contracts": [],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_not_in_dataset"
+   ]
+  },
+  {
+   "external_id": "478505",
+   "content_hash": "db232ee31112eb4a9db858acee1b6e9b28165ff6cdd60c9adbfd2f2df89e2a80",
+   "fetched_at": "2026-11-03T17:27:03+00:00",
+   "source_url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478505",
+   "publisher": "World Bank Group (Finances One)",
+   "published_at": "2026-11-01T00:00:00+00:00",
+   "source_updated_at": "2026-11-01T00:00:00+00:00",
+   "language": "en",
+   "licence": "CC BY 4.0",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "bid_description": "Supply of unlimited package of Kobotoolbox information platform for a period of three years.",
+    "country_code": "UG",
+    "country_name": "Uganda",
+    "deadline_date": "01-Nov-2026",
+    "id": 478505,
+    "publication___fiscal_year": 2027,
+    "publication___calendar_year": 2026,
+    "notice_type": "Contract Award",
+    "procurement_category": "Goods",
+    "procurement_method": "Direct Selection",
+    "project_id": "P173296",
+    "publication_date": "01-Nov-2026",
+    "region": "Eastern And Southern Africa",
+    "sector": "Livestock;Agricultural Extension, Research, and Other Support Activities;Public Administration - Agriculture, Fishing & Forestry;Agricultural markets, commercialization and agri-business",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478505"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-worldbank-478505",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "Supply of unlimited package of Kobotoolbox information platform for a period of three years.",
+    "description": "Supply of unlimited package of Kobotoolbox information platform for a period of three years.",
+    "buyer": null,
+    "country": "UG",
+    "status": "Contract Award",
+    "procurement_method": "Direct Selection",
+    "main_category": "Goods",
+    "published_at": "2026-11-01T00:00:00+00:00",
+    "updated_at": "2026-11-01T00:00:00+00:00",
+    "tender_end": "2026-11-01T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "WB-sector",
+      "id": "Livestock"
+     },
+     {
+      "scheme": "WB-sector",
+      "id": "Agricultural Extension, Research, and Other Support Activities"
+     },
+     {
+      "scheme": "WB-sector",
+      "id": "Public Administration - Agriculture, Fishing & Forestry"
+     },
+     {
+      "scheme": "WB-sector",
+      "id": "Agricultural markets, commercialization and agri-business"
+     }
+    ],
+    "financier": "World Bank",
+    "project_id": "P173296",
+    "language": "en",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478505"
+   },
+   "awards": [],
+   "contracts": [],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_not_in_dataset"
+   ]
+  },
+  {
+   "external_id": "478506",
+   "content_hash": "a0e6f530f1693d212e018ac035dc4b024848c6ed40a674e0ca6fd4dc5e4c284c",
+   "fetched_at": "2026-11-03T17:27:03+00:00",
+   "source_url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478506",
+   "publisher": "World Bank Group (Finances One)",
+   "published_at": "2026-11-01T00:00:00+00:00",
+   "source_updated_at": "2026-11-01T00:00:00+00:00",
+   "language": "en",
+   "licence": "CC BY 4.0",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "bid_description": "New school construction at Rokar Chour Primary School, Rokar Chour village, Banteay Chakrei commune, Preah Sdechdistrict, Prey Veng province",
+    "country_code": "KH",
+    "country_name": "Cambodia",
+    "deadline_date": "01-Nov-2026",
+    "id": 478506,
+    "publication___fiscal_year": 2027,
+    "publication___calendar_year": 2026,
+    "notice_type": "Contract Award",
+    "procurement_category": "Works",
+    "procurement_method": "Request for Quotations",
+    "project_id": "P174335",
+    "publication_date": "01-Nov-2026",
+    "region": "East Asia And Pacific",
+    "sector": "Other Education;Public Administration - Education",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478506"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-worldbank-478506",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "New school construction at Rokar Chour Primary School, Rokar Chour village, Banteay Chakrei commune, Preah Sdechdistrict, Prey Veng province",
+    "description": "New school construction at Rokar Chour Primary School, Rokar Chour village, Banteay Chakrei commune, Preah Sdechdistrict, Prey Veng province",
+    "buyer": null,
+    "country": "KH",
+    "status": "Contract Award",
+    "procurement_method": "Request for Quotations",
+    "main_category": "Works",
+    "published_at": "2026-11-01T00:00:00+00:00",
+    "updated_at": "2026-11-01T00:00:00+00:00",
+    "tender_end": "2026-11-01T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "WB-sector",
+      "id": "Other Education"
+     },
+     {
+      "scheme": "WB-sector",
+      "id": "Public Administration - Education"
+     }
+    ],
+    "financier": "World Bank",
+    "project_id": "P174335",
+    "language": "en",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478506"
+   },
+   "awards": [],
+   "contracts": [],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_not_in_dataset"
+   ]
+  },
+  {
+   "external_id": "478507",
+   "content_hash": "8b8d78b72fe7ebe0e972a9ceac44039094e2b960551485909224859e9210d6c9",
+   "fetched_at": "2026-11-03T17:27:03+00:00",
+   "source_url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478507",
+   "publisher": "World Bank Group (Finances One)",
+   "published_at": "2026-11-01T00:00:00+00:00",
+   "source_updated_at": "2026-11-01T00:00:00+00:00",
+   "language": "en",
+   "licence": "CC BY 4.0",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "bid_description": "Acquisition de trois (3) logiciels (Geosim-SIG, GAP et DAO) en faveur de la Direction Etude, Planification et Equipements (DEPE) de l'Electricité de Guinée (EDG) et formation des utilisateurs.",
+    "country_code": null,
+    "country_name": "Western and Central Africa",
+    "deadline_date": "01-Nov-2026",
+    "id": 478507,
+    "publication___fiscal_year": 2027,
+    "publication___calendar_year": 2026,
+    "notice_type": "Contract Award",
+    "procurement_category": "Non-consulting Services",
+    "procurement_method": "Direct Selection",
+    "project_id": "P166042",
+    "publication_date": "01-Nov-2026",
+    "region": "Western And Central Africa",
+    "sector": "Energy Transmission and Distribution;Public Administration - Energy and Extractives",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478507"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-worldbank-478507",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "Acquisition de trois (3) logiciels (Geosim-SIG, GAP et DAO) en faveur de la Direction Etude, Planification et Equipements (DEPE) de l'Electricité de Guinée (EDG) et formation des utilisateurs.",
+    "description": "Acquisition de trois (3) logiciels (Geosim-SIG, GAP et DAO) en faveur de la Direction Etude, Planification et Equipements (DEPE) de l'Electricité de Guinée (EDG) et formation des utilisateurs.",
+    "buyer": null,
+    "country": null,
+    "status": "Contract Award",
+    "procurement_method": "Direct Selection",
+    "main_category": "Non-consulting Services",
+    "published_at": "2026-11-01T00:00:00+00:00",
+    "updated_at": "2026-11-01T00:00:00+00:00",
+    "tender_end": "2026-11-01T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "WB-sector",
+      "id": "Energy Transmission and Distribution"
+     },
+     {
+      "scheme": "WB-sector",
+      "id": "Public Administration - Energy and Extractives"
+     }
+    ],
+    "financier": "World Bank",
+    "project_id": "P166042",
+    "language": "en",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478507"
+   },
+   "awards": [],
+   "contracts": [],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_not_in_dataset",
+    "country_code_not_iso2:None"
+   ]
+  },
+  {
+   "external_id": "478508",
+   "content_hash": "de5b5820f26bafe1863910d417bedf8bf1a92c7907ce75deb11ad02802a30688",
+   "fetched_at": "2026-11-03T17:27:03+00:00",
+   "source_url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478508",
+   "publisher": "World Bank Group (Finances One)",
+   "published_at": "2026-11-01T00:00:00+00:00",
+   "source_updated_at": "2026-11-01T00:00:00+00:00",
+   "language": "en",
+   "licence": "CC BY 4.0",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "bid_description": "New school construction at Anhchanh Primary School, Anhchanh village, Por Reach commune, Svay Chromdistrict, Svay Rieng province",
+    "country_code": "KH",
+    "country_name": "Cambodia",
+    "deadline_date": "01-Nov-2026",
+    "id": 478508,
+    "publication___fiscal_year": 2027,
+    "publication___calendar_year": 2026,
+    "notice_type": "Contract Award",
+    "procurement_category": "Works",
+    "procurement_method": "Request for Quotations",
+    "project_id": "P174335",
+    "publication_date": "01-Nov-2026",
+    "region": "East Asia And Pacific",
+    "sector": "Other Education;Public Administration - Education",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478508"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-worldbank-478508",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "New school construction at Anhchanh Primary School, Anhchanh village, Por Reach commune, Svay Chromdistrict, Svay Rieng province",
+    "description": "New school construction at Anhchanh Primary School, Anhchanh village, Por Reach commune, Svay Chromdistrict, Svay Rieng province",
+    "buyer": null,
+    "country": "KH",
+    "status": "Contract Award",
+    "procurement_method": "Request for Quotations",
+    "main_category": "Works",
+    "published_at": "2026-11-01T00:00:00+00:00",
+    "updated_at": "2026-11-01T00:00:00+00:00",
+    "tender_end": "2026-11-01T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "WB-sector",
+      "id": "Other Education"
+     },
+     {
+      "scheme": "WB-sector",
+      "id": "Public Administration - Education"
+     }
+    ],
+    "financier": "World Bank",
+    "project_id": "P174335",
+    "language": "en",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478508"
+   },
+   "awards": [],
+   "contracts": [],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_not_in_dataset"
+   ]
+  },
+  {
+   "external_id": "478509",
+   "content_hash": "00cbdd25ba40eb1387f93d5d6c792e5cf3dbf977ff4e1a6e65f5bef30ac36cd1",
+   "fetched_at": "2026-11-03T17:27:03+00:00",
+   "source_url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478509",
+   "publisher": "World Bank Group (Finances One)",
+   "published_at": "2026-11-01T00:00:00+00:00",
+   "source_updated_at": "2026-11-01T00:00:00+00:00",
+   "language": "en",
+   "licence": "CC BY 4.0",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "bid_description": "Consulting Services to design a Cycle Lane Network in Livingstone City",
+    "country_code": "ZM",
+    "country_name": "Zambia",
+    "deadline_date": "01-Nov-2026",
+    "id": 478509,
+    "publication___fiscal_year": 2027,
+    "publication___calendar_year": 2026,
+    "notice_type": "Contract Award",
+    "procurement_category": "Consultant Services",
+    "procurement_method": "Consultant Qualification  Selection",
+    "project_id": "P180337",
+    "publication_date": "01-Nov-2026",
+    "region": "Eastern And Southern Africa",
+    "sector": "Tourism;Public Administration - Industry, Trade and Services",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478509"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-worldbank-478509",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "Consulting Services to design a Cycle Lane Network in Livingstone City",
+    "description": "Consulting Services to design a Cycle Lane Network in Livingstone City",
+    "buyer": null,
+    "country": "ZM",
+    "status": "Contract Award",
+    "procurement_method": "Consultant Qualification  Selection",
+    "main_category": "Consultant Services",
+    "published_at": "2026-11-01T00:00:00+00:00",
+    "updated_at": "2026-11-01T00:00:00+00:00",
+    "tender_end": "2026-11-01T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "WB-sector",
+      "id": "Tourism"
+     },
+     {
+      "scheme": "WB-sector",
+      "id": "Public Administration - Industry, Trade and Services"
+     }
+    ],
+    "financier": "World Bank",
+    "project_id": "P180337",
+    "language": "en",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478509"
+   },
+   "awards": [],
+   "contracts": [],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_not_in_dataset"
+   ]
+  },
+  {
+   "external_id": "478510",
+   "content_hash": "fe63b75da529798e9b13e299b8dfe4d4af3e98cb4e7fa5c8223358d9edcde825",
+   "fetched_at": "2026-11-03T17:27:03+00:00",
+   "source_url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478510",
+   "publisher": "World Bank Group (Finances One)",
+   "published_at": "2026-11-01T00:00:00+00:00",
+   "source_updated_at": "2026-11-01T00:00:00+00:00",
+   "language": "en",
+   "licence": "CC BY 4.0",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "bid_description": "New school construction at Chek Primary School, Chek village, Chek commune, Svay Riengdistrict, Svay Rieng province",
+    "country_code": "KH",
+    "country_name": "Cambodia",
+    "deadline_date": "01-Nov-2026",
+    "id": 478510,
+    "publication___fiscal_year": 2027,
+    "publication___calendar_year": 2026,
+    "notice_type": "Contract Award",
+    "procurement_category": "Works",
+    "procurement_method": "Request for Quotations",
+    "project_id": "P174335",
+    "publication_date": "01-Nov-2026",
+    "region": "East Asia And Pacific",
+    "sector": "Other Education;Public Administration - Education",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478510"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-worldbank-478510",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "New school construction at Chek Primary School, Chek village, Chek commune, Svay Riengdistrict, Svay Rieng province",
+    "description": "New school construction at Chek Primary School, Chek village, Chek commune, Svay Riengdistrict, Svay Rieng province",
+    "buyer": null,
+    "country": "KH",
+    "status": "Contract Award",
+    "procurement_method": "Request for Quotations",
+    "main_category": "Works",
+    "published_at": "2026-11-01T00:00:00+00:00",
+    "updated_at": "2026-11-01T00:00:00+00:00",
+    "tender_end": "2026-11-01T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "WB-sector",
+      "id": "Other Education"
+     },
+     {
+      "scheme": "WB-sector",
+      "id": "Public Administration - Education"
+     }
+    ],
+    "financier": "World Bank",
+    "project_id": "P174335",
+    "language": "en",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478510"
+   },
+   "awards": [],
+   "contracts": [],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_not_in_dataset"
+   ]
+  },
+  {
+   "external_id": "478512",
+   "content_hash": "62eb6039710b7ad9a5acbbe942db087ef09f2f128a49e170181c064e4586d70b",
+   "fetched_at": "2026-11-03T17:27:03+00:00",
+   "source_url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478512",
+   "publisher": "World Bank Group (Finances One)",
+   "published_at": "2026-11-01T00:00:00+00:00",
+   "source_updated_at": "2026-11-01T00:00:00+00:00",
+   "language": "en",
+   "licence": "CC BY 4.0",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "bid_description": "New school construction at Mittapheap Kampuchea-Chen Prey Rumduol Primary School, Prey Rumduol village, Prasoth commune, Svay Teapdistrict, Svay Rieng province",
+    "country_code": "KH",
+    "country_name": "Cambodia",
+    "deadline_date": "01-Nov-2026",
+    "id": 478512,
+    "publication___fiscal_year": 2027,
+    "publication___calendar_year": 2026,
+    "notice_type": "Contract Award",
+    "procurement_category": "Works",
+    "procurement_method": "Request for Quotations",
+    "project_id": "P174335",
+    "publication_date": "01-Nov-2026",
+    "region": "East Asia And Pacific",
+    "sector": "Other Education;Public Administration - Education",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478512"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-worldbank-478512",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "New school construction at Mittapheap Kampuchea-Chen Prey Rumduol Primary School, Prey Rumduol village, Prasoth commune, Svay Teapdistrict, Svay Rieng province",
+    "description": "New school construction at Mittapheap Kampuchea-Chen Prey Rumduol Primary School, Prey Rumduol village, Prasoth commune, Svay Teapdistrict, Svay Rieng province",
+    "buyer": null,
+    "country": "KH",
+    "status": "Contract Award",
+    "procurement_method": "Request for Quotations",
+    "main_category": "Works",
+    "published_at": "2026-11-01T00:00:00+00:00",
+    "updated_at": "2026-11-01T00:00:00+00:00",
+    "tender_end": "2026-11-01T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "WB-sector",
+      "id": "Other Education"
+     },
+     {
+      "scheme": "WB-sector",
+      "id": "Public Administration - Education"
+     }
+    ],
+    "financier": "World Bank",
+    "project_id": "P174335",
+    "language": "en",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478512"
+   },
+   "awards": [],
+   "contracts": [],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_not_in_dataset"
+   ]
+  },
+  {
+   "external_id": "478513",
+   "content_hash": "bf4911fa698a16fc9b924aa64873996c753f178997973ed5dc013a1cf2517aa1",
+   "fetched_at": "2026-11-03T17:27:03+00:00",
+   "source_url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478513",
+   "publisher": "World Bank Group (Finances One)",
+   "published_at": "2026-11-01T00:00:00+00:00",
+   "source_updated_at": "2026-11-01T00:00:00+00:00",
+   "language": "en",
+   "licence": "CC BY 4.0",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "bid_description": "Rehabilitation of Beshkent Hydro Unit in Shakhrituz district",
+    "country_code": null,
+    "country_name": null,
+    "deadline_date": "30-Nov-2026",
+    "id": 478513,
+    "publication___fiscal_year": 2027,
+    "publication___calendar_year": 2026,
+    "notice_type": "Invitation for Bids",
+    "procurement_category": "Works",
+    "procurement_method": "Request for Bids",
+    "project_id": "P515852",
+    "publication_date": "01-Nov-2026",
+    "region": null,
+    "sector": null,
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478513"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-worldbank-478513",
+    "ocid_native": false,
+    "stage": "tender",
+    "title": "Rehabilitation of Beshkent Hydro Unit in Shakhrituz district",
+    "description": "Rehabilitation of Beshkent Hydro Unit in Shakhrituz district",
+    "buyer": null,
+    "country": null,
+    "status": "Invitation for Bids",
+    "procurement_method": "Request for Bids",
+    "main_category": "Works",
+    "published_at": "2026-11-01T00:00:00+00:00",
+    "updated_at": "2026-11-01T00:00:00+00:00",
+    "tender_end": "2026-11-30T00:00:00+00:00",
+    "classifications": [],
+    "financier": "World Bank",
+    "project_id": "P515852",
+    "language": "en",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478513"
+   },
+   "awards": [],
+   "contracts": [],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_not_in_dataset",
+    "country_code_not_iso2:None"
+   ]
+  },
+  {
+   "external_id": "478515",
+   "content_hash": "ec645427c213df6dc4e2c553993d47d5ddf44494a1b4825c2c95406c39312f97",
+   "fetched_at": "2026-11-03T17:27:03+00:00",
+   "source_url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478515",
+   "publisher": "World Bank Group (Finances One)",
+   "published_at": "2026-11-01T00:00:00+00:00",
+   "source_updated_at": "2026-11-01T00:00:00+00:00",
+   "language": "en",
+   "licence": "CC BY 4.0",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "bid_description": "Reconstruction of the Sebiston-Dangara water pipeline 17.6 km in Khatlon region",
+    "country_code": null,
+    "country_name": null,
+    "deadline_date": "30-Nov-2026",
+    "id": 478515,
+    "publication___fiscal_year": 2027,
+    "publication___calendar_year": 2026,
+    "notice_type": "Invitation for Bids",
+    "procurement_category": "Works",
+    "procurement_method": "Request for Bids",
+    "project_id": "P515852",
+    "publication_date": "01-Nov-2026",
+    "region": null,
+    "sector": null,
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478515"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-worldbank-478515",
+    "ocid_native": false,
+    "stage": "tender",
+    "title": "Reconstruction of the Sebiston-Dangara water pipeline 17.6 km in Khatlon region",
+    "description": "Reconstruction of the Sebiston-Dangara water pipeline 17.6 km in Khatlon region",
+    "buyer": null,
+    "country": null,
+    "status": "Invitation for Bids",
+    "procurement_method": "Request for Bids",
+    "main_category": "Works",
+    "published_at": "2026-11-01T00:00:00+00:00",
+    "updated_at": "2026-11-01T00:00:00+00:00",
+    "tender_end": "2026-11-30T00:00:00+00:00",
+    "classifications": [],
+    "financier": "World Bank",
+    "project_id": "P515852",
+    "language": "en",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478515"
+   },
+   "awards": [],
+   "contracts": [],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_not_in_dataset",
+    "country_code_not_iso2:None"
+   ]
+  },
+  {
+   "external_id": "478517",
+   "content_hash": "95751c35ae06323fe5b964e005a2a6c432dd6f1f5067be0c83bbb329468bd203",
+   "fetched_at": "2026-11-03T17:27:03+00:00",
+   "source_url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478517",
+   "publisher": "World Bank Group (Finances One)",
+   "published_at": "2026-11-01T00:00:00+00:00",
+   "source_updated_at": "2026-11-01T00:00:00+00:00",
+   "language": "en",
+   "licence": "CC BY 4.0",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "bid_description": "Travaux de réaménagement du centre communautaire de santé de Mandrou, incluant démolition, dallage, menuiserie métallique, peinture et mise à niveau du forage",
+    "country_code": "HT",
+    "country_name": "Haiti",
+    "deadline_date": "01-Nov-2026",
+    "id": 478517,
+    "publication___fiscal_year": 2027,
+    "publication___calendar_year": 2026,
+    "notice_type": "Contract Award",
+    "procurement_category": "Works",
+    "procurement_method": "Request for Quotations",
+    "project_id": "P167512",
+    "publication_date": "01-Nov-2026",
+    "region": "Latin America And Caribbean",
+    "sector": "Health;Public Administration - Health;Health Facilities and Construction",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478517"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-worldbank-478517",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "Travaux de réaménagement du centre communautaire de santé de Mandrou, incluant démolition, dallage, menuiserie métallique, peinture et mise à niveau du forage",
+    "description": "Travaux de réaménagement du centre communautaire de santé de Mandrou, incluant démolition, dallage, menuiserie métallique, peinture et mise à niveau du forage",
+    "buyer": null,
+    "country": "HT",
+    "status": "Contract Award",
+    "procurement_method": "Request for Quotations",
+    "main_category": "Works",
+    "published_at": "2026-11-01T00:00:00+00:00",
+    "updated_at": "2026-11-01T00:00:00+00:00",
+    "tender_end": "2026-11-01T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "WB-sector",
+      "id": "Health"
+     },
+     {
+      "scheme": "WB-sector",
+      "id": "Public Administration - Health"
+     },
+     {
+      "scheme": "WB-sector",
+      "id": "Health Facilities and Construction"
+     }
+    ],
+    "financier": "World Bank",
+    "project_id": "P167512",
+    "language": "en",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478517"
+   },
+   "awards": [],
+   "contracts": [],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_not_in_dataset"
+   ]
+  },
+  {
+   "external_id": "478518",
+   "content_hash": "5006c03258b2bbc8ca4fb83a81a43739b4337434b1e6d1bfd50965e13d1fbde0",
+   "fetched_at": "2026-11-03T17:27:03+00:00",
+   "source_url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478518",
+   "publisher": "World Bank Group (Finances One)",
+   "published_at": "2026-11-01T00:00:00+00:00",
+   "source_updated_at": "2026-11-01T00:00:00+00:00",
+   "language": "en",
+   "licence": "CC BY 4.0",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "bid_description": "Redesign of the existing Ghana.Gov platform which currently serves as the official online platform for all government digital service delivery. The new Ghana.Gov platform will serve as one-stop digital hub for all government services—reducing bureaucracy.",
+    "country_code": "GH",
+    "country_name": "Ghana",
+    "deadline_date": "01-Nov-2026",
+    "id": 478518,
+    "publication___fiscal_year": 2027,
+    "publication___calendar_year": 2026,
+    "notice_type": "Contract Award",
+    "procurement_category": "Non-consulting Services",
+    "procurement_method": "Request for Bids",
+    "project_id": "P176126",
+    "publication_date": "01-Nov-2026",
+    "region": "Western And Central Africa",
+    "sector": "ICT Services;Public Administration - Information and Communications Technologies;ICT Infrastructure",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478518"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-worldbank-478518",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "Redesign of the existing Ghana.Gov platform which currently serves as the official online platform for all government digital service delivery. The new Ghana.Gov platform will serve as one-stop digita",
+    "description": "Redesign of the existing Ghana.Gov platform which currently serves as the official online platform for all government digital service delivery. The new Ghana.Gov platform will serve as one-stop digital hub for all government services—reducing bureaucracy.",
+    "buyer": null,
+    "country": "GH",
+    "status": "Contract Award",
+    "procurement_method": "Request for Bids",
+    "main_category": "Non-consulting Services",
+    "published_at": "2026-11-01T00:00:00+00:00",
+    "updated_at": "2026-11-01T00:00:00+00:00",
+    "tender_end": "2026-11-01T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "WB-sector",
+      "id": "ICT Services"
+     },
+     {
+      "scheme": "WB-sector",
+      "id": "Public Administration - Information and Communications Technologies"
+     },
+     {
+      "scheme": "WB-sector",
+      "id": "ICT Infrastructure"
+     }
+    ],
+    "financier": "World Bank",
+    "project_id": "P176126",
+    "language": "en",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478518"
+   },
+   "awards": [],
+   "contracts": [],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_not_in_dataset"
+   ]
+  },
+  {
+   "external_id": "478519",
+   "content_hash": "5417df08045a612260d9ee4b20f47e05436808f192340f3560b25ac9680d787a",
+   "fetched_at": "2026-11-03T17:27:03+00:00",
+   "source_url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478519",
+   "publisher": "World Bank Group (Finances One)",
+   "published_at": "2026-11-01T00:00:00+00:00",
+   "source_updated_at": "2026-11-01T00:00:00+00:00",
+   "language": "en",
+   "licence": "CC BY 4.0",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "bid_description": "Acquisition des fournitures de bureau pour le compte de de l’Unité de Gestion du projet HeSP",
+    "country_code": null,
+    "country_name": null,
+    "deadline_date": "01-Nov-2026",
+    "id": 478519,
+    "publication___fiscal_year": 2027,
+    "publication___calendar_year": 2026,
+    "notice_type": "Contract Award",
+    "procurement_category": "Goods",
+    "procurement_method": "Request for Quotations",
+    "project_id": "P508837",
+    "publication_date": "01-Nov-2026",
+    "region": null,
+    "sector": null,
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478519"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-worldbank-478519",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "Acquisition des fournitures de bureau pour le compte de de l’Unité de Gestion du projet HeSP",
+    "description": "Acquisition des fournitures de bureau pour le compte de de l’Unité de Gestion du projet HeSP",
+    "buyer": null,
+    "country": null,
+    "status": "Contract Award",
+    "procurement_method": "Request for Quotations",
+    "main_category": "Goods",
+    "published_at": "2026-11-01T00:00:00+00:00",
+    "updated_at": "2026-11-01T00:00:00+00:00",
+    "tender_end": "2026-11-01T00:00:00+00:00",
+    "classifications": [],
+    "financier": "World Bank",
+    "project_id": "P508837",
+    "language": "en",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478519"
+   },
+   "awards": [],
+   "contracts": [],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_not_in_dataset",
+    "country_code_not_iso2:None"
+   ]
+  },
+  {
+   "external_id": "478520",
+   "content_hash": "e11c97c9ee67ee35f8dd7c13b93176b63aa0acbad67fc32fee415ad476f1c2b5",
+   "fetched_at": "2026-11-03T17:27:03+00:00",
+   "source_url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478520",
+   "publisher": "World Bank Group (Finances One)",
+   "published_at": "2026-11-01T00:00:00+00:00",
+   "source_updated_at": "2026-11-01T00:00:00+00:00",
+   "language": "en",
+   "licence": "CC BY 4.0",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "bid_description": "Reconduction du Contrat de l'Assistant Technique pour le Ministère de Commerce et du Tourisme",
+    "country_code": null,
+    "country_name": "Eastern and Southern Africa",
+    "deadline_date": "01-Nov-2026",
+    "id": 478520,
+    "publication___fiscal_year": 2027,
+    "publication___calendar_year": 2026,
+    "notice_type": "Contract Award",
+    "procurement_category": "Consultant Services",
+    "procurement_method": "Direct Selection",
+    "project_id": "P176517",
+    "publication_date": "01-Nov-2026",
+    "region": "Eastern And Southern Africa",
+    "sector": "Other Non-bank Financial Institutions;Livestock;Agricultural markets, commercialization and agri-business",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478520"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-worldbank-478520",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "Reconduction du Contrat de l'Assistant Technique pour le Ministère de Commerce et du Tourisme",
+    "description": "Reconduction du Contrat de l'Assistant Technique pour le Ministère de Commerce et du Tourisme",
+    "buyer": null,
+    "country": null,
+    "status": "Contract Award",
+    "procurement_method": "Direct Selection",
+    "main_category": "Consultant Services",
+    "published_at": "2026-11-01T00:00:00+00:00",
+    "updated_at": "2026-11-01T00:00:00+00:00",
+    "tender_end": "2026-11-01T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "WB-sector",
+      "id": "Other Non-bank Financial Institutions"
+     },
+     {
+      "scheme": "WB-sector",
+      "id": "Livestock"
+     },
+     {
+      "scheme": "WB-sector",
+      "id": "Agricultural markets, commercialization and agri-business"
+     }
+    ],
+    "financier": "World Bank",
+    "project_id": "P176517",
+    "language": "en",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478520"
+   },
+   "awards": [],
+   "contracts": [],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_not_in_dataset",
+    "country_code_not_iso2:None"
+   ]
+  },
+  {
+   "external_id": "478522",
+   "content_hash": "fdac4403f89a1c98c8db948145b8efc79fd15ec43a11a3c12d82da7701e88df7",
+   "fetched_at": "2026-11-03T17:27:03+00:00",
+   "source_url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478522",
+   "publisher": "World Bank Group (Finances One)",
+   "published_at": "2026-11-01T00:00:00+00:00",
+   "source_updated_at": "2026-11-01T00:00:00+00:00",
+   "language": "en",
+   "licence": "CC BY 4.0",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "bid_description": "Estudos técnicos detalhados, avaliação de impacto ambiental e social, elaboração de cadernos de encargos (DAO) e acompanhamento e controlo técnico de obras de aproveitamento hidroagrícola de arrozais de mangal tradicionais nas bolanhas das Áreas Protegida",
+    "country_code": null,
+    "country_name": "Western and Central Africa",
+    "deadline_date": "01-Nov-2026",
+    "id": 478522,
+    "publication___fiscal_year": 2027,
+    "publication___calendar_year": 2026,
+    "notice_type": "Contract Award",
+    "procurement_category": "Consultant Services",
+    "procurement_method": "Consultant Qualification  Selection",
+    "project_id": "P175525",
+    "publication_date": "01-Nov-2026",
+    "region": "Western And Central Africa",
+    "sector": "Other Public Administration",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478522"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-worldbank-478522",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "Estudos técnicos detalhados, avaliação de impacto ambiental e social, elaboração de cadernos de encargos (DAO) e acompanhamento e controlo técnico de obras de aproveitamento hidroagrícola de arrozais ",
+    "description": "Estudos técnicos detalhados, avaliação de impacto ambiental e social, elaboração de cadernos de encargos (DAO) e acompanhamento e controlo técnico de obras de aproveitamento hidroagrícola de arrozais de mangal tradicionais nas bolanhas das Áreas Protegida",
+    "buyer": null,
+    "country": null,
+    "status": "Contract Award",
+    "procurement_method": "Consultant Qualification  Selection",
+    "main_category": "Consultant Services",
+    "published_at": "2026-11-01T00:00:00+00:00",
+    "updated_at": "2026-11-01T00:00:00+00:00",
+    "tender_end": "2026-11-01T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "WB-sector",
+      "id": "Other Public Administration"
+     }
+    ],
+    "financier": "World Bank",
+    "project_id": "P175525",
+    "language": "en",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478522"
+   },
+   "awards": [],
+   "contracts": [],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_not_in_dataset",
+    "country_code_not_iso2:None"
+   ]
+  },
+  {
+   "external_id": "478523",
+   "content_hash": "f82dceb702bcf3a50d7a2cd5d6256ced3750d248ab442a732ad84d938da1f452",
+   "fetched_at": "2026-11-03T17:27:03+00:00",
+   "source_url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478523",
+   "publisher": "World Bank Group (Finances One)",
+   "published_at": "2026-11-01T00:00:00+00:00",
+   "source_updated_at": "2026-11-01T00:00:00+00:00",
+   "language": "en",
+   "licence": "CC BY 4.0",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "bid_description": "Recrutement d'un Assistant Technique pour le Ministère de Commerce et du Tourisme",
+    "country_code": null,
+    "country_name": "Eastern and Southern Africa",
+    "deadline_date": "01-Nov-2026",
+    "id": 478523,
+    "publication___fiscal_year": 2027,
+    "publication___calendar_year": 2026,
+    "notice_type": "Contract Award",
+    "procurement_category": "Consultant Services",
+    "procurement_method": "Direct Selection",
+    "project_id": "P176517",
+    "publication_date": "01-Nov-2026",
+    "region": "Eastern And Southern Africa",
+    "sector": "Other Non-bank Financial Institutions;Livestock;Agricultural markets, commercialization and agri-business",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478523"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-worldbank-478523",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "Recrutement d'un Assistant Technique pour le Ministère de Commerce et du Tourisme",
+    "description": "Recrutement d'un Assistant Technique pour le Ministère de Commerce et du Tourisme",
+    "buyer": null,
+    "country": null,
+    "status": "Contract Award",
+    "procurement_method": "Direct Selection",
+    "main_category": "Consultant Services",
+    "published_at": "2026-11-01T00:00:00+00:00",
+    "updated_at": "2026-11-01T00:00:00+00:00",
+    "tender_end": "2026-11-01T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "WB-sector",
+      "id": "Other Non-bank Financial Institutions"
+     },
+     {
+      "scheme": "WB-sector",
+      "id": "Livestock"
+     },
+     {
+      "scheme": "WB-sector",
+      "id": "Agricultural markets, commercialization and agri-business"
+     }
+    ],
+    "financier": "World Bank",
+    "project_id": "P176517",
+    "language": "en",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478523"
+   },
+   "awards": [],
+   "contracts": [],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_not_in_dataset",
+    "country_code_not_iso2:None"
+   ]
+  },
+  {
+   "external_id": "478524",
+   "content_hash": "411d7cc68ff55670637d705840d126b12385cf9a5730cfa2786908637b287dda",
+   "fetched_at": "2026-11-03T17:27:03+00:00",
+   "source_url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478524",
+   "publisher": "World Bank Group (Finances One)",
+   "published_at": "2026-11-01T00:00:00+00:00",
+   "source_updated_at": "2026-11-01T00:00:00+00:00",
+   "language": "en",
+   "licence": "CC BY 4.0",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "bid_description": "Supply and delivery of personal protective equipment for project implementation team",
+    "country_code": "UG",
+    "country_name": "Uganda",
+    "deadline_date": "01-Nov-2026",
+    "id": 478524,
+    "publication___fiscal_year": 2027,
+    "publication___calendar_year": 2026,
+    "notice_type": "Contract Award",
+    "procurement_category": "Goods",
+    "procurement_method": "Request for Quotations",
+    "project_id": "P173296",
+    "publication_date": "01-Nov-2026",
+    "region": "Eastern And Southern Africa",
+    "sector": "Livestock;Agricultural Extension, Research, and Other Support Activities;Public Administration - Agriculture, Fishing & Forestry;Agricultural markets, commercialization and agri-business",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478524"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-worldbank-478524",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "Supply and delivery of personal protective equipment for project implementation team",
+    "description": "Supply and delivery of personal protective equipment for project implementation team",
+    "buyer": null,
+    "country": "UG",
+    "status": "Contract Award",
+    "procurement_method": "Request for Quotations",
+    "main_category": "Goods",
+    "published_at": "2026-11-01T00:00:00+00:00",
+    "updated_at": "2026-11-01T00:00:00+00:00",
+    "tender_end": "2026-11-01T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "WB-sector",
+      "id": "Livestock"
+     },
+     {
+      "scheme": "WB-sector",
+      "id": "Agricultural Extension, Research, and Other Support Activities"
+     },
+     {
+      "scheme": "WB-sector",
+      "id": "Public Administration - Agriculture, Fishing & Forestry"
+     },
+     {
+      "scheme": "WB-sector",
+      "id": "Agricultural markets, commercialization and agri-business"
+     }
+    ],
+    "financier": "World Bank",
+    "project_id": "P173296",
+    "language": "en",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478524"
+   },
+   "awards": [],
+   "contracts": [],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_not_in_dataset"
+   ]
+  },
+  {
+   "external_id": "478527",
+   "content_hash": "fa9a2694f04f3772401eabfe3d1d0c107525fe72c12ad83c62d9d55c710d89c5",
+   "fetched_at": "2026-11-03T17:27:03+00:00",
+   "source_url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478527",
+   "publisher": "World Bank Group (Finances One)",
+   "published_at": "2026-11-01T00:00:00+00:00",
+   "source_updated_at": "2026-11-01T00:00:00+00:00",
+   "language": "en",
+   "licence": "CC BY 4.0",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "bid_description": "Contratación de Analista en Infraestructura (1/2)",
+    "country_code": "DO",
+    "country_name": "Dominican Republic",
+    "deadline_date": "13-Nov-2026",
+    "id": 478527,
+    "publication___fiscal_year": 2027,
+    "publication___calendar_year": 2026,
+    "notice_type": "Request for Expression of Interest",
+    "procurement_category": "Consultant Services",
+    "procurement_method": "Individual Consultant Selection",
+    "project_id": "P180349",
+    "publication_date": "01-Nov-2026",
+    "region": "Latin America And Caribbean",
+    "sector": "Health;Health Facilities and Construction;ICT Infrastructure;ICT Services;Public Administration - Health",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478527"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-worldbank-478527",
+    "ocid_native": false,
+    "stage": "tender",
+    "title": "Contratación de Analista en Infraestructura (1/2)",
+    "description": "Contratación de Analista en Infraestructura (1/2)",
+    "buyer": null,
+    "country": "DO",
+    "status": "Request for Expression of Interest",
+    "procurement_method": "Individual Consultant Selection",
+    "main_category": "Consultant Services",
+    "published_at": "2026-11-01T00:00:00+00:00",
+    "updated_at": "2026-11-01T00:00:00+00:00",
+    "tender_end": "2026-11-13T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "WB-sector",
+      "id": "Health"
+     },
+     {
+      "scheme": "WB-sector",
+      "id": "Health Facilities and Construction"
+     },
+     {
+      "scheme": "WB-sector",
+      "id": "ICT Infrastructure"
+     },
+     {
+      "scheme": "WB-sector",
+      "id": "ICT Services"
+     },
+     {
+      "scheme": "WB-sector",
+      "id": "Public Administration - Health"
+     }
+    ],
+    "financier": "World Bank",
+    "project_id": "P180349",
+    "language": "en",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478527"
+   },
+   "awards": [],
+   "contracts": [],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_not_in_dataset"
+   ]
+  },
+  {
+   "external_id": "478529",
+   "content_hash": "cdefad7c13c67fe2660d02b2475ec6985cc050f9af7792b9e5697dfb9abda056",
+   "fetched_at": "2026-11-03T17:27:03+00:00",
+   "source_url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478529",
+   "publisher": "World Bank Group (Finances One)",
+   "published_at": "2026-11-01T00:00:00+00:00",
+   "source_updated_at": "2026-11-01T00:00:00+00:00",
+   "language": "en",
+   "licence": "CC BY 4.0",
+   "transform_version": "myb-procurement-0.1",
+   "raw": {
+    "bid_description": "Construction and Development of Women and youth led agribusiness firms on the drip irrigation system , Solar pumping system, fencing of the 5 hectare gardens and bole hold drip and shades for the gardens",
+    "country_code": "GM",
+    "country_name": "Gambia, The",
+    "deadline_date": "01-Nov-2026",
+    "id": 478529,
+    "publication___fiscal_year": 2027,
+    "publication___calendar_year": 2026,
+    "notice_type": "Contract Award",
+    "procurement_category": "Works",
+    "procurement_method": "Request for Bids",
+    "project_id": "P173070",
+    "publication_date": "01-Nov-2026",
+    "region": "Western And Central Africa",
+    "sector": "Other Industry, Trade and Services;Rural and Inter-Urban Roads;Public Administration - Industry, Trade and Services;Agricultural markets, commercialization and agri-business;Agricultural Extension, Research, and Other Support Activities",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478529"
+   },
+   "raw_stored": true,
+   "process": {
+    "ocid": "myb-worldbank-478529",
+    "ocid_native": false,
+    "stage": "award",
+    "title": "Construction and Development of Women and youth led agribusiness firms on the drip irrigation system , Solar pumping system, fencing of the 5 hectare gardens and bole hold drip and shades for the gard",
+    "description": "Construction and Development of Women and youth led agribusiness firms on the drip irrigation system , Solar pumping system, fencing of the 5 hectare gardens and bole hold drip and shades for the gardens",
+    "buyer": null,
+    "country": "GM",
+    "status": "Contract Award",
+    "procurement_method": "Request for Bids",
+    "main_category": "Works",
+    "published_at": "2026-11-01T00:00:00+00:00",
+    "updated_at": "2026-11-01T00:00:00+00:00",
+    "tender_end": "2026-11-01T00:00:00+00:00",
+    "classifications": [
+     {
+      "scheme": "WB-sector",
+      "id": "Other Industry, Trade and Services"
+     },
+     {
+      "scheme": "WB-sector",
+      "id": "Rural and Inter-Urban Roads"
+     },
+     {
+      "scheme": "WB-sector",
+      "id": "Public Administration - Industry, Trade and Services"
+     },
+     {
+      "scheme": "WB-sector",
+      "id": "Agricultural markets, commercialization and agri-business"
+     },
+     {
+      "scheme": "WB-sector",
+      "id": "Agricultural Extension, Research, and Other Support Activities"
+     }
+    ],
+    "financier": "World Bank",
+    "project_id": "P173070",
+    "language": "en",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478529"
+   },
+   "awards": [],
+   "contracts": [],
+   "validation_status": "warnings",
+   "validation_notes": [
+    "buyer_not_in_dataset"
+   ]
+  }
+ ],
+ "rejected": []
+}
