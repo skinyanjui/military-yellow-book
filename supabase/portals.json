@@ -1,0 +1,3918 @@
+[
+{
+"scope": "national",
+"country": "Antigua and Barbuda",
+"region": "americas",
+"name": "Antigua & Barbuda Tenders Board",
+"url": "https://tendersboard.gov.ag/",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 1
+},
+{
+"scope": "national",
+"country": "Argentina",
+"region": "americas",
+"name": "COMPR.AR",
+"url": "https://comprar.gob.ar",
+"feed_url": "https://openopps.com/sources/argentina-comprar/",
+"platform": "transactional",
+"classification": null,
+"note": "RICG lists: CONTRAT.AR (public works) (transactional, contratar.gob.ar).",
+"flag": null,
+"sources": [
+"openopps",
+"ricg",
+"selltostate"
+],
+"position": 2
+},
+{
+"scope": "national",
+"country": "Bahamas",
+"region": "americas",
+"name": "Bahamas Government Tenders",
+"url": "https://mofvendors.gov.bs/",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 3
+},
+{
+"scope": "national",
+"country": "Barbados",
+"region": "americas",
+"name": "Barbados Government Procurement",
+"url": "https://gov-bb.bonfirehub.com/portal/",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 4
+},
+{
+"scope": "national",
+"country": "Belize",
+"region": "americas",
+"name": "Belize Government Procurement",
+"url": "https://www.belize.gov.bz",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": "The listed address looks like a general government or commercial website, not a procurement portal. Check before relying on it.",
+"flag": "general_site",
+"sources": [
+"selltostate"
+],
+"position": 5
+},
+{
+"scope": "national",
+"country": "Bolivia",
+"region": "americas",
+"name": "SICOES",
+"url": "https://www.sicoes.gob.bo",
+"feed_url": null,
+"platform": "informative",
+"classification": null,
+"note": "RICG lists: SICOES (informative, sicoes.gob.bo).",
+"flag": null,
+"sources": [
+"ricg",
+"selltostate"
+],
+"position": 6
+},
+{
+"scope": "national",
+"country": "Brazil",
+"region": "americas",
+"name": "ComprasNet / gov.br Compras",
+"url": "https://www.gov.br/compras",
+"feed_url": "https://openopps.com/sources/brazil-comprasnet/",
+"platform": "transactional",
+"classification": null,
+"note": "RICG lists: COMPRASNET 4.0 (transactional, gov.br/compras/pt-br).",
+"flag": null,
+"sources": [
+"openopps",
+"ricg",
+"selltostate"
+],
+"position": 7
+},
+{
+"scope": "national",
+"country": "Canada",
+"region": "americas",
+"name": "CanadaBuys",
+"url": "https://canadabuys.canada.ca",
+"feed_url": "https://openopps.com/sources/canadabuys/",
+"platform": null,
+"classification": "UNSPSC, GSIN",
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 8
+},
+{
+"scope": "national",
+"country": "Cayman Islands",
+"region": "americas",
+"name": "Bonfire",
+"url": "https://procure.gov.ky",
+"feed_url": null,
+"platform": "transactional",
+"classification": null,
+"note": "Observer country in the RICG inventory.",
+"flag": null,
+"sources": [
+"ricg"
+],
+"position": 9
+},
+{
+"scope": "national",
+"country": "Chile",
+"region": "americas",
+"name": "Mercado Público",
+"url": "https://www.mercadopublico.cl",
+"feed_url": "https://openopps.com/sources/mercado-publico/",
+"platform": "transactional",
+"classification": null,
+"note": "RICG lists: MERCADOPUBLICO (transactional, chilecompra.cl).",
+"flag": null,
+"sources": [
+"openopps",
+"ricg",
+"selltostate"
+],
+"position": 10
+},
+{
+"scope": "national",
+"country": "Colombia",
+"region": "americas",
+"name": "SECOP II",
+"url": "https://www.colombiacompra.gov.co",
+"feed_url": "https://openopps.com/sources/colombia-secop/",
+"platform": null,
+"classification": null,
+"note": "RICG lists: SECOP I (informative, colombiacompra.gov.co); SECOP II (transactional); TVEC (transactional).",
+"flag": null,
+"sources": [
+"openopps",
+"ricg",
+"selltostate"
+],
+"position": 11
+},
+{
+"scope": "national",
+"country": "Costa Rica",
+"region": "americas",
+"name": "SICOP",
+"url": "https://www.sicop.go.cr",
+"feed_url": "https://openopps.com/sources/costa-rica-sicop/",
+"platform": "transactional",
+"classification": null,
+"note": "RICG lists: SICOP (transactional, sicop.go.cr/index.jsp).",
+"flag": null,
+"sources": [
+"openopps",
+"ricg",
+"selltostate"
+],
+"position": 12
+},
+{
+"scope": "national",
+"country": "Cuba",
+"region": "americas",
+"name": "No national portal listed",
+"url": null,
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": "Sell to State says this government publishes through its official gazette and ministries.",
+"flag": "no_url",
+"sources": [
+"selltostate"
+],
+"position": 13
+},
+{
+"scope": "national",
+"country": "Dominica",
+"region": "americas",
+"name": "No national portal listed",
+"url": null,
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": "Sell to State says this government publishes through its official gazette and ministries.",
+"flag": "no_url",
+"sources": [
+"selltostate"
+],
+"position": 14
+},
+{
+"scope": "national",
+"country": "Dominican Republic",
+"region": "americas",
+"name": "DGCP",
+"url": "https://www.dgcp.gob.do",
+"feed_url": "https://openopps.com/sources/dominican-republic-dgcp/",
+"platform": "transactional",
+"classification": null,
+"note": "RICG lists: COMPRAS DOMINICANA (transactional, dgcp.gob.do).",
+"flag": null,
+"sources": [
+"openopps",
+"ricg",
+"selltostate"
+],
+"position": 15
+},
+{
+"scope": "national",
+"country": "Ecuador",
+"region": "americas",
+"name": "SERCOP",
+"url": "https://www.compraspublicas.gob.ec",
+"feed_url": "https://openopps.com/sources/ecuador-sercop/",
+"platform": "transactional",
+"classification": null,
+"note": "RICG lists: SOCE (transactional, compraspublicas.gob.ec).",
+"flag": null,
+"sources": [
+"openopps",
+"ricg",
+"selltostate"
+],
+"position": 16
+},
+{
+"scope": "national",
+"country": "El Salvador",
+"region": "americas",
+"name": "COMPRASAL",
+"url": "https://www.comprasal.gob.sv",
+"feed_url": null,
+"platform": "informative",
+"classification": null,
+"note": "RICG lists: COMPRASAL (informative, comprasal.gob.sv).",
+"flag": null,
+"sources": [
+"ricg",
+"selltostate"
+],
+"position": 17
+},
+{
+"scope": "national",
+"country": "Grenada",
+"region": "americas",
+"name": "Grenada Government Procurement",
+"url": "https://procurement.gov.gd/",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 18
+},
+{
+"scope": "national",
+"country": "Guatemala",
+"region": "americas",
+"name": "Guatecompras",
+"url": "https://www.guatecompras.gt",
+"feed_url": null,
+"platform": "transactional",
+"classification": null,
+"note": "RICG lists: GUATECOMPRAS (transactional, guatecompras.gt).",
+"flag": null,
+"sources": [
+"ricg",
+"selltostate"
+],
+"position": 19
+},
+{
+"scope": "national",
+"country": "Guyana",
+"region": "americas",
+"name": "NPTAB Guyana",
+"url": "https://www.npta.gov.gy/",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 20
+},
+{
+"scope": "national",
+"country": "Haiti",
+"region": "americas",
+"name": "CNMP Haiti",
+"url": "https://www.cnmp.gouv.ht",
+"feed_url": null,
+"platform": "informative",
+"classification": null,
+"note": "RICG lists: Journal Électronique des Marchés Publics (informative, cnmp.gouv.ht).",
+"flag": null,
+"sources": [
+"ricg",
+"selltostate"
+],
+"position": 21
+},
+{
+"scope": "national",
+"country": "Honduras",
+"region": "americas",
+"name": "HonduCompras",
+"url": "https://www.honducompras.gob.hn",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": "RICG lists: HONDUCOMPRAS I (transactional, honducompras.gob.hn); HONDUCOMPRAS II (transactional); Catálogo Electrónico (transactional).",
+"flag": null,
+"sources": [
+"ricg",
+"selltostate"
+],
+"position": 22
+},
+{
+"scope": "national",
+"country": "Jamaica",
+"region": "americas",
+"name": "GOJ eProcurement",
+"url": "https://www.gojep.gov.jm",
+"feed_url": "https://openopps.com/sources/jamaica-gojep/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 23
+},
+{
+"scope": "national",
+"country": "Mexico",
+"region": "americas",
+"name": "Compras MX",
+"url": "https://comprasmx.buengobierno.gob.mx",
+"feed_url": "https://openopps.com/sources/mexico-compranet/",
+"platform": null,
+"classification": null,
+"note": "RICG lists: COMPRANET 5.0 (transactional, gob.mx/compranet); TDGF (Tienda Digital del Gobierno Federal) (transactional).",
+"flag": null,
+"sources": [
+"openopps",
+"ricg",
+"selltostate"
+],
+"position": 24
+},
+{
+"scope": "national",
+"country": "Montserrat",
+"region": "americas",
+"name": "Mytenders",
+"url": "https://tenders.gov.ms",
+"feed_url": null,
+"platform": "informative",
+"classification": null,
+"note": "Observer country in the RICG inventory.",
+"flag": null,
+"sources": [
+"ricg"
+],
+"position": 25
+},
+{
+"scope": "national",
+"country": "Nicaragua",
+"region": "americas",
+"name": "SISCAE",
+"url": "https://www.nicaraguacompra.gob.ni",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 26
+},
+{
+"scope": "national",
+"country": "Panama",
+"region": "americas",
+"name": "PanamaCompra",
+"url": "https://www.panamacompra.gob.pa",
+"feed_url": "https://openopps.com/sources/panama-panamacompra/",
+"platform": "transactional",
+"classification": null,
+"note": "RICG lists: PANAMACOMPRA (transactional, dgcp.gob.pa).",
+"flag": null,
+"sources": [
+"openopps",
+"ricg",
+"selltostate"
+],
+"position": 27
+},
+{
+"scope": "national",
+"country": "Paraguay",
+"region": "americas",
+"name": "DNCP",
+"url": "https://www.contrataciones.gov.py",
+"feed_url": null,
+"platform": "transactional",
+"classification": null,
+"note": "RICG lists: SICP (transactional, contrataciones.gov.py).",
+"flag": null,
+"sources": [
+"ricg",
+"selltostate"
+],
+"position": 28
+},
+{
+"scope": "national",
+"country": "Peru",
+"region": "americas",
+"name": "SEACE",
+"url": "https://www.gob.pe/7324-acceder-al-sistema-electronico-de-contrataciones-del-estado-seace",
+"feed_url": "https://openopps.com/sources/peru-seace/",
+"platform": null,
+"classification": null,
+"note": "RICG lists: SEACE (transactional, gob.pe/osce); RNP (supplier registry) (transactional); CEAM (framework agreement catalogues) (transactional).",
+"flag": null,
+"sources": [
+"openopps",
+"ricg",
+"selltostate"
+],
+"position": 29
+},
+{
+"scope": "national",
+"country": "Saint Kitts and Nevis",
+"region": "americas",
+"name": "No national portal listed",
+"url": null,
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": "Sell to State says this government publishes through its official gazette and ministries.",
+"flag": "no_url",
+"sources": [
+"selltostate"
+],
+"position": 30
+},
+{
+"scope": "national",
+"country": "Saint Lucia",
+"region": "americas",
+"name": "Saint Lucia Government Procurement",
+"url": "https://www.govt.lc/tenders",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 31
+},
+{
+"scope": "national",
+"country": "Saint Vincent and the Grenadines",
+"region": "americas",
+"name": "No national portal listed",
+"url": null,
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": "Sell to State says this government publishes through its official gazette and ministries.",
+"flag": "no_url",
+"sources": [
+"selltostate"
+],
+"position": 32
+},
+{
+"scope": "national",
+"country": "Suriname",
+"region": "americas",
+"name": "Suriname Government Procurement",
+"url": "https://www.gov.sr",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": "The listed address looks like a general government or commercial website, not a procurement portal. Check before relying on it.",
+"flag": "general_site",
+"sources": [
+"selltostate"
+],
+"position": 33
+},
+{
+"scope": "national",
+"country": "Trinidad and Tobago",
+"region": "americas",
+"name": "eTender",
+"url": null,
+"feed_url": "https://openopps.com/sources/trinidad-tobago-etender/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 34
+},
+{
+"scope": "national",
+"country": "Trinidad and Tobago",
+"region": "americas",
+"name": "OPR",
+"url": "https://oprtt.org/",
+"feed_url": null,
+"platform": "transactional",
+"classification": null,
+"note": "RICG lists: Procurement Depository (Office of Procurement Regulation) (transactional, oprtt.org).",
+"flag": null,
+"sources": [
+"ricg",
+"selltostate"
+],
+"position": 35
+},
+{
+"scope": "national",
+"country": "United States",
+"region": "americas",
+"name": "SAM.gov",
+"url": "https://sam.gov",
+"feed_url": "https://openopps.com/sources/sam-gov/",
+"platform": null,
+"classification": "NAICS, PSC",
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 36
+},
+{
+"scope": "subnational",
+"country": "United States",
+"region": "americas",
+"name": "BidBuy (Illinois)",
+"url": null,
+"feed_url": "https://openopps.com/sources/illinois-bidbuy/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 37
+},
+{
+"scope": "subnational",
+"country": "United States",
+"region": "americas",
+"name": "California eProcure",
+"url": null,
+"feed_url": "https://openopps.com/sources/california-eprocure/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 38
+},
+{
+"scope": "subnational",
+"country": "United States",
+"region": "americas",
+"name": "eMarketplace (Pennsylvania)",
+"url": null,
+"feed_url": "https://openopps.com/sources/pennsylvania-emarketplace/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 39
+},
+{
+"scope": "subnational",
+"country": "United States",
+"region": "americas",
+"name": "ESBD (Texas)",
+"url": null,
+"feed_url": "https://openopps.com/sources/texas-esbd/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 40
+},
+{
+"scope": "subnational",
+"country": "United States",
+"region": "americas",
+"name": "Georgia Team",
+"url": null,
+"feed_url": "https://openopps.com/sources/georgia-team/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 41
+},
+{
+"scope": "subnational",
+"country": "United States",
+"region": "americas",
+"name": "MyFloridaMarketPlace",
+"url": null,
+"feed_url": "https://openopps.com/sources/florida-mfmp/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 42
+},
+{
+"scope": "subnational",
+"country": "United States",
+"region": "americas",
+"name": "NY State Contract Reporter (New York)",
+"url": null,
+"feed_url": "https://openopps.com/sources/new-york-contract-reporter/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 43
+},
+{
+"scope": "subnational",
+"country": "United States",
+"region": "americas",
+"name": "Ohio Procurement",
+"url": null,
+"feed_url": "https://openopps.com/sources/ohio-procurement/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 44
+},
+{
+"scope": "agency",
+"country": "United States",
+"region": "americas",
+"name": "VA National Acquisition Center: Contract Catalog Search Tool",
+"url": "https://www.vendorportal.ecms.va.gov/nac",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": "Public catalogue of 1,700+ active US Department of Veterans Affairs healthcare contract vehicles (Federal Supply Schedule, BPAs, national contracts) with ~1 million line items. Useful market research for medical and protective suppliers. Reference only: pricing differences go to the contractor or contracting officer.",
+"flag": null,
+"sources": [
+"va-nac"
+],
+"position": 45
+},
+{
+"scope": "national",
+"country": "Uruguay",
+"region": "americas",
+"name": "ARCE",
+"url": "https://www.comprasestatales.gub.uy",
+"feed_url": "https://openopps.com/sources/uruguay-arce/",
+"platform": "transactional",
+"classification": null,
+"note": "RICG lists: SICE (transactional, gub.uy/agencia-reguladora-compras-estatales/).",
+"flag": null,
+"sources": [
+"openopps",
+"ricg",
+"selltostate"
+],
+"position": 46
+},
+{
+"scope": "national",
+"country": "Venezuela",
+"region": "americas",
+"name": "RNC / CompraPublica",
+"url": "https://www.rnc.gob.ve",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 47
+},
+{
+"scope": "national",
+"country": "Albania",
+"region": "europe",
+"name": "APP",
+"url": "https://www.app.gov.al",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 48
+},
+{
+"scope": "national",
+"country": "Andorra",
+"region": "europe",
+"name": "Government of Andorra Procurement",
+"url": "https://www.govern.ad",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": "The listed address looks like a general government or commercial website, not a procurement portal. Check before relying on it.",
+"flag": "general_site",
+"sources": [
+"selltostate"
+],
+"position": 49
+},
+{
+"scope": "national",
+"country": "Austria",
+"region": "europe",
+"name": "Auftrag.at",
+"url": "https://www.auftrag.at",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": "The listed address looks like a general government or commercial website, not a procurement portal. Check before relying on it.",
+"flag": "general_site",
+"sources": [
+"selltostate"
+],
+"position": 50
+},
+{
+"scope": "national",
+"country": "Austria",
+"region": "europe",
+"name": "Ausschreibungen Austria",
+"url": null,
+"feed_url": "https://openopps.com/sources/ausschreibungen-austria/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 51
+},
+{
+"scope": "national",
+"country": "Belarus",
+"region": "europe",
+"name": "BUTB",
+"url": "https://www.butb.by",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 52
+},
+{
+"scope": "national",
+"country": "Belgium",
+"region": "europe",
+"name": "e-Procurement",
+"url": "https://www.publicprocurement.be",
+"feed_url": "https://openopps.com/sources/public-procurement-belgium/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 53
+},
+{
+"scope": "national",
+"country": "Bosnia and Herzegovina",
+"region": "europe",
+"name": "ejn.gov.ba",
+"url": "https://www.ejn.gov.ba",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 54
+},
+{
+"scope": "national",
+"country": "Bulgaria",
+"region": "europe",
+"name": "CAIS",
+"url": "https://app.eop.bg",
+"feed_url": "https://openopps.com/sources/bulgaria-procurement/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 55
+},
+{
+"scope": "national",
+"country": "Croatia",
+"region": "europe",
+"name": "EOJN",
+"url": "https://eojn.nn.hr",
+"feed_url": "https://openopps.com/sources/croatia-eojn/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 56
+},
+{
+"scope": "national",
+"country": "Cyprus",
+"region": "europe",
+"name": "eProcurement Cyprus",
+"url": "https://www.eprocurement.gov.cy",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 57
+},
+{
+"scope": "national",
+"country": "Czech Republic",
+"region": "europe",
+"name": "NEN",
+"url": "https://nen.nipez.cz",
+"feed_url": "https://openopps.com/sources/czechia-nen/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 58
+},
+{
+"scope": "national",
+"country": "Denmark",
+"region": "europe",
+"name": "Udbud.dk",
+"url": "https://www.udbud.dk",
+"feed_url": "https://openopps.com/sources/udbud-denmark/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 59
+},
+{
+"scope": "national",
+"country": "Estonia",
+"region": "europe",
+"name": "Riigihangete Register",
+"url": "https://riigihanked.riik.ee",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 60
+},
+{
+"scope": "national",
+"country": "Finland",
+"region": "europe",
+"name": "Hilma",
+"url": "https://www.hankintailmoitukset.fi",
+"feed_url": "https://openopps.com/sources/hilma-finland/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 61
+},
+{
+"scope": "national",
+"country": "France",
+"region": "europe",
+"name": "Achat Public",
+"url": null,
+"feed_url": "https://openopps.com/sources/achat-public/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 62
+},
+{
+"scope": "national",
+"country": "France",
+"region": "europe",
+"name": "BOAMP",
+"url": null,
+"feed_url": "https://openopps.com/sources/boamp/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 63
+},
+{
+"scope": "national",
+"country": "France",
+"region": "europe",
+"name": "PLACE / BOAMP",
+"url": "https://www.marches-publics.gouv.fr",
+"feed_url": "https://openopps.com/sources/marches-publics-gouv-fr/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 64
+},
+{
+"scope": "national",
+"country": "Germany",
+"region": "europe",
+"name": "DTVP",
+"url": null,
+"feed_url": "https://openopps.com/sources/dtvp/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 65
+},
+{
+"scope": "national",
+"country": "Germany",
+"region": "europe",
+"name": "Service Bund",
+"url": null,
+"feed_url": "https://openopps.com/sources/service-bund/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 66
+},
+{
+"scope": "national",
+"country": "Germany",
+"region": "europe",
+"name": "TED / Vergabe.de",
+"url": "https://www.evergabe-online.de",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 67
+},
+{
+"scope": "subnational",
+"country": "Germany",
+"region": "europe",
+"name": "Evergabe NRW",
+"url": null,
+"feed_url": "https://openopps.com/sources/evergabe-nrw/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 68
+},
+{
+"scope": "subnational",
+"country": "Germany",
+"region": "europe",
+"name": "Vergabe Brandenburg",
+"url": null,
+"feed_url": "https://openopps.com/sources/vergabe-brandenburg/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 69
+},
+{
+"scope": "national",
+"country": "Greece",
+"region": "europe",
+"name": "ESIDIS",
+"url": "http://www.eprocurement.gov.gr",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 70
+},
+{
+"scope": "national",
+"country": "Greece",
+"region": "europe",
+"name": "Greece Public Procurement",
+"url": null,
+"feed_url": "https://openopps.com/sources/greece-promitheus/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 71
+},
+{
+"scope": "national",
+"country": "Hungary",
+"region": "europe",
+"name": "EKR",
+"url": "https://ekr.gov.hu",
+"feed_url": "https://openopps.com/sources/hungary-ekr/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 72
+},
+{
+"scope": "national",
+"country": "Iceland",
+"region": "europe",
+"name": "Iceland Procurement",
+"url": null,
+"feed_url": "https://openopps.com/sources/iceland-procurement/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 73
+},
+{
+"scope": "national",
+"country": "Iceland",
+"region": "europe",
+"name": "Ríkiskaup",
+"url": "https://www.rikiskaup.is",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 74
+},
+{
+"scope": "national",
+"country": "Ireland",
+"region": "europe",
+"name": "eTenders",
+"url": "https://www.etenders.gov.ie",
+"feed_url": "https://openopps.com/sources/etenders-ireland/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 75
+},
+{
+"scope": "national",
+"country": "Italy",
+"region": "europe",
+"name": "ANAC / Consip",
+"url": "https://www.anticorruzione.it",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 76
+},
+{
+"scope": "subnational",
+"country": "Italy",
+"region": "europe",
+"name": "Sintel Lombardia (Lombardy)",
+"url": null,
+"feed_url": "https://openopps.com/sources/sintel-lombardia/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 77
+},
+{
+"scope": "national",
+"country": "Kosovo",
+"region": "europe",
+"name": "KRPP",
+"url": "https://e-prokurimi.rks-gov.net",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 78
+},
+{
+"scope": "national",
+"country": "Latvia",
+"region": "europe",
+"name": "EIS",
+"url": "https://www.eis.gov.lv",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 79
+},
+{
+"scope": "national",
+"country": "Lithuania",
+"region": "europe",
+"name": "CVP IS",
+"url": "https://www.cvpp.lt",
+"feed_url": "https://openopps.com/sources/cvp-lithuania/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 80
+},
+{
+"scope": "national",
+"country": "Luxembourg",
+"region": "europe",
+"name": "Portail des marchés publics",
+"url": "https://pmp.b2g.etat.lu",
+"feed_url": "https://openopps.com/sources/luxembourg-procurement/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 81
+},
+{
+"scope": "national",
+"country": "Malta",
+"region": "europe",
+"name": "ePPS",
+"url": "https://www.etenders.gov.mt",
+"feed_url": "https://openopps.com/sources/etenders-malta/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 82
+},
+{
+"scope": "national",
+"country": "Moldova",
+"region": "europe",
+"name": "MTender",
+"url": "https://mtender.gov.md",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 83
+},
+{
+"scope": "national",
+"country": "Monaco",
+"region": "europe",
+"name": "Monaco Government Procurement",
+"url": "https://www.gouv.mc",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": "The listed address looks like a general government or commercial website, not a procurement portal. Check before relying on it.",
+"flag": "general_site",
+"sources": [
+"selltostate"
+],
+"position": 84
+},
+{
+"scope": "national",
+"country": "Montenegro",
+"region": "europe",
+"name": "Portal javnih nabavki",
+"url": "https://cejn.gov.me/",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 85
+},
+{
+"scope": "national",
+"country": "Netherlands",
+"region": "europe",
+"name": "TenderNed",
+"url": "https://www.tenderned.nl",
+"feed_url": "https://openopps.com/sources/tenderned/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 86
+},
+{
+"scope": "national",
+"country": "North Macedonia",
+"region": "europe",
+"name": "ESPP",
+"url": "https://e-nabavki.gov.mk",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 87
+},
+{
+"scope": "national",
+"country": "Norway",
+"region": "europe",
+"name": "Doffin",
+"url": "https://www.doffin.no",
+"feed_url": "https://openopps.com/sources/doffin/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 88
+},
+{
+"scope": "national",
+"country": "Poland",
+"region": "europe",
+"name": "BZP / TED",
+"url": "https://bzp.uzp.gov.pl",
+"feed_url": "https://openopps.com/sources/poland-uzp/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 89
+},
+{
+"scope": "national",
+"country": "Portugal",
+"region": "europe",
+"name": "BASE",
+"url": "http://www.base.gov.pt",
+"feed_url": "https://openopps.com/sources/portugal-base/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 90
+},
+{
+"scope": "national",
+"country": "Romania",
+"region": "europe",
+"name": "SEAP",
+"url": "https://www.e-licitatie.ro",
+"feed_url": "https://openopps.com/sources/romania-seap/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 91
+},
+{
+"scope": "national",
+"country": "Russia",
+"region": "europe",
+"name": "Zakupki.gov.ru",
+"url": "https://zakupki.gov.ru",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 92
+},
+{
+"scope": "national",
+"country": "Serbia",
+"region": "europe",
+"name": "Portal javnih nabavki",
+"url": "https://jnportal.ujn.gov.rs",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 93
+},
+{
+"scope": "national",
+"country": "Slovakia",
+"region": "europe",
+"name": "EVO",
+"url": "https://evo.isepvo.sk/evoportal/en-us/public/ordersearch/index",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 94
+},
+{
+"scope": "national",
+"country": "Slovakia",
+"region": "europe",
+"name": "Slovakia Public Procurement",
+"url": null,
+"feed_url": "https://openopps.com/sources/slovakia-procurement/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 95
+},
+{
+"scope": "national",
+"country": "Slovenia",
+"region": "europe",
+"name": "e-JN",
+"url": "https://ejn.gov.si",
+"feed_url": "https://openopps.com/sources/slovenia-enarocanje/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 96
+},
+{
+"scope": "national",
+"country": "Spain",
+"region": "europe",
+"name": "PLACE",
+"url": "https://contrataciondelestado.es",
+"feed_url": "https://openopps.com/sources/contratacion-del-estado/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 97
+},
+{
+"scope": "subnational",
+"country": "Spain",
+"region": "europe",
+"name": "Contratacion Euskadi (Basque Country)",
+"url": null,
+"feed_url": "https://openopps.com/sources/contratacion-euskadi/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 98
+},
+{
+"scope": "subnational",
+"country": "Spain",
+"region": "europe",
+"name": "Junta de Andalucia (Andalusia)",
+"url": null,
+"feed_url": "https://openopps.com/sources/junta-andalucia/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 99
+},
+{
+"scope": "national",
+"country": "Sweden",
+"region": "europe",
+"name": "Swedish Public Procurement",
+"url": null,
+"feed_url": "https://openopps.com/sources/sweden-procurement/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 100
+},
+{
+"scope": "national",
+"country": "Sweden",
+"region": "europe",
+"name": "TendSign",
+"url": "https://www.tendsign.com",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": "The listed address looks like a general government or commercial website, not a procurement portal. Check before relying on it.",
+"flag": "general_site",
+"sources": [
+"selltostate"
+],
+"position": 101
+},
+{
+"scope": "national",
+"country": "Switzerland",
+"region": "europe",
+"name": "simap.ch",
+"url": "https://www.simap.ch",
+"feed_url": "https://openopps.com/sources/simap/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 102
+},
+{
+"scope": "national",
+"country": "Ukraine",
+"region": "europe",
+"name": "Prozorro",
+"url": "https://prozorro.gov.ua",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 103
+},
+{
+"scope": "national",
+"country": "United Kingdom",
+"region": "europe",
+"name": "Contracts Finder",
+"url": "https://www.contractsfinder.service.gov.uk",
+"feed_url": "https://openopps.com/sources/contracts-finder/",
+"platform": null,
+"classification": "CPV",
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 104
+},
+{
+"scope": "national",
+"country": "United Kingdom",
+"region": "europe",
+"name": "eTendersNI",
+"url": null,
+"feed_url": "https://openopps.com/sources/etendersni/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 105
+},
+{
+"scope": "national",
+"country": "United Kingdom",
+"region": "europe",
+"name": "Find a Tender Service",
+"url": null,
+"feed_url": "https://openopps.com/sources/find-a-tender/",
+"platform": null,
+"classification": "CPV",
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 106
+},
+{
+"scope": "subnational",
+"country": "United Kingdom",
+"region": "europe",
+"name": "Public Contracts Scotland",
+"url": null,
+"feed_url": "https://openopps.com/sources/public-contracts-scotland/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 107
+},
+{
+"scope": "subnational",
+"country": "United Kingdom",
+"region": "europe",
+"name": "Sell2Wales",
+"url": null,
+"feed_url": "https://openopps.com/sources/sell2wales/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 108
+},
+{
+"scope": "national",
+"country": "Bahrain",
+"region": "mideast",
+"name": "Bahrain Tender Board",
+"url": "https://www.tenderboard.gov.bh",
+"feed_url": "https://openopps.com/sources/bahrain-tender-board/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 109
+},
+{
+"scope": "national",
+"country": "Iran",
+"region": "mideast",
+"name": "Shafaf transparency portals",
+"url": "https://shafaf.ict.gov.ir/fa/transactions",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 110
+},
+{
+"scope": "national",
+"country": "Iraq",
+"region": "mideast",
+"name": "Iraq e-Procurement",
+"url": "https://itp.iq/",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 111
+},
+{
+"scope": "national",
+"country": "Israel",
+"region": "mideast",
+"name": "Mr.gov / Michrazim",
+"url": "https://mr.gov.il",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 112
+},
+{
+"scope": "national",
+"country": "Jordan",
+"region": "mideast",
+"name": "JONEPS",
+"url": "https://www.joneps.gov.jo",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 113
+},
+{
+"scope": "national",
+"country": "Kuwait",
+"region": "mideast",
+"name": "Kuwait Central Agency for Public Tenders",
+"url": "https://www.capt.gov.kw",
+"feed_url": "https://openopps.com/sources/kuwait-capt/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 114
+},
+{
+"scope": "national",
+"country": "Lebanon",
+"region": "mideast",
+"name": "Institut des Finances Basil Fuleihan",
+"url": "https://www.institutdesfinances.gov.lb",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": "The listed address looks like a general government or commercial website, not a procurement portal. Check before relying on it.",
+"flag": "general_site",
+"sources": [
+"selltostate"
+],
+"position": 115
+},
+{
+"scope": "national",
+"country": "Oman",
+"region": "mideast",
+"name": "Oman Tender Board",
+"url": "https://etendering.tenderboard.gov.om/product/publicDash?CTRL_STRDIRECTION=LTR",
+"feed_url": "https://openopps.com/sources/oman-tender-board/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 116
+},
+{
+"scope": "national",
+"country": "Palestine",
+"region": "mideast",
+"name": "Palestine e-Procurement",
+"url": "https://www.shiraa.gov.ps",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 117
+},
+{
+"scope": "national",
+"country": "Qatar",
+"region": "mideast",
+"name": "Qatar e-Government Procurement",
+"url": "https://www.mof.gov.qa",
+"feed_url": "https://openopps.com/sources/qatar-procurement/",
+"platform": null,
+"classification": null,
+"note": "The listed address looks like a general government or commercial website, not a procurement portal. Check before relying on it.",
+"flag": "general_site",
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 118
+},
+{
+"scope": "national",
+"country": "Saudi Arabia",
+"region": "mideast",
+"name": "Etimad",
+"url": "https://www.etimad.sa",
+"feed_url": "https://openopps.com/sources/etimad-saudi-arabia/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 119
+},
+{
+"scope": "national",
+"country": "Syria",
+"region": "mideast",
+"name": "Syrian Government Procurement",
+"url": "https://www.syrianfinance.gov.sy",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": "The listed address looks like a general government or commercial website, not a procurement portal. Check before relying on it.",
+"flag": "general_site",
+"sources": [
+"selltostate"
+],
+"position": 120
+},
+{
+"scope": "national",
+"country": "Turkey",
+"region": "mideast",
+"name": "EKAP",
+"url": "https://ekap.kik.gov.tr",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 121
+},
+{
+"scope": "national",
+"country": "UAE",
+"region": "mideast",
+"name": "UAE Procurement Portal",
+"url": "https://www.mohap.gov.ae",
+"feed_url": "https://openopps.com/sources/uae-federal/",
+"platform": null,
+"classification": null,
+"note": "The listed address looks like a general government or commercial website, not a procurement portal. Check before relying on it.",
+"flag": "general_site",
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 122
+},
+{
+"scope": "national",
+"country": "Yemen",
+"region": "mideast",
+"name": "Yemen HTPB",
+"url": "https://www.htpb.gov.ye",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 123
+},
+{
+"scope": "national",
+"country": "Algeria",
+"region": "africa",
+"name": "BAOSEM",
+"url": "https://www.baosem.com/",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 124
+},
+{
+"scope": "national",
+"country": "Angola",
+"region": "africa",
+"name": "SNCP Angola",
+"url": "https://www.sncp.minfin.gov.ao/",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 125
+},
+{
+"scope": "national",
+"country": "Benin",
+"region": "africa",
+"name": "Système de Passation des Marchés Publics",
+"url": "https://www.marches-publics.bj",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 126
+},
+{
+"scope": "national",
+"country": "Botswana",
+"region": "africa",
+"name": "PPADB",
+"url": "https://www.ppadb.co.bw",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 127
+},
+{
+"scope": "national",
+"country": "Burkina Faso",
+"region": "africa",
+"name": "ARMP Burkina Faso",
+"url": "https://www.armp.bf",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 128
+},
+{
+"scope": "national",
+"country": "Burundi",
+"region": "africa",
+"name": "ARMP Burundi",
+"url": "https://armp.bi",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 129
+},
+{
+"scope": "national",
+"country": "Cameroon",
+"region": "africa",
+"name": "ARMP Cameroun",
+"url": "https://www.armp.cm",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 130
+},
+{
+"scope": "national",
+"country": "Cape Verde",
+"region": "africa",
+"name": "ARAP",
+"url": "https://www.arap.cv",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 131
+},
+{
+"scope": "national",
+"country": "Central African Republic",
+"region": "africa",
+"name": "DGMP Centrafrique",
+"url": "https://dgmp-rca.com/",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 132
+},
+{
+"scope": "national",
+"country": "Chad",
+"region": "africa",
+"name": "ARMP Chad",
+"url": "https://armp-tchad.com/",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 133
+},
+{
+"scope": "national",
+"country": "Comoros",
+"region": "africa",
+"name": "ARMP Comores",
+"url": "https://armpcomores.km/",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 134
+},
+{
+"scope": "national",
+"country": "DR Congo",
+"region": "africa",
+"name": "ARMP RDC",
+"url": "https://www.armp-rdc.org",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 135
+},
+{
+"scope": "national",
+"country": "Djibouti",
+"region": "africa",
+"name": "ARMP Djibouti",
+"url": "https://marchespublics.gouv.dj/",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 136
+},
+{
+"scope": "national",
+"country": "Egypt",
+"region": "africa",
+"name": "Egypt e-Procurement Portal",
+"url": "https://etender.gov.eg",
+"feed_url": "https://openopps.com/sources/egypt-tenders/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 137
+},
+{
+"scope": "national",
+"country": "Equatorial Guinea",
+"region": "africa",
+"name": "Procurement EG",
+"url": "https://www.guineaecuatorialpress.com",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": "The listed address looks like a general government or commercial website, not a procurement portal. Check before relying on it.",
+"flag": "general_site",
+"sources": [
+"selltostate"
+],
+"position": 138
+},
+{
+"scope": "national",
+"country": "Eritrea",
+"region": "africa",
+"name": "Eritrea Government Procurement",
+"url": "https://www.shabait.com",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": "The listed address looks like a general government or commercial website, not a procurement portal. Check before relying on it.",
+"flag": "general_site",
+"sources": [
+"selltostate"
+],
+"position": 139
+},
+{
+"scope": "national",
+"country": "Eswatini",
+"region": "africa",
+"name": "SPPRA Eswatini",
+"url": "https://www.sppra.co.sz",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 140
+},
+{
+"scope": "national",
+"country": "Ethiopia",
+"region": "africa",
+"name": "PPA Ethiopia",
+"url": "https://ppa.gov.et",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 141
+},
+{
+"scope": "national",
+"country": "Gabon",
+"region": "africa",
+"name": "ARMP Gabon",
+"url": "https://armp.ga/",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 142
+},
+{
+"scope": "national",
+"country": "Gambia",
+"region": "africa",
+"name": "GPPA",
+"url": "https://www.gppa.gm",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 143
+},
+{
+"scope": "national",
+"country": "Ghana",
+"region": "africa",
+"name": "GHANEPS",
+"url": "https://www.ghaneps.gov.gh",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 144
+},
+{
+"scope": "national",
+"country": "Ghana",
+"region": "africa",
+"name": "PPA",
+"url": null,
+"feed_url": "https://openopps.com/sources/ghana-ppa/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 145
+},
+{
+"scope": "national",
+"country": "Guinea",
+"region": "africa",
+"name": "ARMP Guinée",
+"url": "https://www.armp.gov.gn",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 146
+},
+{
+"scope": "national",
+"country": "Guinea-Bissau",
+"region": "africa",
+"name": "DGCP Guinea-Bissau",
+"url": "https://dgcp.mef.gw/",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 147
+},
+{
+"scope": "national",
+"country": "Ivory Coast",
+"region": "africa",
+"name": "Marchés Publics CI",
+"url": "https://www.marchespublics.ci",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 148
+},
+{
+"scope": "national",
+"country": "Kenya",
+"region": "africa",
+"name": "PPIP / IFMIS",
+"url": "https://tenders.go.ke",
+"feed_url": "https://openopps.com/sources/kenya-ppip/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 149
+},
+{
+"scope": "national",
+"country": "Lesotho",
+"region": "africa",
+"name": "PPAD Lesotho",
+"url": "https://www.gov.ls",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": "The listed address looks like a general government or commercial website, not a procurement portal. Check before relying on it.",
+"flag": "general_site",
+"sources": [
+"selltostate"
+],
+"position": 150
+},
+{
+"scope": "national",
+"country": "Liberia",
+"region": "africa",
+"name": "PPCC",
+"url": "https://www.ppcc.gov.lr",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 151
+},
+{
+"scope": "national",
+"country": "Libya",
+"region": "africa",
+"name": "Libyan Government Procurement",
+"url": "https://www.pm.gov.ly",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": "The listed address looks like a general government or commercial website, not a procurement portal. Check before relying on it.",
+"flag": "general_site",
+"sources": [
+"selltostate"
+],
+"position": 152
+},
+{
+"scope": "national",
+"country": "Madagascar",
+"region": "africa",
+"name": "ARMP Madagascar",
+"url": "https://www.armp.mg",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 153
+},
+{
+"scope": "national",
+"country": "Malawi",
+"region": "africa",
+"name": "PPDA Malawi",
+"url": "https://www.ppda.mw",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 154
+},
+{
+"scope": "national",
+"country": "Mali",
+"region": "africa",
+"name": "DGMP Mali",
+"url": "https://marchespublics.ml/",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 155
+},
+{
+"scope": "national",
+"country": "Mauritania",
+"region": "africa",
+"name": "ARMP Mauritanie",
+"url": "https://www.armp.mr",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 156
+},
+{
+"scope": "national",
+"country": "Mauritius",
+"region": "africa",
+"name": "eProcurement Mauritius",
+"url": "https://publicprocurement.govmu.org",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 157
+},
+{
+"scope": "national",
+"country": "Morocco",
+"region": "africa",
+"name": "Portail Marchés Publics",
+"url": "https://www.marchespublics.gov.ma",
+"feed_url": "https://openopps.com/sources/morocco-procurement/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 158
+},
+{
+"scope": "national",
+"country": "Mozambique",
+"region": "africa",
+"name": "UFSA / e-Sistafe",
+"url": "https://www.ufsa.gov.mz",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 159
+},
+{
+"scope": "national",
+"country": "Namibia",
+"region": "africa",
+"name": "CPBN",
+"url": "https://www.cpbn.com.na/",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 160
+},
+{
+"scope": "national",
+"country": "Niger",
+"region": "africa",
+"name": "ARMP Niger",
+"url": "https://www.armp-niger.org",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 161
+},
+{
+"scope": "national",
+"country": "Nigeria",
+"region": "africa",
+"name": "NOCOPO / BPP",
+"url": "https://www.bpp.gov.ng",
+"feed_url": "https://openopps.com/sources/nigeria-bpp/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 162
+},
+{
+"scope": "national",
+"country": "Republic of Congo",
+"region": "africa",
+"name": "ARMP Congo",
+"url": "https://www.armp.cg",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 163
+},
+{
+"scope": "national",
+"country": "Rwanda",
+"region": "africa",
+"name": "Umucyo",
+"url": "https://www.umucyo.gov.rw",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 164
+},
+{
+"scope": "national",
+"country": "Senegal",
+"region": "africa",
+"name": "ARMP",
+"url": "https://www.armp.sn",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 165
+},
+{
+"scope": "national",
+"country": "Seychelles",
+"region": "africa",
+"name": "PUB Seychelles",
+"url": "https://www.pou.gov.sc/",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 166
+},
+{
+"scope": "national",
+"country": "Sierra Leone",
+"region": "africa",
+"name": "NPPA",
+"url": "https://www.nppa.gov.sl",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 167
+},
+{
+"scope": "national",
+"country": "Somalia",
+"region": "africa",
+"name": "Somalia Procurement",
+"url": "https://www.mof.gov.so",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": "The listed address looks like a general government or commercial website, not a procurement portal. Check before relying on it.",
+"flag": "general_site",
+"sources": [
+"selltostate"
+],
+"position": 168
+},
+{
+"scope": "national",
+"country": "South Africa",
+"region": "africa",
+"name": "eTenders",
+"url": "https://www.etenders.gov.za",
+"feed_url": "https://openopps.com/sources/etenders-south-africa/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 169
+},
+{
+"scope": "national",
+"country": "South Sudan",
+"region": "africa",
+"name": "South Sudan Procurement",
+"url": "https://www.grss-mof.org",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 170
+},
+{
+"scope": "national",
+"country": "Sudan",
+"region": "africa",
+"name": "Sudan e-Procurement",
+"url": "https://www.sudangov.sd",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": "The listed address looks like a general government or commercial website, not a procurement portal. Check before relying on it.",
+"flag": "general_site",
+"sources": [
+"selltostate"
+],
+"position": 171
+},
+{
+"scope": "national",
+"country": "São Tomé and Príncipe",
+"region": "africa",
+"name": "Government Procurement STP",
+"url": "https://www.gov.st",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": "The listed address looks like a general government or commercial website, not a procurement portal. Check before relying on it.",
+"flag": "general_site",
+"sources": [
+"selltostate"
+],
+"position": 172
+},
+{
+"scope": "national",
+"country": "Tanzania",
+"region": "africa",
+"name": "TANePS",
+"url": "https://www.taneps.go.tz",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 173
+},
+{
+"scope": "national",
+"country": "Togo",
+"region": "africa",
+"name": "ARMP Togo",
+"url": "https://www.armp.tg",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 174
+},
+{
+"scope": "national",
+"country": "Tunisia",
+"region": "africa",
+"name": "TUNEPS",
+"url": "http://www.tuneps.tn",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 175
+},
+{
+"scope": "national",
+"country": "Uganda",
+"region": "africa",
+"name": "GPP",
+"url": "https://gpp.ppda.go.ug",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 176
+},
+{
+"scope": "national",
+"country": "Zambia",
+"region": "africa",
+"name": "ZPPA",
+"url": "https://www.zppa.org.zm",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 177
+},
+{
+"scope": "national",
+"country": "Zimbabwe",
+"region": "africa",
+"name": "PRAZ",
+"url": "https://www.praz.gov.zw",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 178
+},
+{
+"scope": "national",
+"country": "Afghanistan",
+"region": "asia",
+"name": "NPA Afghanistan",
+"url": "https://npa.gov.af/en/home",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 179
+},
+{
+"scope": "national",
+"country": "Armenia",
+"region": "asia",
+"name": "ARMEPS",
+"url": "https://armeps.am",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 180
+},
+{
+"scope": "national",
+"country": "Australia",
+"region": "asia",
+"name": "AusTender",
+"url": "https://www.tenders.gov.au",
+"feed_url": "https://openopps.com/sources/austender/",
+"platform": null,
+"classification": "UNSPSC",
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 181
+},
+{
+"scope": "national",
+"country": "Azerbaijan",
+"region": "asia",
+"name": "ETender",
+"url": "https://etender.gov.az",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 182
+},
+{
+"scope": "national",
+"country": "Bangladesh",
+"region": "asia",
+"name": "e-GP Bangladesh",
+"url": "https://www.eprocure.gov.bd",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 183
+},
+{
+"scope": "national",
+"country": "Bhutan",
+"region": "asia",
+"name": "eProcurement Bhutan",
+"url": "https://www.egp.gov.bt/",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 184
+},
+{
+"scope": "national",
+"country": "Brunei",
+"region": "asia",
+"name": "TendersBrunei",
+"url": "https://www.mofe.gov.bn",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": "The listed address looks like a general government or commercial website, not a procurement portal. Check before relying on it.",
+"flag": "general_site",
+"sources": [
+"selltostate"
+],
+"position": 185
+},
+{
+"scope": "national",
+"country": "Cambodia",
+"region": "asia",
+"name": "Cambodia e-GP",
+"url": "https://www.egp.gov.kh",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 186
+},
+{
+"scope": "national",
+"country": "China",
+"region": "asia",
+"name": "CCGP",
+"url": "http://www.ccgp.gov.cn",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 187
+},
+{
+"scope": "national",
+"country": "Fiji",
+"region": "asia",
+"name": "Fiji Government Tenders",
+"url": "https://portal.tenderlink.com/financefiji/",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 188
+},
+{
+"scope": "national",
+"country": "Georgia",
+"region": "asia",
+"name": "SPA (State Procurement Agency)",
+"url": "https://tenders.procurement.gov.ge",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 189
+},
+{
+"scope": "national",
+"country": "Hong Kong",
+"region": "asia",
+"name": "eTender",
+"url": null,
+"feed_url": "https://openopps.com/sources/hong-kong-etender/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 190
+},
+{
+"scope": "national",
+"country": "India",
+"region": "asia",
+"name": "GeM / CPPP",
+"url": "https://gem.gov.in",
+"feed_url": "https://openopps.com/sources/india-gem/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 191
+},
+{
+"scope": "national",
+"country": "Indonesia",
+"region": "asia",
+"name": "INAPROC",
+"url": "https://inaproc.id",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 192
+},
+{
+"scope": "national",
+"country": "Indonesia",
+"region": "asia",
+"name": "LPSE",
+"url": null,
+"feed_url": "https://openopps.com/sources/indonesia-lpse/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 193
+},
+{
+"scope": "national",
+"country": "Japan",
+"region": "asia",
+"name": "JETRO Procurement",
+"url": null,
+"feed_url": "https://openopps.com/sources/japan-jetro/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 194
+},
+{
+"scope": "national",
+"country": "Japan",
+"region": "asia",
+"name": "p-portal (Government Procurement Portal)",
+"url": "https://www.p-portal.go.jp",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 195
+},
+{
+"scope": "national",
+"country": "Kazakhstan",
+"region": "asia",
+"name": "Goszakup",
+"url": "https://goszakup.gov.kz",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 196
+},
+{
+"scope": "national",
+"country": "Kiribati",
+"region": "asia",
+"name": "Kiribati Government Tenders",
+"url": "https://www.president.gov.ki",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": "The listed address looks like a general government or commercial website, not a procurement portal. Check before relying on it.",
+"flag": "general_site",
+"sources": [
+"selltostate"
+],
+"position": 197
+},
+{
+"scope": "national",
+"country": "Kyrgyzstan",
+"region": "asia",
+"name": "Zakupki.gov.kg",
+"url": "https://zakupki.gov.kg",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 198
+},
+{
+"scope": "national",
+"country": "Laos",
+"region": "asia",
+"name": "Lao Government Procurement",
+"url": "https://www.procurement.gov.la",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 199
+},
+{
+"scope": "national",
+"country": "Malaysia",
+"region": "asia",
+"name": "MyProcurement",
+"url": "https://www.eperolehan.gov.my",
+"feed_url": "https://openopps.com/sources/malaysia-myprocurement/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 200
+},
+{
+"scope": "national",
+"country": "Maldives",
+"region": "asia",
+"name": "Maldives Ministry of Finance Tenders",
+"url": "https://www.finance.gov.mv/tenders",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 201
+},
+{
+"scope": "national",
+"country": "Marshall Islands",
+"region": "asia",
+"name": "Marshall Islands Procurement",
+"url": "https://www.rmigovernment.org",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": "The listed address looks like a general government or commercial website, not a procurement portal. Check before relying on it.",
+"flag": "general_site",
+"sources": [
+"selltostate"
+],
+"position": 202
+},
+{
+"scope": "national",
+"country": "Micronesia",
+"region": "asia",
+"name": "FSM Procurement",
+"url": "https://www.fsmgov.org",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": "The listed address looks like a general government or commercial website, not a procurement portal. Check before relying on it.",
+"flag": "general_site",
+"sources": [
+"selltostate"
+],
+"position": 203
+},
+{
+"scope": "national",
+"country": "Mongolia",
+"region": "asia",
+"name": "e-Procurement Mongolia",
+"url": "https://www.e-procurement.mn",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 204
+},
+{
+"scope": "national",
+"country": "Myanmar",
+"region": "asia",
+"name": "Myanmar e-GP",
+"url": "https://www.egp.gov.mm",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 205
+},
+{
+"scope": "national",
+"country": "Nauru",
+"region": "asia",
+"name": "Nauru Government Procurement",
+"url": "https://naurufinance.info/procurement/",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 206
+},
+{
+"scope": "national",
+"country": "Nepal",
+"region": "asia",
+"name": "PPMO / Bolpatra",
+"url": "https://www.bolpatra.gov.np",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 207
+},
+{
+"scope": "national",
+"country": "New Zealand",
+"region": "asia",
+"name": "GETS",
+"url": "https://www.gets.govt.nz",
+"feed_url": "https://openopps.com/sources/gets/",
+"platform": null,
+"classification": "UNSPSC",
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 208
+},
+{
+"scope": "national",
+"country": "Pakistan",
+"region": "asia",
+"name": "PPRA",
+"url": "https://www.ppra.org.pk",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 209
+},
+{
+"scope": "national",
+"country": "Palau",
+"region": "asia",
+"name": "Palau Government Procurement",
+"url": "https://www.palaugov.pw",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": "The listed address looks like a general government or commercial website, not a procurement portal. Check before relying on it.",
+"flag": "general_site",
+"sources": [
+"selltostate"
+],
+"position": 210
+},
+{
+"scope": "national",
+"country": "Papua New Guinea",
+"region": "asia",
+"name": "PNG Procurement",
+"url": "https://www.finance.gov.pg/tenders-and-procurement/",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 211
+},
+{
+"scope": "national",
+"country": "Philippines",
+"region": "asia",
+"name": "PhilGEPS",
+"url": "https://www.philgeps.gov.ph",
+"feed_url": "https://openopps.com/sources/philippines-philgeps/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 212
+},
+{
+"scope": "national",
+"country": "Samoa",
+"region": "asia",
+"name": "Samoa Government Tenders",
+"url": "https://www.samoagovt.ws",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": "The listed address looks like a general government or commercial website, not a procurement portal. Check before relying on it.",
+"flag": "general_site",
+"sources": [
+"selltostate"
+],
+"position": 213
+},
+{
+"scope": "national",
+"country": "Singapore",
+"region": "asia",
+"name": "GeBIZ",
+"url": "https://www.gebiz.gov.sg",
+"feed_url": "https://openopps.com/sources/gebiz/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 214
+},
+{
+"scope": "national",
+"country": "Solomon Islands",
+"region": "asia",
+"name": "Solomon Islands Procurement",
+"url": "https://solomons.gov.sb/tenders/",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 215
+},
+{
+"scope": "national",
+"country": "South Korea",
+"region": "asia",
+"name": "KONEPS",
+"url": "https://www.g2b.go.kr",
+"feed_url": "https://openopps.com/sources/korea-koneps/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 216
+},
+{
+"scope": "national",
+"country": "Sri Lanka",
+"region": "asia",
+"name": "NPA e-Procurement",
+"url": "http://www.npa.gov.lk",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 217
+},
+{
+"scope": "national",
+"country": "Taiwan",
+"region": "asia",
+"name": "PCC",
+"url": "https://web.pcc.gov.tw",
+"feed_url": "https://openopps.com/sources/taiwan-pcc/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 218
+},
+{
+"scope": "national",
+"country": "Tajikistan",
+"region": "asia",
+"name": "Procurement Agency Portal",
+"url": "https://eprocurement.gov.tj/en",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 219
+},
+{
+"scope": "national",
+"country": "Thailand",
+"region": "asia",
+"name": "Thai EGP",
+"url": "https://www.gprocurement.go.th",
+"feed_url": "https://openopps.com/sources/thailand-egp/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 220
+},
+{
+"scope": "national",
+"country": "Timor-Leste",
+"region": "asia",
+"name": "eProcurement Timor-Leste",
+"url": "https://www.eprocurement.gov.tl",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 221
+},
+{
+"scope": "national",
+"country": "Tonga",
+"region": "asia",
+"name": "Tonga Government Procurement",
+"url": "https://www.finance.gov.to",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": "The listed address looks like a general government or commercial website, not a procurement portal. Check before relying on it.",
+"flag": "general_site",
+"sources": [
+"selltostate"
+],
+"position": 222
+},
+{
+"scope": "national",
+"country": "Turkmenistan",
+"region": "asia",
+"name": "Turkmen State Commodity Exchange",
+"url": "https://exchange.gov.tm",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": "The listed address looks like a general government or commercial website, not a procurement portal. Check before relying on it.",
+"flag": "general_site",
+"sources": [
+"selltostate"
+],
+"position": 223
+},
+{
+"scope": "national",
+"country": "Tuvalu",
+"region": "asia",
+"name": "Tuvalu Government Procurement",
+"url": "https://www.tuvalugov.tv",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": "The listed address looks like a general government or commercial website, not a procurement portal. Check before relying on it.",
+"flag": "general_site",
+"sources": [
+"selltostate"
+],
+"position": 224
+},
+{
+"scope": "national",
+"country": "Uzbekistan",
+"region": "asia",
+"name": "Xarid.uz",
+"url": "https://xarid.uzex.uz/home",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"selltostate"
+],
+"position": 225
+},
+{
+"scope": "national",
+"country": "Vanuatu",
+"region": "asia",
+"name": "Vanuatu Government Tenders",
+"url": "https://www.governmentofvanuatu.gov.vu",
+"feed_url": null,
+"platform": null,
+"classification": null,
+"note": "The listed address looks like a general government or commercial website, not a procurement portal. Check before relying on it.",
+"flag": "general_site",
+"sources": [
+"selltostate"
+],
+"position": 226
+},
+{
+"scope": "national",
+"country": "Vietnam",
+"region": "asia",
+"name": "VNEPS",
+"url": "https://muasamcong.mpi.gov.vn",
+"feed_url": "https://openopps.com/sources/vietnam-muasamcong/",
+"platform": null,
+"classification": null,
+"note": null,
+"flag": null,
+"sources": [
+"openopps",
+"selltostate"
+],
+"position": 227
+},
+{
+"scope": "international",
+"country": "European Union",
+"region": null,
+"name": "European Commission Procurement",
+"url": null,
+"feed_url": "https://openopps.com/sources/eu-commission-procurement/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 228
+},
+{
+"scope": "international",
+"country": "European Union",
+"region": null,
+"name": "TED (Tenders Electronic Daily)",
+"url": "https://ted.europa.eu",
+"feed_url": "https://openopps.com/sources/ted/",
+"platform": null,
+"classification": "CPV",
+"note": "Official journal for EU public tenders.",
+"flag": null,
+"sources": [
+"manual",
+"openopps"
+],
+"position": 229
+},
+{
+"scope": "international",
+"country": "International",
+"region": null,
+"name": "African Development Bank",
+"url": null,
+"feed_url": "https://openopps.com/sources/afdb/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 230
+},
+{
+"scope": "international",
+"country": "International",
+"region": null,
+"name": "Asian Development Bank",
+"url": null,
+"feed_url": "https://openopps.com/sources/adb/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 231
+},
+{
+"scope": "international",
+"country": "International",
+"region": null,
+"name": "EBRD Procurement",
+"url": null,
+"feed_url": "https://openopps.com/sources/ebrd-procurement/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 232
+},
+{
+"scope": "international",
+"country": "International",
+"region": null,
+"name": "Inter-American Development Bank",
+"url": null,
+"feed_url": "https://openopps.com/sources/iadb/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 233
+},
+{
+"scope": "international",
+"country": "International",
+"region": null,
+"name": "NATO Procurement",
+"url": null,
+"feed_url": "https://openopps.com/sources/nato-procurement/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 234
+},
+{
+"scope": "international",
+"country": "International",
+"region": null,
+"name": "UN Office for Project Services",
+"url": null,
+"feed_url": "https://openopps.com/sources/unops-procurement/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 235
+},
+{
+"scope": "international",
+"country": "International",
+"region": null,
+"name": "UNDP Procurement Notices",
+"url": null,
+"feed_url": "https://openopps.com/sources/undp/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 236
+},
+{
+"scope": "international",
+"country": "International",
+"region": null,
+"name": "UNGM (United Nations Global Marketplace)",
+"url": "https://www.ungm.org",
+"feed_url": "https://openopps.com/sources/ungm/",
+"platform": null,
+"classification": "UNSPSC",
+"note": "Common supplier registration for UN agencies. UNGM publishes the UNSPSC list this directory uses for product codes.",
+"flag": null,
+"sources": [
+"manual",
+"openopps"
+],
+"position": 237
+},
+{
+"scope": "international",
+"country": "International",
+"region": null,
+"name": "UNICEF Supply Division",
+"url": null,
+"feed_url": "https://openopps.com/sources/unicef-supply/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 238
+},
+{
+"scope": "international",
+"country": "International",
+"region": null,
+"name": "WFP Procurement",
+"url": null,
+"feed_url": "https://openopps.com/sources/wfp-procurement/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 239
+},
+{
+"scope": "international",
+"country": "International",
+"region": null,
+"name": "World Bank Projects & Operations",
+"url": null,
+"feed_url": "https://openopps.com/sources/world-bank/",
+"platform": null,
+"classification": null,
+"note": "Tender notices via the Open Opps feed; the official portal address is not recorded here yet.",
+"flag": null,
+"sources": [
+"openopps"
+],
+"position": 240
+}
+]

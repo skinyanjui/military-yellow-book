@@ -1,0 +1,100 @@
+France|Achat Public|achat-public
+Austria|Ausschreibungen Austria|ausschreibungen-austria
+France|BOAMP|boamp
+Bulgaria|Bulgaria Public Procurement|bulgaria-procurement
+Lithuania|CVP Lithuania|cvp-lithuania
+Spain (Basque Country)|Contratacion Euskadi|contratacion-euskadi
+Croatia|Croatia Public Procurement|croatia-eojn
+Czech Republic|Czech Republic Public Procurement|czechia-nen
+Germany|DTVP|dtvp
+Norway|Doffin|doffin
+EU|European Commission Procurement|eu-commission-procurement
+Germany (NRW)|Evergabe NRW|evergabe-nrw
+Greece|Greece Public Procurement|greece-promitheus
+Hungary|Hungary Public Procurement|hungary-ekr
+Iceland|Iceland Procurement|iceland-procurement
+Spain (Andalusia)|Junta de Andalucia|junta-andalucia
+Luxembourg|Luxembourg Public Procurement|luxembourg-procurement
+France|Marches Publics (PLACE)|marches-publics-gouv-fr
+Spain|Plataforma de Contratacion del Estado|contratacion-del-estado
+Poland|Poland Public Procurement|poland-uzp
+Portugal|Portugal Public Procurement|portugal-base
+Belgium|Public Procurement Belgium|public-procurement-belgium
+Romania|Romania Public Procurement|romania-seap
+Germany|Service Bund|service-bund
+Italy (Lombardy)|Sintel Lombardia|sintel-lombardia
+Slovakia|Slovakia Public Procurement|slovakia-procurement
+Slovenia|Slovenia Public Procurement|slovenia-enarocanje
+Sweden|Swedish Public Procurement|sweden-procurement
+EU|TED|ted
+Netherlands|TenderNed|tenderned
+Finland|Tenders Electronic Daily Finland|hilma-finland
+Denmark|Udbud Denmark|udbud-denmark
+Germany (Brandenburg)|Vergabe Brandenburg|vergabe-brandenburg
+Ireland|eTenders Ireland|etenders-ireland
+Malta|eTenders Malta|etenders-malta
+Switzerland|simap|simap
+Argentina|Comprar Argentina|argentina-comprar
+Brazil|Comprasnet|brazil-comprasnet
+Colombia|SECOP|colombia-secop
+Costa Rica|SICOP|costa-rica-sicop
+Dominican Republic|DGCP|dominican-republic-dgcp
+Ecuador|SERCOP|ecuador-sercop
+Regional|Inter-American Development Bank|iadb
+Jamaica|GOJEP|jamaica-gojep
+Chile|Mercado Publico|mercado-publico
+Mexico|CompraNet|mexico-compranet
+Panama|PanamaCompra|panama-panamacompra
+Peru|SEACE|peru-seace
+Trinidad and Tobago|eTender|trinidad-tobago-etender
+Uruguay|ARCE|uruguay-arce
+Regional|Asian Development Bank|adb
+Australia|AusTender|austender
+New Zealand|GETS|gets
+Singapore|GeBIZ|gebiz
+Hong Kong|eTender|hong-kong-etender
+India|Government e-Marketplace|india-gem
+Indonesia|LPSE|indonesia-lpse
+Japan|JETRO Procurement|japan-jetro
+South Korea|KONEPS|korea-koneps
+Malaysia|MyPROCUREMENT|malaysia-myprocurement
+Philippines|PhilGEPS|philippines-philgeps
+Taiwan|Government e-Procurement|taiwan-pcc
+Thailand|e-GP|thailand-egp
+Vietnam|National Bidding Network|vietnam-muasamcong
+US (California)|California eProcure|california-eprocure
+Canada|CanadaBuys|canadabuys
+US (Florida)|MyFloridaMarketPlace|florida-mfmp
+US (Georgia)|Georgia Team|georgia-team
+US (Illinois)|BidBuy|illinois-bidbuy
+US (New York)|NY State Contract Reporter|new-york-contract-reporter
+US (Ohio)|Ohio Procurement|ohio-procurement
+US (Pennsylvania)|eMarketplace|pennsylvania-emarketplace
+US (federal)|SAM.gov|sam-gov
+US (Texas)|ESBD|texas-esbd
+Bahrain|Tender Board|bahrain-tender-board
+Egypt|Egypt Tenders|egypt-tenders
+Saudi Arabia|Etimad|etimad-saudi-arabia
+Kuwait|Central Agency for Public Tenders|kuwait-capt
+Morocco|Procurement Portal|morocco-procurement
+Oman|Tender Board|oman-tender-board
+Qatar|Qatar Procurement|qatar-procurement
+UAE|Federal Procurement|uae-federal
+International|EBRD Procurement|ebrd-procurement
+International|NATO Procurement|nato-procurement
+International|UN Office for Project Services|unops-procurement
+International|UNDP Procurement Notices|undp
+International|UNGM|ungm
+International|UNICEF Supply Division|unicef-supply
+International|WFP Procurement|wfp-procurement
+International|World Bank Projects & Operations|world-bank
+Regional|African Development Bank|afdb
+Ghana|PPA|ghana-ppa
+Kenya|PPIP|kenya-ppip
+Nigeria|BPP|nigeria-bpp
+South Africa|eTenders|etenders-south-africa
+UK|Contracts Finder|contracts-finder
+UK|Find a Tender Service|find-a-tender
+Scotland|Public Contracts Scotland|public-contracts-scotland
+Wales|Sell2Wales|sell2wales
+UK|eTendersNI|etendersni

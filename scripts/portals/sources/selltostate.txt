@@ -1,0 +1,193 @@
+Afghanistan|NPA Afghanistan|https://npa.gov.af/en/home
+Albania|APP|https://www.app.gov.al
+Algeria|BAOSEM|https://www.baosem.com/
+Andorra|Government of Andorra Procurement|https://www.govern.ad
+Angola|SNCP Angola|https://www.sncp.minfin.gov.ao/
+Antigua and Barbuda|Antigua & Barbuda Tenders Board|https://tendersboard.gov.ag/
+Argentina|COMPR.AR|https://comprar.gob.ar
+Armenia|ARMEPS|https://armeps.am
+Australia|AusTender|https://www.tenders.gov.au
+Austria|Auftrag.at|https://www.auftrag.at
+Azerbaijan|ETender|https://etender.gov.az
+Bahamas|Bahamas Government Tenders|https://mofvendors.gov.bs/
+Bahrain|Bahrain Tender Board|https://www.tenderboard.gov.bh
+Bangladesh|e-GP Bangladesh|https://www.eprocure.gov.bd
+Barbados|Barbados Government Procurement|https://gov-bb.bonfirehub.com/portal/
+Belarus|BUTB|https://www.butb.by
+Belgium|e-Procurement|https://www.publicprocurement.be
+Belize|Belize Government Procurement|https://www.belize.gov.bz
+Benin|Système de Passation des Marchés Publics|https://www.marches-publics.bj
+Bhutan|eProcurement Bhutan|https://www.egp.gov.bt/
+Bolivia|SICOES|https://www.sicoes.gob.bo
+Bosnia and Herzegovina|ejn.gov.ba|https://www.ejn.gov.ba
+Botswana|PPADB|https://www.ppadb.co.bw
+Brazil|ComprasNet / gov.br Compras|https://www.gov.br/compras
+Brunei|TendersBrunei|https://www.mofe.gov.bn
+Bulgaria|CAIS|https://app.eop.bg
+Burkina Faso|ARMP Burkina Faso|https://www.armp.bf
+Burundi|ARMP Burundi|https://armp.bi
+Cambodia|Cambodia e-GP|https://www.egp.gov.kh
+Cameroon|ARMP Cameroun|https://www.armp.cm
+Canada|CanadaBuys|https://canadabuys.canada.ca
+Cape Verde|ARAP|https://www.arap.cv
+Central African Republic|DGMP Centrafrique|https://dgmp-rca.com/
+Chad|ARMP Chad|https://armp-tchad.com/
+Chile|Mercado Público|https://www.mercadopublico.cl
+China|CCGP|http://www.ccgp.gov.cn
+Colombia|SECOP II|https://www.colombiacompra.gov.co
+Comoros|ARMP Comores|https://armpcomores.km/
+Costa Rica|SICOP|https://www.sicop.go.cr
+Croatia|EOJN|https://eojn.nn.hr
+Cuba|Published via official gazette / ministries|
+Cyprus|eProcurement Cyprus|https://www.eprocurement.gov.cy
+Czech Republic|NEN|https://nen.nipez.cz
+Denmark|Udbud.dk|https://www.udbud.dk
+Djibouti|ARMP Djibouti|https://marchespublics.gouv.dj/
+Dominica|Published via official gazette / ministries|
+Dominican Republic|DGCP|https://www.dgcp.gob.do
+DR Congo|ARMP RDC|https://www.armp-rdc.org
+Ecuador|SERCOP|https://www.compraspublicas.gob.ec
+Egypt|Egypt e-Procurement Portal|https://etender.gov.eg
+El Salvador|COMPRASAL|https://www.comprasal.gob.sv
+Equatorial Guinea|Procurement EG|https://www.guineaecuatorialpress.com
+Eritrea|Eritrea Government Procurement|https://www.shabait.com
+Estonia|Riigihangete Register|https://riigihanked.riik.ee
+Eswatini|SPPRA Eswatini|https://www.sppra.co.sz
+Ethiopia|PPA Ethiopia|https://ppa.gov.et
+Fiji|Fiji Government Tenders|https://portal.tenderlink.com/financefiji/
+Finland|Hilma|https://www.hankintailmoitukset.fi
+France|PLACE / BOAMP|https://www.marches-publics.gouv.fr
+Gabon|ARMP Gabon|https://armp.ga/
+Gambia|GPPA|https://www.gppa.gm
+Georgia|SPA (State Procurement Agency)|https://tenders.procurement.gov.ge
+Germany|TED / Vergabe.de|https://www.evergabe-online.de
+Ghana|GHANEPS|https://www.ghaneps.gov.gh
+Greece|ESIDIS|http://www.eprocurement.gov.gr
+Grenada|Grenada Government Procurement|https://procurement.gov.gd/
+Guatemala|Guatecompras|https://www.guatecompras.gt
+Guinea|ARMP Guinée|https://www.armp.gov.gn
+Guinea-Bissau|DGCP Guinea-Bissau|https://dgcp.mef.gw/
+Guyana|NPTAB Guyana|https://www.npta.gov.gy/
+Haiti|CNMP Haiti|https://www.cnmp.gouv.ht
+Honduras|HonduCompras|https://www.honducompras.gob.hn
+Hungary|EKR|https://ekr.gov.hu
+Iceland|Ríkiskaup|https://www.rikiskaup.is
+India|GeM / CPPP|https://gem.gov.in
+Indonesia|INAPROC|https://inaproc.id
+Iran|Shafaf transparency portals|https://shafaf.ict.gov.ir/fa/transactions
+Iraq|Iraq e-Procurement|https://itp.iq/
+Ireland|eTenders|https://www.etenders.gov.ie
+Israel|Mr.gov / Michrazim|https://mr.gov.il
+Italy|ANAC / Consip|https://www.anticorruzione.it
+Ivory Coast|Marchés Publics CI|https://www.marchespublics.ci
+Jamaica|GOJ eProcurement|https://www.gojep.gov.jm
+Japan|p-portal (Government Procurement Portal)|https://www.p-portal.go.jp
+Jordan|JONEPS|https://www.joneps.gov.jo
+Kazakhstan|Goszakup|https://goszakup.gov.kz
+Kenya|PPIP / IFMIS|https://tenders.go.ke
+Kiribati|Kiribati Government Tenders|https://www.president.gov.ki
+Kosovo|KRPP|https://e-prokurimi.rks-gov.net
+Kuwait|Kuwait Central Agency for Public Tenders|https://www.capt.gov.kw
+Kyrgyzstan|Zakupki.gov.kg|https://zakupki.gov.kg
+Laos|Lao Government Procurement|https://www.procurement.gov.la
+Latvia|EIS|https://www.eis.gov.lv
+Lebanon|Institut des Finances Basil Fuleihan|https://www.institutdesfinances.gov.lb
+Lesotho|PPAD Lesotho|https://www.gov.ls
+Liberia|PPCC|https://www.ppcc.gov.lr
+Libya|Libyan Government Procurement|https://www.pm.gov.ly
+Lithuania|CVP IS|https://www.cvpp.lt
+Luxembourg|Portail des marchés publics|https://pmp.b2g.etat.lu
+Madagascar|ARMP Madagascar|https://www.armp.mg
+Malawi|PPDA Malawi|https://www.ppda.mw
+Malaysia|MyProcurement|https://www.eperolehan.gov.my
+Maldives|Maldives Ministry of Finance Tenders|https://www.finance.gov.mv/tenders
+Mali|DGMP Mali|https://marchespublics.ml/
+Malta|ePPS|https://www.etenders.gov.mt
+Marshall Islands|Marshall Islands Procurement|https://www.rmigovernment.org
+Mauritania|ARMP Mauritanie|https://www.armp.mr
+Mauritius|eProcurement Mauritius|https://publicprocurement.govmu.org
+Mexico|Compras MX|https://comprasmx.buengobierno.gob.mx
+Micronesia|FSM Procurement|https://www.fsmgov.org
+Moldova|MTender|https://mtender.gov.md
+Monaco|Monaco Government Procurement|https://www.gouv.mc
+Mongolia|e-Procurement Mongolia|https://www.e-procurement.mn
+Montenegro|Portal javnih nabavki|https://cejn.gov.me/
+Morocco|Portail Marchés Publics|https://www.marchespublics.gov.ma
+Mozambique|UFSA / e-Sistafe|https://www.ufsa.gov.mz
+Myanmar|Myanmar e-GP|https://www.egp.gov.mm
+Namibia|CPBN|https://www.cpbn.com.na/
+Nauru|Nauru Government Procurement|https://naurufinance.info/procurement/
+Nepal|PPMO / Bolpatra|https://www.bolpatra.gov.np
+Netherlands|TenderNed|https://www.tenderned.nl
+New Zealand|GETS|https://www.gets.govt.nz
+Nicaragua|SISCAE|https://www.nicaraguacompra.gob.ni
+Niger|ARMP Niger|https://www.armp-niger.org
+Nigeria|NOCOPO / BPP|https://www.bpp.gov.ng
+North Macedonia|ESPP|https://e-nabavki.gov.mk
+Norway|Doffin|https://www.doffin.no
+Oman|Oman Tender Board|https://etendering.tenderboard.gov.om/product/publicDash?CTRL_STRDIRECTION=LTR
+Pakistan|PPRA|https://www.ppra.org.pk
+Palau|Palau Government Procurement|https://www.palaugov.pw
+Palestine|Palestine e-Procurement|https://www.shiraa.gov.ps
+Panama|PanamaCompra|https://www.panamacompra.gob.pa
+Papua New Guinea|PNG Procurement|https://www.finance.gov.pg/tenders-and-procurement/
+Paraguay|DNCP|https://www.contrataciones.gov.py
+Peru|SEACE|https://www.gob.pe/7324-acceder-al-sistema-electronico-de-contrataciones-del-estado-seace
+Philippines|PhilGEPS|https://www.philgeps.gov.ph
+Poland|BZP / TED|https://bzp.uzp.gov.pl
+Portugal|BASE|http://www.base.gov.pt
+Qatar|Qatar e-Government Procurement|https://www.mof.gov.qa
+Republic of Congo|ARMP Congo|https://www.armp.cg
+Romania|SEAP|https://www.e-licitatie.ro
+Russia|Zakupki.gov.ru|https://zakupki.gov.ru
+Rwanda|Umucyo|https://www.umucyo.gov.rw
+Saint Kitts and Nevis|Published via official gazette / ministries|
+Saint Lucia|Saint Lucia Government Procurement|https://www.govt.lc/tenders
+Saint Vincent and the Grenadines|Published via official gazette / ministries|
+Samoa|Samoa Government Tenders|https://www.samoagovt.ws
+São Tomé and Príncipe|Government Procurement STP|https://www.gov.st
+Saudi Arabia|Etimad|https://www.etimad.sa
+Senegal|ARMP|https://www.armp.sn
+Serbia|Portal javnih nabavki|https://jnportal.ujn.gov.rs
+Seychelles|PUB Seychelles|https://www.pou.gov.sc/
+Sierra Leone|NPPA|https://www.nppa.gov.sl
+Singapore|GeBIZ|https://www.gebiz.gov.sg
+Slovakia|EVO|https://evo.isepvo.sk/evoportal/en-us/public/ordersearch/index
+Slovenia|e-JN|https://ejn.gov.si
+Solomon Islands|Solomon Islands Procurement|https://solomons.gov.sb/tenders/
+Somalia|Somalia Procurement|https://www.mof.gov.so
+South Africa|eTenders|https://www.etenders.gov.za
+South Korea|KONEPS|https://www.g2b.go.kr
+South Sudan|South Sudan Procurement|https://www.grss-mof.org
+Spain|PLACE|https://contrataciondelestado.es
+Sri Lanka|NPA e-Procurement|http://www.npa.gov.lk
+Sudan|Sudan e-Procurement|https://www.sudangov.sd
+Suriname|Suriname Government Procurement|https://www.gov.sr
+Sweden|TendSign|https://www.tendsign.com
+Switzerland|simap.ch|https://www.simap.ch
+Syria|Syrian Government Procurement|https://www.syrianfinance.gov.sy
+Taiwan|PCC|https://web.pcc.gov.tw
+Tajikistan|Procurement Agency Portal|https://eprocurement.gov.tj/en
+Tanzania|TANePS|https://www.taneps.go.tz
+Thailand|Thai EGP|https://www.gprocurement.go.th
+Timor-Leste|eProcurement Timor-Leste|https://www.eprocurement.gov.tl
+Togo|ARMP Togo|https://www.armp.tg
+Tonga|Tonga Government Procurement|https://www.finance.gov.to
+Trinidad and Tobago|OPR|https://oprtt.org/
+Tunisia|TUNEPS|http://www.tuneps.tn
+Turkey|EKAP|https://ekap.kik.gov.tr
+Turkmenistan|Turkmen State Commodity Exchange|https://exchange.gov.tm
+Tuvalu|Tuvalu Government Procurement|https://www.tuvalugov.tv
+UAE|UAE Procurement Portal|https://www.mohap.gov.ae
+Uganda|GPP|https://gpp.ppda.go.ug
+Ukraine|Prozorro|https://prozorro.gov.ua
+United Kingdom|Contracts Finder|https://www.contractsfinder.service.gov.uk
+United States|SAM.gov|https://sam.gov
+Uruguay|ARCE|https://www.comprasestatales.gub.uy
+Uzbekistan|Xarid.uz|https://xarid.uzex.uz/home
+Vanuatu|Vanuatu Government Tenders|https://www.governmentofvanuatu.gov.vu
+Venezuela|RNC / CompraPublica|https://www.rnc.gob.ve
+Vietnam|VNEPS|https://muasamcong.mpi.gov.vn
+Yemen|Yemen HTPB|https://www.htpb.gov.ye
+Zambia|ZPPA|https://www.zppa.org.zm
+Zimbabwe|PRAZ|https://www.praz.gov.zw
