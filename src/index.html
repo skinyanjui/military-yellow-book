@@ -1,42 +1,42 @@
 <title>Military Yellow Book</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 <style>
-/* Layout: sticky bar with search, filter row, sticky scrollable category bar, one section per category of compact product rows. Geist tokens; one yellow accent for the "yellow book" idea. */
+/* Layout: calm white page, warm-grey surfaces, bold tight headings (Inter). Sticky bar with search, a short hero with four ways in, filter row, sticky category bar, one section per category. One yellow accent for the "yellow book" idea. */
 :root {
-  --background: #ffffff; --background-subtle: #fafafa; --foreground: #171717;
-  --gray-100: #f2f2f2; --gray-200: #ebebeb; --gray-300: #e0e0e0; --gray-400: #c9c9c9;
-  --gray-500: #a8a8a8; --gray-700: #666666; --gray-800: #444444;
+  --background: #ffffff; --background-subtle: #f9f8f7; --foreground: #191918;
+  --gray-100: #f6f5f4; --gray-200: #efeeec; --gray-300: #e6e4e1; --gray-400: #d3d0cb;
+  --gray-500: #a39e98; --gray-700: #615d59; --gray-800: #37352f;
   --border: var(--gray-300); --text-muted: var(--gray-700);
-  --accent: #f5b800; --accent-subtle: #fff4cc; --accent-ink: #7a5800; --on-accent: #171717;
-  --blue: #0070f3; --blue-subtle: #e6f0fd; --green: #45a557; --red: #e5484d;
-  --radius-sm: 4px; --radius-md: 6px; --radius-lg: 8px; --radius-xl: 12px; --radius-full: 9999px;
-  --shadow-md: 0 4px 12px rgba(0,0,0,.08); --shadow-lg: 0 12px 32px rgba(0,0,0,.12);
+  --accent: #f5b800; --accent-subtle: #fff4cc; --accent-ink: #7a5800; --on-accent: #191918;
+  --blue: #0b6bcb; --blue-subtle: #e7f1fb; --green: #2f8a4c; --red: #d4383e;
+  --shadow-md: 0 4px 12px rgba(25,25,24,.06); --shadow-lg: 0 16px 40px rgba(25,25,24,.12);
+  --radius-sm: 4px; --radius-md: 8px; --radius-lg: 10px; --radius-xl: 14px; --radius-full: 9999px;
   --ease: cubic-bezier(.4,0,.2,1); --duration-fast: 100ms; --duration-base: 150ms;
   --maxw: 1200px;
   --scrim: rgba(0,0,0,.8); --on-scrim: #ffffff;
-  --font-sans: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: var(--font-sans);
   --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s6: 24px; --s8: 32px; --s12: 48px;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --background: #0a0a0a; --background-subtle: #111111; --foreground: #ededed;
-    --gray-100: #1a1a1a; --gray-200: #1f1f1f; --gray-300: #2e2e2e; --gray-400: #454545;
-    --gray-500: #878787; --gray-700: #b4b4b4; --gray-800: #d4d4d4;
-    --accent: #f5c518; --accent-subtle: #2a2208; --accent-ink: #f5c518;
-    --blue: #3291ff; --blue-subtle: #10233c; --green: #5dc36f; --red: #ff6369;
-    --shadow-md: 0 4px 12px rgba(0,0,0,.5); --shadow-lg: 0 12px 32px rgba(0,0,0,.6);
+    --background: #191919; --background-subtle: #1e1e1e; --foreground: #ebebea;
+    --gray-100: #252525; --gray-200: #2c2c2c; --gray-300: #373737; --gray-400: #4a4a49;
+    --gray-500: #82807c; --gray-700: #aeaca8; --gray-800: #d3d2cf;
+    --accent: #f5c518; --accent-subtle: #2e2709; --accent-ink: #f5c518;
+    --blue: #529cca; --blue-subtle: #16283a; --green: #5dc36f; --red: #ff6369;
+    --shadow-md: 0 4px 12px rgba(0,0,0,.45); --shadow-lg: 0 16px 40px rgba(0,0,0,.55);
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --background: #0a0a0a; --background-subtle: #111111; --foreground: #ededed;
-  --gray-100: #1a1a1a; --gray-200: #1f1f1f; --gray-300: #2e2e2e; --gray-400: #454545;
-  --gray-500: #878787; --gray-700: #b4b4b4; --gray-800: #d4d4d4;
-  --accent: #f5c518; --accent-subtle: #2a2208; --accent-ink: #f5c518;
-  --blue: #3291ff; --blue-subtle: #10233c; --green: #5dc36f; --red: #ff6369;
-  --shadow-md: 0 4px 12px rgba(0,0,0,.5); --shadow-lg: 0 12px 32px rgba(0,0,0,.6);
+  --background: #191919; --background-subtle: #1e1e1e; --foreground: #ebebea;
+  --gray-100: #252525; --gray-200: #2c2c2c; --gray-300: #373737; --gray-400: #4a4a49;
+  --gray-500: #82807c; --gray-700: #aeaca8; --gray-800: #d3d2cf;
+  --accent: #f5c518; --accent-subtle: #2e2709; --accent-ink: #f5c518;
+  --blue: #529cca; --blue-subtle: #16283a; --green: #5dc36f; --red: #ff6369;
+  --shadow-md: 0 4px 12px rgba(0,0,0,.45); --shadow-lg: 0 16px 40px rgba(0,0,0,.55);
   color-scheme: dark;
 }
 
@@ -458,6 +458,74 @@ body.is-loading footer { display: none; }
 .rstars button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
 .rstars button:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
 .rr-form .field textarea { height: 112px; }
+/* ---------- Calm layer: warm neutrals, bold tight headings, borderless grey surfaces ---------- */
+body { font: 400 14px/21px var(--font-sans); letter-spacing: -.003em; }
+.nav { border-bottom: 1px solid var(--border); }
+.nav-in { height: 60px; }
+.mark { border-radius: 8px; font: 700 12px/16px var(--font-sans); letter-spacing: .02em; }
+.brand b { font-weight: 700; letter-spacing: -.01em; }
+.search input { height: 40px; border: 1px solid transparent; border-right: 0; border-radius: var(--radius-md) 0 0 var(--radius-md); background: var(--gray-100); }
+.search input:focus { background: var(--background); border-color: var(--gray-400); }
+.search-btn { height: 40px; width: 48px; border: 1px solid transparent; border-radius: 0 var(--radius-md) var(--radius-md) 0; background: var(--gray-100); color: var(--text-muted); }
+.search input:focus + .search-btn { background: var(--background); border-color: var(--gray-400); border-left-color: transparent; }
+.pill { border-radius: var(--radius-md); }
+.chipbtn, .navicon { border-color: transparent; background: transparent; color: var(--text-muted); }
+.chipbtn:hover, .navicon:hover { background: var(--gray-100); color: var(--foreground); }
+.navicon { border-radius: var(--radius-md); }
+.btn-secondary { border-color: transparent; background: transparent; }
+.btn-secondary:hover { background: var(--gray-100); }
+.btn-primary:hover { background: var(--gray-800); }
+.toplinks { display: none; gap: var(--s1); flex: none; }
+.toplinks a { padding: var(--s2) var(--s3); border-radius: var(--radius-md); color: var(--foreground); text-decoration: none; font-weight: 500; }
+.toplinks a:hover { background: var(--gray-100); }
+@media (min-width: 1280px) { .toplinks { display: flex; } }
+
+.filters { border-bottom: 0; }
+.qbtn { border-radius: var(--radius-md); background: transparent; color: var(--text-muted); }
+.qbtn:hover { background: var(--gray-100); color: var(--foreground); }
+#open-filters { background: var(--gray-100); color: var(--foreground); }
+.qbtn[aria-pressed="true"] { background: var(--accent-subtle); color: var(--accent-ink); box-shadow: none; }
+.toolbar { position: sticky; top: calc(var(--nav-h, 60px) + env(safe-area-inset-top, 0px)); z-index: 9; background: var(--background); border-bottom: 1px solid var(--border); }
+.toolbar .catbar { position: static; border-bottom: 0; }
+body:has(#list-view:not([hidden])) .nav { border-bottom-color: transparent; }
+.toolbar .quick { padding-block: var(--s2) 0; }
+.toolbar .cats { height: 48px; }
+.chip { border-radius: var(--radius-md); background: transparent; color: var(--text-muted); }
+.chip:hover { background: var(--gray-100); color: var(--foreground); }
+.chip[aria-current="true"] { background: var(--foreground); color: var(--background); }
+
+.cat-head h2 { font-size: 26px; line-height: 32px; font-weight: 700; letter-spacing: -.025em; }
+.cat-head span { font: 500 13px/16px var(--font-sans); }
+.thumb { background-color: var(--gray-100); background-image: none; color: var(--gray-500); font-weight: 700; letter-spacing: -.04em; transition: background var(--duration-base) var(--ease); }
+.thumb:hover { background-color: var(--gray-200); }
+.vbadge, .tag-v { background: var(--background); color: var(--foreground); box-shadow: 0 1px 2px rgba(0,0,0,.08); border-radius: var(--radius-full); padding: 2px var(--s2) 2px 6px; }
+.media .icon-btn { box-shadow: 0 1px 3px rgba(0,0,0,.12); }
+.title { font-weight: 600; letter-spacing: -.01em; }
+.price { font-weight: 700; letter-spacing: -.01em; }
+.specs { border-top-color: var(--gray-200); }
+.gal-main, .gal-t { background-color: var(--gray-100); color: var(--gray-500); }
+.g0, .g1, .g2, .g3 { background-image: none; }
+.info h1 { font-size: clamp(26px, 3.4vw, 34px); line-height: 1.12; font-weight: 700; letter-spacing: -.03em; }
+.tiers { background: var(--gray-100); }
+.tier[aria-current="true"] { box-shadow: none; }
+.calc, .opt, .vchip, .stepper, .role button { border-color: var(--gray-300); }
+dialog { border: 0; border-radius: 16px; }
+dialog::backdrop { background: rgba(15,15,15,.45); }
+.mlabel, .mgroup { font: 600 11px/16px var(--font-sans); letter-spacing: .06em; }
+.count, .stats b, .nbadge { font-family: var(--font-sans); }
+
+footer { background: var(--background); padding-block: 48px; font-size: 13px; line-height: 20px; }
+footer .wrap { gap: var(--s3); max-width: min(var(--maxw), 100%); }
+footer b { font-weight: 700; }
+.foot-links { display: flex; flex-wrap: wrap; gap: var(--s2) var(--s4); margin-top: var(--s2); }
+.foot-links a { color: var(--foreground); text-decoration: none; font-weight: 500; }
+.foot-links a:hover { text-decoration: underline; }.search { flex: 1 1 360px; min-width: 200px; }
+@media (min-width: 1280px) and (max-width: 1599px) {
+  .brand span { display: none; }
+  .chipbtn span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .chipbtn { padding: 0 10px; }
+}
+.vbadge, .tag-v { font-size: 12px; font-weight: 500; letter-spacing: 0; }
 </style>
 
 <a class="skip" href="#results">Skip to listings</a>
@@ -473,6 +541,7 @@ body.is-loading footer { display: none; }
       <input id="q" type="search" placeholder="Search products, suppliers or domains" data-i18n-ph="Search products, suppliers or domains" autocomplete="off">
       <button class="search-btn" type="button" data-search aria-label="Search"><svg width="20" height="20" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="7" cy="7" r="5"/><path d="M11 11l3.5 3.5"/></svg></button>
     </div>
+    <nav class="toplinks" aria-label="Site"><a href="/directory" data-i18n="Directory">Directory</a><a href="/opportunities" data-i18n="Tenders">Tenders</a><a href="/portals" data-i18n="Portals">Portals</a></nav>
     <div class="actions">
       <button class="chipbtn" id="btn-dest" type="button" aria-haspopup="dialog" aria-expanded="false"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 5.5L8 2.5l5.5 3v5L8 13.5l-5.5-3z"/><path d="M2.5 5.5L8 8.5l5.5-3M8 8.5v5"/></svg><span id="dest-l">Ship to</span></button>
       <button class="chipbtn" id="btn-lang" type="button" aria-haspopup="dialog" aria-expanded="false" aria-label="Language"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="5.75"/><path d="M2.5 8h11M8 2.25c2 1.8 2 9.7 0 11.5M8 2.25c-2 1.8-2 9.7 0 11.5"/></svg><span id="lang-l">EN</span></button>
@@ -485,6 +554,7 @@ body.is-loading footer { display: none; }
 </header>
 
 <div id="list-view">
+<div class="toolbar" id="toolbar">
 <section class="filters" aria-label="Filters">
   <div class="quick" id="quick" role="group" aria-label="Quick filters">
     <button class="qbtn" id="open-filters" type="button" aria-haspopup="dialog"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M2.5 4.5h6M11.5 4.5h2M2.5 11.5h2M7.5 11.5h6"/><circle cx="10" cy="4.5" r="1.5"/><circle cx="6" cy="11.5" r="1.5"/></svg><span data-i18n="Filters">Filters</span><span class="nbadge" id="fcount" hidden></span></button>
@@ -509,6 +579,7 @@ body.is-loading footer { display: none; }
 <div class="catbar" id="catbar" role="navigation" aria-label="Categories">
   <div class="cats" id="cats"></div>
 </div>
+</div>
 
 <main class="wrap">
   <h1 class="sr">Military Yellow Book: the global directory of military suppliers</h1>
@@ -522,7 +593,7 @@ body.is-loading footer { display: none; }
     <div data-i18n-h="foot1"><b>Military Yellow Book</b> is a global directory of military suppliers: uniforms, footwear, field gear, rations, vehicle and aircraft parts, communications, medical supplies, marine equipment and logistics.</div>
     <div data-i18n="foot2">Complete firearms, ammunition, explosives and weapon systems are not listed. Weapon parts, aircraft parts and body-armor carriers are sold only by licensed dealers and need export licences and end-user certificates. Prices and lead times are set by each supplier; confirm terms in writing before you pay.</div>
     <div class="stats" id="stats"></div>
-    <div class="foot-links"><a href="/opportunities">Open tenders and awards</a> · <a href="/portals">Government procurement portals</a> · <a href="/terms">Terms</a> · <a href="/privacy">Privacy</a></div>
+    <div class="foot-links"><a href="/directory">Directory</a><a href="/opportunities">Open tenders and awards</a><a href="/portals">Government procurement portals</a><a href="/terms">Terms</a><a href="/privacy">Privacy</a></div>
   </div>
 </footer>
 
@@ -949,7 +1020,7 @@ body.is-loading footer { display: none; }
   function render() { document.body.classList.toggle("is-loading", !!loading); renderFilters(); renderChips(); renderSections(); measure(); spy(); }
 
   /* ---------- sticky offsets + scroll spy ---------- */
-  function stickH() { return $("nav").offsetHeight + ($("catbar").hidden ? 0 : $("catbar").offsetHeight); }
+  function stickH() { return $("nav").offsetHeight + $("toolbar").offsetHeight; }
   function measure() {
     var r = document.documentElement.style;
     r.setProperty("--nav-h", $("nav").offsetHeight + "px");
@@ -1163,6 +1234,9 @@ body.is-loading footer { display: none; }
   /* ---------- language ---------- */
   var LANGS = [["en", "English", "EN"], ["fr", "Français", "FR"], ["pt", "Português", "PT"], ["es", "Español", "ES"], ["sw", "Kiswahili", "SW"]];
   var ROWS = [
+    ["Directory", "Annuaire", "Diretório", "Directorio", "Saraka"],
+    ["Tenders", "Appels d’offres", "Licitações", "Licitaciones", "Zabuni"],
+    ["Portals", "Portails", "Portais", "Portales", "Tovuti"],
     ["The global directory of military suppliers", "L’annuaire mondial des fournisseurs militaires", "O diretório global de fornecedores militares", "El directorio global de proveedores militares", "Orodha ya kimataifa ya wasambazaji wa kijeshi"],
     ["Search products, suppliers or domains", "Produits, fournisseurs ou domaines", "Produtos, fornecedores ou domínios", "Productos, proveedores o dominios", "Bidhaa, wasambazaji au nyanja"],
     ["List your business", "Inscrire votre entreprise", "Cadastrar sua empresa", "Publica tu empresa", "Orodhesha biashara yako"],
