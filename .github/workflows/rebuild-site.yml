@@ -8,7 +8,7 @@ name: Rebuild site
 on:
   push:
     branches: [main]
-    paths: ['src/**', 'scripts/**', 'supabase/seed.json', 'supabase/unspsc.json', 'supabase/listing_unspsc.json', 'supabase/portals.json']
+    paths: ['src/**', 'scripts/**', 'supabase/seed.json', 'supabase/unspsc.json', 'supabase/listing_unspsc.json', 'supabase/portals.json', 'supabase/opportunities.json']
   schedule:
     - cron: '17 5 * * *'
   workflow_dispatch:

@@ -89,6 +89,20 @@ ul.portals .pm{display:flex;flex-wrap:wrap;gap:6px}
 ul.portals .pm span{border:1px solid var(--line);border-radius:9999px;padding:0 8px;font-size:12px}
 ul.portals .pm .warn{color:var(--accent-ink);background:var(--accent-subtle);border-color:transparent}
 ul.portals small{color:var(--muted);font-size:12px;line-height:1.4}
+span.hl{display:flex;gap:16px;white-space:nowrap}
+ul.opps{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+ul.opps li{border:1px solid var(--line);border-radius:8px;padding:12px 14px;min-width:0;display:grid;gap:4px}
+ul.opps .ot{font-weight:500;overflow-wrap:anywhere;color:var(--fg)}
+ul.opps .om{display:flex;flex-wrap:wrap;gap:4px 16px;color:var(--muted);font-size:13px}
+ul.opps .om b{color:var(--fg);font-weight:500}
+ul.opps .soon{color:var(--accent-ink);background:var(--accent-subtle);border-radius:9999px;padding:0 8px}
+ul.opps small{color:var(--muted);font-size:12px}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:8px}
+.tbl table{border-collapse:collapse;width:100%;font-size:14px}
+.tbl th,.tbl td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.tbl th{color:var(--muted);font-weight:500;white-space:nowrap}
+.tbl td.n{white-space:nowrap;font-variant-numeric:tabular-nums}
+ol.steps{margin:0;padding-left:22px}ol.steps li{margin:6px 0}
 .draft{border:1px dashed var(--line);border-radius:8px;padding:8px 12px;color:var(--muted);font-size:13px;margin:0 0 16px}
 .prose{max-width:68ch}.prose h2{margin-top:28px}.prose p,.prose li{margin:8px 0}
 @media (max-width:520px){dl.facts{grid-template-columns:1fr;gap:2px}dl.facts dd{margin-bottom:8px}dl.spec{grid-template-columns:1fr}dl.spec dt{border-bottom:0;padding-bottom:0}}
@@ -162,6 +176,25 @@ def load_portals():
     return json.load(open(os.path.join(ROOT, 'supabase', 'portals.json'), encoding='utf-8')), 'portals.json'
 
 
+OPP_COLS = 'id,kind,source_id,title,buyer,supplier,country,country_name,amount,currency,published_at,deadline,url,publisher,licence,refreshed_at'
+
+
+def load_opportunities():
+    """Published by procurement.publish_opportunities(): only operational, licence-cleared sources."""
+    if os.environ.get('PAGES_SOURCE') != 'seed':
+        url = SUPABASE_URL + '/rest/v1/myb_opportunities?select=' + OPP_COLS + '&limit=5000'
+        try:
+            req = urllib.request.Request(url, headers={'apikey': SUPABASE_KEY, 'Authorization': 'Bearer ' + SUPABASE_KEY})
+            rows = json.load(urllib.request.urlopen(req, timeout=30))
+            return rows, 'supabase'
+        except Exception as e:
+            if os.environ.get('PAGES_SOURCE') == 'live':
+                sys.exit('ERROR: could not read opportunities (%s)' % e)
+            print('WARNING: could not read opportunities (%s); using supabase/opportunities.json' % e, file=sys.stderr)
+    f = os.path.join(ROOT, 'supabase', 'opportunities.json')
+    return (json.load(open(f, encoding='utf-8')) if os.path.exists(f) else []), 'opportunities.json'
+
+
 def shape(r, cats, domains, branches, regions):
     """Mirror the app's P()/fromRow() so a listing reads the same on both pages."""
     moq = int(r['moq'] or 1)
@@ -215,10 +248,10 @@ def page(site, path, title, desc, body, crumbs, og_type='website', noindex=False
             '<meta name="theme-color" content="#f5b800">' + ('<meta name="robots" content="noindex">' if noindex else '') + '<link rel="icon" href="' + ICON + '">' + FONTS +
             '<style>' + CSS.strip() + '</style>' + jsonld(crumb_ld) + '</head><body>'
             '<header><div class="wrap bar"><a class="brand" href="/"><span class="mark" aria-hidden="true">YB</span>Military Yellow Book</a>'
-            '<span class="sp"></span><a href="/directory">All listings</a></div></header>'
+            '<span class="sp"></span><span class="hl"><a href="/opportunities">Tenders</a><a href="/directory">All listings</a></span></div></header>'
             '<main class="wrap">' + body + '</main>'
             '<footer><div class="wrap"><p><b>Military Yellow Book</b> is a global directory of military suppliers.</p><p>' + esc(FOOT) + '</p>'
-            '<p><a href="/portals">Government procurement portals</a> · <a href="/terms">Terms</a> · <a href="/privacy">Privacy</a></p></div></footer>'
+            '<p><a href="/opportunities">Open tenders and awards</a> · <a href="/portals">Government procurement portals</a> · <a href="/terms">Terms</a> · <a href="/privacy">Privacy</a></p></div></footer>'
             '</body></html>')
 
 
@@ -309,7 +342,7 @@ def portals_page(site, rows):
         '<a href="#' + (k or 'intl') + '">' + n + '</a>' for k, n in REGION_NAMES if any(r['region'] == k for r in rows)) + '</nav>'
     body = (crumb_html(crumbs) + '<h1>Government procurement portals</h1>'
             '<p class="sub">' + str(len(rows)) + ' places where governments and international bodies publish tenders, covering ' + str(countries) + ' countries and territories. '
-            'Register as a supplier there to bid on military and defence contracts.</p>'
+            'Register as a supplier there to bid on military and defence contracts. See <a href="/opportunities">open tenders and recent awards</a> taken from official publishers.</p>'
             '<p class="notice"><b>Check before you rely on a link.</b> This list is compiled from the sources named below and has not been verified link by link. '
             'Entries marked &ldquo;check address&rdquo; point at a general government or commercial site rather than a procurement system. '
             'The official portal is always the system of record for a government&rsquo;s tenders. Trading with some countries is restricted by sanctions and export controls: '
@@ -352,6 +385,99 @@ def portals_page(site, rows):
              '</ul>')
     return page(site, '/portals', 'Government procurement portals by country | Military Yellow Book',
                 trim(f'{len(rows)} government and international procurement portals in {countries} countries, with the product code systems they use. Where to register to sell to defence buyers.'),
+                body, crumbs)
+
+
+SOURCE_NAMES = {'uk_fts': ('UK Find a Tender', 'https://www.find-tender.service.gov.uk/'), 'uk_cf': ('UK Contracts Finder', 'https://www.contractsfinder.service.gov.uk/'),
+                'worldbank_procurement': ('World Bank procurement notices', 'https://projects.worldbank.org/en/projects-operations/procurement'),
+                'colombia_secop': ('Colombia SECOP II (datos.gov.co)', 'https://www.datos.gov.co/d/jbjy-vk9h'),
+                'ted': ('EU TED', 'https://ted.europa.eu/'), 'brazil_pncp': ('Brazil PNCP', 'https://pncp.gov.br/'), 'usaspending': ('USAspending.gov', 'https://www.usaspending.gov/')}
+
+
+def fmt_money(amount, cur):
+    if amount in (None, ''):
+        return None
+    a = float(amount)
+    txt = ('%.1fbn' % (a / 1e9)) if a >= 1e9 else ('%.1fm' % (a / 1e6)) if a >= 1e6 else ('{:,.0f}'.format(a))
+    return (cur or '') + ' ' + txt
+
+
+def fmt_date(ts):
+    import datetime as _d
+    if not ts:
+        return None
+    d = _d.datetime.fromisoformat(ts.replace('Z', '+00:00'))
+    return d.strftime('%-d %b %Y'), d
+
+
+def opportunities_page(site, rows, portals, now=None):
+    import datetime as _d
+    now = now or _d.datetime.now(_d.timezone.utc)
+    crumbs = [('Military Yellow Book', '/'), ('Open tenders and recent awards', None)]
+    portal_by_country = {}
+    for r in portals:
+        if r['scope'] == 'national' and r.get('url') and r['country'] not in portal_by_country:
+            portal_by_country[r['country']] = r
+    tenders = [r for r in rows if r['kind'] == 'open_tender']
+    awards = [r for r in rows if r['kind'] == 'award']
+    fresh = max((r['refreshed_at'] for r in rows), default=None)
+    srcs = sorted({r['source_id'] for r in rows})
+    body = (crumb_html(crumbs) + '<h1>Open tenders and recent awards</h1>'
+            '<p class="sub">Live government tenders you can still bid on, and who recently won contracts, taken directly from official publishers. '
+            'Every entry links to the original notice. Bid through the publisher, never through this site.</p>'
+            '<h2>From tender to contract</h2><ol class="steps">'
+            '<li><b>Pick a tender</b> below and read the full notice on the publisher&rsquo;s site: eligibility, lots and the exact deadline are only there.</li>'
+            '<li><b>Register as a supplier</b> on that country&rsquo;s procurement portal (linked on each tender, and all <a href="/portals">240 portals</a> are listed).</li>'
+            '<li><b>Classify what you sell</b>: portals ask for CPV or UNSPSC codes. Every <a href="/directory">listing here</a> already carries UNSPSC codes you can reuse.</li>'
+            '<li><b>Study the winners</b>: the awards table shows which buyers bought what, from whom and for how much, so you can price and partner.</li></ol>')
+    if fresh:
+        body += '<p class="lic">Updated ' + esc(fmt_date(fresh)[0]) + '. ' + str(len(tenders)) + ' open tenders and ' + str(len(awards)) + ' awards from ' + str(len(srcs)) + ' sources.</p>'
+    # open tenders by country, soonest deadline first
+    by_c = {}
+    for r in tenders:
+        by_c.setdefault(r.get('country_name') or r.get('country') or 'Country not stated by the publisher', []).append(r)
+    if by_c:
+        body += '<h2 id="tenders">Open tenders</h2><nav class="jump" aria-label="Countries">' + ''.join(
+            '<a href="#t-' + slugify(c) + '">' + esc(c) + ' (' + str(len(v)) + ')</a>' for c, v in sorted(by_c.items())) + '</nav>'
+        for c, v in sorted(by_c.items()):
+            v.sort(key=lambda r: (r['deadline'] is None, r['deadline'] or '', r['title'] or ''))
+            lis = ''
+            for r in v:
+                meta = []
+                if r.get('buyer'):
+                    meta.append('Buyer <b>' + esc(r['buyer']) + '</b>')
+                m = fmt_money(r.get('amount'), r.get('currency'))
+                if m:
+                    meta.append('Estimated value <b>' + esc(m) + '</b>')
+                if r.get('deadline'):
+                    txt, d = fmt_date(r['deadline'])
+                    days = (d - now).days
+                    meta.append('Closes <b>' + esc(txt) + '</b>' + (' <span class="soon">' + ('today' if days < 1 else 'in %d day%s' % (days, '' if days == 1 else 's')) + '</span>' if days < 8 else ''))
+                else:
+                    meta.append('Deadline: see notice')
+                portal = portal_by_country.get(c)
+                reg = (' · Register on <a href="' + esc(portal['url']) + '" rel="nofollow noopener noreferrer" target="_blank">' + esc(portal['name']) + '</a>') if portal else ''
+                name = SOURCE_NAMES.get(r['source_id'], (r.get('publisher') or r['source_id'], None))[0]
+                lis += ('<li><a class="ot" href="' + esc(r['url']) + '" rel="nofollow noopener noreferrer" target="_blank">' + esc(r['title']) + '</a>'
+                        '<span class="om">' + ''.join('<span>' + x + '</span>' for x in meta) + '</span>'
+                        '<small>Source: ' + esc(name) + (' · licence ' + esc(r['licence']) if r.get('licence') else '') + reg + '</small></li>')
+            body += '<h3 id="t-' + slugify(c) + '">' + esc(c) + '</h3><ul class="opps">' + lis + '</ul>'
+    else:
+        body += '<h2 id="tenders">Open tenders</h2><p>No open tenders from cleared sources right now. Check the <a href="/portals">procurement portals</a> directly.</p>'
+    if awards:
+        awards.sort(key=lambda r: r.get('published_at') or '', reverse=True)
+        trs = ''.join('<tr><td class="n">' + esc((fmt_date(r['published_at']) or ('',))[0]) + '</td><td>' + esc(r.get('country_name') or '') + '</td><td>' + esc(r.get('buyer') or '') +
+                      '</td><td><b>' + esc(r.get('supplier') or '') + '</b></td><td><a href="' + esc(r['url']) + '" rel="nofollow noopener noreferrer" target="_blank">' + esc((r.get('title') or '')[:120]) +
+                      '</a></td><td class="n">' + esc(fmt_money(r.get('amount'), r.get('currency')) or '') + '</td></tr>' for r in awards[:200])
+        body += ('<h2 id="awards">Recent awards: who is winning</h2><p>Contracts awarded in the last six months. Values are in the currency the publisher used; nothing is converted.</p>'
+                 '<div class="tbl"><table><thead><tr><th>Date</th><th>Country</th><th>Buyer</th><th>Supplier</th><th>Contract</th><th>Value</th></tr></thead><tbody>' + trs + '</tbody></table></div>')
+    body += ('<h2>Where this comes from</h2><p>Each source was fetched by a tested connector, checked record by record against the publisher, and has a licence that allows reuse. '
+             'Natural persons are never shown as suppliers.</p><ul class="plain">' +
+             ''.join('<li><a href="' + esc(u) + '" rel="noopener noreferrer" target="_blank">' + esc(n) + '</a></li>' for n, u in (SOURCE_NAMES[x] for x in srcs if x in SOURCE_NAMES)) +
+             '</ul><p class="notice">Coming next: EU TED, Brazil PNCP and USAspending already pass the record checks and will appear once their reuse licences are confirmed; '
+             'SAM.gov (US federal opportunities) and ChileCompra need API credentials. Always confirm sanctions and export-control rules before you bid.</p>')
+    return page(site, '/opportunities', 'Open government tenders and recent contract awards | Military Yellow Book',
+                trim('%d open government tenders and %d recent contract awards from official publishers, with deadlines, values, buyers, winners and where to register to bid.' % (len(tenders), len(awards))),
                 body, crumbs)
 
 
@@ -409,7 +535,7 @@ def not_found_page(site):
     crumbs = [('Military Yellow Book', '/')]
     body = ('<h1>Page not found</h1><p class="sub">That address does not match a page on the Military Yellow Book.</p>'
             '<div class="cta"><a class="btn primary" href="/">Search the directory</a><a class="btn" href="/directory">Browse every category</a>'
-            '<a class="btn" href="/portals">Government procurement portals</a></div>')
+            '<a class="btn" href="/opportunities">Open tenders</a><a class="btn" href="/portals">Government procurement portals</a></div>')
     return page(site, '/404', 'Page not found | Military Yellow Book', 'Page not found.', body, crumbs, noindex=True)
 
 
@@ -424,6 +550,7 @@ def build(site_url, out_dir=None):
         for r in rows:
             r.setdefault('unspsc', tags.get(r['slug'], []))
     portals, psource = load_portals()
+    opps, osource = load_opportunities()
     listings, seen = [], set()
     for r in rows:
         if not SLUG_OK.match(str(r.get('slug', ''))) or r['slug'] in seen:
@@ -446,16 +573,17 @@ def build(site_url, out_dir=None):
         open(os.path.join(out, 'c', slugify(c) + '.html'), 'w', encoding='utf-8').write(category_page(site, c, v))
     open(os.path.join(out, 'directory.html'), 'w', encoding='utf-8').write(directory_page(site, groups))
     open(os.path.join(out, 'portals.html'), 'w', encoding='utf-8').write(portals_page(site, portals))
+    open(os.path.join(out, 'opportunities.html'), 'w', encoding='utf-8').write(opportunities_page(site, opps, portals))
     open(os.path.join(out, 'terms.html'), 'w', encoding='utf-8').write(terms_page(site))
     open(os.path.join(out, 'privacy.html'), 'w', encoding='utf-8').write(privacy_page(site))
     open(os.path.join(out, '404.html'), 'w', encoding='utf-8').write(not_found_page(site))
 
-    urls = ['/', '/directory', '/portals', '/terms', '/privacy'] + ['/c/' + slugify(c) for c, _ in groups] + ['/l/' + b['slug'] for b in listings]
+    urls = ['/', '/directory', '/opportunities', '/portals', '/terms', '/privacy'] + ['/c/' + slugify(c) for c, _ in groups] + ['/l/' + b['slug'] for b in listings]
     open(os.path.join(out, 'sitemap.xml'), 'w', encoding='utf-8').write(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
         ''.join('<url><loc>' + esc(site + u) + '</loc></url>\n' for u in urls) + '</urlset>\n')
     open(os.path.join(out, 'robots.txt'), 'w', encoding='utf-8').write('User-agent: *\nAllow: /\n\nSitemap: ' + site + '/sitemap.xml\n')
-    print(f'pages: {len(listings)} listings + {len(groups)} categories + directory + portals ({len(portals)}) + terms + privacy + 404 + sitemap ({len(urls)} URLs), sources: {source}, {psource}')
+    print(f'pages: {len(listings)} listings + {len(groups)} categories + directory + portals ({len(portals)}) + opportunities ({len(opps)}, {osource}) + terms + privacy + 404 + sitemap ({len(urls)} URLs), sources: {source}, {psource}')
     return urls
 
 
