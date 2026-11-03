@@ -35,8 +35,8 @@ Checked with the publishable key and two real users over the REST API: anonymous
 
 - **Dashboard settings** (not changeable from code): add the live URL to Auth redirect URLs, configure custom SMTP, turn on CAPTCHA, set a password minimum of 8 or more, enable leaked-password protection (the advisor flags this).
 - **Email delivery** to ordinary inboxes is unverified because Supabase is not yet using Resend SMTP. Send a real test signup after setting it up.
-- **Crawlability**: listing pages are hash routes, so search engines index only the home page. Per-listing static pages (or prerendering) is the real fix.
+- **Crawlability**: fixed after the audit. Every listing and category now has a static page, there is a sitemap, and an Action keeps them current (see the README). Submit the sitemap to Google Search Console and Bing.
 - **Shared Supabase project**: sign-ups here also create a row in the other app's `profiles` table. Its advisor notes were left untouched: six `SECURITY DEFINER` functions callable by signed-in users (`delete_job`, `is_moderator`, `moderate_report`, `my_applied_job_ids`, `restore_job`, `withdraw_application`), two tables with RLS and no policy (`moderator_emails`, `rate_events`), plus performance notes on its `jobs` policies and unused indexes.
 - **Accepted**: reviewer `user_id` is public on `myb_reviews`.
-- **Process**: `site/` must be rebuilt and committed with any `src/` change. A GitHub Action could do that on push.
+- **Process**: `site/` is rebuilt and committed by the `rebuild-site` GitHub Action on source changes and daily.
 - **Quotes** are stored but not emailed to suppliers yet.

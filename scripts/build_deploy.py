@@ -32,15 +32,20 @@ head_pre = s[:st]
 mid = s[se + 8:sc]
 
 def esb(code, loader):
-    r = subprocess.run(['npx', '--yes', 'esbuild', '--minify', '--line-limit=700', '--loader=' + loader],
+    r = subprocess.run(['npx', '--yes', 'esbuild@0.28.2', '--minify', '--line-limit=700', '--loader=' + loader],
                        input=code, capture_output=True, text=True)
     if r.returncode:
         print(r.stderr); sys.exit(1)
     return r.stdout
 
+css += '\nfooter a { color: var(--foreground); text-decoration: underline; text-underline-offset: 2px; }\n'
 css_m = esb(css, 'css'); js_m = esb(js, 'js')
 mid = re.sub(r'\n\s+', '\n', mid)
 mid = re.sub(r'<!--.*?-->', '', mid, flags=re.S)
+# crawlable entry point into the static listing pages (the app itself renders listings with JS on hash routes)
+stats = '<div class="stats" id="stats"></div>'
+assert stats in mid
+mid = mid.replace(stats, stats + '<div><a href="/directory">Browse every listing by category</a></div>')
 
 title = re.search(r'<title>(.*?)</title>', head_pre).group(1)
 fonts = re.findall(r'<link[^>]+fonts[^>]*>', head_pre)
@@ -104,3 +109,8 @@ os.makedirs('site', exist_ok=True)
 open('site/index.html', 'w', encoding='utf-8').write(html)
 open('site/vercel.json', 'w', encoding='utf-8').write(json.dumps(vercel, indent=2) + '\n')
 print('site/index.html', len(html.encode('utf-8')), 'bytes; style blocks:', html.count('<style>'), '; inline scripts hashed: 2')
+
+# static pages + sitemap + robots.txt for search engines
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__))))
+import build_pages
+build_pages.build(SITE_URL)

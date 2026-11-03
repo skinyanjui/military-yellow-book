@@ -1,0 +1,54 @@
+name: Rebuild site
+
+# Keeps site/ (what Vercel serves) in step with src/ and the live listings:
+#  - on a push that changes the source or build scripts,
+#  - every day, so newly approved suppliers get their own crawlable page,
+#  - on demand from the Actions tab.
+# The build is deterministic, so a run with nothing new changes nothing and commits nothing.
+on:
+  push:
+    branches: [main]
+    paths: ['src/**', 'scripts/**', 'supabase/seed.json']
+  schedule:
+    - cron: '17 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rebuild-site
+  cancel-in-progress: false
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Build
+        env:
+          PAGES_SOURCE: live        # fail rather than publish pages from stale seed data
+        run: python3 scripts/build_deploy.py
+      - name: Sanity check
+        run: |
+          test -s site/index.html
+          test "$(ls site/l | wc -l)" -ge 1
+          grep -q "Content-Security-Policy" site/vercel.json
+      - name: Commit if changed
+        run: |
+          if [ -n "$(git status --porcelain site)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add site
+            git commit -m "Rebuild site/ from src and live listings"
+            git push
+          else
+            echo "site/ is already up to date"
+          fi

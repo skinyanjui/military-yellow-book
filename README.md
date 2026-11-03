@@ -14,7 +14,9 @@ A single-file vanilla-JS site, backed by Supabase and hosted on Vercel.
 | --- | --- |
 | `src/index.html` | Full source: markup, CSS, JS and the embedded sample data. Also works standalone with no backend. |
 | `scripts/build_deploy.py` | Strips the embedded data, minifies CSS/JS with esbuild, injects the Supabase config, adds SEO/Open Graph tags and writes `site/index.html` and `site/vercel.json` (security headers, CSP hashes). |
-| `site/` | The deployable bundle: `index.html`, `vercel.json`, `og.png` (share image), `robots.txt` and `vendor/` (self-hosted supabase-js, so no third-party script runs). This is what Vercel serves. |
+| `scripts/build_pages.py` | Called by the build. Writes a crawlable static page for every live listing (`/l/<slug>`), every category (`/c/<category>`), an all-listings index (`/directory`), `sitemap.xml` and `robots.txt`. Reads listings from Supabase, with `supabase/seed.json` as the fallback. |
+| `.github/workflows/rebuild-site.yml` | Rebuilds and commits `site/` when `src/` or the scripts change, and once a day so newly approved suppliers get a page. |
+| `site/` | The deployable bundle: `index.html`, `vercel.json`, `og.png` (share image), `robots.txt`, `sitemap.xml`, the static pages in `l/` and `c/`, `directory.html`, and `vendor/` (self-hosted supabase-js, so no third-party script runs). This is what Vercel serves. |
 | `supabase/migrations/` | Schema for the `myb_*` tables, RLS policies, grants, triggers, RPCs and the audit follow-ups. |
 | `supabase/seed.json` | The 103 sample listings loaded into `myb_listings`. |
 | `docs/AUDIT.md` | Findings and status of the November 2026 site and flow audit. |
@@ -28,7 +30,11 @@ python3 scripts/build_deploy.py      # needs Python 3 and npx (esbuild); rewrite
 SITE_URL=https://your-domain.example python3 scripts/build_deploy.py   # when the canonical URL changes
 ```
 
-The page ships with a strict Content-Security-Policy that allows only the two inline scripts by hash. Any change to the JS changes those hashes, so always rebuild with the script (it rewrites `site/vercel.json` too) and commit both files together.
+The page ships with a strict Content-Security-Policy that allows only the two inline scripts by hash. Any change to the JS changes those hashes, so always rebuild with the script (it rewrites `site/vercel.json` too) and commit both files together. The GitHub Action does this for you if you only push `src/` changes; the build is deterministic (esbuild is pinned), so a run with nothing new commits nothing.
+
+`PAGES_SOURCE` picks where the static pages get their listings: unset tries Supabase and falls back to `supabase/seed.json` with a warning; `live` fails the build if Supabase can't be read (the Action uses this, so an outage never replaces real pages with stale ones); `seed` uses the seed file only.
+
+GitHub pauses scheduled workflows after 60 days without repository activity; re-enable it from the Actions tab if that happens.
 
 The Vercel project is connected to this repo with Root Directory `site`, so every push to `main` deploys to production automatically and other branches get preview URLs. Commit the rebuilt `site/` along with any change to `src/`, because Vercel serves `site/` as-is and runs no build.
 
@@ -59,5 +65,5 @@ These are dashboard settings that cannot be changed from code:
 - Configure custom SMTP (for example Resend) and send a real test signup. Supabase's built-in sender is heavily rate-limited and only delivers to team addresses.
 - Turn on CAPTCHA for sign-up, raise the minimum password length to 8 or more, and enable leaked-password protection.
 - Quote requests are saved but not yet emailed to suppliers.
-- Listings open on hash routes (`#biz-<slug>`), which search engines do not index. Per-listing static pages would fix that.
+- After the first deploy with the sitemap, submit `https://military-yellow-book.vercel.app/sitemap.xml` in Google Search Console and Bing Webmaster Tools. Listings carry a "Sample listing" label; indexing invented suppliers is fine for a demo, but remove or noindex the sample pages before real suppliers go live if you do not want them in search results.
 - This project shares a Supabase project with another app (every sign-up here also creates a `profiles` row there). Moving the Yellow Book to its own project is the clean long-term fix.

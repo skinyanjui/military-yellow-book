@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://military-yellow-book.vercel.app/sitemap.xml
