@@ -1,0 +1,33 @@
+name: ingest-procurement
+# Daily incremental ingestion from the keyless connectors. Disabled until the DATABASE_URL secret exists:
+# Supabase dashboard > Project settings > Database > Connection string (session pooler), saved as a repository secret.
+on:
+  schedule:
+    - cron: '23 3 * * *'      # before publish_opportunities (04:50 UTC) and the site rebuild (05:17 UTC)
+  workflow_dispatch:
+    inputs:
+      sources: { description: 'space-separated source ids (blank = all keyless)', required: false, default: '' }
+permissions:
+  contents: read
+concurrency: { group: ingest-procurement, cancel-in-progress: false }
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    defaults: { run: { working-directory: procurement } }
+    env: { DATABASE_URL: '${{ secrets.DATABASE_URL }}' }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install -r requirements.txt
+      - run: python -m pytest tests -q
+      - name: Skip when no database secret is configured
+        if: env.DATABASE_URL == ''
+        run: echo 'DATABASE_URL secret not set; nothing ingested' 
+      - if: env.DATABASE_URL != ''
+        run: python -m ingest.sink $SOURCES
+        env:
+          SOURCES: ${{ github.event.inputs.sources }}
+          INGEST_LIMIT: '500'
+          INGEST_DAYS: '3'
