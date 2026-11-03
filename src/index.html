@@ -415,6 +415,11 @@ form { display: grid; gap: var(--s4); padding: var(--s3) var(--s6) var(--s6); }
 .field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 3px var(--blue-subtle); }
 .field [aria-invalid="true"] { border-color: var(--red); }
 .err { color: var(--red); font-size: 12px; line-height: 16px; }
+.form-err { font-size: 13px; line-height: 18px; }
+.skip { position: absolute; left: -9999px; top: 8px; z-index: 100; padding: 8px 14px; border-radius: var(--radius-md); background: var(--foreground); color: var(--background); font-weight: 500; }
+.skip:focus { left: max(16px, env(safe-area-inset-left, 0px)); }
+.noscript { margin: 0; padding: 24px 16px; text-align: center; color: var(--text-muted); }
+body.is-loading footer { display: none; }
 .dlg-foot { display: flex; justify-content: flex-end; gap: var(--s2); }
 .done { display: grid; gap: var(--s4); padding: var(--s3) var(--s6) var(--s6); }
 .done textarea { width: 100%; height: 192px; padding: var(--s3); border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--background-subtle); font: 400 12px/16px var(--font-mono); resize: none; }
@@ -440,7 +445,9 @@ form { display: grid; gap: var(--s4); padding: var(--s3) var(--s6) var(--s6); }
 .rr-form .field textarea { height: 112px; }
 </style>
 
-<nav class="nav" id="nav" aria-label="Site">
+<a class="skip" href="#results">Skip to listings</a>
+<noscript><p class="noscript">Military Yellow Book needs JavaScript to load the supplier directory.</p></noscript>
+<header class="nav" id="nav">
   <div class="wrap nav-in">
     <div class="brand">
       <div class="mark" aria-hidden="true">YB</div>
@@ -460,7 +467,7 @@ form { display: grid; gap: var(--s4); padding: var(--s3) var(--s6) var(--s6); }
       <button class="navicon" id="btn-menu" type="button" aria-haspopup="dialog" aria-expanded="false" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 4.5h11M2.5 8h11M2.5 11.5h11"/></svg></button>
     </div>
   </div>
-</nav>
+</header>
 
 <div id="list-view">
 <section class="filters" aria-label="Filters">
@@ -484,11 +491,12 @@ form { display: grid; gap: var(--s4); padding: var(--s3) var(--s6) var(--s6); }
   </div>
 </section>
 
-<div class="catbar" id="catbar" role="navigation" aria-label="Categories" hidden>
+<div class="catbar" id="catbar" role="navigation" aria-label="Categories">
   <div class="cats" id="cats"></div>
 </div>
 
 <main class="wrap">
+  <h1 class="sr">Military Yellow Book: the global directory of military suppliers</h1>
   <div id="results" aria-live="polite"></div>
 </main>
 </div>
@@ -502,7 +510,7 @@ form { display: grid; gap: var(--s4); padding: var(--s3) var(--s6) var(--s6); }
   </div>
 </footer>
 
-<div class="bar" id="bar"></div>
+<div class="bar" id="bar" role="region" aria-label="Quick actions"></div>
 <div class="toast" id="toast" role="status"></div>
 <div class="pop" id="pop" role="dialog" aria-label="Menu" hidden></div>
 <dialog id="dlg" aria-labelledby="dlg-title"><div id="dlg-body"></div></dialog>
@@ -663,6 +671,8 @@ form { display: grid; gap: var(--s4); padding: var(--s3) var(--s6) var(--s6); }
   };
 
   var $ = function (id) { return document.getElementById(id); };
+  var rt = function (n) { return Number(n).toFixed(1); };
+  var rw = function (n) { return n === 1 && lang === "en" ? "review" : tr("reviews"); };
   var esc = function (s) { return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); };
   var slug = function (t) { return t.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""); };
   var DEF = { q: "", region: "", country: "", domain: "", branch: "", cat: "", price: "", moq: "", lead: 0, years: 0, access: "", custom: false, verified: false, minRating: 0 };
@@ -691,7 +701,7 @@ form { display: grid; gap: var(--s4); padding: var(--s3) var(--s6) var(--s6); }
       '<button class="icon-btn" type="button" data-quote="' + key + '" aria-label="Request a quote for ' + esc(b.name) + '" title="Request a quote">' + QUOTE + '</button></div>' +
       '<a class="card-main" href="' + href + '">' +
       '<span class="title" title="' + esc(b.name) + '">' + esc(b.name) + '</span>' +
-      '<span class="rate">' + (b.reviews ? Stars(b.rating) + '<b>' + b.rating + '</b><span class="rc">(' + b.reviews + ')</span>' : '<b>New</b>') + '</span>' +
+      '<span class="rate">' + (b.reviews ? Stars(b.rating) + '<b>' + rt(b.rating) + '</b><span class="rc">(' + b.reviews + ')</span>' : '<b>New</b>') + '</span>' +
       '<span class="price" title="' + esc(b.price) + '">' + esc(b.price) + '</span>' +
       '<span class="specs">' +
       '<span class="k">' + esc(tr("Min. order")) + '</span><span class="v" title="' + esc(b.moq) + '">' + esc(b.moq) + '</span>' +
@@ -762,7 +772,7 @@ form { display: grid; gap: var(--s4); padding: var(--s3) var(--s6) var(--s6); }
     var d = b.reviews ? dist(b.rating) : [];
     var restricted = b.licensed || b.cat === CATS[8] || b.cat === CATS[9];
     var pack = (b.specs.filter(function (s) { return /^Pack/i.test(s[0]); })[0] || [0, tr("Agreed in the quote")])[1];
-    var ratings = !b.reviews ? '<p class="fine">No sample ratings for this listing.</p>' : '<div class="rev"><div><div class="rev-sum"><span class="big">' + b.rating + '</span><div>' + Stars(b.rating) + '<div class="muted">' + b.reviews + ' ' + esc(tr("reviews")) + '</div></div></div></div>' +
+    var ratings = !b.reviews ? '<p class="fine">No sample ratings for this listing.</p>' : b.real ? '<div class="rev"><div><div class="rev-sum"><span class="big">' + rt(b.rating) + '</span><div>' + Stars(b.rating) + '<div class="muted">' + b.reviews + ' ' + esc(rw(b.reviews)) + '</div></div></div></div></div><p class="fine">From buyer reviews posted on this directory.</p>' : '<div class="rev"><div><div class="rev-sum"><span class="big">' + rt(b.rating) + '</span><div>' + Stars(b.rating) + '<div class="muted">' + b.reviews + ' ' + esc(rw(b.reviews)) + '</div></div></div></div>' +
       '<div class="bars">' + d.map(function (p, i) { return '<div class="bar-r"><span>' + (5 - i) + '★</span><i><u style="width:' + (p * 100).toFixed(1) + '%"></u></i><span>' + Math.round(p * 100) + '%</span></div>'; }).join("") + '</div></div>' +
       '<p class="fine">' + esc(tr("Sample rating breakdown. Written reviews appear here once buyers post them.")) + '</p>';
     return '<a class="back" href="#">' + ARROW + esc(tr("All listings")) + '</a>' +
@@ -774,7 +784,7 @@ form { display: grid; gap: var(--s4); padding: var(--s3) var(--s6) var(--s6); }
       '<div class="gal-ts" role="group" aria-label="Product views">' + GALS.map(function (g, i) { return '<button class="gal-t g' + i + '" type="button" data-gal="' + i + '" aria-pressed="' + (i === 0) + '" aria-label="' + esc(tr(g)) + '">' + ini + '</button>'; }).join("") + '</div>' +
       '<p class="gal-note">' + esc(tr("Placeholder views. Suppliers add real photos when they join.")) + '</p></div>' +
       '<div class="info"><h1>' + esc(b.name) + '</h1>' +
-      '<div class="rowline"><span class="rate">' + (b.reviews ? Stars(b.rating) + '<b>' + b.rating + '</b><span>(' + b.reviews + ' ' + esc(tr("reviews")) + ')</span>' : '<b>New</b>') + '</span>' + verified + '<span class="muted">' + b.years + ' ' + esc(tr("yrs")) + '</span></div>' +
+      '<div class="rowline"><span class="rate">' + (b.reviews ? Stars(b.rating) + '<b>' + rt(b.rating) + '</b><span>(' + b.reviews + ' ' + esc(rw(b.reviews)) + ')</span>' : '<b>New</b>') + '</span>' + verified + '<span class="muted">' + b.years + ' ' + esc(tr("yrs")) + '</span></div>' +
       '<div class="tools"><button class="qbtn" type="button" data-save="' + key + '" aria-pressed="' + (favs().indexOf(b.name + b.supplier) > -1) + '">' + HEART + '<span>' + esc(tr(favs().indexOf(b.name + b.supplier) > -1 ? "Saved" : "Save")) + '</span></button><button class="qbtn" type="button" data-share>' + SHARE + '<span>' + esc(tr("Share")) + '</span></button></div>' +
       '<div class="tiers" aria-label="' + esc(tr("Price by quantity")) + '">' + b.tiers.map(function (t, i) { return '<div class="tier" data-ti="' + i + '"><span class="q">' + esc(t[0]) + '</span><span class="a">' + esc(t[1]) + '</span></div>'; }).join("") + '</div>' +
       variants + calc +
@@ -842,7 +852,7 @@ form { display: grid; gap: var(--s4); padding: var(--s3) var(--s6) var(--s6); }
     var used = Array.from(new Set(DATA.map(function (d) { return d.country; }))).sort();
     $("verified").innerHTML = CHECK + ' ' + esc(tr("Verified suppliers"));
     var sup = new Set(DATA.map(function (d) { return d.supplier; }));
-    $("stats").innerHTML = '<span><b>' + DATA.length + '</b>products and services</span><span><b>' + sup.size + '</b>suppliers</span><span><b>' + used.length + '</b>countries</span>';
+    $("stats").innerHTML = !DATA.length ? "" : '<span><b>' + DATA.length + '</b>products and services</span><span><b>' + sup.size + '</b>suppliers</span><span><b>' + used.length + '</b>countries</span>';
   }
   var PRICES = { u25: [0, 25], u100: [25, 100], u500: [100, 500], o500: [500, 1e12] };
   function nT(s, n) { return tr(s).replace("{n}", n); }
@@ -890,11 +900,16 @@ form { display: grid; gap: var(--s4); padding: var(--s3) var(--s6) var(--s6); }
   }
   function renderChips() {
     var list = loading ? [] : filtered();
+    if (loading) {
+      $("catbar").hidden = false;
+      $("cats").innerHTML = [104, 128, 96, 120, 112, 100, 126, 108].map(function (w) { return '<span class="sk" aria-hidden="true" style="flex:none;height:32px;width:' + w + 'px;border-radius:var(--radius-lg)"></span>'; }).join("");
+      lastActive = ""; return;
+    }
     $("catbar").hidden = !list.length;
     $("cats").innerHTML = byCat(list).map(function (g) { return Chip(g.cat); }).join("");
     lastActive = "";
   }
-  function render() { renderFilters(); renderChips(); renderSections(); measure(); spy(); }
+  function render() { document.body.classList.toggle("is-loading", !!loading); renderFilters(); renderChips(); renderSections(); measure(); spy(); }
 
   /* ---------- sticky offsets + scroll spy ---------- */
   function stickH() { return $("nav").offsetHeight + ($("catbar").hidden ? 0 : $("catbar").offsetHeight); }
@@ -935,7 +950,7 @@ form { display: grid; gap: var(--s4); padding: var(--s3) var(--s6) var(--s6); }
 
   /* ---------- toast + copy ---------- */
   var tt;
-  function toast(msg) { var t = $("toast"); t.textContent = msg; t.classList.add("on"); clearTimeout(tt); tt = setTimeout(function () { t.classList.remove("on"); }, 2400); }
+  function toast(msg) { var t = $("toast"), host = dlg && dlg.open ? dlg : document.body; if (t.parentNode !== host) host.appendChild(t); t.textContent = msg; t.classList.add("on"); clearTimeout(tt); tt = setTimeout(function () { t.classList.remove("on"); }, 2400); }
   function copy(text, ok) {
     var fail = function () { toast("Copy is blocked here. Select the text and copy it."); };
     try { navigator.clipboard.writeText(text).then(function () { toast(ok); }, fail); } catch (e) { fail(); }
@@ -943,6 +958,7 @@ form { display: grid; gap: var(--s4); padding: var(--s3) var(--s6) var(--s6); }
 
   /* ---------- dialogs ---------- */
   var dlg = $("dlg");
+  dlg.addEventListener("close", function () { var t = $("toast"); if (t.parentNode !== document.body) document.body.appendChild(t); });
   function Field(id, label, extra, control) { return '<div class="field"><label for="' + id + '">' + label + (extra ? ' <small>' + extra + '</small>' : '') + '</label>' + control + '<div class="err" id="' + id + '-err" hidden></div></div>'; }
   function Head(title, sub) { return '<div class="dlg-head"><div><h2 id="dlg-title">' + title + '</h2><p>' + sub + '</p></div><button class="icon-btn" type="button" data-close aria-label="Close">' + X + '</button></div>'; }
   function CountryList() { return '<datalist id="countries">' + COUNTRIES.map(function (c) { return '<option value="' + esc(c) + '">'; }).join("") + '</datalist>'; }
@@ -1359,11 +1375,21 @@ form { display: grid; gap: var(--s4); padding: var(--s3) var(--s6) var(--s6); }
   }
   /* ---------- backend: Supabase (inert unless window.MYB_BACKEND is set and supabase-js has loaded) ---------- */
   function bslug(b) { return b.slug || slug(b.supplier); }
-  function dbmsg(err) { return err && err.hint ? err.hint : "Could not save that. Check the fields and try again."; }
+  function netErr(err) { return !!err && (err.name === "AuthRetryableFetchError" || err.status === 0 || (!err.code && /fetch|network|load failed/i.test(err.message || ""))); }
+  function dbmsg(err) { if (err && err.code === "P0001" && err.hint) return err.hint; if (netErr(err)) return "Could not reach the server. Check your connection and try again."; return "Could not save that. Check the fields and try again."; }
   function expired(err) { return err && (err.code === "PGRST301" || err.code === "42501" || /jwt/i.test(err.message || "")); }
   function userToSession(u) { if (!u) return null; var m = u.user_metadata || {}; return { id: u.id, name: m.name || nameFrom(u.email || ""), email: u.email || "", role: m.role || "buyer" }; }
   function lock(btn, on) { if (btn) btn.disabled = on; }
   function submitBtn() { return $("f") && $("f").querySelector('button[type="submit"]'); }
+  function formErr(msg) {
+    var f = $("f"); if (!f) return; var e = $("f-err");
+    if (!e) {
+      e = document.createElement("div"); e.className = "err form-err"; e.id = "f-err"; e.setAttribute("role", "alert");
+      var ref = submitBtn(); while (ref && ref.parentNode !== f) ref = ref.parentNode;
+      if (ref) f.insertBefore(e, ref); else f.appendChild(e);
+    }
+    e.textContent = msg || ""; e.hidden = !msg;
+  }
   function Notice(title, sub) { show(Head(title, sub) + '<div class="done"><div class="dlg-foot"><button class="btn btn-primary btn-lg" type="button" data-close>Done</button></div></div>'); }
   function finishAuth() { var p = pending; pending = null; dlg.close(); if (p) setTimeout(p, 200); }
 
@@ -1371,7 +1397,7 @@ form { display: grid; gap: var(--s4); padding: var(--s3) var(--s6) var(--s6); }
     var btn = submitBtn(); lock(btn, true);
     sb.auth.signInWithPassword({ email: v("a-email"), password: $("a-pw").value }).then(function (r) {
       lock(btn, false);
-      if (r.error) { setErr("a-pw", /not confirmed/i.test(r.error.message) ? "Confirm your email first: open the link we sent you." : "That email and password do not match."); return; }
+      if (r.error) { var sm = r.error.message || ""; setErr("a-pw", netErr(r.error) ? "Could not reach the server. Try again." : /not confirmed/i.test(sm) ? "Confirm your email first: open the link we sent you." : r.error.status === 429 || /rate|too many/i.test(sm) ? "Too many attempts. Wait a few minutes and try again." : "That email and password do not match."); return; }
       setSession(userToSession(r.data.user)); toast(tr("Sign in") + " ✓"); finishAuth();
     }, function () { lock(btn, false); setErr("a-pw", "Could not reach the server. Try again."); });
   }
@@ -1379,7 +1405,7 @@ form { display: grid; gap: var(--s4); padding: var(--s3) var(--s6) var(--s6); }
     var btn = submitBtn(), email = v("a-email"); lock(btn, true);
     sb.auth.signUp({ email: email, password: $("a-pw2").value, options: { data: { name: v("a-name"), country: v("a-country"), role: roleSel }, emailRedirectTo: location.origin + "/" } }).then(function (r) {
       lock(btn, false);
-      if (r.error) { setErr("a-email", /already|registered/i.test(r.error.message) ? "That email already has an account. Sign in instead." : /rate|limit/i.test(r.error.message) ? "Too many attempts. Wait a few minutes and try again." : "Could not create the account. Check the details and try again."); return; }
+      if (r.error) { setErr("a-email", netErr(r.error) ? "Could not reach the server. Try again." : /already|registered/i.test(r.error.message) ? "That email already has an account. Sign in instead." : /rate|limit/i.test(r.error.message) ? "Too many attempts. Wait a few minutes and try again." : "Could not create the account. Check the details and try again."); return; }
       if (r.data.session) { setSession(userToSession(r.data.user)); toast(tr("Create account") + " ✓"); return finishAuth(); }
       pending = null;
       Notice("Check your email", "We sent a confirmation link to " + esc(email) + ". Open it, then sign in.");
@@ -1423,13 +1449,16 @@ form { display: grid; gap: var(--s4); padding: var(--s3) var(--s6) var(--s6); }
     var b = P(r.name, r.category, r.supplier, r.city, r.country, r.region, r.unit, Number(r.price), r.moq, r.lead || "", r.certs || [], r.ships, r.verified, r.years, r.descr, r.specs || "", r.contact, r.flat || undefined);
     b.specs = b.specs.map(function (s) { return [s[0], s.slice(1).join(":")]; }).filter(function (s) { return s[0] && s[1]; });
     b.slug = r.slug; b.sample = !!r.is_sample; b.rating = Number(r.sample_rating) || 0; b.reviews = r.sample_reviews || 0;
+    b.sr = b.rating; b.sc = b.reviews; b.real = r.review_count > 0;
+    if (b.real) { b.rating = Math.round(Number(r.rating_avg) * 10) / 10; b.reviews = r.review_count; }
     b.domains = r.domains || []; b.branches = r.branches || [];
     if (!/\d/.test(r.lead || "")) b.leadD = 999;
     return b;
   }
+  var LCOLS = "slug,name,category,supplier,city,country,region,unit,price,moq,lead,certs,ships,verified,years,descr,specs,contact,flat,domains,branches,sample_rating,sample_reviews,review_count,rating_avg,is_sample,status,position,created_at";
   function loadListings() {
     loading = true; render();
-    sb.from("myb_listings").select("*").eq("status", "live").order("position", { ascending: true, nullsFirst: false }).order("created_at", { ascending: true }).limit(2000).then(function (r) {
+    sb.from("myb_listings").select(LCOLS).eq("status", "live").order("position", { ascending: true, nullsFirst: false }).order("created_at", { ascending: true }).limit(2000).then(function (r) {
       if (!r.error && r.data && r.data.length) { DATA.length = 0; r.data.forEach(function (x) { DATA.push(fromRow(x)); }); syncFavs(); }
       loading = false; render(); route();
     }, function () { loading = false; render(); });
@@ -1440,19 +1469,19 @@ form { display: grid; gap: var(--s4); padding: var(--s3) var(--s6) var(--s6); }
 
   function finishRFQ(item, text) {
     if (!LIVE) return showDone("Your request is ready to send", "Copy it and send it to the supplier. Controlled goods need an export licence and end-user certificate before shipping.", text);
-    var btn = submitBtn(); lock(btn, true);
+    var btn = submitBtn(); lock(btn, true); formErr("");
     sb.from("myb_quote_requests").insert({ listing_slug: item ? bslug(item) : null, product: v("r-prod"), quantity: v("r-qty"), target_price: v("r-price") || null, ship_to: v("r-ship"), buyer_name: v("r-name"), buyer_contact: v("r-contact"), notes: v("r-notes") || null }).then(function (r) {
-      if (r.error) { lock(btn, false); return toast(expired(r.error) ? "Your session expired. Sign in again." : dbmsg(r.error)); }
+      if (r.error) { lock(btn, false); return formErr(expired(r.error) ? "Your session expired. Sign in again." : dbmsg(r.error)); }
       showDone("Request saved", "It is saved to your account. Copy it to send straight to the supplier too. Controlled goods need an export licence and end-user certificate before shipping.", text);
-    }, function () { lock(btn, false); toast("Could not reach the server. Try again."); });
+    }, function () { lock(btn, false); formErr("Could not reach the server. Try again."); });
   }
   function finishSupplier(text) {
     if (!LIVE) return showDone("Your listing is ready to send", "Copy it and send it to the directory team. We check each business before it is marked Verified.", text);
-    var btn = submitBtn(); lock(btn, true);
+    var btn = submitBtn(); lock(btn, true); formErr("");
     sb.from("myb_submissions").insert({ business_name: v("s-name"), category: v("s-cat"), country: v("s-country"), city: v("s-city"), min_order: v("s-moq") || null, offers: v("s-prod"), phone: v("s-phone") || null, email: v("s-email") || null, website: v("s-web") || null }).then(function (r) {
-      if (r.error) { lock(btn, false); return toast(expired(r.error) ? "Your session expired. Sign in again." : dbmsg(r.error)); }
+      if (r.error) { lock(btn, false); return formErr(expired(r.error) ? "Your session expired. Sign in again." : dbmsg(r.error)); }
       Notice("Submitted for review", "Thanks. We check each business before it goes live and is marked Verified.");
-    }, function () { lock(btn, false); toast("Could not reach the server. Try again."); });
+    }, function () { lock(btn, false); formErr("Could not reach the server. Try again."); });
   }
 
   var rate = 0;
@@ -1481,6 +1510,19 @@ form { display: grid; gap: var(--s4); padding: var(--s3) var(--s6) var(--s6); }
       : '<button class="btn btn-secondary" type="button" data-rsignin style="justify-self:start">Sign in to write a review</button>';
     el.innerHTML = head + list + form;
   }
+  function refreshRating(b, done) {
+    sb.from("myb_listings").select("review_count,rating_avg").eq("slug", bslug(b)).maybeSingle().then(function (r) {
+      if (!r.error && r.data) {
+        b.real = r.data.review_count > 0;
+        if (b.real) { b.rating = Math.round(Number(r.data.rating_avg) * 10) / 10; b.reviews = r.data.review_count; } else { b.rating = b.sr || 0; b.reviews = b.sc || 0; }
+      }
+      done();
+    }, done);
+  }
+  function repaintBiz(b) {
+    if (curBiz === b && view === "biz") { var y = window.scrollY; $("biz-view").innerHTML = Biz(b); galI = 0; updateCalc(); loadReviews(b); window.scrollTo(0, y); }
+    render();
+  }
   document.addEventListener("submit", function (e) {
     if (e.target.id !== "rev-form") return;
     e.preventDefault();
@@ -1492,7 +1534,7 @@ form { display: grid; gap: var(--s4); padding: var(--s3) var(--s6) var(--s6); }
     sb.from("myb_reviews").insert({ listing_slug: bslug(b), rating: rate, body: v("rv-body") }).then(function (r) {
       lock(btn, false);
       if (r.error) return toast(r.error.code === "23505" ? "You have already reviewed this supplier." : expired(r.error) ? "Your session expired. Sign in again." : dbmsg(r.error));
-      toast("Review posted ✓"); loadReviews(b);
+      toast("Review posted ✓"); refreshRating(b, function () { repaintBiz(b); });
     }, function () { lock(btn, false); toast("Could not reach the server. Try again."); });
   });
   function startBackend() {
@@ -1630,12 +1672,21 @@ form { display: grid; gap: var(--s4); padding: var(--s3) var(--s6) var(--s6); }
   function route() {
     var h = location.hash.slice(1), b = null;
     if (h.indexOf("cat-") === 0) { showList(); var cs = $(h); if (cs) cs.scrollIntoView(); return; }
-    if (h.indexOf("biz-") === 0) b = DATA.filter(function (x) { return bslug(x) === h.slice(4); })[0];
+    if (h.indexOf("biz-") === 0) {
+      b = DATA.filter(function (x) { return bslug(x) === h.slice(4); })[0];
+      if (!b && DATA.length && !loading) { toast("That listing is not available any more."); try { history.replaceState(null, "", location.pathname + location.search); } catch (e) {} }
+    }
     if (b) showBiz(b); else showList();
   }
 
   /* ---------- events ---------- */
   var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var skipLink = document.querySelector(".skip");
+  if (skipLink) skipLink.addEventListener("click", function (e) {
+    e.preventDefault();
+    var t = view === "biz" ? document.querySelector("#biz-view h1") : document.querySelector(".card-main");
+    if (t) { if (!t.getAttribute("href")) t.setAttribute("tabindex", "-1"); t.focus(); }
+  });
   document.addEventListener("click", function (e) {
     var t = e.target.closest("button, .thumb"); if (!t) return;
     if (t.closest("#pop") && (t.hasAttribute("data-open-supplier") || t.hasAttribute("data-open-rfq") || t.dataset.auth)) closePop();
@@ -1684,7 +1735,7 @@ form { display: grid; gap: var(--s4); padding: var(--s3) var(--s6) var(--s6); }
     if (t.hasAttribute("data-retry")) return LIVE ? loadListings() : location.reload();
     if (t.dataset.rstar) { rate = Number(t.dataset.rstar); t.parentNode.querySelectorAll("[data-rstar]").forEach(function (x) { x.setAttribute("aria-pressed", String(Number(x.dataset.rstar) <= rate)); }); if ($("rv-rate-err")) $("rv-rate-err").hidden = true; return; }
     if (t.hasAttribute("data-rsignin")) { pending = function () { if (view === "biz" && curBiz) loadReviews(curBiz); }; return openSignIn("Sign in to write a review"); }
-    if (t.dataset.rdel) { var rb = curBiz; return sb.from("myb_reviews").delete().eq("id", Number(t.dataset.rdel)).then(function (r) { toast(r.error ? "Could not delete that review." : "Review deleted."); loadReviews(rb); }); }
+    if (t.dataset.rdel) { var rb = curBiz; return sb.from("myb_reviews").delete().eq("id", Number(t.dataset.rdel)).then(function (r) { toast(r.error ? "Could not delete that review." : "Review deleted."); refreshRating(rb, function () { repaintBiz(rb); }); }); }
     if (t.hasAttribute("data-share")) return copy(location.href, tr("Link copied."));
     if (t.dataset.tab) { var ts = $(t.dataset.tab); document.querySelectorAll(".tabs button").forEach(function (x) { x.setAttribute("aria-current", String(x === t)); }); if (ts) ts.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" }); return; }
     if (t.dataset.quote !== undefined) {
