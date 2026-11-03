@@ -300,10 +300,10 @@ def page(site, path, title, desc, body, crumbs, og_type='website', noindex=False
             '<meta name="theme-color" content="#f5b800">' + ('<meta name="robots" content="noindex">' if noindex else '') + '<link rel="icon" href="' + ICON + '">' + FONTS +
             '<style>' + CSS.strip() + '</style>' + jsonld(crumb_ld) + '</head><body>'
             '<header><div class="wrap bar"><a class="brand" href="/" aria-label="Military Yellow Book home"><span class="mark" aria-hidden="true">YB</span><span class="bn">Military Yellow Book</span></a>'
-            '<span class="sp"></span><span class="hl"><a href="/directory">Directory</a><a href="/opportunities">Tenders</a><a href="/portals">Portals</a></span></div></header>'
+            '<span class="sp"></span><span class="hl"><a href="/directory">Directory</a><a href="/opportunities">Tenders</a><a href="/awards">Awards</a><a href="/portals">Portals</a></span></div></header>'
             '<main class="wrap">' + body + '</main>'
             '<footer><div class="wrap"><p><b>Military Yellow Book</b> is a global directory of military suppliers.</p><p>' + esc(FOOT) + '</p>'
-            '<p><a href="/opportunities">Open tenders and awards</a> · <a href="/portals">Government procurement portals</a> · <a href="/terms">Terms</a> · <a href="/privacy">Privacy</a></p></div></footer>'
+            '<p><a href="/opportunities">Tenders</a> · <a href="/awards">Contract awards</a> · <a href="/portals">Government procurement portals</a> · <a href="/terms">Terms</a> · <a href="/privacy">Privacy</a></p></div></footer>'
             '</body></html>')
 
 
@@ -390,59 +390,6 @@ UN = {}
 REGION_NAMES = [('americas', 'Americas'), ('europe', 'Europe'), ('mideast', 'Middle East'), ('africa', 'Africa'), ('asia', 'Asia-Pacific'), (None, 'International and multilateral')]
 
 
-def portals_page(site, rows):
-    crumbs = [('Military Yellow Book', '/'), ('Government procurement portals', None)]
-    countries = len({r['country'] for r in rows if r['scope'] == 'national'})
-    nav = '<nav class="jump" aria-label="Regions">' + ''.join(
-        '<a href="#' + (k or 'intl') + '">' + n + '</a>' for k, n in REGION_NAMES if any(r['region'] == k for r in rows)) + '</nav>'
-    body = (crumb_html(crumbs) + '<h1>Government procurement portals</h1>'
-            '<p class="sub">' + str(len(rows)) + ' places where governments and international bodies publish tenders, covering ' + str(countries) + ' countries and territories. '
-            'Register as a supplier there to bid on military and defence contracts. See <a href="/opportunities">open tenders and recent awards</a> taken from official publishers.</p>'
-            '<p class="notice"><b>Check before you rely on a link.</b> This list is compiled from the sources named below and has not been verified link by link. '
-            'Entries marked &ldquo;check address&rdquo; point at a general government or commercial site rather than a procurement system. '
-            'The official portal is always the system of record for a government&rsquo;s tenders. Trading with some countries is restricted by sanctions and export controls: '
-            'confirm what applies to you before you bid.</p>' + nav)
-    for key, name in REGION_NAMES:
-        grp = [r for r in rows if r['region'] == key]
-        if not grp:
-            continue
-        lis = ''
-        for r in grp:
-            links = ''
-            if r['url']:
-                links += '<a href="' + esc(r['url']) + '" rel="nofollow noopener noreferrer" target="_blank">Official site</a>'
-            if r['feed_url']:
-                links += '<a href="' + esc(r['feed_url']) + '" rel="nofollow noopener noreferrer" target="_blank">Tender feed (Open Opps)</a>'
-            meta = ''
-            if r['scope'] == 'subnational':
-                meta += '<span>Regional or state</span>'
-            if r['scope'] == 'agency':
-                meta += '<span>Agency catalogue</span>'
-            if r['platform']:
-                meta += '<span>' + esc(r['platform'].capitalize()) + '</span>'
-            if r['classification']:
-                meta += '<span>Codes: ' + esc(r['classification']) + '</span>'
-            if r['flag'] == 'general_site':
-                meta += '<span class="warn">Check address</span>'
-            if r['flag'] == 'no_url':
-                meta += '<span class="warn">No portal listed</span>'
-            lis += ('<li><span class="pn">' + esc(r['name']) + '</span><span class="pc">' + esc(r['country']) + '</span>' +
-                    ('<span class="pl">' + links + '</span>' if links else '') + ('<span class="pm">' + meta + '</span>' if meta else '') +
-                    ('<small>' + esc(r['note']) + '</small>' if r['note'] else '') + '</li>')
-        body += '<h2 id="' + (key or 'intl') + '">' + name + ' <small class="lic">(' + str(len(grp)) + ')</small></h2><ul class="portals">' + lis + '</ul>'
-    body += ('<h2>Which product codes do portals want?</h2><p>Many portals ask suppliers to classify what they sell: the US uses NAICS and PSC, the EU and UK use CPV, and '
-             'UNGM, Australia, New Zealand and Canada use UNSPSC. Every listing in this directory carries UNSPSC codes, so you can reuse them when you register.</p>'
-             '<h2>Sources</h2><ul class="plain">'
-             '<li>Sell to State, <a href="https://www.selltostate.com/guides/global-government-procurement-portals/" rel="noopener noreferrer" target="_blank">Government Procurement Portals by Country</a> (updated 30 June 2026): one portal for each of 193 countries.</li>'
-             '<li>Open Opportunities, <a href="https://openopps.com/sources/" rel="noopener noreferrer" target="_blank">sources</a>: regional, state and international tender sources, linked as feeds.</li>'
-             '<li>Inter-American Network on Government Procurement (RICG), <a href="https://ricg.org/en/regional-e-gp-inventory" rel="noopener noreferrer" target="_blank">Regional e-GP inventory</a>: platform type for Latin American and Caribbean systems.</li>'
-             '<li>US Department of Veterans Affairs, <a href="https://www.vendorportal.ecms.va.gov/nac" rel="noopener noreferrer" target="_blank">National Acquisition Center contract catalogue</a>.</li>'
-             '</ul>')
-    return page(site, '/portals', 'Government procurement portals by country | Military Yellow Book',
-                trim(f'{len(rows)} government and international procurement portals in {countries} countries, with the product code systems they use. Where to register to sell to defence buyers.'),
-                body, crumbs)
-
-
 SOURCE_NAMES = {'uk_fts': ('UK Find a Tender', 'https://www.find-tender.service.gov.uk/'), 'uk_cf': ('UK Contracts Finder', 'https://www.contractsfinder.service.gov.uk/'),
                 'worldbank_procurement': ('World Bank procurement notices', 'https://projects.worldbank.org/en/projects-operations/procurement'),
                 'colombia_secop': ('Colombia SECOP II (datos.gov.co)', 'https://www.datos.gov.co/d/jbjy-vk9h'),
@@ -465,75 +412,210 @@ def fmt_date(ts):
     return d.strftime('%-d %b %Y'), d
 
 
-def opportunities_page(site, rows, portals, now=None):
-    import datetime as _d
-    now = now or _d.datetime.now(_d.timezone.utc)
-    crumbs = [('Military Yellow Book', '/'), ('Open tenders and recent awards', None)]
-    portal_by_country = {}
-    for r in portals:
-        if r['scope'] == 'national' and r.get('url') and r['country'] not in portal_by_country:
-            portal_by_country[r['country']] = r
+ICONS = {
+    'search': '<circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5l3 3"/>',
+    'heart': '<path d="M8 13.5S2.5 10 2.5 6.2A2.9 2.9 0 0 1 8 5a2.9 2.9 0 0 1 5.5 1.2C13.5 10 8 13.5 8 13.5z"/>',
+    'doc': '<path d="M4 2.5h5.5L12 5v8.5H4z"/><path d="M9.5 2.5V5H12M6 8h4M6 10.5h4"/>',
+    'award': '<circle cx="8" cy="6.5" r="3.5"/><path d="M6 9.5L5 14l3-1.5 3 1.5-1-4.5"/>',
+    'globe': '<circle cx="8" cy="8" r="5.5"/><path d="M2.5 8h11M8 2.5c2 1.8 2 9.2 0 11M8 2.5c-2 1.8-2 9.2 0 11"/>',
+    'plus': '<path d="M8 3v10M3 8h10"/>',
+    'file': '<path d="M4 2.5h5.5L12 5v8.5H4z"/><path d="M9.5 2.5V5H12"/>',
+    'panel': '<rect x="2" y="2.5" width="12" height="11" rx="2"/><path d="M6 2.5v11"/>',
+    'x': '<path d="M4 4l8 8M12 4l-8 8"/>',
+}
+
+
+def ico(n):
+    return '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + ICONS[n] + '</svg>'
+
+
+def side_item(href, icon, label, section, cur):
+    return '<a class="side-item" href="' + href + '"' + (' aria-current="page"' if section == cur else '') + '>' + ico(icon) + '<span class="si-l">' + label + '</span></a>'
+
+
+def wpage(site, path, title, desc, section, heading, meta, filters, body, crumbs):
+    """Workspace page: the same shell as the supplier directory (top bar, sidebar, one filter row)."""
+    url = site + path
+    crumb_ld = {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
+        {'@type': 'ListItem', 'position': i + 1, 'name': n, **({'item': site + u} if u else {})} for i, (n, u) in enumerate(crumbs)]}
+    top = ('<a class="skip" href="#main">Skip to content</a>'
+           '<header class="topbar" id="nav"><div class="topbar-in">'
+           '<button class="icon-btn side-toggle" id="btn-side" type="button" aria-controls="sidebar" aria-expanded="true" aria-label="Show or hide the sidebar">' + ico('panel') + '</button>'
+           '<a class="brand" href="/" aria-label="Military Yellow Book home"><span class="mark" aria-hidden="true">YB</span><span class="brand-name">Military Yellow Book</span></a>'
+           '<div class="gsearch" role="search"><label class="sr" for="q">Search suppliers, products or codes</label>' + ico('search').replace('<svg ', '<svg class="gs-i" ') +
+           '<input id="q" type="search" placeholder="Search suppliers, products or codes" autocomplete="off" enterkeyhint="search"><span class="gs-k" aria-hidden="true"><kbd id="kbd-mod">Ctrl</kbd><kbd>K</kbd></span></div>'
+           '<div class="top-actions"><a class="top-btn" href="/?saved=1">' + ico('heart') + '<span class="lbl">Saved</span></a><a class="top-btn" href="/?signin=1"><span>Sign in</span></a></div></div></header>')
+    side = ('<aside class="sidebar" id="sidebar" aria-label="Workspace"><div class="sidebar-in">'
+            '<div class="side-head"><span class="brand"><span class="mark" aria-hidden="true">YB</span>Military Yellow Book</span><button class="icon-btn" type="button" data-side-close aria-label="Close menu">' + ico('x') + '</button></div>'
+            '<nav class="side-group" aria-label="Suppliers">' + side_item('/', 'search', 'Discover suppliers', 'discover', section) + side_item('/?saved=1', 'heart', 'Saved suppliers', 'saved', section) +
+            '<a class="side-item" href="/directory">' + ico('doc') + '<span class="si-l">All listings (plain pages)</span></a></nav>'
+            '<nav class="side-group" aria-labelledby="sl-proc"><div class="side-label" id="sl-proc">Procurement</div>' +
+            side_item('/opportunities', 'doc', 'Tenders', 'tenders', section) + side_item('/awards', 'award', 'Contract awards', 'awards', section) + side_item('/portals', 'globe', 'Procurement portals', 'portals', section) + '</nav>'
+            '<nav class="side-group" aria-labelledby="sl-biz"><div class="side-label" id="sl-biz">Account and business</div>'
+            '<a class="side-item" href="/?list=1">' + ico('plus') + '<span class="si-l">List your business</span></a>'
+            '<a class="side-item" href="/?rfq=1">' + ico('file') + '<span class="si-l">Request a quote</span></a></nav></div></aside>')
+    return ('<!doctype html><html lang="en"><head><meta charset="utf-8">'
+            '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">'
+            '<title>' + esc(title) + '</title><meta name="description" content="' + esc(desc) + '">'
+            '<link rel="canonical" href="' + esc(url) + '">'
+            '<meta property="og:type" content="website"><meta property="og:site_name" content="Military Yellow Book">'
+            '<meta property="og:title" content="' + esc(title) + '"><meta property="og:description" content="' + esc(desc) + '">'
+            '<meta property="og:url" content="' + esc(url) + '"><meta property="og:image" content="' + site + '/og.png">'
+            '<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="' + esc(title) + '"><meta name="twitter:description" content="' + esc(desc) + '"><meta name="twitter:image" content="' + site + '/og.png">'
+            '<meta name="theme-color" content="#f5b800"><link rel="icon" href="' + ICON + '">' + FONTS + '<link rel="stylesheet" href="/assets/ui.css">' +
+            '<style>.wsx{padding:0 var(--s-6) var(--s-10)}@media(max-width:759px){.wsx{padding:0 var(--s-4) var(--s-8)}}.wsx p{max-width:72ch}.tbl td.wrapc{min-width:150px;overflow-wrap:break-word}.tbl td{min-width:90px}.tbl td[data-k=title]{min-width:240px}.tbl .badge{white-space:nowrap}.tbl-wrap{overflow-x:auto}.tbl a.t-main:hover{text-decoration:underline}.tbl a.t-main{text-decoration:none}@media(max-width:759px){.tbl td,.tbl td.wrapc,.tbl td[data-k=title]{min-width:0}}.ws-note{margin:var(--s-4) 0}.tbl a.t-main{font-weight:500}.ws-foot{margin-top:var(--s-8)}</style>' + jsonld(crumb_ld) + '</head><body>' +
+            top + '<div class="shell">' + side + '<div class="main">' + (filters or '') +
+            '<main class="content wsx" id="main"><div class="page-head"><h1>' + heading + '</h1><span class="meta" id="tcount" role="status" aria-live="polite">' + meta + '</span></div>' + body +
+            '<footer class="site-foot ws-foot"><p><b>Military Yellow Book</b> is a global directory of military suppliers. ' + esc(FOOT) + '</p>'
+            '<nav aria-label="Footer"><a href="/directory">Directory</a> · <a href="/opportunities">Tenders</a> · <a href="/awards">Contract awards</a> · <a href="/portals">Procurement portals</a> · <a href="/terms">Terms</a> · <a href="/privacy">Privacy</a></nav></footer>'
+            '</main></div></div><div class="side-scrim" id="side-scrim" hidden></div><script src="/assets/table.js"></script></body></html>')
+
+
+def fbar(selects, placeholder):
+    """The single filter row: search-in-table, filter selects, active chips."""
+    s = ''.join('<label class="fsel"><span class="sr">' + esc(lbl) + '</span><select data-filter="' + k + '" aria-label="' + esc(lbl) + '"><option value="">' + esc(lbl) + '</option>' +
+                ''.join('<option value="' + esc(v) + '">' + esc(t) + '</option>' for v, t in opts) + '</select></label>' for k, lbl, opts in selects)
+    return ('<div class="filterbar" role="region" aria-label="Filters and sorting"><div class="filterbar-in">'
+            '<label class="sr" for="tq">' + esc(placeholder) + '</label><input class="input" id="tq" type="search" placeholder="' + esc(placeholder) + '" autocomplete="off" style="flex:0 0 auto;width:min(280px,60vw)">' + s + '</div></div>')
+
+
+def th(label, key=None, num=False, cls=''):
+    inner = '<button type="button" data-sort="' + key + '"' + (' data-type="num"' if num else '') + '>' + esc(label) + '</button>' if key else esc(label)
+    return '<th scope="col" class="' + cls + '"' + (' aria-sort="none"' if key else '') + '>' + inner + '</th>'
+
+
+def src_link(r):
+    name = SOURCE_NAMES.get(r['source_id'], (r.get('publisher') or r['source_id'], None))[0]
+    return '<a href="' + esc(r['url']) + '" rel="nofollow noopener noreferrer" target="_blank">' + esc(name) + '<span class="sr"> (opens the official notice)</span></a>'
+
+
+def iso_day(ts):
+    return (ts or '')[:10]
+
+
+def tenders_page(site, rows, portals):
+    crumbs = [('Military Yellow Book', '/'), ('Tenders', None)]
     tenders = [r for r in rows if r['kind'] == 'open_tender']
     awards = [r for r in rows if r['kind'] == 'award']
     fresh = max((r['refreshed_at'] for r in rows), default=None)
-    srcs = sorted({r['source_id'] for r in rows})
-    body = (crumb_html(crumbs) + '<h1>Open tenders and recent awards</h1>'
-            '<p class="sub">Live government tenders you can still bid on, and who recently won contracts, taken directly from official publishers. '
-            'Every entry links to the original notice. Bid through the publisher, never through this site.</p>'
-            '<h2>From tender to contract</h2><ol class="steps">'
-            '<li><b>Pick a tender</b> below and read the full notice on the publisher&rsquo;s site: eligibility, lots and the exact deadline are only there.</li>'
-            '<li><b>Register as a supplier</b> on that country&rsquo;s procurement portal (linked on each tender, and all <a href="/portals">240 portals</a> are listed).</li>'
-            '<li><b>Classify what you sell</b>: portals ask for CPV or UNSPSC codes. Every <a href="/directory">listing here</a> already carries UNSPSC codes you can reuse.</li>'
-            '<li><b>Study the winners</b>: the awards table shows which buyers bought what, from whom and for how much, so you can price and partner.</li></ol>')
-    if fresh:
-        body += '<p class="lic">Updated ' + esc(fmt_date(fresh)[0]) + '. ' + str(len(tenders)) + ' open tenders and ' + str(len(awards)) + ' awards from ' + str(len(srcs)) + ' sources.</p>'
-    # open tenders by country, soonest deadline first
-    by_c = {}
-    for r in tenders:
-        by_c.setdefault(r.get('country_name') or r.get('country') or 'Country not stated by the publisher', []).append(r)
-    if by_c:
-        body += '<h2 id="tenders">Open tenders</h2><nav class="jump" aria-label="Countries">' + ''.join(
-            '<a href="#t-' + slugify(c) + '">' + esc(c) + ' (' + str(len(v)) + ')</a>' for c, v in sorted(by_c.items())) + '</nav>'
-        for c, v in sorted(by_c.items()):
-            v.sort(key=lambda r: (r['deadline'] is None, r['deadline'] or '', r['title'] or ''))
-            lis = ''
-            for r in v:
-                meta = []
-                if r.get('buyer'):
-                    meta.append('Buyer <b>' + esc(r['buyer']) + '</b>')
-                m = fmt_money(r.get('amount'), r.get('currency'))
-                if m:
-                    meta.append('Estimated value <b>' + esc(m) + '</b>')
-                if r.get('deadline'):
-                    txt, d = fmt_date(r['deadline'])
-                    days = (d - now).days
-                    meta.append('Closes <b>' + esc(txt) + '</b>' + (' <span class="soon">' + ('today' if days < 1 else 'in %d day%s' % (days, '' if days == 1 else 's')) + '</span>' if days < 8 else ''))
-                else:
-                    meta.append('Deadline: see notice')
-                portal = portal_by_country.get(c)
-                reg = (' · Register on <a href="' + esc(portal['url']) + '" rel="nofollow noopener noreferrer" target="_blank">' + esc(portal['name']) + '</a>') if portal else ''
-                name = SOURCE_NAMES.get(r['source_id'], (r.get('publisher') or r['source_id'], None))[0]
-                lis += ('<li><a class="ot" href="' + esc(r['url']) + '" rel="nofollow noopener noreferrer" target="_blank">' + esc(r['title']) + '</a>'
-                        '<span class="om">' + ''.join('<span>' + x + '</span>' for x in meta) + '</span>'
-                        '<small>Source: ' + esc(name) + (' · licence ' + esc(r['licence']) if r.get('licence') else '') + reg + '</small></li>')
-            body += '<h3 id="t-' + slugify(c) + '">' + esc(c) + '</h3><ul class="opps">' + lis + '</ul>'
-    else:
-        body += '<h2 id="tenders">Open tenders</h2><p>No open tenders from cleared sources right now. Check the <a href="/portals">procurement portals</a> directly.</p>'
-    if awards:
-        awards.sort(key=lambda r: r.get('published_at') or '', reverse=True)
-        trs = ''.join('<tr><td class="n">' + esc((fmt_date(r['published_at']) or ('',))[0]) + '</td><td>' + esc(r.get('country_name') or '') + '</td><td>' + esc(r.get('buyer') or '') +
-                      '</td><td><b>' + esc(r.get('supplier') or '') + '</b></td><td><a href="' + esc(r['url']) + '" rel="nofollow noopener noreferrer" target="_blank">' + esc((r.get('title') or '')[:120]) +
-                      '</a></td><td class="n">' + esc(fmt_money(r.get('amount'), r.get('currency')) or '') + '</td></tr>' for r in awards[:200])
-        body += ('<h2 id="awards">Recent awards: who is winning</h2><p>Contracts awarded in the last six months. Values are in the currency the publisher used; nothing is converted.</p>'
-                 '<div class="tbl"><table><thead><tr><th>Date</th><th>Country</th><th>Buyer</th><th>Supplier</th><th>Contract</th><th>Value</th></tr></thead><tbody>' + trs + '</tbody></table></div>')
-    body += ('<h2>Where this comes from</h2><p>Each source was fetched by a tested connector, checked record by record against the publisher, and has a licence that allows reuse. '
-             'Natural persons are never shown as suppliers.</p><ul class="plain">' +
-             ''.join('<li><a href="' + esc(u) + '" rel="noopener noreferrer" target="_blank">' + esc(n) + '</a></li>' for n, u in (SOURCE_NAMES[x] for x in srcs if x in SOURCE_NAMES)) +
-             '</ul><p class="notice">Coming next: EU TED, Brazil PNCP and USAspending already pass the record checks and will appear once their reuse licences are confirmed; '
-             'SAM.gov (US federal opportunities) and ChileCompra need API credentials. Always confirm sanctions and export-control rules before you bid.</p>')
-    return page(site, '/opportunities', 'Open government tenders and recent contract awards | Military Yellow Book',
-                trim('%d open government tenders and %d recent contract awards from official publishers, with deadlines, values, buyers, winners and where to register to bid.' % (len(tenders), len(awards))),
-                body, crumbs)
+    countries = sorted({r.get('country_name') or 'Not stated' for r in tenders})
+    srcs = sorted({r['source_id'] for r in tenders})
+    flt = fbar([('country', 'Country', [(c, c) for c in countries]),
+                ('source', 'Source', [(s, SOURCE_NAMES.get(s, (s,))[0]) for s in srcs]),
+                ('open', 'Status', [('open', 'Open'), ('closed', 'Closed')])], 'Search tenders')
+    trs = ''
+    for r in sorted(tenders, key=lambda r: (r['deadline'] is None, r['deadline'] or '', r['title'] or '')):
+        c = r.get('country_name') or 'Not stated'
+        m = fmt_money(r.get('amount'), r.get('currency'))
+        pub = fmt_date(r['published_at'])[0] if r.get('published_at') else ''
+        dl = fmt_date(r['deadline'])[0] if r.get('deadline') else ''
+        hay = ' '.join(str(x or '') for x in (r['title'], r.get('buyer'), c, r.get('currency'), SOURCE_NAMES.get(r['source_id'], ('',))[0])).lower()
+        trs += ('<tr data-s="' + esc(hay) + '" data-deadline="' + esc(r.get('deadline') or '') + '" data-f-country="' + esc(c) + '" data-f-source="' + esc(r['source_id']) + '">'
+                '<td data-k="title" data-v="' + esc((r['title'] or '').lower()) + '" data-l="Tender"><a class="t-main" href="' + esc(r['url']) + '" rel="nofollow noopener noreferrer" target="_blank">' + esc(r['title']) + '</a></td>'
+                '<td class="wrapc" data-k="buyer" data-v="' + esc((r.get('buyer') or '').lower()) + '" data-l="Buyer">' + esc(r.get('buyer') or 'Not stated') + '</td>'
+                '<td data-k="country" data-v="' + esc(c) + '" data-l="Country">' + esc(c) + '</td>'
+                '<td class="n" data-k="value" data-v="' + ('' if r.get('amount') in (None, '') else str(float(r['amount']))) + '" data-l="Value">' + (esc(m) if m else '<span class="muted">Not stated</span>') + '</td>'
+                '<td class="n" data-k="pub" data-v="' + iso_day(r.get('published_at')) + '" data-l="Published">' + esc(pub) + '</td>'
+                '<td class="n" data-k="close" data-v="' + iso_day(r.get('deadline')) + '" data-l="Closes">' + (esc(dl) if dl else '<span class="muted">See notice</span>') + '</td>'
+                '<td data-status data-l="Status"></td>'
+                '<td data-l="Official source">' + src_link(r) + '</td></tr>')
+    table = ('<div class="tbl-wrap"><table class="tbl stack" data-table data-sort="close:asc"><caption class="sr">Open government tenders</caption><thead><tr>' +
+             th('Tender', 'title') + th('Buyer', 'buyer') + th('Country', 'country') + th('Value', 'value', True, 'n') + th('Published', 'pub', False, 'n') + th('Closes', 'close', False, 'n') + th('Status') + th('Official source') +
+             '</tr></thead><tbody>' + trs + '</tbody></table></div>'
+             '<div class="state" id="tempty" hidden role="status"><h2>No tenders match</h2><p>Remove a filter or search for a different word. Tenders only appear here when an official publisher supplies them.</p></div>'
+             '<div class="more"><button class="btn btn-secondary" id="tmore" type="button" hidden>Show more</button></div>')
+    note = ('<div class="callout ws-note"><div>Every row links to the original notice on the publisher&rsquo;s site: eligibility, lots and the exact deadline are only valid there. Bid through the publisher, never through this site. '
+            'Values are in the publisher&rsquo;s currency and are not converted. A blank value or date means the publisher did not state it. The status is worked out from the stated deadline when you open the page. '
+            'Procurement categories are not yet supplied by these sources, so there is no category column. ' +
+            ('Data refreshed ' + esc(fmt_date(fresh)[0]) + '. ' if fresh else '') + 'Sources are listed at the foot of the page. Need to register to bid? See the <a href="/portals">procurement portals</a>.</div></div>')
+    srcs_all = sorted({r['source_id'] for r in rows})
+    foot = ('<h2 class="ws-h">Where this comes from</h2><p>Each source is fetched by a tested connector, checked record by record against the publisher, and has a licence that allows reuse. Natural persons are never shown as suppliers.</p><ul class="plain">' +
+            ''.join('<li><a href="' + esc(u) + '" rel="noopener noreferrer" target="_blank">' + esc(n) + '</a></li>' for n, u in (SOURCE_NAMES[x] for x in srcs_all if x in SOURCE_NAMES)) + '</ul>'
+            '<div class="callout"><div>Coming next: EU TED, Brazil PNCP and USAspending already pass the record checks and will appear once their reuse licences are confirmed; SAM.gov and ChileCompra need API credentials. Confirm sanctions and export-control rules before you bid.</div></div>')
+    return wpage(site, '/opportunities', 'Government tenders: search open procurement notices | Military Yellow Book',
+                 trim('%d open government tenders from official publishers, searchable by buyer, country and deadline, with links to the original notice.' % len(tenders)),
+                 'tenders', 'Tenders', str(len(tenders)) + ' results', flt, '<div id="tactives" class="actives" hidden></div>' + (table if tenders else '<div class="state"><h2>No open tenders from cleared sources right now</h2><p>Check the <a href="/portals">procurement portals</a> directly.</p></div>') + note + foot, crumbs)
+
+
+def awards_page(site, rows):
+    crumbs = [('Military Yellow Book', '/'), ('Contract awards', None)]
+    awards = [r for r in rows if r['kind'] == 'award']
+    fresh = max((r['refreshed_at'] for r in rows), default=None)
+    countries = sorted({r.get('country_name') or 'Not stated' for r in awards})
+    flt = fbar([('country', 'Country', [(c, c) for c in countries]),
+                ('source', 'Source', [(s, SOURCE_NAMES.get(s, (s,))[0]) for s in sorted({r['source_id'] for r in awards})])], 'Search awards')
+    trs = ''
+    for r in sorted(awards, key=lambda r: r.get('published_at') or '', reverse=True):
+        c = r.get('country_name') or 'Not stated'
+        m = fmt_money(r.get('amount'), r.get('currency'))
+        d = fmt_date(r['published_at'])[0] if r.get('published_at') else ''
+        hay = ' '.join(str(x or '') for x in (r['title'], r.get('buyer'), r.get('supplier'), c, r.get('currency'))).lower()
+        trs += ('<tr data-s="' + esc(hay) + '" data-f-country="' + esc(c) + '" data-f-source="' + esc(r['source_id']) + '">'
+                '<td class="wrapc" data-k="buyer" data-v="' + esc((r.get('buyer') or '').lower()) + '" data-l="Buyer"><span class="t-main">' + esc(r.get('buyer') or 'Not stated') + '</span><span class="t-sub">' + esc(c) + '</span></td>'
+                '<td class="wrapc" data-k="supplier" data-v="' + esc((r.get('supplier') or '').lower()) + '" data-l="Awarded to">' + (esc(r['supplier']) if r.get('supplier') else '<span class="muted">Not stated</span>') + '</td>'
+                '<td class="wrapc" data-k="title" data-v="' + esc((r['title'] or '').lower()) + '" data-l="Contract">' + esc((r['title'] or '')[:160]) + '</td>'
+                '<td class="n" data-k="value" data-v="' + ('' if r.get('amount') in (None, '') else str(float(r['amount']))) + '" data-l="Value">' + (esc(m) if m else '<span class="muted">Not stated</span>') + '</td>'
+                '<td class="n" data-k="date" data-v="' + iso_day(r.get('published_at')) + '" data-l="Date">' + esc(d) + '</td>'
+                '<td data-l="Source">' + src_link(r) + '</td></tr>')
+    table = ('<div class="tbl-wrap"><table class="tbl stack" data-table data-sort="date:desc"><caption class="sr">Recent government contract awards</caption><thead><tr>' +
+             th('Buyer', 'buyer') + th('Awarded to', 'supplier') + th('Contract', 'title') + th('Value', 'value', True, 'n') + th('Date', 'date', False, 'n') + th('Source') +
+             '</tr></thead><tbody>' + trs + '</tbody></table></div>'
+             '<div class="state" id="tempty" hidden role="status"><h2>No awards match</h2><p>Remove a filter or search for a different word.</p></div>'
+             '<div class="more"><button class="btn btn-secondary" id="tmore" type="button" hidden>Show more</button></div>')
+    note = ('<div class="callout ws-note"><div>Contracts awarded recently, as published by the buyer&rsquo;s official system. Study who wins what, at what price, to position your own bids. Values are in the publisher&rsquo;s currency and are not converted; '
+            'a blank means the publisher did not state it. ' + ('Data refreshed ' + esc(fmt_date(fresh)[0]) + '. ' if fresh else '') + 'Individuals are never listed as suppliers. See <a href="/opportunities">open tenders</a> to bid on live notices.</div></div>')
+    return wpage(site, '/awards', 'Government contract awards: who is winning | Military Yellow Book',
+                 trim('%d recent government contract awards from official publishers: buyer, awarded supplier, value and date, with links to the source notice.' % len(awards)),
+                 'awards', 'Contract awards', str(len(awards)) + ' results', flt, '<div id="tactives" class="actives" hidden></div>' + (table if awards else '<div class="state"><h2>No awards published yet</h2></div>') + note, crumbs)
+
+
+SCOPE_LABEL = {'national': 'National government', 'subnational': 'Regional or state authority', 'agency': 'Agency or catalogue'}
+
+
+def portals_page(site, rows):
+    crumbs = [('Military Yellow Book', '/'), ('Government procurement portals', None)]
+    countries = len({r['country'] for r in rows if r['scope'] == 'national'})
+    rnames = dict(REGION_NAMES)
+    flt = fbar([('region', 'Region', [(k or 'intl', n) for k, n in REGION_NAMES if any(r['region'] == k for r in rows)]),
+                ('scope', 'Jurisdiction', [(k, v) for k, v in SCOPE_LABEL.items() if any(r['scope'] == k for r in rows)]),
+                ('check', 'Link status', [('ok', 'Listed, not link-checked'), ('warn', 'Needs a check')])], 'Search portals')
+    trs = ''
+    for r in rows:
+        links = ''
+        if r['url']:
+            links += '<a href="' + esc(r['url']) + '" rel="nofollow noopener noreferrer" target="_blank">Official site<span class="sr"> of ' + esc(r['name']) + '</span></a>'
+        if r['feed_url']:
+            links += (' · ' if links else '') + '<a href="' + esc(r['feed_url']) + '" rel="nofollow noopener noreferrer" target="_blank">Tender feed<span class="sr"> for ' + esc(r['name']) + '</span></a>'
+        warn = r['flag'] in ('general_site', 'no_url')
+        stat = ('<span class="badge badge-warn">' + ('No portal listed' if r['flag'] == 'no_url' else 'Check address') + '</span>') if warn else '<span class="badge">Reference, unverified</span>'
+        reg = rnames.get(r['region'], 'International')
+        hay = ' '.join(str(x or '') for x in (r['name'], r['country'], reg, r.get('platform'), r.get('classification'), r.get('note'))).lower()
+        trs += ('<tr data-s="' + esc(hay) + '" data-f-region="' + esc(r['region'] or 'intl') + '" data-f-scope="' + esc(r['scope']) + '" data-f-check="' + ('warn' if warn else 'ok') + '">'
+                '<td data-k="country" data-v="' + esc((r['country'] or '').lower()) + '" data-l="Country">' + esc(r['country']) + '<span class="t-sub">' + esc(reg) + '</span></td>'
+                '<td class="wrapc" data-k="name" data-v="' + esc(r['name'].lower()) + '" data-l="Portal or entity"><span class="t-main">' + esc(r['name']) + '</span>' + ('<span class="t-sub">' + esc(r['note']) + '</span>' if r['note'] else '') + '</td>'
+                '<td data-k="scope" data-v="' + esc(r['scope']) + '" data-l="Jurisdiction">' + esc(SCOPE_LABEL.get(r['scope'], r['scope'])) + '</td>'
+                '<td data-l="Platform and codes">' + esc((r['platform'] or '').capitalize()) + ('<span class="t-sub">' + esc(r['classification']) + '</span>' if r['classification'] else '') + '</td>'
+                '<td data-l="Status">' + stat + '</td>'
+                '<td data-l="Links">' + (links or '<span class="muted">None</span>') + '</td></tr>')
+    table = ('<div class="tbl-wrap"><table class="tbl stack" data-table data-sort="country:asc"><caption class="sr">Government procurement portals by country</caption><thead><tr>' +
+             th('Country', 'country') + th('Portal or entity', 'name') + th('Jurisdiction', 'scope') + th('Platform and codes') + th('Status') + th('Links') +
+             '</tr></thead><tbody>' + trs + '</tbody></table></div>'
+             '<div class="state" id="tempty" hidden role="status"><h2>No portals match</h2><p>Remove a filter or try a country name.</p></div>'
+             '<div class="more"><button class="btn btn-secondary" id="tmore" type="button" hidden>Show more</button></div>')
+    note = ('<div class="callout ws-note"><div><b>Check before you rely on a link.</b> This list is compiled from the sources named below and has not been verified link by link, so nothing here is marked as a confirmed official portal. '
+            'No verification date is shown because none has been recorded. &ldquo;Check address&rdquo; means the entry points at a general government or commercial site rather than a procurement system. '
+            'The official portal is always the system of record for a government&rsquo;s tenders. Trading with some countries is restricted by sanctions and export controls: confirm what applies to you before you bid. '
+            'See <a href="/opportunities">open tenders</a> and <a href="/awards">contract awards</a> taken from official publishers.</div></div>')
+    foot = ('<h2 class="ws-h">Which product codes do portals want?</h2><p>Many portals ask suppliers to classify what they sell: the US uses NAICS and PSC, the EU and UK use CPV, and UNGM, Australia, New Zealand and Canada use UNSPSC. '
+            'Every listing in this directory carries UNSPSC codes, so you can reuse them when you register.</p>'
+            '<h2 class="ws-h">Sources</h2><ul class="plain">'
+            '<li>Sell to State, <a href="https://www.selltostate.com/guides/global-government-procurement-portals/" rel="noopener noreferrer" target="_blank">Government Procurement Portals by Country</a> (updated 30 June 2026): one portal for each of 193 countries.</li>'
+            '<li>Open Opportunities, <a href="https://openopps.com/sources/" rel="noopener noreferrer" target="_blank">sources</a>: regional, state and international tender sources, linked as feeds.</li>'
+            '<li>Inter-American Network on Government Procurement (RICG), <a href="https://ricg.org/en/regional-e-gp-inventory" rel="noopener noreferrer" target="_blank">Regional e-GP inventory</a>: platform type for Latin American and Caribbean systems.</li>'
+            '<li>US Department of Veterans Affairs, <a href="https://www.vendorportal.ecms.va.gov/nac" rel="noopener noreferrer" target="_blank">National Acquisition Center contract catalogue</a>.</li></ul>')
+    return wpage(site, '/portals', 'Government procurement portals by country | Military Yellow Book',
+                 trim(f'{len(rows)} government and international procurement portals in {countries} countries, with the product code systems they use. Where to register to sell to defence buyers.'),
+                 'portals', 'Procurement portals', str(len(rows)) + ' results', flt, '<div id="tactives" class="actives" hidden></div>' + table + note + foot, crumbs)
 
 
 LEGAL_DRAFT = True      # set False once a lawyer has reviewed terms and privacy text
@@ -628,12 +710,16 @@ def build(site_url, out_dir=None):
         open(os.path.join(out, 'c', slugify(c) + '.html'), 'w', encoding='utf-8').write(category_page(site, c, v))
     open(os.path.join(out, 'directory.html'), 'w', encoding='utf-8').write(directory_page(site, groups))
     open(os.path.join(out, 'portals.html'), 'w', encoding='utf-8').write(portals_page(site, portals))
-    open(os.path.join(out, 'opportunities.html'), 'w', encoding='utf-8').write(opportunities_page(site, opps, portals))
+    open(os.path.join(out, 'opportunities.html'), 'w', encoding='utf-8').write(tenders_page(site, opps, portals))
+    open(os.path.join(out, 'awards.html'), 'w', encoding='utf-8').write(awards_page(site, opps))
+    os.makedirs(os.path.join(out, 'assets'), exist_ok=True)
+    for f in ('ui.css', 'table.js'):
+        shutil.copyfile(os.path.join(ROOT, 'src', 'assets', f), os.path.join(out, 'assets', f))
     open(os.path.join(out, 'terms.html'), 'w', encoding='utf-8').write(terms_page(site))
     open(os.path.join(out, 'privacy.html'), 'w', encoding='utf-8').write(privacy_page(site))
     open(os.path.join(out, '404.html'), 'w', encoding='utf-8').write(not_found_page(site))
 
-    urls = ['/', '/directory', '/opportunities', '/portals', '/terms', '/privacy'] + ['/c/' + slugify(c) for c, _ in groups] + ['/l/' + b['slug'] for b in listings]
+    urls = ['/', '/directory', '/opportunities', '/awards', '/portals', '/terms', '/privacy'] + ['/c/' + slugify(c) for c, _ in groups] + ['/l/' + b['slug'] for b in listings]
     open(os.path.join(out, 'sitemap.xml'), 'w', encoding='utf-8').write(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
         ''.join('<url><loc>' + esc(site + u) + '</loc></url>\n' for u in urls) + '</urlset>\n')

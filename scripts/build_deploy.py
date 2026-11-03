@@ -7,6 +7,7 @@
 - writes vercel.json with a content security policy whose script hashes match the inline scripts
 Run from the repository root:  python3 scripts/build_deploy.py
 """
+import shutil
 import base64, hashlib, json, os, re, subprocess, sys
 
 SUPABASE_URL = 'https://bfovgafcfetfeqykjfco.supabase.co'
@@ -43,12 +44,10 @@ css_m = esb(css, 'css'); js_m = esb(js, 'js')
 mid = re.sub(r'\n\s+', '\n', mid)
 mid = re.sub(r'<!--.*?-->', '', mid, flags=re.S)
 # crawlable entry point into the static listing pages (the app itself renders listings with JS on hash routes)
-stats = '<div class="stats" id="stats"></div>'
-assert stats in mid
-mid = mid.replace(stats, stats + '<div><a href="/directory">Browse every listing by category</a></div>')
+assert 'href="/directory"' in mid  # crawlable entry point into the static listing pages
 
 title = re.search(r'<title>(.*?)</title>', head_pre).group(1)
-fonts = re.findall(r'<link[^>]+fonts[^>]*>', head_pre)
+fonts = re.findall(r'<link[^>]+(?:fonts|ui\.css)[^>]*>', head_pre)
 desc = ('The global directory of military suppliers: uniforms, boots, field gear, vehicles, aircraft parts, '
         'naval, optics, space, cyber and more. Search by domain, branch, category and country.')
 icon = ("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' "
@@ -76,7 +75,7 @@ html = ('<!doctype html><html lang="en"><head><meta charset="utf-8">'
         '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">'
         '<title>' + title + '</title>' + meta + '<link rel="icon" href="' + icon + '">' + ''.join(fonts) +
         '<style>:root{color-scheme:light;padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}'
-        'body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>'
+        'body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>'
         '<style>' + css_m + '</style></head><body class="is-loading">' + mid +
         '<script src="' + VENDOR + '"></script><script>' + cfg_js + '</script>'
         '<script>' + js_m + '</script></body></html>')
@@ -102,10 +101,12 @@ vercel = {
     "headers": [
         {"source": "/(.*)", "headers": sec},
         {"source": "/vendor/(.*)", "headers": [{"key": "Cache-Control", "value": "public, max-age=31536000, immutable"}]},
+        {"source": "/assets/(.*)", "headers": [{"key": "Cache-Control", "value": "public, max-age=300, must-revalidate"}]},
         {"source": "/og.png", "headers": [{"key": "Cache-Control", "value": "public, max-age=86400"}]},
     ],
 }
-os.makedirs('site', exist_ok=True)
+os.makedirs('site/assets', exist_ok=True)
+shutil.copyfile('src/assets/ui.css', 'site/assets/ui.css')
 open('site/index.html', 'w', encoding='utf-8').write(html)
 open('site/vercel.json', 'w', encoding='utf-8').write(json.dumps(vercel, indent=2) + '\n')
 print('site/index.html', len(html.encode('utf-8')), 'bytes; style blocks:', html.count('<style>'), '; inline scripts hashed: 2')
