@@ -1,0 +1,488 @@
+{
+ "notices": [
+  {
+   "notice-identifier": "6e63e5ee-09b5-4274-a9b4-4d9a63536281",
+   "deadline-receipt-tender-date-lot": [
+    "2026-11-18+01:00",
+    "2026-11-18+01:00"
+   ],
+   "notice-type": "cn-standard",
+   "publication-number": "722704-2026",
+   "legal-basis": [
+    "32014L0024"
+   ],
+   "dispatch-date": "2026-10-19+01:00",
+   "buyer-country": [
+    "ESP"
+   ],
+   "description-lot": {
+    "spa": [
+     "Subministrament de 28 armilles d’intervenció amb els seus complements i la seva funda exterior.",
+     "Subministrament de 28 armilles interiors discretes amb les seves fundes."
+    ]
+   },
+   "procedure-type": "open",
+   "classification-cpv": [
+    "35113430",
+    "35113430",
+    "35113430",
+    "35113430"
+   ],
+   "contract-nature": [
+    "supplies",
+    "supplies",
+    "supplies"
+   ],
+   "publication-date": "2026-10-20+02:00",
+   "buyer-name": {
+    "spa": [
+     "Departament d'Interior i Seguretat Pública"
+    ]
+   },
+   "links": {
+    "xml": {
+     "MUL": "https://ted.europa.eu/en/notice/722704-2026/xml"
+    },
+    "pdf": {
+     "BUL": "https://ted.europa.eu/bg/notice/722704-2026/pdf",
+     "SPA": "https://ted.europa.eu/es/notice/722704-2026/pdf",
+     "CES": "https://ted.europa.eu/cs/notice/722704-2026/pdf",
+     "DAN": "https://ted.europa.eu/da/notice/722704-2026/pdf",
+     "DEU": "https://ted.europa.eu/de/notice/722704-2026/pdf",
+     "EST": "https://ted.europa.eu/et/notice/722704-2026/pdf",
+     "ELL": "https://ted.europa.eu/el/notice/722704-2026/pdf",
+     "ENG": "https://ted.europa.eu/en/notice/722704-2026/pdf",
+     "FRA": "https://ted.europa.eu/fr/notice/722704-2026/pdf",
+     "GLE": "https://ted.europa.eu/ga/notice/722704-2026/pdf",
+     "HRV": "https://ted.europa.eu/hr/notice/722704-2026/pdf",
+     "ITA": "https://ted.europa.eu/it/notice/722704-2026/pdf",
+     "LAV": "https://ted.europa.eu/lv/notice/722704-2026/pdf",
+     "LIT": "https://ted.europa.eu/lt/notice/722704-2026/pdf",
+     "HUN": "https://ted.europa.eu/hu/notice/722704-2026/pdf",
+     "MLT": "https://ted.europa.eu/mt/notice/722704-2026/pdf",
+     "NLD": "https://ted.europa.eu/nl/notice/722704-2026/pdf",
+     "POL": "https://ted.europa.eu/pl/notice/722704-2026/pdf",
+     "POR": "https://ted.europa.eu/pt/notice/722704-2026/pdf",
+     "RON": "https://ted.europa.eu/ro/notice/722704-2026/pdf",
+     "SLK": "https://ted.europa.eu/sk/notice/722704-2026/pdf",
+     "SLV": "https://ted.europa.eu/sl/notice/722704-2026/pdf",
+     "FIN": "https://ted.europa.eu/fi/notice/722704-2026/pdf",
+     "SWE": "https://ted.europa.eu/sv/notice/722704-2026/pdf"
+    },
+    "pdfs": {
+     "SPA": "https://ted.europa.eu/es/notice/722704-2026/pdfs"
+    },
+    "html": {
+     "BUL": "https://ted.europa.eu/bg/notice/-/detail/722704-2026",
+     "SPA": "https://ted.europa.eu/es/notice/-/detail/722704-2026",
+     "CES": "https://ted.europa.eu/cs/notice/-/detail/722704-2026",
+     "DAN": "https://ted.europa.eu/da/notice/-/detail/722704-2026",
+     "DEU": "https://ted.europa.eu/de/notice/-/detail/722704-2026",
+     "EST": "https://ted.europa.eu/et/notice/-/detail/722704-2026",
+     "ELL": "https://ted.europa.eu/el/notice/-/detail/722704-2026",
+     "ENG": "https://ted.europa.eu/en/notice/-/detail/722704-2026",
+     "FRA": "https://ted.europa.eu/fr/notice/-/detail/722704-2026",
+     "GLE": "https://ted.europa.eu/ga/notice/-/detail/722704-2026",
+     "HRV": "https://ted.europa.eu/hr/notice/-/detail/722704-2026",
+     "ITA": "https://ted.europa.eu/it/notice/-/detail/722704-2026",
+     "LAV": "https://ted.europa.eu/lv/notice/-/detail/722704-2026",
+     "LIT": "https://ted.europa.eu/lt/notice/-/detail/722704-2026",
+     "HUN": "https://ted.europa.eu/hu/notice/-/detail/722704-2026",
+     "MLT": "https://ted.europa.eu/mt/notice/-/detail/722704-2026",
+     "NLD": "https://ted.europa.eu/nl/notice/-/detail/722704-2026",
+     "POL": "https://ted.europa.eu/pl/notice/-/detail/722704-2026",
+     "POR": "https://ted.europa.eu/pt/notice/-/detail/722704-2026",
+     "RON": "https://ted.europa.eu/ro/notice/-/detail/722704-2026",
+     "SLK": "https://ted.europa.eu/sk/notice/-/detail/722704-2026",
+     "SLV": "https://ted.europa.eu/sl/notice/-/detail/722704-2026",
+     "FIN": "https://ted.europa.eu/fi/notice/-/detail/722704-2026",
+     "SWE": "https://ted.europa.eu/sv/notice/-/detail/722704-2026"
+    },
+    "htmlDirect": {
+     "BUL": "https://ted.europa.eu/bg/notice/722704-2026/html",
+     "SPA": "https://ted.europa.eu/es/notice/722704-2026/html",
+     "CES": "https://ted.europa.eu/cs/notice/722704-2026/html",
+     "DAN": "https://ted.europa.eu/da/notice/722704-2026/html",
+     "DEU": "https://ted.europa.eu/de/notice/722704-2026/html",
+     "EST": "https://ted.europa.eu/et/notice/722704-2026/html",
+     "ELL": "https://ted.europa.eu/el/notice/722704-2026/html",
+     "ENG": "https://ted.europa.eu/en/notice/722704-2026/html",
+     "FRA": "https://ted.europa.eu/fr/notice/722704-2026/html",
+     "GLE": "https://ted.europa.eu/ga/notice/722704-2026/html",
+     "HRV": "https://ted.europa.eu/hr/notice/722704-2026/html",
+     "ITA": "https://ted.europa.eu/it/notice/722704-2026/html",
+     "LAV": "https://ted.europa.eu/lv/notice/722704-2026/html",
+     "LIT": "https://ted.europa.eu/lt/notice/722704-2026/html",
+     "HUN": "https://ted.europa.eu/hu/notice/722704-2026/html",
+     "MLT": "https://ted.europa.eu/mt/notice/722704-2026/html",
+     "NLD": "https://ted.europa.eu/nl/notice/722704-2026/html",
+     "POL": "https://ted.europa.eu/pl/notice/722704-2026/html",
+     "POR": "https://ted.europa.eu/pt/notice/722704-2026/html",
+     "RON": "https://ted.europa.eu/ro/notice/722704-2026/html",
+     "SLK": "https://ted.europa.eu/sk/notice/722704-2026/html",
+     "SLV": "https://ted.europa.eu/sl/notice/722704-2026/html",
+     "FIN": "https://ted.europa.eu/fi/notice/722704-2026/html",
+     "SWE": "https://ted.europa.eu/sv/notice/722704-2026/html"
+    }
+   },
+   "notice-title": {
+    "hun": "Spanyolország – Biztonsági mellény – Suministro de chalecos de intervención e interiores DGP",
+    "lav": "Spānija – Drošības vestes – Suministro de chalecos de intervención e interiores DGP",
+    "swe": "Spanien – Säkerhetsvästar – Suministro de chalecos de intervención e interiores DGP",
+    "gle": "An Spáinn – Safety vests – Suministro de chalecos de intervención e interiores DGP",
+    "ell": "Ισπανία – Γιλέκα ασφαλείας – Suministro de chalecos de intervención e interiores DGP",
+    "spa": "España – Chalecos de seguridad – Suministro de chalecos de intervención e interiores DGP",
+    "est": "Hispaania – Kaitsevestid – Suministro de chalecos de intervención e interiores DGP",
+    "nld": "Spanje – Veiligheidsvesten – Suministro de chalecos de intervención e interiores DGP",
+    "fin": "Espanja – Turvaliivit – Suministro de chalecos de intervención e interiores DGP",
+    "pol": "Hiszpania – Kamizelki bezpieczeństwa – Suministro de chalecos de intervención e interiores DGP",
+    "hrv": "Španjolska – Sigurnosni prsluci – Suministro de chalecos de intervención e interiores DGP",
+    "ces": "Španělsko – Bezpečnostní vesty – Suministro de chalecos de intervención e interiores DGP",
+    "dan": "Spanien – Sikkerhedsveste – Suministro de chalecos de intervención e interiores DGP",
+    "ron": "Spania – Veste de siguranţă – Suministro de chalecos de intervención e interiores DGP",
+    "por": "Espanha – Coletes de segurança – Suministro de chalecos de intervención e interiores DGP",
+    "slk": "Španielsko – Bezpečnostné vesty – Suministro de chalecos de intervención e interiores DGP",
+    "fra": "Espagne – Gilets de protection – Suministro de chalecos de intervención e interiores DGP",
+    "mlt": "Spanja – Flokkijiet tas-sigurtà – Suministro de chalecos de intervención e interiores DGP",
+    "deu": "Spanien – Sicherheitswesten – Suministro de chalecos de intervención e interiores DGP",
+    "lit": "Ispanija – Saugos liemenės – Suministro de chalecos de intervención e interiores DGP",
+    "ita": "Spagna – Giacche di sicurezza – Suministro de chalecos de intervención e interiores DGP",
+    "bul": "Иcпaния – Предпазни жилетки – Suministro de chalecos de intervención e interiores DGP",
+    "slv": "Španija – Varnostni telovniki – Suministro de chalecos de intervención e interiores DGP",
+    "eng": "Spain – Safety vests – Suministro de chalecos de intervención e interiores DGP"
+   },
+   "title-lot": {
+    "spa": [
+     "Armilles d'intervenció amb els seus complements",
+     "Armilles interiors discretes"
+    ]
+   },
+   "buyer-identifier": [
+    "202209"
+   ]
+  },
+  {
+   "notice-identifier": "f90ccbcb-b20a-40ea-b510-2b4b27008ad0",
+   "deadline-receipt-tender-date-lot": [
+    "2026-11-18+01:00"
+   ],
+   "notice-type": "cn-standard",
+   "publication-number": "722778-2026",
+   "legal-basis": [
+    "32014L0024"
+   ],
+   "dispatch-date": "2026-10-19+02:00",
+   "total-value-cur": [
+    "EUR"
+   ],
+   "total-value": 1128600,
+   "buyer-country": [
+    "ESP"
+   ],
+   "description-lot": {
+    "spa": [
+     "Suministro de 515 trajes especiales de intervención en incendio sin capucha con destino al personal del departamento de bomberos, prevención, intervención en emergencias y protección civil y de 25 trajes especiales de intervención en incendio con capucha con destino al personal del departamento de bomberos, prevención, intervención en emergencias y protección civil."
+    ]
+   },
+   "procedure-type": "open",
+   "classification-cpv": [
+    "35113400",
+    "35811100",
+    "35113400",
+    "35811100"
+   ],
+   "contract-nature": [
+    "supplies",
+    "supplies"
+   ],
+   "publication-date": "2026-10-20+02:00",
+   "buyer-name": {
+    "spa": [
+     "Junta de Gobierno del Ajuntament de València"
+    ]
+   },
+   "links": {
+    "xml": {
+     "MUL": "https://ted.europa.eu/en/notice/722778-2026/xml"
+    },
+    "pdf": {
+     "BUL": "https://ted.europa.eu/bg/notice/722778-2026/pdf",
+     "SPA": "https://ted.europa.eu/es/notice/722778-2026/pdf",
+     "CES": "https://ted.europa.eu/cs/notice/722778-2026/pdf",
+     "DAN": "https://ted.europa.eu/da/notice/722778-2026/pdf",
+     "DEU": "https://ted.europa.eu/de/notice/722778-2026/pdf",
+     "EST": "https://ted.europa.eu/et/notice/722778-2026/pdf",
+     "ELL": "https://ted.europa.eu/el/notice/722778-2026/pdf",
+     "ENG": "https://ted.europa.eu/en/notice/722778-2026/pdf",
+     "FRA": "https://ted.europa.eu/fr/notice/722778-2026/pdf",
+     "GLE": "https://ted.europa.eu/ga/notice/722778-2026/pdf",
+     "HRV": "https://ted.europa.eu/hr/notice/722778-2026/pdf",
+     "ITA": "https://ted.europa.eu/it/notice/722778-2026/pdf",
+     "LAV": "https://ted.europa.eu/lv/notice/722778-2026/pdf",
+     "LIT": "https://ted.europa.eu/lt/notice/722778-2026/pdf",
+     "HUN": "https://ted.europa.eu/hu/notice/722778-2026/pdf",
+     "MLT": "https://ted.europa.eu/mt/notice/722778-2026/pdf",
+     "NLD": "https://ted.europa.eu/nl/notice/722778-2026/pdf",
+     "POL": "https://ted.europa.eu/pl/notice/722778-2026/pdf",
+     "POR": "https://ted.europa.eu/pt/notice/722778-2026/pdf",
+     "RON": "https://ted.europa.eu/ro/notice/722778-2026/pdf",
+     "SLK": "https://ted.europa.eu/sk/notice/722778-2026/pdf",
+     "SLV": "https://ted.europa.eu/sl/notice/722778-2026/pdf",
+     "FIN": "https://ted.europa.eu/fi/notice/722778-2026/pdf",
+     "SWE": "https://ted.europa.eu/sv/notice/722778-2026/pdf"
+    },
+    "pdfs": {
+     "SPA": "https://ted.europa.eu/es/notice/722778-2026/pdfs"
+    },
+    "html": {
+     "BUL": "https://ted.europa.eu/bg/notice/-/detail/722778-2026",
+     "SPA": "https://ted.europa.eu/es/notice/-/detail/722778-2026",
+     "CES": "https://ted.europa.eu/cs/notice/-/detail/722778-2026",
+     "DAN": "https://ted.europa.eu/da/notice/-/detail/722778-2026",
+     "DEU": "https://ted.europa.eu/de/notice/-/detail/722778-2026",
+     "EST": "https://ted.europa.eu/et/notice/-/detail/722778-2026",
+     "ELL": "https://ted.europa.eu/el/notice/-/detail/722778-2026",
+     "ENG": "https://ted.europa.eu/en/notice/-/detail/722778-2026",
+     "FRA": "https://ted.europa.eu/fr/notice/-/detail/722778-2026",
+     "GLE": "https://ted.europa.eu/ga/notice/-/detail/722778-2026",
+     "HRV": "https://ted.europa.eu/hr/notice/-/detail/722778-2026",
+     "ITA": "https://ted.europa.eu/it/notice/-/detail/722778-2026",
+     "LAV": "https://ted.europa.eu/lv/notice/-/detail/722778-2026",
+     "LIT": "https://ted.europa.eu/lt/notice/-/detail/722778-2026",
+     "HUN": "https://ted.europa.eu/hu/notice/-/detail/722778-2026",
+     "MLT": "https://ted.europa.eu/mt/notice/-/detail/722778-2026",
+     "NLD": "https://ted.europa.eu/nl/notice/-/detail/722778-2026",
+     "POL": "https://ted.europa.eu/pl/notice/-/detail/722778-2026",
+     "POR": "https://ted.europa.eu/pt/notice/-/detail/722778-2026",
+     "RON": "https://ted.europa.eu/ro/notice/-/detail/722778-2026",
+     "SLK": "https://ted.europa.eu/sk/notice/-/detail/722778-2026",
+     "SLV": "https://ted.europa.eu/sl/notice/-/detail/722778-2026",
+     "FIN": "https://ted.europa.eu/fi/notice/-/detail/722778-2026",
+     "SWE": "https://ted.europa.eu/sv/notice/-/detail/722778-2026"
+    },
+    "htmlDirect": {
+     "BUL": "https://ted.europa.eu/bg/notice/722778-2026/html",
+     "SPA": "https://ted.europa.eu/es/notice/722778-2026/html",
+     "CES": "https://ted.europa.eu/cs/notice/722778-2026/html",
+     "DAN": "https://ted.europa.eu/da/notice/722778-2026/html",
+     "DEU": "https://ted.europa.eu/de/notice/722778-2026/html",
+     "EST": "https://ted.europa.eu/et/notice/722778-2026/html",
+     "ELL": "https://ted.europa.eu/el/notice/722778-2026/html",
+     "ENG": "https://ted.europa.eu/en/notice/722778-2026/html",
+     "FRA": "https://ted.europa.eu/fr/notice/722778-2026/html",
+     "GLE": "https://ted.europa.eu/ga/notice/722778-2026/html",
+     "HRV": "https://ted.europa.eu/hr/notice/722778-2026/html",
+     "ITA": "https://ted.europa.eu/it/notice/722778-2026/html",
+     "LAV": "https://ted.europa.eu/lv/notice/722778-2026/html",
+     "LIT": "https://ted.europa.eu/lt/notice/722778-2026/html",
+     "HUN": "https://ted.europa.eu/hu/notice/722778-2026/html",
+     "MLT": "https://ted.europa.eu/mt/notice/722778-2026/html",
+     "NLD": "https://ted.europa.eu/nl/notice/722778-2026/html",
+     "POL": "https://ted.europa.eu/pl/notice/722778-2026/html",
+     "POR": "https://ted.europa.eu/pt/notice/722778-2026/html",
+     "RON": "https://ted.europa.eu/ro/notice/722778-2026/html",
+     "SLK": "https://ted.europa.eu/sk/notice/722778-2026/html",
+     "SLV": "https://ted.europa.eu/sl/notice/722778-2026/html",
+     "FIN": "https://ted.europa.eu/fi/notice/722778-2026/html",
+     "SWE": "https://ted.europa.eu/sv/notice/722778-2026/html"
+    }
+   },
+   "notice-title": {
+    "hun": "Spanyolország – Védő- és biztonsági ruha – Suministro de 540 trajes especiales de intervención en incendios para el departamento de bomberos, prevención, intervención en emergencias y protección civil.",
+    "lav": "Spānija – Aizsargtērpi – Suministro de 540 trajes especiales de intervención en incendios para el departamento de bomberos, prevención, intervención en emergencias y protección civil.",
+    "swe": "Spanien – Skydds- och säkerhetskläder – Suministro de 540 trajes especiales de intervención en incendios para el departamento de bomberos, prevención, intervención en emergencias y protección civil.",
+    "gle": "An Spáinn – Protective and safety clothing – Suministro de 540 trajes especiales de intervención en incendios para el departamento de bomberos, prevención, intervención en emergencias y protección civil.",
+    "ell": "Ισπανία – Ρούχα προστασίας και ασφαλείας – Suministro de 540 trajes especiales de intervención en incendios para el departamento de bomberos, prevención, intervención en emergencias y protección civil.",
+    "spa": "España – Ropa de protección y de seguridad – Suministro de 540 trajes especiales de intervención en incendios para el departamento de bomberos, prevención, intervención en emergencias y protección civil.",
+    "est": "Hispaania – Kaitse- ja turvarõivad – Suministro de 540 trajes especiales de intervención en incendios para el departamento de bomberos, prevención, intervención en emergencias y protección civil.",
+    "nld": "Spanje – Beschermende en veiligheidskleding – Suministro de 540 trajes especiales de intervención en incendios para el departamento de bomberos, prevención, intervención en emergencias y protección civil.",
+    "fin": "Espanja – Suoja- ja turvavaatteet – Suministro de 540 trajes especiales de intervención en incendios para el departamento de bomberos, prevención, intervención en emergencias y protección civil.",
+    "pol": "Hiszpania – Odzież ochronna i zabezpieczająca – Suministro de 540 trajes especiales de intervención en incendios para el departamento de bomberos, prevención, intervención en emergencias y protección civil.",
+    "hrv": "Španjolska – Zaštitna i sigurnosna odjeća – Suministro de 540 trajes especiales de intervención en incendios para el departamento de bomberos, prevención, intervención en emergencias y protección civil.",
+    "ces": "Španělsko – Ochranné a bezpečnostní oděvy – Suministro de 540 trajes especiales de intervención en incendios para el departamento de bomberos, prevención, intervención en emergencias y protección civil.",
+    "dan": "Spanien – Beskyttelses- og sikkerhedsbeklædning – Suministro de 540 trajes especiales de intervención en incendios para el departamento de bomberos, prevención, intervención en emergencias y protección civil.",
+    "ron": "Spania – Îmbrăcăminte de protecţie şi de securitate – Suministro de 540 trajes especiales de intervención en incendios para el departamento de bomberos, prevención, intervención en emergencias y protección civil.",
+    "por": "Espanha – Vestuário de protecção e segurança – Suministro de 540 trajes especiales de intervención en incendios para el departamento de bomberos, prevención, intervención en emergencias y protección civil.",
+    "slk": "Španielsko – Ochranné a bezpečnostné odevy – Suministro de 540 trajes especiales de intervención en incendios para el departamento de bomberos, prevención, intervención en emergencias y protección civil.",
+    "fra": "Espagne – Vêtements de protection et de sécurité – Suministro de 540 trajes especiales de intervención en incendios para el departamento de bomberos, prevención, intervención en emergencias y protección civil.",
+    "mlt": "Spanja – Ħwejjeġ protettivi u tas-sigurtà – Suministro de 540 trajes especiales de intervención en incendios para el departamento de bomberos, prevención, intervención en emergencias y protección civil.",
+    "deu": "Spanien – Schutz- und Sicherheitskleidung – Suministro de 540 trajes especiales de intervención en incendios para el departamento de bomberos, prevención, intervención en emergencias y protección civil.",
+    "lit": "Ispanija – Apsauginiai drabužiai – Suministro de 540 trajes especiales de intervención en incendios para el departamento de bomberos, prevención, intervención en emergencias y protección civil.",
+    "ita": "Spagna – Indumenti protettivi e di sicurezza – Suministro de 540 trajes especiales de intervención en incendios para el departamento de bomberos, prevención, intervención en emergencias y protección civil.",
+    "bul": "Иcпaния – Защитно и предпазно облекло – Suministro de 540 trajes especiales de intervención en incendios para el departamento de bomberos, prevención, intervención en emergencias y protección civil.",
+    "slv": "Španija – Zaščitna in varnostna oblačila – Suministro de 540 trajes especiales de intervención en incendios para el departamento de bomberos, prevención, intervención en emergencias y protección civil.",
+    "eng": "Spain – Protective and safety clothing – Suministro de 540 trajes especiales de intervención en incendios para el departamento de bomberos, prevención, intervención en emergencias y protección civil."
+   },
+   "title-lot": {
+    "spa": [
+     "Suministro de 540 trajes especiales de intervención en incendios para el departamento de bomberos, prevención, intervención en emergencias y protección civil."
+    ]
+   },
+   "buyer-identifier": [
+    "31011480144908",
+    "P4625200C"
+   ]
+  },
+  {
+   "notice-identifier": "02f5db45-054c-4952-913d-aabb7e75a503",
+   "deadline-receipt-tender-date-lot": [
+    "2026-11-24+01:00"
+   ],
+   "notice-type": "cn-standard",
+   "publication-number": "722886-2026",
+   "legal-basis": [
+    "32014L0024"
+   ],
+   "dispatch-date": "2026-10-19+02:00",
+   "buyer-country": [
+    "DEU"
+   ],
+   "description-lot": {
+    "deu": [
+     "Die Samtgemeinde Elm-Asse beabsichtigt die Beschaffung von ca. 200 Garnituren Feuerwehr-Einsatzbekleidung (Jacke und Hose) im Rahmen eines Leasingvertrages mit einer Grundlaufzeit von drei Jahren und einer Verlängerungsoption um zweimal ein Jahr (max. fünf Jahre). Der Leasinggeber übernimmt die fachgerechte Reinigung, Aufbereitung, Trocknung, Dokumentation sowie die termingerechte Rücklieferung von persönlicher Schutzausrüstung (PSA) für Feuerwehren und sonstige Träger. Die Leistungen sind unter Einhaltung aller einschlägigen gesetzlichen, normativen und hygienischen Vorgaben zu erbringen. Die Schutzkleidung muss den einschlägigen Normen, insbesondere EN 469:2020, Leistungsstufe 2, entsprechen. Gefordert sind zudem eine wasserdichte, wasserdampfdurchlässige Membran im Liner-System, ein nachgewiesener Beflammungstest gemäß EN 469:2020, Anhang D, sowie eine waschfeste Kennzeichnung mittels Barcodes, RFID oder NFC. Detaillierte Angaben siehe Leistungsverzeichnis. Zum Vertragsende erfolgt die Übernahme der Bekleidung zum Zeitwert. Im Rahmen der Angebotswertung ist ein Trageversuch vorgesehen. Diese sind für die 50.KW 2026 vorgesehen. Näheres ist den Ausschreibungsunterlagen zu entnehmen. Die Angebotsabgabe ist ausschließlich elektronisch über das Vergabeportal zugelassen. Bewerber haben sich unverzüglich über die Richtigkeit der Vergabeunterlagen zu vergewissern. Um einen ordnungsgemäßen Verlauf der Ausschreibung zu gewährleisten, wird die Frist für das letzte Stellen von Bieterfragen auf den 13.11.2026 festgesetzt. Bei einer späteren Fragestellung kann eine rechtzeitige Beantwortung nicht garantiert werden und führt nicht zwingend zu einer Fristverlängerung. Sofern der Bietende in der Wertungsreihenfolge nicht Rangerster ist, behält sich der Auftraggeber gem. § 56 Abs. 2 VgV vor, fehlende, unvollständige oder fehlerhafte Unterlagen nicht nachzufordern."
+    ]
+   },
+   "procedure-type": "open",
+   "classification-cpv": [
+    "35113400",
+    "18143000",
+    "98310000",
+    "98311000",
+    "35113400"
+   ],
+   "contract-nature": [
+    "supplies",
+    "supplies"
+   ],
+   "publication-date": "2026-10-20+02:00",
+   "buyer-name": {
+    "deu": [
+     "Landkreis Wolfenbüttel für die Samtgemeinde Elm-Asse"
+    ]
+   },
+   "links": {
+    "xml": {
+     "MUL": "https://ted.europa.eu/en/notice/722886-2026/xml"
+    },
+    "pdf": {
+     "BUL": "https://ted.europa.eu/bg/notice/722886-2026/pdf",
+     "SPA": "https://ted.europa.eu/es/notice/722886-2026/pdf",
+     "CES": "https://ted.europa.eu/cs/notice/722886-2026/pdf",
+     "DAN": "https://ted.europa.eu/da/notice/722886-2026/pdf",
+     "DEU": "https://ted.europa.eu/de/notice/722886-2026/pdf",
+     "EST": "https://ted.europa.eu/et/notice/722886-2026/pdf",
+     "ELL": "https://ted.europa.eu/el/notice/722886-2026/pdf",
+     "ENG": "https://ted.europa.eu/en/notice/722886-2026/pdf",
+     "FRA": "https://ted.europa.eu/fr/notice/722886-2026/pdf",
+     "GLE": "https://ted.europa.eu/ga/notice/722886-2026/pdf",
+     "HRV": "https://ted.europa.eu/hr/notice/722886-2026/pdf",
+     "ITA": "https://ted.europa.eu/it/notice/722886-2026/pdf",
+     "LAV": "https://ted.europa.eu/lv/notice/722886-2026/pdf",
+     "LIT": "https://ted.europa.eu/lt/notice/722886-2026/pdf",
+     "HUN": "https://ted.europa.eu/hu/notice/722886-2026/pdf",
+     "MLT": "https://ted.europa.eu/mt/notice/722886-2026/pdf",
+     "NLD": "https://ted.europa.eu/nl/notice/722886-2026/pdf",
+     "POL": "https://ted.europa.eu/pl/notice/722886-2026/pdf",
+     "POR": "https://ted.europa.eu/pt/notice/722886-2026/pdf",
+     "RON": "https://ted.europa.eu/ro/notice/722886-2026/pdf",
+     "SLK": "https://ted.europa.eu/sk/notice/722886-2026/pdf",
+     "SLV": "https://ted.europa.eu/sl/notice/722886-2026/pdf",
+     "FIN": "https://ted.europa.eu/fi/notice/722886-2026/pdf",
+     "SWE": "https://ted.europa.eu/sv/notice/722886-2026/pdf"
+    },
+    "pdfs": {
+     "DEU": "https://ted.europa.eu/de/notice/722886-2026/pdfs"
+    },
+    "html": {
+     "BUL": "https://ted.europa.eu/bg/notice/-/detail/722886-2026",
+     "SPA": "https://ted.europa.eu/es/notice/-/detail/722886-2026",
+     "CES": "https://ted.europa.eu/cs/notice/-/detail/722886-2026",
+     "DAN": "https://ted.europa.eu/da/notice/-/detail/722886-2026",
+     "DEU": "https://ted.europa.eu/de/notice/-/detail/722886-2026",
+     "EST": "https://ted.europa.eu/et/notice/-/detail/722886-2026",
+     "ELL": "https://ted.europa.eu/el/notice/-/detail/722886-2026",
+     "ENG": "https://ted.europa.eu/en/notice/-/detail/722886-2026",
+     "FRA": "https://ted.europa.eu/fr/notice/-/detail/722886-2026",
+     "GLE": "https://ted.europa.eu/ga/notice/-/detail/722886-2026",
+     "HRV": "https://ted.europa.eu/hr/notice/-/detail/722886-2026",
+     "ITA": "https://ted.europa.eu/it/notice/-/detail/722886-2026",
+     "LAV": "https://ted.europa.eu/lv/notice/-/detail/722886-2026",
+     "LIT": "https://ted.europa.eu/lt/notice/-/detail/722886-2026",
+     "HUN": "https://ted.europa.eu/hu/notice/-/detail/722886-2026",
+     "MLT": "https://ted.europa.eu/mt/notice/-/detail/722886-2026",
+     "NLD": "https://ted.europa.eu/nl/notice/-/detail/722886-2026",
+     "POL": "https://ted.europa.eu/pl/notice/-/detail/722886-2026",
+     "POR": "https://ted.europa.eu/pt/notice/-/detail/722886-2026",
+     "RON": "https://ted.europa.eu/ro/notice/-/detail/722886-2026",
+     "SLK": "https://ted.europa.eu/sk/notice/-/detail/722886-2026",
+     "SLV": "https://ted.europa.eu/sl/notice/-/detail/722886-2026",
+     "FIN": "https://ted.europa.eu/fi/notice/-/detail/722886-2026",
+     "SWE": "https://ted.europa.eu/sv/notice/-/detail/722886-2026"
+    },
+    "htmlDirect": {
+     "BUL": "https://ted.europa.eu/bg/notice/722886-2026/html",
+     "SPA": "https://ted.europa.eu/es/notice/722886-2026/html",
+     "CES": "https://ted.europa.eu/cs/notice/722886-2026/html",
+     "DAN": "https://ted.europa.eu/da/notice/722886-2026/html",
+     "DEU": "https://ted.europa.eu/de/notice/722886-2026/html",
+     "EST": "https://ted.europa.eu/et/notice/722886-2026/html",
+     "ELL": "https://ted.europa.eu/el/notice/722886-2026/html",
+     "ENG": "https://ted.europa.eu/en/notice/722886-2026/html",
+     "FRA": "https://ted.europa.eu/fr/notice/722886-2026/html",
+     "GLE": "https://ted.europa.eu/ga/notice/722886-2026/html",
+     "HRV": "https://ted.europa.eu/hr/notice/722886-2026/html",
+     "ITA": "https://ted.europa.eu/it/notice/722886-2026/html",
+     "LAV": "https://ted.europa.eu/lv/notice/722886-2026/html",
+     "LIT": "https://ted.europa.eu/lt/notice/722886-2026/html",
+     "HUN": "https://ted.europa.eu/hu/notice/722886-2026/html",
+     "MLT": "https://ted.europa.eu/mt/notice/722886-2026/html",
+     "NLD": "https://ted.europa.eu/nl/notice/722886-2026/html",
+     "POL": "https://ted.europa.eu/pl/notice/722886-2026/html",
+     "POR": "https://ted.europa.eu/pt/notice/722886-2026/html",
+     "RON": "https://ted.europa.eu/ro/notice/722886-2026/html",
+     "SLK": "https://ted.europa.eu/sk/notice/722886-2026/html",
+     "SLV": "https://ted.europa.eu/sl/notice/722886-2026/html",
+     "FIN": "https://ted.europa.eu/fi/notice/722886-2026/html",
+     "SWE": "https://ted.europa.eu/sv/notice/722886-2026/html"
+    }
+   },
+   "notice-title": {
+    "hun": "Németország – Védő- és biztonsági ruha – Feuerwehrschutzkleidung (PSA Leasing + Wäsche) für die Feuerwehren der Samtgemeinde Elm-Asse",
+    "lav": "Vācija – Aizsargtērpi – Feuerwehrschutzkleidung (PSA Leasing + Wäsche) für die Feuerwehren der Samtgemeinde Elm-Asse",
+    "swe": "Tyskland – Skydds- och säkerhetskläder – Feuerwehrschutzkleidung (PSA Leasing + Wäsche) für die Feuerwehren der Samtgemeinde Elm-Asse",
+    "gle": "An Ghearmáin – Protective and safety clothing – Feuerwehrschutzkleidung (PSA Leasing + Wäsche) für die Feuerwehren der Samtgemeinde Elm-Asse",
+    "ell": "Γερμανία – Ρούχα προστασίας και ασφαλείας – Feuerwehrschutzkleidung (PSA Leasing + Wäsche) für die Feuerwehren der Samtgemeinde Elm-Asse",
+    "spa": "Alemania – Ropa de protección y de seguridad – Feuerwehrschutzkleidung (PSA Leasing + Wäsche) für die Feuerwehren der Samtgemeinde Elm-Asse",
+    "est": "Saksamaa – Kaitse- ja turvarõivad – Feuerwehrschutzkleidung (PSA Leasing + Wäsche) für die Feuerwehren der Samtgemeinde Elm-Asse",
+    "nld": "Duitsland – Beschermende en veiligheidskleding – Feuerwehrschutzkleidung (PSA Leasing + Wäsche) für die Feuerwehren der Samtgemeinde Elm-Asse",
+    "fin": "Saksa – Suoja- ja turvavaatteet – Feuerwehrschutzkleidung (PSA Leasing + Wäsche) für die Feuerwehren der Samtgemeinde Elm-Asse",
+    "pol": "Niemcy – Odzież ochronna i zabezpieczająca – Feuerwehrschutzkleidung (PSA Leasing + Wäsche) für die Feuerwehren der Samtgemeinde Elm-Asse",
+    "hrv": "Njemačka – Zaštitna i sigurnosna odjeća – Feuerwehrschutzkleidung (PSA Leasing + Wäsche) für die Feuerwehren der Samtgemeinde Elm-Asse",
+    "ces": "Německo – Ochranné a bezpečnostní oděvy – Feuerwehrschutzkleidung (PSA Leasing + Wäsche) für die Feuerwehren der Samtgemeinde Elm-Asse",
+    "dan": "Tyskland – Beskyttelses- og sikkerhedsbeklædning – Feuerwehrschutzkleidung (PSA Leasing + Wäsche) für die Feuerwehren der Samtgemeinde Elm-Asse",
+    "ron": "Germania – Îmbrăcăminte de protecţie şi de securitate – Feuerwehrschutzkleidung (PSA Leasing + Wäsche) für die Feuerwehren der Samtgemeinde Elm-Asse",
+    "por": "Alemanha – Vestuário de protecção e segurança – Feuerwehrschutzkleidung (PSA Leasing + Wäsche) für die Feuerwehren der Samtgemeinde Elm-Asse",
+    "slk": "Nemecko – Ochranné a bezpečnostné odevy – Feuerwehrschutzkleidung (PSA Leasing + Wäsche) für die Feuerwehren der Samtgemeinde Elm-Asse",
+    "fra": "Allemagne – Vêtements de protection et de sécurité – Feuerwehrschutzkleidung (PSA Leasing + Wäsche) für die Feuerwehren der Samtgemeinde Elm-Asse",
+    "mlt": "Il-Ġermanja – Ħwejjeġ protettivi u tas-sigurtà – Feuerwehrschutzkleidung (PSA Leasing + Wäsche) für die Feuerwehren der Samtgemeinde Elm-Asse",
+    "deu": "Deutschland – Schutz- und Sicherheitskleidung – Feuerwehrschutzkleidung (PSA Leasing + Wäsche) für die Feuerwehren der Samtgemeinde Elm-Asse",
+    "lit": "Vokietija – Apsauginiai drabužiai – Feuerwehrschutzkleidung (PSA Leasing + Wäsche) für die Feuerwehren der Samtgemeinde Elm-Asse",
+    "ita": "Germania – Indumenti protettivi e di sicurezza – Feuerwehrschutzkleidung (PSA Leasing + Wäsche) für die Feuerwehren der Samtgemeinde Elm-Asse",
+    "bul": "Гepмaния – Защитно и предпазно облекло – Feuerwehrschutzkleidung (PSA Leasing + Wäsche) für die Feuerwehren der Samtgemeinde Elm-Asse",
+    "slv": "Nemčija – Zaščitna in varnostna oblačila – Feuerwehrschutzkleidung (PSA Leasing + Wäsche) für die Feuerwehren der Samtgemeinde Elm-Asse",
+    "eng": "Germany – Protective and safety clothing – Feuerwehrschutzkleidung (PSA Leasing + Wäsche) für die Feuerwehren der Samtgemeinde Elm-Asse"
+   },
+   "title-lot": {
+    "deu": [
+     "Feuerwehrschutzkleidung (PSA Leasing + Wäsche) für die Feuerwehren der Samtgemeinde Elm-Asse"
+    ]
+   },
+   "buyer-identifier": [
+    "14695"
+   ]
+  }
+ ],
+ "totalNoticeCount": 699,
+ "iterationNextToken": null,
+ "timedOut": false
+}

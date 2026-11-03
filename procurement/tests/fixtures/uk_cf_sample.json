@@ -1,0 +1,438 @@
+{
+ "uri": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-10-20&publishedTo=2026-11-02&stages=award&limit=3",
+ "version": "1.1",
+ "extensions": [
+  "https://standard.open-contracting.org/profiles/eu/master/en/extension.json",
+  "https://raw.githubusercontent.com/portaledcahn/ocds_tenderDatePublished_extension/master/extension.json",
+  "https://raw.githubusercontent.com/open-contracting-extensions/ocds_budget_breakdown_extension/master/extension.json",
+  "https://raw.githubusercontent.com/Crown-Commercial-Service/ocds_awards_datePublished_extension/main/extension.json",
+  "https://raw.githubusercontent.com/Crown-Commercial-Service/ocds_partyDetails_vcse_extension/main/extension.json",
+  "https://raw.githubusercontent.com/Crown-Commercial-Service/ocds_tender_suitability_extension/main/extension.json",
+  "https://raw.githubusercontent.com/open-contracting-extensions/ocds_pagination_extension/master/extension.json"
+ ],
+ "publishedDate": "2026-10-31T12:34:40Z",
+ "publisher": {
+  "name": "Cabinet Office",
+  "scheme": "GB-GOR",
+  "uid": "D2",
+  "uri": "https://www.gov.uk/government/organisations/cabinet-office"
+ },
+ "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+ "publicationPolicy": "https://www.gov.uk/government/publications/open-contracting",
+ "releases": [
+  {
+   "ocid": "ocds-b5fd17-c58c79ec-1a82-4be3-8fb5-a73ef2c8f421",
+   "id": "240e3451-d90e-4f1a-88bc-316d48ffbce4-919946",
+   "language": "en",
+   "date": "2026-10-31T12:34:39Z",
+   "tag": [
+    "award"
+   ],
+   "initiationType": "tender",
+   "tender": {
+    "id": "20261031123435-103298",
+    "title": "March 2027 Bus Contracts",
+    "description": "This was a call for competition under Lot 1 of '2368 Passenger Transport DPS' for the procurement of bus transport contracts for East Riding of Yorkshire Council.  The DPS is open from 01 December 2020 to 30 November 2027, as published in the Official Journal of the European Union under reference 2020/S 167-406030 on 28 August 2020.",
+    "status": "complete",
+    "classification": {
+     "scheme": "CPV",
+     "id": "60172000",
+     "description": "Hire of buses and coaches with driver"
+    },
+    "items": [
+     {
+      "id": "1",
+      "deliveryAddresses": [
+       {
+        "region": "Yorkshire and the Humber",
+        "countryName": "United Kingdom"
+       }
+      ]
+     }
+    ],
+    "value": {
+     "amount": 5242203,
+     "currency": "GBP"
+    },
+    "procurementMethod": "selective",
+    "procurementMethodDetails": "Restricted procedure",
+    "tenderPeriod": {
+     "endDate": "2026-09-14T12:00:00+01:00"
+    },
+    "contractPeriod": {
+     "startDate": "2027-03-27T00:00:00Z",
+     "endDate": "2032-03-29T23:59:59+01:00"
+    },
+    "suitability": {
+     "sme": true,
+     "vcse": true
+    },
+    "mainProcurementCategory": "services"
+   },
+   "parties": [
+    {
+     "id": "GB-CFS-188336",
+     "name": "East Riding of Yorkshire Council",
+     "identifier": {
+      "legalName": "East Riding of Yorkshire Council"
+     },
+     "address": {
+      "streetAddress": "County Hall, Cross Street,",
+      "locality": "Beverley",
+      "postalCode": "HU17 9BA",
+      "countryName": "ENG"
+     },
+     "contactPoint": {
+      "name": "Mark Hagues",
+      "email": "mark.hagues@eastriding.gov.uk"
+     },
+     "details": {
+      "url": "https://www.eastriding.gov.uk"
+     },
+     "roles": [
+      "buyer"
+     ]
+    },
+    {
+     "id": "GB-CFS-200872",
+     "name": "East Yorkshire Motor Services Limited",
+     "identifier": {
+      "legalName": "East Yorkshire Motor Services Limited"
+     },
+     "address": {
+      "streetAddress": "252 Anlaby Road\nHull\nHU3 2RS"
+     },
+     "details": {
+      "scale": "large",
+      "vcse": false
+     },
+     "roles": [
+      "supplier"
+     ]
+    }
+   ],
+   "buyer": {
+    "id": "GB-CFS-188336",
+    "name": "East Riding of Yorkshire Council"
+   },
+   "awards": [
+    {
+     "id": "ocds-b5fd17-c58c79ec-1a82-4be3-8fb5-a73ef2c8f421-1",
+     "status": "active",
+     "date": "2026-10-07T00:00:00+01:00",
+     "datePublished": "2026-10-31T12:34:39Z",
+     "value": {
+      "amount": 5242203,
+      "currency": "GBP"
+     },
+     "suppliers": [
+      {
+       "id": "GB-CFS-200872",
+       "name": "East Yorkshire Motor Services Limited"
+      }
+     ],
+     "contractPeriod": {
+      "startDate": "2027-03-27T00:00:00Z",
+      "endDate": "2032-03-29T23:59:59+01:00"
+     },
+     "documents": [
+      {
+       "id": "1",
+       "documentType": "awardNotice",
+       "description": "Awarded contract notice on Contracts Finder",
+       "url": "https://www.contractsfinder.service.gov.uk/Notice/240e3451-d90e-4f1a-88bc-316d48ffbce4",
+       "datePublished": "2026-10-31T12:34:39Z",
+       "format": "text/html",
+       "language": "en"
+      },
+      {
+       "id": "2",
+       "description": "Additional data",
+       "url": "https://uk.eu-supply.com/app/rfq/rwlentrance_s.asp?PID=108381&B=UK"
+      },
+      {
+       "id": "3",
+       "description": "User / Company",
+       "url": "https://uk.eu-supply.com/ctm/Company/CompanyInformation/Index/103298"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ocid": "ocds-b5fd17-c066644a-fbbb-4061-b460-9ba53c625879",
+   "id": "c699f528-e89b-4a6a-a06e-2d70deec2f65-919941",
+   "language": "en",
+   "date": "2026-10-31T10:21:19Z",
+   "tag": [
+    "award"
+   ],
+   "initiationType": "tender",
+   "tender": {
+    "id": "IT-368-21299-QSB467 - AWARD",
+    "title": "2026-10-28 09:00 - QSB467 Ipswich to Pushforward Secondary (various locations in Ipswich, Stowmarket & Bury St Edmunds) - AWARD",
+    "description": "Suffolk County Council is seeking a mini competition against the following Dynamic Purchasing System: `The supply of Passenger Transport Services`, OJEU Notice Id: 2018/S 031-067685.\r\n      \r\n      Ipswich to Pushforward Secondary (various locations in Ipswich, Stowmarket & Bury St Edmunds).\r\n      \r\n      Further details can be found in the 'Tenders / My Tenders' area of this website, by selecting the 'View Details' button for this project.\r\n      \r\n      The deadline for returned submissions is 09:00 Wednesday 28th October 2026. Please note late returns will NOT be permitted.\r\n      \r\n      The deadline for clarification questions is 15:00 Monday 26th October 2026 which must be generated via the correspondence option on the website.",
+    "status": "complete",
+    "classification": {
+     "scheme": "CPV",
+     "id": "60000000",
+     "description": "Transport services (excl. Waste transport)"
+    },
+    "items": [
+     {
+      "id": "1",
+      "deliveryAddresses": [
+       {
+        "postalCode": "IP1 2BX"
+       },
+       {
+        "countryName": "British Oversea Territories"
+       },
+       {
+        "countryName": "Channel Islands"
+       },
+       {
+        "countryName": "Europe"
+       },
+       {
+        "countryName": "Isle of Man"
+       },
+       {
+        "countryName": "Rest of the World"
+       },
+       {
+        "countryName": "United Kingdom"
+       }
+      ]
+     }
+    ],
+    "procurementMethodDetails": "Not specified",
+    "tenderPeriod": {
+     "endDate": "2026-10-28T09:00:00Z"
+    },
+    "contractPeriod": {
+     "startDate": "2026-11-02T00:00:00Z",
+     "endDate": "2028-07-31T23:59:59+01:00"
+    },
+    "suitability": {
+     "sme": false,
+     "vcse": false
+    },
+    "mainProcurementCategory": "services"
+   },
+   "parties": [
+    {
+     "id": "GB-CFS-154927",
+     "name": "Suffolk County Council Passenger Transport",
+     "identifier": {
+      "legalName": "Suffolk County Council Passenger Transport"
+     },
+     "address": {
+      "streetAddress": "Russell Road, Ipswich",
+      "locality": "Suffolk",
+      "postalCode": "IP1 2BX",
+      "countryName": "United Kingdom"
+     },
+     "contactPoint": {
+      "name": "Laura Bellamy",
+      "email": "Laura.Bellamy@suffolk.gov.uk",
+      "telephone": "03456 066171"
+     },
+     "details": {
+      "url": "https://www.suffolk.gov.uk/business/tenders-and-supplying-us"
+     },
+     "roles": [
+      "buyer"
+     ]
+    },
+    {
+     "id": "GB-CFS-294249",
+     "name": "IP Express Cabs",
+     "identifier": {
+      "legalName": "IP Express Cabs"
+     },
+     "address": {
+      "streetAddress": "78 Hatfield Road, Ipswich , Suffolk, United Kingdom, Ip3 9ag"
+     },
+     "roles": [
+      "supplier"
+     ]
+    }
+   ],
+   "buyer": {
+    "id": "GB-CFS-154927",
+    "name": "Suffolk County Council Passenger Transport"
+   },
+   "awards": [
+    {
+     "id": "ocds-b5fd17-c066644a-fbbb-4061-b460-9ba53c625879-1",
+     "status": "active",
+     "date": "2026-10-31T00:00:00Z",
+     "datePublished": "2026-10-31T10:21:19Z",
+     "value": {
+      "amount": 51110.76,
+      "currency": "GBP"
+     },
+     "suppliers": [
+      {
+       "id": "GB-CFS-294249",
+       "name": "IP Express Cabs"
+      }
+     ],
+     "contractPeriod": {
+      "startDate": "2026-11-02T00:00:00Z",
+      "endDate": "2028-07-31T23:59:59+01:00"
+     },
+     "documents": [
+      {
+       "id": "1",
+       "documentType": "awardNotice",
+       "description": "Awarded contract notice on Contracts Finder",
+       "url": "https://www.contractsfinder.service.gov.uk/Notice/c699f528-e89b-4a6a-a06e-2d70deec2f65",
+       "datePublished": "2026-10-31T10:21:19Z",
+       "format": "text/html",
+       "language": "en"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ocid": "ocds-b5fd17-fbea2f0c-b201-4ac4-8df9-d84e6cc66bfe",
+   "id": "fb69360a-3ec1-4550-b7c3-d8fe30d839bc-919907",
+   "language": "en",
+   "date": "2026-10-30T18:09:39Z",
+   "tag": [
+    "award"
+   ],
+   "initiationType": "tender",
+   "tender": {
+    "id": "C O Digital 94",
+    "title": "Provision of a Cyber Threat Intelligence Suite",
+    "description": "Provision of a commercial-off-the \r\nshelf(COTS) threat intelligence platform, with a portal and malware sandbox to support the Cabinet Office's Cyber and Information Security function.",
+    "status": "complete",
+    "classification": {
+     "scheme": "CPV",
+     "id": "48000000",
+     "description": "Software package and information systems"
+    },
+    "items": [
+     {
+      "id": "1",
+      "deliveryAddresses": [
+       {
+        "postalCode": "E14 4PU"
+       }
+      ]
+     }
+    ],
+    "value": {
+     "amount": 290000,
+     "currency": "GBP"
+    },
+    "procurementMethod": "selective",
+    "procurementMethodDetails": "Call-off from a framework agreement",
+    "tenderPeriod": {
+     "endDate": "2026-10-08T23:59:00+01:00"
+    },
+    "contractPeriod": {
+     "startDate": "2026-11-15T00:00:00Z",
+     "endDate": "2027-11-14T23:59:59Z"
+    },
+    "suitability": {
+     "sme": true,
+     "vcse": false
+    },
+    "mainProcurementCategory": "services"
+   },
+   "parties": [
+    {
+     "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/3A4AmUm4",
+     "name": "Cabinet Office",
+     "identifier": {
+      "legalName": "Cabinet Office",
+      "scheme": "GB-SRS",
+      "id": "sid4gov.cabinetoffice.gov.uk/3A4AmUm4"
+     },
+     "address": {
+      "streetAddress": "10 South Colonnade, Canary Wharf",
+      "locality": "LONDON",
+      "postalCode": "E14 4PU",
+      "countryName": "England"
+     },
+     "contactPoint": {
+      "email": "commercial@cabinetoffice.gov.uk"
+     },
+     "roles": [
+      "buyer"
+     ]
+    },
+    {
+     "id": "GB-COH-06404381",
+     "name": "Mondas Consulting Limited",
+     "identifier": {
+      "legalName": "Mondas Consulting Limited",
+      "scheme": "GB-COH",
+      "id": "06404381"
+     },
+     "address": {
+      "streetAddress": "Suite 10, The Hub \r\nFowler Avenue \r\nFarnborough \r\nHampshire \r\nGU14 7JP \r\nUnited Kingdom"
+     },
+     "details": {
+      "scale": "sme",
+      "vcse": false
+     },
+     "roles": [
+      "supplier"
+     ]
+    }
+   ],
+   "buyer": {
+    "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/3A4AmUm4",
+    "name": "Cabinet Office"
+   },
+   "awards": [
+    {
+     "id": "ocds-b5fd17-fbea2f0c-b201-4ac4-8df9-d84e6cc66bfe-1",
+     "status": "active",
+     "date": "2026-10-22T00:00:00+01:00",
+     "datePublished": "2026-10-30T18:09:39Z",
+     "value": {
+      "amount": 290000,
+      "currency": "GBP"
+     },
+     "suppliers": [
+      {
+       "id": "GB-COH-06404381",
+       "name": "Mondas Consulting Limited"
+      }
+     ],
+     "contractPeriod": {
+      "startDate": "2026-11-15T00:00:00Z",
+      "endDate": "2027-11-14T23:59:59Z"
+     },
+     "documents": [
+      {
+       "id": "1",
+       "documentType": "awardNotice",
+       "description": "Awarded contract notice on Contracts Finder",
+       "url": "https://www.contractsfinder.service.gov.uk/Notice/fb69360a-3ec1-4550-b7c3-d8fe30d839bc",
+       "datePublished": "2026-10-30T18:09:39Z",
+       "format": "text/html",
+       "language": "en"
+      },
+      {
+       "id": "2",
+       "documentType": "contractSigned",
+       "url": "https://www.contractsfinder.service.gov.uk/Notice/Attachment/1e2a512c-389e-45a9-a352-cdfc058ff79e",
+       "format": "application/pdf"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "links": {
+  "next": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-10-20&publishedTo=2026-11-02&stages=award&limit=3&cursor=cHVibGlzaGVkRnJvbT0yMDI2LTEwLTIwfHB1Ymxpc2hlZFRvPTIwMjYtMTEtMDJ8c3RhZ2VzPWF3YXJkfGxpbWl0PTN8bmV4dEN1cnNvcj03ODg0OTc="
+ }
+}

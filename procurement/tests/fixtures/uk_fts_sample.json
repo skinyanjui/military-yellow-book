@@ -1,0 +1,757 @@
+{
+ "uri": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages?updatedFrom=2026-10-30T00:00:00&updatedTo=2026-11-02T00:00:00&limit=3",
+ "version": "1.1",
+ "extensions": [
+  "https://standard.open-contracting.org/profiles/eu/latest/en/extension.json",
+  "https://raw.githubusercontent.com/open-contracting-extensions/ocds_amendment_rationale_classifications_extension/master/extension.json",
+  "https://raw.githubusercontent.com/open-contracting-extensions/ocds_budget_breakdown_extension/master/extension.json",
+  "https://raw.githubusercontent.com/open-contracting-extensions/ocds_contract_completion_extension/master/extension.json",
+  "https://raw.githubusercontent.com/open-contracting-extensions/ocds_documentation_extension/master/extension.json",
+  "https://raw.githubusercontent.com/open-contracting-extensions/ocds_pagination_extension/master/extension.json",
+  "https://raw.githubusercontent.com/open-contracting-extensions/ocds_suitability_extension/master/extension.json",
+  "https://raw.githubusercontent.com/portaledcahn/ocds_Links_extension/main/extension.json",
+  "https://raw.githubusercontent.com/cabinetoffice/ocds_uk_extension/main/extension.json",
+  "https://raw.githubusercontent.com/open-contracting-extensions/ocds_performance_failures_extension/master/extension.json"
+ ],
+ "publishedDate": "2026-11-01T20:19:41Z",
+ "publisher": {
+  "name": "Cabinet Office",
+  "scheme": "GB-GOR",
+  "uid": "D2",
+  "uri": "https://www.gov.uk/government/organisations/cabinet-office"
+ },
+ "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+ "publicationPolicy": "https://www.gov.uk/government/publications/open-contracting",
+ "releases": [
+  {
+   "buyerID": [],
+   "id": "103506-2026",
+   "tag": [
+    "award",
+    "contract"
+   ],
+   "date": "2026-11-01T20:19:41Z",
+   "initiationType": "tender",
+   "ocid": "ocds-h6vhtk-06ea05",
+   "parties": [
+    {
+     "name": "Oldham Metropolitan Borough Council",
+     "id": "GB-PPON-PMRJ-8362-DVNT",
+     "identifier": {
+      "scheme": "GB-PPON",
+      "id": "PMRJ-8362-DVNT"
+     },
+     "address": {
+      "streetAddress": "Spindles Shopping Centre, West Street",
+      "locality": "Oldham",
+      "postalCode": "OL1 1HD",
+      "country": "GB",
+      "countryName": "United Kingdom",
+      "region": "UKD37"
+     },
+     "contactPoint": {
+      "email": "commercial.procurementunit@oldham.gov.uk"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "classifications": [
+       {
+        "scheme": "UK_CA_TYPE",
+        "id": "publicAuthoritySubCentralGovernment",
+        "description": "Public authority - sub-central government"
+       }
+      ]
+     }
+    },
+    {
+     "name": "DEPAUL UK",
+     "id": "GB-COH-02440093",
+     "identifier": {
+      "scheme": "GB-COH",
+      "id": "02440093"
+     },
+     "additionalIdentifiers": [
+      {
+       "scheme": "GB-PPON",
+       "id": "PHZL-9877-JBNN"
+      }
+     ],
+     "address": {
+      "streetAddress": "34 Decima Street",
+      "locality": "London",
+      "postalCode": "SE1 4QQ",
+      "country": "GB",
+      "countryName": "United Kingdom",
+      "region": "UKI44"
+     },
+     "contactPoint": {
+      "email": "tenders@depaulcharity.org.uk"
+     },
+     "roles": [
+      "supplier"
+     ],
+     "details": {
+      "url": "https://www.depaul.org.uk/",
+      "scale": "large",
+      "vcse": true,
+      "publicServiceMissionOrganization": false,
+      "shelteredWorkshop": false
+     }
+    }
+   ],
+   "buyer": {
+    "id": "GB-PPON-PMRJ-8362-DVNT",
+    "name": "Oldham Metropolitan Borough Council"
+   },
+   "tender": {
+    "id": "DN827135",
+    "legalBasis": {
+     "id": "2023/54",
+     "scheme": "UKPGA",
+     "uri": "https://www.legislation.gov.uk/ukpga/2023/54/contents"
+    },
+    "title": "A Bed Every Night (ABEN) rough sleepers' accommodation service Phase 6",
+    "description": "ABEN provides accommodation for up to 33 people (including one emergency bed) who are sleeping rough, with six spaces assigned for individuals with No Recourse to Public Funds (NRPF). \nThe service delivers support and housing management across three buildings, The Greater Manchester Combined Authority (GMCA) has confirmed its intention to continue funding theses services for a further 3 years. \nThe most recent grant award runs from 1st April 2026 to 31st March 2029, with the funding amounts confirmed with the main 18-bed building operating as a 24-hour central hub. \nA Bed Every Night Phase 6 and RSI Outreach and Navigator services Procurement.\nValue: £1,217,251.00",
+    "status": "complete",
+    "procurementMethod": "open",
+    "procurementMethodDetails": "Open procedure",
+    "lots": [
+     {
+      "id": "1",
+      "status": "complete",
+      "description": null
+     }
+    ]
+   },
+   "bids": {
+    "statistics": [
+     {
+      "id": "1",
+      "measure": "bids",
+      "value": 5,
+      "relatedLot": "1"
+     },
+     {
+      "id": "2",
+      "measure": "finalStageBids",
+      "value": 5,
+      "relatedLot": "1"
+     },
+     {
+      "id": "3",
+      "measure": "smeFinalStageBids",
+      "value": 5,
+      "relatedLot": "1"
+     },
+     {
+      "id": "4",
+      "measure": "vcseFinalStageBids",
+      "value": 5,
+      "relatedLot": "1"
+     }
+    ]
+   },
+   "awards": [
+    {
+     "id": "1",
+     "title": "A Bed Every Night (ABEN) rough sleepers' accommodation service Phase 6",
+     "status": "pending",
+     "date": "2026-11-01T00:00:00Z",
+     "value": {
+      "amountGross": 1460701.2,
+      "amount": 1217251.0,
+      "currency": "GBP"
+     },
+     "mainProcurementCategory": "services",
+     "aboveThreshold": true,
+     "suppliers": [
+      {
+       "id": "GB-COH-02440093",
+       "name": "DEPAUL UK"
+      }
+     ],
+     "items": [
+      {
+       "id": "1",
+       "additionalClassifications": [
+        {
+         "scheme": "CPV",
+         "id": "98341000",
+         "description": "Accommodation services"
+        }
+       ],
+       "deliveryAddresses": [
+        {
+         "region": "UKD",
+         "country": "GB",
+         "countryName": "United Kingdom"
+        }
+       ],
+       "relatedLot": "1"
+      }
+     ],
+     "standstillPeriod": {
+      "endDate": "2026-11-11T23:59:59Z"
+     },
+     "contractPeriod": {
+      "startDate": "2026-12-01T00:00:00Z",
+      "endDate": "2027-11-30T23:59:59Z",
+      "maxExtentDate": "2029-11-30T23:59:59Z"
+     },
+     "hasRenewal": true,
+     "renewal": {
+      "description": "This is a 1 + 1 + 1 term contract."
+     },
+     "relatedLots": [
+      "1"
+     ],
+     "documents": [
+      {
+       "id": "103506-2026",
+       "documentType": "awardNotice",
+       "noticeType": "UK6",
+       "description": "Contract award notice on Find a Tender",
+       "url": "https://www.find-tender.service.gov.uk/Notice/103506-2026",
+       "datePublished": "2026-11-01T20:19:41Z",
+       "format": "text/html"
+      }
+     ],
+     "assessmentSummariesDateSent": "2026-11-01T00:00:00Z",
+     "milestones": [
+      {
+       "id": "1",
+       "type": "futureSignatureDate",
+       "dueDate": "2026-12-01T23:59:59Z",
+       "status": "scheduled"
+      }
+     ]
+    }
+   ],
+   "language": "en"
+  },
+  {
+   "ocid": "ocds-h6vhtk-079514",
+   "buyerID": [],
+   "id": "103505-2026",
+   "tag": [
+    "award",
+    "contract"
+   ],
+   "date": "2026-11-01T17:03:38Z",
+   "initiationType": "tender",
+   "parties": [
+    {
+     "name": "GLOUCESTER CITY HOMES LIMITED",
+     "id": "GB-COH-RS007041",
+     "identifier": {
+      "scheme": "GB-COH",
+      "id": "RS007041"
+     },
+     "additionalIdentifiers": [
+      {
+       "scheme": "GB-PPON",
+       "id": "PXQG-2245-YPYY"
+      }
+     ],
+     "address": {
+      "streetAddress": "Railway House, Bruton Way,",
+      "locality": "Gloucester",
+      "postalCode": "GL1 1DG",
+      "country": "GB",
+      "countryName": "United Kingdom",
+      "region": "UKK13"
+     },
+     "contactPoint": {
+      "email": "michael.humphries@gch.co.uk"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "classifications": [
+       {
+        "scheme": "UK_CA_TYPE",
+        "id": "publicAuthoritySubCentralGovernment",
+        "description": "Public authority - sub-central government"
+       }
+      ]
+     }
+    },
+    {
+     "name": "LEGIONELLASAFE SERVICES (UK) LIMITED",
+     "id": "GB-COH-10546367",
+     "identifier": {
+      "scheme": "GB-COH",
+      "id": "10546367"
+     },
+     "additionalIdentifiers": [
+      {
+       "scheme": "GB-PPON",
+       "id": "PHPD-2317-BNPJ"
+      }
+     ],
+     "address": {
+      "streetAddress": "Britannia House Britannia Way",
+      "locality": "Lichfield",
+      "postalCode": "WS14 9UY",
+      "country": "GB",
+      "countryName": "United Kingdom",
+      "region": "UKG24"
+     },
+     "contactPoint": {
+      "email": "info@legionellaandfiresafe.co.uk"
+     },
+     "roles": [
+      "supplier"
+     ],
+     "details": {
+      "url": "https://legionellaandfiresafe.co.uk/",
+      "scale": "sme",
+      "vcse": false
+     }
+    }
+   ],
+   "buyer": {
+    "id": "GB-COH-RS007041",
+    "name": "GLOUCESTER CITY HOMES LIMITED"
+   },
+   "tender": {
+    "id": "ocds-h6vhtk-079514",
+    "legalBasis": {
+     "id": "2023/54",
+     "scheme": "UKPGA",
+     "uri": "https://www.legislation.gov.uk/ukpga/2023/54/contents"
+    },
+    "title": "Fire Safety Works",
+    "description": "Installation of Fire Safety Measures",
+    "status": "complete",
+    "procurementMethod": "limited",
+    "procurementMethodDetails": "Below threshold - limited competition",
+    "lots": [
+     {
+      "id": "1",
+      "status": "complete",
+      "description": null
+     }
+    ]
+   },
+   "awards": [
+    {
+     "id": "1",
+     "status": "active",
+     "mainProcurementCategory": "works",
+     "suppliers": [
+      {
+       "id": "GB-COH-10546367",
+       "name": "LEGIONELLASAFE SERVICES (UK) LIMITED"
+      }
+     ],
+     "items": [
+      {
+       "id": "1",
+       "additionalClassifications": [
+        {
+         "scheme": "CPV",
+         "id": "45000000",
+         "description": "Construction work"
+        }
+       ],
+       "deliveryAddresses": [
+        {
+         "region": "UKC",
+         "country": "GB",
+         "countryName": "United Kingdom"
+        },
+        {
+         "region": "UKD",
+         "country": "GB",
+         "countryName": "United Kingdom"
+        },
+        {
+         "region": "UKE",
+         "country": "GB",
+         "countryName": "United Kingdom"
+        },
+        {
+         "region": "UKF",
+         "country": "GB",
+         "countryName": "United Kingdom"
+        },
+        {
+         "region": "UKG",
+         "country": "GB",
+         "countryName": "United Kingdom"
+        },
+        {
+         "region": "UKH",
+         "country": "GB",
+         "countryName": "United Kingdom"
+        },
+        {
+         "region": "UKI",
+         "country": "GB",
+         "countryName": "United Kingdom"
+        },
+        {
+         "region": "UKJ",
+         "country": "GB",
+         "countryName": "United Kingdom"
+        },
+        {
+         "region": "UKK",
+         "country": "GB",
+         "countryName": "United Kingdom"
+        }
+       ],
+       "relatedLot": "1"
+      }
+     ],
+     "relatedLots": [
+      "1"
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "id": "1",
+     "awardID": "1",
+     "status": "active",
+     "period": {
+      "startDate": "2026-11-02T00:00:00Z",
+      "endDate": "2027-11-01T23:59:59Z"
+     },
+     "value": {
+      "amountGross": 120000,
+      "amount": 100000,
+      "currency": "GBP"
+     },
+     "aboveThreshold": false,
+     "dateSigned": "2026-11-01T00:00:00Z",
+     "statusDetails": null,
+     "documents": [
+      {
+       "id": "103505-2026",
+       "documentType": "contractNotice",
+       "noticeType": "UK7",
+       "description": "Contract details notice on Find a Tender",
+       "url": "https://www.find-tender.service.gov.uk/Notice/103505-2026",
+       "datePublished": "2026-11-01T17:03:38Z",
+       "format": "text/html"
+      }
+     ]
+    }
+   ],
+   "language": "en"
+  },
+  {
+   "ocid": "ocds-h6vhtk-079513",
+   "id": "103504-2026",
+   "tag": [
+    "tender"
+   ],
+   "date": "2026-11-01T16:04:37Z",
+   "initiationType": "tender",
+   "parties": [
+    {
+     "name": "Vigo Parish Council",
+     "id": "GB-PPON-PJPD-5727-HBBH",
+     "identifier": {
+      "scheme": "GB-PPON",
+      "id": "PJPD-5727-HBBH"
+     },
+     "address": {
+      "streetAddress": "Vigo Parish Council, Village Hall The Bay, Vigo",
+      "locality": "Vigo, Gravesend",
+      "postalCode": "DA13 0TD",
+      "country": "GB",
+      "countryName": "United Kingdom",
+      "region": "UKJ43"
+     },
+     "contactPoint": {
+      "name": "Joanne Glass",
+      "email": "clerk@vigo-pc.gov.uk"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "url": "http://www.vigo-pc.gov.uk",
+      "classifications": [
+       {
+        "scheme": "UK_CA_TYPE",
+        "id": "publicAuthoritySubCentralGovernment",
+        "description": "Public authority - sub-central government"
+       }
+      ]
+     }
+    }
+   ],
+   "buyer": {
+    "id": "GB-PPON-PJPD-5727-HBBH",
+    "name": "Vigo Parish Council"
+   },
+   "tender": {
+    "id": "VPC-GM-2027",
+    "legalBasis": {
+     "id": "2023/54",
+     "scheme": "UKPGA",
+     "uri": "https://www.legislation.gov.uk/ukpga/2023/54/contents"
+    },
+    "title": "Vigo Parish Council - Grounds Maintenance, Grass Cutting and Tree Works Contract",
+    "description": "Vigo Parish Council invites tenders from suitably qualified and experienced contractors for the provision of grounds maintenance, grass cutting and tree works within the parish of Vigo, Kent.\nThe contract covers the maintenance of Parish Council owned land and public open spaces, including grass cutting, grassland management, tree and woodland maintenance, shrub and vegetation management, and associated grounds maintenance activities.\nThe contract will be for an initial period of four years, with the option to extend for two further periods of one year each, giving a maximum duration of six years.\nThe successful contractor will be required to provide suitably qualified personnel, appropriate equipment, effective supervision and emergency response arrangements in accordance with the Council's Service Specification.\nAttendance at a pre-tender site visit is mandatory. Full details of the services, required standards, frequencies, contract conditions and tender evaluation criteria are provided in the tender documentation.",
+    "status": "active",
+    "items": [
+     {
+      "id": "1",
+      "additionalClassifications": [
+       {
+        "scheme": "CPV",
+        "id": "77211500",
+        "description": "Tree-maintenance services"
+       },
+       {
+        "scheme": "CPV",
+        "id": "77314000",
+        "description": "Grounds maintenance services"
+       },
+       {
+        "scheme": "CPV",
+        "id": "77340000",
+        "description": "Tree pruning and hedge trimming"
+       }
+      ],
+      "deliveryAddresses": [
+       {
+        "region": "UKJ4",
+        "country": "GB",
+        "countryName": "United Kingdom"
+       }
+      ],
+      "relatedLot": "1"
+     }
+    ],
+    "value": {
+     "amountGross": 475200,
+     "amount": 396000,
+     "currency": "GBP"
+    },
+    "procurementMethod": "open",
+    "procurementMethodDetails": "Open procedure",
+    "mainProcurementCategory": "services",
+    "aboveThreshold": true,
+    "submissionMethodDetails": "Tenders must be submitted electronically to \ntenders@vigo-pc.gov.uk \nby the deadline stated in this notice.\nThe dedicated tender mailbox will remain unopened until the submission deadline has passed. Late submissions will not be accepted.\nAll tender documents must be completed and submitted in accordance with the Invitation to Tender.\nClarification questions must be sent to clerk@vigo-pc.gov.uk, not to the tender submission address.\nCouncil website: https://www.vigo-pc.gov.uk/Tender_Documents_44366.aspx",
+    "submissionTerms": {
+     "electronicSubmissionPolicy": "allowed",
+     "languages": [
+      "en"
+     ]
+    },
+    "tenderPeriod": {
+     "endDate": "2026-11-30T23:59:00Z"
+    },
+    "enquiryPeriod": {
+     "endDate": "2026-11-20T23:59:00Z"
+    },
+    "awardPeriod": {
+     "endDate": "2027-01-18T23:59:59Z"
+    },
+    "lots": [
+     {
+      "id": "1",
+      "status": "active",
+      "value": {
+       "amountGross": 475200,
+       "amount": 396000,
+       "currency": "GBP"
+      },
+      "awardCriteria": {
+       "criteria": [
+        {
+         "type": "price",
+         "name": "Price",
+         "description": "Evaluation of the total tender price for the contract, in accordance with the pricing schedule and the evaluation methodology set out in the Invitation to Tender. Weighting: 35%.",
+         "numbers": [
+          {
+           "number": 35,
+           "weight": "percentageExact"
+          }
+         ]
+        },
+        {
+         "type": "quality",
+         "name": "Emergency response, resilience and ability to access Vigo",
+         "description": "Assessment of the tenderer's ability to respond to urgent and emergency work, provide resilient service cover, and access Vigo reliably, including during adverse weather and other operational difficulties.",
+         "numbers": [
+          {
+           "number": 20,
+           "weight": "percentageExact"
+          }
+         ]
+        },
+        {
+         "type": "quality",
+         "name": "Experience and relevant track record",
+         "description": "Assessment of relevant experience delivering comparable grounds maintenance, tree work and open-space services, supported by appropriate examples and references.",
+         "numbers": [
+          {
+           "number": 15,
+           "weight": "percentageExact"
+          }
+         ]
+        },
+        {
+         "type": "quality",
+         "name": "Staffing, resources and continuity",
+         "description": "Assessment of staffing levels, supervision, equipment and other resources, together with arrangements for absence cover, continuity and maintaining the required service throughout the contract.",
+         "numbers": [
+          {
+           "number": 15,
+           "weight": "percentageExact"
+          }
+         ]
+        },
+        {
+         "type": "quality",
+         "name": "Quality and approach to service delivery",
+         "description": "Assessment of the proposed approach to delivering the specification, maintaining appropriate standards of workmanship, managing environmental considerations and ensuring reliable service delivery.",
+         "numbers": [
+          {
+           "number": 10,
+           "weight": "percentageExact"
+          }
+         ]
+        },
+        {
+         "type": "quality",
+         "name": "Understanding of Vigo and the Contract",
+         "description": "Assessment of the tenderer's understanding of Vigo's sites, local conditions, service requirements and practical challenges, and how these will be addressed when delivering the contract.",
+         "numbers": [
+          {
+           "number": 5,
+           "weight": "percentageExact"
+          }
+         ]
+        }
+       ]
+      },
+      "selectionCriteria": {
+       "criteria": [
+        {
+         "type": "economic",
+         "description": "Tenderers must confirm that they have, or will obtain no later than 14 days before commencement of the Contract, public liability insurance of at least £10 million and employers' liability insurance where legally required.\nTenderers must also confirm that they have sufficient financial capacity to deliver the contract for its duration. The Council reserves the right to seek proportionate supporting evidence where reasonably necessary before making an award decision.\nNo audited accounts are required as a condition of participation."
+        },
+        {
+         "type": "technical",
+         "description": "Tenderers must demonstrate that they have the relevant experience, technical competence, staffing, resources and equipment necessary to deliver the grounds maintenance services described in the tender documents.\nTenderers must demonstrate appropriate health and safety competence, including the qualifications, training and experience necessary for any specialist activities, including tree work where applicable.\nTenderers must explain how they will provide sufficient staff, suitable plant and equipment (which may be owned or hired), and manage any subcontractors used to deliver the contract. The main contractor will remain responsible for the performance of subcontractors.\nTenderers must describe their approach to delivering the required quality of service and managing environmental considerations relevant to the contract.\nRelevant experience and references must be provided as specified in the tender documents. Equivalent qualifications, standards and evidence will be accepted where appropriate."
+        }
+       ]
+      },
+      "suitability": {
+       "sme": true
+      },
+      "contractPeriod": {
+       "startDate": "2027-04-01T00:00:00+01:00",
+       "endDate": "2031-03-31T23:59:59+01:00",
+       "maxExtentDate": "2033-03-31T23:59:59+01:00"
+      },
+      "hasRenewal": true,
+      "renewal": {
+       "description": "The contract may be extended by up to two additional periods of one year each, following the initial four-year term. Each extension will be subject to the Parish Council's decision to exercise the relevant extension in accordance with the contract terms. The maximum total contract duration, including both extensions, will be six years."
+      }
+     }
+    ],
+    "lotDetails": {
+     "noLotsDivisionRationale": "The Parish Council considered dividing the contract into separate lots for grounds maintenance, grass cutting and tree works. However, a single contract is considered more appropriate to provide a coordinated approach to the management and maintenance of Parish Council-owned land, ensure clear lines of responsibility, and reduce the administrative burden of managing multiple contracts.\nThe Council considers that a combined contract will support efficient service delivery, consistent standards and effective coordination of routine and emergency works. Subcontracting of specialist activities will be permitted, subject to the requirements of the contract."
+    },
+    "documents": [
+     {
+      "id": "conflictOfInterest",
+      "documentType": "conflictOfInterest",
+      "description": "Not published"
+     },
+     {
+      "id": "L-1",
+      "documentType": "technicalSpecifications",
+      "description": "Vigo Parish Council Grounds Maintenance Contract 2027-2031 - Service Specification, site maps and supporting tender documents.",
+      "url": "https://www.vigo-pc.gov.uk/Tender_Documents_44366.aspx"
+     },
+     {
+      "id": "A-24966",
+      "documentType": "biddingDocuments",
+      "description": "Invitation to Tender - Vigo Parish Council Grounds Maintenance Contract 2027-2031",
+      "url": "https://www.find-tender.service.gov.uk/Notice/Attachment/A-24966",
+      "format": "application/pdf"
+     },
+     {
+      "id": "A-24967",
+      "documentType": "biddingDocuments",
+      "description": "Draft Contract - Vigo Parish Council Grounds Maintenance Contract 2027-2031, including provisions for two optional one-year extensions.",
+      "url": "https://www.find-tender.service.gov.uk/Notice/Attachment/A-24967",
+      "format": "application/pdf"
+     },
+     {
+      "id": "A-24968",
+      "documentType": "biddingDocuments",
+      "description": "Service Specification - Vigo Parish Council Grounds Maintenance Contract 2027-2031, setting out the required grass cutting, grounds maintenance, tree and woodland management services.",
+      "url": "https://www.find-tender.service.gov.uk/Notice/Attachment/A-24968",
+      "format": "application/pdf"
+     },
+     {
+      "id": "A-24969",
+      "documentType": "biddingDocuments",
+      "description": "Evaluation and Award Criteria - Vigo Parish Council Grounds Maintenance Contract 2027-2031, detailing the tender assessment methodology and scoring criteria, with 65% quality and 35% price weighting.",
+      "url": "https://www.find-tender.service.gov.uk/Notice/Attachment/A-24969",
+      "format": "application/pdf"
+     },
+     {
+      "id": "A-24970",
+      "documentType": "biddingDocuments",
+      "description": "Appendix A - Grass Cutting Schedule and Maps, detailing the grass cutting areas and requirements for Vigo Parish Council's Grounds Maintenance Contract 2027-2031.",
+      "url": "https://www.find-tender.service.gov.uk/Notice/Attachment/A-24970",
+      "format": "application/pdf"
+     },
+     {
+      "id": "A-24971",
+      "documentType": "biddingDocuments",
+      "description": "Appendix B - Site Information and Community Land Maps, identifying the principal areas and assets covered by Vigo Parish Council's Grounds Maintenance Contract 2027-2031.",
+      "url": "https://www.find-tender.service.gov.uk/Notice/Attachment/A-24971",
+      "format": "application/pdf"
+     },
+     {
+      "id": "A-24972",
+      "documentType": "biddingDocuments",
+      "description": "Tender Response Form (Editable) - Vigo Parish Council Grounds Maintenance Contract 2027-2031, to be completed and submitted by tenderers with their supporting documents.",
+      "url": "https://www.find-tender.service.gov.uk/Notice/Attachment/A-24972",
+      "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+     },
+     {
+      "id": "103504-2026",
+      "documentType": "tenderNotice",
+      "noticeType": "UK4",
+      "description": "Tender notice on Find a Tender",
+      "url": "https://www.find-tender.service.gov.uk/Notice/103504-2026",
+      "datePublished": "2026-11-01T16:04:37Z",
+      "format": "text/html"
+     }
+    ],
+    "hasRecurrence": true,
+    "recurrence": {
+     "dates": [
+      {
+       "startDate": "2032-10-01T23:59:59+01:00"
+      }
+     ]
+    },
+    "contractTerms": {
+     "financialTerms": "Vigo Parish Council will pay valid, undisputed invoices within 30 days of receipt, in accordance with the Procurement Act 2023.\nInvoices must clearly identify the services provided and the relevant billing period. Any disputed invoices will be raised with the contractor for resolution."
+    }
+   },
+   "language": "en"
+  }
+ ],
+ "links": {
+  "next": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages?updatedFrom=2026-10-30T00:00:00&updatedTo=2026-11-02T00:00:00&limit=3&cursor=dXBkYXRlZEZyb209MjAyNi0xMC0zMFQwMDowMDowMHx1cGRhdGVkVG89MjAyNi0xMS0wMlQwMDowMDowMHxuZXh0Q3Vyc29yPTc1NTU0OA=="
+ }
+}

@@ -1,0 +1,56 @@
+{
+ "count": 424194,
+ "data": [
+  {
+   "bid_description": "Recrutement d'un Assistant Technique pour le Ministère de Commerce et du Tourisme",
+   "country_code": null,
+   "country_name": "Eastern and Southern Africa",
+   "deadline_date": "01-Nov-2026",
+   "id": 478523,
+   "publication___fiscal_year": 2027,
+   "publication___calendar_year": 2026,
+   "notice_type": "Contract Award",
+   "procurement_category": "Consultant Services",
+   "procurement_method": "Direct Selection",
+   "project_id": "P176517",
+   "publication_date": "01-Nov-2026",
+   "region": "Eastern And Southern Africa",
+   "sector": "Other Non-bank Financial Institutions;Livestock;Agricultural markets, commercialization and agri-business",
+   "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478523"
+  },
+  {
+   "bid_description": "Supply and delivery of personal protective equipment for project implementation team",
+   "country_code": "UG",
+   "country_name": "Uganda",
+   "deadline_date": "01-Nov-2026",
+   "id": 478524,
+   "publication___fiscal_year": 2027,
+   "publication___calendar_year": 2026,
+   "notice_type": "Contract Award",
+   "procurement_category": "Goods",
+   "procurement_method": "Request for Quotations",
+   "project_id": "P173296",
+   "publication_date": "01-Nov-2026",
+   "region": "Eastern And Southern Africa",
+   "sector": "Livestock;Agricultural Extension, Research, and Other Support Activities;Public Administration - Agriculture, Fishing & Forestry;Agricultural markets, commercialization and agri-business",
+   "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478524"
+  },
+  {
+   "bid_description": "Contratación de Analista en Infraestructura (1/2)",
+   "country_code": "DO",
+   "country_name": "Dominican Republic",
+   "deadline_date": "13-Nov-2026",
+   "id": 478527,
+   "publication___fiscal_year": 2027,
+   "publication___calendar_year": 2026,
+   "notice_type": "Request for Expression of Interest",
+   "procurement_category": "Consultant Services",
+   "procurement_method": "Individual Consultant Selection",
+   "project_id": "P180349",
+   "publication_date": "01-Nov-2026",
+   "region": "Latin America And Caribbean",
+   "sector": "Health;Health Facilities and Construction;ICT Infrastructure;ICT Services;Public Administration - Health",
+   "url": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00478527"
+  }
+ ]
+}
