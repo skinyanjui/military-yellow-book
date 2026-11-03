@@ -1,0 +1,43 @@
+import re, subprocess, sys, json, os
+URL='https://bfovgafcfetfeqykjfco.supabase.co'
+KEY='sb_publishable_FfVpTa_cEtn_LRJ5FNc-VQ_8bvPbVZx'
+SB='https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js'
+s=open('src/index.html').read()
+
+# 1. strip embedded listings: they are served from the database
+i=s.index('  var DATA = ['); j=s.index('\n  ];', i)+len('\n  ];')
+s=s[:i]+'  var DATA = [];'+s[j:]
+s,n1=re.subn(r'var RATINGS = \[\[.*?\]\];','var RATINGS = [];',s,count=1,flags=re.S)
+s,n2=re.subn(r'var DOM = \[\[.*?\]\];','var DOM = [];',s,count=1,flags=re.S)
+assert n1==1 and n2==1
+
+# 2. split blocks
+st=s.index('<style>'); se=s.index('</style>')
+css=s[st+7:se]
+sc=s.rindex('<script>'); sce=s.rindex('</script>')
+js=s[sc+8:sce]
+head_pre=s[:st]          # title + meta lines
+mid=s[se+8:sc]           # body markup
+def esb(code, loader):
+    r=subprocess.run(['npx','--yes','esbuild','--minify','--line-limit=700','--loader='+loader],input=code,capture_output=True,text=True)
+    if r.returncode: print(r.stderr); sys.exit(1)
+    return r.stdout
+css_m=esb(css,'css'); js_m=esb(js,'js')
+mid=re.sub(r'\n\s+','\n',mid)
+mid=re.sub(r'<!--.*?-->','',mid,flags=re.S)
+
+title=re.search(r'<title>(.*?)</title>',head_pre).group(1)
+fonts=re.findall(r'<link[^>]+fonts[^>]*>',head_pre)
+desc='The global directory of military suppliers: uniforms, boots, field gear, vehicles, aircraft parts, naval, optics, space, cyber and more. Search by domain, branch, category and country.'
+icon="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23f5b800'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' text-anchor='middle' fill='%23171717'%3EYB%3C/text%3E%3C/svg%3E"
+html=('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">'
+ '<title>'+title+'</title><meta name="description" content="'+desc+'"><meta property="og:title" content="'+title+'"><meta property="og:description" content="'+desc+'"><meta property="og:type" content="website">'
+ '<meta name="theme-color" content="#f5b800"><meta name="claude:viewport-fit-sides" content="cover"><link rel="icon" href="'+icon+'">'+''.join(fonts)+
+ '<style>:root{color-scheme:light;padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>'
+ '<style>'+css_m+'</style></head><body>'+mid+
+ '<script src="'+SB+'"></script><script>window.MYB_BACKEND='+json.dumps({'url':URL,'key':KEY})+';</script>'
+ '<script>'+js_m+'</script></body></html>')
+os.makedirs('site',exist_ok=True)
+open('site/index.html','w').write(html)
+open('site/vercel.json','w').write(json.dumps({"cleanUrls":True,"headers":[{"source":"/(.*)","headers":[{"key":"X-Content-Type-Options","value":"nosniff"},{"key":"Referrer-Policy","value":"strict-origin-when-cross-origin"},{"key":"X-Frame-Options","value":"SAMEORIGIN"}]}]}))
+print('site/index.html',len(html),'bytes; style blocks:',html.count('<style>'))
