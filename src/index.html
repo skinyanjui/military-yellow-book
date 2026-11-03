@@ -964,6 +964,7 @@ body.is-loading footer { display: none; }
   function CountryList() { return '<datalist id="countries">' + COUNTRIES.map(function (c) { return '<option value="' + esc(c) + '">'; }).join("") + '</datalist>'; }
   function setErr(id, msg) {
     var el = $(id), er = $(id + "-err");
+    if (!el || !er) return; /* a late network reply can arrive after the dialog was swapped */
     if (msg) { el.setAttribute("aria-invalid", "true"); el.setAttribute("aria-describedby", id + "-err"); er.textContent = msg; er.hidden = false; }
     else { el.removeAttribute("aria-invalid"); el.removeAttribute("aria-describedby"); er.hidden = true; }
   }
@@ -1413,7 +1414,8 @@ body.is-loading footer { display: none; }
   }
   function doReset() {
     var btn = submitBtn(); lock(btn, true);
-    sb.auth.resetPasswordForEmail(v("a-email"), { redirectTo: location.origin + "/" }).then(function () { lock(btn, false); $("r-msg").hidden = false; }, function () { lock(btn, false); $("r-msg").hidden = false; });
+    function sent() { lock(btn, false); var m = $("r-msg"); if (m) m.hidden = false; }
+    sb.auth.resetPasswordForEmail(v("a-email"), { redirectTo: location.origin + "/" }).then(sent, sent);
   }
   function openNewPassword() {
     show(Head("Choose a new password", "Use at least 8 characters.") + '<form class="stack" id="f" novalidate>' + Field("a-pw2", "New password", "8+ characters", Pw("a-pw2")) + '<button class="btn btn-primary btn-lg" type="submit">Save password</button></form>', false, "a-pw2");
