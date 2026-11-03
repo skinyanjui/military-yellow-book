@@ -624,7 +624,7 @@
   "checks": [
    {
     "external_id": "compra:88124961000159-1-000129/2026",
-    "url": "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao?cnpj=...",
+    "url": "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao#compra:88124961000159-1-000129/2026",
     "status": 200,
     "verdict": "match",
     "route": "same_api_by_id",
@@ -644,7 +644,7 @@
    },
    {
     "external_id": "compra:01616520000196-1-000134/2026",
-    "url": "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao?cnpj=...",
+    "url": "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao#compra:01616520000196-1-000134/2026",
     "status": 200,
     "verdict": "match",
     "route": "same_api_by_id",
@@ -664,7 +664,7 @@
    },
    {
     "external_id": "compra:00444232000139-1-001435/2026",
-    "url": "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao?cnpj=...",
+    "url": "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao#compra:00444232000139-1-001435/2026",
     "status": 200,
     "verdict": "match",
     "route": "same_api_by_id",
@@ -684,7 +684,7 @@
    },
    {
     "external_id": "contrato:83039842000184-2-003094/2026",
-    "url": "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao?cnpj=...",
+    "url": "https://pncp.gov.br/api/consulta/v1/contratos/atualizacao#contrato:83039842000184-2-003094/2026",
     "status": 200,
     "verdict": "match",
     "route": "same_api_by_id",
@@ -704,7 +704,7 @@
    },
    {
     "external_id": "contrato:00394460005887-2-005974/2026",
-    "url": "https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao?cnpj=...",
+    "url": "https://pncp.gov.br/api/consulta/v1/contratos/atualizacao#contrato:00394460005887-2-005974/2026",
     "status": 200,
     "verdict": "match",
     "route": "same_api_by_id",

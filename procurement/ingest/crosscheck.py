@@ -156,7 +156,7 @@ def pncp_(c):
             if hit or page >= (j.get("totalPaginas") or 0):
                 break
         return conn.normalize(hit, NOW) if hit else None
-    return lambda rec: run_generic(rec, "same_api_by_id", pncp.BASE + "/contratacoes/publicacao?cnpj=...", one)
+    return lambda rec: run_generic(rec, "same_api_by_id", pncp.BASE + ("/contratacoes/publicacao" if rec["external_id"].startswith("compra:") else "/contratos/atualizacao") + "#" + rec["external_id"], one)
 
 
 ROUTES = {"uk_fts": uk_fts, "uk_cf": uk_cf, "ted": ted_, "usaspending": usaspending_, "worldbank_procurement": worldbank_, "colombia_secop": secop_, "brazil_pncp": pncp_}

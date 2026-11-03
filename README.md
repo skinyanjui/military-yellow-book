@@ -74,3 +74,9 @@ These are dashboard settings that cannot be changed from code:
 - This project shares a Supabase project with another app (every sign-up here also creates a `profiles` row there). Moving the Yellow Book to its own project is the clean long-term fix.
 - **Terms and Privacy** (`/terms`, `/privacy`) are drafts, flagged as such on the page (`LEGAL_DRAFT` in `scripts/build_pages.py`). Have a lawyer review them, then set it to `False`. Set the repository variable `SITE_CONTACT` (Settings > Secrets and variables > Actions > Variables) to the address people should write to; until you do, neither page shows a contact, and the privacy text points people to "the site operator". There is also no self-service account deletion yet.
 - **Portal links** on `/portals` are unverified (the build sandbox cannot reach them). 31 are flagged where the address looks like a general government or commercial site.
+
+## Procurement data and open tenders
+
+The site's `/opportunities` page lists open government tenders and recent contract awards taken from official publishers that have passed
+record-by-record checks and whose licence allows reuse. How the data is collected and verified: [docs/PROCUREMENT_PLATFORM.md](docs/PROCUREMENT_PLATFORM.md).
+What is covered and what is not: [docs/SOURCE_COVERAGE.md](docs/SOURCE_COVERAGE.md).
