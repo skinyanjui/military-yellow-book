@@ -1,0 +1,1 @@
+20 real company brand symbols as separate 512x512 transparent PNG and SVG files. Source: Font Awesome Free Brands (Fonticons, Inc.). Icons distributed under CC BY 4.0, see https://fontawesome.com/license/free . Brand names and marks remain trademarks of their owners. For sample/demo data only; no affiliation or endorsement implied. These are icon marks, not full wordmarks.

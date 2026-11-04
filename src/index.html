@@ -1627,7 +1627,7 @@ dialog::backdrop { background: var(--overlay); }
     b.sr = b.rating; b.sc = b.reviews; b.real = r.review_count > 0;
     if (b.real) { b.rating = Math.round(Number(r.rating_avg) * 10) / 10; b.reviews = r.review_count; }
     b.domains = r.domains || []; b.branches = r.branches || []; b.unspsc = r.unspsc || [];
-    b.desig = (r.designations || []).filter(function (c) { return DESIG[c]; }); b.desigBasis = r.designations_basis === "sam_gov" ? "sam_gov" : "self_reported"; b.desigAt = r.designations_checked_at || ""; b.state = r.state || ""; b.logo = (typeof r.logo === "string" && /^https:\/\//.test(r.logo) && (!window.MYB_BACKEND || r.logo.indexOf(window.MYB_BACKEND.url + "/storage/v1/object/public/listing-images/") === 0)) ? r.logo : ""; b.uei = r.uei || ""; b.cage = r.cage_code || "";
+    b.desig = (r.designations || []).filter(function (c) { return DESIG[c]; }); b.desigBasis = r.designations_basis === "sam_gov" ? "sam_gov" : "self_reported"; b.desigAt = r.designations_checked_at || ""; b.state = r.state || ""; b.logo = (typeof r.logo === "string" && /^https:\/\//.test(r.logo) && (r.logo.indexOf(location.origin + "/assets/sample-logos/") === 0 || r.logo.indexOf("https://military-yellow-book.vercel.app/assets/sample-logos/") === 0 || (window.MYB_BACKEND && r.logo.indexOf(window.MYB_BACKEND.url + "/storage/v1/object/public/listing-images/") === 0))) ? r.logo : ""; b.uei = r.uei || ""; b.cage = r.cage_code || "";
     b.images = (r.images || []).filter(function (u) { return typeof u === "string" && /^https:\/\//.test(u) && (!window.MYB_BACKEND || u.indexOf(window.MYB_BACKEND.url + "/storage/v1/object/public/listing-images/") === 0); }).slice(0, 8);
     if (!/\d/.test(r.lead || "")) b.leadD = 999;
     return b;
