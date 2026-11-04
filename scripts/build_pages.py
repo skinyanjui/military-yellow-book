@@ -371,7 +371,9 @@ def wpage(site, path, title, desc, section, heading, meta, filters, body, crumbs
             side_item('/opportunities', 'doc', 'Tenders', 'tenders', section) + side_item('/awards', 'award', 'Contract awards', 'awards', section) + side_item('/portals', 'globe', 'Procurement portals', 'portals', section) + '</nav>'
             '<nav class="side-group" aria-labelledby="sl-biz"><div class="side-label" id="sl-biz">Account and business</div>'
             '<a class="side-item side-mob" href="/?list=1">' + ico('plus') + '<span class="si-l">List your business</span></a>'
-            '<a class="side-item" href="/?rfq=1">' + ico('file') + '<span class="si-l">Request a quote</span></a></nav></div></aside>')
+            '<a class="side-item" href="/?rfq=1">' + ico('file') + '<span class="si-l">Request a quote</span></a>'
+            '<a class="side-item" href="/?ship=1">' + ico('globe') + '<span class="si-l">Ship to</span></a>'
+            '<a class="side-item" href="/?lang=1">' + ico('globe') + '<span class="si-l">Language</span></a></nav></div></aside>')
     return ('<!doctype html><html lang="en"><head><meta charset="utf-8">'
             '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">'
             '<title>' + esc(title) + '</title><meta name="description" content="' + esc(desc) + '">'

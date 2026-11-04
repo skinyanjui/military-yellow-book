@@ -98,7 +98,7 @@ main { padding-block: var(--s6) var(--s12); }
 
 .card { min-width: 0; display: flex; flex-direction: column; }
 .media { position: relative; }
-.thumb { text-decoration: none; position: relative; display: grid; place-items: center; aspect-ratio: 1 / 1; border-radius: var(--radius-xl); overflow: hidden; cursor: pointer; background-color: var(--accent-subtle); background-image: repeating-linear-gradient(135deg, transparent 0 12px, color-mix(in srgb, var(--accent) 16%, transparent) 12px 14px); color: var(--accent-ink); font-size: 40px; line-height: 1; font-weight: 600; }
+.thumb { text-decoration: none; position: relative; display: grid; place-items: center; aspect-ratio: 1 / 1; border-radius: var(--radius-xl); overflow: hidden; cursor: pointer; background-color: var(--accent-subtle); color: var(--accent-ink); font-size: 40px; line-height: 1; font-weight: 600; }
 @media (min-width: 600px) { .thumb { aspect-ratio: 4 / 3; font-size: 48px; } }
 .vbadge { position: absolute; left: var(--s2); top: var(--s2); display: inline-flex; align-items: center; gap: var(--s1); padding: 1px var(--s2) 1px var(--s1); border-radius: var(--radius-sm); background: var(--accent); color: var(--on-accent); font-size: 12px; line-height: 16px; font-weight: 500; }
 .media .icon-btn { position: absolute; right: var(--s2); bottom: var(--s2); width: 40px; height: 40px; border-radius: var(--radius-full); background: var(--background); color: var(--foreground); box-shadow: var(--shadow-md); }
@@ -145,10 +145,10 @@ main { padding-block: var(--s6) var(--s12); }
 .gal { display: grid; gap: var(--s3); align-content: start; min-width: 0; }
 .gal-wrap { position: relative; }
 .gal-main { aspect-ratio: 1 / 1; max-width: 100%; display: grid; place-items: center; border-radius: var(--radius-xl); background-color: var(--accent-subtle); color: var(--accent-ink); font-size: 96px; font-weight: 600; line-height: 1; }
-.g0 { background-image: repeating-linear-gradient(135deg, transparent 0 14px, color-mix(in srgb, var(--accent) 18%, transparent) 14px 16px); }
-.g1 { background-image: repeating-linear-gradient(45deg, transparent 0 14px, color-mix(in srgb, var(--accent) 18%, transparent) 14px 16px); }
-.g2 { background-image: radial-gradient(color-mix(in srgb, var(--accent) 26%, transparent) 2px, transparent 2.5px); background-size: 16px 16px; }
-.g3 { background-image: linear-gradient(0deg, color-mix(in srgb, var(--accent) 16%, transparent) 50%, transparent 50%); background-size: 100% 24px; }
+.g0 { background-image: none; background-color: var(--accent-subtle); }
+.g1 { background-image: none; background-color: var(--surface-2); }
+.g2 { background-image: none; background-color: var(--accent-subtle); }
+.g3 { background-image: none; background-color: var(--surface-3); }
 .gal-nav { position: absolute; top: 50%; width: 40px; height: 40px; margin-top: -20px; display: grid; place-items: center; padding: 0; border: 1px solid var(--border); border-radius: var(--radius-full); background: var(--background); color: var(--foreground); cursor: pointer; box-shadow: var(--shadow-md); }
 .gal-nav.prev { left: var(--s3); } .gal-nav.next { right: var(--s3); }
 .gal-nav.next svg { transform: scaleX(-1); }
@@ -305,10 +305,6 @@ main { padding-block: var(--s6) var(--s12); }
 
 /* Skeleton + empty */
 .sk { background: var(--gray-200); border-radius: var(--radius-sm); position: relative; overflow: hidden; }
-.sk::after { content: ""; position: absolute; inset: 0; transform: translateX(-100%); background: linear-gradient(90deg, transparent, rgba(255,255,255,.35), transparent); animation: shim 1.5s infinite; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .sk::after { background: linear-gradient(90deg, transparent, rgba(255,255,255,.06), transparent); } }
-:root[data-theme="dark"] .sk::after { background: linear-gradient(90deg, transparent, rgba(255,255,255,.06), transparent); }
-@keyframes shim { to { transform: translateX(100%); } }
 
 /* Footer + mobile bar */
 .bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 5; padding: var(--s3) max(16px, env(safe-area-inset-right, 0px)) calc(var(--s3) + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); background: var(--background); border-top: 1px solid var(--border); }
@@ -430,9 +426,9 @@ main { padding-block: 0; }
 .thumb { background-color: var(--surface); background-image: none; color: var(--text-3); border-radius: var(--r-lg); font-weight: 600; }
 .thumb:hover { background-color: var(--surface-2); }
 .vbadge { left: var(--s-2); top: var(--s-2); }
-.media .icon-btn { box-shadow: 0 1px 3px rgba(0,0,0,.12); background: var(--bg); }
+.media .icon-btn { box-shadow: 0 0 0 1px var(--border-strong); background: var(--bg); }
 .gal-main, .gal-t { background-color: var(--surface); color: var(--text-3); border-radius: var(--r-lg); }
-.g0, .g1, .g2, .g3 { background-image: none; }
+.g0, .g1, .g2, .g3 { background-image: none; background-color: var(--surface-3); }
 .tag-v { background: var(--ok-subtle); color: var(--ok); }
 .tag-s { display: inline-flex; align-items: center; gap: 4px; padding: 1px var(--s2); border-radius: var(--r-sm); background: var(--accent-subtle); color: var(--accent-ink); font-size: 12px; line-height: 16px; font-weight: 500; }
 .info h1 { font-size: var(--fs-xl); line-height: 1.25; font-weight: 600; letter-spacing: -.02em; }
@@ -474,6 +470,7 @@ dialog::backdrop { background: var(--overlay); }
       <nav class="side-group" aria-label="Suppliers">
         <a class="side-item" href="/" data-side="discover" aria-current="page"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5l3 3"/></svg><span class="si-l" data-i18n="Discover suppliers">Discover suppliers</span></a>
         <a class="side-item" href="/?saved=1" data-side="saved"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 13.5S2.5 10 2.5 6.2A2.9 2.9 0 0 1 8 5a2.9 2.9 0 0 1 5.5 1.2C13.5 10 8 13.5 8 13.5z"/></svg><span class="si-l" data-i18n="Saved suppliers">Saved suppliers</span><span class="si-v" id="side-saved-n"></span></a>
+        <a class="side-item" href="/directory"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2.5h5.5L12 5v8.5H4z"/><path d="M9.5 2.5V5H12M6 8h4M6 10.5h4"/></svg><span class="si-l">All listings (plain pages)</span></a>
       </nav>
       <nav class="side-group" aria-labelledby="sl-proc">
         <div class="side-label" id="sl-proc" data-i18n="Procurement">Procurement</div>
@@ -1885,12 +1882,12 @@ dialog::backdrop { background: var(--overlay); }
     var lay = p.get("view"); try { if (!lay) lay = localStorage.getItem("yb-layout"); } catch (e) {}
     state.layout = lay === "grid" ? "grid" : "rows";
     if (state.q) $("q").value = state.q;
-    ACTIONS = { list: p.get("list") === "1", rfq: p.get("rfq") === "1", signin: p.get("signin") === "1" };
-    ["list", "rfq", "signin"].forEach(function (k) { p.delete(k); });
+    ACTIONS = { list: p.get("list") === "1", rfq: p.get("rfq") === "1", signin: p.get("signin") === "1", ship: p.get("ship") === "1", lang: p.get("lang") === "1" };
+    ["list", "rfq", "signin", "ship", "lang"].forEach(function (k) { p.delete(k); });
   }
   function runUrlActions() {
     if (!ACTIONS) return; var a = ACTIONS; ACTIONS = null;
-    if (a.signin && !session) openSignIn(); else if (a.list) openSupplier(); else if (a.rfq) openRFQ(null);
+    if (a.signin && !session) openSignIn(); else if (a.list) openSupplier(); else if (a.rfq) openRFQ(null); else if (a.ship) openDest(null, false); else if (a.lang) openLang(null, false);
   }
 
   /* ---------- events ---------- */
