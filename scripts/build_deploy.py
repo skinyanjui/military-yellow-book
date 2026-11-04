@@ -85,7 +85,7 @@ csp = '; '.join([
     "script-src 'self' " + sha(cfg_js) + ' ' + sha(js_m),
     "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
     "font-src https://fonts.gstatic.com",
-    "img-src 'self' data:",
+    "img-src 'self' data: " + SUPABASE_URL + "/storage/v1/object/public/listing-images/",
     "connect-src 'self' " + SUPABASE_URL,
     "base-uri 'none'", "form-action 'none'", "frame-ancestors 'self'", "object-src 'none'",
 ])

@@ -218,6 +218,15 @@ main { padding-block: var(--s6) var(--s12); }
 .tabs button { flex: none; height: 44px; padding: 0; border: 0; border-bottom: 2px solid transparent; background: none; color: var(--text-muted); font: 500 14px/20px var(--font-sans); cursor: pointer; }
 .tabs button:hover { color: var(--foreground); }
 .tabs button[aria-current="true"] { color: var(--foreground); border-bottom-color: var(--foreground); }
+.photos { display: grid; gap: var(--s2); }
+.photo-main { margin: 0; border: 1px solid var(--border); border-radius: var(--r-lg); background: var(--surface); overflow: hidden; display: grid; place-items: center; aspect-ratio: 16 / 10; max-height: 420px; }
+.photo-main img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.photo-ts { display: flex; gap: var(--s2); overflow-x: auto; }
+.photo-t { flex: none; width: 72px; height: 56px; padding: 0; border: 2px solid transparent; border-radius: var(--r); overflow: hidden; background: var(--surface); cursor: pointer; }
+.photo-t[aria-pressed="true"] { border-color: var(--text); }
+.photo-t img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.nophoto { margin: 0; padding: var(--s2) var(--s3); border: 1px dashed var(--border-strong); border-radius: var(--r); color: var(--text-2); font-size: var(--fs-sm); }
+.thumb img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: inherit; }
 .prof { display: flex; flex-wrap: wrap; align-items: flex-start; gap: var(--s3) var(--s4); }
 .prof-t { flex: 1 1 280px; min-width: 0; display: grid; gap: var(--s1); }
 .prof-t h1 { margin: 0; }
@@ -680,7 +689,7 @@ dialog::backdrop { background: var(--overlay); }
   function Card(b) {
     var key = esc(b.name + b.supplier), href = "#biz-" + bslug(b);
     return '<article class="card"><div class="media">' +
-      '<a class="thumb" href="' + href + '" tabindex="-1" aria-hidden="true"><span>' + esc(b.name.charAt(0)) + '</span>' + (b.verified ? '<span class="vbadge">' + CHECK + esc(tr("Verified")) + '</span>' : '') + '</a>' +
+      '<a class="thumb" href="' + href + '" tabindex="-1" aria-hidden="true">' + (b.images && b.images[0] ? '<img src="' + esc(b.images[0]) + '" alt="" loading="lazy" decoding="async">' : '<span>' + esc(b.name.charAt(0)) + '</span>') + '' + (b.verified ? '<span class="vbadge">' + CHECK + esc(tr("Verified")) + '</span>' : '') + '</a>' +
       '<button class="icon-btn" type="button" data-quote="' + key + '" aria-label="Request a quote for ' + esc(b.name) + '" title="Request a quote">' + QUOTE + '</button></div>' +
       '<a class="card-main" href="' + href + '">' +
       '<span class="title" title="' + esc(b.name) + '">' + esc(b.name) + '</span>' +
@@ -769,6 +778,10 @@ dialog::backdrop { background: var(--overlay); }
       '<p class="t-sub">' + esc(tr(b.cat)) + ' · ' + esc(b.city ? b.city + ", " + b.country : b.country) + ' · ' + esc(tr("In business")) + ': ' + b.years + ' ' + esc(tr("yrs")) + '</p>' +
       '<div class="rowline">' + (b.sample ? '<span class="badge badge-sample" title="' + esc(tr("Invented for demonstration")) + '">' + esc(tr("Sample")) + '</span>' : b.verified ? '<span class="badge badge-ok">' + CHECK + esc(tr("Verified")) + '</span>' : '<span class="badge">' + esc(tr("Not verified")) + '</span>') + '<span class="rate">' + (b.reviews ? Stars(b.rating) + '<b>' + rt(b.rating) + '</b><span>(' + b.reviews + ' ' + esc(rw(b.reviews)) + ')</span>' : '<b>New</b>') + '</span></div></div>' +
       '<div class="tools"><button class="qbtn" type="button" data-save="' + key + '" aria-pressed="' + saved + '">' + HEART + '<span>' + esc(tr(saved ? "Saved" : "Save")) + '</span></button><button class="qbtn" type="button" data-share>' + SHARE + '<span>' + esc(tr("Share")) + '</span></button></div></header>' +
+      (b.images.length
+        ? '<section class="photos" aria-label="' + esc(tr("Photos")) + '"><figure class="photo-main"><img id="photo-main" src="' + esc(b.images[0]) + '" alt="' + esc(b.name + " · " + b.supplier) + '" decoding="async"></figure>' +
+          (b.images.length > 1 ? '<div class="photo-ts" role="group" aria-label="' + esc(tr("Photos")) + '">' + b.images.map(function (u, i) { return '<button type="button" class="photo-t" data-photo="' + i + '" aria-pressed="' + (i === 0) + '" aria-label="' + esc(tr("Photo") + " " + (i + 1)) + '"><img src="' + esc(u) + '" alt="" loading="lazy" decoding="async"></button>'; }).join("") + '</div>' : '') + '</section>'
+        : '<p class="nophoto">' + esc(tr("No photos yet.")) + (b.sample ? ' ' + esc(tr("This is a sample listing.")) : ' ' + esc(tr("Ask the supplier for photos."))) + '</p>') +
       '<section class="pdp-sec" id="p-over"><h2>' + esc(tr("Product or service")) + '</h2><p><b>' + esc(b.name) + '</b></p><p>' + esc(b.desc) + '</p>' +
       '<dl class="facts"><dt>' + esc(tr("Indicative price")) + '</dt><dd>' + esc(b.price) + '</dd><dt>' + esc(tr("MOQ")) + '</dt><dd>' + esc(b.moq) + '</dd><dt>' + esc(tr("Lead time")) + '</dt><dd>' + esc(b.lead) + '</dd><dt>' + esc(tr("Ships to")) + '</dt><dd>' + esc(b.ships) + '</dd></dl></section>' +
       '<section class="pdp-sec" id="p-cap"><h2>' + esc(tr("Capabilities")) + '</h2><dl class="facts"><dt>' + esc(tr("Features")) + '</dt><dd>' + pills(b.certs) + '</dd><dt>' + esc(tr("Domain")) + '</dt><dd>' + pills(b.domains.map(function (k) { return tr(DMAP[k][1]); })) + '</dd><dt>' + esc(tr("Branch")) + '</dt><dd>' + pills(b.branches.map(function (k) { return tr(BMAP[k][1]); })) + '</dd></dl>' + Codes(b) + '</section>' +
@@ -1257,6 +1270,11 @@ dialog::backdrop { background: var(--overlay); }
     ["Save", "Enregistrer", "Guardar", "Guardar", "Hifadhi"],
     ["Indicative price", "Prix indicatif", "Preço indicativo", "Precio indicativo", "Bei elekezi"],
     ["Similar suppliers", "Fournisseurs similaires", "Fornecedores semelhantes", "Proveedores similares", "Wasambazaji wanaofanana"],
+    ["Photos", "Photos", "Fotos", "Fotos", "Picha"],
+    ["Photo", "Photo", "Foto", "Foto", "Picha"],
+    ["No photos yet.", "Pas encore de photos.", "Ainda sem fotos.", "Aún no hay fotos.", "Bado hakuna picha."],
+    ["This is a sample listing.", "Ceci est une fiche exemple.", "Este é um anúncio de exemplo.", "Esta es una ficha de ejemplo.", "Hii ni orodha ya mfano."],
+    ["Ask the supplier for photos.", "Demandez des photos au fournisseur.", "Peça fotos ao fornecedor.", "Pida fotos al proveedor.", "Muulize msambazaji picha."],
     ["MOQ", "MOQ", "MOQ", "MOQ", "MOQ"],
     ["Saved", "Enregistré", "Guardado", "Guardado", "Imehifadhiwa"],
     ["Share", "Partager", "Partilhar", "Compartir", "Shiriki"],
@@ -1562,10 +1580,11 @@ dialog::backdrop { background: var(--overlay); }
     b.sr = b.rating; b.sc = b.reviews; b.real = r.review_count > 0;
     if (b.real) { b.rating = Math.round(Number(r.rating_avg) * 10) / 10; b.reviews = r.review_count; }
     b.domains = r.domains || []; b.branches = r.branches || []; b.unspsc = r.unspsc || [];
+    b.images = (r.images || []).filter(function (u) { return typeof u === "string" && /^https:\/\//.test(u) && (!window.MYB_BACKEND || u.indexOf(window.MYB_BACKEND.url + "/storage/v1/object/public/listing-images/") === 0); }).slice(0, 8);
     if (!/\d/.test(r.lead || "")) b.leadD = 999;
     return b;
   }
-  var LCOLS = "slug,name,category,supplier,city,country,region,unit,price,moq,lead,certs,ships,verified,years,descr,specs,contact,flat,domains,branches,sample_rating,sample_reviews,review_count,rating_avg,is_sample,status,position,created_at,unspsc";
+  var LCOLS = "slug,name,category,supplier,city,country,region,unit,price,moq,lead,certs,ships,verified,years,descr,specs,contact,flat,domains,branches,sample_rating,sample_reviews,review_count,rating_avg,is_sample,status,position,created_at,unspsc,images";
   function loadListings() {
     loading = true; render();
     sb.from("myb_listings").select(LCOLS).eq("status", "live").order("position", { ascending: true, nullsFirst: false }).order("created_at", { ascending: true }).limit(2000).then(function (r) {
@@ -1856,6 +1875,7 @@ dialog::backdrop { background: var(--overlay); }
     if (t.dataset.fav !== undefined) { var fb = findItem(t.dataset.fav); if (!fb) return; var fl2 = favs(), fx = fl2.indexOf(t.dataset.fav); if (fx > -1) fl2.splice(fx, 1); else fl2.push(t.dataset.fav); try { localStorage.setItem("yb-fav", JSON.stringify(fl2)); } catch (e) {} syncFav(fb, fx < 0); toast(tr(fx < 0 ? "Saved" : "Removed from saved")); var fy = window.scrollY; render(true); window.scrollTo(0, fy); var again2 = document.querySelector('[data-fav="' + t.dataset.fav.replace(/"/g, '\\"') + '"]'); if (again2) again2.focus(); return; }
     if (t.hasAttribute("data-more")) { var nxt = shown; shown += PAGE; render(true); var rows = document.querySelectorAll("#results tbody tr, #results .card"); if (rows[nxt]) { var lk = rows[nxt].querySelector("a"); if (lk) lk.focus({ preventScroll: true }); } return; }
     if (t.dataset.layout) { state.layout = t.dataset.layout; try { localStorage.setItem("yb-layout", state.layout); } catch (e) {} return render(true); }
+    if (t.dataset.photo !== undefined && curBiz) { var pi2 = Number(t.dataset.photo), pm = $("photo-main"); if (pm && curBiz.images[pi2]) { pm.src = curBiz.images[pi2]; document.querySelectorAll("[data-photo]").forEach(function (x) { x.setAttribute("aria-pressed", String(x === t)); }); } return; }
     if (t.id === "btn-side") return toggleSide();
     if (t.hasAttribute("data-side-close")) return closeSide(true);
     if (t.dataset.qmenu) {

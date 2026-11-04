@@ -27,3 +27,6 @@ Top bar (brand, dominant search with ⌘/Ctrl+K and `/`, Saved, Account) → one
 
 ## Accessibility
 Skip link, landmarks, `aria-sort` on sortable headers, `aria-live` result counts, visible focus rings, 40 px touch targets on coarse pointers, `prefers-reduced-motion`, inert closed drawer, axe: 0 violations on the directory, tenders, awards and portals pages in light and dark.
+
+## Listing photos
+`myb_listings.images` (text[], max 8, https only) holds public URLs in the `listing-images` Supabase bucket (public read, 5 MB, jpeg/png/webp, authenticated users may write only inside their own `<uid>/` folder). The app accepts only URLs under that bucket's public path (anything else is dropped) and the CSP `img-src` allows only that path. The details page shows a gallery when a listing has photos and an honest "No photos yet" note otherwise; grid cards use the first photo. No photo is generated or taken from stock sources: all 103 sample listings currently have none. Migration: `supabase/migrations/20261104010000_listing_images.sql` (applied). There is no upload UI yet.
