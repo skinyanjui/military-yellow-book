@@ -218,8 +218,18 @@ main { padding-block: var(--s6) var(--s12); }
 .tabs button { flex: none; height: 44px; padding: 0; border: 0; border-bottom: 2px solid transparent; background: none; color: var(--text-muted); font: 500 14px/20px var(--font-sans); cursor: pointer; }
 .tabs button:hover { color: var(--foreground); }
 .tabs button[aria-current="true"] { color: var(--foreground); border-bottom-color: var(--foreground); }
-.pdp-sec { margin-top: var(--s8); scroll-margin-top: calc(var(--nav-h, 56px) + 64px); display: grid; gap: var(--s4); }
-.pdp-sec h2 { margin: 0; font-size: 20px; line-height: 28px; font-weight: 600; letter-spacing: -.01em; }
+.prof { display: flex; flex-wrap: wrap; align-items: flex-start; gap: var(--s3) var(--s4); }
+.prof-t { flex: 1 1 280px; min-width: 0; display: grid; gap: var(--s1); }
+.prof-t h1 { margin: 0; }
+.prof-t p { margin: 0; }
+.av-lg { width: 56px; height: 56px; font-size: 16px; border-radius: var(--r-lg); }
+.simlist { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--border); }
+.simlist li { border-bottom: 1px solid var(--border); }
+.simlist a { display: flex; gap: var(--s3); align-items: center; padding: var(--s2) 0; color: inherit; text-decoration: none; }
+.simlist a:hover b { text-decoration: underline; }
+.simlist b { display: block; font-weight: 600; }
+.pdp-sec { margin-top: var(--s6); scroll-margin-top: calc(var(--nav-h, 56px) + 64px); display: grid; gap: var(--s4); }
+.pdp-sec h2 { margin: 0; font-size: 16px; line-height: 24px; font-weight: 600; letter-spacing: -.01em; }
 .pdp-sec h3 { margin: 0; font-size: 14px; line-height: 20px; font-weight: 600; }
 .pdp-sec p { margin: 0; max-width: 68ch; }
 .kv { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s3); }
@@ -227,12 +237,12 @@ main { padding-block: var(--s6) var(--s12); }
 .kv span { display: block; color: var(--text-muted); font-size: 12px; line-height: 16px; }
 .kv b { display: block; font-weight: 500; overflow-wrap: anywhere; }
 .spec { margin: 0; border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; }
-.spec div { display: grid; grid-template-columns: minmax(96px, 1fr) minmax(0, 2fr); gap: var(--s4); padding: var(--s3) var(--s4); font-size: 14px; line-height: 20px; }
+.spec div { display: grid; grid-template-columns: minmax(96px, 1fr) minmax(0, 2fr); gap: var(--s3); padding: var(--s2) var(--s3); font-size: 14px; line-height: 20px; }
 .spec div:nth-child(odd) { background: var(--background-subtle); }
 .spec dt { color: var(--text-muted); }
 .spec dd { margin: 0; overflow-wrap: anywhere; }
 .notice { padding: var(--s3) var(--s4); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: var(--radius-md); font-size: 14px; line-height: 20px; max-width: 68ch; }
-.codes { display: grid; gap: var(--s2); margin-top: var(--s5); }
+.codes { display: grid; gap: var(--s2); margin-top: var(--s3); }
 .codes h3 { margin: 0; font-size: 14px; line-height: 20px; }
 .codes ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: var(--s2); }
 .codes li { display: flex; align-items: center; gap: var(--s2); min-width: 0; max-width: 100%; }
@@ -265,7 +275,10 @@ main { padding-block: var(--s6) var(--s12); }
 .barp b { display: block; font-size: 16px; line-height: 20px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .barp span { display: block; color: var(--text-muted); font-size: 12px; line-height: 16px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 @media (min-width: 720px) {
-  .pdp { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: var(--s8); }
+  .spec { display: grid; grid-template-columns: 1fr 1fr; }
+  .spec div:nth-child(odd) { background: none; }
+  .spec div { border-bottom: 1px solid var(--border); }
+  .pdp { grid-template-columns: minmax(0, 1fr); gap: var(--s5); }
   .panel { grid-column: 1 / -1; }
   .cta-row { display: flex; }
   .info h1 { font-size: 28px; line-height: 36px; letter-spacing: -.02em; }
@@ -275,7 +288,7 @@ main { padding-block: var(--s6) var(--s12); }
   .rev { grid-template-columns: 280px minmax(0, 1fr); align-items: center; gap: var(--s8); }
 }
 @media (min-width: 1100px) {
-  .pdp { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr) 320px; }
+  .pdp { grid-template-columns: minmax(0, 1fr) 320px; gap: var(--s8); }
   .panel { grid-column: auto; position: sticky; top: calc(var(--nav-h, 56px) + env(safe-area-inset-top, 0px) + var(--s4)); }
 }
 
@@ -370,7 +383,7 @@ main { padding-block: 0; }
 .srows .c-sup { display: table-cell; }
 .srows .c-sup .av-col { float: left; width: 72px; margin-right: var(--s-2); display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
 .srows .sup-txt { display: block; overflow: hidden; }
-.av { flex: none; display: inline-grid; place-items: center; width: 36px; height: 36px; border-radius: var(--r); background: var(--surface-2); color: var(--text-2); font-size: 12px; font-weight: 600; letter-spacing: .02em; }
+.av { flex: none; display: inline-grid; place-items: center; width: 36px; height: 36px; border-radius: var(--r); background: var(--surface-2); color: var(--text); font-size: 12px; font-weight: 600; letter-spacing: .02em; }
 .srows .tbl-wrap, .tbl-wrap:has(.srows) { overflow: visible; }
 .srows th { position: sticky; top: calc(var(--top-h) + var(--fb-h, 45px)); z-index: 5; background: var(--bg); text-transform: uppercase; letter-spacing: .04em; font-size: 11px; box-shadow: 0 1px 0 var(--border); }
 .srows td, .srows th { text-align: left; }
@@ -745,40 +758,28 @@ dialog::backdrop { background: var(--overlay); }
     var ratings = !b.reviews ? '<p class="fine">No sample ratings for this listing.</p>' : b.real ? '<div class="rev"><div><div class="rev-sum"><span class="big">' + rt(b.rating) + '</span><div>' + Stars(b.rating) + '<div class="muted">' + b.reviews + ' ' + esc(rw(b.reviews)) + '</div></div></div></div></div><p class="fine">From buyer reviews posted on this directory.</p>' : '<div class="rev"><div><div class="rev-sum"><span class="big">' + rt(b.rating) + '</span><div>' + Stars(b.rating) + '<div class="muted">' + b.reviews + ' ' + esc(rw(b.reviews)) + '</div></div></div></div>' +
       '<div class="bars">' + d.map(function (p, i) { return '<div class="bar-r"><span>' + (5 - i) + '★</span><i><u style="width:' + (p * 100).toFixed(1) + '%"></u></i><span>' + Math.round(p * 100) + '%</span></div>'; }).join("") + '</div></div>' +
       '<p class="fine">' + esc(tr("Sample rating breakdown. Written reviews appear here once buyers post them.")) + '</p>';
+    var ini2 = esc(b.supplier.replace(/[^A-Za-z0-9 ]/g, "").split(/\s+/).slice(0, 2).map(function (w) { return w.charAt(0); }).join("").toUpperCase());
+    var pills = function (arr) { return arr.length ? '<span class="caps">' + arr.map(function (c) { return '<span>' + esc(c) + '</span>'; }).join("") + '</span>' : '<span class="muted">—</span>'; };
+    var saved = favs().indexOf(b.name + b.supplier) > -1;
+    var simRows = more.slice(0, 5).map(function (x) { return '<li><a href="#biz-' + bslug(x) + '"><span class="av" aria-hidden="true">' + esc(x.supplier.replace(/[^A-Za-z0-9 ]/g, "").split(/\s+/).slice(0, 2).map(function (w) { return w.charAt(0); }).join("").toUpperCase()) + '</span><span><b>' + esc(x.supplier) + '</b><span class="t-sub">' + esc(x.name) + ' · ' + esc(x.city ? x.city + ", " + x.country : x.country) + '</span></span></a></li>'; }).join("");
     return '<a class="back" href="#">' + ARROW + esc(tr("All listings")) + '</a>' +
-      '<p class="crumbs"><a href="#">Military Yellow Book</a> › <a href="#cat-' + slug(b.cat) + '">' + esc(tr(b.cat)) + '</a> › ' + esc(b.supplier) + '</p>' +
       '<div class="pdp">' +
-      '<div class="gal"><div class="gal-wrap"><div class="gal-main g0" id="gal-main" aria-hidden="true">' + ini + '</div>' +
-      '<button class="gal-nav prev" type="button" data-galnav="-1" aria-label="Previous view">' + ARROW + '</button><button class="gal-nav next" type="button" data-galnav="1" aria-label="Next view">' + ARROW + '</button>' +
-      '<span class="gal-cap" id="gal-cap">' + esc(tr(GALS[0])) + ' · 1/' + GALS.length + '</span></div>' +
-      '<div class="gal-ts" role="group" aria-label="Product views">' + GALS.map(function (g, i) { return '<button class="gal-t g' + i + '" type="button" data-gal="' + i + '" aria-pressed="' + (i === 0) + '" aria-label="' + esc(tr(g)) + '">' + ini + '</button>'; }).join("") + '</div>' +
-      '<p class="gal-note">' + esc(tr("Placeholder views. Suppliers add real photos when they join.")) + '</p></div>' +
-      '<div class="info"><h1>' + esc(b.name) + '</h1>' +
-      '<div class="rowline"><span class="rate">' + (b.reviews ? Stars(b.rating) + '<b>' + rt(b.rating) + '</b><span>(' + b.reviews + ' ' + esc(rw(b.reviews)) + ')</span>' : '<b>New</b>') + '</span>' + verified + '<span class="muted">' + b.years + ' ' + esc(tr("yrs")) + '</span></div>' +
-      '<div class="tools"><button class="qbtn" type="button" data-save="' + key + '" aria-pressed="' + (favs().indexOf(b.name + b.supplier) > -1) + '">' + HEART + '<span>' + esc(tr(favs().indexOf(b.name + b.supplier) > -1 ? "Saved" : "Save")) + '</span></button><button class="qbtn" type="button" data-share>' + SHARE + '<span>' + esc(tr("Share")) + '</span></button></div>' +
-      '<div class="tiers" aria-label="' + esc(tr("Price by quantity")) + '">' + b.tiers.map(function (t, i) { return '<div class="tier" data-ti="' + i + '"><span class="q">' + esc(t[0]) + '</span><span class="a">' + esc(t[1]) + '</span></div>'; }).join("") + '</div>' +
-      variants + calc +
-      '<div class="shipchk" id="shipchk">' + ShipChk(b) + '</div>' +
-      '<dl class="facts"><dt>' + esc(tr("Lead time")) + '</dt><dd>' + esc(b.lead) + '</dd><dt>' + esc(tr("Ships to")) + '</dt><dd>' + esc(b.ships) + '</dd><dt>' + esc(tr("Origin")) + '</dt><dd>' + esc(b.city) + ', ' + esc(b.country) + '</dd>' +
-      '<dt>' + esc(tr("Domain")) + '</dt><dd><div class="opts-row">' + b.domains.map(function (k) { return '<span>' + esc(tr(DMAP[k][1])) + '</span>'; }).join("") + '</div></dd>' +
-      '<dt>' + esc(tr("Branch")) + '</dt><dd><div class="opts-row">' + b.branches.map(function (k) { return '<span>' + esc(tr(BMAP[k][1])) + '</span>'; }).join("") + '</div></dd>' +
-      '<dt>' + esc(tr("Features")) + '</dt><dd><div class="opts-row">' + b.certs.map(function (c) { return '<span>' + esc(c) + '</span>'; }).join("") + '</div></dd></dl>' +
-      '</div>' +
-      '<aside class="panel" aria-label="' + esc(tr("Supplier")) + '"><div class="sup"><div class="sup-tile" aria-hidden="true">' + esc(b.supplier.charAt(0)) + '</div><div><b>' + esc(b.supplier) + '</b><span>' + esc(b.city) + ', ' + esc(b.country) + '</span></div></div>' +
-      '<dl><dt>Status</dt><dd>' + esc(tr(b.sample ? "Sample listing, not verified" : b.verified ? "Verified" : "Not verified")) + '</dd><dt>' + esc(tr("In business")) + '</dt><dd>' + b.years + ' ' + esc(tr("yrs")) + '</dd><dt>Region</dt><dd>' + esc(tr(REGIONS[b.region])) + '</dd></dl>' +
-      '<div class="panel-sec">' + cta + '</div>' +
-      '<div class="asks"><p>' + esc(tr("Ask the supplier")) + '</p>' + ASKS.map(function (a, i) { return '<button class="ask" type="button" data-ask="' + i + '" data-quote="' + key + '">' + esc(a) + '</button>'; }).join("") + '</div>' +
-      (b.sample === false ? '' : '<span class="sample">Sample listing</span>') + '</aside></div>' +
-      '<nav class="tabs" aria-label="Sections"><button type="button" data-tab="p-over" aria-current="true">' + esc(tr("Overview")) + '</button><button type="button" data-tab="p-spec">' + esc(tr("Specifications")) + '</button><button type="button" data-tab="p-ship">' + esc(tr("Shipping and compliance")) + '</button><button type="button" data-tab="p-rev">' + esc(tr("Reviews")) + '</button><button type="button" data-tab="p-sup">' + esc(tr("Supplier")) + '</button></nav>' +
-      '<section class="pdp-sec" id="p-over"><h2>' + esc(tr("Overview")) + '</h2><p>' + esc(b.desc) + '</p>' +
-      '<div class="kv"><div><span>Category</span><b>' + esc(tr(b.cat)) + '</b></div><div><span>' + esc(tr("Min. order")) + '</span><b>' + esc(b.moq) + '</b></div><div><span>' + esc(tr("Lead time")) + '</span><b>' + esc(b.lead) + '</b></div><div><span>' + esc(tr("Origin")) + '</span><b>' + esc(b.country) + '</b></div></div>' + Codes(b) + '</section>' +
-      '<section class="pdp-sec" id="p-spec"><h2>' + esc(tr("Specifications")) + '</h2><dl class="spec">' + b.specs.map(function (s) { return '<div><dt>' + esc(s[0]) + '</dt><dd>' + esc(s[1]) + '</dd></div>'; }).join("") + '</dl></section>' +
-      '<section class="pdp-sec" id="p-ship"><h2>' + esc(tr("Shipping and compliance")) + '</h2><dl class="spec"><div><dt>' + esc(tr("Ships to")) + '</dt><dd>' + esc(b.ships) + '</dd></div><div><dt>' + esc(tr("Lead time")) + '</dt><dd>' + esc(b.lead) + '</dd></div><div><dt>' + esc(tr("Packaging")) + '</dt><dd>' + esc(pack) + '</dd></div><div><dt>' + esc(tr("Terms")) + '</dt><dd>' + esc(tr("Agreed in the quote")) + '</dd></div>' + (restricted ? '<div><dt>' + esc(tr("Buyer eligibility")) + '</dt><dd>' + esc(tr("Licensed or government buyers only")) + '</dd></div>' : '') + '</dl>' +
-      '<p class="notice">' + esc(tr(restricted ? "This item is export-controlled. Expect to provide a dealer licence or end-user certificate before the supplier quotes." : "Some military goods are export-controlled. Ask the supplier which licences and end-user certificates apply to your destination before you order, and confirm price and delivery terms in writing.")) + '</p></section>' +
+      '<div class="info">' +
+      '<header class="prof"><div class="av-col"><span class="av av-lg" aria-hidden="true">' + ini2 + '</span></div><div class="prof-t"><h1>' + esc(b.supplier) + '</h1>' +
+      '<p class="t-sub">' + esc(tr(b.cat)) + ' · ' + esc(b.city ? b.city + ", " + b.country : b.country) + ' · ' + esc(tr("In business")) + ': ' + b.years + ' ' + esc(tr("yrs")) + '</p>' +
+      '<div class="rowline">' + (b.sample ? '<span class="badge badge-sample" title="' + esc(tr("Invented for demonstration")) + '">' + esc(tr("Sample")) + '</span>' : b.verified ? '<span class="badge badge-ok">' + CHECK + esc(tr("Verified")) + '</span>' : '<span class="badge">' + esc(tr("Not verified")) + '</span>') + '<span class="rate">' + (b.reviews ? Stars(b.rating) + '<b>' + rt(b.rating) + '</b><span>(' + b.reviews + ' ' + esc(rw(b.reviews)) + ')</span>' : '<b>New</b>') + '</span></div></div>' +
+      '<div class="tools"><button class="qbtn" type="button" data-save="' + key + '" aria-pressed="' + saved + '">' + HEART + '<span>' + esc(tr(saved ? "Saved" : "Save")) + '</span></button><button class="qbtn" type="button" data-share>' + SHARE + '<span>' + esc(tr("Share")) + '</span></button></div></header>' +
+      '<section class="pdp-sec" id="p-over"><h2>' + esc(tr("Product or service")) + '</h2><p><b>' + esc(b.name) + '</b></p><p>' + esc(b.desc) + '</p>' +
+      '<dl class="facts"><dt>' + esc(tr("Indicative price")) + '</dt><dd>' + esc(b.price) + '</dd><dt>' + esc(tr("MOQ")) + '</dt><dd>' + esc(b.moq) + '</dd><dt>' + esc(tr("Lead time")) + '</dt><dd>' + esc(b.lead) + '</dd><dt>' + esc(tr("Ships to")) + '</dt><dd>' + esc(b.ships) + '</dd></dl></section>' +
+      '<section class="pdp-sec" id="p-cap"><h2>' + esc(tr("Capabilities")) + '</h2><dl class="facts"><dt>' + esc(tr("Features")) + '</dt><dd>' + pills(b.certs) + '</dd><dt>' + esc(tr("Domain")) + '</dt><dd>' + pills(b.domains.map(function (k) { return tr(DMAP[k][1]); })) + '</dd><dt>' + esc(tr("Branch")) + '</dt><dd>' + pills(b.branches.map(function (k) { return tr(BMAP[k][1]); })) + '</dd></dl>' + Codes(b) + '</section>' +
+      '<section class="pdp-sec" id="p-spec"><h2>' + esc(tr("Specifications")) + '</h2><dl class="spec">' + b.specs.map(function (s) { return '<div><dt>' + esc(s[0]) + '</dt><dd>' + esc(s[1]) + '</dd></div>'; }).join("") + '<div><dt>' + esc(tr("Packaging")) + '</dt><dd>' + esc(pack) + '</dd></div>' + (restricted ? '<div><dt>' + esc(tr("Buyer eligibility")) + '</dt><dd>' + esc(tr("Licensed or government buyers only")) + '</dd></div>' : '') + '</dl></section>' +
+      '<p class="notice">' + esc(tr(restricted ? "This item is export-controlled. Expect to provide a dealer licence or end-user certificate before the supplier quotes." : "Some military goods are export-controlled. Ask the supplier which licences and end-user certificates apply to your destination before you order, and confirm price and delivery terms in writing.")) + '</p>' +
       '<section class="pdp-sec" id="p-rev"><h2>' + esc(tr("Reviews")) + '</h2>' + ratings + (LIVE ? '<div id="rev-real" class="rev-real"></div>' : '') + '</section>' +
-      '<section class="pdp-sec" id="p-sup"><h2>' + esc(tr("About the supplier")) + '</h2><p>' + esc(b.supplier) + ' · ' + esc(b.city) + ', ' + esc(b.country) + ' · ' + b.years + ' ' + esc(tr("yrs")) + '</p>' +
-      '<p>' + esc(tr("Contact")) + ': <b>' + esc(b.contact) + '</b> <button class="btn btn-secondary" type="button" data-copy="' + esc(b.contact) + '" style="height:28px;padding:0 8px;font-size:12px;margin-left:4px">' + esc(tr("Copy")) + '</button></p></section>' +
-      (more.length ? '<section class="pdp-sec" id="p-more"><h2>' + esc(tr("Similar products")) + '</h2><div class="grid">' + more.map(Card).join("") + '</div></section>' : '');
+      (simRows ? '<section class="pdp-sec" id="p-more"><h2>' + esc(tr("Similar suppliers")) + '</h2><ul class="simlist">' + simRows + '</ul></section>' : '') +
+      '</div>' +
+      '<aside class="panel" aria-label="' + esc(tr("Contact")) + '"><div class="panel-sec">' + cta + '</div>' +
+      '<dl><dt>' + esc(tr("Status")) + '</dt><dd>' + esc(tr(b.sample ? "Sample listing, not verified" : b.verified ? "Verified" : "Not verified")) + '</dd><dt>' + esc(tr("Location")) + '</dt><dd>' + esc(b.city ? b.city + ", " + b.country : b.country) + '</dd><dt>Region</dt><dd>' + esc(tr(REGIONS[b.region])) + '</dd><dt>' + esc(tr("Contact")) + '</dt><dd>' + esc(b.contact) + '</dd></dl>' +
+      '<div class="asks"><p>' + esc(tr("Ask the supplier")) + '</p>' + ASKS.map(function (a, i) { return '<button class="ask" type="button" data-ask="' + i + '" data-quote="' + key + '">' + esc(a) + '</button>'; }).join("") + '</div></aside></div>';
   }
   function Empty() {
     if (state.saved && !favs().length) return '<div class="state" role="status"><h2>' + esc(tr("Nothing saved yet")) + '</h2><p>' + esc(tr("Save a supplier from its row or its page and it appears here, on this device and in your account.")) + '</p><div class="row"><button class="btn btn-secondary" type="button" data-remove="saved">' + esc(tr("Browse suppliers")) + '</button></div></div>';
@@ -1254,6 +1255,8 @@ dialog::backdrop { background: var(--overlay); }
     ["Training & Simulation", "Formation et simulation", "Formação e simulação", "Formación y simulación", "Mafunzo na uigaji"],
     ["Ground Support & Engineering", "Soutien sol et génie", "Apoio em terra e engenharia", "Apoyo en tierra e ingeniería", "Msaada wa ardhini na uhandisi"],
     ["Save", "Enregistrer", "Guardar", "Guardar", "Hifadhi"],
+    ["Indicative price", "Prix indicatif", "Preço indicativo", "Precio indicativo", "Bei elekezi"],
+    ["Similar suppliers", "Fournisseurs similaires", "Fornecedores semelhantes", "Proveedores similares", "Wasambazaji wanaofanana"],
     ["MOQ", "MOQ", "MOQ", "MOQ", "MOQ"],
     ["Saved", "Enregistré", "Guardado", "Guardado", "Imehifadhiwa"],
     ["Share", "Partager", "Partilhar", "Compartir", "Shiriki"],

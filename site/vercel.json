@@ -6,7 +6,7 @@
       "headers": [
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'none'; script-src 'self' 'sha256-1FR5ARULFnfQ3h+HDSgrdKQq7uJpthIBwTfrHWut9JA=' 'sha256-e6Q2XFdT0tx6+iB+KSMZIiaGua/PDBsFXYjamq6m8sI='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://bfovgafcfetfeqykjfco.supabase.co; base-uri 'none'; form-action 'none'; frame-ancestors 'self'; object-src 'none'"
+          "value": "default-src 'none'; script-src 'self' 'sha256-1FR5ARULFnfQ3h+HDSgrdKQq7uJpthIBwTfrHWut9JA=' 'sha256-MNYYCgp6+meBUVt1pl3RBjHh8AA+hA+wpX+uo6qRQNQ='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://bfovgafcfetfeqykjfco.supabase.co; base-uri 'none'; form-action 'none'; frame-ancestors 'self'; object-src 'none'"
         },
         {
           "key": "X-Content-Type-Options",
