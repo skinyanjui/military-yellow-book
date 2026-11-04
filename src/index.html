@@ -375,6 +375,7 @@ main { padding-block: 0; }
 .srows .c-sup { width: 31%; }
 .srows .c-prod { width: 25%; }
 .srows .c-loc { width: 14%; }
+.srows .c-loc .t-sub { min-height: 1.4em; }
 .srows .c-cap { width: 28%; }
 .srows .c-act { width: 1%; white-space: nowrap; text-align: right; padding-right: 0; }
 .srows a.t-main::after { content: ""; position: absolute; inset: 0; }
@@ -413,7 +414,9 @@ main { padding-block: 0; }
   .srows td.c-sup { grid-column: 1; }
   .srows td.c-act { grid-column: 2; grid-row: 1 / span 2; align-self: start; }
   .srows td.c-prod, .srows td.c-loc, .srows td.c-st { grid-column: 1; }
-  .srows td.c-loc, .srows td.c-st { display: inline !important; }
+  .srows td.c-st { display: inline !important; }
+  .srows td.c-loc .t-main, .srows td.c-loc .t-sub { display: inline; min-height: 0; }
+  .srows td.c-loc .t-sub:not(:empty)::before { content: ", "; }
   .srows td.c-cap { display: none !important; }
   .srows td.c-st { margin-top: 4px; }
 }
@@ -781,12 +784,12 @@ dialog::backdrop { background: var(--overlay); }
     var ini2 = esc(b.supplier.replace(/[^A-Za-z0-9 ]/g, "").split(/\s+/).slice(0, 2).map(function (w) { return w.charAt(0); }).join("").toUpperCase());
     var pills = function (arr) { return arr.length ? '<span class="caps">' + arr.map(function (c) { return '<span>' + esc(c) + '</span>'; }).join("") + '</span>' : '<span class="muted">—</span>'; };
     var saved = favs().indexOf(b.name + b.supplier) > -1;
-    var simRows = more.slice(0, 5).map(function (x) { return '<li><a href="#biz-' + bslug(x) + '"><span class="av" aria-hidden="true">' + esc(x.supplier.replace(/[^A-Za-z0-9 ]/g, "").split(/\s+/).slice(0, 2).map(function (w) { return w.charAt(0); }).join("").toUpperCase()) + '</span><span><b>' + esc(x.supplier) + '</b><span class="t-sub">' + esc(x.name) + ' · ' + esc(x.city ? x.city + ", " + x.country : x.country) + '</span></span></a></li>'; }).join("");
+    var simRows = more.slice(0, 5).map(function (x) { return '<li><a href="#biz-' + bslug(x) + '"><span class="av" aria-hidden="true">' + esc(x.supplier.replace(/[^A-Za-z0-9 ]/g, "").split(/\s+/).slice(0, 2).map(function (w) { return w.charAt(0); }).join("").toUpperCase()) + '</span><span><b>' + esc(x.supplier) + '</b><span class="t-sub">' + esc(x.name) + ' · ' + esc(locStr(x)) + '</span></span></a></li>'; }).join("");
     return '<a class="back" href="#">' + ARROW + esc(tr("All listings")) + '</a>' +
       '<div class="pdp">' +
       '<div class="info">' +
       '<header class="prof"><div class="av-col"><span class="av av-lg" aria-hidden="true">' + ini2 + '</span></div><div class="prof-t"><h1>' + esc(b.supplier) + '</h1>' +
-      '<p class="t-sub">' + esc(tr(b.cat)) + ' · ' + esc(b.city ? b.city + ", " + b.country : b.country) + ' · ' + esc(tr("In business")) + ': ' + b.years + ' ' + esc(tr("yrs")) + '</p>' +
+      '<p class="t-sub">' + esc(tr(b.cat)) + ' · ' + esc(locStr(b)) + ' · ' + esc(tr("In business")) + ': ' + b.years + ' ' + esc(tr("yrs")) + '</p>' +
       '<div class="rowline">' + (b.sample ? '<span class="badge badge-sample" title="' + esc(tr("Invented for demonstration")) + '">' + esc(tr("Sample")) + '</span>' : b.verified ? '<span class="badge badge-ok">' + CHECK + esc(tr("Verified")) + '</span>' : '<span class="badge">' + esc(tr("Not verified")) + '</span>') + '<span class="rate">' + (b.reviews ? Stars(b.rating) + '<b>' + rt(b.rating) + '</b><span>(' + b.reviews + ' ' + esc(rw(b.reviews)) + ')</span>' : '<b>New</b>') + '</span></div></div>' +
       '<div class="tools"><button class="qbtn" type="button" data-save="' + key + '" aria-pressed="' + saved + '">' + HEART + '<span>' + esc(tr(saved ? "Saved" : "Save")) + '</span></button><button class="qbtn" type="button" data-share>' + SHARE + '<span>' + esc(tr("Share")) + '</span></button></div></header>' +
       (b.images.length
@@ -806,7 +809,7 @@ dialog::backdrop { background: var(--overlay); }
       (simRows ? '<section class="pdp-sec" id="p-more"><h2>' + esc(tr("Similar suppliers")) + '</h2><ul class="simlist">' + simRows + '</ul></section>' : '') +
       '</div>' +
       '<aside class="panel" aria-label="' + esc(tr("Contact")) + '"><div class="panel-sec">' + cta + '</div>' +
-      '<dl><dt>' + esc(tr("Status")) + '</dt><dd>' + esc(tr(b.sample ? "Sample listing, not verified" : b.verified ? "Verified" : "Not verified")) + '</dd><dt>' + esc(tr("Location")) + '</dt><dd>' + esc(b.city ? b.city + ", " + b.country : b.country) + '</dd><dt>Region</dt><dd>' + esc(tr(REGIONS[b.region])) + '</dd><dt>' + esc(tr("Contact")) + '</dt><dd>' + esc(b.contact) + '</dd></dl>' +
+      '<dl><dt>' + esc(tr("Status")) + '</dt><dd>' + esc(tr(b.sample ? "Sample listing, not verified" : b.verified ? "Verified" : "Not verified")) + '</dd><dt>' + esc(tr("Location")) + '</dt><dd>' + esc(locStr(b)) + '</dd><dt>Region</dt><dd>' + esc(tr(REGIONS[b.region])) + '</dd><dt>' + esc(tr("Contact")) + '</dt><dd>' + esc(b.contact) + '</dd></dl>' +
       '<div class="asks"><p>' + esc(tr("Ask the supplier")) + '</p>' + ASKS.map(function (a, i) { return '<button class="ask" type="button" data-ask="' + i + '" data-quote="' + key + '">' + esc(a) + '</button>'; }).join("") + '</div></aside></div>';
   }
   function Empty() {
@@ -966,7 +969,7 @@ dialog::backdrop { background: var(--overlay); }
     return '<tr>' +
       '<td class="c-sup"><span class="av-col"><span class="av" aria-hidden="true">' + ini + '</span>' + vp + '</span><span class="sup-txt"><span class="nm"><a class="t-main" href="' + href + '">' + esc(b.supplier) + '</a>' + spon + '</span><span class="t-sub">' + esc(tr(b.cat)) + '</span>' + DesigTags(b) + (b.years ? '<span class="t-sub">' + esc(tr("In business")) + ': ' + b.years + ' ' + esc(tr("yrs")) + '</span>' : '') + '</span></td>' +
       '<td class="c-prod"><span class="t-main" title="' + esc(b.name) + '">' + esc(b.name) + '</span><span class="from">' + esc(b.price) + '</span><span class="from moq" title="' + esc(tr("Min. order")) + '">' + esc(tr("MOQ")) + ' ' + esc(b.moq) + '</span></td>' +
-      '<td class="c-loc"><span>' + esc(b.city ? b.city + ", " + b.country : b.country) + '</span></td>' +
+      '<td class="c-loc"><span class="t-main">' + esc(b.city || b.country) + '</span><span class="t-sub">' + esc(b.state || "") + '</span><span class="t-sub">' + esc(b.city ? b.country : "") + '</span></td>' +
             '<td class="c-cap"><span class="caps">' + caps.map(function (c) { return '<span>' + esc(c) + '</span>'; }).join("") + (extra > 0 ? '<span class="more-n" title="' + esc(capAll.slice(2).join(", ")) + '">+' + extra + '</span>' : '') + '</span></td>' +
       '<td class="c-act"><span class="acts"><button class="icon-btn" type="button" data-fav="' + key + '" aria-pressed="' + on + '" aria-label="' + esc(tr(on ? "Remove from saved" : "Save") + ": " + b.supplier) + '">' + HEART + '</button>' +
       '<button class="icon-btn" type="button" data-quote="' + key + '" aria-label="' + esc(tr("Request a quote") + ": " + b.name) + '">' + QUOTE + '</button></span></td></tr>';
@@ -1610,6 +1613,7 @@ dialog::backdrop { background: var(--overlay); }
     });
   }
 
+  function locStr(b) { return [b.city, b.state, b.country].filter(Boolean).join(", "); }
   function fromRow(r) {
     var b = P(r.name, r.category, r.supplier, r.city, r.country, r.region, r.unit, Number(r.price), r.moq, r.lead || "", r.certs || [], r.ships, r.verified, r.years, r.descr, r.specs || "", r.contact, r.flat || undefined);
     b.specs = b.specs.map(function (s) { return [s[0], s.slice(1).join(":")]; }).filter(function (s) { return s[0] && s[1]; });
@@ -1617,12 +1621,12 @@ dialog::backdrop { background: var(--overlay); }
     b.sr = b.rating; b.sc = b.reviews; b.real = r.review_count > 0;
     if (b.real) { b.rating = Math.round(Number(r.rating_avg) * 10) / 10; b.reviews = r.review_count; }
     b.domains = r.domains || []; b.branches = r.branches || []; b.unspsc = r.unspsc || [];
-    b.desig = (r.designations || []).filter(function (c) { return DESIG[c]; }); b.desigBasis = r.designations_basis === "sam_gov" ? "sam_gov" : "self_reported"; b.desigAt = r.designations_checked_at || ""; b.uei = r.uei || ""; b.cage = r.cage_code || "";
+    b.desig = (r.designations || []).filter(function (c) { return DESIG[c]; }); b.desigBasis = r.designations_basis === "sam_gov" ? "sam_gov" : "self_reported"; b.desigAt = r.designations_checked_at || ""; b.state = r.state || ""; b.uei = r.uei || ""; b.cage = r.cage_code || "";
     b.images = (r.images || []).filter(function (u) { return typeof u === "string" && /^https:\/\//.test(u) && (!window.MYB_BACKEND || u.indexOf(window.MYB_BACKEND.url + "/storage/v1/object/public/listing-images/") === 0); }).slice(0, 8);
     if (!/\d/.test(r.lead || "")) b.leadD = 999;
     return b;
   }
-  var LCOLS = "slug,name,category,supplier,city,country,region,unit,price,moq,lead,certs,ships,verified,years,descr,specs,contact,flat,domains,branches,sample_rating,sample_reviews,review_count,rating_avg,is_sample,status,position,created_at,unspsc,images,designations,designations_basis,designations_checked_at,uei,cage_code";
+  var LCOLS = "slug,name,category,supplier,city,country,region,unit,price,moq,lead,certs,ships,verified,years,descr,specs,contact,flat,domains,branches,sample_rating,sample_reviews,review_count,rating_avg,is_sample,status,position,created_at,unspsc,images,designations,designations_basis,designations_checked_at,uei,cage_code,state";
   function loadListings() {
     loading = true; render();
     sb.from("myb_listings").select(LCOLS).eq("status", "live").order("position", { ascending: true, nullsFirst: false }).order("created_at", { ascending: true }).limit(2000).then(function (r) {

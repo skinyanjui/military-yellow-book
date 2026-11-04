@@ -23,7 +23,7 @@ from mapping import CATEGORY_UNSPSC   # directory category -> UNSPSC families/cl
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SUPABASE_URL = 'https://bfovgafcfetfeqykjfco.supabase.co'
 SUPABASE_KEY = 'sb_publishable_FfVpTa_cEtn_LRJ5FNc-VQ_8bvPbVZx'   # publishable key: safe to ship
-COLS = ('slug,name,category,supplier,city,country,region,unit,price,moq,lead,certs,ships,verified,years,descr,specs,'
+COLS = ('slug,name,category,supplier,city,state,country,region,unit,price,moq,lead,certs,ships,verified,years,descr,specs,'
         'domains,branches,is_sample,status,position,created_at,unspsc')
 SLUG_OK = re.compile(r'^[a-z0-9]+(?:-[a-z0-9]+)*$')
 FONTS = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">'
@@ -260,7 +260,7 @@ def shape(r, cats, domains, branches, regions):
             specs.append((k.strip(), v.strip()))
     return {
         'slug': r['slug'], 'name': r['name'], 'cat': r['category'], 'catslug': slugify(r['category']),
-        'supplier': r['supplier'], 'city': r['city'], 'country': r['country'],
+        'supplier': r['supplier'], 'city': r['city'], 'state': r.get('state') or '', 'country': r['country'],
         'region': regions.get(r['region'], r['region']), 'price': price,
         'moq': fmt_n(moq) + ' ' + r['unit'] + ('s' if moq > 1 else ''), 'lead': r.get('lead') or '',
         'certs': r.get('certs') or [], 'ships': r['ships'], 'verified': bool(r['verified']), 'years': r['years'],
@@ -314,9 +314,12 @@ def crumb_html(items):
     return '<nav class="crumbs" aria-label="Breadcrumb">' + ' › '.join(out) + '</nav>'
 
 
+def loc(b):
+    return ', '.join(x for x in (b['city'], b.get('state'), b['country']) if x)
+
+
 def card(b):
-    return ('<li><a href="/l/' + b['slug'] + '">' + esc(b['name']) + '</a><small>' + esc(b['supplier']) + ' · ' + esc(b['city']) + ', ' +
-            esc(b['country']) + '</small><small>' + esc(b['price']) + ' · MOQ ' + esc(b['moq']) + '</small></li>')
+    return ('<li><a href="/l/' + b['slug'] + '">' + esc(b['name']) + '</a><small>' + esc(b['supplier']) + ' · ' + esc(loc(b)) + '</small><small>' + esc(b['price']) + ' · MOQ ' + esc(b['moq']) + '</small></li>')
 
 
 def listing_page(site, b, same_cat):
@@ -324,13 +327,13 @@ def listing_page(site, b, same_cat):
     title = f"{b['name']} by {b['supplier']}"
     if len(title) <= 46:
         title += ' | Military Yellow Book'     # keep the brand only while the title still fits a search result
-    desc = trim(f"{b['name']} from {b['supplier']} in {b['city']}, {b['country']}. MOQ {b['moq']}, lead time {b['lead'] or 'on request'}. {b['descr']}")
+    desc = trim(f"{b['name']} from {b['supplier']} in {loc(b)}. MOQ {b['moq']}, lead time {b['lead'] or 'on request'}. {b['descr']}")
     badges = ['<li class="ok">' + ('✓ Verified supplier' if b['verified'] else 'Not yet verified') + '</li>',
               '<li>' + esc(str(b['years'])) + ' yrs in business</li>', '<li>' + esc(b['cat']) + '</li>']
     if b['sample']:
         badges.insert(0, '<li class="sample">Sample listing: invented for demonstration</li>')
     facts = [('Minimum order', b['moq']), ('Lead time', b['lead'] or 'On request'), ('Ships to', b['ships']),
-             ('Origin', b['city'] + ', ' + b['country']), ('Region', b['region'])]
+             ('Origin', loc(b)), ('Region', b['region'])]
     dl = ''.join('<dt>' + esc(k) + '</dt><dd>' + esc(v) + '</dd>' for k, v in facts)
     for label, vals in (('Domain', b['domains']), ('Branch', b['branches']), ('Features', b['certs'])):
         if vals:
@@ -351,7 +354,7 @@ def listing_page(site, b, same_cat):
                  '<p class="sub">UNSPSC® is the United Nations Standard Products and Services Code, used by many procurement portals to classify what is bought.</p>')
     more = [x for x in same_cat if x['slug'] != b['slug'] and x['supplier'] != b['supplier']][:6]
     more_html = ('<h2>More in ' + esc(b['cat']) + '</h2><ul class="list">' + ''.join(card(x) for x in more) + '</ul>') if more else ''
-    body = (crumb_html(crumbs) + '<h1>' + esc(b['name']) + '</h1><p class="sub">' + esc(b['supplier']) + ' · ' + esc(b['city']) + ', ' + esc(b['country']) + '</p>' +
+    body = (crumb_html(crumbs) + '<h1>' + esc(b['name']) + '</h1><p class="sub">' + esc(b['supplier']) + ' · ' + esc(', '.join(x for x in (b['city'], b.get('state'), b['country']) if x)) + '</p>' +
             '<ul class="badges">' + ''.join(badges) + '</ul><p class="price">' + esc(b['price']) + '</p><dl class="facts">' + dl + '</dl>' +
             '<h2>Overview</h2><p>' + esc(b['descr']) + '</p>' + spec + codes + '<h2>Shipping and compliance</h2><p class="notice">' + esc(note) + '</p>' +
             '<div class="cta"><a class="btn primary" href="/#biz-' + b['slug'] + '">Request a quote or see full details</a>'
