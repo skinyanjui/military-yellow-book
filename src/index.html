@@ -920,7 +920,7 @@ dialog::backdrop { background: var(--overlay); }
     var ini = esc(b.supplier.replace(/[^A-Za-z0-9 ]/g, "").split(/\s+/).slice(0, 2).map(function (w) { return w.charAt(0); }).join("").toUpperCase());
     return '<tr>' +
       '<td class="c-sup"><span class="av" aria-hidden="true">' + ini + '</span><span class="sup-txt"><a class="t-main" href="' + href + '">' + esc(b.supplier) + '</a><span class="t-sub">' + esc(tr(b.cat)) + (b.years ? ' · ' + b.years + ' ' + esc(tr("yrs")) : '') + '</span></span></td>' +
-      '<td class="c-prod"><span class="t-main">' + esc(b.name) + '</span><span class="from">' + esc(b.price) + ' · ' + esc(tr("Min. order")) + ' ' + esc(b.moq) + '</span></td>' +
+      '<td class="c-prod"><span class="t-main">' + esc(b.name) + '</span><span class="from">' + esc(b.price) + '</span><span class="from moq" title="' + esc(tr("Min. order")) + '">' + esc(tr("MOQ")) + ' ' + esc(b.moq) + '</span></td>' +
       '<td class="c-loc"><span>' + esc(b.city ? b.city + ", " + b.country : b.country) + '</span></td>' +
       '<td class="c-st"> ' + Status(b) + '</td>' +
       '<td class="c-cap"><span class="caps">' + caps.map(function (c) { return '<span>' + esc(c) + '</span>'; }).join("") + (extra > 0 ? '<span class="more-n" title="' + esc(capAll.slice(2).join(", ")) + '">+' + extra + '</span>' : '') + '</span></td>' +
@@ -1255,6 +1255,7 @@ dialog::backdrop { background: var(--overlay); }
     ["Training & Simulation", "Formation et simulation", "Formação e simulação", "Formación y simulación", "Mafunzo na uigaji"],
     ["Ground Support & Engineering", "Soutien sol et génie", "Apoio em terra e engenharia", "Apoyo en tierra e ingeniería", "Msaada wa ardhini na uhandisi"],
     ["Save", "Enregistrer", "Guardar", "Guardar", "Hifadhi"],
+    ["MOQ", "MOQ", "MOQ", "MOQ", "MOQ"],
     ["Saved", "Enregistré", "Guardado", "Guardado", "Imehifadhiwa"],
     ["Share", "Partager", "Partilhar", "Compartir", "Shiriki"],
     ["Link copied.", "Lien copié.", "Ligação copiada.", "Enlace copiado.", "Kiungo kimenakiliwa."],
