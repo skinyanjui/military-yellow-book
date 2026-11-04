@@ -348,7 +348,7 @@ main { padding-block: 0; }
 .srows td { vertical-align: middle; }
 .srows .t-main, .srows .t-sub, .srows .from { display: block; }
 .srows .c-sup .t-main { font-weight: 600; color: var(--text); }
-.srows .c-prod .t-main { font-weight: 400; color: var(--text); }
+.srows .c-prod .t-main { font-weight: 400; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; overflow-wrap: normal; }
 .srows .from { color: var(--text-2); font-size: 12px; margin-top: 2px; }
 .srows .c-sup { width: 24%; }
 .srows .c-prod { width: 24%; }
@@ -920,7 +920,7 @@ dialog::backdrop { background: var(--overlay); }
     var ini = esc(b.supplier.replace(/[^A-Za-z0-9 ]/g, "").split(/\s+/).slice(0, 2).map(function (w) { return w.charAt(0); }).join("").toUpperCase());
     return '<tr>' +
       '<td class="c-sup"><span class="av" aria-hidden="true">' + ini + '</span><span class="sup-txt"><a class="t-main" href="' + href + '">' + esc(b.supplier) + '</a><span class="t-sub">' + esc(tr(b.cat)) + '</span>' + (b.years ? '<span class="t-sub">' + esc(tr("In business")) + ': ' + b.years + ' ' + esc(tr("yrs")) + '</span>' : '') + '</span></td>' +
-      '<td class="c-prod"><span class="t-main">' + esc(b.name) + '</span><span class="from">' + esc(b.price) + '</span><span class="from moq" title="' + esc(tr("Min. order")) + '">' + esc(tr("MOQ")) + ' ' + esc(b.moq) + '</span></td>' +
+      '<td class="c-prod"><span class="t-main" title="' + esc(b.name) + '">' + esc(b.name) + '</span><span class="from">' + esc(b.price) + '</span><span class="from moq" title="' + esc(tr("Min. order")) + '">' + esc(tr("MOQ")) + ' ' + esc(b.moq) + '</span></td>' +
       '<td class="c-loc"><span>' + esc(b.city ? b.city + ", " + b.country : b.country) + '</span></td>' +
       '<td class="c-st"> ' + Status(b) + '</td>' +
       '<td class="c-cap"><span class="caps">' + caps.map(function (c) { return '<span>' + esc(c) + '</span>'; }).join("") + (extra > 0 ? '<span class="more-n" title="' + esc(capAll.slice(2).join(", ")) + '">+' + extra + '</span>' : '') + '</span></td>' +
