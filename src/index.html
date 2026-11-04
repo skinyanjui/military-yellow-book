@@ -372,10 +372,10 @@ main { padding-block: 0; }
 .srows .c-sup .t-main { font-weight: 600; color: var(--text); }
 .srows .c-prod .t-main { font-weight: 400; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; overflow-wrap: normal; }
 .srows .from { color: var(--text-2); font-size: 12px; margin-top: 2px; }
-.srows .c-sup { width: 28%; }
-.srows .c-prod { width: 26%; }
+.srows .c-sup { width: 31%; }
+.srows .c-prod { width: 25%; }
 .srows .c-loc { width: 14%; }
-.srows .c-cap { width: 30%; }
+.srows .c-cap { width: 28%; }
 .srows .c-act { width: 1%; white-space: nowrap; text-align: right; padding-right: 0; }
 .srows a.t-main::after { content: ""; position: absolute; inset: 0; }
 .srows tbody tr { position: relative; }
@@ -392,6 +392,11 @@ main { padding-block: 0; }
 .srows .c-sup { display: table-cell; }
 .srows .c-sup .av-col { float: left; width: 72px; margin-right: var(--s-2); display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
 .srows .sup-txt { display: block; overflow: hidden; }
+.vseal { display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 999px; background: var(--ok-subtle); color: var(--ok); }
+.vseal svg { width: 14px; height: 14px; }
+.srows .nm { display: flex; align-items: center; gap: 6px; min-width: 0; }
+.srows .nm .t-main { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.srows .nm .badge { flex: none; }
 .av { flex: none; display: inline-grid; place-items: center; width: 36px; height: 36px; border-radius: var(--r); background: var(--surface-2); color: var(--text); font-size: 12px; font-weight: 600; letter-spacing: .02em; }
 .srows .tbl-wrap, .tbl-wrap:has(.srows) { overflow: visible; }
 .srows th { position: sticky; top: calc(var(--top-h) + var(--fb-h, 45px)); z-index: 5; background: var(--bg); text-transform: uppercase; letter-spacing: .04em; font-size: 11px; box-shadow: 0 1px 0 var(--border); }
@@ -930,10 +935,11 @@ dialog::backdrop { background: var(--overlay); }
   function Row(b) {
     var key = esc(b.name + b.supplier), href = "#biz-" + bslug(b), on = favs().indexOf(b.name + b.supplier) > -1;
     var capAll = b.certs.concat(b.domains.map(function (k) { return tr(DMAP[k][1]); })), caps = capAll.slice(0, 2), extra = capAll.length - caps.length;
-    var vp = Status(b);
+    var vp = (b.verified && !b.sample) ? '<span class="vseal" role="img" aria-label="' + esc(tr("Verified")) + '" title="' + esc(tr("Verified")) + '">' + CHECK + '</span>' : Status(b);
+    var spon = b.sponsored ? '<span class="badge badge-sponsored" title="' + esc(tr("Paid placement")) + '">' + esc(tr("Sponsored")) + '</span>' : '';
     var ini = esc(b.supplier.replace(/[^A-Za-z0-9 ]/g, "").split(/\s+/).slice(0, 2).map(function (w) { return w.charAt(0); }).join("").toUpperCase());
     return '<tr>' +
-      '<td class="c-sup"><span class="av-col"><span class="av" aria-hidden="true">' + ini + '</span>' + vp + '</span><span class="sup-txt"><a class="t-main" href="' + href + '">' + esc(b.supplier) + '</a><span class="t-sub">' + esc(tr(b.cat)) + '</span>' + (b.years ? '<span class="t-sub">' + esc(tr("In business")) + ': ' + b.years + ' ' + esc(tr("yrs")) + '</span>' : '') + '</span></td>' +
+      '<td class="c-sup"><span class="av-col"><span class="av" aria-hidden="true">' + ini + '</span>' + vp + '</span><span class="sup-txt"><span class="nm"><a class="t-main" href="' + href + '">' + esc(b.supplier) + '</a>' + spon + '</span><span class="t-sub">' + esc(tr(b.cat)) + '</span>' + (b.years ? '<span class="t-sub">' + esc(tr("In business")) + ': ' + b.years + ' ' + esc(tr("yrs")) + '</span>' : '') + '</span></td>' +
       '<td class="c-prod"><span class="t-main" title="' + esc(b.name) + '">' + esc(b.name) + '</span><span class="from">' + esc(b.price) + '</span><span class="from moq" title="' + esc(tr("Min. order")) + '">' + esc(tr("MOQ")) + ' ' + esc(b.moq) + '</span></td>' +
       '<td class="c-loc"><span>' + esc(b.city ? b.city + ", " + b.country : b.country) + '</span></td>' +
             '<td class="c-cap"><span class="caps">' + caps.map(function (c) { return '<span>' + esc(c) + '</span>'; }).join("") + (extra > 0 ? '<span class="more-n" title="' + esc(capAll.slice(2).join(", ")) + '">+' + extra + '</span>' : '') + '</span></td>' +
@@ -1275,6 +1281,8 @@ dialog::backdrop { background: var(--overlay); }
     ["No photos yet.", "Pas encore de photos.", "Ainda sem fotos.", "Aún no hay fotos.", "Bado hakuna picha."],
     ["This is a sample listing.", "Ceci est une fiche exemple.", "Este é um anúncio de exemplo.", "Esta es una ficha de ejemplo.", "Hii ni orodha ya mfano."],
     ["Ask the supplier for photos.", "Demandez des photos au fournisseur.", "Peça fotos ao fornecedor.", "Pida fotos al proveedor.", "Muulize msambazaji picha."],
+    ["Sponsored", "Sponsorisé", "Patrocinado", "Patrocinado", "Imedhaminiwa"],
+    ["Paid placement", "Emplacement payant", "Posicionamento pago", "Ubicación de pago", "Nafasi ya kulipia"],
     ["MOQ", "MOQ", "MOQ", "MOQ", "MOQ"],
     ["Saved", "Enregistré", "Guardado", "Guardado", "Imehifadhiwa"],
     ["Share", "Partager", "Partilhar", "Compartir", "Shiriki"],
