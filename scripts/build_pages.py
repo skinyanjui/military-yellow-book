@@ -331,6 +331,7 @@ def fmt_date(ts):
 
 
 ICONS = {
+    'box': '<path d="M2.5 5.5L8 2.5l5.5 3v5L8 13.5l-5.5-3z"/><path d="M2.5 5.5L8 8.5l5.5-3M8 8.5v5"/>',
     'search': '<circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5l3 3"/>',
     'heart': '<path d="M8 13.5S2.5 10 2.5 6.2A2.9 2.9 0 0 1 8 5a2.9 2.9 0 0 1 5.5 1.2C13.5 10 8 13.5 8 13.5z"/>',
     'doc': '<path d="M4 2.5h5.5L12 5v8.5H4z"/><path d="M9.5 2.5V5H12M6 8h4M6 10.5h4"/>',
@@ -347,8 +348,8 @@ def ico(n):
     return '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + ICONS[n] + '</svg>'
 
 
-def side_item(href, icon, label, section, cur):
-    return '<a class="side-item" href="' + href + '"' + (' aria-current="page"' if section == cur else '') + '>' + ico(icon) + '<span class="si-l">' + label + '</span></a>'
+def side_item(href, icon, label, section, cur, hint=''):
+    return '<a class="side-item" href="' + href + '"' + (' title="' + esc(hint) + '"' if hint else '') + (' aria-current="page"' if section == cur else '') + '>' + ico(icon) + '<span class="si-l">' + label + '</span></a>'
 
 
 def wpage(site, path, title, desc, section, heading, meta, filters, body, crumbs, og_type='website', noindex=False, extra_css=''):
@@ -365,15 +366,15 @@ def wpage(site, path, title, desc, section, heading, meta, filters, body, crumbs
            '<div class="top-actions"><a class="top-cta" href="/?list=1" aria-label="List your business">' + ico('plus') + '<span class="lbl">List your business</span></a><a class="top-btn" href="/?saved=1" aria-label="Saved">' + ico('heart') + '<span class="lbl">Saved</span></a><a class="top-btn" href="/?signin=1"><span>Sign in</span></a></div></div></header>')
     side = ('<aside class="sidebar" id="sidebar" aria-label="Workspace"><div class="sidebar-in">'
             '<div class="side-head"><span class="brand"><span class="mark" aria-hidden="true">YB</span>Military Yellow Book</span><button class="icon-btn" type="button" data-side-close aria-label="Close menu">' + ico('x') + '</button></div>'
-            '<nav class="side-group" aria-label="Suppliers">' + side_item('/', 'search', 'Discover suppliers', 'discover', section) + side_item('/?saved=1', 'heart', 'Saved suppliers', 'saved', section) +
-            '<a class="side-item" href="/directory">' + ico('doc') + '<span class="si-l">All listings (plain pages)</span></a></nav>'
-            '<nav class="side-group" aria-labelledby="sl-proc"><div class="side-label" id="sl-proc">Procurement</div>' +
-            side_item('/opportunities', 'doc', 'Tenders', 'tenders', section) + side_item('/awards', 'award', 'Contract awards', 'awards', section) + side_item('/portals', 'globe', 'Procurement portals', 'portals', section) + '</nav>'
-            '<nav class="side-group" aria-labelledby="sl-biz"><div class="side-label" id="sl-biz">Account and business</div>'
-            '<a class="side-item side-mob" href="/?list=1">' + ico('plus') + '<span class="si-l">List your business</span></a>'
-            '<a class="side-item" href="/?rfq=1">' + ico('file') + '<span class="si-l">Request a quote</span></a>'
-            '<a class="side-item" href="/?ship=1">' + ico('globe') + '<span class="si-l">Ship to</span></a>'
-            '<a class="side-item" href="/?lang=1">' + ico('globe') + '<span class="si-l">Language</span></a></nav></div></aside>')
+            '<nav class="side-group" aria-label="Suppliers">' + side_item('/', 'search', 'Discover', 'discover', section, 'Search the supplier directory') + side_item('/?saved=1', 'heart', 'Shortlist', 'saved', section, 'Suppliers you saved') +
+            '<a class="side-item" href="/directory" title="All listings as plain pages">' + ico('doc') + '<span class="si-l">Browse</span></a></nav>'
+            '<nav class="side-group" aria-labelledby="sl-proc"><div class="side-label" id="sl-proc">Win contracts</div>' +
+            side_item('/opportunities', 'doc', 'Bid', 'tenders', section, 'Open government tenders') + side_item('/awards', 'award', 'Track', 'awards', section, 'Recent contract awards') + side_item('/portals', 'globe', 'Register', 'portals', section, 'Government procurement portals') + '</nav>'
+            '<nav class="side-group" aria-labelledby="sl-biz"><div class="side-label" id="sl-biz">Your business</div>'
+            '<a class="side-item side-mob" href="/?list=1" title="Add your business to the directory">' + ico('plus') + '<span class="si-l">List</span></a>'
+            '<a class="side-item" href="/?rfq=1" title="Ask suppliers for a price">' + ico('file') + '<span class="si-l">Quote</span></a>'
+            '<a class="side-item" href="/?ship=1" title="Only show suppliers that ship to your country">' + ico('box') + '<span class="si-l">Ship</span></a>'
+            '<a class="side-item" href="/?lang=1" title="Change the language">' + ico('globe') + '<span class="si-l">Translate</span></a></nav></div></aside>')
     return ('<!doctype html><html lang="en"><head><meta charset="utf-8">'
             '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">'
             '<title>' + esc(title) + '</title><meta name="description" content="' + esc(desc) + '">'

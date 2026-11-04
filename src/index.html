@@ -481,22 +481,22 @@ dialog::backdrop { background: var(--overlay); }
     <div class="sidebar-in">
       <div class="side-head"><span class="brand"><span class="mark" aria-hidden="true">YB</span>Military Yellow Book</span><button class="icon-btn" type="button" data-side-close aria-label="Close menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg></button></div>
       <nav class="side-group" aria-label="Suppliers">
-        <a class="side-item" href="/" data-side="discover" aria-current="page"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5l3 3"/></svg><span class="si-l" data-i18n="Discover suppliers">Discover suppliers</span></a>
-        <a class="side-item" href="/?saved=1" data-side="saved"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 13.5S2.5 10 2.5 6.2A2.9 2.9 0 0 1 8 5a2.9 2.9 0 0 1 5.5 1.2C13.5 10 8 13.5 8 13.5z"/></svg><span class="si-l" data-i18n="Saved suppliers">Saved suppliers</span><span class="si-v" id="side-saved-n"></span></a>
-        <a class="side-item" href="/directory"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2.5h5.5L12 5v8.5H4z"/><path d="M9.5 2.5V5H12M6 8h4M6 10.5h4"/></svg><span class="si-l">All listings (plain pages)</span></a>
+        <a title="Search the supplier directory" data-i18n-ti="Search the supplier directory" class="side-item" href="/" data-side="discover" aria-current="page"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5l3 3"/></svg><span class="si-l" data-i18n="Discover">Discover</span></a>
+        <a title="Suppliers you saved" data-i18n-ti="Suppliers you saved" class="side-item" href="/?saved=1" data-side="saved"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 13.5S2.5 10 2.5 6.2A2.9 2.9 0 0 1 8 5a2.9 2.9 0 0 1 5.5 1.2C13.5 10 8 13.5 8 13.5z"/></svg><span class="si-l" data-i18n="Shortlist">Shortlist</span><span class="si-v" id="side-saved-n"></span></a>
+        <a title="All listings as plain pages" data-i18n-ti="All listings as plain pages" class="side-item" href="/directory"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2.5h5.5L12 5v8.5H4z"/><path d="M9.5 2.5V5H12M6 8h4M6 10.5h4"/></svg><span class="si-l" data-i18n="Browse">Browse</span></a>
       </nav>
       <nav class="side-group" aria-labelledby="sl-proc">
-        <div class="side-label" id="sl-proc" data-i18n="Procurement">Procurement</div>
-        <a class="side-item" href="/opportunities"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2.5h5.5L12 5v8.5H4z"/><path d="M9.5 2.5V5H12M6 8h4M6 10.5h4"/></svg><span class="si-l" data-i18n="Tenders">Tenders</span></a>
-        <a class="side-item" href="/awards"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="6.5" r="3.5"/><path d="M6 9.5L5 14l3-1.5 3 1.5-1-4.5"/></svg><span class="si-l" data-i18n="Contract awards">Contract awards</span></a>
-        <a class="side-item" href="/portals"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="5.5"/><path d="M2.5 8h11M8 2.5c2 1.8 2 9.2 0 11M8 2.5c-2 1.8-2 9.2 0 11"/></svg><span class="si-l" data-i18n="Procurement portals">Procurement portals</span></a>
+        <div class="side-label" id="sl-proc" data-i18n="Win contracts">Win contracts</div>
+        <a title="Open government tenders" data-i18n-ti="Open government tenders" class="side-item" href="/opportunities"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2.5h5.5L12 5v8.5H4z"/><path d="M9.5 2.5V5H12M6 8h4M6 10.5h4"/></svg><span class="si-l" data-i18n="Bid">Bid</span></a>
+        <a title="Recent contract awards" data-i18n-ti="Recent contract awards" class="side-item" href="/awards"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="6.5" r="3.5"/><path d="M6 9.5L5 14l3-1.5 3 1.5-1-4.5"/></svg><span class="si-l" data-i18n="Track">Track</span></a>
+        <a title="Government procurement portals" data-i18n-ti="Government procurement portals" class="side-item" href="/portals"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="5.5"/><path d="M2.5 8h11M8 2.5c2 1.8 2 9.2 0 11M8 2.5c-2 1.8-2 9.2 0 11"/></svg><span class="si-l" data-i18n="Register">Register</span></a>
       </nav>
       <div class="side-group" role="group" aria-labelledby="sl-biz">
-        <div class="side-label" id="sl-biz" data-i18n="Account and business">Account and business</div>
-        <button class="side-item side-mob" type="button" data-open-supplier><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3v10M3 8h10"/></svg><span class="si-l" data-i18n="List your business">List your business</span></button>
-        <button class="side-item" type="button" data-open-rfq><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2.5h5.5L12 5v8.5H4z"/><path d="M9.5 2.5V5H12"/></svg><span class="si-l" data-i18n="Request a quote">Request a quote</span></button>
-        <button class="side-item" id="btn-dest" type="button" aria-haspopup="dialog" aria-expanded="false"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 5.5L8 2.5l5.5 3v5L8 13.5l-5.5-3z"/><path d="M2.5 5.5L8 8.5l5.5-3M8 8.5v5"/></svg><span class="si-l" data-i18n="Ship to">Ship to</span><span class="si-v" id="dest-l">Everywhere</span></button>
-        <button class="side-item" id="btn-lang" type="button" aria-haspopup="dialog" aria-expanded="false"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="5.75"/><path d="M2.5 8h11M8 2.25c2 1.8 2 9.7 0 11.5M8 2.25c-2 1.8-2 9.7 0 11.5"/></svg><span class="si-l" data-i18n="Language">Language</span><span class="si-v" id="lang-l">EN</span></button>
+        <div class="side-label" id="sl-biz" data-i18n="Your business">Your business</div>
+        <button title="Add your business to the directory" data-i18n-ti="Add your business to the directory" class="side-item side-mob" type="button" data-open-supplier><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3v10M3 8h10"/></svg><span class="si-l" data-i18n="List">List</span></button>
+        <button title="Ask suppliers for a price" data-i18n-ti="Ask suppliers for a price" class="side-item" type="button" data-open-rfq><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2.5h5.5L12 5v8.5H4z"/><path d="M9.5 2.5V5H12"/></svg><span class="si-l" data-i18n="Quote">Quote</span></button>
+        <button title="Only show suppliers that ship to your country" data-i18n-ti="Only show suppliers that ship to your country" class="side-item" id="btn-dest" type="button" aria-haspopup="dialog" aria-expanded="false"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 5.5L8 2.5l5.5 3v5L8 13.5l-5.5-3z"/><path d="M2.5 5.5L8 8.5l5.5-3M8 8.5v5"/></svg><span class="si-l" data-i18n="Ship">Ship</span><span class="si-v" id="dest-l">Everywhere</span></button>
+        <button title="Change the language" data-i18n-ti="Change the language" class="side-item" id="btn-lang" type="button" aria-haspopup="dialog" aria-expanded="false"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="5.75"/><path d="M2.5 8h11M8 2.25c2 1.8 2 9.7 0 11.5M8 2.25c-2 1.8-2 9.7 0 11.5"/></svg><span class="si-l" data-i18n="Translate">Translate</span><span class="si-v" id="lang-l">EN</span></button>
       </div>
     </div>
   </aside>
@@ -1213,6 +1213,28 @@ dialog::backdrop { background: var(--overlay); }
   /* ---------- language ---------- */
   var LANGS = [["en", "English", "EN"], ["fr", "Français", "FR"], ["pt", "Português", "PT"], ["es", "Español", "ES"], ["sw", "Kiswahili", "SW"]];
   var ROWS = [
+    ["Discover", "Découvrir", "Descobrir", "Descubrir", "Gundua"],
+    ["Shortlist", "Sélectionner", "Guardar", "Guardar", "Hifadhi"],
+    ["Browse", "Parcourir", "Navegar", "Explorar", "Vinjari"],
+    ["Bid", "Soumissionner", "Licitar", "Licitar", "Zabuni"],
+    ["Track", "Suivre", "Acompanhar", "Seguir", "Fuatilia"],
+    ["Register", "S’inscrire", "Registrar", "Registrar", "Jisajili"],
+    ["List", "Inscrire", "Cadastrar", "Publicar", "Orodhesha"],
+    ["Quote", "Devis", "Cotar", "Cotizar", "Omba bei"],
+    ["Ship", "Livrer", "Enviar", "Enviar", "Safirisha"],
+    ["Translate", "Traduire", "Traduzir", "Traducir", "Tafsiri"],
+    ["Win contracts", "Décrocher des marchés", "Ganhar contratos", "Ganar contratos", "Shinda kandarasi"],
+    ["Your business", "Votre entreprise", "Sua empresa", "Su empresa", "Biashara yako"],
+    ["Search the supplier directory", "Rechercher dans l’annuaire", "Pesquisar no diretório", "Buscar en el directorio", "Tafuta kwenye orodha"],
+    ["Suppliers you saved", "Fournisseurs enregistrés", "Fornecedores salvos", "Proveedores guardados", "Wasambazaji ulizohifadhi"],
+    ["All listings as plain pages", "Toutes les fiches en pages simples", "Todos os anúncios em páginas simples", "Todos los anuncios en páginas simples", "Orodha yote kwa kurasa rahisi"],
+    ["Open government tenders", "Appels d’offres publics ouverts", "Licitações públicas abertas", "Licitaciones públicas abiertas", "Zabuni wazi za serikali"],
+    ["Recent contract awards", "Marchés attribués récemment", "Contratos adjudicados recentemente", "Contratos adjudicados recientemente", "Mikataba iliyotolewa hivi karibuni"],
+    ["Government procurement portals", "Portails d’achats publics", "Portais de compras públicas", "Portales de contratación pública", "Tovuti za ununuzi wa serikali"],
+    ["Add your business to the directory", "Ajouter votre entreprise à l’annuaire", "Adicionar sua empresa ao diretório", "Añadir su empresa al directorio", "Ongeza biashara yako kwenye orodha"],
+    ["Ask suppliers for a price", "Demander un prix aux fournisseurs", "Pedir preço aos fornecedores", "Pedir precio a los proveedores", "Waulize wasambazaji bei"],
+    ["Only show suppliers that ship to your country", "Afficher les fournisseurs qui livrent dans votre pays", "Mostrar fornecedores que enviam para o seu país", "Mostrar proveedores que envían a su país", "Onyesha wasambazaji wanaosafirisha nchini kwako"],
+    ["Change the language", "Changer de langue", "Mudar o idioma", "Cambiar el idioma", "Badilisha lugha"],
     ["Saved suppliers", "Fournisseurs enregistrés", "Fornecedores salvos", "Proveedores guardados", "Wasambazaji waliohifadhiwa"],
     ["Suppliers", "Fournisseurs", "Fornecedores", "Proveedores", "Wasambazaji"],
     ["Discover suppliers", "Découvrir les fournisseurs", "Descobrir fornecedores", "Descubrir proveedores", "Gundua wasambazaji"],
@@ -1430,11 +1452,11 @@ dialog::backdrop { background: var(--overlay); }
     document.documentElement.lang = lang;
     document.querySelectorAll("[data-i18n]").forEach(function (el) { if (el.dataset.en === undefined) el.dataset.en = el.textContent; el.textContent = lang === "en" ? el.dataset.en : tr(el.dataset.i18n); });
     document.querySelectorAll("[data-i18n-h]").forEach(function (el) { if (el.dataset.en === undefined) el.dataset.en = el.innerHTML; el.innerHTML = lang === "en" ? el.dataset.en : tr(el.dataset.i18nH); });
+    document.querySelectorAll("[data-i18n-ti]").forEach(function (el) { el.title = tr(el.dataset.i18nTi); });
     document.querySelectorAll("[data-i18n-al]").forEach(function (el) { el.setAttribute("aria-label", tr(el.dataset.i18nAl)); });
     document.querySelectorAll("[data-i18n-ph]").forEach(function (el) { el.placeholder = tr(el.dataset.i18nPh); });
-    $("btn-lang").setAttribute("aria-label", tr("Language"));
     $("lang-l").textContent = LANGS.filter(function (l) { return l[0] === lang; })[0][2];
-    $("dest-l").textContent = state.dest || tr("Ship to");
+    $("dest-l").textContent = state.dest || tr("Everywhere");
     renderAcct();
   }
 
@@ -1454,7 +1476,7 @@ dialog::backdrop { background: var(--overlay); }
   state.dest = "";
   try { state.dest = localStorage.getItem("yb-dest") || ""; } catch (e) {}
   if (COUNTRIES.indexOf(state.dest) < 0) state.dest = "";
-  function setDest(c) { state.dest = c; try { localStorage.setItem("yb-dest", c); } catch (e) {} $("dest-l").textContent = c || tr("Ship to"); render(); if (view === "biz" && curBiz && $("shipchk")) $("shipchk").innerHTML = ShipChk(curBiz); }
+  function setDest(c) { state.dest = c; try { localStorage.setItem("yb-dest", c); } catch (e) {} $("dest-l").textContent = c || tr("Everywhere"); render(); if (view === "biz" && curBiz && $("shipchk")) $("shipchk").innerHTML = ShipChk(curBiz); }
 
   /* ---------- account (preview only) + menu, language, destination dialogs ---------- */
   var CFG = window.MYB_BACKEND || null, sb = null;
@@ -1929,7 +1951,7 @@ dialog::backdrop { background: var(--overlay); }
     if (t.hasAttribute("data-open-supplier")) return openSupplier();
     if (t.hasAttribute("data-close")) return dlg.close();
     if (t.hasAttribute("data-copy-out")) return copy($("out").value, "Copied.");
-    if (t.hasAttribute("data-clear")) { state = Object.assign({}, DEF, { sort: state.sort, dest: "" }); try { localStorage.setItem("yb-dest", ""); } catch (e) {} $("dest-l").textContent = tr("Ship to"); $("q").value = ""; render(); if (dlg.open && dlg.classList.contains("sheet")) renderFilterSheet(); return; }
+    if (t.hasAttribute("data-clear")) { state = Object.assign({}, DEF, { sort: state.sort, dest: "" }); try { localStorage.setItem("yb-dest", ""); } catch (e) {} $("dest-l").textContent = tr("Everywhere"); $("q").value = ""; render(); if (dlg.open && dlg.classList.contains("sheet")) renderFilterSheet(); return; }
     if (t.id === "open-filters") return openFilters();
     if (t.id === "btn-saved") { state.saved = !state.saved; if (view === "biz") { savedY = 0; location.hash = ""; } render(); return window.scrollTo(0, 0); }
     if (t.dataset.fav !== undefined) { var fb = findItem(t.dataset.fav); if (!fb) return; var fl2 = favs(), fx = fl2.indexOf(t.dataset.fav); if (fx > -1) fl2.splice(fx, 1); else fl2.push(t.dataset.fav); try { localStorage.setItem("yb-fav", JSON.stringify(fl2)); } catch (e) {} syncFav(fb, fx < 0); toast(tr(fx < 0 ? "Saved" : "Removed from saved")); var fy = window.scrollY; render(true); window.scrollTo(0, fy); var again2 = document.querySelector('[data-fav="' + t.dataset.fav.replace(/"/g, '\\"') + '"]'); if (again2) again2.focus(); return; }
