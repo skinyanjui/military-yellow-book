@@ -34,131 +34,62 @@ FOOT = ('Complete firearms, ammunition, explosives and weapon systems are not li
         'body-armor carriers are sold only by licensed dealers and need export licences and end-user certificates. '
         'Prices and lead times are set by each supplier; confirm terms in writing before you pay.')
 
-CSS = """
-:root{--bg:#fff;--fg:#191918;--muted:#615d59;--line:#e6e4e1;--subtle:#f6f5f4;--subtle-2:#efeeec;--accent:#f5b800;--on-accent:#191918;--accent-subtle:#fff4cc;--accent-ink:#7a5800;--link:#0b6bcb;--ok:#24703c;--font:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--mono:ui-monospace,SFMono-Regular,Menlo,monospace}
-@media (prefers-color-scheme:dark){:root{--bg:#191919;--fg:#ebebea;--muted:#aeaca8;--line:#373737;--subtle:#252525;--subtle-2:#2c2c2c;--accent:#f5c518;--accent-subtle:#2e2709;--accent-ink:#f5c518;--link:#529cca;--ok:#5dc36f;color-scheme:dark}}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font:400 15px/1.55 var(--font);-webkit-font-smoothing:antialiased}
-a{color:var(--link)}
-:focus-visible{outline:2px solid var(--link);outline-offset:2px}
-.wrap{width:100%;max-width:960px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-header{border-bottom:1px solid var(--line)}
-.bar{display:flex;align-items:center;gap:12px;min-height:56px;flex-wrap:wrap}
-.brand{display:flex;align-items:center;gap:10px;color:var(--fg);text-decoration:none;font-weight:600}
-.mark{width:32px;height:32px;border-radius:6px;background:var(--accent);color:var(--on-accent);display:grid;place-items:center;font:500 12px/1 var(--mono)}
-.bar .sp{flex:1}
-nav.crumbs{margin:20px 0 4px;font-size:13px;color:var(--muted)}
-nav.crumbs a{color:var(--muted)}
-h1{font-size:clamp(24px,5vw,32px);line-height:1.2;letter-spacing:-.02em;margin:8px 0 4px;text-wrap:balance}
-h2{font-size:18px;line-height:1.3;margin:32px 0 12px;letter-spacing:-.01em}
-.sub{color:var(--muted);margin:0 0 16px}
-.badges{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px;padding:0;list-style:none}
-.badges li{border:1px solid var(--line);border-radius:9999px;padding:2px 10px;font-size:13px}
-.badges .ok{color:var(--ok);border-color:currentColor}
-.sample{background:var(--accent-subtle);color:var(--accent-ink);border-color:transparent!important;font-weight:500}
-.price{font-size:22px;font-weight:600;margin:0 0 16px}
-dl.facts{display:grid;grid-template-columns:max-content 1fr;gap:8px 20px;margin:0;padding:16px;border:1px solid var(--line);border-radius:8px;background:var(--subtle)}
-dl.facts dt{color:var(--muted)}
-dl.facts dd{margin:0;min-width:0;overflow-wrap:anywhere}
-dl.spec{display:grid;grid-template-columns:minmax(120px,max-content) 1fr;gap:0;margin:0;border-top:1px solid var(--line)}
-dl.spec dt,dl.spec dd{margin:0;padding:10px 0;border-bottom:1px solid var(--line)}
-dl.spec dt{color:var(--muted);padding-right:20px}
-.notice{border-left:3px solid var(--accent);padding:8px 12px;margin:16px 0 0;background:var(--subtle)}
-.cta{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0 0}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 20px;border-radius:6px;border:1px solid var(--line);text-decoration:none;font-weight:500;color:var(--fg)}
-.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
-ul.list{list-style:none;margin:0;padding:0;display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
-ul.list li{border:1px solid var(--line);border-radius:8px;padding:12px 14px;min-width:0}
-ul.list a{font-weight:500;color:var(--fg);text-decoration:none}
-ul.list a:hover{text-decoration:underline}
-ul.list small{display:block;color:var(--muted)}
-ul.plain{margin:0;padding-left:20px}
-footer{margin-top:48px;padding:24px 0 40px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
-footer a{color:inherit}
-ul.codes{list-style:none;margin:0;padding:0;display:grid;gap:6px}
-ul.codes li{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline}
-code.c{font:500 13px var(--mono);border:1px solid var(--line);border-radius:6px;padding:1px 6px;background:var(--subtle)}
-.lic{color:var(--muted);font-size:13px}
-nav.jump{display:flex;flex-wrap:wrap;gap:8px 16px;margin:16px 0 8px}
-ul.portals{list-style:none;margin:0;padding:0;display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
-ul.portals li{border:1px solid var(--line);border-radius:8px;padding:12px 14px;min-width:0;display:grid;gap:4px;align-content:start}
-ul.portals .pn{font-weight:500;overflow-wrap:anywhere}
-ul.portals .pc{color:var(--muted);font-size:13px}
-ul.portals .pl{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:14px}
-ul.portals .pm{display:flex;flex-wrap:wrap;gap:6px}
-ul.portals .pm span{border:1px solid var(--line);border-radius:9999px;padding:0 8px;font-size:12px}
-ul.portals .pm .warn{color:var(--accent-ink);background:var(--accent-subtle);border-color:transparent}
-ul.portals small{color:var(--muted);font-size:12px;line-height:1.4}
-span.hl{display:flex;gap:16px;white-space:nowrap;min-width:0;overflow-x:auto;scrollbar-width:none}
-a.lyb{flex:none;margin-left:8px;padding:8px 12px;border-radius:8px;background:var(--fg);color:var(--bg);font-weight:500;text-decoration:none;white-space:nowrap}
-ul.opps{list-style:none;margin:0;padding:0;display:grid;gap:10px}
-ul.opps li{border:1px solid var(--line);border-radius:8px;padding:12px 14px;min-width:0;display:grid;gap:4px}
-ul.opps .ot{font-weight:500;overflow-wrap:anywhere;color:var(--fg)}
-ul.opps .om{display:flex;flex-wrap:wrap;gap:4px 16px;color:var(--muted);font-size:13px}
-ul.opps .om b{color:var(--fg);font-weight:500}
-ul.opps .soon{color:var(--accent-ink);background:var(--accent-subtle);border-radius:9999px;padding:0 8px}
-ul.opps small{color:var(--muted);font-size:12px}
-.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:8px}
-.tbl table{border-collapse:collapse;width:100%;font-size:14px}
-.tbl th,.tbl td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
-.tbl th{color:var(--muted);font-weight:500;white-space:nowrap}
-.tbl td.n{white-space:nowrap;font-variant-numeric:tabular-nums}
-ol.steps{margin:0;padding-left:22px}ol.steps li{margin:6px 0}
-.draft{border:1px dashed var(--line);border-radius:8px;padding:8px 12px;color:var(--muted);font-size:13px;margin:0 0 16px}
-.prose{max-width:68ch}.prose h2{margin-top:28px}.prose p,.prose li{margin:8px 0}
-body{font-size:15px;line-height:1.6;letter-spacing:-.003em}
-header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
-.bar{min-height:60px;gap:4px 8px}
-.brand{font-weight:700;letter-spacing:-.01em;margin-right:8px}
-.mark{border-radius:8px;font:700 12px/1 var(--font);letter-spacing:.02em}
-span.hl{gap:4px}
-span.hl a{color:var(--fg);text-decoration:none;font-weight:500;padding:8px 12px;border-radius:8px}
-span.hl a:hover{background:var(--subtle)}
-main.wrap{padding-bottom:24px}
-nav.crumbs{margin:28px 0 8px}
-nav.crumbs a{text-decoration:none}
-nav.crumbs a:hover{text-decoration:underline}
-h1{font-size:clamp(30px,5.4vw,48px);line-height:1.08;font-weight:700;letter-spacing:-.035em;margin:8px 0 10px}
-h2{font-size:clamp(20px,2.6vw,26px);line-height:1.2;font-weight:700;letter-spacing:-.025em;margin:44px 0 14px}
-h3{font-size:18px;line-height:1.3;font-weight:700;letter-spacing:-.015em;margin:28px 0 10px}
-.sub{font-size:clamp(16px,2vw,18px);line-height:1.5;letter-spacing:-.01em;max-width:62ch}
-dl.facts{border:0;border-radius:14px;background:var(--subtle);padding:20px 22px}
-.notice{border-left:0;border-radius:14px;background:var(--subtle);padding:16px 20px}
-.btn{border-radius:8px;border-color:transparent;background:var(--subtle)}
-.btn:hover{background:var(--subtle-2)}
-.btn.primary{background:var(--fg);border-color:var(--fg);color:var(--bg)}
-ul.list{gap:12px}
-ul.list li,ul.portals li,ul.opps li{border:0;border-radius:14px;background:var(--subtle);padding:16px 18px;transition:background .15s}
-ul.list li:hover,ul.portals li:hover,ul.opps li:hover{background:var(--subtle-2)}
-ul.list a{font-weight:600}
-ul.opps .ot{font-weight:600;text-decoration:none;font-size:16px;letter-spacing:-.01em}
-ul.opps .ot:hover{text-decoration:underline}
-ul.portals .pn{font-weight:600}
-ul.portals .pm span{border-color:transparent;background:var(--bg)}
-.badges li{border-color:transparent;background:var(--subtle)}
-.tbl{border:0;border-radius:14px;background:var(--subtle)}
-.tbl th{border-bottom-color:var(--subtle-2)}
-.tbl td{border-bottom-color:var(--subtle-2)}
-code.c{border:0;background:var(--subtle)}
-nav.jump a{text-decoration:none;font-weight:500;color:var(--fg);background:var(--subtle);padding:4px 10px;border-radius:8px}
-nav.jump a:hover{background:var(--subtle-2)}
-footer{margin-top:64px;padding:40px 0 48px;border-top:1px solid var(--line);font-size:13px;line-height:1.6}
-footer a{color:var(--fg);text-decoration:none;font-weight:500}
-footer a:hover{text-decoration:underline}
-main a{color:var(--fg);text-decoration-color:var(--line);text-decoration-thickness:1px;text-underline-offset:3px}
-main a:hover{text-decoration-color:currentColor}
-h2 a{text-decoration:none}
-.cards{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr));margin-top:28px}
-.cc{background:var(--subtle);border-radius:14px;padding:18px 20px;min-width:0}
-.cc h2{margin:0;font-size:18px;line-height:1.3;letter-spacing:-.015em}
-.cc .cn{margin:2px 0 10px;color:var(--muted);font-size:13px}
-.cc ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
-.cc li{display:grid;min-width:0}
-.cc li a{text-decoration:none;font-weight:500;overflow-wrap:anywhere}
-.cc li a:hover{text-decoration:underline}
-.cc li small{color:var(--muted);font-size:13px}
-@media (max-width:520px){a.lyb{padding:8px 10px;font-size:13px}.brand .bn{display:none}.bar{flex-wrap:nowrap}span.hl a{padding:8px 10px}}
-@media (max-width:520px){dl.facts{grid-template-columns:1fr;gap:2px}dl.facts dd{margin-bottom:8px}dl.spec{grid-template-columns:1fr}dl.spec dt{border-bottom:0;padding-bottom:0}}
+LCSS = """
+.lg{--fg:var(--text);--muted:var(--text-2);--line:var(--border);--subtle:var(--surface);--subtle-2:var(--surface-2);max-width:1040px;padding-top:var(--s-5)}
+.lg h1{font-size:var(--fs-xl);line-height:1.25;font-weight:600;letter-spacing:-.02em;margin:var(--s-2) 0 var(--s-1);text-wrap:balance}
+.lg h2{font-size:var(--fs-md);line-height:1.3;font-weight:600;letter-spacing:-.01em;margin:var(--s-8) 0 var(--s-3)}
+.lg h3{font-size:var(--fs);line-height:1.3;font-weight:600;margin:var(--s-6) 0 var(--s-2)}
+.lg a{color:var(--link)}
+.lg h2 a{color:var(--text);text-decoration:none}
+.lg h2 a:hover{text-decoration:underline}
+.lg nav.crumbs{margin:0 0 var(--s-2);font-size:var(--fs-sm);color:var(--text-2)}
+.lg nav.crumbs a{color:var(--text-2);text-decoration:none}
+.lg nav.crumbs a:hover{text-decoration:underline}
+.lg .sub{color:var(--text-2);margin:0 0 var(--s-4);max-width:62ch}
+.lg .badges{display:flex;flex-wrap:wrap;gap:var(--s-2);margin:0 0 var(--s-5);padding:0;list-style:none}
+.lg .badges li{border-radius:var(--r-full);padding:2px 10px;font-size:var(--fs-sm);background:var(--surface-2);color:var(--text)}
+.lg .badges .ok{color:var(--ok);background:var(--ok-subtle)}
+.lg .badges .sample{background:var(--accent-subtle);color:var(--accent-ink);font-weight:500}
+.lg .price{font-size:var(--fs-lg);font-weight:600;margin:0 0 var(--s-4)}
+.lg dl.facts{display:grid;grid-template-columns:max-content 1fr;gap:var(--s-2) var(--s-5);margin:0;padding:var(--s-4) var(--s-5);border-radius:var(--r-lg);background:var(--surface)}
+.lg dl.facts dt{color:var(--text-2)}
+.lg dl.facts dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.lg dl.spec{display:grid;grid-template-columns:minmax(120px,max-content) 1fr;margin:0;border-top:1px solid var(--border)}
+.lg dl.spec dt,.lg dl.spec dd{margin:0;padding:var(--s-2) 0;border-bottom:1px solid var(--border)}
+.lg dl.spec dt{color:var(--text-2);padding-right:var(--s-5)}
+.lg .notice{border-radius:var(--r-lg);background:var(--surface);padding:var(--s-3) var(--s-4);margin:var(--s-4) 0 0}
+.lg .cta{display:flex;flex-wrap:wrap;gap:var(--s-3);margin:var(--s-5) 0 0}
+.lg .btn{display:inline-flex;align-items:center;justify-content:center;height:var(--ctl-lg);padding:0 var(--s-4);border-radius:var(--r);background:var(--surface-2);color:var(--text);text-decoration:none;font-weight:500}
+.lg .btn:hover{background:var(--surface-3)}
+.lg .btn.primary{background:var(--text);color:var(--bg)}
+.lg ul.list,.lg ul.portals,.lg ul.opps{list-style:none;margin:0;padding:0;display:grid;gap:var(--s-3)}
+.lg ul.list{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.lg ul.list li{border:1px solid var(--border);border-radius:var(--r-lg);padding:var(--s-3) var(--s-4);min-width:0}
+.lg ul.list li:hover{background:var(--surface)}
+.lg ul.list a{font-weight:600;color:var(--text);text-decoration:none}
+.lg ul.list a:hover{text-decoration:underline}
+.lg ul.list small{display:block;color:var(--text-2)}
+.lg ul.plain{margin:0;padding-left:var(--s-5)}
+.lg ul.codes{list-style:none;margin:0;padding:0;display:grid;gap:var(--s-2)}
+.lg ul.codes li{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline}
+.lg code.c{font:500 var(--fs-sm) var(--mono);border-radius:var(--r);padding:1px 6px;background:var(--surface-2)}
+.lg .lic{color:var(--text-2);font-size:var(--fs-sm)}
+.lg nav.jump{display:flex;flex-wrap:wrap;gap:var(--s-2);margin:var(--s-4) 0 var(--s-2)}
+.lg nav.jump a{text-decoration:none;font-weight:500;color:var(--text);background:var(--surface-2);padding:2px 10px;border-radius:var(--r)}
+.lg nav.jump a:hover{background:var(--surface-3)}
+.lg ol.steps{margin:0;padding-left:22px}.lg ol.steps li{margin:6px 0}
+.lg .draft{border:1px dashed var(--border-strong);border-radius:var(--r-lg);padding:var(--s-2) var(--s-3);color:var(--text-2);font-size:var(--fs-sm);margin:0 0 var(--s-4)}
+.lg .prose{max-width:68ch}.lg .prose p,.lg .prose li{margin:var(--s-2) 0}
+.lg .cards{display:grid;gap:var(--s-3);grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr));margin-top:var(--s-5)}
+.lg .cc{border:1px solid var(--border);border-radius:var(--r-lg);padding:var(--s-4) var(--s-5);min-width:0}
+.lg .cc h2{margin:0;font-size:var(--fs-md);line-height:1.3}
+.lg .cc .cn{margin:2px 0 var(--s-3);color:var(--text-2);font-size:var(--fs-sm)}
+.lg .cc ul{list-style:none;margin:0;padding:0;display:grid;gap:var(--s-2)}
+.lg .cc li{display:grid;min-width:0}
+.lg .cc li a{text-decoration:none;font-weight:500;color:var(--text);overflow-wrap:anywhere}
+.lg .cc li a:hover{text-decoration:underline}
+.lg .cc li small{color:var(--text-2);font-size:var(--fs-sm)}
+@media (max-width:520px){.lg dl.facts{grid-template-columns:1fr;gap:2px}.lg dl.facts dd{margin-bottom:var(--s-2)}.lg dl.spec{grid-template-columns:1fr}.lg dl.spec dt{border-bottom:0;padding-bottom:0}}
 """
 
 
@@ -285,27 +216,10 @@ def jsonld(obj):
 
 
 def page(site, path, title, desc, body, crumbs, og_type='website', noindex=False):
-    url = site + path
-    crumb_ld = {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
-        {'@type': 'ListItem', 'position': i + 1, 'name': n, **({'item': site + u} if u else {})}
-        for i, (n, u) in enumerate(crumbs)]}
-    return ('<!doctype html><html lang="en"><head><meta charset="utf-8">'
-            '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">'
-            '<title>' + esc(title) + '</title><meta name="description" content="' + esc(desc) + '">'
-            '<link rel="canonical" href="' + esc(url) + '">'
-            '<meta property="og:type" content="' + og_type + '"><meta property="og:site_name" content="Military Yellow Book">'
-            '<meta property="og:title" content="' + esc(title) + '"><meta property="og:description" content="' + esc(desc) + '">'
-            '<meta property="og:url" content="' + esc(url) + '"><meta property="og:image" content="' + site + '/og.png">'
-            '<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="' + esc(title) + '">'
-            '<meta name="twitter:description" content="' + esc(desc) + '"><meta name="twitter:image" content="' + site + '/og.png">'
-            '<meta name="theme-color" content="#f5b800">' + ('<meta name="robots" content="noindex">' if noindex else '') + '<link rel="icon" href="' + ICON + '">' + FONTS +
-            '<style>' + CSS.strip() + '</style>' + jsonld(crumb_ld) + '</head><body>'
-            '<header><div class="wrap bar"><a class="brand" href="/" aria-label="Military Yellow Book home"><span class="mark" aria-hidden="true">YB</span><span class="bn">Military Yellow Book</span></a>'
-            '<span class="sp"></span><span class="hl"><a href="/directory">Directory</a><a href="/opportunities">Tenders</a><a href="/awards">Awards</a><a href="/portals">Portals</a></span><a class="lyb" href="/?list=1">List your business</a></div></header>'
-            '<main class="wrap">' + body + '</main>'
-            '<footer><div class="wrap"><p><b>Military Yellow Book</b> is a global directory of military suppliers.</p><p>' + esc(FOOT) + '</p>'
-            '<p><a href="/opportunities">Tenders</a> · <a href="/awards">Contract awards</a> · <a href="/portals">Government procurement portals</a> · <a href="/terms">Terms</a> · <a href="/privacy">Privacy</a></p></div></footer>'
-            '</body></html>')
+    """Content page (listing, category, directory, legal, 404): the same shell as every other page."""
+    section = 'discover' if path.startswith(('/l/', '/c/', '/directory')) else ''
+    return wpage(site, path, title, desc, section, None, '', None, '<div class="lg">' + body + '</div>', crumbs,
+                 og_type=og_type, noindex=noindex, extra_css=LCSS)
 
 
 def crumb_html(items):
@@ -437,7 +351,7 @@ def side_item(href, icon, label, section, cur):
     return '<a class="side-item" href="' + href + '"' + (' aria-current="page"' if section == cur else '') + '>' + ico(icon) + '<span class="si-l">' + label + '</span></a>'
 
 
-def wpage(site, path, title, desc, section, heading, meta, filters, body, crumbs):
+def wpage(site, path, title, desc, section, heading, meta, filters, body, crumbs, og_type='website', noindex=False, extra_css=''):
     """Workspace page: the same shell as the supplier directory (top bar, sidebar, one filter row)."""
     url = site + path
     crumb_ld = {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
@@ -462,14 +376,14 @@ def wpage(site, path, title, desc, section, heading, meta, filters, body, crumbs
             '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">'
             '<title>' + esc(title) + '</title><meta name="description" content="' + esc(desc) + '">'
             '<link rel="canonical" href="' + esc(url) + '">'
-            '<meta property="og:type" content="website"><meta property="og:site_name" content="Military Yellow Book">'
+            '<meta property="og:type" content="' + og_type + '"><meta property="og:site_name" content="Military Yellow Book">'
             '<meta property="og:title" content="' + esc(title) + '"><meta property="og:description" content="' + esc(desc) + '">'
             '<meta property="og:url" content="' + esc(url) + '"><meta property="og:image" content="' + site + '/og.png">'
             '<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="' + esc(title) + '"><meta name="twitter:description" content="' + esc(desc) + '"><meta name="twitter:image" content="' + site + '/og.png">'
-            '<meta name="theme-color" content="#f5b800"><link rel="icon" href="' + ICON + '">' + FONTS + '<link rel="stylesheet" href="/assets/ui.css">' +
-            '<style>.wsx{padding:0 var(--s-6) var(--s-10)}@media(max-width:759px){.wsx{padding:0 var(--s-4) var(--s-8)}}.wsx p{max-width:72ch}.tbl td.wrapc{min-width:150px;overflow-wrap:break-word}.tbl td{min-width:90px}.tbl td[data-k=title]{min-width:240px}.tbl .badge{white-space:nowrap}.tbl-wrap{overflow-x:auto}.tbl a.t-main:hover{text-decoration:underline}.tbl a.t-main{text-decoration:none}@media(max-width:759px){.tbl td,.tbl td.wrapc,.tbl td[data-k=title]{min-width:0}}.ws-note{margin:var(--s-4) 0}.tbl a.t-main{font-weight:500}.ws-foot{margin-top:var(--s-8)}</style>' + jsonld(crumb_ld) + '</head><body>' +
+            '<meta name="theme-color" content="#f5b800">' + ('<meta name="robots" content="noindex">' if noindex else '') + '<link rel="icon" href="' + ICON + '">' + FONTS + '<link rel="stylesheet" href="/assets/ui.css">' +
+            '<style>.wsx{padding:0 var(--s-6) var(--s-10)}@media(max-width:759px){.wsx{padding:0 var(--s-4) var(--s-8)}}.wsx p{max-width:72ch}.tbl td.wrapc{min-width:150px;overflow-wrap:break-word}.tbl td{min-width:90px}.tbl td[data-k=title]{min-width:240px}.tbl .badge{white-space:nowrap}.tbl-wrap{overflow-x:auto}.tbl a.t-main:hover{text-decoration:underline}.tbl a.t-main{text-decoration:none}@media(max-width:759px){.tbl td,.tbl td.wrapc,.tbl td[data-k=title]{min-width:0}}.ws-note{margin:var(--s-4) 0}.tbl a.t-main{font-weight:500}.ws-foot{margin-top:var(--s-8)}' + extra_css + '</style>' + jsonld(crumb_ld) + '</head><body>' +
             top + '<div class="shell">' + side + '<div class="main">' + (filters or '') +
-            '<main class="content wsx" id="main"><div class="page-head"><h1>' + heading + '</h1><span class="meta" id="tcount" role="status" aria-live="polite">' + meta + '</span></div>' + body +
+            '<main class="content wsx" id="main">' + ('<div class="page-head"><h1>' + heading + '</h1><span class="meta" id="tcount" role="status" aria-live="polite">' + meta + '</span></div>' if heading else '') + body +
             '<footer class="site-foot ws-foot"><p><b>Military Yellow Book</b> is a global directory of military suppliers. ' + esc(FOOT) + '</p>'
             '<nav aria-label="Footer"><a href="/directory">Directory</a> · <a href="/opportunities">Tenders</a> · <a href="/awards">Contract awards</a> · <a href="/portals">Procurement portals</a> · <a href="/terms">Terms</a> · <a href="/privacy">Privacy</a></nav></footer>'
             '</main></div></div><div class="side-scrim" id="side-scrim" hidden></div><script src="/assets/table.js"></script></body></html>')
