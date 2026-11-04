@@ -89,7 +89,8 @@ ul.portals .pm{display:flex;flex-wrap:wrap;gap:6px}
 ul.portals .pm span{border:1px solid var(--line);border-radius:9999px;padding:0 8px;font-size:12px}
 ul.portals .pm .warn{color:var(--accent-ink);background:var(--accent-subtle);border-color:transparent}
 ul.portals small{color:var(--muted);font-size:12px;line-height:1.4}
-span.hl{display:flex;gap:16px;white-space:nowrap}
+span.hl{display:flex;gap:16px;white-space:nowrap;min-width:0;overflow-x:auto;scrollbar-width:none}
+a.lyb{flex:none;margin-left:8px;padding:8px 12px;border-radius:8px;background:var(--fg);color:var(--bg);font-weight:500;text-decoration:none;white-space:nowrap}
 ul.opps{list-style:none;margin:0;padding:0;display:grid;gap:10px}
 ul.opps li{border:1px solid var(--line);border-radius:8px;padding:12px 14px;min-width:0;display:grid;gap:4px}
 ul.opps .ot{font-weight:500;overflow-wrap:anywhere;color:var(--fg)}
@@ -156,7 +157,7 @@ h2 a{text-decoration:none}
 .cc li a{text-decoration:none;font-weight:500;overflow-wrap:anywhere}
 .cc li a:hover{text-decoration:underline}
 .cc li small{color:var(--muted);font-size:13px}
-@media (max-width:520px){.brand .bn{display:none}.bar{flex-wrap:nowrap}span.hl a{padding:8px 10px}}
+@media (max-width:520px){a.lyb{padding:8px 10px;font-size:13px}.brand .bn{display:none}.bar{flex-wrap:nowrap}span.hl a{padding:8px 10px}}
 @media (max-width:520px){dl.facts{grid-template-columns:1fr;gap:2px}dl.facts dd{margin-bottom:8px}dl.spec{grid-template-columns:1fr}dl.spec dt{border-bottom:0;padding-bottom:0}}
 """
 
@@ -300,7 +301,7 @@ def page(site, path, title, desc, body, crumbs, og_type='website', noindex=False
             '<meta name="theme-color" content="#f5b800">' + ('<meta name="robots" content="noindex">' if noindex else '') + '<link rel="icon" href="' + ICON + '">' + FONTS +
             '<style>' + CSS.strip() + '</style>' + jsonld(crumb_ld) + '</head><body>'
             '<header><div class="wrap bar"><a class="brand" href="/" aria-label="Military Yellow Book home"><span class="mark" aria-hidden="true">YB</span><span class="bn">Military Yellow Book</span></a>'
-            '<span class="sp"></span><span class="hl"><a href="/directory">Directory</a><a href="/opportunities">Tenders</a><a href="/awards">Awards</a><a href="/portals">Portals</a></span></div></header>'
+            '<span class="sp"></span><span class="hl"><a href="/directory">Directory</a><a href="/opportunities">Tenders</a><a href="/awards">Awards</a><a href="/portals">Portals</a></span><a class="lyb" href="/?list=1">List your business</a></div></header>'
             '<main class="wrap">' + body + '</main>'
             '<footer><div class="wrap"><p><b>Military Yellow Book</b> is a global directory of military suppliers.</p><p>' + esc(FOOT) + '</p>'
             '<p><a href="/opportunities">Tenders</a> · <a href="/awards">Contract awards</a> · <a href="/portals">Government procurement portals</a> · <a href="/terms">Terms</a> · <a href="/privacy">Privacy</a></p></div></footer>'
