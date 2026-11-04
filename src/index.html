@@ -231,6 +231,8 @@ main { padding-block: var(--s6) var(--s12); }
 .prof-t { flex: 1 1 280px; min-width: 0; display: grid; gap: var(--s1); }
 .prof-t h1 { margin: 0; }
 .prof-t p { margin: 0; }
+.av.av-img { background: var(--bg); box-shadow: inset 0 0 0 1px var(--border); padding: 5px; }
+.av img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .av-lg { width: 56px; height: 56px; font-size: 16px; border-radius: var(--r-lg); }
 .simlist { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--border); }
 .simlist li { border-bottom: 1px solid var(--border); }
@@ -791,7 +793,7 @@ dialog::backdrop { background: var(--overlay); }
     return '<a class="back" href="#">' + ARROW + esc(tr("All listings")) + '</a>' +
       '<div class="pdp">' +
       '<div class="info">' +
-      '<header class="prof"><div class="av-col"><span class="av av-lg" aria-hidden="true">' + ini2 + '</span></div><div class="prof-t"><h1>' + esc(b.supplier) + '</h1>' +
+      '<header class="prof"><div class="av-col"><span class="av av-lg' + (b.logo ? ' av-img' : '') + '" aria-hidden="true">' + avInner(b, ini2) + '</span></div><div class="prof-t"><h1>' + esc(b.supplier) + '</h1>' +
       '<p class="t-sub">' + esc(tr(b.cat)) + ' · ' + esc(locStr(b)) + ' · ' + esc(tr("In business")) + ': ' + b.years + ' ' + esc(tr("yrs")) + '</p>' +
       '<div class="rowline">' + (b.sample ? '<span class="badge badge-sample" title="' + esc(tr("Invented for demonstration")) + '">' + esc(tr("Sample")) + '</span>' : b.verified ? '<span class="badge badge-ok">' + CHECK + esc(tr("Verified")) + '</span>' : '<span class="badge">' + esc(tr("Not verified")) + '</span>') + '<span class="rate">' + (b.reviews ? Stars(b.rating) + '<b>' + rt(b.rating) + '</b><span>(' + b.reviews + ' ' + esc(rw(b.reviews)) + ')</span>' : '<b>New</b>') + '</span></div></div>' +
       '<div class="tools"><button class="qbtn" type="button" data-save="' + key + '" aria-pressed="' + saved + '">' + HEART + '<span>' + esc(tr(saved ? "Saved" : "Save")) + '</span></button><button class="qbtn" type="button" data-share>' + SHARE + '<span>' + esc(tr("Share")) + '</span></button></div></header>' +
@@ -970,7 +972,7 @@ dialog::backdrop { background: var(--overlay); }
     var spon = b.sponsored ? '<span class="badge badge-sponsored" title="' + esc(tr("Paid placement")) + '">' + esc(tr("Sponsored")) + '</span>' : '';
     var ini = esc(b.supplier.replace(/[^A-Za-z0-9 ]/g, "").split(/\s+/).slice(0, 2).map(function (w) { return w.charAt(0); }).join("").toUpperCase());
     return '<tr>' +
-      '<td class="c-sup"><span class="av-col"><span class="av" aria-hidden="true">' + ini + '</span>' + vp + '</span><span class="sup-txt"><span class="nm"><a class="t-main" href="' + href + '">' + esc(b.supplier) + '</a>' + spon + '</span><span class="t-sub">' + esc(tr(b.cat)) + '</span>' + DesigTags(b) + (b.years ? '<span class="t-sub">' + esc(tr("In business")) + ': ' + b.years + ' ' + esc(tr("yrs")) + '</span>' : '') + '</span></td>' +
+      '<td class="c-sup"><span class="av-col"><span class="av' + (b.logo ? ' av-img' : '') + '" aria-hidden="true">' + avInner(b, ini) + '</span>' + vp + '</span><span class="sup-txt"><span class="nm"><a class="t-main" href="' + href + '">' + esc(b.supplier) + '</a>' + spon + '</span><span class="t-sub">' + esc(tr(b.cat)) + '</span>' + DesigTags(b) + (b.years ? '<span class="t-sub">' + esc(tr("In business")) + ': ' + b.years + ' ' + esc(tr("yrs")) + '</span>' : '') + '</span></td>' +
       '<td class="c-prod"><span class="t-main" title="' + esc(b.name) + '">' + esc(b.name) + '</span><span class="from">' + esc(b.price) + '</span><span class="from moq" title="' + esc(tr("Min. order")) + '">' + esc(tr("MOQ")) + ' ' + esc(b.moq) + '</span></td>' +
       '<td class="c-loc"><span class="t-main">' + esc(b.city || b.country) + '</span><span class="t-sub">' + esc(b.state || "") + '</span><span class="t-sub">' + (b.city ? cc(b.country) : "") + '</span></td>' +
             '<td class="c-cap"><span class="caps">' + caps.map(function (c, i) { return '<span class="cr"><span class="cp" title="' + esc(c) + '">' + esc(c) + '</span>' + (i === 2 && extra > 0 ? '<span class="more-n" title="' + esc(capAll.slice(3).join(", ")) + '">+' + extra + '</span>' : '') + '</span>'; }).join("") + '</span></td>' +
@@ -1619,6 +1621,7 @@ dialog::backdrop { background: var(--overlay); }
 
   var ISO = {"Argentina":["ar","ARG"],"Australia":["au","AUS"],"Austria":["at","AUT"],"Belgium":["be","BEL"],"Brazil":["br","BRA"],"Canada":["ca","CAN"],"Chile":["cl","CHL"],"China":["cn","CHN"],"Colombia":["co","COL"],"Croatia":["hr","HRV"],"Czechia":["cz","CZE"],"Denmark":["dk","DNK"],"Egypt":["eg","EGY"],"Estonia":["ee","EST"],"Finland":["fi","FIN"],"France":["fr","FRA"],"Germany":["de","DEU"],"Ghana":["gh","GHA"],"Greece":["gr","GRC"],"Hungary":["hu","HUN"],"India":["in","IND"],"Indonesia":["id","IDN"],"Ireland":["ie","IRL"],"Italy":["it","ITA"],"Japan":["jp","JPN"],"Jordan":["jo","JOR"],"Kenya":["ke","KEN"],"Latvia":["lv","LVA"],"Lithuania":["lt","LTU"],"Luxembourg":["lu","LUX"],"Malaysia":["my","MYS"],"Mexico":["mx","MEX"],"Morocco":["ma","MAR"],"Netherlands":["nl","NLD"],"New Zealand":["nz","NZL"],"Nigeria":["ng","NGA"],"Norway":["no","NOR"],"Pakistan":["pk","PAK"],"Philippines":["ph","PHL"],"Poland":["pl","POL"],"Portugal":["pt","PRT"],"Qatar":["qa","QAT"],"Romania":["ro","ROU"],"Rwanda":["rw","RWA"],"Saudi Arabia":["sa","SAU"],"Singapore":["sg","SGP"],"Slovenia":["si","SVN"],"South Africa":["za","ZAF"],"South Korea":["kr","KOR"],"Spain":["es","ESP"],"Sweden":["se","SWE"],"Switzerland":["ch","CHE"],"Taiwan":["tw","TWN"],"Thailand":["th","THA"],"Turkey":["tr","TUR"],"Uganda":["ug","UGA"],"United Arab Emirates":["ae","ARE"],"United Kingdom":["gb","GBR"],"United States":["us","USA"],"Vietnam":["vn","VNM"]};
   function cc(c) { var i = ISO[c]; if (!i) return esc(c); return '<span class="cc" title="' + esc(c) + '"><img class="flag" src="/assets/flags/' + i[0] + '.svg" alt="" width="16" height="12" loading="lazy" decoding="async"><span aria-hidden="true">' + i[1] + '</span><span class="sr">' + esc(c) + '</span></span>'; }
+  function avInner(b, ini) { return b.logo ? '<img src="' + esc(b.logo) + '" alt="" loading="lazy" decoding="async">' : ini; }
   function locStr(b) { return [b.city, b.state, b.country].filter(Boolean).join(", "); }
   function fromRow(r) {
     var b = P(r.name, r.category, r.supplier, r.city, r.country, r.region, r.unit, Number(r.price), r.moq, r.lead || "", r.certs || [], r.ships, r.verified, r.years, r.descr, r.specs || "", r.contact, r.flat || undefined);
@@ -1627,12 +1630,12 @@ dialog::backdrop { background: var(--overlay); }
     b.sr = b.rating; b.sc = b.reviews; b.real = r.review_count > 0;
     if (b.real) { b.rating = Math.round(Number(r.rating_avg) * 10) / 10; b.reviews = r.review_count; }
     b.domains = r.domains || []; b.branches = r.branches || []; b.unspsc = r.unspsc || [];
-    b.desig = (r.designations || []).filter(function (c) { return DESIG[c]; }); b.desigBasis = r.designations_basis === "sam_gov" ? "sam_gov" : "self_reported"; b.desigAt = r.designations_checked_at || ""; b.state = r.state || ""; b.uei = r.uei || ""; b.cage = r.cage_code || "";
+    b.desig = (r.designations || []).filter(function (c) { return DESIG[c]; }); b.desigBasis = r.designations_basis === "sam_gov" ? "sam_gov" : "self_reported"; b.desigAt = r.designations_checked_at || ""; b.state = r.state || ""; b.logo = (typeof r.logo === "string" && /^https:\/\//.test(r.logo) && (!window.MYB_BACKEND || r.logo.indexOf(window.MYB_BACKEND.url + "/storage/v1/object/public/listing-images/") === 0)) ? r.logo : ""; b.uei = r.uei || ""; b.cage = r.cage_code || "";
     b.images = (r.images || []).filter(function (u) { return typeof u === "string" && /^https:\/\//.test(u) && (!window.MYB_BACKEND || u.indexOf(window.MYB_BACKEND.url + "/storage/v1/object/public/listing-images/") === 0); }).slice(0, 8);
     if (!/\d/.test(r.lead || "")) b.leadD = 999;
     return b;
   }
-  var LCOLS = "slug,name,category,supplier,city,country,region,unit,price,moq,lead,certs,ships,verified,years,descr,specs,contact,flat,domains,branches,sample_rating,sample_reviews,review_count,rating_avg,is_sample,status,position,created_at,unspsc,images,designations,designations_basis,designations_checked_at,uei,cage_code,state";
+  var LCOLS = "slug,name,category,supplier,city,country,region,unit,price,moq,lead,certs,ships,verified,years,descr,specs,contact,flat,domains,branches,sample_rating,sample_reviews,review_count,rating_avg,is_sample,status,position,created_at,unspsc,images,designations,designations_basis,designations_checked_at,uei,cage_code,state,logo";
   function loadListings() {
     loading = true; render();
     sb.from("myb_listings").select(LCOLS).eq("status", "live").order("position", { ascending: true, nullsFirst: false }).order("created_at", { ascending: true }).limit(2000).then(function (r) {
