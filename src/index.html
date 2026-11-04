@@ -350,11 +350,10 @@ main { padding-block: 0; }
 .srows .c-sup .t-main { font-weight: 600; color: var(--text); }
 .srows .c-prod .t-main { font-weight: 400; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; overflow-wrap: normal; }
 .srows .from { color: var(--text-2); font-size: 12px; margin-top: 2px; }
-.srows .c-sup { width: 24%; }
-.srows .c-prod { width: 24%; }
-.srows .c-loc { width: 13%; }
-.srows .c-st { width: 9%; }
-.srows .c-cap { width: 27%; }
+.srows .c-sup { width: 28%; }
+.srows .c-prod { width: 26%; }
+.srows .c-loc { width: 14%; }
+.srows .c-cap { width: 30%; }
 .srows .c-act { width: 1%; white-space: nowrap; text-align: right; padding-right: 0; }
 .srows a.t-main::after { content: ""; position: absolute; inset: 0; }
 .srows tbody tr { position: relative; }
@@ -917,14 +916,13 @@ dialog::backdrop { background: var(--overlay); }
   function Row(b) {
     var key = esc(b.name + b.supplier), href = "#biz-" + bslug(b), on = favs().indexOf(b.name + b.supplier) > -1;
     var capAll = b.certs.concat(b.domains.map(function (k) { return tr(DMAP[k][1]); })), caps = capAll.slice(0, 2), extra = capAll.length - caps.length;
-    var vpOn = b.verified && !b.sample, vp = vpOn ? '<span class="badge badge-ok">' + CHECK + esc(tr("Verified")) + '</span>' : '';
+    var vp = Status(b);
     var ini = esc(b.supplier.replace(/[^A-Za-z0-9 ]/g, "").split(/\s+/).slice(0, 2).map(function (w) { return w.charAt(0); }).join("").toUpperCase());
     return '<tr>' +
       '<td class="c-sup"><span class="av-col"><span class="av" aria-hidden="true">' + ini + '</span>' + vp + '</span><span class="sup-txt"><a class="t-main" href="' + href + '">' + esc(b.supplier) + '</a><span class="t-sub">' + esc(tr(b.cat)) + '</span>' + (b.years ? '<span class="t-sub">' + esc(tr("In business")) + ': ' + b.years + ' ' + esc(tr("yrs")) + '</span>' : '') + '</span></td>' +
       '<td class="c-prod"><span class="t-main" title="' + esc(b.name) + '">' + esc(b.name) + '</span><span class="from">' + esc(b.price) + '</span><span class="from moq" title="' + esc(tr("Min. order")) + '">' + esc(tr("MOQ")) + ' ' + esc(b.moq) + '</span></td>' +
       '<td class="c-loc"><span>' + esc(b.city ? b.city + ", " + b.country : b.country) + '</span></td>' +
-      '<td class="c-st"> ' + (vpOn ? '<span class="sr">' + esc(tr("Verified")) + '</span>' : Status(b)) + '</td>' +
-      '<td class="c-cap"><span class="caps">' + caps.map(function (c) { return '<span>' + esc(c) + '</span>'; }).join("") + (extra > 0 ? '<span class="more-n" title="' + esc(capAll.slice(2).join(", ")) + '">+' + extra + '</span>' : '') + '</span></td>' +
+            '<td class="c-cap"><span class="caps">' + caps.map(function (c) { return '<span>' + esc(c) + '</span>'; }).join("") + (extra > 0 ? '<span class="more-n" title="' + esc(capAll.slice(2).join(", ")) + '">+' + extra + '</span>' : '') + '</span></td>' +
       '<td class="c-act"><span class="acts"><button class="icon-btn" type="button" data-fav="' + key + '" aria-pressed="' + on + '" aria-label="' + esc(tr(on ? "Remove from saved" : "Save") + ": " + b.supplier) + '">' + HEART + '</button>' +
       '<button class="icon-btn" type="button" data-quote="' + key + '" aria-label="' + esc(tr("Request a quote") + ": " + b.name) + '">' + QUOTE + '</button></span></td></tr>';
   }
@@ -935,7 +933,7 @@ dialog::backdrop { background: var(--overlay); }
   }
   function head() {
     return '<thead><tr><th class="c-sup" scope="col">' + esc(tr("Supplier")) + '</th><th class="c-prod" scope="col">' + esc(tr("Product or service")) + '</th><th class="c-loc" scope="col">' + esc(tr("Location")) + '</th>' +
-      '<th class="c-st" scope="col">' + esc(tr("Status")) + '</th><th class="c-cap" scope="col">' + esc(tr("Capabilities")) + '</th><th class="c-act" scope="col"><span class="sr">' + esc(tr("Actions")) + '</span></th></tr></thead>';
+      '<th class="c-cap" scope="col">' + esc(tr("Capabilities")) + '</th><th class="c-act" scope="col"><span class="sr">' + esc(tr("Actions")) + '</span></th></tr></thead>';
   }
   function renderSections() {
     var res = $("results");
