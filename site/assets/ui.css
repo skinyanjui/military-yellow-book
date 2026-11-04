@@ -124,6 +124,12 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .top-btn { position: relative; display: inline-flex; align-items: center; gap: 6px; height: var(--ctl); padding: 0 var(--s-2); border: 0; border-radius: var(--r); background: transparent; color: var(--text-2); font-weight: 500; text-decoration: none; }
 .top-btn:hover { background: var(--surface-2); color: var(--text); }
 .top-btn .lbl { display: none; }
+.top-cta { display: inline-flex; align-items: center; justify-content: center; gap: 6px; height: var(--ctl); min-width: var(--ctl); margin-right: var(--s-1); padding: 0 var(--s-2); border: 0; border-radius: var(--r); background: var(--text); color: var(--bg); font-weight: 500; text-decoration: none; white-space: nowrap; cursor: pointer; }
+.top-cta:hover { background: color-mix(in srgb, var(--text) 86%, var(--bg)); }
+.top-cta .lbl { display: none; }
+.side-mob { display: none; }
+@media (max-width: 719px) { .side-mob { display: flex; } }
+@media (min-width: 560px) { .top-cta .lbl { display: inline; } .top-cta { padding: 0 var(--s-3); } }
 .top-btn .count { min-width: 16px; height: 16px; padding: 0 4px; border-radius: var(--r-full); background: var(--surface-3); color: var(--text); font: 600 10px/16px var(--font); text-align: center; }
 .avatar { display: grid; place-items: center; width: 26px; height: 26px; border-radius: var(--r-full); background: var(--accent); color: var(--on-accent); font: 600 12px/1 var(--font); }
 @media (min-width: 720px) { .top-btn .lbl { display: inline; } }

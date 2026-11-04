@@ -107,6 +107,7 @@ vercel = {
 }
 os.makedirs('site/assets', exist_ok=True)
 shutil.copyfile('src/assets/ui.css', 'site/assets/ui.css')
+shutil.copytree('src/assets/flags', 'site/assets/flags', dirs_exist_ok=True)
 open('site/index.html', 'w', encoding='utf-8').write(html)
 open('site/vercel.json', 'w', encoding='utf-8').write(json.dumps(vercel, indent=2) + '\n')
 print('site/index.html', len(html.encode('utf-8')), 'bytes; style blocks:', html.count('<style>'), '; inline scripts hashed: 2')

@@ -376,8 +376,10 @@ main { padding-block: 0; }
 .srows .c-prod { width: 25%; }
 .srows .c-loc { width: 14%; }
 .srows .c-loc .t-sub { min-height: 1.4em; }
-.srows .c-cap { width: 28%; }
-.srows .c-act { width: 1%; white-space: nowrap; text-align: right; padding-right: 0; }
+.cc { display: inline-flex; align-items: center; gap: 6px; }
+.cc .flag { flex: none; width: 16px; height: 12px; border-radius: 2px; box-shadow: 0 0 0 1px var(--border); object-fit: cover; }
+.srows .c-cap { padding-right: var(--s-3); }
+.srows .c-act { width: 84px; white-space: nowrap; text-align: right; padding-right: var(--s-2); }
 .srows a.t-main::after { content: ""; position: absolute; inset: 0; }
 .srows tbody tr { position: relative; }
 .srows tbody tr:focus-within { background: var(--surface); }
@@ -385,11 +387,11 @@ main { padding-block: 0; }
 @media (hover: hover) and (min-width: 760px) { .srows .acts { opacity: 0; } .srows tr:hover .acts, .srows tr:focus-within .acts { opacity: 1; } }
 .srows .acts .icon-btn[aria-pressed="true"] { color: var(--bad); }
 .srows .acts .icon-btn[aria-pressed="true"] svg { fill: currentColor; }
-.caps { display: flex; flex-wrap: wrap; gap: 4px; min-width: 0; }
-.caps span { flex: 0 1 auto; min-width: 0; }
-.caps .more-n { flex: none; }
-.caps span { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 2px 8px; border-radius: 999px; background: var(--surface-2); color: var(--text); font-size: var(--fs-xs); line-height: 18px; }
-.caps .more-n { color: var(--text-2); }
+.caps { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; min-width: 0; }
+.caps .cr { display: flex; align-items: center; gap: 4px; max-width: 100%; min-width: 0; }
+.caps .cp, .caps .more-n { padding: 2px 8px; border-radius: 999px; background: var(--surface-2); color: var(--text); font-size: var(--fs-xs); line-height: 18px; white-space: nowrap; }
+.caps .cp { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.caps .more-n { flex: none; color: var(--text-2); }
 .srows .c-sup { display: table-cell; }
 .srows .c-sup .av-col { float: left; width: 72px; margin-right: var(--s-2); display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
 .srows .sup-txt { display: block; overflow: hidden; }
@@ -457,6 +459,7 @@ dialog::backdrop { background: var(--overlay); }
       <span class="gs-k" aria-hidden="true"><kbd id="kbd-mod">Ctrl</kbd><kbd>K</kbd></span>
     </div>
     <div class="top-actions">
+      <button class="top-cta" type="button" data-open-supplier aria-label="List your business" data-i18n-al="List your business"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3v10M3 8h10"/></svg><span class="lbl" data-i18n="List your business">List your business</span></button>
       <button class="top-btn" id="btn-saved" type="button" aria-pressed="false"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 13.5S2.5 10 2.5 6.2A2.9 2.9 0 0 1 8 5a2.9 2.9 0 0 1 5.5 1.2C13.5 10 8 13.5 8 13.5z"/></svg><span class="lbl" data-i18n="Saved">Saved</span><span class="count" id="saved-n" hidden></span></button>
       <span id="acct"></span>
     </div>
@@ -478,7 +481,7 @@ dialog::backdrop { background: var(--overlay); }
       </nav>
       <div class="side-group" role="group" aria-labelledby="sl-biz">
         <div class="side-label" id="sl-biz" data-i18n="Account and business">Account and business</div>
-        <button class="side-item" type="button" data-open-supplier><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3v10M3 8h10"/></svg><span class="si-l" data-i18n="List your business">List your business</span></button>
+        <button class="side-item side-mob" type="button" data-open-supplier><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3v10M3 8h10"/></svg><span class="si-l" data-i18n="List your business">List your business</span></button>
         <button class="side-item" type="button" data-open-rfq><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2.5h5.5L12 5v8.5H4z"/><path d="M9.5 2.5V5H12"/></svg><span class="si-l" data-i18n="Request a quote">Request a quote</span></button>
         <button class="side-item" id="btn-dest" type="button" aria-haspopup="dialog" aria-expanded="false"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 5.5L8 2.5l5.5 3v5L8 13.5l-5.5-3z"/><path d="M2.5 5.5L8 8.5l5.5-3M8 8.5v5"/></svg><span class="si-l" data-i18n="Ship to">Ship to</span><span class="si-v" id="dest-l">Everywhere</span></button>
         <button class="side-item" id="btn-lang" type="button" aria-haspopup="dialog" aria-expanded="false"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="5.75"/><path d="M2.5 8h11M8 2.25c2 1.8 2 9.7 0 11.5M8 2.25c-2 1.8-2 9.7 0 11.5"/></svg><span class="si-l" data-i18n="Language">Language</span><span class="si-v" id="lang-l">EN</span></button>
@@ -962,15 +965,15 @@ dialog::backdrop { background: var(--overlay); }
   }
   function Row(b) {
     var key = esc(b.name + b.supplier), href = "#biz-" + bslug(b), on = favs().indexOf(b.name + b.supplier) > -1;
-    var capAll = b.certs.concat(b.domains.map(function (k) { return tr(DMAP[k][1]); })), caps = capAll.slice(0, 2), extra = capAll.length - caps.length;
+    var capAll = b.certs.concat(b.domains.map(function (k) { return tr(DMAP[k][1]); })), caps = capAll.slice(0, 3), extra = capAll.length - caps.length;
     var vp = (b.verified && !b.sample) ? '<span class="vseal" role="img" aria-label="' + esc(tr("Verified")) + '" title="' + esc(tr("Verified")) + '">' + CHECK + '</span>' : Status(b);
     var spon = b.sponsored ? '<span class="badge badge-sponsored" title="' + esc(tr("Paid placement")) + '">' + esc(tr("Sponsored")) + '</span>' : '';
     var ini = esc(b.supplier.replace(/[^A-Za-z0-9 ]/g, "").split(/\s+/).slice(0, 2).map(function (w) { return w.charAt(0); }).join("").toUpperCase());
     return '<tr>' +
       '<td class="c-sup"><span class="av-col"><span class="av" aria-hidden="true">' + ini + '</span>' + vp + '</span><span class="sup-txt"><span class="nm"><a class="t-main" href="' + href + '">' + esc(b.supplier) + '</a>' + spon + '</span><span class="t-sub">' + esc(tr(b.cat)) + '</span>' + DesigTags(b) + (b.years ? '<span class="t-sub">' + esc(tr("In business")) + ': ' + b.years + ' ' + esc(tr("yrs")) + '</span>' : '') + '</span></td>' +
       '<td class="c-prod"><span class="t-main" title="' + esc(b.name) + '">' + esc(b.name) + '</span><span class="from">' + esc(b.price) + '</span><span class="from moq" title="' + esc(tr("Min. order")) + '">' + esc(tr("MOQ")) + ' ' + esc(b.moq) + '</span></td>' +
-      '<td class="c-loc"><span class="t-main">' + esc(b.city || b.country) + '</span><span class="t-sub">' + esc(b.state || "") + '</span><span class="t-sub">' + esc(b.city ? b.country : "") + '</span></td>' +
-            '<td class="c-cap"><span class="caps">' + caps.map(function (c) { return '<span>' + esc(c) + '</span>'; }).join("") + (extra > 0 ? '<span class="more-n" title="' + esc(capAll.slice(2).join(", ")) + '">+' + extra + '</span>' : '') + '</span></td>' +
+      '<td class="c-loc"><span class="t-main">' + esc(b.city || b.country) + '</span><span class="t-sub">' + esc(b.state || "") + '</span><span class="t-sub">' + (b.city ? cc(b.country) : "") + '</span></td>' +
+            '<td class="c-cap"><span class="caps">' + caps.map(function (c, i) { return '<span class="cr"><span class="cp" title="' + esc(c) + '">' + esc(c) + '</span>' + (i === 2 && extra > 0 ? '<span class="more-n" title="' + esc(capAll.slice(3).join(", ")) + '">+' + extra + '</span>' : '') + '</span>'; }).join("") + '</span></td>' +
       '<td class="c-act"><span class="acts"><button class="icon-btn" type="button" data-fav="' + key + '" aria-pressed="' + on + '" aria-label="' + esc(tr(on ? "Remove from saved" : "Save") + ": " + b.supplier) + '">' + HEART + '</button>' +
       '<button class="icon-btn" type="button" data-quote="' + key + '" aria-label="' + esc(tr("Request a quote") + ": " + b.name) + '">' + QUOTE + '</button></span></td></tr>';
   }
@@ -1416,6 +1419,7 @@ dialog::backdrop { background: var(--overlay); }
     document.documentElement.lang = lang;
     document.querySelectorAll("[data-i18n]").forEach(function (el) { if (el.dataset.en === undefined) el.dataset.en = el.textContent; el.textContent = lang === "en" ? el.dataset.en : tr(el.dataset.i18n); });
     document.querySelectorAll("[data-i18n-h]").forEach(function (el) { if (el.dataset.en === undefined) el.dataset.en = el.innerHTML; el.innerHTML = lang === "en" ? el.dataset.en : tr(el.dataset.i18nH); });
+    document.querySelectorAll("[data-i18n-al]").forEach(function (el) { el.setAttribute("aria-label", tr(el.dataset.i18nAl)); });
     document.querySelectorAll("[data-i18n-ph]").forEach(function (el) { el.placeholder = tr(el.dataset.i18nPh); });
     $("btn-lang").setAttribute("aria-label", tr("Language"));
     $("lang-l").textContent = LANGS.filter(function (l) { return l[0] === lang; })[0][2];
@@ -1613,6 +1617,8 @@ dialog::backdrop { background: var(--overlay); }
     });
   }
 
+  var ISO = {"Argentina":["ar","ARG"],"Australia":["au","AUS"],"Austria":["at","AUT"],"Belgium":["be","BEL"],"Brazil":["br","BRA"],"Canada":["ca","CAN"],"Chile":["cl","CHL"],"China":["cn","CHN"],"Colombia":["co","COL"],"Croatia":["hr","HRV"],"Czechia":["cz","CZE"],"Denmark":["dk","DNK"],"Egypt":["eg","EGY"],"Estonia":["ee","EST"],"Finland":["fi","FIN"],"France":["fr","FRA"],"Germany":["de","DEU"],"Ghana":["gh","GHA"],"Greece":["gr","GRC"],"Hungary":["hu","HUN"],"India":["in","IND"],"Indonesia":["id","IDN"],"Ireland":["ie","IRL"],"Italy":["it","ITA"],"Japan":["jp","JPN"],"Jordan":["jo","JOR"],"Kenya":["ke","KEN"],"Latvia":["lv","LVA"],"Lithuania":["lt","LTU"],"Luxembourg":["lu","LUX"],"Malaysia":["my","MYS"],"Mexico":["mx","MEX"],"Morocco":["ma","MAR"],"Netherlands":["nl","NLD"],"New Zealand":["nz","NZL"],"Nigeria":["ng","NGA"],"Norway":["no","NOR"],"Pakistan":["pk","PAK"],"Philippines":["ph","PHL"],"Poland":["pl","POL"],"Portugal":["pt","PRT"],"Qatar":["qa","QAT"],"Romania":["ro","ROU"],"Rwanda":["rw","RWA"],"Saudi Arabia":["sa","SAU"],"Singapore":["sg","SGP"],"Slovenia":["si","SVN"],"South Africa":["za","ZAF"],"South Korea":["kr","KOR"],"Spain":["es","ESP"],"Sweden":["se","SWE"],"Switzerland":["ch","CHE"],"Taiwan":["tw","TWN"],"Thailand":["th","THA"],"Turkey":["tr","TUR"],"Uganda":["ug","UGA"],"United Arab Emirates":["ae","ARE"],"United Kingdom":["gb","GBR"],"United States":["us","USA"],"Vietnam":["vn","VNM"]};
+  function cc(c) { var i = ISO[c]; if (!i) return esc(c); return '<span class="cc" title="' + esc(c) + '"><img class="flag" src="/assets/flags/' + i[0] + '.svg" alt="" width="16" height="12" loading="lazy" decoding="async"><span aria-hidden="true">' + i[1] + '</span><span class="sr">' + esc(c) + '</span></span>'; }
   function locStr(b) { return [b.city, b.state, b.country].filter(Boolean).join(", "); }
   function fromRow(r) {
     var b = P(r.name, r.category, r.supplier, r.city, r.country, r.region, r.unit, Number(r.price), r.moq, r.lead || "", r.certs || [], r.ships, r.verified, r.years, r.descr, r.specs || "", r.contact, r.flat || undefined);

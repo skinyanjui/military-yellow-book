@@ -447,7 +447,7 @@ def wpage(site, path, title, desc, section, heading, meta, filters, body, crumbs
            '<a class="brand" href="/" aria-label="Military Yellow Book home"><span class="mark" aria-hidden="true">YB</span><span class="brand-name">Military Yellow Book</span></a>'
            '<div class="gsearch" role="search"><label class="sr" for="q">Search suppliers, products or codes</label>' + ico('search').replace('<svg ', '<svg class="gs-i" ') +
            '<input id="q" type="search" placeholder="Search suppliers, products or codes" autocomplete="off" enterkeyhint="search"><span class="gs-k" aria-hidden="true"><kbd id="kbd-mod">Ctrl</kbd><kbd>K</kbd></span></div>'
-           '<div class="top-actions"><a class="top-btn" href="/?saved=1">' + ico('heart') + '<span class="lbl">Saved</span></a><a class="top-btn" href="/?signin=1"><span>Sign in</span></a></div></div></header>')
+           '<div class="top-actions"><a class="top-cta" href="/?list=1" aria-label="List your business">' + ico('plus') + '<span class="lbl">List your business</span></a><a class="top-btn" href="/?saved=1">' + ico('heart') + '<span class="lbl">Saved</span></a><a class="top-btn" href="/?signin=1"><span>Sign in</span></a></div></div></header>')
     side = ('<aside class="sidebar" id="sidebar" aria-label="Workspace"><div class="sidebar-in">'
             '<div class="side-head"><span class="brand"><span class="mark" aria-hidden="true">YB</span>Military Yellow Book</span><button class="icon-btn" type="button" data-side-close aria-label="Close menu">' + ico('x') + '</button></div>'
             '<nav class="side-group" aria-label="Suppliers">' + side_item('/', 'search', 'Discover suppliers', 'discover', section) + side_item('/?saved=1', 'heart', 'Saved suppliers', 'saved', section) +
@@ -455,7 +455,7 @@ def wpage(site, path, title, desc, section, heading, meta, filters, body, crumbs
             '<nav class="side-group" aria-labelledby="sl-proc"><div class="side-label" id="sl-proc">Procurement</div>' +
             side_item('/opportunities', 'doc', 'Tenders', 'tenders', section) + side_item('/awards', 'award', 'Contract awards', 'awards', section) + side_item('/portals', 'globe', 'Procurement portals', 'portals', section) + '</nav>'
             '<nav class="side-group" aria-labelledby="sl-biz"><div class="side-label" id="sl-biz">Account and business</div>'
-            '<a class="side-item" href="/?list=1">' + ico('plus') + '<span class="si-l">List your business</span></a>'
+            '<a class="side-item side-mob" href="/?list=1">' + ico('plus') + '<span class="si-l">List your business</span></a>'
             '<a class="side-item" href="/?rfq=1">' + ico('file') + '<span class="si-l">Request a quote</span></a></nav></div></aside>')
     return ('<!doctype html><html lang="en"><head><meta charset="utf-8">'
             '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">'
@@ -718,6 +718,7 @@ def build(site_url, out_dir=None):
     os.makedirs(os.path.join(out, 'assets'), exist_ok=True)
     for f in ('ui.css', 'table.js'):
         shutil.copyfile(os.path.join(ROOT, 'src', 'assets', f), os.path.join(out, 'assets', f))
+    shutil.copytree(os.path.join(ROOT, 'src', 'assets', 'flags'), os.path.join(out, 'assets', 'flags'), dirs_exist_ok=True)
     open(os.path.join(out, 'terms.html'), 'w', encoding='utf-8').write(terms_page(site))
     open(os.path.join(out, 'privacy.html'), 'w', encoding='utf-8').write(privacy_page(site))
     open(os.path.join(out, '404.html'), 'w', encoding='utf-8').write(not_found_page(site))
