@@ -919,7 +919,7 @@ dialog::backdrop { background: var(--overlay); }
     var capAll = b.certs.concat(b.domains.map(function (k) { return tr(DMAP[k][1]); })), caps = capAll.slice(0, 2), extra = capAll.length - caps.length;
     var ini = esc(b.supplier.replace(/[^A-Za-z0-9 ]/g, "").split(/\s+/).slice(0, 2).map(function (w) { return w.charAt(0); }).join("").toUpperCase());
     return '<tr>' +
-      '<td class="c-sup"><span class="av" aria-hidden="true">' + ini + '</span><span class="sup-txt"><a class="t-main" href="' + href + '">' + esc(b.supplier) + '</a><span class="t-sub">' + esc(tr(b.cat)) + (b.years ? ' · ' + b.years + ' ' + esc(tr("yrs")) : '') + '</span></span></td>' +
+      '<td class="c-sup"><span class="av" aria-hidden="true">' + ini + '</span><span class="sup-txt"><a class="t-main" href="' + href + '">' + esc(b.supplier) + '</a><span class="t-sub">' + esc(tr(b.cat)) + '</span>' + (b.years ? '<span class="t-sub">' + esc(tr("In business")) + ': ' + b.years + ' ' + esc(tr("yrs")) + '</span>' : '') + '</span></td>' +
       '<td class="c-prod"><span class="t-main">' + esc(b.name) + '</span><span class="from">' + esc(b.price) + '</span><span class="from moq" title="' + esc(tr("Min. order")) + '">' + esc(tr("MOQ")) + ' ' + esc(b.moq) + '</span></td>' +
       '<td class="c-loc"><span>' + esc(b.city ? b.city + ", " + b.country : b.country) + '</span></td>' +
       '<td class="c-st"> ' + Status(b) + '</td>' +
