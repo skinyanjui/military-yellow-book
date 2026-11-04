@@ -392,6 +392,11 @@ main { padding-block: 0; }
 .srows .c-sup { display: table-cell; }
 .srows .c-sup .av-col { float: left; width: 72px; margin-right: var(--s-2); display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
 .srows .sup-txt { display: block; overflow: hidden; }
+.dlist { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--s2); }
+.dlist li { display: flex; align-items: center; gap: var(--s3); }
+.desig { display: flex; flex-wrap: wrap; gap: 4px; margin: 3px 0; }
+.dtag { display: inline-flex; align-items: center; height: 18px; padding: 0 6px; border: 1px solid var(--border-strong); border-radius: var(--r-sm); font-size: 11px; font-weight: 600; letter-spacing: .02em; color: var(--text); background: var(--bg); cursor: help; }
+.dtag-v { border-color: var(--ok); color: var(--ok); }
 .vseal { display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 999px; background: var(--ok-subtle); color: var(--ok); }
 .vseal svg { width: 14px; height: 14px; }
 .srows .nm { display: flex; align-items: center; gap: 6px; min-width: 0; }
@@ -484,6 +489,7 @@ dialog::backdrop { background: var(--overlay); }
           <button class="fbtn" id="q-cat" type="button" data-qmenu="cat" aria-haspopup="menu" aria-expanded="false" aria-pressed="false"></button>
           <button class="fbtn" id="q-country" type="button" data-qmenu="country" aria-haspopup="menu" aria-expanded="false" aria-pressed="false"></button>
           <button class="fbtn" id="q-region" type="button" data-qmenu="region" aria-haspopup="menu" aria-expanded="false" aria-pressed="false"></button>
+          <button class="fbtn" id="q-desig" type="button" data-qmenu="desig" aria-haspopup="menu" aria-expanded="false" aria-pressed="false"></button>
           <button class="fbtn" id="verified" type="button" aria-pressed="false"></button>
           <button class="fbtn" id="open-filters" type="button" aria-haspopup="dialog"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 4.5h6M11.5 4.5h2M2.5 11.5h2M7.5 11.5h6"/><circle cx="10" cy="4.5" r="1.5"/><circle cx="6" cy="11.5" r="1.5"/></svg><span data-i18n="More filters">More filters</span><span class="nb" id="fcount" hidden></span></button>
           <span class="fspacer"></span>
@@ -672,7 +678,7 @@ dialog::backdrop { background: var(--overlay); }
   var rw = function (n) { return n === 1 && lang === "en" ? "review" : tr("reviews"); };
   var esc = function (s) { return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); };
   var slug = function (t) { return t.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""); };
-  var DEF = { q: "", region: "", country: "", domain: "", branch: "", cat: "", price: "", moq: "", lead: 0, years: 0, access: "", custom: false, verified: false, minRating: 0 };
+  var DEF = { q: "", region: "", country: "", domain: "", branch: "", cat: "", price: "", moq: "", lead: 0, years: 0, access: "", desig: "", custom: false, verified: false, minRating: 0 };
   var NUMERIC = { minRating: 1, lead: 1, years: 1 };
   var state = Object.assign({}, DEF, { sort: "match", dest: "", saved: false, layout: "rows" }), curBiz = null, shown = 0, PAGE = 40;
   var open = {};
@@ -790,6 +796,10 @@ dialog::backdrop { background: var(--overlay); }
       '<section class="pdp-sec" id="p-over"><h2>' + esc(tr("Product or service")) + '</h2><p><b>' + esc(b.name) + '</b></p><p>' + esc(b.desc) + '</p>' +
       '<dl class="facts"><dt>' + esc(tr("Indicative price")) + '</dt><dd>' + esc(b.price) + '</dd><dt>' + esc(tr("MOQ")) + '</dt><dd>' + esc(b.moq) + '</dd><dt>' + esc(tr("Lead time")) + '</dt><dd>' + esc(b.lead) + '</dd><dt>' + esc(tr("Ships to")) + '</dt><dd>' + esc(b.ships) + '</dd></dl></section>' +
       '<section class="pdp-sec" id="p-cap"><h2>' + esc(tr("Capabilities")) + '</h2><dl class="facts"><dt>' + esc(tr("Features")) + '</dt><dd>' + pills(b.certs) + '</dd><dt>' + esc(tr("Domain")) + '</dt><dd>' + pills(b.domains.map(function (k) { return tr(DMAP[k][1]); })) + '</dd><dt>' + esc(tr("Branch")) + '</dt><dd>' + pills(b.branches.map(function (k) { return tr(BMAP[k][1]); })) + '</dd></dl>' + Codes(b) + '</section>' +
+      ((b.desig && b.desig.length) || b.uei || b.cage ? '<section class="pdp-sec" id="p-desig"><h2>' + esc(tr("Ownership and registration")) + '</h2>' +
+        (b.desig.length ? '<ul class="dlist">' + b.desig.map(function (c) { return '<li><span class="dtag' + (b.desigBasis === "sam_gov" ? " dtag-v" : "") + '">' + esc(DESIG[c][0]) + '</span><span>' + esc(DESIG[c][1]) + '</span></li>'; }).join("") + '</ul>' +
+          '<p class="fine">' + esc(b.desigBasis === "sam_gov" ? tr("Confirmed against the supplier's active SAM.gov registration") + (b.desigAt ? " · " + b.desigAt.slice(0, 10) : "") + "." : tr("Self-reported by the supplier and not yet checked against SAM.gov. Confirm eligibility with the supplier before relying on it for a set-aside award.")) + '</p>' : '') +
+        ((b.uei || b.cage) ? '<dl class="facts">' + (b.uei ? '<dt>UEI</dt><dd>' + esc(b.uei) + '</dd>' : '') + (b.cage ? '<dt>CAGE</dt><dd>' + esc(b.cage) + '</dd>' : '') + '</dl>' : '') + '</section>' : '') +
       '<section class="pdp-sec" id="p-spec"><h2>' + esc(tr("Specifications")) + '</h2><dl class="spec">' + b.specs.map(function (s) { return '<div><dt>' + esc(s[0]) + '</dt><dd>' + esc(s[1]) + '</dd></div>'; }).join("") + '<div><dt>' + esc(tr("Packaging")) + '</dt><dd>' + esc(pack) + '</dd></div>' + (restricted ? '<div><dt>' + esc(tr("Buyer eligibility")) + '</dt><dd>' + esc(tr("Licensed or government buyers only")) + '</dd></div>' : '') + '</dl></section>' +
       '<p class="notice">' + esc(tr(restricted ? "This item is export-controlled. Expect to provide a dealer licence or end-user certificate before the supplier quotes." : "Some military goods are export-controlled. Ask the supplier which licences and end-user certificates apply to your destination before you order, and confirm price and delivery terms in writing.")) + '</p>' +
       '<section class="pdp-sec" id="p-rev"><h2>' + esc(tr("Reviews")) + '</h2>' + ratings + (LIVE ? '<div id="rev-real" class="rev-real"></div>' : '') + '</section>' +
@@ -842,6 +852,7 @@ dialog::backdrop { background: var(--overlay); }
     if (state.lead && b.leadD > state.lead) return false;
     if (state.years && b.years < state.years) return false;
     if (state.custom && !b.custom) return false;
+    if (state.desig && b.desig.indexOf(state.desig) < 0) return false;
     if (state.access === "open" && b.licensed) return false;
     if (state.access === "licensed" && !b.licensed) return false;
     if (state.dest && !ships(b, state.dest)) return false;
@@ -866,6 +877,19 @@ dialog::backdrop { background: var(--overlay); }
   }
   var PRICES = { u25: [0, 25], u100: [25, 100], u500: [100, 500], o500: [500, 1e12] };
   function nT(s, n) { return tr(s).replace("{n}", n); }
+  var DESIG = {
+    sdvosb: ["SDVOSB", "Service-disabled veteran-owned small business"], vosb: ["VOSB", "Veteran-owned small business"],
+    wosb: ["WOSB", "Women-owned small business"], edwosb: ["EDWOSB", "Economically disadvantaged women-owned small business"],
+    "8a": ["8(a)", "SBA 8(a) business development program"], hubzone: ["HUBZone", "Historically underutilized business zone"],
+    small_business: ["Small", "Small business"], sdb: ["SDB", "Small disadvantaged business"],
+    minority_owned: ["MBE", "Minority-owned business"], tribal: ["Tribal", "Indian tribe or tribally owned"],
+    anc: ["ANC", "Alaska Native Corporation owned"], nhoo: ["NHO", "Native Hawaiian organization owned"]
+  };
+  function DesigTags(b, full) {
+    if (!b.desig || !b.desig.length) return "";
+    var basis = b.desigBasis === "sam_gov" ? tr("Confirmed in SAM.gov") : tr("Self-reported");
+    return '<span class="desig">' + b.desig.map(function (c) { return '<span class="dtag' + (b.desigBasis === "sam_gov" ? " dtag-v" : "") + '" title="' + esc(DESIG[c][1] + " · " + basis) + '">' + esc(DESIG[c][0]) + '</span>'; }).join("") + '</span>';
+  }
   var FDEFS = [
     { k: "domain", label: "Domain", opts: function () { return [["", tr("All domains")]].concat(DOMAINS.map(function (d) { return [d[0], tr(d[1])]; })); }, count: function (v) { return DATA.filter(function (b) { return b.domains.indexOf(v) > -1; }).length; } },
     { k: "branch", label: "Branch", opts: function () { return [["", tr("All branches")]].concat(BRANCHES.map(function (d) { return [d[0], tr(d[1])]; })); }, count: function (v) { return DATA.filter(function (b) { return b.branches.indexOf(v) > -1 || b.branches.indexOf("joint") > -1; }).length; } },
@@ -876,11 +900,12 @@ dialog::backdrop { background: var(--overlay); }
     { k: "moq", label: "Min. order", opts: function () { return [["", tr("Any")], ["10", nT("Up to {n}", 10)], ["50", nT("Up to {n}", 50)], ["200", nT("Up to {n}", 200)], ["1000", nT("Up to {n}", "1,000")]]; } },
     { k: "lead", label: "Lead time", opts: function () { return [[0, tr("Any")], [7, nT("Within {n} days", 7)], [14, nT("Within {n} days", 14)], [30, nT("Within {n} days", 30)]]; } },
     { k: "years", label: "Years in business", opts: function () { return [[0, tr("Any")], [5, nT("{n}+ years", 5)], [10, nT("{n}+ years", 10)], [15, nT("{n}+ years", 15)]]; } },
+    { k: "desig", label: "Ownership", opts: function () { return [["", tr("Any")]].concat(Object.keys(DESIG).map(function (k) { return [k, DESIG[k][1]]; })); }, count: function (v) { return DATA.filter(function (b) { return b.desig.indexOf(v) > -1; }).length; } },
     { k: "access", label: "Buyer access", opts: function () { return [["", tr("Any")], ["open", tr("Open to all buyers")], ["licensed", tr("Licensed buyers only")]]; } }
   ];
-  function optLabel(fd, v) { var o = fd.opts().filter(function (x) { return String(x[0]) === String(v); })[0]; return o ? o[1] : ""; }
+  function optLabel(fd, v) { if (fd.k === "desig" && DESIG[v]) return DESIG[v][0]; var o = fd.opts().filter(function (x) { return String(x[0]) === String(v); })[0]; return o ? o[1] : ""; }
   var CHEVD = '<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4.5l3 3 3-3"/></svg>';
-  var ROW_F = { cat: 1, country: 1, region: 1 };
+  var ROW_F = { cat: 1, country: 1, region: 1, desig: 1 };
   function moreCount() {
     var n = 0;
     FDEFS.forEach(function (fd) { if (!ROW_F[fd.k] && state[fd.k]) n++; });
@@ -939,7 +964,7 @@ dialog::backdrop { background: var(--overlay); }
     var spon = b.sponsored ? '<span class="badge badge-sponsored" title="' + esc(tr("Paid placement")) + '">' + esc(tr("Sponsored")) + '</span>' : '';
     var ini = esc(b.supplier.replace(/[^A-Za-z0-9 ]/g, "").split(/\s+/).slice(0, 2).map(function (w) { return w.charAt(0); }).join("").toUpperCase());
     return '<tr>' +
-      '<td class="c-sup"><span class="av-col"><span class="av" aria-hidden="true">' + ini + '</span>' + vp + '</span><span class="sup-txt"><span class="nm"><a class="t-main" href="' + href + '">' + esc(b.supplier) + '</a>' + spon + '</span><span class="t-sub">' + esc(tr(b.cat)) + '</span>' + (b.years ? '<span class="t-sub">' + esc(tr("In business")) + ': ' + b.years + ' ' + esc(tr("yrs")) + '</span>' : '') + '</span></td>' +
+      '<td class="c-sup"><span class="av-col"><span class="av" aria-hidden="true">' + ini + '</span>' + vp + '</span><span class="sup-txt"><span class="nm"><a class="t-main" href="' + href + '">' + esc(b.supplier) + '</a>' + spon + '</span><span class="t-sub">' + esc(tr(b.cat)) + '</span>' + DesigTags(b) + (b.years ? '<span class="t-sub">' + esc(tr("In business")) + ': ' + b.years + ' ' + esc(tr("yrs")) + '</span>' : '') + '</span></td>' +
       '<td class="c-prod"><span class="t-main" title="' + esc(b.name) + '">' + esc(b.name) + '</span><span class="from">' + esc(b.price) + '</span><span class="from moq" title="' + esc(tr("Min. order")) + '">' + esc(tr("MOQ")) + ' ' + esc(b.moq) + '</span></td>' +
       '<td class="c-loc"><span>' + esc(b.city ? b.city + ", " + b.country : b.country) + '</span></td>' +
             '<td class="c-cap"><span class="caps">' + caps.map(function (c) { return '<span>' + esc(c) + '</span>'; }).join("") + (extra > 0 ? '<span class="more-n" title="' + esc(capAll.slice(2).join(", ")) + '">+' + extra + '</span>' : '') + '</span></td>' +
@@ -1283,6 +1308,10 @@ dialog::backdrop { background: var(--overlay); }
     ["Ask the supplier for photos.", "Demandez des photos au fournisseur.", "Peça fotos ao fornecedor.", "Pida fotos al proveedor.", "Muulize msambazaji picha."],
     ["Sponsored", "Sponsorisé", "Patrocinado", "Patrocinado", "Imedhaminiwa"],
     ["Paid placement", "Emplacement payant", "Posicionamento pago", "Ubicación de pago", "Nafasi ya kulipia"],
+    ["Ownership", "Propriété", "Propriedade", "Propiedad", "Umiliki"],
+    ["Ownership and registration", "Propriété et enregistrement", "Propriedade e registro", "Propiedad y registro", "Umiliki na usajili"],
+    ["Self-reported", "Déclaré par le fournisseur", "Autodeclarado", "Autodeclarado", "Imejitangaza"],
+    ["Confirmed in SAM.gov", "Confirmé dans SAM.gov", "Confirmado no SAM.gov", "Confirmado en SAM.gov", "Imethibitishwa SAM.gov"],
     ["MOQ", "MOQ", "MOQ", "MOQ", "MOQ"],
     ["Saved", "Enregistré", "Guardado", "Guardado", "Imehifadhiwa"],
     ["Share", "Partager", "Partilhar", "Compartir", "Shiriki"],
@@ -1588,11 +1617,12 @@ dialog::backdrop { background: var(--overlay); }
     b.sr = b.rating; b.sc = b.reviews; b.real = r.review_count > 0;
     if (b.real) { b.rating = Math.round(Number(r.rating_avg) * 10) / 10; b.reviews = r.review_count; }
     b.domains = r.domains || []; b.branches = r.branches || []; b.unspsc = r.unspsc || [];
+    b.desig = (r.designations || []).filter(function (c) { return DESIG[c]; }); b.desigBasis = r.designations_basis === "sam_gov" ? "sam_gov" : "self_reported"; b.desigAt = r.designations_checked_at || ""; b.uei = r.uei || ""; b.cage = r.cage_code || "";
     b.images = (r.images || []).filter(function (u) { return typeof u === "string" && /^https:\/\//.test(u) && (!window.MYB_BACKEND || u.indexOf(window.MYB_BACKEND.url + "/storage/v1/object/public/listing-images/") === 0); }).slice(0, 8);
     if (!/\d/.test(r.lead || "")) b.leadD = 999;
     return b;
   }
-  var LCOLS = "slug,name,category,supplier,city,country,region,unit,price,moq,lead,certs,ships,verified,years,descr,specs,contact,flat,domains,branches,sample_rating,sample_reviews,review_count,rating_avg,is_sample,status,position,created_at,unspsc,images";
+  var LCOLS = "slug,name,category,supplier,city,country,region,unit,price,moq,lead,certs,ships,verified,years,descr,specs,contact,flat,domains,branches,sample_rating,sample_reviews,review_count,rating_avg,is_sample,status,position,created_at,unspsc,images,designations,designations_basis,designations_checked_at,uei,cage_code";
   function loadListings() {
     loading = true; render();
     sb.from("myb_listings").select(LCOLS).eq("status", "live").order("position", { ascending: true, nullsFirst: false }).order("created_at", { ascending: true }).limit(2000).then(function (r) {
@@ -1819,7 +1849,7 @@ dialog::backdrop { background: var(--overlay); }
   }
 
   /* ---------- URL state (search, filters, sort, layout) ---------- */
-  var URLK = { q: "q", cat: "cat", country: "country", region: "region", domain: "domain", branch: "branch", price: "price", moq: "moq", lead: "lead", years: "years", access: "access" };
+  var URLK = { q: "q", cat: "cat", country: "country", region: "region", domain: "domain", branch: "branch", price: "price", moq: "moq", lead: "lead", years: "years", access: "access", desig: "desig" };
   function syncUrl() {
     var p = new URLSearchParams();
     Object.keys(URLK).forEach(function (k) { if (state[k]) p.set(URLK[k], state[k]); });
