@@ -35,7 +35,7 @@ FOOT = ('Complete firearms, ammunition, explosives and weapon systems are not li
         'Prices and lead times are set by each supplier; confirm terms in writing before you pay.')
 
 LCSS = """
-.lg{--fg:var(--text);--muted:var(--text-2);--line:var(--border);--subtle:var(--surface);--subtle-2:var(--surface-2);max-width:1040px;padding-top:var(--s-5)}
+.lg{--fg:var(--text);--muted:var(--text-2);--line:var(--border);--subtle:var(--surface);--subtle-2:var(--surface-2);max-width:1040px;padding-top:var(--s-4)}
 .lg.nt h1{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}\n.lg h1{font-size:var(--fs-xl);line-height:1.25;font-weight:600;letter-spacing:-.02em;margin:var(--s-2) 0 var(--s-1);text-wrap:balance}
 .lg h2{font-size:var(--fs-md);line-height:1.3;font-weight:600;letter-spacing:-.01em;margin:var(--s-8) 0 var(--s-3)}
 .lg h3{font-size:var(--fs);line-height:1.3;font-weight:600;margin:var(--s-6) 0 var(--s-2)}
