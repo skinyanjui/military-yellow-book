@@ -231,7 +231,8 @@ main { padding-block: var(--s6) var(--s12); }
 .prof-t { flex: 1 1 280px; min-width: 0; display: grid; gap: var(--s1); }
 .prof-t h1 { margin: 0; }
 .prof-t p { margin: 0; }
-.av.av-img { background: var(--bg); box-shadow: inset 0 0 0 1px var(--border); padding: 14%; }
+.av.av-img { background: var(--bg); box-shadow: inset 0 0 0 1px var(--border); padding: 6px; }
+.av.av-lg.av-img { padding: 9px; }
 .av img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .av.av-lg { width: 56px; height: 56px; font-size: 16px; border-radius: var(--r-lg); }
 .simlist { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--border); }
@@ -421,8 +422,20 @@ main { padding-block: 0; }
   .srows td.c-st { margin-top: 4px; }
 }
 .more { display: flex; justify-content: center; padding-block: var(--s-6); }
-#list-view .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s-6) var(--s-3); padding-top: var(--s-2); }
-@media (min-width: 600px) { #list-view .grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: var(--s-8) var(--s-4); } }
+#list-view .grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s-3); padding-top: var(--s-4); }
+@media (min-width: 600px) { #list-view .grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); } }
+.card { position: relative; border: 1px solid var(--border); border-radius: var(--r-lg); padding: var(--s-4); background: var(--bg); }
+.card:hover { background: var(--surface); }
+.card .card-main { display: flex; flex-direction: column; gap: var(--s-2); margin: 0; }
+.card-top { display: flex; align-items: center; gap: var(--s-3); min-width: 0; padding-right: 36px; }
+.card-id { display: flex; flex-direction: column; min-width: 0; }
+.card-id .title { display: block; min-height: 0; margin: 0; font-size: 14px; line-height: 20px; font-weight: 600; color: var(--text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.card-id .t-sub { color: var(--text-2); font-size: var(--fs-xs); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.card-prod { color: var(--text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.card-loc { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; color: var(--text-2); font-size: var(--fs-sm); }
+.card-foot { display: flex; align-items: center; gap: var(--s-2); margin-top: var(--s-1); }
+.card-foot .t-sub { color: var(--text-2); font-size: var(--fs-xs); }
+.card .card-q { position: absolute; top: var(--s-3); right: var(--s-3); z-index: 1; }
 .thumb { background-color: var(--surface); background-image: none; color: var(--text-3); border-radius: var(--r-lg); font-weight: 600; }
 .thumb:hover { background-color: var(--surface-2); }
 .vbadge { left: var(--s-2); top: var(--s-2); }
@@ -704,18 +717,17 @@ dialog::backdrop { background: var(--overlay); }
   }
   function Card(b) {
     var key = esc(b.name + b.supplier), href = "#biz-" + bslug(b);
-    return '<article class="card"><div class="media">' +
-      '<a class="thumb" href="' + href + '" tabindex="-1" aria-hidden="true">' + (b.images && b.images[0] ? '<img src="' + esc(b.images[0]) + '" alt="" loading="lazy" decoding="async">' : '<span>' + esc(b.name.charAt(0)) + '</span>') + '' + (b.verified ? '<span class="vbadge">' + CHECK + esc(tr("Verified")) + '</span>' : '') + '</a>' +
-      '<button class="icon-btn" type="button" data-quote="' + key + '" aria-label="Request a quote for ' + esc(b.name) + '" title="Request a quote">' + QUOTE + '</button></div>' +
-      '<a class="card-main" href="' + href + '">' +
-      '<span class="title" title="' + esc(b.name) + '">' + esc(b.name) + '</span>' +
-      '<span class="rate">' + (b.reviews ? Stars(b.rating) + '<b>' + rt(b.rating) + '</b><span class="rc">(' + b.reviews + ')</span>' : '<b>New</b>') + '</span>' +
-      '<span class="price" title="' + esc(b.price) + '">' + esc(b.price) + '</span>' +
-      '<span class="specs">' +
-      '<span class="k">' + esc(tr("Min. order")) + '</span><span class="v" title="' + esc(b.moq) + '">' + esc(b.moq) + '</span>' +
-      '<span class="k">' + esc(tr("Supplier")) + '</span><span class="v" title="' + esc(b.supplier) + '">' + esc(b.supplier) + '</span>' +
-      '<span class="k">' + esc(tr("Origin")) + '</span><span class="v" title="' + esc(b.country) + '">' + esc(b.country) + ' · ' + b.years + ' ' + esc(tr("yrs")) + '</span>' +
-      '</span></a></article>';
+    var ini = esc(b.supplier.replace(/[^A-Za-z0-9 ]/g, "").split(/\s+/).slice(0, 2).map(function (w) { return w.charAt(0); }).join("").toUpperCase());
+    var vp = (b.verified && !b.sample) ? '<span class="vseal" role="img" aria-label="' + esc(tr("Verified")) + '" title="' + esc(tr("Verified")) + '">' + CHECK + '</span>' : Status(b);
+    var capAll = b.certs.concat(b.domains.map(function (k) { return tr(DMAP[k][1]); })), caps = capAll.slice(0, 3), extra = capAll.length - caps.length;
+    var loc = [b.city, b.state].filter(Boolean).join(", ");
+    return '<article class="card"><a class="card-main" href="' + href + '">' +
+      '<span class="card-top"><span class="av' + (b.logo ? ' av-img' : '') + '" aria-hidden="true">' + avInner(b, ini) + '</span><span class="card-id"><span class="title" title="' + esc(b.supplier) + '">' + esc(b.supplier) + '</span><span class="t-sub">' + esc(tr(b.cat)) + '</span></span></span>' +
+      '<span class="card-prod" title="' + esc(b.name) + '">' + esc(b.name) + '</span>' +
+      '<span class="card-loc">' + (loc ? '<span>' + esc(loc) + '</span>' : '') + cc(b.country) + '</span>' +
+      '<span class="caps">' + caps.map(function (c, i) { return '<span class="cr"><span class="cp" title="' + esc(c) + '">' + esc(c) + '</span>' + (i === 2 && extra > 0 ? '<span class="more-n">+' + extra + '</span>' : '') + '</span>'; }).join("") + '</span>' +
+      '<span class="card-foot">' + vp + '<span class="t-sub">' + esc(tr("In business")) + ': ' + b.years + ' ' + esc(tr("yrs")) + '</span></span></a>' +
+      '<button class="icon-btn card-q" type="button" data-quote="' + key + '" aria-label="Request a quote for ' + esc(b.name) + '" title="Request a quote">' + QUOTE + '</button></article>';
   }
   var ARROW = '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3.5L5.5 8l4.5 4.5"/></svg>';
   var GALS = ["Front", "Detail", "Pack", "Label"];
