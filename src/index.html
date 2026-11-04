@@ -350,11 +350,11 @@ main { padding-block: 0; }
 .srows .c-sup .t-main { font-weight: 600; color: var(--text); }
 .srows .c-prod .t-main { font-weight: 400; color: var(--text); }
 .srows .from { color: var(--text-2); font-size: 12px; margin-top: 2px; }
-.srows .c-sup { width: 26%; }
-.srows .c-prod { width: 28%; }
-.srows .c-loc { width: 16%; }
-.srows .c-st { width: 11%; }
-.srows .c-cap { width: 15%; }
+.srows .c-sup { width: 24%; }
+.srows .c-prod { width: 24%; }
+.srows .c-loc { width: 13%; }
+.srows .c-st { width: 9%; }
+.srows .c-cap { width: 27%; }
 .srows .c-act { width: 1%; white-space: nowrap; text-align: right; padding-right: 0; }
 .srows a.t-main::after { content: ""; position: absolute; inset: 0; }
 .srows tbody tr { position: relative; }
@@ -363,9 +363,18 @@ main { padding-block: 0; }
 @media (hover: hover) and (min-width: 760px) { .srows .acts { opacity: 0; } .srows tr:hover .acts, .srows tr:focus-within .acts { opacity: 1; } }
 .srows .acts .icon-btn[aria-pressed="true"] { color: var(--bad); }
 .srows .acts .icon-btn[aria-pressed="true"] svg { fill: currentColor; }
-.caps { display: flex; flex-wrap: wrap; gap: 4px; }
-.caps span { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--text-2); font-size: var(--fs-xs); }
-.caps span + span::before { content: "· "; }
+.caps { display: flex; flex-wrap: wrap; gap: 4px; min-width: 0; }
+.caps span { flex: 0 1 auto; min-width: 0; }
+.caps .more-n { flex: none; }
+.caps span { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 2px 8px; border-radius: 999px; background: var(--surface-2); color: var(--text); font-size: var(--fs-xs); line-height: 18px; }
+.caps .more-n { color: var(--text-2); }
+.srows .c-sup { display: table-cell; }
+.srows .c-sup .av { float: left; margin-right: var(--s-3); }
+.srows .sup-txt { display: block; overflow: hidden; }
+.av { flex: none; display: inline-grid; place-items: center; width: 36px; height: 36px; border-radius: var(--r); background: var(--surface-2); color: var(--text-2); font-size: 12px; font-weight: 600; letter-spacing: .02em; }
+.srows .tbl-wrap, .tbl-wrap:has(.srows) { overflow: visible; }
+.srows th { position: sticky; top: calc(var(--top-h) + var(--fb-h, 45px)); z-index: 5; background: var(--bg); text-transform: uppercase; letter-spacing: .04em; font-size: 11px; box-shadow: 0 1px 0 var(--border); }
+.srows td, .srows th { text-align: left; }
 .from { color: var(--text-2); font-size: var(--fs-xs); font-variant-numeric: tabular-nums; }
 @media (max-width: 759px) {
   .srows tbody tr { display: grid !important; grid-template-columns: minmax(0, 1fr) auto; column-gap: var(--s-3); padding: var(--s-3) 0; }
@@ -907,13 +916,14 @@ dialog::backdrop { background: var(--overlay); }
   }
   function Row(b) {
     var key = esc(b.name + b.supplier), href = "#biz-" + bslug(b), on = favs().indexOf(b.name + b.supplier) > -1;
-    var caps = b.certs.slice(0, 2).concat(b.domains.slice(0, Math.max(0, 2 - b.certs.length)).map(function (k) { return tr(DMAP[k][1]); }));
+    var capAll = b.certs.concat(b.domains.map(function (k) { return tr(DMAP[k][1]); })), caps = capAll.slice(0, 2), extra = capAll.length - caps.length;
+    var ini = esc(b.supplier.replace(/[^A-Za-z0-9 ]/g, "").split(/\s+/).slice(0, 2).map(function (w) { return w.charAt(0); }).join("").toUpperCase());
     return '<tr>' +
-      '<td class="c-sup"><a class="t-main" href="' + href + '">' + esc(b.supplier) + '</a><span class="t-sub">' + esc(tr(b.cat)) + (b.years ? ' · ' + b.years + ' ' + esc(tr("yrs")) : '') + '</span></td>' +
+      '<td class="c-sup"><span class="av" aria-hidden="true">' + ini + '</span><span class="sup-txt"><a class="t-main" href="' + href + '">' + esc(b.supplier) + '</a><span class="t-sub">' + esc(tr(b.cat)) + (b.years ? ' · ' + b.years + ' ' + esc(tr("yrs")) : '') + '</span></span></td>' +
       '<td class="c-prod"><span class="t-main">' + esc(b.name) + '</span><span class="from">' + esc(b.price) + ' · ' + esc(tr("Min. order")) + ' ' + esc(b.moq) + '</span></td>' +
       '<td class="c-loc"><span>' + esc(b.city ? b.city + ", " + b.country : b.country) + '</span></td>' +
       '<td class="c-st"> ' + Status(b) + '</td>' +
-      '<td class="c-cap"><span class="caps">' + caps.map(function (c) { return '<span>' + esc(c) + '</span>'; }).join("") + '</span></td>' +
+      '<td class="c-cap"><span class="caps">' + caps.map(function (c) { return '<span>' + esc(c) + '</span>'; }).join("") + (extra > 0 ? '<span class="more-n" title="' + esc(capAll.slice(2).join(", ")) + '">+' + extra + '</span>' : '') + '</span></td>' +
       '<td class="c-act"><span class="acts"><button class="icon-btn" type="button" data-fav="' + key + '" aria-pressed="' + on + '" aria-label="' + esc(tr(on ? "Remove from saved" : "Save") + ": " + b.supplier) + '">' + HEART + '</button>' +
       '<button class="icon-btn" type="button" data-quote="' + key + '" aria-label="' + esc(tr("Request a quote") + ": " + b.name) + '">' + QUOTE + '</button></span></td></tr>';
   }
@@ -949,7 +959,7 @@ dialog::backdrop { background: var(--overlay); }
   function stickH() { return $("nav").offsetHeight + $("toolbar").offsetHeight; }
   function measure() {
     var r = document.documentElement.style;
-    r.setProperty("--nav-h", $("nav").offsetHeight + "px");
+    r.setProperty("--nav-h", $("nav").offsetHeight + "px"); r.setProperty("--fb-h", ($("toolbar") ? $("toolbar").offsetHeight : 45) + "px");
     r.setProperty("--stick-h", stickH() + "px");
   }
   function spy() {
