@@ -96,7 +96,7 @@
     if (!act) return; var h = "", n = 0;
     filters.forEach(function (f) { if (f.value) { n++; h += '<button type="button" class="act" data-clear-f="' + f.dataset.filter + '" aria-label="Remove filter ' + f.options[f.selectedIndex].text.replace(/"/g, "") + '">' + f.options[f.selectedIndex].text.replace(/</g, "&lt;") + ' <span aria-hidden="true">×</span></button>'; } });
     if (q && q.value.trim()) { n++; h += '<button type="button" class="act" data-clear-q aria-label="Clear search">“' + q.value.trim().replace(/</g, "&lt;") + '” <span aria-hidden="true">×</span></button>'; }
-    if (n > 1) h += '<button type="button" class="linklike" data-clear-all>Clear all</button>';
+    if (n > 1) h += '<button type="button" class="linklike" data-clear-all>Clear</button>';
     act.innerHTML = h; act.hidden = !n;
   }
   if (act) act.addEventListener("click", function (e) {

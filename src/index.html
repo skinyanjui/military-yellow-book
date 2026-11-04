@@ -466,12 +466,12 @@ dialog::backdrop { background: var(--overlay); }
     <a class="brand" href="/" aria-label="Military Yellow Book home"><span class="mark" aria-hidden="true">YB</span><span class="brand-name">Military Yellow Book</span></a>
     <div class="gsearch" role="search">
       <label class="sr" for="q" data-i18n="Search products, suppliers or domains">Search products, suppliers or domains</label>
-      <svg class="gs-i" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5l3 3"/></svg><input id="q" type="search" placeholder="Search suppliers, products or codes" data-i18n-ph="Search suppliers, products or codes" autocomplete="off" enterkeyhint="search">
+      <svg class="gs-i" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5l3 3"/></svg><input id="q" type="search" placeholder="Search" data-i18n-ph="Search" title="Search suppliers, products or codes" data-i18n-ti="Search suppliers, products or codes" autocomplete="off" enterkeyhint="search">
       <span class="gs-k" aria-hidden="true"><kbd id="kbd-mod">Ctrl</kbd><kbd>K</kbd></span>
     </div>
     <div class="top-actions">
-      <button class="top-cta" type="button" data-open-supplier aria-label="List your business" data-i18n-al="List your business"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3v10M3 8h10"/></svg><span class="lbl" data-i18n="List your business">List your business</span></button>
-      <button class="top-btn" id="btn-saved" type="button" aria-pressed="false"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 13.5S2.5 10 2.5 6.2A2.9 2.9 0 0 1 8 5a2.9 2.9 0 0 1 5.5 1.2C13.5 10 8 13.5 8 13.5z"/></svg><span class="lbl" data-i18n="Saved">Saved</span><span class="count" id="saved-n" hidden></span></button>
+      <button class="top-cta" type="button" data-open-supplier aria-label="List your business" data-i18n-al="List your business" title="Add your business to the directory" data-i18n-ti="Add your business to the directory"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3v10M3 8h10"/></svg><span class="lbl" data-i18n="List">List</span></button>
+      <button class="top-btn" id="btn-saved" type="button" aria-pressed="false" title="Suppliers you saved" data-i18n-ti="Suppliers you saved"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 13.5S2.5 10 2.5 6.2A2.9 2.9 0 0 1 8 5a2.9 2.9 0 0 1 5.5 1.2C13.5 10 8 13.5 8 13.5z"/></svg><span class="lbl" data-i18n="Shortlist">Shortlist</span><span class="count" id="saved-n" hidden></span></button>
       <span id="acct"></span>
     </div>
   </div>
@@ -509,9 +509,9 @@ dialog::backdrop { background: var(--overlay); }
           <button class="fbtn" id="q-region" type="button" data-qmenu="region" aria-haspopup="menu" aria-expanded="false" aria-pressed="false"></button>
           <button class="fbtn" id="q-desig" type="button" data-qmenu="desig" aria-haspopup="menu" aria-expanded="false" aria-pressed="false"></button>
           <button class="fbtn" id="verified" type="button" aria-pressed="false"></button>
-          <button class="fbtn" id="open-filters" type="button" aria-haspopup="dialog"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 4.5h6M11.5 4.5h2M2.5 11.5h2M7.5 11.5h6"/><circle cx="10" cy="4.5" r="1.5"/><circle cx="6" cy="11.5" r="1.5"/></svg><span data-i18n="More filters">More filters</span><span class="nb" id="fcount" hidden></span></button>
+          <button class="fbtn" id="open-filters" type="button" aria-haspopup="dialog"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 4.5h6M11.5 4.5h2M2.5 11.5h2M7.5 11.5h6"/><circle cx="10" cy="4.5" r="1.5"/><circle cx="6" cy="11.5" r="1.5"/></svg><span data-i18n="Refine">Refine</span><span class="nb" id="fcount" hidden></span></button>
           <span class="fspacer"></span>
-          <label class="fsel"><span class="muted" data-i18n="Sort">Sort</span><select id="sort"><option value="match" data-i18n="Best match">Best match</option><option value="rating" data-i18n="Top rated">Top rated</option><option value="reviews" data-i18n="Most reviewed">Most reviewed</option><option value="name" data-i18n="Name">Name</option></select></label>
+          <label class="fsel"><span class="muted" data-i18n="Sort">Sort</span><select id="sort"><option value="match" data-i18n="Relevant">Relevant</option><option value="rating" data-i18n="Rated">Rated</option><option value="reviews" data-i18n="Reviewed">Reviewed</option><option value="name" data-i18n="Name">Name</option></select></label>
           <div class="seg" role="group" aria-label="Layout"><button type="button" data-layout="rows" aria-pressed="true" aria-label="Rows"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 4h11M2.5 8h11M2.5 12h11"/></svg></button><button type="button" data-layout="grid" aria-pressed="false" aria-label="Grid"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="2.5" width="4.5" height="4.5" rx="1"/><rect x="9" y="2.5" width="4.5" height="4.5" rx="1"/><rect x="2.5" y="9" width="4.5" height="4.5" rx="1"/><rect x="9" y="9" width="4.5" height="4.5" rx="1"/></svg></button></div>
         </div>
       </div>
@@ -831,7 +831,7 @@ dialog::backdrop { background: var(--overlay); }
     var onlyVerified = state.verified && !DATA.some(function (b) { return b.verified; });
     return '<div class="state" role="status"><h2>' + esc(tr("No matching suppliers")) + '</h2><p>' +
       esc(onlyVerified ? tr("No supplier has completed verification yet. Every listing shown here is a sample.") : tr("Try a broader search or remove a filter. You can also post a request and let suppliers come to you.")) + '</p>' +
-      '<div class="row"><button class="btn btn-secondary" type="button" data-clear>' + esc(tr("Clear all")) + '</button><button class="btn btn-primary" type="button" data-open-rfq>' + esc(tr("Request a quote")) + '</button></div></div>';
+      '<div class="row"><button class="btn btn-secondary" type="button" data-clear>' + esc(tr("Clear")) + '</button><button class="btn btn-primary" type="button" data-open-rfq>' + esc(tr("Request a quote")) + '</button></div></div>';
   }
 
 
@@ -942,7 +942,7 @@ dialog::backdrop { background: var(--overlay); }
     var sv = favs().length;
     $("saved-n").textContent = sv; $("saved-n").hidden = !sv; $("side-saved-n").textContent = sv || "";
     $("btn-saved").setAttribute("aria-pressed", String(!!state.saved));
-    $("btn-saved").setAttribute("aria-label", tr("Saved suppliers") + (sv ? " (" + sv + ")" : ""));
+    $("btn-saved").setAttribute("aria-label", tr("Shortlist") + (sv ? " (" + sv + ")" : ""));
     document.querySelectorAll("[data-side]").forEach(function (x) {
       var cur = view === "list" && (x.dataset.side === "saved" ? state.saved : !state.saved);
       if (cur) x.setAttribute("aria-current", "page"); else x.removeAttribute("aria-current");
@@ -963,7 +963,7 @@ dialog::backdrop { background: var(--overlay); }
     var a = actives(), box = $("actives");
     box.hidden = !a.length;
     box.innerHTML = a.map(function (x) { return '<span class="act"><span class="t">' + esc(x[1]) + '</span><button type="button" data-remove="' + x[0] + '" aria-label="' + esc(tr("Remove filter") + ": " + x[1]) + '">' + X + '</button></span>'; }).join("") +
-      (a.length > 1 ? '<button class="linklike" type="button" data-clear>' + esc(tr("Clear all")) + '</button>' : "");
+      (a.length > 1 ? '<button class="linklike" type="button" data-clear>' + esc(tr("Clear")) + '</button>' : "");
   }
   function ordered(list) {
     if (state.sort !== "match") return list.slice().sort(SORTS[state.sort]);
@@ -1202,7 +1202,7 @@ dialog::backdrop { background: var(--overlay); }
       '<fieldset class="fset"><legend>' + esc(tr("Minimum rating")) + '</legend>' + Opts("minRating", [[0, tr("Any")], [4, "4.0+"], [4.5, "4.5+"], [4.8, "4.8+"]], state.minRating) + '</fieldset>' +
       '<fieldset class="fset"><legend>' + esc(tr("Supplier")) + '</legend><label class="sw"><span>' + esc(tr("Verified suppliers only")) + '</span><input type="checkbox" id="f-verified"' + (state.verified ? " checked" : "") + '></label>' +
       '<label class="sw"><span>' + esc(tr("Customizable")) + '</span><input type="checkbox" id="f-custom"' + (state.custom ? " checked" : "") + '></label></fieldset>' +
-      '</div><div class="fsheet-foot"><button class="btn btn-ghost btn-lg" type="button" data-clear>' + esc(tr("Clear all")) + '</button><button class="btn btn-primary btn-lg" type="button" data-close id="f-show">' + showLabel() + '</button></div>';
+      '</div><div class="fsheet-foot"><button class="btn btn-ghost btn-lg" type="button" data-clear>' + esc(tr("Clear")) + '</button><button class="btn btn-primary btn-lg" type="button" data-close id="f-show">' + showLabel() + '</button></div>';
   }
   function openFilters() {
     dlg.classList.add("sheet");
@@ -1213,6 +1213,13 @@ dialog::backdrop { background: var(--overlay); }
   /* ---------- language ---------- */
   var LANGS = [["en", "English", "EN"], ["fr", "Français", "FR"], ["pt", "Português", "PT"], ["es", "Español", "ES"], ["sw", "Kiswahili", "SW"]];
   var ROWS = [
+    ["Search", "Rechercher", "Pesquisar", "Buscar", "Tafuta"],
+    ["Login", "Connexion", "Entrar", "Entrar", "Ingia"],
+    ["Refine", "Affiner", "Refinar", "Refinar", "Chuja"],
+    ["Relevant", "Pertinents", "Relevantes", "Relevantes", "Husika"],
+    ["Rated", "Notés", "Avaliados", "Valorados", "Zilizokadiriwa"],
+    ["Reviewed", "Commentés", "Comentados", "Reseñados", "Zenye maoni"],
+    ["Clear", "Effacer", "Limpar", "Borrar", "Futa"],
     ["Discover", "Découvrir", "Descobrir", "Descubrir", "Gundua"],
     ["Shortlist", "Sélectionner", "Guardar", "Guardar", "Hifadhi"],
     ["Browse", "Parcourir", "Navegar", "Explorar", "Vinjari"],
@@ -1489,7 +1496,7 @@ dialog::backdrop { background: var(--overlay); }
   function renderAcct() {
     $("acct").innerHTML = session
       ? '<button class="top-btn" id="btn-acct" type="button" aria-haspopup="dialog" aria-label="' + esc(tr("Account")) + '"><span class="avatar" aria-hidden="true">' + esc(session.name.charAt(0).toUpperCase()) + '</span></button>'
-      : '<button class="top-btn" id="btn-acct" type="button" aria-haspopup="dialog"><span>' + esc(tr("Sign in")) + '</span></button>';
+      : '<button class="top-btn" id="btn-acct" type="button" aria-haspopup="dialog"><span>' + esc(tr("Login")) + '</span></button>';
   }
   function show(html, sheet, focusId) {
     $("dlg-body").innerHTML = html;

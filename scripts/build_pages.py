@@ -362,8 +362,8 @@ def wpage(site, path, title, desc, section, heading, meta, filters, body, crumbs
            '<button class="icon-btn side-toggle" id="btn-side" type="button" aria-controls="sidebar" aria-expanded="true" aria-label="Show or hide the sidebar">' + ico('panel') + '</button>'
            '<a class="brand" href="/" aria-label="Military Yellow Book home"><span class="mark" aria-hidden="true">YB</span><span class="brand-name">Military Yellow Book</span></a>'
            '<div class="gsearch" role="search"><label class="sr" for="q">Search suppliers, products or codes</label>' + ico('search').replace('<svg ', '<svg class="gs-i" ') +
-           '<input id="q" type="search" placeholder="Search suppliers, products or codes" autocomplete="off" enterkeyhint="search"><span class="gs-k" aria-hidden="true"><kbd id="kbd-mod">Ctrl</kbd><kbd>K</kbd></span></div>'
-           '<div class="top-actions"><a class="top-cta" href="/?list=1" aria-label="List your business">' + ico('plus') + '<span class="lbl">List your business</span></a><a class="top-btn" href="/?saved=1" aria-label="Saved">' + ico('heart') + '<span class="lbl">Saved</span></a><a class="top-btn" href="/?signin=1"><span>Sign in</span></a></div></div></header>')
+           '<input id="q" type="search" placeholder="Search" title="Search suppliers, products or codes" autocomplete="off" enterkeyhint="search"><span class="gs-k" aria-hidden="true"><kbd id="kbd-mod">Ctrl</kbd><kbd>K</kbd></span></div>'
+           '<div class="top-actions"><a class="top-cta" href="/?list=1" aria-label="List your business" title="Add your business to the directory">' + ico('plus') + '<span class="lbl">List</span></a><a class="top-btn" href="/?saved=1" aria-label="Shortlist" title="Suppliers you saved">' + ico('heart') + '<span class="lbl">Shortlist</span></a><a class="top-btn" href="/?signin=1"><span>Login</span></a></div></div></header>')
     side = ('<aside class="sidebar" id="sidebar" aria-label="Workspace"><div class="sidebar-in">'
             '<div class="side-head"><span class="brand"><span class="mark" aria-hidden="true">YB</span>Military Yellow Book</span><button class="icon-btn" type="button" data-side-close aria-label="Close menu">' + ico('x') + '</button></div>'
             '<nav class="side-group" aria-label="Suppliers">' + side_item('/', 'search', 'Discover', 'discover', section, 'Search the supplier directory') + side_item('/?saved=1', 'heart', 'Shortlist', 'saved', section, 'Suppliers you saved') +
@@ -423,7 +423,7 @@ def tenders_page(site, rows, portals):
     srcs = sorted({r['source_id'] for r in tenders})
     flt = fbar([('country', 'Country', [(c, c) for c in countries]),
                 ('source', 'Source', [(s, SOURCE_NAMES.get(s, (s,))[0]) for s in srcs]),
-                ('open', 'Status', [('open', 'Open'), ('closed', 'Closed')])], 'Search tenders')
+                ('open', 'Status', [('open', 'Open'), ('closed', 'Closed')])], 'Search')
     trs = ''
     for r in sorted(tenders, key=lambda r: (r['deadline'] is None, r['deadline'] or '', r['title'] or '')):
         c = r.get('country_name') or 'Not stated'
@@ -464,7 +464,7 @@ def awards_page(site, rows):
     fresh = max((r['refreshed_at'] for r in rows), default=None)
     countries = sorted({r.get('country_name') or 'Not stated' for r in awards})
     flt = fbar([('country', 'Country', [(c, c) for c in countries]),
-                ('source', 'Source', [(s, SOURCE_NAMES.get(s, (s,))[0]) for s in sorted({r['source_id'] for r in awards})])], 'Search awards')
+                ('source', 'Source', [(s, SOURCE_NAMES.get(s, (s,))[0]) for s in sorted({r['source_id'] for r in awards})])], 'Search')
     trs = ''
     for r in sorted(awards, key=lambda r: r.get('published_at') or '', reverse=True):
         c = r.get('country_name') or 'Not stated'
@@ -499,7 +499,7 @@ def portals_page(site, rows):
     rnames = dict(REGION_NAMES)
     flt = fbar([('region', 'Region', [(k or 'intl', n) for k, n in REGION_NAMES if any(r['region'] == k for r in rows)]),
                 ('scope', 'Jurisdiction', [(k, v) for k, v in SCOPE_LABEL.items() if any(r['scope'] == k for r in rows)]),
-                ('check', 'Link status', [('ok', 'Listed, not link-checked'), ('warn', 'Needs a check')])], 'Search portals')
+                ('check', 'Link status', [('ok', 'Listed, not link-checked'), ('warn', 'Needs a check')])], 'Search')
     trs = ''
     for r in rows:
         links = ''
