@@ -24,6 +24,11 @@
   $$("[data-side-close]").forEach(function (b) { b.addEventListener("click", function () { root.classList.remove("side-open"); paint(); }); });
   small.addEventListener("change", paint); paint();
 
+  /* sticky column titles sit directly under the sticky filter row */
+  var fbar = $(".filterbar");
+  function fbh() { if (fbar) root.style.setProperty("--fb-h", fbar.offsetHeight + "px"); }
+  fbh(); window.addEventListener("resize", fbh);
+
   /* global search leaves for the supplier directory with the query in the URL */
   var gq = $("#q");
   if (gq) gq.addEventListener("keydown", function (e) { if (e.key === "Enter" && gq.value.trim()) location.href = "/?q=" + encodeURIComponent(gq.value.trim()); });

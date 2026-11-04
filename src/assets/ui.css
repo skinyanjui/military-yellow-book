@@ -197,11 +197,11 @@ html.side-collapsed .sidebar { display: none; }
 .linklike { border: 0; background: none; padding: 0 var(--s-1); color: var(--text-2); font-size: var(--fs-xs); font-weight: 500; text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
 
 /* ---------- data tables (tenders, awards, portals, supplier rows) ---------- */
-.tbl-wrap { width: 100%; overflow-x: auto; border-top: 1px solid var(--border); }
+.tbl-wrap { width: 100%; overflow-x: clip; border-top: 1px solid var(--border); }
 table.tbl { width: 100%; border-collapse: collapse; font-size: var(--fs); }
 .tbl th, .tbl td { padding: 8px var(--s-3); border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
 .tbl th:first-child, .tbl td:first-child { padding-left: 0; }
-.tbl th { position: sticky; top: 0; background: var(--bg); color: var(--text-2); font-size: var(--fs-xs); font-weight: 500; white-space: nowrap; }
+.tbl th { position: sticky; z-index: 10; top: calc(var(--top-h) + env(safe-area-inset-top, 0px) + var(--fb-h, 45px)); background: var(--bg); color: var(--text-2); font-size: var(--fs-xs); font-weight: 500; white-space: nowrap; }
 .tbl th button { display: inline-flex; align-items: center; gap: 4px; padding: 0; border: 0; background: none; color: inherit; font: inherit; cursor: pointer; }
 .tbl th button:hover { color: var(--text); }
 .tbl th[aria-sort="ascending"] button::after { content: "↑"; }

@@ -36,7 +36,7 @@ FOOT = ('Complete firearms, ammunition, explosives and weapon systems are not li
 
 LCSS = """
 .lg{--fg:var(--text);--muted:var(--text-2);--line:var(--border);--subtle:var(--surface);--subtle-2:var(--surface-2);max-width:1040px;padding-top:var(--s-5)}
-.lg h1{font-size:var(--fs-xl);line-height:1.25;font-weight:600;letter-spacing:-.02em;margin:var(--s-2) 0 var(--s-1);text-wrap:balance}
+.lg.nt h1{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}\n.lg h1{font-size:var(--fs-xl);line-height:1.25;font-weight:600;letter-spacing:-.02em;margin:var(--s-2) 0 var(--s-1);text-wrap:balance}
 .lg h2{font-size:var(--fs-md);line-height:1.3;font-weight:600;letter-spacing:-.01em;margin:var(--s-8) 0 var(--s-3)}
 .lg h3{font-size:var(--fs);line-height:1.3;font-weight:600;margin:var(--s-6) 0 var(--s-2)}
 .lg a{color:var(--link)}
@@ -218,7 +218,7 @@ def jsonld(obj):
 def page(site, path, title, desc, body, crumbs, og_type='website', noindex=False):
     """Content page (listing, category, directory, legal, 404): the same shell as every other page."""
     section = 'discover' if path.startswith(('/l/', '/c/', '/directory')) else ''
-    return wpage(site, path, title, desc, section, None, '', None, '<div class="lg">' + body + '</div>', crumbs,
+    return wpage(site, path, title, desc, section, None, '', None, '<div class="lg' + ('' if path.startswith('/l/') else ' nt') + '">' + body + '</div>', crumbs,
                  og_type=og_type, noindex=noindex, extra_css=LCSS)
 
 
@@ -383,9 +383,9 @@ def wpage(site, path, title, desc, section, heading, meta, filters, body, crumbs
             '<meta property="og:url" content="' + esc(url) + '"><meta property="og:image" content="' + site + '/og.png">'
             '<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="' + esc(title) + '"><meta name="twitter:description" content="' + esc(desc) + '"><meta name="twitter:image" content="' + site + '/og.png">'
             '<meta name="theme-color" content="#f5b800">' + ('<meta name="robots" content="noindex">' if noindex else '') + '<link rel="icon" href="' + ICON + '">' + FONTS + '<link rel="stylesheet" href="/assets/ui.css">' +
-            '<style>.wsx{padding:0 var(--s-6) var(--s-10)}@media(max-width:759px){.wsx{padding:0 var(--s-4) var(--s-8)}}.wsx p{max-width:72ch}.tbl td.wrapc{min-width:150px;overflow-wrap:break-word}.tbl td{min-width:90px}.tbl td[data-k=title]{min-width:240px}.tbl .badge{white-space:nowrap}.tbl-wrap{overflow-x:auto}.tbl a.t-main:hover{text-decoration:underline}.tbl a.t-main{text-decoration:none}@media(max-width:759px){.tbl td,.tbl td.wrapc,.tbl td[data-k=title]{min-width:0}}.ws-note{margin:var(--s-4) 0}.tbl a.t-main{font-weight:500}.ws-foot{margin-top:var(--s-8)}' + extra_css + '</style>' + jsonld(crumb_ld) + '</head><body>' +
+            '<style>.wsx{padding:0 var(--s-6) var(--s-10)}@media(max-width:759px){.wsx{padding:0 var(--s-4) var(--s-8)}}.wsx p{max-width:72ch}.tbl td.wrapc{overflow-wrap:break-word}@media(max-width:1399px){.tbl th,.tbl td{padding-inline:6px}.tbl td.nw,.tbl td.n,.tbl th{white-space:normal}.tbl .badge{white-space:normal}}@media(min-width:1400px){.tbl td.wrapc{min-width:150px}.tbl td{min-width:90px}.tbl td[data-k=title]{min-width:240px}}.tbl .badge{white-space:nowrap}.tbl a.t-main:hover{text-decoration:underline}.tbl a.t-main{text-decoration:none}@media(max-width:759px){.tbl td,.tbl td.wrapc,.tbl td[data-k=title]{min-width:0}}.ws-note{margin:var(--s-4) 0}.tbl a.t-main{font-weight:500}.ws-foot{margin-top:var(--s-8)}' + extra_css + '</style>' + jsonld(crumb_ld) + '</head><body>' +
             top + '<div class="shell">' + side + '<div class="main">' + (filters or '') +
-            '<main class="content wsx" id="main">' + ('<div class="page-head"><h1>' + heading + '</h1><span class="meta" id="tcount" role="status" aria-live="polite">' + meta + '</span></div>' if heading else '') + body +
+            '<main class="content wsx" id="main">' + ('<div class="page-head sr"><h1>' + heading + '</h1><span class="meta" id="tcount" role="status" aria-live="polite">' + meta + '</span></div>' if heading else '') + body +
             '<footer class="site-foot ws-foot"><p><b>Military Yellow Book</b> is a global directory of military suppliers. ' + esc(FOOT) + '</p>'
             '<nav aria-label="Footer"><a href="/directory">Directory</a> · <a href="/opportunities">Tenders</a> · <a href="/awards">Contract awards</a> · <a href="/portals">Procurement portals</a> · <a href="/terms">Terms</a> · <a href="/privacy">Privacy</a></nav></footer>'
             '</main></div></div><div class="side-scrim" id="side-scrim" hidden></div><script src="/assets/table.js"></script></body></html>')
